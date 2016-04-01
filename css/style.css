@@ -1,0 +1,30 @@
+main {
+    background-color: #F7F7F7;
+}
+.outerbox {
+    background-color: #FAFAFA;
+    border: 1px #e4e4e4 solid;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 6px #ccc;
+    height: 500px;
+}
+.innerbox {
+    height: 100px;
+    background-color: #FFFFFF;
+    border: 1px #e4e4e4 solid;
+    box-shadow: 0 0 6px #ccc;
+    border-radius: 4px;
+}
+.innerbox col-md-9 {
+    font-size: 16px;
+}
+#add_assessments {
+    padding: 5px 20px;
+}
+.search {
+    background: url('../images/search_icon.png') no-repeat 98% 3px transparent !important;
+    line-height: 1.5;
+    border: 1px solid #d2d2d2;
+    padding: 3px 12px;
+}
