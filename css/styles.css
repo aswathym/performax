@@ -61,16 +61,22 @@ header {
 }
 .nav-tabs>li>a {
     color: #565354;
+    border: 1px solid transparent;
 }
 .nav-tabs .active {
     border-bottom: 2px solid #E53333;
 }
 .nav-tabs>li.active>a {
     color: #E53333;
+    border: 1px solid transparent;
     background-color: white;
     font-weight: bold;
     cursor: pointer;
     border-radius: 0px;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    border: 1px solid transparent;
+    color: #E53333;
 }
 .nav-tabs>li.active>a:hover {
     color: #E53333;
@@ -93,9 +99,13 @@ main {
     border: 1px #e4e4e4 solid;
     box-shadow: 0 0 6px #ccc;
     border-radius: 4px;
+    padding: 0px;
 }
-.innerbox col-md-9 {
+.innerbox .col-md-9 {
     font-size: 16px;
+}
+.innerbox .col-md-3 {
+    padding: 0px;
 }
 #add_assessments {
     padding: 5px 20px;
@@ -127,6 +137,9 @@ footer a{
 }
 #sideMenu > .list-group > a{
     font-weight: bold;
+}
+#sideMenu .panel {
+    border: none;
 }
 .list-group > div > a{
     background-color: #eee;
