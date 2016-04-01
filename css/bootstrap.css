@@ -5328,7 +5328,7 @@ button.list-group-item {
 }
 .list-group-item-success {
   color: #3c763d;
-  background-color: #dff0d8;
+  /*background-color: #dff0d8;*/
 }
 a.list-group-item-success,
 button.list-group-item-success {
@@ -5343,7 +5343,7 @@ button.list-group-item-success:hover,
 a.list-group-item-success:focus,
 button.list-group-item-success:focus {
   color: #3c763d;
-  background-color: #d0e9c6;
+  /*background-color: #d0e9c6;*/
 }
 a.list-group-item-success.active,
 button.list-group-item-success.active,
@@ -5352,7 +5352,7 @@ button.list-group-item-success.active:hover,
 a.list-group-item-success.active:focus,
 button.list-group-item-success.active:focus {
   color: #fff;
-  background-color: #3c763d;
+  /*background-color: #3c763d;*/
   border-color: #3c763d;
 }
 .list-group-item-info {

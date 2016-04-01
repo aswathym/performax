@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Performax</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
@@ -19,9 +20,9 @@
             </span>
         </div>
         <div id="header_menu_bar" class="uniq_padding">
-            <span class="col-md-4">
-                  Performax Image
-              </span>
+            <h1 class="col-md-4">
+                 <a href="#"> Performax Logo</a>
+              </h1>
             <nav class="navbar col-md-8">
                 <ul class="nav nav-pills">
                     <li role="presentation" class="active"><a href="#something">Assessments</a></li>
@@ -35,33 +36,46 @@
             </nav>
         </div>
     </header>
-    <main>
-        <div class="" id="#something">
-            <div class="col-md-4">
-                Hai
+     <main>
+        <div class="">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 outerbox">
+                <h4>Assessments</h4>
+                <div class="innerbox">
+                    <div class="col-md-3">
+                        <div id="sideMenu">
+                              <div class="list-group panel">
+                                <a href="#functional" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#sideMenu">Functional Assessments </a>
+                                <div class="collapse" id="functional">
+                                  <a href="#" class="list-group-item">Core Functions</a>
+                                  <a href="javascript:;" class="list-group-item">Support Functions</a>
+                                </div>
+                                <a href="#process-assessment" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#sideMenu">Process Assessments</a>
+                                 <a href="#stakeholder-assessment" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#sideMenu">Stakeholder Assessments</a>
+                                  <a href="#emp-dev" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#sideMenu">Employee Development</a>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-md-9">
+                       <b>Core Functions</b>
+                       <button type="button" name="button" id="add_assessments" class="btn btn-primary">Add Assessments</button>
+                       <input type="text" name="name" value="" placeholder="Search" class="search">
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-                Hello
-            </div>
-            <div class="col-md-4">
-                Hai
-            </div>
-        </div>
-        <div class="" id="#something_Else">
-            <div class="col-md-4">
-                Hai
-            </div>
-            <div class="col-md-4">
-                Hello
-                Hai
-            </div>
+            <div class="col-md-1"></div>
         </div>
     </main>
-    <footer>
-
-    </footer>
+    <footer class="footer">
+   <div class="container">
+    <p class="pull-left">&copy; 2016 Performax Inc. All Rights Reserved</p>
+    <a href="#" class="pull-right">Help</a>
+    </div>
+</footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
+
+
