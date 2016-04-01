@@ -141,6 +141,13 @@ footer a{
 #sideMenu .panel {
     border: none;
 }
+.modal-body .model_line {
+    margin-bottom: 10px;
+}
+.modal-body .model_line label{
+    font-size: 14px;
+    font-weight: 100;
+}
 .list-group > div > a{
     background-color: #eee;
 }
