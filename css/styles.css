@@ -72,6 +72,36 @@ main {
 #add_assessments {
     padding: 5px 20px;
 }
+.finance_innerbox .finance_accounting {
+    font-size: 20px;
+    padding: 20px;
+}
+.finance_innerbox{
+    height: 500px;
+    background-color: #FFFFFF;
+    border: 1px #e4e4e4 solid;
+    box-shadow: 0 0 6px #ccc;
+    border-radius: 4px;
+    margin: 0px 80px;
+}
+.finance_innerbox .col-md-4 {
+    height: 235px;
+    margin: 6px 20px;
+    border: 1px #e4e4e4 solid;
+    box-shadow: 0 0 2px #ccc;
+    border-radius: 4px;
+}
+.finance_innerbox .col-md-6 textarea {
+    width: 100%;
+}
+.finance_innerbox .finance_accounting img {
+    float: right;
+    height: 40px;
+    cursor: pointer;
+}
+.finance_innerbox .finance_accounting img:hover {
+    background-color: gainsboro;
+}
 .search {
     background: url('../images/search_icon.png') no-repeat 98% 3px transparent !important;
     line-height: 1.5;
