@@ -19,6 +19,9 @@ header {
     float: right;
     line-height: 3;
 }
+#header_user_bar .wrapper i {
+    margin-left: 5px;
+}
  #header_menu_bar {
      border-top: 1px solid rgba(125,125,125,0.5);
      height: 54px;
