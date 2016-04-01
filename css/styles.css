@@ -16,7 +16,6 @@ header {
 }
 #header_user_bar .wrapper{
     padding: 5px 20px;
-    float: right;
     line-height: 3;
 }
 #header_user_bar .wrapper i {
@@ -27,7 +26,35 @@ header {
      height: 54px;
      padding-top: 10px;
  }
-
+ #core_functions_wrapper li {
+     text-align: center;
+     overflow: hidden;
+     padding: 0px;
+ }
+#core_functions_wrapper li .image_container  {
+    height: 200px;
+    background-image: url('../images/core_fnc_bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+#core_functions_wrapper li .caption {
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    height: 200px;
+    bottom: -200px;
+    transition: all 0.3s linear;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#core_functions_wrapper li  .caption button {
+    margin-top: 30px;
+}
+#core_functions_wrapper li:hover .caption {
+    /*height: 200px;*/
+    bottom: 0px;
+}
 /*Bootstrap Overriding*/
 .nav>li>a {
     padding: 10px 11px;
@@ -57,10 +84,8 @@ main {
     padding: 20px;
     border-radius: 4px;
     box-shadow: 0 0 6px #ccc;
-    height: 500px;
 }
 .innerbox {
-    height: 100px;
     background-color: #FFFFFF;
     border: 1px #e4e4e4 solid;
     box-shadow: 0 0 6px #ccc;
