@@ -22,11 +22,11 @@
             <h4 class="col-md-4">
                  <a href="#"> Performax Logo</a>
             </h4>
-            <nav class="navbar col-md-8">
-                <ul class="nav nav-pills">
-                    <li role="presentation" class="active"><a href="#something">Assessments</a></li>
-                    <li role="presentation"><a href="#something_Else">CFS's</a></li>
-                    <li role="presentation"><a href="#">Pricing</a></li>
+            <nav class="navbar col-md-8" id="header_nav_tabs">
+                <ul class="nav nav-tabs">
+                    <li role="presentation" class="active"><a href="#assessments" aria-controls="assessments" role="tab" data-toggle="tab">Assessments</a></li>
+                    <li role="presentation"><a href="#cfs" aria-controls="cfs" role="tab" data-toggle="tab">CFS's</a></li>
+                    <li role="presentation"><a href="#pricing" aria-controls="pricing" role="tab" data-toggle="tab">Pricing</a></li>
                     <li role="presentation"><a href="#">Add-ons & Services</a></li>
                     <li role="presentation"><a href="#">Manage Home</a></li>
                     <li role="presentation"><a href="#">Promo Codes</a></li>
@@ -35,8 +35,8 @@
             </nav>
         </div>
     </header>
-    <main>
-        <div class="container-fluid">
+    <main class="tab-content">
+        <div class="container-fluid tab-pane active" role="tabpanel" id="assessments">
             <div class="col-md-1"></div>
             <div class="col-md-10 outerbox">
                 <h4>Assessments</h4>
@@ -166,7 +166,15 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-1"></div>
+        <div class="container-fluid tab-pane" role="tabpanel" id="cfs">
+            CFS
+        </div>
+        <div class="container-fluid tab-pane" role="tabpanel" id="pricing">
+            Pricing
+        </div>
+        <div class="container-fluid tab-pane" role="tabpanel" id="addon">
+            Pricing
+        </div>
         </div>
     </main>
     <footer class="footer">
