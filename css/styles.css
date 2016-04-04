@@ -54,7 +54,7 @@ header {
 }
 /*Bootstrap Overriding*/
 .nav>li>a {
-    padding: 10px 10px;
+    padding: 10px 9px;
 }
 .nav-tabs>li>a {
     color: #565354;
@@ -113,8 +113,29 @@ main {
     border: 1px solid #d2d2d2;
     padding: 3px 12px;
 }
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap{
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
 footer{
     background-color:#171c1d;
+    height: 60px;
 }
 footer p{
     color: #878a8c;
