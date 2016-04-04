@@ -212,3 +212,16 @@ span.price:before{
 .modal-body label:after{
     content: ':';
 }
+h1{
+    font-size: 0;
+    margin:0 0 10px;
+}
+.scrollable{
+    overflow-y:scroll;
+    height: 300px;
+    margin: 0;
+    padding: 0; 
+}
+.scrollable li{
+    float: left;
+}
