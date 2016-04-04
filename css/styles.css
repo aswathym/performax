@@ -1,4 +1,5 @@
 /*Body Section*/
+
 body {
     padding: 0;
     background-color: #F7F7F7;
@@ -37,11 +38,11 @@ body {
   font-style: normal;
 }
 
-
 /*Header Section*/
+
 header {
     background-color: white;
-    box-shadow: 0px 2px 10px 1px rgba(125,125,125,0.5);
+    box-shadow: 0px 2px 10px 1px rgba(125, 125, 125, 0.5);
 }
 .navbar{
     padding-right: 0;
@@ -52,16 +53,18 @@ header {
 .box-shadow-styling {
     background-color: white;
     margin-top: 20px;
-    box-shadow: 0px 2px 10px 1px rgba(125,125,125,0.5);
+    box-shadow: 0px 2px 10px 1px rgba(125, 125, 125, 0.5);
     padding-top: 10px;
 }
 .btn-info {
     background-color: #2C88CE;
     border-color: #1072bd;
+
 }
 #header_user_bar {
     height: 50px;
 }
+
 .Editor-container {
     margin-left: 13%;
     width: 200px;
@@ -69,13 +72,14 @@ header {
 .Editor-editor {
     height: 120px;
 }
-#header_user_bar .wrapper{
+#header_user_bar .wrapper {
     padding: 5px 20px;
     line-height: 3;
 }
 #header_user_bar .wrapper i {
     margin-left: 5px;
 }
+
  #header_menu_bar {
      border-top: 1px solid rgba(125,125,125,0.5);
      padding-top: 10px;
@@ -92,13 +96,10 @@ background: -moz-linear-gradient(top, rgb(255, 255, 255) 30%, rgb(215, 215, 215)
 background: linear-gradient(to bottom, rgb(255, 255, 255) 30%, rgb(215, 215, 215) 60%, rgb(116, 116, 116) 80%, rgb(35, 35, 35) 100%);
 
  }
-#core_functions_wrapper li .image_container  {
-    height: 200px;
-    background-image: url('../images/core_fnc_bg.jpg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    cursor: pointer;
+
+#core_functions_wrapper li a
+{
+    padding: 181px 180px 39px 171px;
 }
 #core_functions_wrapper li .caption {
     position: absolute;
@@ -112,13 +113,14 @@ background: linear-gradient(to bottom, rgb(255, 255, 255) 30%, rgb(215, 215, 215
     text-align: center;
     padding-top: 20px;
 }
-#core_functions_wrapper li  .caption button {
+#core_functions_wrapper li .caption button {
     margin-top: 30px;
 }
 #core_functions_wrapper li:hover .caption {
     /*height: 200px;*/
     bottom: 0px;
 }
+
 /*Bootstrap Overriding*/
 .container{
     font-family: 'Roboto-Regular';
@@ -185,6 +187,95 @@ background: linear-gradient(to bottom, rgb(255, 255, 255) 30%, rgb(215, 215, 215
 #add_assessments {
     padding: 5px 20px;
 }
+.finance_innerbox .finance_accounting {
+    font-size: 20px;
+    padding: 10px 20px;
+}
+.finance_innerbox {
+    background-color: #FFFFFF;
+    border: 1px #e4e4e4 solid;
+    box-shadow: 0 0 6px #ccc;
+    border-radius: 4px;
+    margin: 20px 0px;
+}
+.finance_innerbox .col-md-4 {
+    margin: 6px 20px;
+    border: 1px #e4e4e4 solid;
+    box-shadow: 0 0 8px #ccc;
+    border-radius: 4px;
+}
+.finance_innerbox .col-md-6 textarea {
+    width: 100%;
+}
+.finance_innerbox .col-md-6 #update_button {
+    float: right;
+    margin-top: 20px;
+    padding: 10px 30px;
+    display: none;
+}
+.finance_innerbox .finance_accounting img {
+    float: right;
+    height: 40px;
+    cursor: pointer;
+}
+.finance_innerbox .finance_accounting img:hover {
+    background-color: gainsboro;
+}
+.finance_second_box {
+    background-color: #FFFFFF;
+    border: 1px #e4e4e4 solid;
+    box-shadow: 0 0 6px #ccc;
+    border-radius: 4px;
+    margin: 0px;
+}
+.finance_second_box h4 {
+    padding: 10px 20px;
+}
+.finance_innerbox>.col-md-6>textarea {
+    border: none;
+    background-color: #fff;
+}
+.finance_second_box>.navbar>.nav-tabs {
+    border-bottom: 2px solid #09A6D0;
+}
+#assessment_table_header .active {
+    border-bottom: 1px solid transparent;
+}
+#assessment_table_header .active a {
+    background-color: #09A6D0;
+    color: #fff;
+}
+.button_CSF {
+    float: right;
+    margin-bottom: 30px;
+}
+.button_CSF button {
+    padding: 5px 20px;
+    margin-right: 30px;
+}
+.table_style {
+    height: 500px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    width:100%;
+}
+tr,th {
+    height: 50px;
+}
+th {
+    background-color: #EAEAEA;
+    color: #707070;
+}
+/*td {
+    width: 10%;
+}*/
+.finance_second_box table {
+    width: 1500px;
+}
+.table_container {
+    height: 400px;
+    overflow-x: scroll;
+}
 .search {
     background: url('../images/search_icon.png') no-repeat 98% 3px transparent !important;
     line-height: 1.4;
@@ -202,16 +293,54 @@ h4{
 #sideMenu a{
     font:14px 'Roboto-Medium';
 }
+input[type="checkbox"]{
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.add_CSF_popup {
+    display:block;
+    margin-bottom: 15px;
+}
+.add_CSF_popup label {
+    color: #666464;
+    width: 50%;
+    text-align: right;
+    padding-right: 26px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+.add_CSF_popup input {
+    width: 50%;
+    float: right;
+}
+.add_CSF_popup>.btn-group{
+    width: 47%;
+}
+.add_CSF_popup>.btn-group>button {
+        padding-right: 73%;
+}
+.row>.col-md-6> a {
+    display: block;
+    margin-bottom: 26px;
+}
+.add_CSF_button {
+    margin-bottom: 10px;
+    text-align: center;
+}
+#CSF_Description {
+    height: 80px;
+}
 /* Sticky footer styles
 -------------------------------------------------- */
 
-html,
-body {
-  height: 100%;
-  /* The html and body elements cannot have any padding or margin. */
+html, body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
 }
 
 /* Wrapper for page content to push down footer */
+
 #wrap{
   min-height: 100%;
   height: auto;
@@ -222,8 +351,9 @@ body {
 }
 
 /* Set the fixed height of the footer here */
-footer{
-    background-color:#171c1d;
+footer {
+    background-color: #171c1d;
+
     height: 60px;
     margin: 0 !important;
    
@@ -231,10 +361,10 @@ footer{
 footer .container{
     padding-top: 10px;
 }
-footer p{
+footer p {
     color: #878a8c;
 }
-footer a{
+footer a {
     color: #e8e9ec;
 }
 .thumbnail{
@@ -244,9 +374,9 @@ footer a{
     padding: 14px;
 }
 .list-group-item-success{
-    background-color: transparent;
+  background-color: transparent;
 }
-.list-group-item-success:hover{
+.list-group-item-success:hover {
     background-color: #eaeaea;
 }
 #sideMenu .list-group div a{
@@ -256,9 +386,12 @@ footer a{
 #sideMenu{
     margin: 20px;
 }
-#sideMenu a{
+#sideMenu a {
     color: #231f20;
     border-radius: 0;
+}
+#sideMenu > .list-group > a {
+    font-weight: bold;
 }
 #sideMenu .panel {
     border: none;
@@ -266,48 +399,50 @@ footer a{
 .modal-body .model_line {
     margin-bottom: 10px;
 }
-.modal-body .model_line label{
+.modal-body .model_line label {
     font-size: 14px;
     font-weight: 100;
 }
-.list-group > div > a{
+.list-group > div > a {
     background-color: #eee;
 }
-#sideMenu,.box{
-    -webkit-box-shadow: 2px 3px 5px 0px rgba(236,236,236,1);
-    -moz-box-shadow: 2px 3px 5px 0px rgba(236,236,236,1);
-    box-shadow: 2px 3px 5px 0px rgba(236,236,236,1);
+#sideMenu, .box {
+    -webkit-box-shadow: 2px 3px 5px 0px rgba(236, 236, 236, 1);
+    -moz-box-shadow: 2px 3px 5px 0px rgba(236, 236, 236, 1);
+    box-shadow: 2px 3px 5px 0px rgba(236, 236, 236, 1);
     background-color: #fff;
 }
 #asssessment_pricing_list {
     margin-top: 20px;
     margin-bottom: 50px;
 }
-#asssessment_pricing_list .icon i{
+#asssessment_pricing_list .icon i {
     cursor: pointer;
     transition: all 0.3s linear;
 }
 #asssessment_pricing_list .icon i:hover {
     color: red;
+
 }
-footer{
+footer {
     padding: 20px 0 15px;
 }
 /* add on and services styles */
-#add-ons .innerbox{
-    margin:25px 0;
-}
 
-.service-img{
-    border:1px solid #ccc;
+#add-ons .innerbox {
+    margin: 25px 0;
 }
-.spacer{
-    margin:10px 0;
+.service-img {
+    border: 1px solid #ccc;
 }
-span.price:before{
-    content:'$';
+.spacer {
+    margin: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.modal-body label:after{
+span.price:before {
+    content: '$';
+}
+.modal-body label:after {
     content: ':';
 }
 h1{
@@ -318,8 +453,49 @@ h1{
     overflow-y:scroll;
     height: 300px;
     margin: 0;
-    padding: 0; 
+    padding: 0;
 }
 .scrollable li{
     float: left;
+}
+
+
+/*Promo codes page*/
+
+#create_promo_code_form h5 {
+    color: rgba(0, 0, 0, 0.7);
+    ;
+}
+#create_promo_code_form i {
+    color: #09A6D0;
+    margin-right: 5px;
+}
+#create_promo_code_form input {
+    width: 60%;
+}
+#create_promo_code_form .calender {
+    width: 100%;
+    background-size: 20px 20px;
+    background-position: right top;
+    background-image: url('../images/calender_icon.png');
+    background-repeat: no-repeat;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.promo_type_discount {
+    margin-bottom: 15px;
+    left: 25%;
+}
+#asssessment_pricing_list li {
+    padding: 15px 20px;
+}
+.modal-dialog {
+        width: 74%;
+}
+.modal-header {
+    border: none;
+}
+.rating {
+    display: inline-block;
+    position: absolute;
+    right: 147px;
 }
