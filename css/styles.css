@@ -186,10 +186,11 @@ footer a{
 .list-group > div > a{
     background-color: #eee;
 }
-#sideMenu{
+#sideMenu,.box{
     -webkit-box-shadow: 2px 3px 5px 0px rgba(236,236,236,1);
     -moz-box-shadow: 2px 3px 5px 0px rgba(236,236,236,1);
     box-shadow: 2px 3px 5px 0px rgba(236,236,236,1);
+    background-color: #fff;
 }
 #asssessment_pricing_list {
     margin-top: 20px;
@@ -204,4 +205,21 @@ footer a{
 }
 footer{
     padding: 20px 0 15px;
+}
+/* add on and services styles */
+#add-ons .innerbox{
+    margin:25px 0;
+}
+
+.service-img{
+    border:1px solid #ccc;
+}
+.spacer{
+    margin:10px 0;
+}
+span.price:before{
+    content:'$';
+}
+.modal-body label:after{
+    content: ':';
 }
