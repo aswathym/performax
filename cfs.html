@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Performax</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/editor.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="container">
+                <div id="header_user_bar">
+                    <span class="wrapper pull-right">
+                      <span class="glyphicon glyphicon-search"></span> Welcome <b>Admin</b><i class="fa fa-sort-desc"></i>
+                    </span>
+                </div>
+                <div id="header_menu_bar">
+
+                    <h1 class="col-md-4">
+                         Performax 360
+                         <a href="#"><img src="images/performax.png" alt="Performax" /> </a>
+                    </h1>
+
+                    <nav class="navbar col-md-8" id="header_nav_tabs">
+                        <ul class="nav nav-tabs">
+                            <li role="presentation"><a href="index.html">Assessments</a></li>
+                            <li role="presentation" class="active"><a href="CFS.html" aria-controls="assessments" role="tab" data-toggle="tab">CFS's</a></li>
+                            <li role="presentation"><a href="pricing.html">Pricing</a></li>
+                            <li role="presentation"><a href="addons-services.html">Add-ons & Services</a></li>
+                            <li role="presentation"><a href="#manage_home" aria-controls="manage_home" role="tab" data-toggle="tab">Manage Home</a></li>
+                            <li role="presentation"><a href="promo_codes.html">Promo Codes</a></li>
+                            <li role="presentation"><a href="sales_reports.html">Sales Reports</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="tab-content">
+            <div class="container CSF_inner_container">
+                <div class="CFS_container">
+                    <h4>Critical Success Factors</h4>
+                </div>
+
+                <div class="button_CSF">
+                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add new CSF</button>
+                    <button type="button" name="button" class="btn btn-danger">Delete</button>
+                </div>
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Add new Critical Success Factor</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="add_CSF_popup">
+                                                <label>CSF Title</label>
+                                                <input type="text">
+                                            </div>
+                                            <div class="add_CSF_popup">
+                                                <label for="">CSF rating</label>
+                                                <img src="images/Rating Bg.png">
+                                                <div class="rating">
+                                                    <img src="images/golden star.png">
+                                                    <img src="images/golden star.png">
+                                                    <img src="images/golden star.png">
+                                                    <img src="images/grey star.png" alt="" /><img src="images/grey star.png" alt="" />
+                                                </div>
+
+                                            </div>
+                                            <div class="add_CSF_popup">
+                                                <label>Industry</label>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Action <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Action</a></li>
+                                                        <li><a href="#">Another action</a></li>
+                                                        <li><a href="#">Something else here</a></li>
+                                                        <li role="separator" class="divider"></li>
+                                                        <li><a href="#">Separated link</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="add_CSF_popup">
+                                                <label>Function Id</label>
+                                                <input type="text">
+                                            </div>
+                                            <div class="add_CSF_popup">
+                                                <label>Assessment Type</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="add_CSF_popup">
+                                                <label>CSF Category</label>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Action <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Action</a></li>
+                                                        <li><a href="#">Another action</a></li>
+                                                        <li><a href="#">Something else here</a></li>
+                                                        <li role="separator" class="divider"></li>
+                                                        <li><a href="#">Separated link</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="add_CSF_popup">
+                                                <label>CSF context</label>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Action <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Action</a></li>
+                                                        <li><a href="#">Another action</a></li>
+                                                        <li><a href="#">Something else here</a></li>
+                                                        <li role="separator" class="divider"></li>
+                                                        <li><a href="#">Separated link</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="add_CSF_popup">
+                                                <label>Size</label>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Action <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Action</a></li>
+                                                        <li><a href="#">Another action</a></li>
+                                                        <li><a href="#">Something else here</a></li>
+                                                        <li role="separator" class="divider"></li>
+                                                        <li><a href="#">Separated link</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="add_CSF_popup">
+                                                <label>Function</label>
+                                                <input type="text">
+                                            </div>
+                                            <div class="add_CSF_popup">
+                                                <label>Data Source</label>
+                                                <input type="text" value="Performax Database">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="add_CSF_popup col-md-6">
+                                                <label for="">CSF Description</label>
+                                                <input type="text" id="CSF_Description">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="add_CSF_popup">
+                                                <label for="">Key Performance Indicators 1</label>
+                                                <input type="text" name="name" value="">
+                                            </div>
+                                            <div class="add_CSF_popup">
+                                                <label for="">Key Performance Indicators 2</label>
+                                                <input type="text" name="name" value="">
+                                            </div>
+                                            <div class="add_CSF_popup">
+                                                <label for="">Ideas for Action 1</label>
+                                                <input type="text" name="name" value="">
+
+                                            </div>
+                                            <div class="add_CSF_popup">
+                                                <label for="">Ideas for Action 1</label>
+                                                <input type="text" name="name" value="">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                                <a>Add from Performax360 Database</a>
+                                                <a>Add from Performax360 Database</a>
+                                                <a>Add from Performax360 Database</a>
+                                                <a>Add from Performax360 Database</a>
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="add_CSF_button">
+                                <button type="button" class="btn btn-info" data-dismiss="modal">Add CSF</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <p class="pull-left">&copy; 2016 Performax Inc. All Rights Reserved</p>
+                <a href="#" class="pull-right">Help</a>
+            </div>
+        </footer>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/editor.js" charset="utf-8"></script>
+        <script src="js/script.js"></script>
+</body>
+</html>
