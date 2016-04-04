@@ -15,32 +15,31 @@
 <body>
     <div id="wrap">
         <header>
-            <div class="container">
-                <div id="header_user_bar">
+            <div class="container-fluid">
+                <div id="header_user_bar" class="container">
                     <span class="wrapper pull-right">
-                      <span class="glyphicon glyphicon-search"></span> Welcome <b>Admin</b><i class="fa fa-sort-desc"></i>
+                          <span class="glyphicon glyphicon-search"></span> Welcome <b>Admin</b><i class="fa fa-sort-desc"></i>
                     </span>
                 </div>
                 <div id="header_menu_bar">
-
-                    <h1 class="col-md-4">
-                         Performax 360
-                         <a href="#"><img src="images/performax.png" alt="Performax" /> </a>
-                    </h1>
-
-                    <nav class="navbar col-md-8" id="header_nav_tabs">
-                        <ul class="nav nav-tabs">
-                            <li role="presentation"><a href="assessments.html">Assessments</a></li>
-                            <li role="presentation" class="active"><a href="CFS.html" aria-controls="assessments" role="tab" data-toggle="tab">CFS's</a></li>
-                            <li role="presentation"><a href="pricing.html">Pricing</a></li>
-                            <li role="presentation"><a href="addons_services.html">Add-ons & Services</a></li>
-                            <li role="presentation"><a href="#manage_home" aria-controls="manage_home" role="tab" data-toggle="tab">Manage Home</a></li>
-                            <li role="presentation"><a href="promo_codes.html">Promo Codes</a></li>
-                            <li role="presentation"><a href="sales_reports.html">Sales Reports</a></li>
-                        </ul>
-                    </nav>
+                    <div class="container">
+                        <h1 class="col-md-4">
+                             Performax 360
+                             <a href="#"><img src="images/performax.png" alt="Performax" /> </a>
+                        </h1>
+                        <nav class="navbar col-md-8" id="header_nav_tabs">
+                            <ul class="nav nav-tabs">
+                                <li role="presentation"><a href="assessments.html">Assessments</a></li>
+                                <li role="presentation" class="active"><a href="cfs.html">CFS's</a></li>
+                                <li role="presentation"><a href="pricing.html">Pricing</a></li>
+                                <li role="presentation"><a href="addons_services.html">Add-ons & Services</a></li>
+                                <li role="presentation"><a href="manage_home.html">Manage Home</a></li>
+                                <li role="presentation"><a href="promo_codes.html">Promo Codes</a></li>
+                                <li role="presentation"><a href="sales_reports.html">Sales Reports</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-            </div>
         </header>
         <div class="tab-content">
             <div class="container CSF_inner_container">
@@ -49,8 +48,8 @@
                 </div>
 
                 <div class="button_CSF">
-                    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add new CSF</button>
-                    <button type="button" name="button" class="btn btn-danger">Delete</button>
+                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Add new CSF</button>
+                    <button type="button" name="button" class="btn btn-danger btn-sm">Delete</button>
                 </div>
                 <div class="modal fade" id="myModal" role="dialog">
                     <div class="modal-dialog">
