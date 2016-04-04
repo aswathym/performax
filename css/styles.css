@@ -3,6 +3,39 @@
 body {
     padding: 0;
     background-color: #F7F7F7;
+    font-family: 'Roboto-Regular',  Helvetica, Arial, sans-serif;
+}
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../fonts/roboto-regular/Roboto-Regular.eot');
+  src: url('../fonts/roboto-regular/Roboto-Regular.woff') format('woff'),
+       url('../fonts/roboto-regular/Roboto-Regular.ttf') format('truetype'),
+       url('../fonts/roboto-regular/Roboto-Regular.svg#Roboto-Regular') format('svg'),
+       url('../fonts/roboto-regular/Roboto-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: url('../fonts/roboto-medium/Roboto-Medium.eot');
+  src: url('../fonts/roboto-medium/Roboto-Medium.woff') format('woff'),
+       url('../fonts/roboto-medium/Roboto-Medium.ttf') format('truetype'),
+       url('../fonts/roboto-medium/Roboto-Medium.svg#Roboto-Medium') format('svg'),
+       url('../fonts/roboto-medium/Roboto-Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../fonts/roboto-bold/Roboto-Bold.eot');
+  src: url('../fonts/roboto-bold/Roboto-Bold.woff') format('woff'),
+       url('../fonts/roboto-bold/Roboto-Bold.ttf') format('truetype'),
+       url('../fonts/roboto-bold/Roboto-Bold.svg#Roboto-Bold') format('svg'),
+       url('../fonts/roboto-bold/Roboto-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /*Header Section*/
@@ -10,6 +43,12 @@ body {
 header {
     background-color: white;
     box-shadow: 0px 2px 10px 1px rgba(125, 125, 125, 0.5);
+}
+.navbar{
+    padding-right: 0;
+}
+.nav{
+    float: right;
 }
 .box-shadow-styling {
     background-color: white;
@@ -40,24 +79,24 @@ header {
 #header_user_bar .wrapper i {
     margin-left: 5px;
 }
-#header_menu_bar {
-    border-top: 1px solid rgba(125, 125, 125, 0.5);
-    height: 54px;
-    padding-top: 10px;
-}
-#core_functions_wrapper li {
-    text-align: center;
-    overflow: hidden;
-    padding: 0px;
-}
-#core_functions_wrapper li .image_container {
-    height: 200px;
-    background-image: url('../images/core_fnc_bg.jpg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    cursor: pointer;
-}
+
+ #header_menu_bar {
+     border-top: 1px solid rgba(125,125,125,0.5);
+     padding-top: 10px;
+ }
+ #core_functions_wrapper li {
+     text-align: center;
+     overflow: hidden;
+     padding: 0px;
+     height: 230px;
+     background: -webkit-linear-gradient(top, rgb(255, 255, 255) 30%, rgb(215, 215, 215) 60%, rgb(116, 116, 116) 80%, rgb(35, 35, 35) 100%);
+background: -o-linear-gradient(top, rgb(255, 255, 255) 30%, rgb(215, 215, 215) 60%, rgb(116, 116, 116) 80%, rgb(35, 35, 35) 100%);
+background: -ms-linear-gradient(top, rgb(255, 255, 255) 30%, rgb(215, 215, 215) 60%, rgb(116, 116, 116) 80%, rgb(35, 35, 35) 100%);
+background: -moz-linear-gradient(top, rgb(255, 255, 255) 30%, rgb(215, 215, 215) 60%, rgb(116, 116, 116) 80%, rgb(35, 35, 35) 100%);
+background: linear-gradient(to bottom, rgb(255, 255, 255) 30%, rgb(215, 215, 215) 60%, rgb(116, 116, 116) 80%, rgb(35, 35, 35) 100%);
+
+ }
+
 #core_functions_wrapper li a
 {
     padding: 181px 180px 39px 171px;
@@ -66,10 +105,13 @@ header {
     position: absolute;
     color: white;
     cursor: pointer;
-    height: 200px;
-    bottom: -200px;
+    height: 190px;
+    bottom: -190px;
     transition: all 0.3s linear;
     background-color: rgba(0, 0, 0, 0.8);
+    font:13px 'Roboto-Regular';
+    text-align: center;
+    padding-top: 20px;
 }
 #core_functions_wrapper li .caption button {
     margin-top: 30px;
@@ -80,16 +122,29 @@ header {
 }
 
 /*Bootstrap Overriding*/
-
+.container{
+    font-family: 'Roboto-Regular';
+}
+.nav-tabs{
+    border:0;
+}
+.navbar{
+    margin-bottom: 0;
+    padding-top: 20px;
+}
 .nav>li>a {
-    padding: 10px 9px;
+    padding: 17px 9px 15px;
+    font-family: 'Roboto-Regular';
+}
+.nav>li{
+    border-bottom: 3px solid transparent;
 }
 .nav-tabs>li>a {
     color: #565354;
     border: 1px solid transparent;
 }
 .nav-tabs .active {
-    border-bottom: 2px solid #E53333;
+   border-bottom: 3px solid #E53333;
 }
 .nav-tabs>li.active>a {
     color: #E53333;
@@ -108,16 +163,13 @@ header {
     background-color: white;
     font-weight: bold;
 }
-/*main {
-    background-color: #F7F7F7;
-    margin-top: 10px;
-}*/
 .outerbox {
     background-color: #FAFAFA;
     border: 1px #e4e4e4 solid;
     padding: 20px;
-    border-radius: 4px;
+    border-radius: 1px;
     box-shadow: 0 0 6px #ccc;
+    margin: 20px 0;
 }
 .innerbox {
     background-color: #FFFFFF;
@@ -144,7 +196,7 @@ header {
     border: 1px #e4e4e4 solid;
     box-shadow: 0 0 6px #ccc;
     border-radius: 4px;
-    margin: 20px 80px;
+    margin: 20px 0px;
 }
 .CFS_container {
     background-color: #FFFFFF;
@@ -190,7 +242,7 @@ header {
     border: 1px #e4e4e4 solid;
     box-shadow: 0 0 6px #ccc;
     border-radius: 4px;
-    margin: 0px 80px;
+    margin: 0px;
 }
 .finance_second_box h4 {
     padding: 10px 20px;
@@ -243,9 +295,20 @@ th {
 }
 .search {
     background: url('../images/search_icon.png') no-repeat 98% 3px transparent !important;
-    line-height: 1.5;
+    line-height: 1.4;
     border: 1px solid #d2d2d2;
     padding: 3px 12px;
+    margin-left: 25px;
+    font-size: 13px;
+}
+.btn-sm{
+    line-height: 1.2;
+}
+h4{
+    font:16px 'Roboto-Medium';
+}
+#sideMenu a{
+    font:14px 'Roboto-Medium';
 }
 input[type="checkbox"]{
   width: 15px;
@@ -295,13 +358,13 @@ html, body {
 
 /* Wrapper for page content to push down footer */
 
-#wrap {
-    min-height: 100%;
-    height: auto;
-    /* Negative indent footer by its height */
-    margin: 0 auto -60px;
-    /* Pad bottom by footer height */
-    padding: 0 0 60px;
+#wrap{
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -51px;
+  /* Pad bottom by footer height */
+  padding: 0 0 51px;
 }
 
 /* Set the fixed height of the footer here */
@@ -309,6 +372,11 @@ footer {
     background-color: #171c1d;
 
     height: 60px;
+    margin: 0 !important;
+   
+}
+footer .container{
+    padding-top: 10px;
 }
 footer p {
     color: #878a8c;
@@ -316,11 +384,24 @@ footer p {
 footer a {
     color: #e8e9ec;
 }
-.list-group-item-success {
-    background-color: transparent;
+.thumbnail{
+    border-radius: 2px;
+}
+.list-group-item{
+    padding: 14px;
+}
+.list-group-item-success{
+  background-color: transparent;
 }
 .list-group-item-success:hover {
     background-color: #eaeaea;
+}
+#sideMenu .list-group div a{
+    font-size: 13px;
+    padding-left: 30px;
+}
+#sideMenu{
+    margin: 20px;
 }
 #sideMenu a {
     color: #231f20;
