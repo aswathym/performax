@@ -64,10 +64,13 @@ header {
 #header_user_bar {
     height: 50px;
 }
-
+#addAssessmentPopup .Editor-container {
+    margin-left: 24%;
+    width: 30%;
+}
 .Editor-container {
-    margin-left: 13%;
-    width: 200px;
+    margin-left: 33%;
+    width: 50%;
 }
 .Editor-editor {
     height: 120px;
@@ -124,9 +127,13 @@ background: linear-gradient(to bottom, rgb(255, 255, 255) 30%, rgb(215, 215, 215
 /*Bootstrap Overriding*/
 .container{
     font-family: 'Roboto-Regular';
+    font-size: 13px;
 }
 .nav-tabs{
     border:0;
+}
+#header_nav_tabs {
+    font-size: 13px;
 }
 .navbar{
     margin-bottom: 0;
@@ -543,10 +550,8 @@ h1{
     margin-top: 40px;
 }
 #updates_list span {
-    font-size: 13px;
 }
 #updates_list .posted_time {
     margin-top: 40px;
     font-family: 'Roboto-Regular';
-    font-size: 13px;
 }
