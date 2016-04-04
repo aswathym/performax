@@ -356,6 +356,7 @@ footer {
 }
 .spacer {
     margin: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 span.price:before {
     content: '$';
@@ -389,13 +390,15 @@ h1{
     margin-right: 5px;
 }
 #create_promo_code_form input {
-    width: 100%;
+    width: 60%;
 }
 #create_promo_code_form .calender {
+    width: 100%;
     background-size: 20px 20px;
     background-position: right top;
     background-image: url('../images/calender_icon.png');
     background-repeat: no-repeat;
+    border: 1px solid rgba(0, 0, 0, 0.3);
 }
 .promo_type_discount {
     margin-bottom: 15px;
