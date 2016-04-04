@@ -52,38 +52,44 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                <h4 class="modal-title" id="myModalLabel"><b>Add Assessment</b></h4>
+                                <h5 class="modal-title" id="myModalLabel"><b>Create Promo Code</b></h5>
                             </div>
                             <div class="modal-body container-fluid">
-                                <form class="" action="index.html" method="post">
-                                    <div class="col-md-9">
-                                        <div class="model_line">
-                                            <label for="" class="col-md-5">Assessment Name</label>
-                                            <input type="text" name="name" value="">
-                                        </div>
-                                        <div class="model_line">
-                                            <label for="" class="col-md-5">Assessment Type</label>
-                                            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Large button <span class="caret"></span>
+                                <form class="" action="index.html" method="post" id="create_promo_code_form">
+                                    <h5><b>Set Validity of Promo Code</b></h5>
+                                    <div class="">
+                                        <span class="col-md-3"> Start Date: </span>
+                                        <span class="col-md-3"> <input type="text" class="calender" name="name" value=""></span>
+                                        <span class="col-md-3"> Duration: </span>
+                                        <span class="col-md-3"> <input type="text" name="name" value=""> Weeks</span>
+                                    </div>
+                                    <h5><b>Set Validity of access to assessment</b></h5>
+                                    <div class="">
+                                        <span class="col-md-3"> Start Date: </span>
+                                        <span class="col-md-3"> <input type="text" class="calender" name="name" value=""></span>
+                                        <span class="col-md-3"> Duration: </span>
+                                        <span class="col-md-3"> <input type="text" name="name" value=""> Weeks</span>
+                                    </div>
+                                    <h5><b>Select Percentage of Discount of Type of Discount</b></h5>
+                                    <div class="">
+                                        <div class="btn-group col-md-12 promo_type_discount">
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                2 Weeks Free Trial <span class="caret"></span>
                                             </button>
-                                            <!-- <ul class="dropdown-menu">
-                                                <li><a href="#">Action</a></li>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">2 Weeks Free Trial</a></li>
                                                 <li><a href="#">Another action</a></li>
                                                 <li><a href="#">Something else here</a></li>
                                                 <li role="separator" class="divider"></li>
                                                 <li><a href="#">Separated link</a></li>
-                                            </ul> -->
-                                        </div>
-                                        <div class="model_line">
-                                            <label for="" class="col-md-5">Description</label>
-                                            <div class="" id="textAreaPopup"></div>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <div class="col-md-3 thumbnail">
-                                        <img src="../images/core_fnc_bg.jpg" alt="" />
-                                    </div>
-                                    <div class="" style="text-align: center">
-                                        <a href="#">Add Picture</a>
+                                    <h5><b>No of Times the Code can be used</b></h5>
+                                    <div class="">
+                                        <span class="col-md-3"><i class="fa fa-check-circle fa-2x"></i> <b>Once</b> </span>
+                                        <span class="col-md-5"><i class="fa fa-circle fa-2x"></i> Enter Specific Number </span>
+                                        <span class="col-md-3"> <input type="text" name="name" placeholder="Enter number" value=""></span>
                                     </div>
                                 </form>
                             </div>
@@ -167,4 +173,16 @@
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <div class="container">
+            <p class="pull-left">&copy; 2016 Performax Inc. All Rights Reserved</p>
+            <a href="#" class="pull-right">Help</a>
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/editor.js" charset="utf-8"></script>
+    <script src="js/script.js"></script>
 </body>
+
+</html>

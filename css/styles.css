@@ -1,17 +1,20 @@
 /*Body Section*/
+
 body {
     padding: 0;
     background-color: #F7F7F7;
 }
+
 /*Header Section*/
+
 header {
     background-color: white;
-    box-shadow: 0px 2px 10px 1px rgba(125,125,125,0.5);
+    box-shadow: 0px 2px 10px 1px rgba(125, 125, 125, 0.5);
 }
 .box-shadow-styling {
     background-color: white;
     margin-top: 20px;
-    box-shadow: 0px 2px 10px 1px rgba(125,125,125,0.5);
+    box-shadow: 0px 2px 10px 1px rgba(125, 125, 125, 0.5);
     padding-top: 10px;
 }
 .btn-info {
@@ -28,24 +31,24 @@ header {
 .Editor-editor {
     height: 120px;
 }
-#header_user_bar .wrapper{
+#header_user_bar .wrapper {
     padding: 5px 20px;
     line-height: 3;
 }
 #header_user_bar .wrapper i {
     margin-left: 5px;
 }
- #header_menu_bar {
-     border-top: 1px solid rgba(125,125,125,0.5);
-     height: 54px;
-     padding-top: 10px;
- }
- #core_functions_wrapper li {
-     text-align: center;
-     overflow: hidden;
-     padding: 0px;
- }
-#core_functions_wrapper li .image_container  {
+#header_menu_bar {
+    border-top: 1px solid rgba(125, 125, 125, 0.5);
+    height: 54px;
+    padding-top: 10px;
+}
+#core_functions_wrapper li {
+    text-align: center;
+    overflow: hidden;
+    padding: 0px;
+}
+#core_functions_wrapper li .image_container {
     height: 200px;
     background-image: url('../images/core_fnc_bg.jpg');
     background-position: center center;
@@ -62,14 +65,16 @@ header {
     transition: all 0.3s linear;
     background-color: rgba(0, 0, 0, 0.8);
 }
-#core_functions_wrapper li  .caption button {
+#core_functions_wrapper li .caption button {
     margin-top: 30px;
 }
 #core_functions_wrapper li:hover .caption {
     /*height: 200px;*/
     bottom: 0px;
 }
+
 /*Bootstrap Overriding*/
+
 .nav>li>a {
     padding: 10px 9px;
 }
@@ -130,47 +135,49 @@ main {
     border: 1px solid #d2d2d2;
     padding: 3px 12px;
 }
+
 /* Sticky footer styles
 -------------------------------------------------- */
 
-html,
-body {
-  height: 100%;
-  /* The html and body elements cannot have any padding or margin. */
+html, body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
 }
 
 /* Wrapper for page content to push down footer */
-#wrap{
-  min-height: 100%;
-  height: auto;
-  /* Negative indent footer by its height */
-  margin: 0 auto -60px;
-  /* Pad bottom by footer height */
-  padding: 0 0 60px;
+
+#wrap {
+    min-height: 100%;
+    height: auto;
+    /* Negative indent footer by its height */
+    margin: 0 auto -60px;
+    /* Pad bottom by footer height */
+    padding: 0 0 60px;
 }
 
 /* Set the fixed height of the footer here */
-footer{
-    background-color:#171c1d;
+
+footer {
+    background-color: #171c1d;
     height: 60px;
 }
-footer p{
+footer p {
     color: #878a8c;
 }
-footer a{
+footer a {
     color: #e8e9ec;
 }
-.list-group-item-success{
+.list-group-item-success {
     background-color: transparent;
 }
-.list-group-item-success:hover{
+.list-group-item-success:hover {
     background-color: #eaeaea;
 }
-#sideMenu a{
+#sideMenu a {
     color: #231f20;
     border-radius: 0;
 }
-#sideMenu > .list-group > a{
+#sideMenu > .list-group > a {
     font-weight: bold;
 }
 #sideMenu .panel {
@@ -179,47 +186,75 @@ footer a{
 .modal-body .model_line {
     margin-bottom: 10px;
 }
-.modal-body .model_line label{
+.modal-body .model_line label {
     font-size: 14px;
     font-weight: 100;
 }
-.list-group > div > a{
+.list-group > div > a {
     background-color: #eee;
 }
-#sideMenu,.box{
-    -webkit-box-shadow: 2px 3px 5px 0px rgba(236,236,236,1);
-    -moz-box-shadow: 2px 3px 5px 0px rgba(236,236,236,1);
-    box-shadow: 2px 3px 5px 0px rgba(236,236,236,1);
+#sideMenu, .box {
+    -webkit-box-shadow: 2px 3px 5px 0px rgba(236, 236, 236, 1);
+    -moz-box-shadow: 2px 3px 5px 0px rgba(236, 236, 236, 1);
+    box-shadow: 2px 3px 5px 0px rgba(236, 236, 236, 1);
     background-color: #fff;
 }
 #asssessment_pricing_list {
     margin-top: 20px;
     margin-bottom: 50px;
 }
-#asssessment_pricing_list .icon i{
+#asssessment_pricing_list .icon i {
     cursor: pointer;
     transition: all 0.3s linear;
 }
 #asssessment_pricing_list .icon i:hover {
     color: red;
 }
-footer{
+footer {
     padding: 20px 0 15px;
 }
+
 /* add on and services styles */
-#add-ons .innerbox{
-    margin:25px 0;
+
+#add-ons .innerbox {
+    margin: 25px 0;
+}
+.service-img {
+    border: 1px solid #ccc;
+}
+.spacer {
+    margin: 10px 0;
+}
+span.price:before {
+    content: '$';
+}
+.modal-body label:after {
+    content: ':';
 }
 
-.service-img{
-    border:1px solid #ccc;
+/*Promo codes page*/
+
+#create_promo_code_form h5 {
+    color: rgba(0, 0, 0, 0.7);
+    ;
 }
-.spacer{
-    margin:10px 0;
+#create_promo_code_form i {
+    color: #09A6D0;
+    margin-right: 5px;
 }
-span.price:before{
-    content:'$';
+#create_promo_code_form input {
+    width: 100%;
 }
-.modal-body label:after{
-    content: ':';
+#create_promo_code_form .calender {
+    background-size: 20px 20px;
+    background-position: right top;
+    background-image: url('../images/calender_icon.png');
+    background-repeat: no-repeat;
+}
+.promo_type_discount {
+    margin-bottom: 15px;
+    left: 25%;
+}
+#asssessment_pricing_list li {
+    padding: 15px 20px;
 }
