@@ -3,13 +3,16 @@ body {
     padding: 0;
     background-color: #F7F7F7;
 }
-.uniq_padding {
-    padding: 0px 100px;
-}
 /*Header Section*/
 header {
     background-color: white;
     box-shadow: 0px 2px 10px 1px rgba(125,125,125,0.5);
+}
+.box-shadow-styling {
+    background-color: white;
+    margin-top: 20px;
+    box-shadow: 0px 2px 10px 1px rgba(125,125,125,0.5);
+    padding-top: 10px;
 }
 #header_user_bar {
     height: 50px;
@@ -57,7 +60,7 @@ header {
 }
 /*Bootstrap Overriding*/
 .nav>li>a {
-    padding: 10px 10px;
+    padding: 10px 9px;
 }
 .nav-tabs>li>a {
     color: #565354;
@@ -116,8 +119,29 @@ main {
     border: 1px solid #d2d2d2;
     padding: 3px 12px;
 }
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap{
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
 footer{
     background-color:#171c1d;
+    height: 60px;
 }
 footer p{
     color: #878a8c;
@@ -155,4 +179,18 @@ footer a{
     -webkit-box-shadow: 2px 3px 5px 0px rgba(236,236,236,1);
     -moz-box-shadow: 2px 3px 5px 0px rgba(236,236,236,1);
     box-shadow: 2px 3px 5px 0px rgba(236,236,236,1);
+}
+#asssessment_pricing_list {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+#asssessment_pricing_list .icon i{
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+#asssessment_pricing_list .icon i:hover {
+    color: red;
+}
+footer{
+    padding: 20px 0 15px;
 }
