@@ -14,8 +14,19 @@ header {
     box-shadow: 0px 2px 10px 1px rgba(125,125,125,0.5);
     padding-top: 10px;
 }
+.btn-info {
+    background-color: #2C88CE;
+    border-color: #1072bd;
+}
 #header_user_bar {
     height: 50px;
+}
+.Editor-container {
+    margin-left: 13%;
+    width: 200px;
+}
+.Editor-editor {
+    height: 120px;
 }
 #header_user_bar .wrapper{
     padding: 5px 20px;

@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Performax</title>
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/editor.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -28,11 +29,11 @@
                         <ul class="nav nav-tabs">
                             <li role="presentation" class="active"><a href="#assessments" aria-controls="assessments" role="tab" data-toggle="tab">Assessments</a></li>
                             <li role="presentation"><a href="#cfs" aria-controls="cfs" role="tab" data-toggle="tab">CFS's</a></li>
-                            <li role="presentation"><a href="#pricing" aria-controls="pricing" role="tab" data-toggle="tab">Pricing</a></li>
-                            <li role="presentation"><a href="#addon" aria-controls="addon" role="tab" data-toggle="tab">Add-ons & Services</a></li>
+                            <li role="presentation"><a href="pricing.html">Pricing</a></li>
+                            <li role="presentation"><a href="addons-services.html">Add-ons & Services</a></li>
                             <li role="presentation"><a href="#manage_home" aria-controls="manage_home" role="tab" data-toggle="tab">Manage Home</a></li>
-                            <li role="presentation"><a href="#promo_codes" aria-controls="promo_codes" role="tab" data-toggle="tab">Promo Codes</a></li>
-                            <li role="presentation"><a href="#sales_reports" aria-controls="sales_reports" role="tab" data-toggle="tab">Sales Reports</a></li>
+                            <li role="presentation"><a href="promo_codes.html">Promo Codes</a></li>
+                            <li role="presentation"><a href="sales_reports.html">Sales Reports</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -58,23 +59,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="modal fade" id="myModal" role="dialog">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        <h4 class="modal-title">Modal Header</h4>
-                                    </div>
-                                    <div class="modal-body">
-                                        <p>Some text in the modal</p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
                         <div class="col-md-9 section_search_assessment" style="margin-top: 20px; margin-bottom: 20px;">
                             <div>
                                 <b class="pull-left">Core Functions</b>
@@ -85,7 +69,6 @@
                             </div>
                             <div class="modal fade" id="addAssessmentPopup" role="dialog">
                                 <div class="modal-dialog">
-
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -111,9 +94,9 @@
                                                             <li><a href="#">Separated link</a></li>
                                                         </ul> -->
                                                     </div>
-                                                    <div class="model_line">
+                                                    <div class="model_line container">
                                                         <label for="" class="col-md-5">Description</label>
-                                                        <textarea name="name" rows="5" cols="15"></textarea>
+                                                        <div class="" id="textAreaPopup"></div>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3 thumbnail">
@@ -129,7 +112,6 @@
                                             <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -199,76 +181,14 @@
             <div class="container tab-pane box-shadow-styling" role="tabpanel" id="cfs">
                 <img src="images/under_construction.jpeg" alt="" style="width:auto; height:800px;"/>
             </div>
-            <div class="container tab-pane box-shadow-styling" role="tabpanel" id="pricing">
-                <div class="container" style="margin-bottom: 20px;">
-                    <b>Assessment Pricing</b>
-                </div>
-                <div class="container" style="color:grey;">
-                    <span class="">Minimum No of Users : <b style="color:black;">50</b></span>
-                    <span class="col-md-offset-1">Minimum Duration : <b style="color:black;">12 months</b></span>
-                </div>
-                <div class="container">
-                    <ul id="asssessment_pricing_list" class=" container col-md-12 list-group">
-                        <li class="container-fluid list-group-item">
-                            <span class="col-md-2">
-                                <div class=""><b>User Plan 1</b></div>
-                                <div class="">Plan Name</div>
-                            </span>
-                            <span class="col-md-2">
-                                <div class=""><b>50</b></div>
-                                <div class="">No of Users</div>
-                            </span>
-                            <span class="col-md-2">
-                                <div class=""><b>$9.95</b></div>
-                                <div class="">Price / User / Month</div>
-                            </span>
-                            <span class="col-md-2">
-                                <div class=""><b>$5970</b></div>
-                                <div class="">Total</div>
-                            </span>
-                            <span class="col-md-2 text-center icon">
-                                <i class="fa fa-pencil fa-2x"></i>
-                            </span>
-                            <span class="col-md-2 text-center icon">
-                                <i class="fa fa-shopping-basket fa-2x"></i>
-                            </span>
-                        </li>
-                        <li class="container-fluid list-group-item">
-                            <span class="col-md-2">
-                                <div class=""><b>Add more Users</b></div>
-                                <div class="">Plan Name</div>
-                            </span>
-                            <span class="col-md-2">
-                                <div class=""><b>Customizable</b></div>
-                                <div class="">No of Users</div>
-                            </span>
-                            <span class="col-md-2">
-                                <div class=""><b>$9.95</b></div>
-                                <div class="">Price / User / Month</div>
-                            </span>
-                            <span class="col-md-2">
-                                <div class=""><b>-</b></div>
-                                <div class="">Total</div>
-                            </span>
-                            <span class="col-md-2 text-center icon">
-                                <i class="fa fa-pencil fa-2x"></i>
-                            </span>
-                            <span class="col-md-2 text-center icon">
-                                <i class="fa fa-shopping-basket fa-2x"></i>
-                            </span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+
             <div class="container tab-pane" role="tabpanel" id="addon">
                 <img src="images/under_construction.jpeg" alt="" style="width:auto; height:800px;"/>
             </div>
             <div class="container tab-pane" role="tabpanel" id="manage_home">
                 <img src="images/under_construction.jpeg" alt="" style="width:auto; height:800px;"/>
             </div>
-            <div class="container tab-pane" role="tabpanel" id="promo_codes">
-                <img src="images/under_construction.jpeg" alt="" style="width:auto; height:800px;"/>
-            </div>
+
             <div class="container tab-pane" role="tabpanel" id="sales_reports">
                 <img src="images/under_construction.jpeg" alt="" style="width:auto; height:800px;"/>
             </div>
@@ -280,8 +200,10 @@
             <a href="#" class="pull-right">Help</a>
         </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/editor.js" charset="utf-8"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
