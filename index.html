@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Performax | Assessments</title>
+    <title>Performax</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/editor.css" media="screen" title="no title" charset="utf-8">
@@ -15,27 +15,26 @@
 <body>
     <div id="wrap">
         <header>
-            <div class="container-fluid">
-
-                <div id="header_user_bar" class="container">
+            <div class="container">
+                <div id="header_user_bar">
                     <span class="wrapper pull-right">
-                          <span class="glyphicon glyphicon-search"></span> Welcome <b>Admin</b><i class="fa fa-sort-desc"></i>
+                      <span class="glyphicon glyphicon-search"></span> Welcome <b>Admin</b><i class="fa fa-sort-desc"></i>
                     </span>
                 </div>
-
                 <div id="header_menu_bar">
-                    <div class="container">
-                        <h1 class="col-md-4">
-                             Performax 360
-                             <a href="#"><img src="images/performax.png" alt="Performax" /> </a>
-                        </h1>
+
+                    <h1 class="col-md-4">
+                         Performax 360
+                         <a href="#"><img src="images/performax.png" alt="Performax" /> </a>
+                    </h1>
+
                     <nav class="navbar col-md-8" id="header_nav_tabs">
                         <ul class="nav nav-tabs">
                             <li role="presentation" class="active"><a href="#assessments" aria-controls="assessments" role="tab" data-toggle="tab">Assessments</a></li>
-                            <li role="presentation"><a href="CFS.html">CFS's</a></li>
+                            <li role="presentation"><a href="#cfs" aria-controls="cfs" role="tab" data-toggle="tab">CFS's</a></li>
                             <li role="presentation"><a href="pricing.html">Pricing</a></li>
-                            <li role="presentation"><a href="addons-services.html">Add-ons & Services</a></li>
-                            <li role="presentation"><a href="manage_home.html" aria-controls="manage_home" role="tab" data-toggle="tab">Manage Home</a></li>
+                            <li role="presentation"><a href="addons_services.html">Add-ons & Services</a></li>
+                            <li role="presentation"><a href="manage_home.html">Manage Home</a></li>
                             <li role="presentation"><a href="promo_codes.html">Promo Codes</a></li>
                             <li role="presentation"><a href="sales_reports.html">Sales Reports</a></li>
                         </ul>
@@ -65,9 +64,9 @@
                         </div>
                         <div class="col-md-9 section_search_assessment" style="margin-top: 20px; margin-bottom: 20px;">
                             <div>
-                                <h4 class="pull-left">Core Functions</h4>
+                                <b class="pull-left">Core Functions</b>
                                 <span class="pull-right">
-                                    <button type="button" class="btn btn-info btn-primary btn-sm" data-toggle="modal" data-target="#addAssessmentPopup">Add Assessment</button>
+                                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#addAssessmentPopup">Add Assessment</button>
                                     <input type="text" name="name" value="" placeholder="Search" class="search">
                                 </span>
                             </div>
@@ -80,7 +79,7 @@
                                             <h4 class="modal-title" id="myModalLabel"><b>Add Assessment</b></h4>
                                         </div>
                                         <div class="modal-body container-fluid">
-                                            <form class="" action="" method="post">
+                                            <form class="" action="index.html" method="post">
                                                 <div class="col-md-9">
                                                     <div class="model_line">
                                                         <label for="" class="col-md-5">Assessment Name</label>
@@ -105,7 +104,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-3 thumbnail">
-                                                    <img src="images/core_fnc_bg.jpg" alt="" />
+                                                    <img src="../images/core_fnc_bg.jpg" alt="" />
                                                 </div>
                                                 <div class="" style="text-align: center">
                                                     <a href="#">Add Picture</a>
@@ -123,67 +122,58 @@
                         <div class="col-md-9 container">
                             <ul id="core_functions_wrapper">
                                 <li class="thumbnail col-md-3">
-                                    <h4>Finance & Accounting</h4>
-                                    <img src="images/sales&marketing.png">
-                                    <div class="caption col-md-12">
-                                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                                        <button type="button" class="btn btn-danger" name="button">Delete</button>
-
-                                    </div>
-                                </li>
-                                <li class="thumbnail col-md-3 col-md-offset-1">
-                                    <h4>Sales & Marketing</h4>
-                                    <img src="images/sales&marketing.png">
-                                    <div class="caption col-md-12">
-                                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+                                    <h4>Heading</h4>
+                                    <div class="image_container"></div>
+                                    <div class="caption col-md-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         <button type="button" class="btn btn-danger" name="button">Delete</button>
                                     </div>
                                 </li>
                                 <li class="thumbnail col-md-3 col-md-offset-1">
-                                    <h4>Strategy & Planning</h4>
-                                    <img src="images/strategy&planning.png">
-                                    <div class="caption col-md-12">
-                                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+                                    <h4>Heading</h4>
+                                    <div class="image_container"></div>
+                                    <div class="caption col-md-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                    </div>
+                                </li>
+                                <li class="thumbnail col-md-3 col-md-offset-1">
+                                    <h4>Heading</h4>
+                                    <div class="image_container"></div>
+                                    <div class="caption col-md-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         <button type="button" class="btn btn-danger" name="button">Delete</button>
                                     </div>
                                 </li>
                                 <li class="thumbnail col-md-3">
-                                    <h4>Finance & Accounting</h4>
-                                    <img src="images/sales&marketing.png">
-                                    <div class="caption col-md-12">
-                                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+                                    <h4>Heading</h4>
+                                    <div class="image_container"></div>
+                                    <div class="caption col-md-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         <button type="button" class="btn btn-danger" name="button">Delete</button>
                                     </div>
                                 </li>
                                 <li class="thumbnail col-md-3 col-md-offset-1">
-                                    <h4>Sales & Marketing</h4>
-                                    <img src="images/sales&marketing.png">
-                                    <div class="caption col-md-12">
-                                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+                                    <h4>Heading</h4>
+                                    <div class="image_container"></div>
+                                    <div class="caption col-md-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         <button type="button" class="btn btn-danger" name="button">Delete</button>
                                     </div>
                                 </li>
                                 <li class="thumbnail col-md-3 col-md-offset-1">
-                                    <h4>Strategy & Planning</h4>
-                                    <img src="images/strategy&planning.png">
-                                    <div class="caption col-md-12">
-                                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+                                    <h4>Heading</h4>
+                                    <div class="image_container"></div>
+                                    <div class="caption col-md-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         <button type="button" class="btn btn-danger" name="button">Delete</button>
                                     </div>
                                 </li>
                                 <li class="thumbnail col-md-3">
-                                    <h4>Finance & Accounting</h4>
-                                    <img src="images/sales&marketing.png">
-                                    <div class="caption col-md-12">
-                                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+                                    <h4>Heading</h4>
+                                    <div class="image_container"></div>
+                                    <div class="caption col-md-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         <button type="button" class="btn btn-danger" name="button">Delete</button>
                                     </div>
                                 </li>
                                 <li class="thumbnail col-md-3 col-md-offset-1">
-                                    <h4>Sales & Marketing</h4>
-                                    <img src="images/sales&marketing.png">
-                                    <div class="caption col-md-12">
-                                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+                                    <h4>Heading</h4>
+                                    <div class="image_container"></div>
+                                    <div class="caption col-md-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                         <button type="button" class="btn btn-danger" name="button">Delete</button>
                                     </div>
                                 </li>
@@ -193,17 +183,17 @@
                 </div>
             </div>
         </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p class="pull-left">&copy; 2016 Performax Inc. All Rights Reserved</p>
+            <a href="#" class="pull-right">Help</a>
         </div>
-        <footer class="footer">
-            <div class="container">
-                <p class="pull-left">&copy; 2016 Performax Inc. All Rights Reserved</p>
-                <a href="#" class="pull-right">Help</a>
-            </div>
-        </footer>
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/editor.js" charset="utf-8"></script>
-        <script src="js/script.js"></script>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/editor.js" charset="utf-8"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

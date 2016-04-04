@@ -373,7 +373,7 @@ footer {
 
     height: 60px;
     margin: 0 !important;
-   
+
 }
 footer .container{
     padding-top: 10px;
@@ -454,6 +454,7 @@ footer {
 }
 .spacer {
     margin: 10px 0;
+    padding: 10px 0px 20px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 span.price:before {
@@ -515,4 +516,37 @@ h1{
     display: inline-block;
     position: absolute;
     right: 147px;
+}
+
+/*Manage Home Page*/
+#manage-home h5 {
+    padding: 10px 20px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+#manage_history_list b{
+    display: block;
+}
+#manage_history_list .header {
+    margin-bottom: 10px;
+}
+#add_new_testimonial_form {
+    margin-bottom: 20px;
+}
+#add_new_testimonial_form .form_line{
+    margin-top: 15px;
+}
+#add_new_testimonial_form label {
+    font-weight: 100;
+}
+#updates_list .edit_icon{
+    margin-top: 40px;
+}
+#updates_list span {
+    font-size: 13px;
+}
+#updates_list .posted_time {
+    margin-top: 40px;
+    font-family: 'Roboto-Regular';
+    font-size: 13px;
 }
