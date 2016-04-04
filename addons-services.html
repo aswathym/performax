@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Performax</title>
+    <title>Performax | Add ons and Services</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -13,34 +13,32 @@
 
 <body>
     <header>
-        <div class="container">
-                <div id="header_user_bar" >
+        <div id="header_user_bar" class="uniq_padding">
             <span class="wrapper pull-right">
                   <span class="glyphicon glyphicon-search"></span> Welcome <b>Admin</b><i class="fa fa-sort-desc"></i>
             </span>
-            </div>
-            <div id="header_menu_bar" >
-                <h4 class="col-md-4">
-                     <a href="#"> Performax Logo</a>
-                </h4>
-                <nav class="navbar col-md-8" id="header_nav_tabs">
-                    <ul class="nav nav-tabs">
-                        <li role="presentation" class="active"><a href="#assessments" aria-controls="assessments" role="tab" data-toggle="tab">Assessments</a></li>
-                        <li role="presentation"><a href="#cfs" aria-controls="cfs" role="tab" data-toggle="tab">CFS's</a></li>
-                        <li role="presentation"><a href="#pricing" aria-controls="pricing" role="tab" data-toggle="tab">Pricing</a></li>
-                        <li role="presentation"><a href="#">Add-ons & Services</a></li>
-                        <li role="presentation"><a href="#">Manage Home</a></li>
-                        <li role="presentation"><a href="#">Promo Codes</a></li>
-                        <li role="presentation"><a href="#">Sales Reports</a></li>
-                    </ul>
-                </nav>
-            </div>
         </div>
-
+        <div id="header_menu_bar" class="uniq_padding">
+            <h4 class="col-md-4">
+                 <a href="#"> Performax Logo</a>
+            </h4>
+            <nav class="navbar col-md-8" id="header_nav_tabs">
+                <ul class="nav nav-tabs">
+                    <li role="presentation"><a href="#assessments" aria-controls="assessments" role="tab" data-toggle="tab">Assessments</a></li>
+                    <li role="presentation"><a href="#cfs" aria-controls="cfs" role="tab" data-toggle="tab">CFS's</a></li>
+                    <li role="presentation"><a href="#pricing" aria-controls="pricing" role="tab" data-toggle="tab">Pricing</a></li>
+                    <li role="presentation" class="active"><a href="#">Add-ons & Services</a></li>
+                    <li role="presentation"><a href="#">Manage Home</a></li>
+                    <li role="presentation"><a href="#">Promo Codes</a></li>
+                    <li role="presentation"><a href="#">Sales Reports</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main class="tab-content">
-        <div class="container tab-pane active" role="tabpanel" id="assessments">
-           <div class="outerbox">
+        <div class="container-fluid tab-pane active" role="tabpanel" id="assessments">
+            <div class="col-md-1"></div>
+            <div class="col-md-10 outerbox">
                 <h4>Assessments</h4>
                 <div class="innerbox container-fluid">
                     <div class="col-md-3">
@@ -195,19 +193,19 @@
                 </div>
             </div>
         </div>
-        <div class="container tab-pane" role="tabpanel" id="cfs">
+        <div class="container-fluid tab-pane" role="tabpanel" id="cfs">
             CFS
         </div>
-        <div class="container tab-pane" role="tabpanel" id="pricing">
+        <div class="container-fluid tab-pane" role="tabpanel" id="pricing">
             Pricing
         </div>
-        <div class="container tab-pane" role="tabpanel" id="addon">
+        <div class="container-fluid tab-pane" role="tabpanel" id="addon">
             Pricing
         </div>
         </div>
     </main>
     <footer class="footer">
-        <div class="container">
+        <div class="container-fluid uniq_padding">
             <p class="pull-left">&copy; 2016 Performax Inc. All Rights Reserved</p>
             <a href="#" class="pull-right">Help</a>
         </div>

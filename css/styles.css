@@ -3,9 +3,6 @@ body {
     padding: 0;
     background-color: #F7F7F7;
 }
-.uniq_padding {
-    padding: 0px 100px;
-}
 /*Header Section*/
 header {
     background-color: white;
@@ -155,4 +152,7 @@ footer a{
     -webkit-box-shadow: 2px 3px 5px 0px rgba(236,236,236,1);
     -moz-box-shadow: 2px 3px 5px 0px rgba(236,236,236,1);
     box-shadow: 2px 3px 5px 0px rgba(236,236,236,1);
+}
+footer{
+    padding: 20px 0 15px;
 }
