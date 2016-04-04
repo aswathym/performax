@@ -526,6 +526,10 @@ h1{
 }
 
 /*Manage Home Page*/
+
+#manage-home  .add_new_testimonial_header {
+    width: 90%;
+}
 #manage-home h5 {
     padding: 10px 20px;
     width: 100%;
@@ -554,4 +558,11 @@ h1{
 #updates_list .posted_time {
     margin-top: 40px;
     font-family: 'Roboto-Regular';
+}
+#createNewUpdate .calender {
+    background-size: 20px 20px;
+    background-position: right top;
+    background-image: url('../images/calender_icon.png');
+    background-repeat: no-repeat;
+    border: 1px solid rgba(0, 0, 0, 0.3);
 }
