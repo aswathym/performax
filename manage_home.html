@@ -9,6 +9,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/editor.css">
 </head>
 
 <body>
@@ -152,8 +153,47 @@
             </div>
             <div class="col-md-12">
                 <h5 class="container"> <b>Updates</b>
-                    <button type="button" class="btn btn-info btn-sm pull-right" name="button">New Update</button>
+                    <button type="button" class="btn btn-info btn-sm pull-right" name="button"  data-toggle="modal" data-target="#createNewUpdate">New Update</button>
                 </h5>
+                <div class="modal fade" id="createNewUpdate" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel"><b>Create New Add-on</b></h4>
+                            </div>
+                            <div class="modal-body container-fluid">
+                                <form class="" action="" method="post">
+                                    <div class="col-md-9">
+                                        <div class="model_line col-md-12">
+                                            <label for="" class="col-md-4">Description</label>
+                                            <div  class="col-md-offset-4" id="textAreaPopup"></div>
+                                        </div>
+                                        <div class="model_line col-md-12">
+                                            <label for="" class="col-md-4">Date</label>
+                                            <input type="text" name="name"  class="col-md-6" value="">
+                                        </div>
+                                        <div class="model_line col-md-12">
+                                            <label for="" class="col-md-4">Time</label>
+                                            <input type="text"  class="col-md-6" name="name" value="">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 thumbnail">
+                                        <img src="../images/core_fnc_bg.jpg" alt="" />
+                                    </div>
+                                    <div class="" style="text-align: center">
+                                        <a href="#">Add Picture</a>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer text-center">
+                                <button type="button" class="btn btn-primary">Update</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
                 <div class="">
                     <ul class="list-group" id="updates_list">
                         <li class="list-group-item container col-md-12">
@@ -205,6 +245,8 @@
     </footer>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/editor.js" charset="utf-8"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
