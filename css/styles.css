@@ -47,9 +47,9 @@ header {
 .navbar{
     padding-right: 0;
 }
-.nav{
+/*.nav{
     float: right;
-}
+}*/
 .box-shadow-styling {
     background-color: white;
     margin-top: 20px;
@@ -145,6 +145,7 @@ background: linear-gradient(to bottom, rgb(255, 255, 255) 30%, rgb(215, 215, 215
 }
 .nav>li{
     border-bottom: 3px solid transparent;
+    margin-bottom: -3px;
 }
 .nav-tabs>li>a {
     color: #565354;
