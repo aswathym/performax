@@ -14,7 +14,7 @@
 <body>
     <header>
         <div id="header_user_bar" class="uniq_padding">
-            <span class="wrapper">
+            <span class="wrapper pull-right">
                   <span class="glyphicon glyphicon-search"></span> Welcome <b>Admin</b><i class="fa fa-sort-desc"></i>
             </span>
         </div>
@@ -22,12 +22,12 @@
             <h4 class="col-md-4">
                  <a href="#"> Performax Logo</a>
             </h4>
-            <nav class="navbar col-md-8">
-                <ul class="nav nav-pills">
-                    <li role="presentation" class="active"><a href="#something">Assessments</a></li>
-                    <li role="presentation"><a href="#something_Else">CFS's</a></li>
-                    <li role="presentation"><a href="#">Pricing</a></li>
-                    <li role="presentation"><a href="#">Add-ons & Services</a></li>
+            <nav class="navbar col-md-8" id="header_nav_tabs">
+                <ul class="nav nav-tabs">
+                    <li role="presentation" class="active"><a href="#assessments" aria-controls="assessments" role="tab" data-toggle="tab">Assessments</a></li>
+                    <li role="presentation"><a href="#cfs" aria-controls="cfs" role="tab" data-toggle="tab">CFS's</a></li>
+                    <li role="presentation"><a href="#pricing" aria-controls="pricing" role="tab" data-toggle="tab">Pricing</a></li>
+                    <li role="presentation"><a href="#addon" aria-controls="addon" role="tab" data-toggle="tab">Add-ons & Services</a></li>
                     <li role="presentation"><a href="#">Manage Home</a></li>
                     <li role="presentation"><a href="#">Promo Codes</a></li>
                     <li role="presentation"><a href="#">Sales Reports</a></li>
@@ -35,12 +35,12 @@
             </nav>
         </div>
     </header>
-    <main>
-        <div class="container-fluid">
+    <main class="tab-content">
+        <div class="container-fluid tab-pane active" role="tabpanel" id="assessments">
             <div class="col-md-1"></div>
             <div class="col-md-10 outerbox">
                 <h4>Assessments</h4>
-                <div class="innerbox">
+                <div class="innerbox container-fluid">
                     <div class="col-md-3">
                         <div id="sideMenu">
                             <div class="list-group panel">
@@ -55,14 +55,126 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-9">
-                        <b>Core Functions</b>
-                        <button type="button" name="button" id="add_assessments" class="btn btn-primary">Add Assessments</button>
-                        <input type="text" name="name" value="" placeholder="Search" class="search">
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Modal Header</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Some text in the modal.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-9 section_search_assessment" style="margin-top: 20px; margin-bottom: 20px;">
+                        <div>
+                            <b class="pull-left">Core Functions</b>
+                            <span class="pull-right">
+                                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#addAssessmentPopup">Add Assessment</button>
+                                <input type="text" name="name" value="" placeholder="Search" class="search">
+                            </span>
+                        </div>
+                        <div class="modal fade" id="addAssessmentPopup" role="dialog">
+                            <div class="modal-dialog">
+
+                                <!-- Modal content-->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel"><b>Add Assessment</b></h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Some text in the modal.</p>
+                                    </div>
+                                    <div class="modal-footer text-center">
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 container">
+                        <ul id="core_functions_wrapper">
+                            <li class="thumbnail col-md-3">
+                                <h4>Heading</h4>
+                                <div class="image_container"></div>
+                                <div class="caption col-md-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                </div>
+                            </li>
+                            <li class="thumbnail col-md-3 col-md-offset-1">
+                                <h4>Heading</h4>
+                                <div class="image_container"></div>
+                                <div class="caption col-md-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                </div>
+                            </li>
+                            <li class="thumbnail col-md-3 col-md-offset-1">
+                                <h4>Heading</h4>
+                                <div class="image_container"></div>
+                                <div class="caption col-md-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                </div>
+                            </li>
+                            <li class="thumbnail col-md-3">
+                                <h4>Heading</h4>
+                                <div class="image_container"></div>
+                                <div class="caption col-md-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                </div>
+                            </li>
+                            <li class="thumbnail col-md-3 col-md-offset-1">
+                                <h4>Heading</h4>
+                                <div class="image_container"></div>
+                                <div class="caption col-md-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                </div>
+                            </li>
+                            <li class="thumbnail col-md-3 col-md-offset-1">
+                                <h4>Heading</h4>
+                                <div class="image_container"></div>
+                                <div class="caption col-md-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                </div>
+                            </li>
+                            <li class="thumbnail col-md-3">
+                                <h4>Heading</h4>
+                                <div class="image_container"></div>
+                                <div class="caption col-md-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                </div>
+                            </li>
+                            <li class="thumbnail col-md-3 col-md-offset-1">
+                                <h4>Heading</h4>
+                                <div class="image_container"></div>
+                                <div class="caption col-md-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                    <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-1"></div>
+        </div>
+        <div class="container-fluid tab-pane" role="tabpanel" id="cfs">
+            CFS
+        </div>
+        <div class="container-fluid tab-pane" role="tabpanel" id="pricing">
+            Pricing
+        </div>
+        <div class="container-fluid tab-pane" role="tabpanel" id="addon">
+            Addon
+        </div>
         </div>
     </main>
     <footer class="footer">
