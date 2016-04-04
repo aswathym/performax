@@ -356,7 +356,7 @@ footer {
 
     height: 60px;
     margin: 0 !important;
-   
+
 }
 footer .container{
     padding-top: 10px;
@@ -521,4 +521,15 @@ h1{
 }
 #add_new_testimonial_form label {
     font-weight: 100;
+}
+#updates_list .edit_icon{
+    margin-top: 40px;
+}
+#updates_list span {
+    font-size: 13px;
+}
+#updates_list .posted_time {
+    margin-top: 40px;
+    font-family: 'Roboto-Regular';
+    font-size: 13px;
 }
