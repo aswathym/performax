@@ -234,7 +234,21 @@ header {
     border: 1px #e4e4e4 solid;
     box-shadow: 0 0 1px #fff;
     border-radius: 4px;
-    margin: 20px 80px;
+    margin: 20px 0px;
+}
+.CSF_inner_container>.row>.col-md-3>.search {
+    width: 100%;
+}
+.CSF_inner_container>.row>.col-md-3>#sideMenu {
+    margin: 0 0 0 24px;
+    width: 263px;
+}
+#sideMenu>div>a>span {
+    float: right;
+    color: #656565;
+}
+#sideMenu>div a input[type=checkbox] {
+    margin-right: 10px;
 }
 .finance_innerbox .col-md-4 {
     margin: 6px 20px;
@@ -478,7 +492,7 @@ a>i {
     float: right;
     margin-top: -5px;
 }
-#sideMenu>div>a>img {
+#sideMenu>div>a>img, #arrow_down_fuctional{
     width: 18px;
     position: absolute;
     right: 0;
