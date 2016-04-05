@@ -53,13 +53,18 @@ $(document).ready(function() {
         var company_id = $('#company_id').val();
         $('.error_span_email_reg').text('');
         $('.error_span_cmp_id').text('');
-        if (email === "") {
+        if ((email === "") && (company_id === "")) {
+            $('.error_span_email_reg').text('Email should not be Empty');
+            $('.error_span_cmp_id').text('Company ID should not be Empty');
+        }
+        else if (email === "") {
             $('.error_span_email_reg').text('Email should not be Empty');
         }
-        if (company_id === "") {
+        else if (company_id === "") {
             $('.error_span_cmp_id').text('Company ID should not be Empty');
         }
         else if (validateEmail(email)) {
+            debugger;
             if($('.agree_conditons').prop('checked')){
                 alert('Registration successfully completed');
             }
@@ -98,6 +103,7 @@ $(document).ready(function() {
     function validateEmail(email) {
         var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
         return emailReg.test(email);
+
     }
 
     function validatePassword(email, pass) {
