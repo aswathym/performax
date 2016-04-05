@@ -56,6 +56,10 @@ header {
     box-shadow: 0px 2px 10px 1px rgba(125, 125, 125, 0.5);
     padding-top: 10px;
 }
+.border-unique-styling {
+    border: 1px solid rgba(0, 0, 0, 0.1);;
+    padding: 10px;
+}
 .btn-info {
     background-color: #2C88CE;
     border-color: #1072bd;
@@ -415,7 +419,7 @@ footer a {
     border-radius: 0;
 }
 #sideMenu > .list-group > a {
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 #sideMenu .panel {
     border: none;
@@ -565,4 +569,23 @@ h1{
     background-image: url('../images/calender_icon.png');
     background-repeat: no-repeat;
     border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/*Sales Report Page*/
+#sales_report_graph .graph_header h4, #view_report h4 {
+    font-size: 13px;
+    line-height: 2;
+    font-weight: bold;
+}
+#sales_report_graph .graph_header i {
+    margin: 5px 8px;
+    font-size: 16px;
+}
+#sales_report_graph .graph_header {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+#view_report h4 {
+    margin: 0;
+    width: 114%;
 }
