@@ -364,6 +364,7 @@ input[type="checkbox"] {
     padding-right: 26px;
     margin-bottom: 10px;
     font-weight: normal;
+    font-size: 14px;
 }
 .add_CSF_popup input {
     width: 50%;
@@ -382,6 +383,11 @@ input[type="checkbox"] {
 .add_CSF_button {
     margin-bottom: 10px;
     text-align: center;
+}
+.add_CSF_button button {
+    width: 110px;
+    margin-right: 20px;
+    margin-bottom: 15px;
 }
 #CSF_Description {
     height: 80px;
