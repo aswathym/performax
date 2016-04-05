@@ -196,6 +196,9 @@ background: linear-gradient(to bottom, rgb(255, 255, 255) 30%, rgb(215, 215, 215
     box-shadow: 0 0 6px #ccc;
     margin: 20px 0;
 }
+.innerbox .section_search_assessment a{
+    font-size: 13px;
+}
 .innerbox {
     background-color: #FFFFFF;
     border: 1px #e4e4e4 solid;
