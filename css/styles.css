@@ -247,7 +247,7 @@ background: linear-gradient(to bottom, rgb(255, 255, 255) 30%, rgb(215, 215, 215
     border: 1px #e4e4e4 solid;
     box-shadow: 0 0 1px #fff;
     border-radius: 4px;
-    margin: 20px 80px;
+    margin: 20px 0px;
 }
 .CSF_inner_container>.row>.col-md-3>.search {
     width: 100%;
