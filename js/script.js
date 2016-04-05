@@ -49,16 +49,21 @@ $(document).ready(function() {
         $(this).parent().parent().find('textarea').focus();
     });
 
+    $('#login_button').click(function () {
+        var email = $('#email').val(),
+            password = $('#pass').val();
+        if(validateEmail(email)) {
+            if(validatePassword(email, password)) {
+                location.pathname = "/assessments.html";
+            }
+        }
+    })
     function validateEmail(email) {
         var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
         return emailReg.test(email);
     }
     function validatePassword(email, pass) {
-        if ((email == 'admin@qburst.com')&&(pass == 'admin')) {
-            return true;
-        }
-        else {
-            return false;
-        }
+        var ret = (email == 'admin@qburst.com')&&(pass == 'admin') ? true : false;
+        return ret;
     }
 });
