@@ -47,14 +47,18 @@ header {
 .navbar{
     padding-right: 0;
 }
-.nav{
+/*.nav{
     float: right;
-}
+}*/
 .box-shadow-styling {
     background-color: white;
     margin-top: 20px;
     box-shadow: 0px 2px 10px 1px rgba(125, 125, 125, 0.5);
     padding-top: 10px;
+}
+.border-unique-styling {
+    border: 1px solid rgba(0, 0, 0, 0.1);;
+    padding: 10px;
 }
 .btn-info {
     background-color: #2C88CE;
@@ -64,10 +68,13 @@ header {
 #header_user_bar {
     height: 50px;
 }
-
+#addAssessmentPopup .Editor-container {
+    margin-left: 24%;
+    width: 30%;
+}
 .Editor-container {
-    margin-left: 13%;
-    width: 200px;
+    margin-left: 33%;
+    width: 50%;
 }
 .Editor-editor {
     height: 120px;
@@ -99,7 +106,7 @@ background: linear-gradient(to bottom, rgb(255, 255, 255) 30%, rgb(215, 215, 215
 
 #core_functions_wrapper li a
 {
-    padding: 181px 180px 39px 171px;
+    padding: 60px 171px 155px 171px;
 }
 #core_functions_wrapper li .caption {
     position: absolute;
@@ -124,9 +131,13 @@ background: linear-gradient(to bottom, rgb(255, 255, 255) 30%, rgb(215, 215, 215
 /*Bootstrap Overriding*/
 .container{
     font-family: 'Roboto-Regular';
+    font-size: 13px;
 }
 .nav-tabs{
     border:0;
+}
+#header_nav_tabs {
+    font-size: 13px;
 }
 .navbar{
     margin-bottom: 0;
@@ -138,6 +149,7 @@ background: linear-gradient(to bottom, rgb(255, 255, 255) 30%, rgb(215, 215, 215
 }
 .nav>li{
     border-bottom: 3px solid transparent;
+    margin-bottom: -3px;
 }
 .nav-tabs>li>a {
     color: #565354;
@@ -198,6 +210,22 @@ background: linear-gradient(to bottom, rgb(255, 255, 255) 30%, rgb(215, 215, 215
     border-radius: 4px;
     margin: 20px 0px;
 }
+.CFS_container {
+    background-color: #FFFFFF;
+    border: 1px #e4e4e4 solid;
+    box-shadow: 0 0 6px #ccc;
+    margin: 0px -15px;
+    height: 55px;
+    padding-top: 8px;
+    padding-left: 15px;
+}
+.CSF_inner_container {
+    background-color: #FFFFFF;
+    border: 1px #e4e4e4 solid;
+    box-shadow: 0 0 1px #fff;
+    border-radius: 4px;
+    margin: 20px 80px;
+}
 .finance_innerbox .col-md-4 {
     margin: 6px 20px;
     border: 1px #e4e4e4 solid;
@@ -248,9 +276,10 @@ background: linear-gradient(to bottom, rgb(255, 255, 255) 30%, rgb(215, 215, 215
 .button_CSF {
     float: right;
     margin-bottom: 30px;
+    margin-top: 15px;
 }
 .button_CSF button {
-    padding: 5px 20px;
+    padding: 4px 20px;
     margin-right: 30px;
 }
 .table_style {
@@ -331,6 +360,13 @@ input[type="checkbox"]{
 #CSF_Description {
     height: 80px;
 }
+.finance_second_box>nav>ul>li {
+    width: 220px;
+    text-align: center;
+}
+#no_display {
+    height: 500px;
+}
 /* Sticky footer styles
 -------------------------------------------------- */
 
@@ -356,7 +392,7 @@ footer {
 
     height: 60px;
     margin: 0 !important;
-   
+
 }
 footer .container{
     padding-top: 10px;
@@ -391,7 +427,7 @@ footer a {
     border-radius: 0;
 }
 #sideMenu > .list-group > a {
-    font-weight: bold;
+    /*font-weight: bold;*/
 }
 #sideMenu .panel {
     border: none;
@@ -437,6 +473,7 @@ footer {
 }
 .spacer {
     margin: 10px 0;
+    padding: 10px 0px 20px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 span.price:before {
@@ -447,7 +484,7 @@ span.price:before {
 }
 h1{
     font-size: 0;
-    margin:0 0 10px;
+    margin:10px 0 0;
 }
 .scrollable{
     overflow-y:scroll;
@@ -498,4 +535,65 @@ h1{
     display: inline-block;
     position: absolute;
     right: 147px;
+}
+
+/*Manage Home Page*/
+
+#manage-home  .add_new_testimonial_header {
+    width: 90%;
+}
+#manage-home h5 {
+    padding: 10px 20px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+#manage_history_list b{
+    display: block;
+}
+#manage_history_list .header {
+    margin-bottom: 10px;
+}
+#add_new_testimonial_form {
+    margin-bottom: 20px;
+}
+#add_new_testimonial_form .form_line{
+    margin-top: 15px;
+}
+#add_new_testimonial_form label {
+    font-weight: 100;
+}
+#updates_list .edit_icon{
+    margin-top: 40px;
+}
+#updates_list span {
+}
+#updates_list .posted_time {
+    margin-top: 40px;
+    font-family: 'Roboto-Regular';
+}
+#createNewUpdate .calender {
+    background-size: 20px 20px;
+    background-position: right top;
+    background-image: url('../images/calender_icon.png');
+    background-repeat: no-repeat;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/*Sales Report Page*/
+#sales_report_graph .graph_header h4, #view_report h4 {
+    font-size: 13px;
+    line-height: 2;
+    font-weight: bold;
+}
+#sales_report_graph .graph_header i {
+    margin: 5px 8px;
+    font-size: 16px;
+}
+#sales_report_graph .graph_header {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+#view_report h4 {
+    margin: 0;
+    width: 114%;
 }
