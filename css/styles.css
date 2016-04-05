@@ -56,6 +56,12 @@ header {
     box-shadow: 0px 2px 10px 1px rgba(125, 125, 125, 0.5);
     padding-top: 10px;
 }
+.box-shadow-styling-light {
+    box-shadow: 0px 1px 4px 0px rgba(125, 125, 125, 0.5);
+    margin: 5px 0px;
+    padding: 0;
+
+}
 .border-unique-styling {
     border: 1px solid rgba(0, 0, 0, 0.1);;
     padding: 10px;
@@ -627,4 +633,7 @@ h1{
 }
 #viewCSF button{
     margin-bottom: 20px;
+}
+#sales_report_details .list-group-item{
+    margin: 10px 0px;
 }
