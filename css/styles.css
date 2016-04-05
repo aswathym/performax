@@ -356,6 +356,13 @@ input[type="checkbox"]{
 #CSF_Description {
     height: 80px;
 }
+.finance_second_box>nav>ul>li {
+    width: 220px;
+    text-align: center;
+}
+#no_display {
+    height: 500px;
+}
 /* Sticky footer styles
 -------------------------------------------------- */
 
