@@ -663,7 +663,7 @@ h1 {
     background: url('../images/login_bg.png') no-repeat 100% 100%;
     background-size: 100% 100%;
 }
-.error_span_email, .error_span_pass {
+.error_span_email, .error_span_pass, .error_span_cmp_id, .error_span_email_reg {
     color: rgb(200, 35, 35);
 }
 #login {
