@@ -483,7 +483,19 @@ footer a {
 }
 #assessment_pricing_list .icon i:hover {
     color: red;
-
+}
+a>i{
+    float: right;
+    margin-top: -5px;
+}
+#sideMenu>div>a>img{
+    width: 18px;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+}
+div#sideMenu .list-group-item:not(.collapsed) img{
+    transform: rotate(180deg);
 }
 footer {
     padding: 20px 0 15px;
