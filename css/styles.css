@@ -613,3 +613,15 @@ h1{
     margin: 0;
     width: 114%;
 }
+#viewCSF .modal-body{
+    padding: 0;
+}
+#viewCSF .modal-footer{
+    border-top: 0;
+}
+#viewCSF .modal-content{
+    border-radius: 0;
+}
+#viewCSF button{
+    margin-bottom: 20px;
+}
