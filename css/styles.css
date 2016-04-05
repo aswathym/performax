@@ -65,6 +65,16 @@ header {
     border-color: #1072bd;
 
 }
+#view_report input {
+    margin-right: 5px;
+}
+#individual {
+    text-indent: 20px;
+}
+#individual .in{
+    height: 210px;
+    overflow-y: scroll;
+}
 #addAssessmentSubmitTable {
     font-size: 13px;
 }
@@ -454,15 +464,15 @@ footer a {
     box-shadow: 2px 3px 5px 0px rgba(236, 236, 236, 1);
     background-color: #fff;
 }
-#asssessment_pricing_list {
+#assessment_pricing_list {
     margin-top: 20px;
     margin-bottom: 50px;
 }
-#asssessment_pricing_list .icon i {
+#assessment_pricing_list .icon i {
     cursor: pointer;
     transition: all 0.3s linear;
 }
-#asssessment_pricing_list .icon i:hover {
+#assessment_pricing_list .icon i:hover {
     color: red;
 
 }
@@ -528,7 +538,7 @@ h1{
     margin-bottom: 15px;
     left: 25%;
 }
-#asssessment_pricing_list li {
+#assessment_pricing_list li {
     padding: 15px 20px;
 }
 .modal-dialog {
@@ -599,7 +609,7 @@ h1{
     border: 1px solid rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
 }
-#view_report h4 {
+#view_report h4, #view_report .list-group {
     margin: 0;
     width: 114%;
 }
