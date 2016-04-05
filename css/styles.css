@@ -452,9 +452,19 @@ footer a {
 .list-group-item-success:hover {
     background-color: #eaeaea;
 }
-#sideMenu .list-group div a{
+#sub_sidebar_assessment> a {
+    font-size: 13px;
+    padding-left: 45px;
+    background-color: #fff;
+}
+#sideMenu>.list-group>div>a{
     font-size: 13px;
     padding-left: 30px;
+}
+#core_functions>a{
+    font-size: 13px;
+    padding-left: 60px;
+    background-color: #f5f5f5;
 }
 #sideMenu{
     margin: 20px;
@@ -481,6 +491,9 @@ footer a {
 }
 .list-group > div > a {
     background-color: #eee;
+}
+#assessment > a {
+    background-color: #fff;
 }
 #sideMenu, .box {
     -webkit-box-shadow: 2px 3px 5px 0px rgba(236, 236, 236, 1);
