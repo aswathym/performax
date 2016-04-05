@@ -47,33 +47,62 @@ $(document).ready(function() {
         $("#update_finance").css('height', '150px');
         $("#update_button").css('display', 'block');
         $(this).parent().parent().find('textarea').focus();
-  });
-
-    $('#login_button').click(function () {
-        var email = $('#email').val(),
-        var  password = $('#pass').val();
-        if(validateEmail(email)) {
-            if(validatePassword(email, password)) {
-                location.pathname = "/assessments.html";
+    });
+    $('#register_button').click(function(){
+        var email = $('#email_reg').val();
+        var company_id = $('#company_id').val();
+        $('.error_span_email_reg').text('');
+        $('.error_span_cmp_id').text('');
+        if (email === "") {
+            $('.error_span_email_reg').text('Email should not be Empty');
+        }
+        if (company_id === "") {
+            $('.error_span_cmp_id').text('Company ID should not be Empty');
+        }
+        else if (validateEmail(email)) {
+            if($('.agree_conditons').prop('checked')){
+                alert('Registration successfully completed');
+            }
+            else {
+                $('.error_span_email_reg').text('Agree the Terms and Conditions');
             }
         }
+        else {
+            $('.error_span_email_reg').text('The Email is not Valid');
+        }
+    });
+    $('#login_button').click(function() {
+        var email = $('#email').val();
+        var password = $('#password').val();
+        $('.error_span_email').text('');
+        $('.error_span_pass').text('');
         if (email === "") {
-            e.preventDefault();
-            self.showLoginError("Please Enter Username");
-            return false;
-        } else if (password === "" ){
-            e.preventDefault();
-            self.showLoginError("Please Enter Password");
-            return false;
+            $('.error_span_email').text('Email should not be Empty');
+        }
+        if (password === "") {
+            $('.error_span_pass').text('Password should not be Empty');
+        }
+        else if (validateEmail(email)) {
+            if (validatePassword(email, password)) {
+                location.pathname = "/assessments.html";
+            }
+            else {
+                $('.error_span_email').text('The Email and Password do not match');
+            }
+        }
+        else {
+            $('.error_span_email').text('The Email is not Valid');
         }
     })
+
     function validateEmail(email) {
         var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
         return emailReg.test(email);
     }
+
     function validatePassword(email, pass) {
-        var ret = (email == 'admin@qburst.com')&&(pass == 'admin') ? true : false;
+        var ret = (email == 'admin@qburst.com') && (pass == 'admin') ? true : false;
         return ret;
     }
-    
+
 });
