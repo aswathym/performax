@@ -65,6 +65,9 @@ header {
     border-color: #1072bd;
 
 }
+#addAssessmentSubmitTable {
+    font-size: 13px;
+}
 #header_user_bar {
     height: 50px;
 }
@@ -431,6 +434,9 @@ footer a {
 }
 #sideMenu .panel {
     border: none;
+}
+.modal-footer {
+    text-align: center;
 }
 .modal-body .model_line {
     margin-bottom: 10px;

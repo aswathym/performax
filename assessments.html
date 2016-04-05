@@ -28,19 +28,19 @@
                              Performax 360
                              <a href="#"><img src="images/performax.png" alt="Performax" /> </a>
                         </h1>
-                    <nav class="navbar col-md-8" id="header_nav_tabs">
-                        <ul class="nav nav-tabs">
-                            <li role="presentation" class="active"><a href="#assessments" aria-controls="assessments" role="tab" data-toggle="tab">Assessments</a></li>
-                            <li role="presentation"><a href="cfs.html">CFS's</a></li>
-                            <li role="presentation"><a href="pricing.html">Pricing</a></li>
-                            <li role="presentation"><a href="addons_services.html">Add-ons & Services</a></li>
-                            <li role="presentation"><a href="manage_home.html" aria-controls="manage_home" role="tab" data-toggle="tab">Manage Home</a></li>
-                            <li role="presentation"><a href="promo_codes.html">Promo Codes</a></li>
-                            <li role="presentation"><a href="sales_reports.html">Sales Reports</a></li>
-                        </ul>
-                    </nav>
+                        <nav class="navbar col-md-8" id="header_nav_tabs">
+                            <ul class="nav nav-tabs">
+                                <li role="presentation" class="active"><a href="#assessments" aria-controls="assessments" role="tab" data-toggle="tab">Assessments</a></li>
+                                <li role="presentation"><a href="cfs.html">CFS's</a></li>
+                                <li role="presentation"><a href="pricing.html">Pricing</a></li>
+                                <li role="presentation"><a href="addons_services.html">Add-ons & Services</a></li>
+                                <li role="presentation"><a href="manage_home.html" aria-controls="manage_home" role="tab" data-toggle="tab">Manage Home</a></li>
+                                <li role="presentation"><a href="promo_codes.html">Promo Codes</a></li>
+                                <li role="presentation"><a href="sales_reports.html">Sales Reports</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-            </div>
         </header>
         <div class="tab-content">
             <div class="container tab-pane active" role="tabpanel" id="assessments">
@@ -111,9 +111,72 @@
                                                 </div>
                                             </form>
                                         </div>
-                                        <div class="modal-footer text-center">
-                                            <button type="button" class="btn btn-primary">Save changes</button>
-                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal" data-toggle="modal" data-target="#addAssessmentSubmitPopup">Save changes</button>
+                                            <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="addAssessmentSubmitPopup" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-body container-fluid table-responsive">
+                                            <table class="table table-bordered table-hover text-center" id="addAssessmentSubmitTable">
+                                                <thead>
+                                                    <tr>
+                                                        <th rowspan="2">Function ID</th>
+                                                        <th rowspan="2">Function</th>
+                                                        <th colspan="5" class="text-center">Summer Period</th>
+                                                        <th rowspan="2">Total</th>
+                                                        <th rowspan="2">IFA</th>
+                                                        <th rowspan="2">KPI</th>
+                                                    </tr>
+                                                    <tr class="text-center">
+                                                        <th>People & Leadership</th>
+                                                        <th>Analytics & Insights</th>
+                                                        <th>Strategy & Planning</th>
+                                                        <th>Execution & Process</th>
+                                                        <th>Performance & Results</th>
+                                                    </tr>
+                                                </thead>
+                                                <tr>
+                                                    <td>I-FIN</td>
+                                                    <td>Fincance & Accounting</td>
+                                                    <td>20</td>
+                                                    <td>20</td>
+                                                    <td>30</td>
+                                                    <td>15</td>
+                                                    <td>15</td>
+                                                    <td>100</td>
+                                                    <td>200</td>
+                                                    <td>200</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>I-PDM</td>
+                                                    <td>Product Management</td>
+                                                    <td>15</td>
+                                                    <td>15</td>
+                                                    <td>20</td>
+                                                    <td>30</td>
+                                                    <td>20</td>
+                                                    <td>100</td>
+                                                    <td>200</td>
+                                                    <td>200</td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Back to Assessment Page</button>
                                         </div>
                                     </div>
                                 </div>
