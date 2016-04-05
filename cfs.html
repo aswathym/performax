@@ -204,8 +204,31 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-3" style="background-color:red;height:100px;">
-
+                    <div class="col-md-3">
+                        <input placeholder="Search" type="text" size="20" maxlength="128" class="search">
+                        <div id="sideMenu">
+                            <div class="list-group panel">
+                                <a class="list-group-item list-group-item-success collapsed">
+                                    FILTER BY<span>Clear all</span>
+                                </a>
+                                <a href="#assessment" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#sideMenu" id="functional_assessment"><input type="checkbox">Assessments
+                                    <img src="images/arrow_down.png" id="arrow_down">
+                                </a>
+                                <div class="collapse" id="assessment">
+                                    <a href="#sub_sidebar_assessment" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#sideMenu"><input type="checkbox">Functional Assessments
+                                        <img src="images/arrow_down.png" id="arrow_down_fuctional">
+                                    </a>
+                                    <div class="collapse" id="sub_sidebar_assessment">
+                                        <a href="#" class="list-group-item"><input type="checkbox">Core Functions<i class="fa fa-angle-right fa-2x"></i></a>
+                                        <a href="#" class="list-group-item"><input type="checkbox">Support Functions<i class="fa fa-angle-right fa-2x"></i></a>
+                                        <a href="#" class="list-group-item"><input type="checkbox">Stakeholder Assessments<i class="fa fa-angle-right fa-2x"></i></a>
+                                        <a href="#" class="list-group-item"><input type="checkbox">Employee Development<i class="fa fa-angle-right fa-2x"></i></a>
+                                    </div>
+                                </div>
+                                <a href="#process-assessment" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#sideMenu"><input type="checkbox">CSF Category<img src="images/arrow_down.png"></a>
+                                <a href="#stakeholder-assessment" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#sideMenu"><input type="checkbox">CSF Context<img src="images/arrow_down.png"></a>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-9">
                         <div class="container table_container" style="width: 100%;">
