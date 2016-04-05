@@ -89,7 +89,7 @@ $(document).ready(function() {
         }
         else if (validateEmail(email)) {
             if (validatePassword(email, password)) {
-                location.pathname = "/assessments.html";
+                location.pathname = "/performax/assessments.html";
             }
             else {
                 $('.error_span_email').text('The Email and Password do not match');
