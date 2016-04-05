@@ -26,11 +26,11 @@ $(document).ready(function() {
         'hr_line': false,
         'block_quote': true,
         'source': false,
-        'font_size':false,
-        'fonts':false,
-        'splchars':false,
-        'color':false,
-        'styles':false,
+        'font_size': false,
+        'fonts': false,
+        'splchars': false,
+        'color': false,
+        'styles': false,
         'strikeout': false,
         'indent': false,
         'outdent': false,
@@ -42,12 +42,28 @@ $(document).ready(function() {
         'togglescreen': false
     });
 
-	$("#edit_icon").click(function() {
-	    $("#update_finance").prop('disabled',false);
-        $("#update_finance").css('height','150px');
-        $("#update_button").css('display','block');
+    $("#edit_icon").click(function() {
+        $("#update_finance").prop('disabled', false);
+        $("#update_finance").css('height', '150px');
+        $("#update_button").css('display', 'block');
         $(this).parent().parent().find('textarea').focus();
-	});
-    
-    
+  });
+
+    $('#login_button').click(function () {
+        var email = $('#email').val(),
+            password = $('#pass').val();
+        if(validateEmail(email)) {
+            if(validatePassword(email, password)) {
+                location.pathname = "/assessments.html";
+            }
+        }
+    })
+    function validateEmail(email) {
+        var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+        return emailReg.test(email);
+    }
+    function validatePassword(email, pass) {
+        var ret = (email == 'admin@qburst.com')&&(pass == 'admin') ? true : false;
+        return ret;
+    }
 });
