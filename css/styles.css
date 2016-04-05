@@ -78,7 +78,8 @@ header {
     text-indent: 20px;
 }
 #individual .in{
-    height: 210px;
+    height: 180px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
     overflow-y: scroll;
 }
 #addAssessmentSubmitTable {
