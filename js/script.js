@@ -51,11 +51,20 @@ $(document).ready(function() {
 
     $('#login_button').click(function () {
         var email = $('#email').val(),
-            password = $('#pass').val();
+        var  password = $('#pass').val();
         if(validateEmail(email)) {
             if(validatePassword(email, password)) {
                 location.pathname = "/assessments.html";
             }
+        }
+        if (email === "") {
+            e.preventDefault();
+            self.showLoginError("Please Enter Username");
+            return false;
+        } else if (password === "" ){
+            e.preventDefault();
+            self.showLoginError("Please Enter Password");
+            return false;
         }
     })
     function validateEmail(email) {
@@ -66,4 +75,5 @@ $(document).ready(function() {
         var ret = (email == 'admin@qburst.com')&&(pass == 'admin') ? true : false;
         return ret;
     }
+    
 });
