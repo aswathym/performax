@@ -328,7 +328,7 @@ th {
     width: 1500px;
 }
 .table_container {
-    height: 400px;
+    height: 810px;
     overflow-x: scroll;
 }
 .search {
@@ -364,6 +364,7 @@ input[type="checkbox"] {
     padding-right: 26px;
     margin-bottom: 10px;
     font-weight: normal;
+    font-size: 14px;
 }
 .add_CSF_popup input {
     width: 50%;
@@ -382,6 +383,11 @@ input[type="checkbox"] {
 .add_CSF_button {
     margin-bottom: 10px;
     text-align: center;
+}
+.add_CSF_button button {
+    width: 110px;
+    margin-right: 20px;
+    margin-bottom: 15px;
 }
 #CSF_Description {
     height: 80px;
@@ -458,12 +464,15 @@ footer a {
     font-size: 13px;
     padding-left: 55px;
     background-color: #f5f5f5;
+    border: none;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 #sideMenu {
     margin: 20px;
 }
 #sideMenu a {
-    color: #231f20;
+    color: rgba(16, 16, 16, 0.72);
     border-radius: 0;
 }
 #sideMenu > .list-group > a {
@@ -509,7 +518,7 @@ a>i {
     float: right;
     margin-top: -5px;
 }
-#sideMenu>div>a>img, #arrow_down_fuctional{
+#sideMenu>div>a>img, #arrow_down_fuctional, #arrow_down_corefunction{
     width: 18px;
     position: absolute;
     right: 0;
