@@ -47,33 +47,40 @@ $(document).ready(function() {
         $("#update_finance").css('height', '150px');
         $("#update_button").css('display', 'block');
         $(this).parent().parent().find('textarea').focus();
-  });
+    });
 
-    $('#login_button').click(function () {
-        var email = $('#email').val(),
-        var  password = $('#pass').val();
-        if(validateEmail(email)) {
-            if(validatePassword(email, password)) {
+    $('#login_button').click(function() {
+        var email = $('#email').val();
+        var password = $('#password').val();
+        $('.error_span_email').text('');
+        $('.error_span_pass').text('');
+        if (email === "") {
+            $('.error_span_email').text('Email should not be Empty');
+        }
+        if (password === "") {
+            $('.error_span_pass').text('Password should not be Empty');
+        }
+        else if (validateEmail(email)) {
+            if (validatePassword(email, password)) {
                 location.pathname = "/assessments.html";
             }
+            else {
+                $('.error_span_email').text('The Email and Password do not match');
+            }
         }
-        if (email === "") {
-            e.preventDefault();
-            self.showLoginError("Please Enter Username");
-            return false;
-        } else if (password === "" ){
-            e.preventDefault();
-            self.showLoginError("Please Enter Password");
-            return false;
+        else {
+            $('.error_span_email').text('The Email is not Valid');
         }
     })
+
     function validateEmail(email) {
         var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
         return emailReg.test(email);
     }
+
     function validatePassword(email, pass) {
-        var ret = (email == 'admin@qburst.com')&&(pass == 'admin') ? true : false;
+        var ret = (email == 'admin@qburst.com') && (pass == 'admin') ? true : false;
         return ret;
     }
-    
+
 });

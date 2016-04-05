@@ -14,60 +14,61 @@
 
 <body>
     <div id="wrap" class="login">
-    <div id="login" class="tab_box container">
-        <nav class="navbar col-md-12">
-            <ul class="nav nav-tabs" id="tab_header">
-                          <li class="active"><a href="#login-cnt" aria-controls="login-cnt" role="tab" data-toggle="tab">Login</a></li>
-                         <li><a href="#reg-cnt" aria-controls="reg-cnt" role="tab" data-toggle="tab">Register</a></li>
-                             </ul>
-        </nav>
-        <div class="tab-content">
-                    <div id="login-cnt" class="tab-pane active" role="tabpanel">
-                        <form class="container-fluid form-content">
-                             <div class="row">
-                                <label>Email</label>
-                                <input type="text">
-                            </div>
-                            <div class="row">
-                                <label for="">Password</label>
-                                <input type="password">
-                             </div>
-                              <div class="row remember-txt spacer">
-                                  
-                                  <span class="pull-left"><input type="checkbox"> Remember me</span>
-                                  <a href="#" class="pull-right">Forgot Password?</a>
-                              </div>
-                              <div class="text-center spacer">
-                                <button type="button" class="btn btn-primary btn-sm"  data-target="" id="login_button">Login</button>
-                            </div>
-                            <div class="text-center spacer">
-                                Don't have an account? <a href="#">REGISTER NOW </a>
-                            </div>
-                        </form>
-                    </div>
-                    <div id="reg-cnt" class="container-fluid tab-pane" role="tabpanel">
-                        <form class="container-fluid form-content">
-                             <div class="row">
-                                <label>Company ID</label>
-                                <input type="text">
-                            </div>
-                             <div class="row">
-                                <label>Email ID</label>
-                                <input type="text">
-                            </div>
-                            <div class="text-center spacer">
-                                  
-                                  <span class=""><input type="checkbox"> I agree to Performax Inc's <a href="#" >Terms of Use</a>
+        <div id="login" class="tab_box container">
+            <nav class="navbar col-md-12">
+                <ul class="nav nav-tabs" id="tab_header">
+                    <li class="active"><a href="#login-cnt" aria-controls="login-cnt" role="tab" data-toggle="tab">Login</a></li>
+                    <li><a href="#reg-cnt" aria-controls="reg-cnt" role="tab" data-toggle="tab">Register</a></li>
+                </ul>
+            </nav>
+            <div class="tab-content">
+                <div id="login-cnt" class="tab-pane active" role="tabpanel">
+                    <form class="container-fluid form-content">
+                        <div class="row ">
+                            <label for="email" class="col-md-4">Email</label>
+                            <input type="text" class="col-md-8" id="email" aria-describedby="helpBlock2">
+                            <span class="error_span_email col-md-offset-4"></span>
+                        </div>
+                        <div class="row">
+                            <label for="" class="col-md-4">Password</label>
+                            <input type="password" id="password" class="col-md-8">
+                            <span class="error_span_pass col-md-offset-4"></span>
+                        </div>
+                        <div class="row remember-txt spacer">
+                            <span class="pull-left"><input type="checkbox"> Remember me</span>
+                            <a href="#" class="pull-right">Forgot Password?</a>
+                        </div>
+                        <div class="text-center spacer">
+                            <button type="button" class="btn btn-primary btn-sm" data-target="" id="login_button">Login</button>
+                        </div>
+                        <div class="text-center spacer">
+                            Don't have an account? <a href="#">REGISTER NOW </a>
+                        </div>
+                    </form>
+                </div>
+                <div id="reg-cnt" class="container-fluid tab-pane" role="tabpanel">
+                    <form class="container-fluid form-content">
+                        <div class="row">
+                            <label>Company ID</label>
+                            <input type="text">
+                        </div>
+                        <div class="row">
+                            <label>Email ID</label>
+                            <input type="text">
+                        </div>
+                        <div class="text-center spacer">
+
+                            <span class=""><input type="checkbox"> I agree to Performax Inc's <a href="#" >Terms of Use</a>
                               and <a href="#" >Privacy Policy</a></span>
-                             </div>
-                              <div class="text-center spacer">
-                                <button type="button" class="btn btn-primary btn-sm"  data-target="" id="login_button">REGISTER NOW</button>
-                            </div>
-                          </form>
-                    </div>
-         </div>
+                        </div>
+                        <div class="text-center spacer">
+                            <button type="button" class="btn btn-primary btn-sm" data-target="" id="login_button">REGISTER NOW</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
     <footer class="footer">
         <div class="container">
             <p class="pull-left">&copy; 2016 Performax Inc. All Rights Reserved</p>
@@ -79,4 +80,5 @@
     <script src="js/editor.js" charset="utf-8"></script>
     <script src="js/script.js"></script>
 </body>
+
 </html>
