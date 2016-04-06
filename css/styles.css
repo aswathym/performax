@@ -401,6 +401,9 @@ input[type="checkbox"] {
     float: right;
     height: 30px;
 }
+.form-element select option:first-child{
+    color:#888;
+}
 .form-element .star_rating_div {
     width: 110px;
     background-color: #EAEAEA;
