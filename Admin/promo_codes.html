@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Performax</title>
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/editor.css" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="container-fluid">
+                <div id="header_user_bar" class="container">
+                    <span class="wrapper pull-right">
+                          <span class="glyphicon glyphicon-search"></span> Welcome <b>Admin</b><i class="fa fa-sort-desc"></i>
+                    </span>
+                </div>
+
+                <div id="header_menu_bar">
+                    <div class="container">
+                        <h1 class="col-md-4">
+                             Performax 360
+                             <a href="#"><img src="../images/performax.png" alt="Performax" /> </a>
+                        </h1>
+                        <nav class="navbar col-md-8" id="header_nav_tabs">
+                            <ul class="nav nav-tabs">
+                                <li role="presentation"><a href="assessments.html">Assessments</a></li>
+                                <li role="presentation"><a href="cfs.html">CFS's</a></li>
+                                <li role="presentation"><a href="pricing.html">Pricing</a></li>
+                                <li role="presentation"><a href="addons_services.html">Add-ons & Services</a></li>
+                                <li role="presentation"><a href="manage_home.html">Manage Home</a></li>
+                                <li role="presentation" class="active"><a href="promo_codes.html">Promo Codes</a></li>
+                                <li role="presentation"><a href="sales_reports.html">Sales Reports</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+        </header>
+        <div class="tab-content">
+            <div class="container box-shadow-styling" id="promo_codes">
+                <div class="" style="margin-bottom: 20px;">
+                    <b class="pull-left">Promo Codes</b>
+                    <span class="pull-right">
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#createPromoCodePopup">Create Promo Code</button>
+                    </span>
+                </div>
+                <div class="modal fade" id="createPromoCodePopup" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h5 class="modal-title" id="myModalLabel"><b>Create Promo Code</b></h5>
+                            </div>
+                            <div class="modal-body container-fluid">
+                                <form class="" action="index.html" method="post" id="create_promo_code_form">
+                                    <h5><b>Set Validity of Promo Code</b></h5>
+                                    <div class="">
+                                        <span class="col-md-3"> Start Date: </span>
+                                        <span class="col-md-3"> <input type="text" class="calender" name="name" value=""></span>
+                                        <span class="col-md-2"> Duration: </span>
+                                        <span class="col-md-4"> <input type="text" name="name" value=""> Weeks</span>
+                                    </div>
+                                    <h5><b>Set Validity of access to assessment</b></h5>
+                                    <div class="">
+                                        <span class="col-md-3"> Start Date: </span>
+                                        <span class="col-md-3"> <input type="text" class="calender" name="name" value=""></span>
+                                        <span class="col-md-2"> Duration: </span>
+                                        <span class="col-md-4"> <input type="text" name="name" value=""> Weeks</span>
+                                    </div>
+                                    <h5><b>Select Percentage of Discount of Type of Discount</b></h5>
+                                    <div class="">
+                                        <div class="btn-group col-md-12 promo_type_discount">
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                2 Weeks Free Trial <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">2 Weeks Free Trial</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">Separated link</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <h5><b>No of Times the Code can be used</b></h5>
+                                    <div class="">
+                                        <span class="col-md-3"><i class="fa fa-check-circle fa-2x"></i> <b>Once</b> </span>
+                                        <span class="col-md-5"><i class="fa fa-circle fa-2x"></i> Enter Specific Number </span>
+                                        <span class="col-md-3"> <input type="text" name="name" placeholder="Enter number" value=""></span>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer text-center">
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <ul id="assessment_pricing_list" class=" container col-md-12 list-group">
+                        <li class="container-fluid list-group-item box-shadow-styling box-shadow-styling-light">
+                            <span class="col-md-3">
+                                <div class=""><b>OFFER25</b></div>
+                                <div class="">Promo Code</div>
+                            </span>
+                            <span class="col-md-3">
+                                <div class=""><b>01.10.2016</b></div>
+                                <div class="">Valid From</div>
+                            </span>
+                            <span class="col-md-2">
+                                <div class=""><b>02.10.2016</b></div>
+                                <div class="">Valid To</div>
+                            </span>
+                            <span class="col-md-2">
+                                <div class=""><b>03</b></div>
+                                <div class="">Duration (In Weeks)</div>
+                            </span>
+                            <span class="col-md-2">
+                                <div class=""><b>02</b></div>
+                                <div class="">No of Times Used</div>
+                            </span>
+                        </li>
+                        <li class="container-fluid list-group-item box-shadow-styling box-shadow-styling-light">
+                            <span class="col-md-3">
+                                <div class=""><b>DISCOUNT30</b></div>
+                                <div class="">Promo Code</div>
+                            </span>
+                            <span class="col-md-3">
+                                <div class=""><b>01.10.2016</b></div>
+                                <div class="">Valid From</div>
+                            </span>
+                            <span class="col-md-2">
+                                <div class=""><b>02.10.2016</b></div>
+                                <div class="">Valid To</div>
+                            </span>
+                            <span class="col-md-2">
+                                <div class=""><b>03</b></div>
+                                <div class="">Duration (In Weeks)</div>
+                            </span>
+                            <span class="col-md-2">
+                                <div class=""><b>02</b></div>
+                                <div class="">No of Times Used</div>
+                            </span>
+                        </li>
+                        <li class="container-fluid list-group-item box-shadow-styling box-shadow-styling-light">
+                            <span class="col-md-3">
+                                <div class=""><b>DISCOUNT10</b></div>
+                                <div class="">Promo Code</div>
+                            </span>
+                            <span class="col-md-3">
+                                <div class=""><b>01.10.2016</b></div>
+                                <div class="">Valid From</div>
+                            </span>
+                            <span class="col-md-2">
+                                <div class=""><b>02.10.2016</b></div>
+                                <div class="">Valid To</div>
+                            </span>
+                            <span class="col-md-2">
+                                <div class=""><b>03</b></div>
+                                <div class="">Duration (In Weeks)</div>
+                            </span>
+                            <span class="col-md-2">
+                                <div class=""><b>02</b></div>
+                                <div class="">No of Times Used</div>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p class="pull-left">&copy; 2016 Performax Inc. All Rights Reserved</p>
+            <a href="#" class="pull-right">Help</a>
+        </div>
+    </footer>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/editor.js" charset="utf-8"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

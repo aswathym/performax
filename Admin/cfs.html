@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Performax | CSF</title>
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/editor.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <div class="container-fluid">
+                <div id="header_user_bar" class="container">
+                    <span class="wrapper pull-right">
+                          <span class="glyphicon glyphicon-search"></span> Welcome <b>Admin</b><i class="fa fa-sort-desc"></i>
+                    </span>
+                </div>
+                <div id="header_menu_bar">
+                    <div class="container">
+                        <h1 class="col-md-4">
+                             Performax 360
+                             <a href="#"><img src="../images/performax.png" alt="Performax" /> </a>
+                        </h1>
+                        <nav class="navbar col-md-8" id="header_nav_tabs">
+                            <ul class="nav nav-tabs">
+                                <li role="presentation"><a href="assessments.html">Assessments</a></li>
+                                <li role="presentation" class="active"><a href="cfs.html">CFS's</a></li>
+                                <li role="presentation"><a href="pricing.html">Pricing</a></li>
+                                <li role="presentation"><a href="addons_services.html">Add-ons & Services</a></li>
+                                <li role="presentation"><a href="manage_home.html">Manage Home</a></li>
+                                <li role="presentation"><a href="promo_codes.html">Promo Codes</a></li>
+                                <li role="presentation"><a href="sales_reports.html">Sales Reports</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+        </header>
+        <div class="container">
+            <div class="container CSF_inner_container">
+                <div class="CFS_container">
+                    <h4>Critical Success Factors</h4>
+                </div>
+                <div class="row">
+                    <div class="button_CSF">
+                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Add new CSF</button>
+                        <button type="button" name="button" class="btn btn-danger btn-sm">Delete</button>
+                    </div>
+                </div>
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Add new Critical Success Factor</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="add_CSF_popup">
+                                                <label>CSF Title</label>
+                                                <input type="text">
+                                            </div>
+                                            <div class="add_CSF_popup">
+                                                <label for="">CSF rating</label>
+                                                <img src="../images/Rating Bg.png">
+                                                <div class="rating">
+                                                    <img src="../images/golden star.png">
+                                                    <img src="../images/golden star.png">
+                                                    <img src="../images/golden star.png">
+                                                    <img src="../images/grey star.png" alt="" /><img src="../images/grey star.png" alt="" />
+                                                </div>
+
+                                            </div>
+                                            <div class="add_CSF_popup">
+                                                <label>Industry</label>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Action <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Action</a></li>
+                                                        <li><a href="#">Another action</a></li>
+                                                        <li><a href="#">Something else here</a></li>
+                                                        <li role="separator" class="divider"></li>
+                                                        <li><a href="#">Separated link</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="add_CSF_popup">
+                                                <label>Function Id</label>
+                                                <input type="text">
+                                            </div>
+                                            <div class="add_CSF_popup">
+                                                <label>Assessment Type</label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="add_CSF_popup">
+                                                <label>CSF Category</label>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Action <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Action</a></li>
+                                                        <li><a href="#">Another action</a></li>
+                                                        <li><a href="#">Something else here</a></li>
+                                                        <li role="separator" class="divider"></li>
+                                                        <li><a href="#">Separated link</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="add_CSF_popup">
+                                                <label>CSF context</label>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Action <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Action</a></li>
+                                                        <li><a href="#">Another action</a></li>
+                                                        <li><a href="#">Something else here</a></li>
+                                                        <li role="separator" class="divider"></li>
+                                                        <li><a href="#">Separated link</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="add_CSF_popup">
+                                                <label>Size</label>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        Action <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a href="#">Action</a></li>
+                                                        <li><a href="#">Another action</a></li>
+                                                        <li><a href="#">Something else here</a></li>
+                                                        <li role="separator" class="divider"></li>
+                                                        <li><a href="#">Separated link</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="add_CSF_popup">
+                                                <label>Function</label>
+                                                <input type="text">
+                                            </div>
+                                            <div class="add_CSF_popup">
+                                                <label>Data Source</label>
+                                                <input type="text" value="Performax Database">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="add_CSF_popup col-md-6">
+                                                <label for="">CSF Description</label>
+                                                <input type="text" id="CSF_Description">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="add_CSF_popup">
+                                                <label for="">Key Performance Indicators 1</label>
+                                                <input type="text" name="name" value="">
+                                            </div>
+                                            <div class="add_CSF_popup">
+                                                <label for="">Key Performance Indicators 2</label>
+                                                <input type="text" name="name" value="">
+                                            </div>
+                                            <div class="add_CSF_popup">
+                                                <label for="">Ideas for Action 1</label>
+                                                <input type="text" name="name" value="">
+
+                                            </div>
+                                            <div class="add_CSF_popup">
+                                                <label for="">Ideas for Action 1</label>
+                                                <input type="text" name="name" value="">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a>Add from Performax360 Database</a>
+                                            <a>Add from Performax360 Database</a>
+                                            <a>Add from Performax360 Database</a>
+                                            <a>Add from Performax360 Database</a>
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="add_CSF_button">
+                                <button type="button" class="btn btn-info" data-dismiss="modal">Add CSF</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <input placeholder="Search" type="text" size="20" maxlength="128" class="search">
+                        <div id="sideMenu">
+                            <div class="list-group panel">
+                                <a class="list-group-item list-group-item-success collapsed">
+                                    FILTER BY<span>Clear all</span>
+                                </a>
+                                <a href="#assessment" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#sideMenu" id="functional_assessment">
+                                    <input type="checkbox">Assessments
+                                    <img src="../images/arrow_down.png" id="arrow_down">
+                                </a>
+                                <div class="collapse" id="assessment">
+                                    <a href="#sub_sidebar_assessment" class="list-group-item collapsed" data-toggle="collapse" data-parent="#sub_sidebar_assessment">
+                                        <input type="checkbox">Functional Assessments
+                                        <img src="../images/arrow_down.png" id="arrow_down_fuctional">
+                                    </a>
+                                    <div class="collapse list-group-submenu" id="sub_sidebar_assessment">
+                                        <a href="#core_functions" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#sub_sidebar_assessment">
+                                            <input type="checkbox">Core Functions<img src="../images/arrow_down.png" id="arrow_down_corefunction"></i></a>
+                                        <div class="collapse list-group-submenu list-group-submenu-1 collapsed" id="core_functions">
+                                            <a href="#core_functions" class="list-group-item collapsed">
+                                                <input type="checkbox">Finance & Accounting</a>
+                                            <a href="#core_functions" class="list-group-item collapsed">
+                                                <input type="checkbox">Strategy & Planning</a>
+                                            <a href="#core_functions" class="list-group-item collapsed">
+                                                <input type="checkbox">Sales & Marketing</a>
+                                            <a href="#core_functions" class="list-group-item collapsed">
+                                                <input type="checkbox">Operations & fulfillment</a>
+                                            <a href="#core_functions" class="list-group-item collapsed">
+                                                <input type="checkbox">Customer Service</a>
+                                            <a href="#core_functions" class="list-group-item collapsed">
+                                                <input type="checkbox">Human Resource</a>
+                                            <a href="#core_functions" class="list-group-item collapsed">
+                                                <input type="checkbox">Information Technology</a>
+                                            <a href="#core_functions" class="list-group-item collapsed">
+                                                <input type="checkbox">Research & Development</a>
+                                            <a href="#core_functions" class="list-group-item collapsed">
+                                                <input type="checkbox">Supply Chain Management</a>
+                                            <a href="#core_functions" class="list-group-item collapsed">
+                                                <input type="checkbox">Legal & Regulatory</a>
+                                            <a href="#core_functions" class="list-group-item collapsed">
+                                                <input type="checkbox">Public & External Relations</a>
+                                        </div>
+                                        <a href="#" class="list-group-item collapsed">
+                                            <input type="checkbox">Support Functions<img src="../images/arrow_down.png" id="arrow_down_corefunction"></i></a>
+                                        <a href="#" class="list-group-item collapsed">
+                                            <input type="checkbox">Stakeholder Assessments<img src="../images/arrow_down.png" id="arrow_down_corefunction"></i></a>
+                                        <a href="#" class="list-group-item collapsed">
+                                            <input type="checkbox">Employee Development<img src="../images/arrow_down.png" id="arrow_down_corefunction"></i></a>
+                                    </div>
+
+                                </div>
+                                <a href="#process-assessment" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#sideMenu">
+                                    <input type="checkbox">CSF Category<img src="../images/arrow_down.png"></a>
+                                <a href="#stakeholder-assessment" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#sideMenu">
+                                    <input type="checkbox">CSF Context<img src="../images/arrow_down.png"></a>
+                            </div>
+
+
+
+                            <!-- <div id="MainMenu">
+                                <div class="list-group panel">
+                                    <a href="#demo3" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Item 3</a>
+                                    <div class="collapse" id="demo3"> -->
+                            <!-- <a href="#SubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Subitem 1 <i class="fa fa-caret-down"></i></a> -->
+                            <!-- <div class="collapse list-group-submenu" id="SubMenu1"> -->
+                            <!-- <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 1 a</a>
+                                            <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 2 b</a>
+                                            <a href="#SubSubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubSubMenu1">Subitem 3 c <i class="fa fa-caret-down"></i></a>
+                                            <div class="collapse list-group-submenu list-group-submenu-1" id="SubSubMenu1">
+                                                <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 1</a>
+                                                <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 2</a>
+                                            </div>
+                                            <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 4 d</a>
+                                        </div>
+                                        <a href="javascript:;" class="list-group-item">Subitem 2</a>
+                                        <a href="javascript:;" class="list-group-item">Subitem 3</a>
+                                    </div>
+                                    <a href="#demo4" class="list-group-item list-group-item" data-toggle="collapse" data-parent="#MainMenu">Item 4</a>
+                                    <div class="collapse" id="demo4">
+                                        <a href="" class="list-group-item">Subitem 1</a>
+                                        <a href="" class="list-group-item">Subitem 2</a>
+                                        <a href="" class="list-group-item">Subitem 3</a>
+                                    </div>
+                                    <a href="#demo5" class="list-group-item list-group-item" data-toggle="collapse" data-parent="#MainMenu">Item 5</a>
+                                    <div class="collapse" id="demo5">
+                                        <a href="#" class="list-group-item">Subitem 1</a>
+                                        <a href="" class="list-group-item">Subitem 2</a>
+                                        <a href="" class="list-group-item">Subitem 3</a>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="container table_container" style="width: 100%;">
+                            <table class="col-md-12 table table-fixed table-bordered">
+                                <thead style="width :  100%">
+                                    <tr>
+                                        <th style="width:40px;">
+                                            <input type="checkbox">
+                                        </th>
+                                        <th>Name</th>
+                                        <th style="width:25px;">Points</th>
+                                        <th style="width:50px;">Name</th>
+                                        <th>Points</th>
+                                        <th>Name</th>
+                                        <th>Points</th>
+                                        <th>Name</th>
+                                        <th>Points</th>
+                                        <th>Name</th>
+                                        <th>Points</th>
+                                        <th>Name</th>
+                                        <th>Points</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table_style">
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>Mike Adams</td>
+                                        <td>23</td>
+                                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        </td>
+                                        <td>23</td>
+                                        <td>Mike Adams</td>
+                                        <td>23</td>
+                                        <td>Mike Adams</td>
+                                        <td>23</td>
+                                        <td>Mike Adams</td>
+                                        <td>23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>Holly Galivan</td>
+                                        <td>44</td>
+                                        <td>Mike Adams</td>
+                                        <td>23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td>23</td>
+                                        <td>Mike Adams</td>
+                                        <td>23</td>
+                                        <td>Mike Adams</td>
+                                        <td>23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>Mary Shea</td>
+                                        <td>86</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td>23</td>
+                                        <td>Mike Adams</td>
+                                        <td>23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td>23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>Jim Adams</td>
+                                        <td>23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td>23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>Henry Galivan</td>
+                                        <td>44</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td>23</td>
+                                        <td>Mike Adams</td>
+                                        <td>23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>Bob Shea</td>
+                                        <td>26</td>
+                                        <td>Mike Adams</td>
+                                        <td>23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td>23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>Andy Parks</td>
+                                        <td>56</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>Bob Skelly</td>
+                                        <td>96</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td>23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>William Defoe</td>
+                                        <td>13</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>Will Tripp</td>
+                                        <td>16</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>Bill Champion</td>
+                                        <td>44</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox">
+                                        </td>
+                                        <td>Lastly Jane</td>
+                                        <td>6</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                        <td>Mike Adams</td>
+                                        <td> 23</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <nav style="float:right">
+                            <ul class="pagination pagination-sm">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <p class="pull-left">&copy; 2016 Performax Inc. All Rights Reserved</p>
+                <a href="#" class="pull-right">Help</a>
+            </div>
+        </footer>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/editor.js" charset="utf-8"></script>
+        <script src="../js/script.js"></script>
+</body>
+
+</html>
