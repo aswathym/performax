@@ -312,7 +312,7 @@ header {
     overflow-y: scroll;
     width: 100%;
 }
-tr, th {
+.table_style tr, .table_style th {
     height: 50px;
 }
 th {
@@ -552,6 +552,9 @@ footer {
 #add-ons .innerbox {
     margin: 25px 0;
 }
+#addOnPopup .Editor-container {
+    margin-left: 41%;
+}
 .service-img {
     border: 1px solid #ccc;
 }
@@ -563,7 +566,7 @@ footer {
 span.price:before {
     content: '$';
 }
-.modal-body label:after, #login .form-content label:after {
+.modal-body label:after, #login .form-content .row label:after {
     content: ':';
 }
 h1 {
@@ -587,8 +590,10 @@ h1 {
     ;
 }
 #create_promo_code_form i {
-    color: #09A6D0;
     margin-right: 5px;
+}
+#create_promo_code_form .fa-circle-thin {
+    color: rgba(128, 128, 128, 0.8);;
 }
 #create_promo_code_form input {
     width: 60%;
@@ -600,6 +605,23 @@ h1 {
     background-image: url('../images/calender_icon.png');
     background-repeat: no-repeat;
     border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#create_promo_code_form input[type="radio"] {
+    display: none;
+}
+#create_promo_code_form input[type="radio"] + label .fa-check-circle {
+    display: none;
+}
+#create_promo_code_form input[type="radio"]:checked + label .fa-check-circle {
+    display: block;
+    color: #09A6D0;
+}
+#create_promo_code_form input[type="radio"]:checked + label .fa-circle-thin {
+    display: none;
+}
+#create_promo_code_form .number_field:focus {
+    border-color: #09A6D0;
 }
 .promo_type_discount {
     margin-bottom: 15px;
@@ -640,6 +662,9 @@ h1 {
 }
 #manage_history_list .header {
     margin-bottom: 10px;
+}
+#manage_history_list .header img {
+    margin: 0px 5px;
 }
 #add_new_testimonial_form {
     margin-bottom: 20px;
@@ -754,7 +779,7 @@ h1 {
     padding: 2px;
 }
 .remember-txt {
-    padding: 10px 49px 0 188px;
+    padding: 10px 49px 0 57px;
 }
 .remember-txt a {
     color: #f45757;
@@ -762,4 +787,18 @@ h1 {
 #login button{
     min-width: 145px;
     font: 14px 'Roboto-Medium';
+}
+
+.option span{
+    display: inline-block;
+}
+#login .form-content .option  label{
+    width: auto;
+    margin-bottom: 0;
+    margin-left: 10px;
+
+    line-height: 16px;
+}
+footer.footer{
+    border-top: 0;
 }
