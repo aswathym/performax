@@ -312,7 +312,7 @@ header {
     overflow-y: scroll;
     width: 100%;
 }
-tr, th {
+.table_style tr, .table_style th {
     height: 50px;
 }
 th {
@@ -536,6 +536,9 @@ footer {
 #add-ons .innerbox {
     margin: 25px 0;
 }
+#addOnPopup .Editor-container {
+    margin-left: 41%;
+}
 .service-img {
     border: 1px solid #ccc;
 }
@@ -571,8 +574,10 @@ h1 {
     ;
 }
 #create_promo_code_form i {
-    color: #09A6D0;
     margin-right: 5px;
+}
+#create_promo_code_form .fa-circle-thin {
+    color: rgba(128, 128, 128, 0.8);;
 }
 #create_promo_code_form input {
     width: 60%;
@@ -584,6 +589,23 @@ h1 {
     background-image: url('../images/calender_icon.png');
     background-repeat: no-repeat;
     border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#create_promo_code_form input[type="radio"] {
+    display: none;
+}
+#create_promo_code_form input[type="radio"] + label .fa-check-circle {
+    display: none;
+}
+#create_promo_code_form input[type="radio"]:checked + label .fa-check-circle {
+    display: block;
+    color: #09A6D0;
+}
+#create_promo_code_form input[type="radio"]:checked + label .fa-circle-thin {
+    display: none;
+}
+#create_promo_code_form .number_field:focus {
+    border-color: #09A6D0;
 }
 .promo_type_discount {
     margin-bottom: 15px;
@@ -619,6 +641,9 @@ h1 {
 }
 #manage_history_list .header {
     margin-bottom: 10px;
+}
+#manage_history_list .header img {
+    margin: 0px 5px;
 }
 #add_new_testimonial_form {
     margin-bottom: 20px;

@@ -42,13 +42,23 @@ $(document).ready(function() {
         'togglescreen': false
     });
 
+    if ($('#create_promo_code_form')) {
+        $('.calender').datepicker({
+            format: "dd/mm/yyyy",
+            autoclose: true
+        });
+    }
+    $('#create_promo_code_form #radio2').click(function() {
+        $('.number_field').focus();
+    })
+
     $("#edit_icon").click(function() {
         $("#update_finance").prop('disabled', false);
         $("#update_finance").css('height', '150px');
         $("#update_button").css('display', 'block');
         $(this).parent().parent().find('textarea').focus();
     });
-    $('#register_button').click(function(){
+    $('#register_button').click(function() {
         var email = $('#email_reg').val();
         var company_id = $('#company_id').val();
         $('.error_span_email_reg').text('');
@@ -56,23 +66,18 @@ $(document).ready(function() {
         if ((email === "") && (company_id === "")) {
             $('.error_span_email_reg').text('Email should not be Empty');
             $('.error_span_cmp_id').text('Company ID should not be Empty');
-        }
-        else if (email === "") {
+        } else if (email === "") {
             $('.error_span_email_reg').text('Email should not be Empty');
-        }
-        else if (company_id === "") {
+        } else if (company_id === "") {
             $('.error_span_cmp_id').text('Company ID should not be Empty');
-        }
-        else if (validateEmail(email)) {
+        } else if (validateEmail(email)) {
             debugger;
-            if($('.agree_conditons').prop('checked')){
+            if ($('.agree_conditons').prop('checked')) {
                 alert('Registration successfully completed');
-            }
-            else {
+            } else {
                 $('.error_span_email_reg').text('Agree the Terms and Conditions');
             }
-        }
-        else {
+        } else {
             $('.error_span_email_reg').text('The Email is not Valid');
         }
     });
@@ -86,16 +91,13 @@ $(document).ready(function() {
         }
         if (password === "") {
             $('.error_span_pass').text('Password should not be Empty');
-        }
-        else if (validateEmail(email)) {
+        } else if (validateEmail(email)) {
             if (validatePassword(email, password)) {
                 location.pathname = "/assessments.html";
-            }
-            else {
+            } else {
                 $('.error_span_email').text('The Email and Password do not match');
             }
-        }
-        else {
+        } else {
             $('.error_span_email').text('The Email is not Valid');
         }
     })
