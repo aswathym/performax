@@ -380,11 +380,11 @@ input[type="checkbox"] {
 }
 .add_CSF_popup>.btn-group>button {
     width: 100%;
+    border-radius: 0px;
 }
 .modal-body .row>.col-md-6> a {
     display: block;
-    margin-bottom: 18px;
-    padding-top: 9px;
+    margin-bottom: 21px;
 }
 .modal-body .row>.col-md-6> a> span i {
     padding-top: 8px;
