@@ -107,6 +107,16 @@ $(document).ready(function() {
         }
     })
 
+    $('.profile_pic').click(function() {
+        var check = $('.profile_pic_hover').hasClass('displayNone');
+        if (check) {
+            $('.profile_pic_hover').removeClass('displayNone');
+        }
+        else {
+            $('.profile_pic_hover').addClass('displayNone');
+        }
+    })
+
     function validateEmail(email) {
         var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
         return emailReg.test(email);
