@@ -389,7 +389,7 @@ input[type="checkbox"] {
     font-weight: normal;
     font-size: 14px;
 }
-.add_CSF_popup input, .add_CSF_popup>div, .add_CSF_popup select {
+.add_CSF_popup input, .add_CSF_popup>div {
     width: 50%;
     float: right;
     height: 30px;
@@ -405,6 +405,16 @@ input[type="checkbox"] {
     width: 100%;
     border-radius: 0px;
     text-align: left;
+}
+.add_CSF_popup>.btn-group>button i {
+    float: right;
+    margin-top: 4px;
+}
+.add_CSF_popup>.btn-group>#select_industry, .add_CSF_popup>.btn-group>#size_CSF{
+    color: #D7D6D6;
+}
+.add_CSF_popup>.btn-group>.dropdown-menu{
+    width: 223px !important;
 }
 .modal-body .row>.col-md-6> a {
     display: block;
@@ -892,7 +902,11 @@ footer.footer {
 }
 .recommended_assessments {
     text-align: center;
-    color: #4E4B4C;
+    color: #797777;
+    font-size: 13px;
+}
+.recommended_assessments p {
+
 }
 
 /* ES - create profile */
