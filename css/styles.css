@@ -571,8 +571,10 @@ h1 {
     ;
 }
 #create_promo_code_form i {
-    color: #09A6D0;
     margin-right: 5px;
+}
+#create_promo_code_form .fa-circle-thin {
+    color: rgba(128, 128, 128, 0.8);;
 }
 #create_promo_code_form input {
     width: 60%;
@@ -596,7 +598,7 @@ h1 {
     display: block;
     color: #09A6D0;
 }
-#create_promo_code_form input[type="radio"]:checked + label .fa-circle-o {
+#create_promo_code_form input[type="radio"]:checked + label .fa-circle-thin {
     display: none;
 }
 #create_promo_code_form .number_field:focus {
