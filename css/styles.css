@@ -76,7 +76,19 @@ header {
     font-size: 13px;
 }
 #header_user_bar {
-    height: 50px;
+    padding: 10px 5px;
+}
+#header_user_bar .profile_pic {
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+#header_user_bar .profile_pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
 #addAssessmentPopup .Editor-container {
     margin-left: 24%;
@@ -146,7 +158,10 @@ header {
 #header_nav_tabs {
     font-size: 13px;
 }
-#header_nav_tabs .badge {
+#header_user_bar i {
+    margin-top: 10px;
+}
+#header_nav_tabs .badge, #header_user_bar .badge {
     margin-top: -50px;
     background-color: #EF4E4E;
 }
