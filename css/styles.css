@@ -536,6 +536,9 @@ footer {
 #add-ons .innerbox {
     margin: 25px 0;
 }
+#addOnPopup .Editor-container {
+    margin-left: 41%;
+}
 .service-img {
     border: 1px solid #ccc;
 }
@@ -638,6 +641,9 @@ h1 {
 }
 #manage_history_list .header {
     margin-bottom: 10px;
+}
+#manage_history_list .header img {
+    margin: 0px 5px;
 }
 #add_new_testimonial_form {
     margin-bottom: 20px;

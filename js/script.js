@@ -43,7 +43,7 @@ $(document).ready(function() {
     });
 
     if ($('#create_promo_code_form')) {
-        $('#create_promo_code_form .calender').datepicker({
+        $('.calender').datepicker({
             format: "dd/mm/yyyy",
             autoclose: true
         });
