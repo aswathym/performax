@@ -93,9 +93,10 @@ $(document).ready(function() {
             $('.error_span_pass').text('Password should not be Empty');
         } else if (validateEmail(email)) {
             if (validatePassword(email, password)) {
-                location.pathname = "/assessments.html";
-            } else {
-                $('.error_span_email').text('The Email and Password do not match');
+            location.pathname = "/performax/Admin/assessments.html";
+            }
+            else {
+               $('.error_span_email').text('The Email and Password do not match');
             }
         } else {
             $('.error_span_email').text('The Email is not Valid');
