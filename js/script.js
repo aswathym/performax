@@ -113,7 +113,10 @@ $(document).ready(function() {
         var ret = (email == 'admin@qburst.com') && (pass == 'admin') ? true : false;
         return ret;
     }
+    $(".dropdown-menu li a").click(function(){
+  var selText = $(this).text();
+  $(this).parents('.btn-group').find('.dropdown-toggle').html(selText+' <span class="caret"></span>');
+});
 
-     $('#input-91').rating({hoverEnabled: false});
 
 });
