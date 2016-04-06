@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/editor.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../css/bootstrap-datepicker3.min.css" media="screen" title="no title" charset="utf-8">
 </head>
 
 <body>
@@ -58,7 +59,7 @@
                                 <h5 class="modal-title" id="myModalLabel"><b>Create Promo Code</b></h5>
                             </div>
                             <div class="modal-body container-fluid">
-                                <form class="" action="index.html" method="post" id="create_promo_code_form">
+                                <form class="form-content" action="index.html" method="post" id="create_promo_code_form">
                                     <h5><b>Set Validity of Promo Code</b></h5>
                                     <div class="">
                                         <span class="col-md-3"> Start Date: </span>
@@ -90,9 +91,27 @@
                                     </div>
                                     <h5><b>No of Times the Code can be used</b></h5>
                                     <div class="">
-                                        <span class="col-md-3"><i class="fa fa-check-circle fa-2x"></i> <b>Once</b> </span>
-                                        <span class="col-md-5"><i class="fa fa-circle fa-2x"></i> Enter Specific Number </span>
-                                        <span class="col-md-3"> <input type="text" name="name" placeholder="Enter number" value=""></span>
+                                        <span class="col-md-3">
+                                            <input type="radio" name="option" id="radio1" checked/>
+                                            <label for="radio1">
+                                                <span class="fa-stack">
+                                                    <i class="fa fa-circle-o fa-2x fa-stack-1x"></i>
+                                                    <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                </span>
+                                                Once
+                                            </label>
+                                        </span>
+                                        <span class="col-md-5">
+                                            <input type="radio" name="option" id="radio2"/>
+                                            <label for="radio2">
+                                                <span class="fa-stack">
+                                                    <i class="fa fa-circle-o fa-2x fa-stack-1x"></i>
+                                                    <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                </span>
+                                                Enter Specific Number
+                                            </label>
+                                        </span>
+                                        <span class="col-md-3"> <input type="text" class="number_field" name="name" placeholder="Enter number" value=""></span>
                                     </div>
                                 </form>
                             </div>
@@ -175,17 +194,18 @@
                 </div>
             </div>
         </div>
-    </div>
-    <footer class="footer">
-        <div class="container">
-            <p class="pull-left">&copy; 2016 Performax Inc. All Rights Reserved</p>
-            <a href="#" class="pull-right">Help</a>
         </div>
-    </footer>
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/editor.js" charset="utf-8"></script>
-    <script src="../js/script.js"></script>
+        <footer class="footer">
+            <div class="container">
+                <p class="pull-left">&copy; 2016 Performax Inc. All Rights Reserved</p>
+                <a href="#" class="pull-right">Help</a>
+            </div>
+        </footer>
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/editor.js" charset="utf-8"></script>
+        <script src="../js/bootstrap-datepicker.min.js" charset="utf-8"></script>
+        <script src="../js/script.js"></script>
 </body>
 
 </html>

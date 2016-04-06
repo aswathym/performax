@@ -312,7 +312,7 @@ header {
     overflow-y: scroll;
     width: 100%;
 }
-tr, th {
+.table_style tr, .table_style th {
     height: 50px;
 }
 th {
@@ -584,6 +584,23 @@ h1 {
     background-image: url('../images/calender_icon.png');
     background-repeat: no-repeat;
     border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#create_promo_code_form input[type="radio"] {
+    display: none;
+}
+#create_promo_code_form input[type="radio"] + label .fa-check-circle {
+    display: none;
+}
+#create_promo_code_form input[type="radio"]:checked + label .fa-check-circle {
+    display: block;
+    color: #09A6D0;
+}
+#create_promo_code_form input[type="radio"]:checked + label .fa-circle-o {
+    display: none;
+}
+#create_promo_code_form .number_field:focus {
+    border-color: #09A6D0;
 }
 .promo_type_discount {
     margin-bottom: 15px;
