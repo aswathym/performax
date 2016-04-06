@@ -113,4 +113,6 @@ $(document).ready(function() {
         return ret;
     }
 
+     $('#input-91').rating({hoverEnabled: false});
+
 });

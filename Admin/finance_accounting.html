@@ -9,7 +9,7 @@
     <link href="../css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/editor.css" media="screen" title="no title" charset="utf-8">
-    <link rel="stylesheet" href="../css/bootstrap-datepicker3.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../css/star-rating.css" charset="utf-8">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
@@ -85,7 +85,6 @@
                             </div>
                             <div class="modal fade" id="myModal" role="dialog">
                                 <div class="modal-dialog">
-
                                     <!-- Modal content-->
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -101,12 +100,10 @@
                                                         </div>
                                                         <div class="add_CSF_popup">
                                                             <label for="">CSF rating</label>
-                                                            <img src="../images/Rating Bg.png">
-                                                            <div class="rating">
-                                                                <img src="../images/golden star.png">
-                                                                <img src="../images/golden star.png">
-                                                                <img src="../images/golden star.png">
-                                                                <img src="../images/grey star.png" alt="" /><img src="../images/grey star.png" alt="" />
+                                                            <div>
+                                                                <div class="star_rating_div">
+                                                                    <input value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                                                </div>
                                                             </div>
 
                                                         </div>
@@ -218,10 +215,10 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <a>Add from Performax360 Database</a>
-                                                        <a>Add from Performax360 Database</a>
-                                                        <a>Add from Performax360 Database</a>
-                                                        <a>Add from Performax360 Database</a>
+                                                        <a>Add from Performax360 Database<i class="fa fa-angle-down"></i></a>
+                                                        <a>Add from Performax360 Database<i class="fa fa-angle-down"></i></a>
+                                                        <a>Add from Performax360 Database<i class="fa fa-angle-down"></i></a>
+                                                        <a>Add from Performax360 Database<i class="fa fa-angle-down"></i></a>
 
                                                     </div>
                                                 </div>
@@ -231,7 +228,6 @@
                                             <button type="button" class="btn btn-info" data-dismiss="modal">Add CSF</button>
                                             <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
                                         </div>
-
                                     </div>
 
                                 </div>
@@ -502,6 +498,7 @@
         <script src="../js/editor.js" charset="utf-8"></script>
         <script src="../js/bootstrap-datepicker.min.js" charset="utf-8"></script>
         <script src="../js/script.js"></script>
+        <script src="../js/star-rating.js"></script>
 </body>
 
 </html>

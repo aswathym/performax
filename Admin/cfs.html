@@ -6,11 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Performax | CSF</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link href="../css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/editor.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../css/star-rating.css" charset="utf-8">
     <link rel="stylesheet" href="../css/bootstrap-datepicker3.min.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="../css/styles.css">
+
 </head>
 
 <body>
@@ -70,12 +74,10 @@
                                             </div>
                                             <div class="add_CSF_popup">
                                                 <label for="">CSF rating</label>
-                                                <img src="../images/Rating Bg.png">
-                                                <div class="rating">
-                                                    <img src="../images/golden star.png">
-                                                    <img src="../images/golden star.png">
-                                                    <img src="../images/golden star.png">
-                                                    <img src="../images/grey star.png" alt="" /><img src="../images/grey star.png" alt="" />
+                                                <div>
+                                                    <div class="star_rating_div">
+                                                        <input value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                                    </div>
                                                 </div>
 
                                             </div>
@@ -187,10 +189,10 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <a>Add from Performax360 Database</a>
-                                            <a>Add from Performax360 Database</a>
-                                            <a>Add from Performax360 Database</a>
-                                            <a>Add from Performax360 Database</a>
+                                            <a>Add from Performax360 Database <span><i class="fa fa-angle-down"></i></span></a>
+                                            <a>Add from Performax360 Database <span><i class="fa fa-angle-down"></i></span></a>
+                                            <a>Add from Performax360 Database <span><i class="fa fa-angle-down"></i></span></a>
+                                            <a>Add from Performax360 Database <span><i class="fa fa-angle-down"></i></span></a>
 
                                         </div>
                                     </div>
@@ -223,7 +225,8 @@
                                     </a>
                                     <div class="collapse list-group-submenu" id="sub_sidebar_assessment">
                                         <a href="#core_functions" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#sub_sidebar_assessment">
-                                            <input type="checkbox">Core Functions<img src="../images/arrow_down.png" id="arrow_down_corefunction"></i></a>
+                                            <input type="checkbox">Core Functions<img src="../images/arrow_down.png" id="arrow_down_corefunction"></i>
+                                        </a>
                                         <div class="collapse list-group-submenu list-group-submenu-1 collapsed" id="core_functions">
                                             <a href="#core_functions" class="list-group-item collapsed">
                                                 <input type="checkbox">Finance & Accounting</a>
@@ -249,11 +252,14 @@
                                                 <input type="checkbox">Public & External Relations</a>
                                         </div>
                                         <a href="#" class="list-group-item collapsed">
-                                            <input type="checkbox">Support Functions<img src="../images/arrow_down.png" id="arrow_down_corefunction"></i></a>
+                                            <input type="checkbox">Support Functions<img src="../images/arrow_down.png" id="arrow_down_corefunction"></i>
+                                        </a>
                                         <a href="#" class="list-group-item collapsed">
-                                            <input type="checkbox">Stakeholder Assessments<img src="../images/arrow_down.png" id="arrow_down_corefunction"></i></a>
+                                            <input type="checkbox">Stakeholder Assessments<img src="../images/arrow_down.png" id="arrow_down_corefunction"></i>
+                                        </a>
                                         <a href="#" class="list-group-item collapsed">
-                                            <input type="checkbox">Employee Development<img src="../images/arrow_down.png" id="arrow_down_corefunction"></i></a>
+                                            <input type="checkbox">Employee Development<img src="../images/arrow_down.png" id="arrow_down_corefunction"></i>
+                                        </a>
                                     </div>
 
                                 </div>
@@ -262,42 +268,6 @@
                                 <a href="#stakeholder-assessment" class="list-group-item list-group-item-success collapsed" data-toggle="collapse" data-parent="#sideMenu">
                                     <input type="checkbox">CSF Context<img src="../images/arrow_down.png"></a>
                             </div>
-
-
-
-                            <!-- <div id="MainMenu">
-                                <div class="list-group panel">
-                                    <a href="#demo3" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Item 3</a>
-                                    <div class="collapse" id="demo3"> -->
-                            <!-- <a href="#SubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Subitem 1 <i class="fa fa-caret-down"></i></a> -->
-                            <!-- <div class="collapse list-group-submenu" id="SubMenu1"> -->
-                            <!-- <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 1 a</a>
-                                            <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 2 b</a>
-                                            <a href="#SubSubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubSubMenu1">Subitem 3 c <i class="fa fa-caret-down"></i></a>
-                                            <div class="collapse list-group-submenu list-group-submenu-1" id="SubSubMenu1">
-                                                <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 1</a>
-                                                <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 2</a>
-                                            </div>
-                                            <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 4 d</a>
-                                        </div>
-                                        <a href="javascript:;" class="list-group-item">Subitem 2</a>
-                                        <a href="javascript:;" class="list-group-item">Subitem 3</a>
-                                    </div>
-                                    <a href="#demo4" class="list-group-item list-group-item" data-toggle="collapse" data-parent="#MainMenu">Item 4</a>
-                                    <div class="collapse" id="demo4">
-                                        <a href="" class="list-group-item">Subitem 1</a>
-                                        <a href="" class="list-group-item">Subitem 2</a>
-                                        <a href="" class="list-group-item">Subitem 3</a>
-                                    </div>
-                                    <a href="#demo5" class="list-group-item list-group-item" data-toggle="collapse" data-parent="#MainMenu">Item 5</a>
-                                    <div class="collapse" id="demo5">
-                                        <a href="#" class="list-group-item">Subitem 1</a>
-                                        <a href="" class="list-group-item">Subitem 2</a>
-                                        <a href="" class="list-group-item">Subitem 3</a>
-                                    </div>
-                                </div>
-                            </div> -->
-
                         </div>
                     </div>
                     <div class="col-md-9">
@@ -566,6 +536,7 @@
         <script src="../js/editor.js" charset="utf-8"></script>
         <script src="../js/bootstrap-datepicker.min.js" charset="utf-8"></script>
         <script src="../js/script.js"></script>
+        <script src="../js/star-rating.js"></script>
 </body>
 
 </html>
