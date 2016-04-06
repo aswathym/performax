@@ -376,11 +376,11 @@ input[type="checkbox"] {
     height: 15px;
     cursor: pointer;
 }
-.add_CSF_popup {
+.form-element {
     display: block;
     margin-bottom: 15px;
 }
-.add_CSF_popup label, #login label ,.form-content label{
+.form-element label, #login label ,.form-content label{
     color: #666464;
     width: 50%;
     text-align: right;
@@ -389,31 +389,31 @@ input[type="checkbox"] {
     font-weight: normal;
     font-size: 14px;
 }
-.add_CSF_popup input, .add_CSF_popup>div {
+.form-element input, .form-element>div {
     width: 50%;
     float: right;
     height: 30px;
 }
-.add_CSF_popup .star_rating_div {
+.form-element .star_rating_div {
     width: 110px;
     background-color: #EAEAEA;
     border-radius: 17px;
     padding-top: 4px;
     padding-left: 1px;
 }
-.add_CSF_popup>.btn-group>button {
+.form-element>.btn-group>button {
     width: 100%;
     border-radius: 0px;
     text-align: left;
 }
-.add_CSF_popup>.btn-group>button i {
+.form-element>.btn-group>button i {
     float: right;
     margin-top: 4px;
 }
-.add_CSF_popup>.btn-group>#select_industry, .add_CSF_popup>.btn-group>#size_CSF{
+.form-element>.btn-group>#select_industry, .form-element>.btn-group>#size_CSF{
     color: #D7D6D6;
 }
-.add_CSF_popup>.btn-group>.dropdown-menu{
+.form-element>.btn-group>.dropdown-menu{
     width: 223px !important;
 }
 .modal-body .row>.col-md-6> a {
@@ -936,4 +936,7 @@ footer.footer {
 }
 #profile{
     padding: 20px 0;
+}
+#profile .form-element input,#profile .form-element>div{
+    float: none;
 }
