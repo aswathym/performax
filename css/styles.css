@@ -122,6 +122,13 @@ header {
 #header_user_bar .profile_pic_hover li:hover {
     cursor: pointer;
 }
+#header_menu_bar i, #header_user_bar i {
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+#header_user_bar i:hover, #header_menu_bar i:hover {
+    color: #00B0F6;
+}
 .displayNone {
     display: none;
 }
