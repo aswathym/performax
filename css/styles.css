@@ -385,9 +385,8 @@ input[type="checkbox"] {
     display: block;
     margin-bottom: 18px;
     padding-top: 9px;
-    width: 50%;
 }
-.modal-body .row>.col-md-6> a> i {
+.modal-body .row>.col-md-6> a> span i {
     padding-top: 8px;
 }
 .add_CSF_button {
@@ -796,7 +795,6 @@ h1 {
     width: auto;
     margin-bottom: 0;
     margin-left: 10px;
-
     line-height: 16px;
 }
 footer.footer{
