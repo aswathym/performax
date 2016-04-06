@@ -205,7 +205,7 @@ header {
     background-color: white;
     font-weight: bold;
 }
-.outerbox {
+.outerbox{
     background-color: #FAFAFA;
     border: 1px #e4e4e4 solid;
     padding: 20px;
@@ -380,7 +380,7 @@ input[type="checkbox"] {
     display: block;
     margin-bottom: 15px;
 }
-.add_CSF_popup label, #login label {
+.add_CSF_popup label, #login label ,.form-content label{
     color: #666464;
     width: 50%;
     text-align: right;
@@ -389,7 +389,7 @@ input[type="checkbox"] {
     font-weight: normal;
     font-size: 14px;
 }
-.add_CSF_popup input, .add_CSF_popup>div {
+.add_CSF_popup input, .add_CSF_popup>div, .add_CSF_popup select {
     width: 50%;
     float: right;
     height: 30px;
@@ -404,6 +404,7 @@ input[type="checkbox"] {
 .add_CSF_popup>.btn-group>button {
     width: 100%;
     border-radius: 0px;
+    text-align: left;
 }
 .modal-body .row>.col-md-6> a {
     display: block;
@@ -589,7 +590,7 @@ footer {
 span.price:before {
     content: '$';
 }
-.modal-body label:after, #login .form-content .row label:after {
+.modal-body label:after,.form-content .row label:after {
     content: ':';
 }
 h1 {
@@ -795,7 +796,7 @@ h1 {
     width: 100%;
     padding: 20px 0;
 }
-#login .form-content label {
+#login .form-content label,.form-content label {
     width: 30%;
 }
 .form-content input[type="text"], .form-content input[type="password"] {
@@ -809,7 +810,7 @@ h1 {
 .remember-txt a {
     color: #f45757;
 }
-#login button {
+#login button,#saveBtn{
     min-width: 145px;
     font: 14px 'Roboto-Medium';
 }
@@ -830,4 +831,95 @@ footer.footer {
 #es_finance_accounting ul li {
     line-height: 1.5;
     margin-bottom: 10px;
+}
+
+.challenge_box {
+   background-color: #FAFAFA;
+   border: 1px #e4e4e4 solid;
+   padding: 5px;
+   border-radius: 1px;
+   box-shadow: 0 0 6px #ccc;
+   margin: 20px 0;
+}
+.challenge_box>span {
+    font-size: 20px;
+    padding-left: 12px;
+}
+.challenge_second_left {
+    padding: 15px;
+}
+.challenge_second_left div {
+    text-align: center;
+    padding-top: 10px;
+}
+.challenge_second_left .watch_video,.challenge_second_right .challenge_second_rightheading {
+    font-weight: bold;
+    font-size: 15px;
+}
+.challenge_second_rightheading {
+    padding-bottom: 30px;
+}
+.challenge_second_right {
+    padding-left: 0px;
+}
+.challenge_second_rightbox {
+    background-color: #FAFAFA;
+    border: 1px #e4e4e4 solid;
+    padding: 20px;
+    border-radius: 1px;
+    box-shadow: 0 0 6px #ccc;
+    margin: 20px 10px 20px 0;
+}
+.challenge_second_rightbox>.challenge1 label, .challenge_second_rightbox>.challenge2 label{
+    color: #4F4C4D;
+    font-size: 15px;
+}
+.challenge_second_rightbox>.challenge1 input, .challenge_second_rightbox>.challenge2 input{
+    width: 80%;
+    height: 70px;
+    margin-left: 10px;
+}
+.challenge_second_rightbox>.add_more_challenges {
+    padding-top: 20px;
+    color: #FF5420;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+.challenge_second_rightbox button {
+    padding: 5px 20px;
+    margin: 10px auto;
+    display: table;
+}
+.recommended_assessments {
+    text-align: center;
+    color: #4E4B4C;
+}
+
+/* ES - create profile */
+#profile{
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+.create-profile{
+    background-color: #fff;
+    border:1px solid  #ddd;
+    padding: 20px 2%;
+    margin: 30px 0;
+}
+.create-profile .form-content label{
+    width: 35%;
+}
+.create-profile .form-content input[type="text"],.create-profile  .form-content input[type="password"],.create-profile .btn-group{
+    width: 50%;
+    margin-bottom: 15px;
+}
+.create-profile .btn-group button{
+    width: 100%;
+}
+#saveBtn{
+    margin-top: 20px;
+}
+#profile{
+    padding: 20px 0;
 }
