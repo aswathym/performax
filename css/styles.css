@@ -61,8 +61,15 @@ header {
 }
 .dropdown_select {
     background: white;
-    padding: 5px;
+    padding: 5px 25px 5px 5px;
     cursor: pointer;
+    appearance:none;
+   -moz-appearance:none; /* Firefox */
+   -webkit-appearance:none; /* Safari and Chrome */
+    background-image: url('../images/arrow_down.png');
+    background-position: right 5px center;;
+    background-size: 13px 13px;
+    background-repeat: no-repeat;
 }
 .btn-info {
     background-color: #2C88CE;
