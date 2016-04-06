@@ -366,19 +366,29 @@ input[type="checkbox"] {
     font-weight: normal;
     font-size: 14px;
 }
-.add_CSF_popup input {
+.add_CSF_popup input, .add_CSF_popup>div {
     width: 50%;
     float: right;
+    height: 30px;
 }
-.add_CSF_popup>.btn-group {
-    width: 47%;
+.add_CSF_popup .star_rating_div {
+    width: 110px;
+    background-color: #EAEAEA;
+    border-radius: 17px;
+    padding-top: 4px;
+    padding-left: 1px;
 }
 .add_CSF_popup>.btn-group>button {
-    padding-right: 73%;
+    width: 100%;
 }
-.row>.col-md-6> a {
+.modal-body .row>.col-md-6> a {
     display: block;
-    margin-bottom: 26px;
+    margin-bottom: 18px;
+    padding-top: 9px;
+    width: 50%;
+}
+.modal-body .row>.col-md-6> a> i {
+    padding-top: 8px;
 }
 .add_CSF_button {
     margin-bottom: 10px;
@@ -388,6 +398,12 @@ input[type="checkbox"] {
     width: 110px;
     margin-right: 20px;
     margin-bottom: 15px;
+}
+.clear-rating.clear-rating-active,.rating-container .caption {
+    display: none;
+}
+.rating-xs {
+    font-size: 1.2em;
 }
 #CSF_Description {
     height: 80px;
@@ -598,11 +614,16 @@ h1 {
 .modal-header {
     border: none;
 }
-.rating {
+/*.rating {
     display: inline-block;
-    position: absolute;
-    right: 147px;
+    height: 22px;
+    background-color: #F1F1F1;
+    width: 100px;
+    border-radius: 10px;
 }
+.rating div {
+    padding-left: 11px;
+}*/
 
 /*Manage Home Page*/
 
