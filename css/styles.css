@@ -426,10 +426,13 @@ input[type="checkbox"] {
     font-weight: normal;
     font-size: 14px;
 }
-.form-element input, .form-element>div {
+.form-element input, .form-element>div, .form-element select {
     width: 50%;
     float: right;
     height: 30px;
+}
+.form-element select option:first-child{
+    color:#888;
 }
 .form-element .star_rating_div {
     width: 110px;
@@ -510,7 +513,7 @@ html, body {
 footer {
     background-color: #171c1d;
     height: 60px;
-    margin: 0 !important;
+    margin: 10px 0 0 0 !important;
 }
 footer .container {
     padding-top: 10px;
