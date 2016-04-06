@@ -146,6 +146,10 @@ header {
 #header_nav_tabs {
     font-size: 13px;
 }
+#header_nav_tabs .badge {
+    margin-top: -50px;
+    background-color: #EF4E4E;
+}
 .navbar {
     margin-bottom: 0;
     padding-top: 20px;
