@@ -182,7 +182,7 @@ header {
     background-color: white;
     font-weight: bold;
 }
-.outerbox {
+.outerbox{
     background-color: #FAFAFA;
     border: 1px #e4e4e4 solid;
     padding: 20px;
@@ -366,7 +366,7 @@ input[type="checkbox"] {
     font-weight: normal;
     font-size: 14px;
 }
-.add_CSF_popup input, .add_CSF_popup>div {
+.add_CSF_popup input, .add_CSF_popup>div, .add_CSF_popup select {
     width: 50%;
     float: right;
     height: 30px;
@@ -381,6 +381,7 @@ input[type="checkbox"] {
 .add_CSF_popup>.btn-group>button {
     width: 100%;
     border-radius: 0px;
+    text-align: left;
 }
 .modal-body .row>.col-md-6> a {
     display: block;
@@ -799,4 +800,65 @@ h1 {
 }
 footer.footer{
     border-top: 0;
+}
+.challenge_box {
+   background-color: #FAFAFA;
+   border: 1px #e4e4e4 solid;
+   padding: 5px;
+   border-radius: 1px;
+   box-shadow: 0 0 6px #ccc;
+   margin: 20px 0;
+}
+.challenge_box>span {
+    font-size: 20px;
+    padding-left: 12px;
+}
+.challenge_second_left {
+    padding: 15px;
+}
+.challenge_second_left div {
+    text-align: center;
+    padding-top: 10px;
+}
+.challenge_second_left .watch_video,.challenge_second_right .challenge_second_rightheading {
+    font-weight: bold;
+    font-size: 15px;
+}
+.challenge_second_rightheading {
+    padding-bottom: 30px;
+}
+.challenge_second_right {
+    padding-left: 0px;
+}
+.challenge_second_rightbox {
+    background-color: #FAFAFA;
+    border: 1px #e4e4e4 solid;
+    padding: 20px;
+    border-radius: 1px;
+    box-shadow: 0 0 6px #ccc;
+    margin: 20px 10px 20px 0;
+}
+.challenge_second_rightbox>.challenge1 label, .challenge_second_rightbox>.challenge2 label{
+    color: #4F4C4D;
+    font-size: 15px;
+}
+.challenge_second_rightbox>.challenge1 input, .challenge_second_rightbox>.challenge2 input{
+    width: 80%;
+    height: 70px;
+    margin-left: 10px;
+}
+.challenge_second_rightbox>.add_more_challenges {
+    padding-top: 20px;
+    color: #FF5420;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+.challenge_second_rightbox button {
+    padding: 5px 20px;
+    margin: 10px auto;
+    display: table;
+}
+.recommended_assessments {
+    text-align: center;
+    color: #4E4B4C;
 }
