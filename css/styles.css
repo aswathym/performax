@@ -554,7 +554,7 @@ footer {
 span.price:before {
     content: '$';
 }
-.modal-body label:after, #login .form-content label:after {
+.modal-body label:after, #login .form-content .row label:after {
     content: ':';
 }
 h1 {
@@ -762,7 +762,7 @@ h1 {
     padding: 2px;
 }
 .remember-txt {
-    padding: 10px 49px 0 188px;
+    padding: 10px 49px 0 57px;
 }
 .remember-txt a {
     color: #f45757;
@@ -770,4 +770,17 @@ h1 {
 #login button{
     min-width: 145px;
     font: 14px 'Roboto-Medium';
+}
+.option span{
+    display: inline-block;
+}
+#login .form-content .option  label{
+    width: auto;
+    margin-bottom: 0;
+    margin-left: 10px;
+
+    line-height: 16px;
+}
+footer.footer{
+    border-top: 0;
 }
