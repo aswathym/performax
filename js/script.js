@@ -42,6 +42,11 @@ $(document).ready(function() {
         'togglescreen': false
     });
 
+    $(".dropdown-menu").on('click', 'li a', function() {
+        $(".dd_btn").text($(this).text());
+        // $(".btn:first-child").val($(this).text());
+    });
+
     if ($('#create_promo_code_form')) {
         $('.calender').datepicker({
             format: "dd/mm/yyyy",
@@ -113,6 +118,8 @@ $(document).ready(function() {
         return ret;
     }
 
-     $('#input-91').rating({hoverEnabled: false});
+    $('#input-91').rating({
+        hoverEnabled: false
+    });
 
 });

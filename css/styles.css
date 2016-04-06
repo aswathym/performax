@@ -54,8 +54,15 @@ header {
 }
 .border-unique-styling {
     border: 1px solid rgba(0, 0, 0, 0.1);
-    ;
     padding: 10px;
+}
+.grey_color {
+    color: rgba(80, 89, 80, 0.8);
+}
+.dropdown_select {
+    background: white;
+    padding: 5px;
+    cursor: pointer;
 }
 .btn-info {
     background-color: #2C88CE;
@@ -817,4 +824,10 @@ h1 {
 }
 footer.footer {
     border-top: 0;
+}
+/*Executive Sponsor Finance & Accounting Page 6*/
+
+#es_finance_accounting ul li {
+    line-height: 1.5;
+    margin-bottom: 10px;
 }
