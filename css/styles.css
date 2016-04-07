@@ -1037,6 +1037,12 @@ footer.footer {
     position: absolute;
     right: 20px;
 }
+.sky_blue_color {
+    color: #00B0F6;
+}
+#header_user_bar .contact_container i {
+    font-size: 20px;
+}
 .span6{
     width: 48%;
     margin-left: 4%;
@@ -1054,4 +1060,17 @@ footer.footer {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#fcfcfc',GradientType=0 ); /* IE6-9 */
     padding-left: 0;
     padding-right: 0;
+}
+
+/*Subscription Status Executive Sponsor*/
+#subscription_status .heading{
+    font-size: 14px;
+}
+#subscription_status .details {
+    line-height: 1.5;
+    margin-top: 10px;
+}
+#subscription_status .status_and_price h5 span {
+    font-size: 15px;
+    font-weight: bold;
 }
