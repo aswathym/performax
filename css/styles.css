@@ -852,6 +852,7 @@ footer.footer {
     line-height: 1.5;
     margin-bottom: 10px;
 }
+/* ES - challenge mapper */
 
 .challenge_box {
    background-color: #FAFAFA;
@@ -912,11 +913,25 @@ footer.footer {
 }
 .recommended_assessments {
     text-align: center;
-    color: #797777;
-    font-size: 13px;
 }
 .recommended_assessments p {
-
+    color: #797777;
+    font-size: 14px;
+    padding-top: 15px;
+}
+.challenge_box>.navbar>ul {
+    border-bottom: 2px solid #09A6D0;
+}
+.challenge_box>.navbar>ul li{
+    font-size: 16px;
+    width: 275px;
+}
+.challenge_box>.navbar>ul li a {
+    padding-left: 59px;
+    padding-right: 60px;
+}
+#analysis>#core_functions_wrapper li {
+    width: 200px;   
 }
 
 /* ES - create profile */
