@@ -181,7 +181,7 @@ header {
     padding-top: 20px;
 }
 #core_functions_wrapper li .caption button {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 #core_functions_wrapper li:hover .caption {
     /*height: 200px;*/
@@ -197,6 +197,9 @@ header {
 .nav-tabs {
     border: 0;
 }
+.padding10 {
+    padding: 10px;
+}
 .padding0 {
     padding: 0px;
 }
@@ -207,10 +210,11 @@ header {
     margin-top: 10px;
 }
 #header_nav_tabs .badge, #header_user_bar .badge {
-    margin-top: -50px;
+    margin-top: -45px;
     background-color: #EF4E4E;
     height: 20px;
     width: 20px;
+    margin-left: -10px;
     padding: 3px 5px;
 }
 .navbar {
@@ -262,8 +266,6 @@ header {
 }
 .innerbox {
     background-color: #FFFFFF;
-    border: 1px #e4e4e4 solid;
-    box-shadow: 0 0 6px #ccc;
     border-radius: 4px;
     padding: 0px;
 }
