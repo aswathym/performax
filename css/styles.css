@@ -209,6 +209,13 @@ header {
 #header_user_bar i {
     margin-top: 10px;
 }
+#header_user_bar .profile_pic_hover li {
+    background: #FFF;
+    transition: all 0.2s linear;
+}
+#header_user_bar .profile_pic_hover li:hover {
+    background-color: #DDD;
+}
 #header_nav_tabs .badge, #header_user_bar .badge {
     margin-top: -45px;
     background-color: #EF4E4E;
