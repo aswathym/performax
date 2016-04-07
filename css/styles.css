@@ -423,7 +423,7 @@ th {
 .btn-sm {
     line-height: 1.2;
 }
-h4 {
+h4,.container h4 {
     font: 16px 'Roboto-Medium';
 }
 #sideMenu a {
@@ -1037,13 +1037,21 @@ footer.footer {
     position: absolute;
     right: 20px;
 }
-#product_listing .header_content{
-    border-right: 2px solid #ddd;
-}
 .span6{
     width: 48%;
     margin-left: 4%;
 }
 .row>.span6:first-child{
     margin-left: 0;
+}
+.seperator{
+    width:2px;
+    height:150px;
+    background: #fcfcfc; /* Old browsers */
+    background: -moz-linear-gradient(top, #fcfcfc 0%, #e6e7e8 19%, #e1e2e3 31%, #e2e4e4 73%, #e8e9ea 83%, #fcfcfc 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fcfcfc 0%,#e6e7e8 19%,#e1e2e3 31%,#e2e4e4 73%,#e8e9ea 83%,#fcfcfc 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fcfcfc 0%,#e6e7e8 19%,#e1e2e3 31%,#e2e4e4 73%,#e8e9ea 83%,#fcfcfc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#fcfcfc',GradientType=0 ); /* IE6-9 */
+    padding-left: 0;
+    padding-right: 0;
 }
