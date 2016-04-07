@@ -1048,6 +1048,9 @@ footer.footer {
 .cart_list>.row>.checkbox_addon{
     padding-left: 0;
 }
+.cart_list>.row>.checkbox_addon>.width0 {
+    width: auto;
+}
 .cart_list>.row>.checkbox_addon span{
     padding-left: 0;
     border: none;
@@ -1072,6 +1075,11 @@ footer.footer {
     padding-bottom: 10px;
     padding-left: 24px;
 }
+.cart_box>h4>img {
+    float: right;
+    padding-right: 15px;
+    cursor: pointer;
+}
 .cart_box>.cart_summary_list {
     color: #959494;
     font-size: 15px;
@@ -1079,6 +1087,9 @@ footer.footer {
 }
 .cart_box>.cart_summary_list span {
     float: right;
+}
+.cart_container>.col-md-3>.secure_pay {
+    width: 85%;
 }
 .cart_box> .cart_border{
     border-bottom: 1px solid #D3D2D2;
@@ -1115,7 +1126,14 @@ input.promocode::-webkit-input-placeholder {
     padding-right: 25%;
     margin-left: 25px;
 }
-
+.col-md-6.details_right {
+    text-align: right;
+}
+.cart_box>.checkout_details {
+    color: #666464;
+    font-size: 15px;
+    padding: 10px;
+}
 /* ES - create profile */
 #profile{
     max-width: 600px;

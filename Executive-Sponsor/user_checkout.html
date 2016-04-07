@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Performax | User Cart</title>
+    <title>Performax | User Checkout</title>
     <link href="../css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/editor.css" media="screen" title="no title" charset="utf-8">
@@ -81,7 +81,7 @@
                     <div class=" col-md-7">
                         <div class="cart_box">
                             <div class="cart_heading">
-                                CART (2)
+                                CHECKOUT
                             </div>
                             <div class="cart_box container-fluid">
                                 <div class="col-md-3">
@@ -101,8 +101,7 @@
                                         </div>
                                         <div class="col-md-7">
                                             <input type="text" placeholder="$99.5/ user/ month">
-                                            <div>Maximum users : 50</div>
-                                            <div>Assessment Subscription period : 12 months</div>
+                                            <div>$99.5/ user/ month,12 month plan with max 50 users.</div>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -110,7 +109,7 @@
                                             Add-ons:
                                         </div>
                                         <div class="col-md-5 checkbox_addon">
-                                            <div class="col-md-12 width0">
+                                            <div class="col-md-12 width0 ">
                                                 <span class="text-center spacer option checkbox remember-txt">
                                                     <input id="checkbox" class="" type="checkbox">
                                                     <label for="checkbox">Turnkey Solutions ($33)</label>
@@ -122,55 +121,6 @@
                                                     <label for="checkbox">Sentiment Analysis ($33)</label>
                                                 </span>
                                             </div>
-                                        </div>
-                                        <div class="col-md-4 remove_from_cart">
-                                            REMOVE FROM CART
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cart_box container-fluid">
-                                <div class="col-md-3">
-                                    <img src="../images/sales&marketing.png" alt="" />
-                                </div>
-                                <div class="col-md-9 cart_list">
-                                    <div class="row">
-                                        <h4>Finance & Accounting</h4>
-                                        <span>
-                                            No: of CSF's : 100
-                                            <span>$165</span>
-                                        </span>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-3" id="standard_plan">
-                                            Standard Plan
-                                        </div>
-                                        <div class="col-md-7">
-                                            <input type="text" placeholder="$99.5/ user/ month">
-                                            <div>Maximum users : 50</div>
-                                            <div>Assessment Subscription period : 12 months</div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-3" id="cart-add-ons">
-                                            Add-ons:
-                                        </div>
-                                        <div class="col-md-5 checkbox_addon">
-                                            <div class="col-md-12 width0">
-                                                <span class="text-center spacer option checkbox remember-txt">
-                                                    <input id="checkbox" class="" type="checkbox">
-                                                    <label for="checkbox">Turnkey Solutions ($33)</label>
-                                                </span>
-                                            </div>
-                                            <div class="col-md-12 width0">
-                                                <span class="text-center spacer option checkbox remember-txt">
-                                                    <input id="checkbox" class="" type="checkbox">
-                                                    <label for="checkbox">Sentiment Analysis ($33)</label>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 remove_from_cart">
-                                            REMOVE FROM CART
                                         </div>
                                     </div>
                                 </div>
@@ -178,7 +128,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="cart_box ">
+                        <div class="cart_box bg-white">
                             <h4>Cart Summary (2)</h4>
                             <div class="cart_summary_list">
                                 Finance & Accounting<span>$165</span>
@@ -190,14 +140,42 @@
                                 Cart Total<span>$330</span>
                             </div>
                         </div>
-                        <div class="cart_box ">
-                            <h4>Promocode</h4>
-                            <div class="cart_promocode">
-                                <input type="text" placeholder="Enter Promo Code" class="promocode">
-                                <button class="btn btn-info">Submit</button>
+                        <div class="cart_box bg-white">
+                            <h4>Details <img src="../images/edit.png" alt="" /></h4>
+                            <div class="row checkout_details">
+                                <div class="col-md-6 details_right">
+                                    Organisation:
+                                </div>
+                                <div class="col-md-6">
+                                    ABC Technologies
+                                </div>
+                            </div>
+                            <div class="row checkout_details">
+                                <div class="col-md-6 details_right">
+                                    Contact Person:
+                                </div>
+                                <div class="col-md-6">
+                                    Mr John Philips
+                                </div>
+                            </div>
+                            <div class="row checkout_details">
+                                <div class="col-md-6 details_right">
+                                    Address:
+                                </div>
+                                <div class="col-md-6">
+                                    Building name,Street name,City, State, Country
+                                </div>
+                            </div>
+                            <div class="row checkout_details">
+                                <div class="col-md-6 details_right">
+                                    Contact number:
+                                </div>
+                                <div class="col-md-6">
+                                    +1234567890
+                                </div>
                             </div>
                         </div>
-                        <button type="button" class="btn btn-info">Proceed to Checkout</button>
+                        <button type="button" class="btn btn-info secure_pay">Secure Pay</button>
                     </div>
                 </div>
 
