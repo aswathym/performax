@@ -1182,3 +1182,9 @@ input.promocode::-webkit-input-placeholder {
     background-color: transparent;
     box-shadow: none;
 }
+.cart_heading span:before{
+    content: '(';
+}
+.cart_heading span:after{
+    content: ')';
+}
