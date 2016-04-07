@@ -891,7 +891,7 @@ footer.footer {
 }
 /* ES - challenge mapper */
 
-.challenge_box {
+.challenge_box, .cart_box {
    background-color: #FAFAFA;
    border: 1px #e4e4e4 solid;
    padding: 5px;
@@ -961,14 +961,23 @@ footer.footer {
 }
 .challenge_box>.navbar>ul li{
     font-size: 16px;
-    width: 275px;
+    width: 280px;
 }
 .challenge_box>.navbar>ul li a {
-    padding-left: 59px;
-    padding-right: 60px;
+    padding: 3px 60px 0px 58px;
 }
 #analysis>#core_functions_wrapper li {
-    width: 200px;   
+    margin: 30px 38px 20px 10px;
+    width: 230px;
+}
+
+/* ES - User cart */
+.cart_box>col-md-7 {
+    width: 65%;
+}
+.cart_box>col-md-3 {
+    width: 30%;
+    margin-left: 40px;
 }
 
 /* ES - create profile */
