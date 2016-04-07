@@ -203,6 +203,9 @@ header {
 .padding0 {
     padding: 0px;
 }
+.bg_transparent {
+    background-color: transparent;
+}
 #header_nav_tabs {
     font-size: 13px;
 }
@@ -1019,4 +1022,16 @@ footer.footer {
 }
 #profile .form-element input,#profile .form-element>div{
     float: none;
+}
+
+/*User ExSpon Product Listing*/
+#product_listing .header_img {
+    height: 30px;
+}
+#product_listing .header_img img {
+    position: absolute;
+    right: 20px;
+}
+#product_listing .header_content{
+    border-right: 2px solid #ddd;
 }
