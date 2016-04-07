@@ -115,8 +115,30 @@ $(document).ready(function() {
         else {
             $('.profile_pic_hover').addClass('displayNone');
         }
-    })
+    });
 
+    $('#profile .form-content input[type=text]').keyup(function(ev) {
+        var val = ev.which;
+        if ((val >= 65 && val <= 90) || (val >= 97 && val <= 122) || (val == 08)) {
+            $(this).css('border-color', '#dedede');
+        }
+        else {
+            $(this).css('border-color', 'rgba(156, 3, 3, 0.4)');
+        }
+    })
+    $('#profile .form-content input[type=tel]').keyup(function(ev) {
+        var val = ev.which;
+        debugger;
+        if ((val >= 48 && val <= 57) || (val == 08)) {
+            $(this).css('border-color', '#dedede');
+        }
+        else {
+            $(this).css('border-color', 'rgba(156, 3, 3, 0.4)');
+        }
+    })
+    function checkEmpty(item) {
+        return item === '' ? true : false;
+    }
     function validateEmail(email) {
         var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
         return emailReg.test(email);

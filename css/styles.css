@@ -872,7 +872,7 @@ h1 {
 #login .form-content label,.form-content label {
     width: 30%;
 }
-.form-content input[type="text"], .form-content input[type="password"] {
+.form-content input[type="text"], .form-content input[type="password"], .form-content input[type="tel"] {
     width: 60%;
     border: 2px solid #dedede;
     padding: 2px;
@@ -1011,7 +1011,7 @@ footer.footer {
 .create-profile .form-content label{
     width: 35%;
 }
-.create-profile .form-content input[type="text"],.create-profile  .form-content input[type="password"],.create-profile select{
+.create-profile .form-content input[type="text"],.create-profile  .form-content input[type="password"], .create-profile select, .create-profile input[type='tel']{
     width: 50%;
     float: none;
     margin-bottom: 15px;
