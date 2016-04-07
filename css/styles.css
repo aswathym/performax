@@ -53,6 +53,7 @@ header {
     box-shadow: 0px 1px 4px 0px rgba(125, 125, 125, 0.5);
     margin: 5px 0px;
     padding: 0;
+    background-color: #fff;
 }
 .border-unique-styling {
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -64,6 +65,7 @@ header {
 .dropdown_select {
     background: white;
     padding: 5px 25px 5px 5px;
+    border: 2px solid #ddd;
     cursor: pointer;
     appearance:none;
    -moz-appearance:none; /* Firefox */
@@ -181,7 +183,7 @@ header {
     padding-top: 20px;
 }
 #core_functions_wrapper li .caption button {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 #core_functions_wrapper li:hover .caption {
     /*height: 200px;*/
@@ -197,8 +199,14 @@ header {
 .nav-tabs {
     border: 0;
 }
+.padding10 {
+    padding: 10px;
+}
 .padding0 {
     padding: 0px;
+}
+.bg_transparent {
+    background-color: transparent;
 }
 #header_nav_tabs {
     font-size: 13px;
@@ -206,11 +214,19 @@ header {
 #header_user_bar i {
     margin-top: 10px;
 }
+#header_user_bar .profile_pic_hover li {
+    background: #FFF;
+    transition: all 0.2s linear;
+}
+#header_user_bar .profile_pic_hover li:hover {
+    background-color: #DDD;
+}
 #header_nav_tabs .badge, #header_user_bar .badge {
-    margin-top: -50px;
+    margin-top: -45px;
     background-color: #EF4E4E;
     height: 20px;
     width: 20px;
+    margin-left: -10px;
     padding: 3px 5px;
 }
 .navbar {
@@ -262,8 +278,6 @@ header {
 }
 .innerbox {
     background-color: #FFFFFF;
-    border: 1px #e4e4e4 solid;
-    box-shadow: 0 0 6px #ccc;
     border-radius: 4px;
     padding: 0px;
 }
@@ -409,7 +423,7 @@ th {
 .btn-sm {
     line-height: 1.2;
 }
-h4 {
+h4,.container h4 {
     font: 16px 'Roboto-Medium';
 }
 #sideMenu a {
@@ -686,7 +700,6 @@ h1 {
     background-position: right top;
     background-image: url('../images/calender_icon.png');
     background-repeat: no-repeat;
-    border: 1px solid rgba(0, 0, 0, 0.3);
 }
 #create_promo_code_form input[type="radio"] {
     display: none;
@@ -697,6 +710,9 @@ h1 {
 #create_promo_code_form input[type="radio"]:checked + label .fa-check-circle {
     display: block;
     color: #09A6D0;
+}
+#create_promo_code_form input[type="radio"] + label:after {
+    display: none;
 }
 #create_promo_code_form input[type="radio"]:checked + label .fa-circle-thin {
     display: none;
@@ -856,7 +872,7 @@ h1 {
 #login .form-content label,.form-content label {
     width: 30%;
 }
-.form-content input[type="text"], .form-content input[type="password"] {
+.form-content input[type="text"], .form-content input[type="password"], .form-content input[type="tel"] {
     width: 60%;
     border: 2px solid #dedede;
     padding: 2px;
@@ -1115,8 +1131,9 @@ input.promocode::-webkit-input-placeholder {
 .create-profile .form-content label{
     width: 35%;
 }
-.create-profile .form-content input[type="text"],.create-profile  .form-content input[type="password"],.create-profile .btn-group{
+.create-profile .form-content input[type="text"],.create-profile  .form-content input[type="password"], .create-profile select, .create-profile input[type='tel']{
     width: 50%;
+    float: none;
     margin-bottom: 15px;
 }
 .create-profile .btn-group button{
@@ -1130,4 +1147,31 @@ input.promocode::-webkit-input-placeholder {
 }
 #profile .form-element input,#profile .form-element>div{
     float: none;
+}
+
+/*User ExSpon Product Listing*/
+#product_listing .header_img {
+    height: 30px;
+}
+#product_listing .header_img img {
+    position: absolute;
+    right: 20px;
+}
+.span6{
+    width: 48%;
+    margin-left: 4%;
+}
+.row>.span6:first-child{
+    margin-left: 0;
+}
+.seperator{
+    width:2px;
+    height:150px;
+    background: #fcfcfc; /* Old browsers */
+    background: -moz-linear-gradient(top, #fcfcfc 0%, #e6e7e8 19%, #e1e2e3 31%, #e2e4e4 73%, #e8e9ea 83%, #fcfcfc 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fcfcfc 0%,#e6e7e8 19%,#e1e2e3 31%,#e2e4e4 73%,#e8e9ea 83%,#fcfcfc 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fcfcfc 0%,#e6e7e8 19%,#e1e2e3 31%,#e2e4e4 73%,#e8e9ea 83%,#fcfcfc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#fcfcfc',GradientType=0 ); /* IE6-9 */
+    padding-left: 0;
+    padding-right: 0;
 }

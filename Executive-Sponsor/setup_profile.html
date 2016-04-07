@@ -10,136 +10,114 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/editor.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../css/bootstrap-datepicker3.min.css" media="screen" title="no title" charset="utf-8">
 </head>
 
 <body>
     <div id="wrap">
-    <div class="container" id="profile">
-        <div class="text-center">
-            <a href="#"><img src="../images/performax.png" alt="Performax" /></a>
-        </div>
-        <div class="create-profile container-fluid">
-            <h5 class="text-center">Create your Profile</h5>
+        <div class="container" id="profile">
             <div class="text-center">
-                <img src="../images/core_fnc_bg.jpg" alt="">
-                <div class="clearfix"></div>
-                 <a href="#">Add Picture</a>
+                <a href="#"><img src="../images/performax.png" alt="Performax" /></a>
             </div>
-           <form class="form-content" action="" method="post">
-                   <div class="row">
-                        <label for="" >First Name</label>
-                        <input class="" type="text" name="first name" value="">
+            <div class="create-profile container-fluid">
+                <h5 class="text-center">Create your Profile</h5>
+                <div class="text-center">
+                    <img src="../images/core_fnc_bg.jpg" alt="">
+                    <div class="clearfix"></div>
+                    <a href="#">Add Picture</a>
+                </div>
+                <form class="form-content">
+                    <div class="row">
+                        <label for="">First Name</label>
+                        <input class="" type="text" name="first_name" value="">
                     </div>
                     <div class="row">
-                        <label for="" >Last Name</label>
-                        <input class="" type="text" name="last name" value="">
+                        <label for="">Last Name</label>
+                        <input class="" type="text" name="last_name" value="">
                     </div>
                     <div class="row">
-                        <label for="" >Company</label>
+                        <label for="">Company</label>
                         <input class="" type="text" name="company" value="">
                     </div>
-                   
-                     <div class="row form-element">
+
+                    <div class="row form-element">
                         <label for="">Department</label>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Select Department <span><i class="fa fa-angle-down"></i></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li>Dep 1</li>
-                                <li>Dep 2</li>
-                                <li>Dep 3</li>
-                                <li>Dep 4</li>
-                            </ul>
-                        </div>
+                        <select class="dropdown_select" name="">
+                            <option value="functional">Functional</option>
+                            <option value="functional">Action</option>
+                            <option value="functional">Another Action</option>
+                            <option value="functional">Something</option>
+                            <option value="functional">Something Else</option>
+                        </select>
                     </div>
-                     <div class="row form-element">
+                    <div class="row form-element">
                         <label for="">Industry</label>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Industry<span><i class="fa fa-angle-down"></i></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li>Industry 1</li>
-                                <li>Industry 2</li>
-                                <li>Industry 3</li>
-                                <li>Industry 4</li>
-                            </ul>
-                        </div>
+                        <select class="dropdown_select" name="">
+                            <option value="functional">Functional</option>
+                            <option value="functional">Action</option>
+                            <option value="functional">Another Action</option>
+                            <option value="functional">Something</option>
+                            <option value="functional">Something Else</option>
+                        </select>
                     </div>
-                     <div class="row">
-                        <label for="" >Job Title</label>
-                        <input class="" type="text" name="Job Title" value="">
+                    <div class="row">
+                        <label for="">Job Title</label>
+                        <input class="" type="text" name="job_title" value="">
                     </div>
-                     <div class="row">
-                        <label for="" >Phone</label>
-                        <input class="" type="text" name="Phone" value="">
+                    <div class="row">
+                        <label for="">Phone</label>
+                        <input class="" type="tel" name="phone" value="">
                     </div>
                     <div class="row form-element">
                         <label for="">Country</label>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Country<span><i class="fa fa-angle-down"></i></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li>Country 1</li>
-                                <li>Country 3</li>
-                                <li>Country 4</li>
-                                <li>Country 5</li>
-                            </ul>
-                        </div>
+                        <select class="dropdown_select" name="">
+                            <option value="functional">Functional</option>
+                            <option value="functional">Action</option>
+                            <option value="functional">Another Action</option>
+                            <option value="functional">Something</option>
+                            <option value="functional">Something Else</option>
+                        </select>
                     </div>
-                     <div class="row form-element">
+                    <div class="row form-element">
                         <label for="">State</label>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                State<span><i class="fa fa-angle-down"></i></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li>City 1</li>
-                                <li>City 3</li>
-                                <li>City 4</li>
-                                <li>City 5</li>
-                            </ul>
-                        </div>
+                        <select class="dropdown_select" name="">
+                            <option value="functional">Functional</option>
+                            <option value="functional">Action</option>
+                            <option value="functional">Another Action</option>
+                            <option value="functional">Something</option>
+                            <option value="functional">Something Else</option>
+                        </select>
                     </div>
-                     <div class="row form-element">
+                    <div class="row form-element">
                         <label for="">City</label>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                City<span><i class="fa fa-angle-down"></i></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">City 1</a></li>
-                                <li><a href="#">City 3</a></li>
-                                <li><a href="#">City 4</a></li>
-                                <li><a href="#">City 5</a></li>
-                            </ul>
-                        </div>
+                        <select class="dropdown_select" name="">
+                            <option value="functional">Functional</option>
+                            <option value="functional">Action</option>
+                            <option value="functional">Another Action</option>
+                            <option value="functional">Something</option>
+                            <option value="functional">Something Else</option>
+                        </select>
                     </div>
-                      <div class="row">
-                        <label for="" >Zip Code</label>
-                        <input class="" type="text" name="Job Title" value="">
+                    <div class="row">
+                        <label for="">Zip Code</label>
+                        <input class="" type="tel" name="zip_code" value="">
                     </div>
-                     <div class="row form-element">
+                    <div class="row form-element">
                         <label for="">Company Size</label>
-                        <div class="btn-group">
-                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Company Size<span><i class="fa fa-angle-down"></i></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Company Size 1</a></li>
-                                <li><a href="#">Company Size 3</a></li>
-                                <li><a href="#">Company Size 4</a></li>
-                                <li><a href="#">Company Size 5</a></li>
-                            </ul>
-                        </div>
+                        <select class="dropdown_select" name="">
+                            <option value="functional">Functional</option>
+                            <option value="functional">Action</option>
+                            <option value="functional">Another Action</option>
+                            <option value="functional">Something</option>
+                            <option value="functional">Something Else</option>
+                        </select>
                     </div>
-                    <div class="text-center"><button type="button" class="btn btn-primary btn-sm" data-target="" id="saveBtn">Save</button></div>
-               
-            </form>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary btn-sm" data-target="" id="setupProfileSaveBtn">Save</button>
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
     </div>
     <footer class="footer">
         <div class="container">
@@ -150,6 +128,7 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/editor.js" charset="utf-8"></script>
+    <script src="../js/bootstrap-datepicker.min.js" charset="utf-8"></script>
     <script src="../js/script.js"></script>
 </body>
 
