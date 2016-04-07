@@ -1175,3 +1175,10 @@ input.promocode::-webkit-input-placeholder {
     padding-left: 0;
     padding-right: 0;
 }
+.bg-white{
+    background-color: #fff;
+}
+.bg-white .cart_box{
+    background-color: transparent;
+    box-shadow: none;
+}
