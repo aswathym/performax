@@ -64,6 +64,7 @@ header {
 .dropdown_select {
     background: white;
     padding: 5px 25px 5px 5px;
+    border: 2px solid #ddd;
     cursor: pointer;
     appearance:none;
    -moz-appearance:none; /* Firefox */
@@ -698,7 +699,6 @@ h1 {
     background-position: right top;
     background-image: url('../images/calender_icon.png');
     background-repeat: no-repeat;
-    border: 1px solid rgba(0, 0, 0, 0.3);
 }
 #create_promo_code_form input[type="radio"] {
     display: none;
@@ -709,6 +709,9 @@ h1 {
 #create_promo_code_form input[type="radio"]:checked + label .fa-check-circle {
     display: block;
     color: #09A6D0;
+}
+#create_promo_code_form input[type="radio"] + label:after {
+    display: none;
 }
 #create_promo_code_form input[type="radio"]:checked + label .fa-circle-thin {
     display: none;
@@ -1007,8 +1010,9 @@ footer.footer {
 .create-profile .form-content label{
     width: 35%;
 }
-.create-profile .form-content input[type="text"],.create-profile  .form-content input[type="password"],.create-profile .btn-group{
+.create-profile .form-content input[type="text"],.create-profile  .form-content input[type="password"],.create-profile select{
     width: 50%;
+    float: none;
     margin-bottom: 15px;
 }
 .create-profile .btn-group button{
