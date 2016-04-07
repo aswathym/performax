@@ -111,8 +111,7 @@ $(document).ready(function() {
         var check = $('.profile_pic_hover').hasClass('displayNone');
         if (check) {
             $('.profile_pic_hover').removeClass('displayNone');
-        }
-        else {
+        } else {
             $('.profile_pic_hover').addClass('displayNone');
         }
     });
@@ -121,8 +120,7 @@ $(document).ready(function() {
         var val = ev.which;
         if ((val >= 65 && val <= 90) || (val >= 97 && val <= 122) || (val == 08)) {
             $(this).css('border-color', '#dedede');
-        }
-        else {
+        } else {
             $(this).css('border-color', 'rgba(156, 3, 3, 0.4)');
         }
     })
@@ -131,14 +129,41 @@ $(document).ready(function() {
         debugger;
         if ((val >= 48 && val <= 57) || (val == 08)) {
             $(this).css('border-color', '#dedede');
-        }
-        else {
+        } else {
             $(this).css('border-color', 'rgba(156, 3, 3, 0.4)');
         }
     })
+    $('#setupProfileSaveBtn').click(function() {
+        var first_name = $('#profile .form-content input[name=first_name]').val(),
+            last_name = $('#profile .form-content input[name=last_name]').val(),
+            company = $('#profile .form-content input[name=company]').val(),
+            phone = $('#profile .form-content input[name=phone]').val(),
+            zip_code = $('#profile .form-content input[name=zip_code]').val(),
+            job_title = $('#profile .form-content input[name=job_title]').val();
+        if(first_name == '') {
+            $('#profile .form-content input[name=first_name]').css('border-color', 'rgba(156, 3, 3, 0.4)');
+        }
+        if(last_name == '') {
+            $('#profile .form-content input[name=last_name]').css('border-color', 'rgba(156, 3, 3, 0.4)');
+        }
+        if(company == '') {
+            $('#profile .form-content input[name=company]').css('border-color', 'rgba(156, 3, 3, 0.4)');
+        }
+        if(job_title == '') {
+            $('#profile .form-content input[name=job_title]').css('border-color', 'rgba(156, 3, 3, 0.4)');
+        }
+        if(phone == '') {
+            $('#profile .form-content input[name=phone]').css('border-color', 'rgba(156, 3, 3, 0.4)');
+        }
+        if(zip_code == '') {
+            $('#profile .form-content input[name=zip_code]').css('border-color', 'rgba(156, 3, 3, 0.4)');
+        }
+    })
+
     function checkEmpty(item) {
         return item === '' ? true : false;
     }
+
     function validateEmail(email) {
         var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
         return emailReg.test(email);
