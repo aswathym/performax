@@ -1237,9 +1237,22 @@ input.promocode::-webkit-input-placeholder {
 .cart_heading span:after{
     content: ')';
 }
-.subscription_status .dynamic_field::before {
+.dynamic_field::before {
     content: ':';
 }
-.subscription_status .dynamic_cost::before {
+.dynamic_cost::before {
     content: '$';
+}
+
+
+/*ExSpon Details Page*/
+#exspon_details_page .navbar {
+    padding: 0;
+}
+#exspon_details_page .nav {
+    border-bottom: 2px solid #09A6D0
+}
+#exspon_details_page .nav li a {
+    padding: 8px 20px;
+    font-size: 15px;
 }
