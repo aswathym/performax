@@ -1210,14 +1210,14 @@ input.promocode::-webkit-input-placeholder {
 }
 
 /*Subscription Status Executive Sponsor*/
-#subscription_status .heading{
-    font-size: 14px;
+.subscription_status .heading{
+    font-size: 15px;
 }
-#subscription_status .details {
+.subscription_status .details {
     line-height: 1.5;
     margin-top: 10px;
 }
-#subscription_status .status_and_price h5 span {
+.subscription_status .status_and_price h5 span {
     font-size: 15px;
     font-weight: bold;
 }
