@@ -205,6 +205,15 @@ header {
 .padding0 {
     padding: 0px;
 }
+.marginTop0 {
+    margin-top: 0;
+}
+.margin-top-25 {
+    margin-top: -25px;
+}
+.opacity_light {
+    opacity: 0.6;
+}
 .bg_transparent {
     background-color: transparent;
 }
@@ -1224,4 +1233,10 @@ input.promocode::-webkit-input-placeholder {
 }
 .cart_heading span:after{
     content: ')';
+}
+.subscription_status .dynamic_field::before {
+    content: ':';
+}
+.subscription_status .dynamic_cost::before {
+    content: '$';
 }
