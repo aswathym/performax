@@ -1314,8 +1314,9 @@ input.promocode::-webkit-input-placeholder {
     overflow: hidden;
     transition: all 0.2s linear;
     background-image: url('../images/placeholder.png');
-    background-size: cover;
+    background-size: 40px 40px;
     background-repeat: no-repeat;
+    background-position: center center;
 }
 .flow_nav .active {
     transform: scale(1.5, 1.5);
