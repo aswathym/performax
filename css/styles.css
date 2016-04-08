@@ -202,11 +202,44 @@ header {
 .nav-tabs {
     border: 0;
 }
+.padding0 {
+    padding: 0;
+}
 .padding10 {
     padding: 10px;
 }
-.padding0 {
-    padding: 0px;
+.padding30 {
+    padding: 30px;
+}
+.marginTop5 {
+    margin-top: 5px;
+}
+.marginTop-27 {
+    margin-top: -27px;
+}
+.margin0 {
+    margin: 0;
+}
+.margin10 {
+    margin: 10px;
+}
+.marginTop10 {
+    margin-top: 10px;
+}
+.marginTop20 {
+    margin-top: 20px;
+}
+.marginTop0 {
+    margin-top: 0;
+}
+.margin-top-25 {
+    margin-top: -25px;
+}
+.displayInline {
+    display: inline-block;
+}
+.opacity_light {
+    opacity: 0.6;
 }
 .bg_transparent {
     background-color: transparent;
@@ -909,6 +942,9 @@ footer.footer {
     line-height: 1.5;
     margin-bottom: 10px;
 }
+#es_finance_accounting .add_user input {
+    width: 60%;
+}
 
 /* ES - challenge mapper */
 
@@ -1044,6 +1080,9 @@ footer.footer {
     margin-top: 40px;
     font-size: 15px;
     color: #E35757;
+}
+#es_finance_accounting .buy_now_btn {
+    border: 1px solid #2C88CE;
 }
 #standard_plan, #cart-add-ons {
     font-size: 15px;
@@ -1184,9 +1223,18 @@ input.promocode::-webkit-input-placeholder {
     position: absolute;
     right: 20px;
 }
+.sky_blue_color {
+    color: #00B0F6;
+}
+#header_user_bar .contact_container i {
+    font-size: 20px;
+}
 .span6 {
     width: 48%;
     margin-left: 4%;
+}
+.span3 {
+    margin-left: 2%;
 }
 .row>.span6:first-child {
     margin-left: 0;
@@ -1206,6 +1254,26 @@ input.promocode::-webkit-input-placeholder {
     /* IE6-9 */
     padding-left: 0;
     padding-right: 0;
+}
+#choose_add_on .heading {
+    margin-bottom: 15px;
+}
+#choose_add_on .select_btn {
+    margin-right: 40px;
+}
+
+/*Subscription Status Executive Sponsor*/
+
+.subscription_status .heading {
+    font-size: 15px;
+}
+.subscription_status .details {
+    line-height: 1.5;
+    margin-top: 10px;
+}
+.subscription_status .status_and_price h5 span {
+    font-size: 15px;
+    font-weight: bold;
 }
 .bg-white {
     background-color: #fff;
@@ -1232,7 +1300,6 @@ input.promocode::-webkit-input-placeholder {
     position: absolute;
     padding-left: 12%;
 }
-
 .circle_nav {
     background-color: #f0f0f0;
     display: inline-block;
@@ -1246,13 +1313,17 @@ input.promocode::-webkit-input-placeholder {
     cursor: pointer;
     overflow: hidden;
     transition: all 0.2s linear;
+    background-image: url('../images/placeholder.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .flow_nav .active {
     transform: scale(1.5, 1.5);
-    background-color: red;
+    box-shadow: 0px 0px 7px 0px #72F568;
+    background-image: url('../images/core_fnc_bg.jpg');
 }
 .flow_nav .another_active {
-    background-color: black;
+    background-image: url('../images/performax.png');
 }
 .horiz_seperator {
     margin-left: -1%;
@@ -1262,4 +1333,38 @@ input.promocode::-webkit-input-placeholder {
     display: inline-block;
     background-color: #B5B5B5;
     margin-bottom: 16px
+}
+.dynamic_field::before {
+    content: ':';
+}
+.dynamic_cost::before {
+    content: '$';
+}
+
+/*ExSpon Details Page*/
+
+#exspon_details_page .navbar {
+    padding: 0;
+}
+#exspon_details_page .nav {
+    border-bottom: 2px solid #09A6D0
+}
+#exspon_details_page .nav li a {
+    padding: 8px 20px;
+    font-size: 15px;
+}
+#exSpon_Details .descrption_ul li {
+    line-height: 3;
+}
+#exSpon_Details .configure_assessment {
+    margin-top: 30px;
+}
+#exSpon_Details .configure_assessment h5 {
+    text-indent: 30px;
+}
+#exSpon_Details .configure_assessment button {
+    margin-top: 30px;
+}
+.marginLeft60 {
+    margin-left: 60px;
 }
