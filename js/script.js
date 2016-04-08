@@ -174,4 +174,11 @@ $(document).ready(function() {
         var ret = (email == 'admin@qburst.com') && (pass == 'admin') ? true : false;
         return ret;
     }
+    $('.flow_nav li').click(function(eve) {
+        $(this).siblings().removeClass('active');
+        $(this).siblings().removeClass('another_active');
+            console.log($(this).prev('li'));
+            $(this).prevAll().addClass('another_active');
+        $(this).addClass('active')
+    })
 });
