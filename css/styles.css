@@ -205,6 +205,9 @@ header {
 .padding0 {
     padding: 0px;
 }
+.marginTop10 {
+    margin-top: 10px;
+}
 .marginTop0 {
     margin-top: 0;
 }
