@@ -199,20 +199,38 @@ header {
 .nav-tabs {
     border: 0;
 }
+.padding0 {
+    padding: 0;
+}
 .padding10 {
     padding: 10px;
 }
-.padding0 {
-    padding: 0px;
+.padding30 {
+    padding: 30px;
+}
+.marginTop5 {
+    margin-top: 5px;
+}
+.margin0 {
+    margin: 0;
+}
+.margin10 {
+    margin: 10px;
 }
 .marginTop10 {
     margin-top: 10px;
+}
+.marginTop20 {
+    margin-top: 20px;
 }
 .marginTop0 {
     margin-top: 0;
 }
 .margin-top-25 {
     margin-top: -25px;
+}
+.displayInline {
+    display: inline-block;
 }
 .opacity_light {
     opacity: 0.6;
@@ -917,6 +935,9 @@ footer.footer {
     line-height: 1.5;
     margin-bottom: 10px;
 }
+#es_finance_accounting .add_user input {
+    width: 60%;
+}
 /* ES - challenge mapper */
 
 .challenge_box, .cart_box {
@@ -1050,6 +1071,9 @@ footer.footer {
     margin-top: 40px;
     font-size: 15px;
     color: #E35757;
+}
+#es_finance_accounting .buy_now_btn {
+    border: 1px solid #2C88CE;
 }
 #standard_plan, #cart-add-ons {
     font-size: 15px;
@@ -1197,6 +1221,9 @@ input.promocode::-webkit-input-placeholder {
     width: 48%;
     margin-left: 4%;
 }
+.span3 {
+    margin-left: 2%;
+}
 .row>.span6:first-child{
     margin-left: 0;
 }
@@ -1210,6 +1237,12 @@ input.promocode::-webkit-input-placeholder {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#fcfcfc',GradientType=0 ); /* IE6-9 */
     padding-left: 0;
     padding-right: 0;
+}
+#choose_add_on .heading {
+    margin-bottom: 15px;
+}
+#choose_add_on .select_btn {
+    margin-right: 40px;
 }
 
 /*Subscription Status Executive Sponsor*/
@@ -1255,4 +1288,16 @@ input.promocode::-webkit-input-placeholder {
 #exspon_details_page .nav li a {
     padding: 8px 20px;
     font-size: 15px;
+}
+#exSpon_Details .descrption_ul li {
+    line-height: 3;
+}
+#exSpon_Details .configure_assessment {
+    margin-top: 30px;
+}
+#exSpon_Details .configure_assessment h5 {
+    text-indent: 30px;
+}
+#exSpon_Details .configure_assessment button {
+    margin-top: 30px;
 }
