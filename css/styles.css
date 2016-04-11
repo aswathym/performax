@@ -992,7 +992,7 @@ footer.footer {
     height: 70px;
     margin-left: 10px;
 }
-.challenge_second_rightbox>.add_more_challenges {
+.challenge_second_rightbox>.add_more_challenges>a {
     padding-top: 20px;
     color: #FF5420;
     font-size: 14px;
@@ -1327,8 +1327,8 @@ input.promocode::-webkit-input-placeholder {
 }
 .focus_flow {
     background-image: url('../images/icon_sprite.png');
-    background-size: 297px 107px;
-    background-position: -1px -72px;
+    background-size: 318px 107px;
+    background-position: -2px -72px;
 }
 .customize_flow {
     background-image: url('../images/icon_sprite.png');
@@ -1391,6 +1391,7 @@ input.promocode::-webkit-input-placeholder {
 #exspon_details_page .nav li a {
     padding: 8px 20px;
     font-size: 15px;
+    text-align: center;
 }
 #exSpon_Details .descrption_ul li {
     line-height: 3;
