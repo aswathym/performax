@@ -1311,8 +1311,6 @@ input.promocode::-webkit-input-placeholder {
     -moz-box-shadow: 1px 1px 3px #555;
     cursor: pointer;
     overflow: hidden;
-    transition: all 0.2s linear;
-    background-image: url('../images/placeholder.png');
     background-size: 40px 40px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -1320,10 +1318,42 @@ input.promocode::-webkit-input-placeholder {
 .flow_nav .active {
     transform: scale(1.5, 1.5);
     box-shadow: 0px 0px 7px 0px #72F568;
-    background-image: url('../images/core_fnc_bg.jpg');
+    /*background-image: url('../images/core_fnc_bg.jpg');*/
 }
 .flow_nav .another_active {
-    background-image: url('../images/performax.png');
+    background-image: url('../images/icon_sprite.png');
+    background-size: 440px 170px;
+    background-position: 0px -60px;
+}
+.focus_flow {
+    background-image: url('../images/icon_sprite.png');
+    background-size: 297px 107px;
+    background-position: -1px -72px;
+}
+.customize_flow {
+    background-image: url('../images/icon_sprite.png');
+    background-size: 464px 164px;
+    background-position: -201px -5px;
+}
+.engage_flow {
+    background-image: url('../images/icon_sprite.png');
+    background-size: 464px 164px;
+    background-position: -51px -5px;
+}
+.evaluate_flow {
+    background-image: url('../images/icon_sprite.png');
+    background-size: 464px 164px;
+    background-position: -101px -6px;
+}
+.act_flow {
+    background-image: url('../images/icon_sprite.png');
+    background-size: 459px 161px;
+    background-position: -149px -5px;
+}
+.track_flow {
+    background-image: url('../images/icon_sprite.png');
+    background-size: 464px 164px;
+    background-position: -2px -7px;
 }
 .flow_nav span {
     font-size: 10px;
