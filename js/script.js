@@ -177,7 +177,7 @@ $(document).ready(function() {
     $('.flow_nav li').click(function(eve) {
         $(this).siblings().removeClass('active');
         $(this).siblings().removeClass('another_active');
-        $(this).prevAll().addClass('another_active');
+        $(this).prevAll('li').addClass('another_active');
         $(this).addClass('active')
     })
 });

@@ -725,7 +725,6 @@ h1 {
 }
 #create_promo_code_form .fa-circle-thin {
     color: rgba(128, 128, 128, 0.8);
-    ;
 }
 #create_promo_code_form input {
     width: 60%;
@@ -956,9 +955,8 @@ footer.footer {
     box-shadow: 0 0 6px #ccc;
     margin: 20px 0;
 }
-.challenge_box>span {
+.challenge_box>.row>.col-md-3>span {
     font-size: 20px;
-    padding-left: 12px;
 }
 .challenge_second_left {
     padding: 15px;
@@ -1083,6 +1081,7 @@ footer.footer {
 }
 #es_finance_accounting .buy_now_btn {
     border: 1px solid #2C88CE;
+    color: #2C88CE;
 }
 #standard_plan, #cart-add-ons {
     font-size: 15px;
@@ -1292,13 +1291,13 @@ input.promocode::-webkit-input-placeholder {
 /* top flow */
 
 .flow_nav {
-    width: 550px;
+    width: 390px;
     height: 52px;
     font-size: 16px;
     display: inline-block;
-    margin-top: -20px;
+    margin-top: 10px;
     position: absolute;
-    padding-left: 12%;
+    padding-left: 0;
 }
 .circle_nav {
     background-color: #f0f0f0;
@@ -1312,8 +1311,6 @@ input.promocode::-webkit-input-placeholder {
     -moz-box-shadow: 1px 1px 3px #555;
     cursor: pointer;
     overflow: hidden;
-    transition: all 0.2s linear;
-    background-image: url('../images/placeholder.png');
     background-size: 40px 40px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -1321,10 +1318,51 @@ input.promocode::-webkit-input-placeholder {
 .flow_nav .active {
     transform: scale(1.5, 1.5);
     box-shadow: 0px 0px 7px 0px #72F568;
-    background-image: url('../images/core_fnc_bg.jpg');
+    /*background-image: url('../images/core_fnc_bg.jpg');*/
 }
 .flow_nav .another_active {
-    background-image: url('../images/performax.png');
+    background-image: url('../images/icon_sprite.png');
+    background-size: 440px 170px;
+    background-position: 0px -60px;
+}
+.focus_flow {
+    background-image: url('../images/icon_sprite.png');
+    background-size: 297px 107px;
+    background-position: -1px -72px;
+}
+.customize_flow {
+    background-image: url('../images/icon_sprite.png');
+    background-size: 464px 164px;
+    background-position: -201px -5px;
+}
+.engage_flow {
+    background-image: url('../images/icon_sprite.png');
+    background-size: 464px 164px;
+    background-position: -51px -5px;
+}
+.evaluate_flow {
+    background-image: url('../images/icon_sprite.png');
+    background-size: 464px 164px;
+    background-position: -101px -6px;
+}
+.act_flow {
+    background-image: url('../images/icon_sprite.png');
+    background-size: 459px 161px;
+    background-position: -149px -5px;
+}
+.track_flow {
+    background-image: url('../images/icon_sprite.png');
+    background-size: 464px 164px;
+    background-position: -2px -7px;
+}
+.flow_nav span {
+    font-size: 10px;
+    color: #6a6a6a;
+    position: absolute;
+    margin-top: 46px;
+    margin-left: -64px;
+    width: 100px;
+    text-align: center;
 }
 .horiz_seperator {
     margin-left: -1%;
@@ -1368,4 +1406,101 @@ input.promocode::-webkit-input-placeholder {
 }
 .marginLeft60 {
     margin-left: 60px;
+}
+
+/*exSpon_Details_Configurator_Timeline*/
+#exSpon_Configurator_Switch_Tab .nav {
+    border-bottom: transparent;
+}
+#exSpon_Configurator_Switch_Tab .nav li {
+    border-bottom: 2px solid #AAA9A9;
+    margin-right: 2%;
+}
+#exSpon_Configurator_Switch_Tab .nav-tabs li a {
+    color: #AAA9A9;
+    font-size: 13px;
+}
+#exSpon_Configurator_Switch_Tab .nav-tabs .active a {
+    color: black;
+}
+#exSpon_Configurator_Switch_Tab .nav-tabs .active {
+    border-bottom: 2px solid black;
+}
+#exSpon_Configurator_Switch_Tab .nav li a {
+    padding: 5px 12px;
+}
+#radio_button_custom input[type="radio"] {
+    display: none;
+}
+#radio_button_custom input[type="radio"] + label .fa-check-circle {
+    display: none;
+}
+#radio_button_custom input[type="radio"]:checked + label .fa-check-circle {
+    display: block;
+    color: #09A6D0;
+}
+#radio_button_custom input[type="radio"] + label:after {
+    display: none;
+}
+#radio_button_custom input[type="radio"]:checked + label .fa-circle-thin {
+    display: none;
+}
+#radio_button_custom i {
+    margin-right: 5px;
+}
+#radio_button_custom .fa-circle-thin {
+    color: rgba(128, 128, 128, 0.8);
+}
+#timeline .radio_buttons label {
+    margin-left: 20px;
+}
+#exSpon_DetailsPage_Configurator_Timeline .controllers label {
+    width: 30%;
+    text-align: right;
+}
+#exSpon_DetailsPage_Configurator_Timeline .duration input {
+    width: 20%;
+}
+.details_sub_heading {
+    font-size: 15px;
+    color: #6F6F6F;
+    position: absolute;
+    left: 0;
+    margin-top: 30px;
+}
+.exSpon_details_heading {
+    padding-left: 0;
+    margin-left: -30px;
+    padding-top: 14px;
+}
+.view_progress_button {
+    float: right;
+    color: #2C88CE;
+    background-color: #fff;
+    border-style: none;
+    border: 1px solid #92CEEE;
+    border-radius: 6px;
+    height: 30px;
+    font-size: 14px;
+    position: relative;
+    margin: 25px -50px 0px 0px
+}
+/*exSpon_DetailsPage_Configurator_Permissions*/
+#permissions #radio_button_custom {
+    margin-top: 10px;
+    padding-left: 20px;
+    line-height: 2.5;
+}
+#permissions .form-content {
+    float: none;
+}
+#permissions .form-content label {
+    width: 25%;
+    text-align: right;
+}
+#permissions h5, #permissions h6 {
+    margin: 10px 0px;
+}
+#permissions i {
+    color: #2C88CE;
 }
