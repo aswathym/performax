@@ -725,7 +725,6 @@ h1 {
 }
 #create_promo_code_form .fa-circle-thin {
     color: rgba(128, 128, 128, 0.8);
-    ;
 }
 #create_promo_code_form input {
     width: 60%;
@@ -1368,4 +1367,58 @@ input.promocode::-webkit-input-placeholder {
 }
 .marginLeft60 {
     margin-left: 60px;
+}
+
+/*exSpon_Details_Configurator_Timeline*/
+#exSpon_Configurator_Switch_Tab .nav {
+    border-bottom: transparent;
+}
+#exSpon_Configurator_Switch_Tab .nav li {
+    border-bottom: 2px solid #AAA9A9;
+    margin-right: 2%;
+}
+#exSpon_Configurator_Switch_Tab .nav-tabs li a {
+    color: #AAA9A9;
+    font-size: 13px;
+}
+#exSpon_Configurator_Switch_Tab .nav-tabs .active a {
+    color: black;
+}
+#exSpon_Configurator_Switch_Tab .nav-tabs .active {
+    border-bottom: 2px solid black;
+}
+#exSpon_Configurator_Switch_Tab .nav li a {
+    padding: 5px 12px;
+}
+#timeline input[type="radio"] {
+    display: none;
+}
+#timeline input[type="radio"] + label .fa-check-circle {
+    display: none;
+}
+#timeline input[type="radio"]:checked + label .fa-check-circle {
+    display: block;
+    color: #09A6D0;
+}
+#timeline input[type="radio"] + label:after {
+    display: none;
+}
+#timeline input[type="radio"]:checked + label .fa-circle-thin {
+    display: none;
+}
+#timeline i {
+    margin-right: 5px;
+}
+#timeline .fa-circle-thin {
+    color: rgba(128, 128, 128, 0.8);
+}
+#timeline .radio_buttons label {
+    margin-left: 20px;
+}
+#exSpon_DetailsPage_Configurator_Timeline .controllers label {
+    width: 30%;
+    text-align: right;
+}
+#exSpon_DetailsPage_Configurator_Timeline .duration input {
+    width: 20%;
 }
