@@ -291,7 +291,7 @@
                                 <button type="button" name="button" class="btn btn-sm btn-info marginTop10">Save</button>
                             </div>
                         </div>
-                        <div id="permissions" class="tab-pane active col-md-12 container" role="tabpanel">
+                        <div id="permissions" class="tab-pane col-md-12 container" role="tabpanel">
                             <h5>You choose to : </h5>
 
                             <div class="radio_button_custom">
@@ -339,7 +339,7 @@
                                     <h5><b>Assessment Questionnaire</b>
                                             <span class="pull-right">
                                                 <span class="pull-right">
-                                                    <i class="fa fa-info-circle"></i>
+                                                    <i class="fa fa-info-circle fa-2x"></i>
                                                 </span>
                                             </span>
                                         </h5>
@@ -364,7 +364,7 @@
                                     <h5><b>Assessment Selection</b>
                                             <span class="pull-right">
                                                 <span class="pull-right">
-                                                    <i class="fa fa-info-circle"></i>
+                                                    <i class="fa fa-info-circle fa-2x"></i>
                                                 </span>
                                             </span>
                                         </h5>
@@ -389,7 +389,7 @@
                                     <h5><b>Action Planning</b>
                                             <span class="pull-right">
                                                 <span class="pull-right">
-                                                    <i class="fa fa-info-circle"></i>
+                                                    <i class="fa fa-info-circle fa-2x"></i>
                                                 </span>
                                             </span>
                                         </h5>
@@ -427,7 +427,7 @@
                                 <button type="button" name="button" class="btn btn-sm btn-info marginTop10">Save</button>
                             </div>
                         </div>
-                        <div id="assessors" class="tab-pane active col-md-12 container" role="tabpanel">
+                        <div id="assessors" class="tab-pane col-md-12 container" role="tabpanel">
                             <h5 class="text-center">Would you like to remain anonymous
                                     <span class="radio_button_custom">
                                         <span class="radio_buttons">
@@ -454,7 +454,7 @@
                                 <button type="button" name="button" class="btn btn-sm btn-info marginTop10">Save</button>
                             </div>
                         </div>
-                        <div id="branding" class="tab-pane active col-md-12 container text-center" role="tabpanel">
+                        <div id="branding" class="tab-pane col-md-12 container text-center" role="tabpanel">
                             <h5 class=""><b>Upload your Company Logo</b></h5>
                             <h5 class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
                             <div class="col-md-12">
@@ -466,8 +466,138 @@
                                 <button type="button" name="button" class="btn btn-sm btn-info marginTop10">Save</button>
                             </div>
                         </div>
-                        <div id="add_ons" class="tab-pane active col-md-12 container" role="tabpanel">
-                            Add-Ons
+                        <div id="add_ons" class="tab-pane container col-md-12 padding0" role="tabpanel">
+                            <span class="radio_button_custom">
+                                <span class="radio_buttons">
+                                    <span class="col-md-7 padding0">
+                                        <input type="radio" name="option" id="radio7" checked/>
+                                        <label for="radio7">
+                                            <span class="fa-stack">
+                                                <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                            </span>
+                                            Enable Gamification for Assessor Participation
+                                        </label>
+                                        <i class="fa fa-info-circle"></i>
+                                    </span>
+                                    <span class="col-md-5 padding0">
+                                        <input type="radio" name="option" id="radio8"/>
+                                        <label for="radio8">
+                                            <span class="fa-stack">
+                                                <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                            </span>
+                                            Enable Sentiment Analysis
+                                        </label>
+                                        <i class="fa fa-info-circle"></i>
+                                    </span>
+                                </span>
+                            </span>
+                            <h5>Set Rewards for Assessors</h5>
+                            <div class="add-ons-setup-div">
+                                <div class="col-md-12">
+                                    <span>Would you like Assessors to be informed about the rewards ?
+                                        <span class="radio_button_custom">
+                                            <span class="radio_buttons">
+                                                <span class="">
+                                                    <input type="radio" name="option" id="radio9"/>
+                                                    <label for="radio9">
+                                                        <span class="fa-stack">
+                                                            <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                            <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                        </span>
+                                                        Yes
+                                                    </label>
+                                                </span>
+                                                <span class="">
+                                                    <input type="radio" name="option" id="radio10"/>
+                                                    <label for="radio10">
+                                                        <span class="fa-stack">
+                                                            <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                            <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                        </span>
+                                                        No
+                                                    </label>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="">
+                                    <span class="col-md-10">Among the top-performing Assessors, how many will receive the rewards ?</span>
+                                    <input type="text" name="name" value="" placeholder="No. of Assessors" class="small_input">
+                                </div>
+                                <div>
+                                    <div class="col-md-12">
+                                        Select the Reward you wish to give the assessors :
+                                    </div>
+                                    <span class="radio_button_custom">
+                                        <span class="radio_buttons col-md-12">
+                                            <span class="col-md-3 padding0">
+                                                <input type="radio" name="option" id="radio11"/>
+                                                <label for="radio11">
+                                                    <span class="fa-stack">
+                                                        <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                        <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                    </span>
+                                                    Monetary
+                                                </label>
+                                            </span>
+                                            <span class="col-md-3 padding0">
+                                                <input type="radio" name="option" id="radio12"/>
+                                                <label for="radio12">
+                                                    <span class="fa-stack">
+                                                        <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                        <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                    </span>
+                                                    Non Monetary
+                                                </label>
+                                            </span>
+                                            <input class="col-md-5" type="text" name="name" value="" placeholder="Specify">
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="">
+                                    <span class="col-md-6">Set Time Period for rewards</span>
+                                    <select class="dropdown_select" name="" style="">
+                                        <option value="functional">Number of Months</option>
+                                        <option value="functional">Action</option>
+                                        <option value="functional">Another Action</option>
+                                        <option value="functional">Something</option>
+                                        <option value="functional">Something Else</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <h5>Recommended Point Allocation for Assessment Participation</h5>
+                            <div class="add-ons-point-calc">
+                                <div class="">
+                                    <span class="col-md-offset-9 text-center">Points</span>
+                                </div>
+                                <div class="">
+                                    <span class="col-md-9">Completing the assessment feedback on time</span>
+                                    <span class="text-center"><input type="text" name="name" value="" placeholder="20"></span>
+                                </div>
+                                <div class="">
+                                    <span class="col-md-9">Collaborating with other Assessors in the Chat Room</span>
+                                    <span class="text-center"><input type="text" name="name" value="" placeholder="20"></span>
+                                </div>
+                                <div class="">
+                                    <span class="col-md-9">Updating assessment feedback rating periodically</span>
+                                    <span class="text-center"><input type="text" name="name" value="" placeholder="20"></span>
+                                </div>
+                                <div class="">
+                                    <span class="col-md-9">Recommending Ideas for Action (IFAs) and Key Performance Indicators (KPIs) in order to enhance CSF effictiveness</span>
+                                    <span class="text-center"><input type="text" name="name" value="" placeholder="20"></span>
+                                </div>
+                                <div class="">
+                                    <span class="col-md-9">Extra Bonus points if recommended KPIs and/or IFAs are important</span>
+                                    <span class="text-center"><input type="text" name="name" value="" placeholder="20"></span>
+                                </div>
+                                <div class="">
+                                    <span class="col-md-8 text-right">Total</span>
+                                    <span class="text-center col-md-offset-1"><input type="text" name="name" value="" placeholder="20">Points/Periods</span>
+                                </div>
+                            </div>
                         </div>
                         <div id="invite_ceo" class="tab-pane active col-md-12 container" role="tabpanel">
                             Invite CEO

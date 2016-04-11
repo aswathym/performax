@@ -1522,3 +1522,31 @@ input.promocode::-webkit-input-placeholder {
 #branding h5 {
     margin: 15px 0px;
 }
+
+/*exSpon_DetailsPage_Configurator_AddOns*/
+#add_ons .fa-info-circle {
+    font-size: 18px;
+    color: #09A6D0;
+}
+#add_ons .add-ons-point-calc input {
+    width: 10%;
+    background: white;
+    padding: 5px 25px 5px 5px;
+    border: 2px solid #ddd;
+}
+#add_ons .add-ons-point-calc span {
+    /*line-height: 2.0;*/
+}
+#add_ons input[type="text"] {
+    background: white;
+    padding: 5px 25px 5px 5px;
+    border: 2px solid #ddd;
+}
+#add_ons .small_input {
+    width: 10%;
+}
+#add_ons .radio_buttons {
+    margin: 15px 0px;
+}
+#add_ons .radio_buttons label {
+}
