@@ -1456,51 +1456,10 @@ input.promocode::-webkit-input-placeholder {
     margin-left: 20px;
 }
 
-#permissions .radio_button_custom input[type="radio"] {
-    display: none;
-}
-#permissions .radio_button_custom input[type="radio"] + label .fa-check-circle {
-    display: none;
-}
-#permissions .radio_button_custom input[type="radio"]:checked + label .fa-check-circle {
-    display: block;
-    color: #09A6D0;
-}
-#permissions .radio_button_custom input[type="radio"] + label:after {
-    display: none;
-}
-#permissions .radio_button_custom input[type="radio"]:checked + label .fa-circle-thin {
-    display: none;
-}
-#permissions .radio_button_custom i {
-    margin-right: 5px;
-}
 #permissions .radio_button_custom .fa-circle-thin {
     color: rgba(128, 128, 128, 0.8);
 }
 
-#assessors .radio_button_custom input[type="radio"] {
-    display: none;
-}
-#assessors .radio_button_custom input[type="radio"] + label .fa-check-circle {
-    display: none;
-}
-#assessors .radio_button_custom input[type="radio"]:checked + label .fa-check-circle {
-    display: block;
-    color: #09A6D0;
-}
-#assessors .radio_button_custom input[type="radio"] + label:after {
-    display: none;
-}
-#assessors .radio_button_custom input[type="radio"]:checked + label .fa-circle-thin {
-    display: none;
-}
-#assessors .radio_button_custom i {
-    margin-right: 5px;
-}
-#assessors .radio_button_custom .fa-circle-thin {
-    color: rgba(128, 128, 128, 0.8);
-}
 #exSpon_DetailsPage_Configurator_Timeline .controllers label {
     width: 30%;
     text-align: right;
@@ -1550,6 +1509,9 @@ input.promocode::-webkit-input-placeholder {
 }
 #permissions i {
     color: #2C88CE;
+}
+#permissions .radio_button_custom input[type="radio"]:checked + label .fa-check-circle {
+    color: #09A6D0;
 }
 
 /*exSpon_DetailsPage_Configurator_Assessors*/
