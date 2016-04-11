@@ -1504,3 +1504,8 @@ input.promocode::-webkit-input-placeholder {
 #permissions i {
     color: #2C88CE;
 }
+
+/*exSpon_DetailsPage_Configurator_Assessors*/
+#assessors label {
+    margin-left: 30px;
+}
