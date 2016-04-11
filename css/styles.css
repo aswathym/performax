@@ -1519,6 +1519,7 @@ input.promocode::-webkit-input-placeholder {
     margin-left: 30px;
 }
 
+
 /* Pending tasks */
 .pending_task_heading {
     margin: 10px 55px;
@@ -1545,4 +1546,8 @@ input.promocode::-webkit-input-placeholder {
 .pending_task_heading>.col-md-2>a>span {
     font-size: 18px;
 color: #2787AF;
+
+/*exSpon_DetailsPage_Configurator_Branding*/
+#branding h5 {
+    margin: 15px 0px;
 }
