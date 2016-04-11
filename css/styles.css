@@ -1518,6 +1518,35 @@ input.promocode::-webkit-input-placeholder {
 #assessors label {
     margin-left: 30px;
 }
+
+
+/* Pending tasks */
+.pending_task_heading {
+    margin: 10px 55px;
+}
+.pending_task_heading>.col-md-2>h5 {
+    margin-top: 30px;
+    color: #231F20;
+}
+.pending_task_heading>.col-md-4>.dropdown_select {
+    width: 240px;
+    margin-top: 22px;
+    margin-left: 80px;
+    color: #A7A1A1;
+}
+.pending_task_heading>.col-md-4>span, .pending_task_heading>.col-md-3>span{
+    font-size: 14px !important;
+    color: #999999;
+}
+.pending_task_heading>.col-md-4, .pending_task_heading>.col-md-3, .pending_task_heading>.col-md-2 {
+     padding-left: 35px;
+     padding-top: 14px;
+     margin-bottom: 25px;
+}
+.pending_task_heading>.col-md-2>a>span {
+    font-size: 18px;
+color: #2787AF;
+
 /*exSpon_DetailsPage_Configurator_Branding*/
 #branding h5 {
     margin: 15px 0px;
