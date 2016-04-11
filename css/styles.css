@@ -1081,6 +1081,7 @@ footer.footer {
 }
 #es_finance_accounting .buy_now_btn {
     border: 1px solid #2C88CE;
+    color: #2C88CE;
 }
 #standard_plan, #cart-add-ons {
     font-size: 15px;
