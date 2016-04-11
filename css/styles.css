@@ -1399,26 +1399,26 @@ input.promocode::-webkit-input-placeholder {
 #exSpon_Configurator_Switch_Tab .nav li a {
     padding: 5px 12px;
 }
-#timeline input[type="radio"] {
+#radio_button_custom input[type="radio"] {
     display: none;
 }
-#timeline input[type="radio"] + label .fa-check-circle {
+#radio_button_custom input[type="radio"] + label .fa-check-circle {
     display: none;
 }
-#timeline input[type="radio"]:checked + label .fa-check-circle {
+#radio_button_custom input[type="radio"]:checked + label .fa-check-circle {
     display: block;
     color: #09A6D0;
 }
-#timeline input[type="radio"] + label:after {
+#radio_button_custom input[type="radio"] + label:after {
     display: none;
 }
-#timeline input[type="radio"]:checked + label .fa-circle-thin {
+#radio_button_custom input[type="radio"]:checked + label .fa-circle-thin {
     display: none;
 }
-#timeline i {
+#radio_button_custom i {
     margin-right: 5px;
 }
-#timeline .fa-circle-thin {
+#radio_button_custom .fa-circle-thin {
     color: rgba(128, 128, 128, 0.8);
 }
 #timeline .radio_buttons label {
@@ -1454,4 +1454,23 @@ input.promocode::-webkit-input-placeholder {
     font-size: 14px;
     position: relative;
     margin: 25px -50px 0px 0px
+}
+/*exSpon_DetailsPage_Configurator_Permissions*/
+#permissions #radio_button_custom {
+    margin-top: 10px;
+    padding-left: 20px;
+    line-height: 2.5;
+}
+#permissions .form-content {
+    float: none;
+}
+#permissions .form-content label {
+    width: 25%;
+    text-align: right;
+}
+#permissions h5, #permissions h6 {
+    margin: 10px 0px;
+}
+#permissions i {
+    color: #2C88CE;
 }
