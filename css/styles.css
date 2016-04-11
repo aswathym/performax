@@ -955,9 +955,8 @@ footer.footer {
     box-shadow: 0 0 6px #ccc;
     margin: 20px 0;
 }
-.challenge_box>span {
+.challenge_box>.row>.col-md-3>span {
     font-size: 20px;
-    padding-left: 12px;
 }
 .challenge_second_left {
     padding: 15px;
@@ -1291,13 +1290,13 @@ input.promocode::-webkit-input-placeholder {
 /* top flow */
 
 .flow_nav {
-    width: 550px;
+    width: 390px;
     height: 52px;
     font-size: 16px;
     display: inline-block;
-    margin-top: -20px;
+    margin-top: 10px;
     position: absolute;
-    padding-left: 12%;
+    padding-left: 0;
 }
 .circle_nav {
     background-color: #f0f0f0;
@@ -1324,6 +1323,15 @@ input.promocode::-webkit-input-placeholder {
 }
 .flow_nav .another_active {
     background-image: url('../images/performax.png');
+}
+.flow_nav span {
+    font-size: 10px;
+    color: #6a6a6a;
+    position: absolute;
+    margin-top: 46px;
+    margin-left: -64px;
+    width: 100px;
+    text-align: center;
 }
 .horiz_seperator {
     margin-left: -1%;
@@ -1421,4 +1429,28 @@ input.promocode::-webkit-input-placeholder {
 }
 #exSpon_DetailsPage_Configurator_Timeline .duration input {
     width: 20%;
+}
+.details_sub_heading {
+    font-size: 15px;
+    color: #6F6F6F;
+    position: absolute;
+    left: 0;
+    margin-top: 30px;
+}
+.exSpon_details_heading {
+    padding-left: 0;
+    margin-left: -30px;
+    padding-top: 14px;
+}
+.view_progress_button {
+    float: right;
+    color: #2C88CE;
+    background-color: #fff;
+    border-style: none;
+    border: 1px solid #92CEEE;
+    border-radius: 6px;
+    height: 30px;
+    font-size: 14px;
+    position: relative;
+    margin: 25px -50px 0px 0px
 }
