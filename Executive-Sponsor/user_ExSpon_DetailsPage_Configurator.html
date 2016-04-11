@@ -134,8 +134,8 @@
                             <nav class="navbar">
                                 <ul class="nav nav-tabs bg-white">
                                     <li class="active"><a href="#timeline" aria-controls="login-cnt" role="tab" data-toggle="tab">Timeline</a></li>
-                                    <li><a href="#on_work" aria-controls="on_work" role="tab" data-toggle="tab">Permissions</a></li>
-                                    <li><a href="#on_work" aria-controls="on_work" role="tab" data-toggle="tab">Assessors</a></li>
+                                    <li><a href="#permissions" aria-controls="permissions" role="tab" data-toggle="tab">Permissions</a></li>
+                                    <li><a href="#assessors" aria-controls="assessors" role="tab" data-toggle="tab">Assessors</a></li>
                                     <li><a href="#on_work" aria-controls="on_work" role="tab" data-toggle="tab">Branding</a></li>
                                     <li><a href="#on_work" aria-controls="on_work" role="tab" data-toggle="tab">Add-Ons</a></li>
                                     <li><a href="#on_work" aria-controls="on_work" role="tab" data-toggle="tab">Invite CEO</a></li>
@@ -195,6 +195,172 @@
                                     <button type="button" name="button" class="btn btn-sm btn-info marginTop10">Save</button>
                                 </div>
                             </div>
+                            <div id="on_work" class="tab-pane" role="tabpanel">
+                                On Work
+                            </div>
+                            <div id="permissions" class="tab-pane active col-md-12 container" role="tabpanel">
+                                <h5>You choose to : </h5>
+                                <div class="" id="radio_button_custom">
+                                    <div class="">
+                                        <input type="radio" name="option" id="radio1" />
+                                        <label for="radio1">
+                                            <span class="fa-stack">
+                                                    <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                    <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                </span> Carry out Role of Assessment Administrator
+                                        </label>
+                                    </div>
+                                    <div class="">
+                                        <input type="radio" name="option" id="radio1" checked/>
+                                        <label for="radio1">
+                                            <span class="fa-stack">
+                                                    <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                    <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                </span> Nominate another person as the Assessment Administrator
+                                        </label>
+                                    </div>
+                                </div>
+                                <h5>Nominate Administrator </h5>
+                                <form class="">
+                                    <span class="form-content">
+                                            <label for="">First Name : </label>
+                                            <input type="text" name="name" value="">
+                                        </span>
+                                    <span class="form-content">
+                                            <label for="">Last Name : </label>
+                                            <input type="text" name="name" value="">
+                                        </span>
+                                    <span class="form-content">
+                                            <label for="">Designation : </label>
+                                            <input type="text" name="name" value="">
+                                        </span>
+                                    <span class="form-content">
+                                            <label for="">Email Id : </label>
+                                            <input type="text" name="name" value="">
+                                        </span>
+                                </form>
+                                <div class="">
+                                    <h5>Delegate the following roles to the Assessment Administrator</h5>
+                                    <div class="quesion">
+                                        <h5><b>Assessment Questionnaire</b>
+                                            <span class="pull-right">
+                                                <span class="pull-right">
+                                                    <i class="fa fa-info-circle"></i>
+                                                </span>
+                                            </span>
+                                        </h5>
+                                        <span class="col-md-6">
+                                            <span class="spacer option checkbox">
+                                                <input id="checkbox" class="" type="checkbox">
+                                                <label for="checkbox">
+                                                    Nominate Expert Panel Member
+                                                </label>
+                                            </span>
+                                        </span>
+                                        <span class="col-md-6">
+                                            <span class="spacer option checkbox">
+                                                <input id="checkbox" class="" type="checkbox">
+                                                <label for="checkbox">
+                                                    Approve Assessment Questionnaire
+                                                </label>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="quesion">
+                                        <h5><b>Assessment Selection</b>
+                                            <span class="pull-right">
+                                                <span class="pull-right">
+                                                    <i class="fa fa-info-circle"></i>
+                                                </span>
+                                            </span>
+                                        </h5>
+                                        <span class="col-md-6">
+                                            <span class="spacer option checkbox">
+                                                <input id="checkbox" class="" type="checkbox">
+                                                <label for="checkbox">
+                                                    Nominate Expert Panel Member
+                                                </label>
+                                            </span>
+                                        </span>
+                                        <span class="col-md-6">
+                                            <span class="spacer option checkbox">
+                                                <input id="checkbox" class="" type="checkbox">
+                                                <label for="checkbox">
+                                                    Approve Assessor List
+                                                </label>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="quesion">
+                                        <h5><b>Action Planning</b>
+                                            <span class="pull-right">
+                                                <span class="pull-right">
+                                                    <i class="fa fa-info-circle"></i>
+                                                </span>
+                                            </span>
+                                        </h5>
+                                        <span class="col-md-6">
+                                            <span class="spacer option checkbox">
+                                                <input id="checkbox" class="" type="checkbox">
+                                                <label for="checkbox">
+                                                    Nominate Expert Panel Member
+                                                </label>
+                                            </span>
+                                        </span>
+                                        <span class="col-md-6">
+                                            <span class="spacer option checkbox">
+                                                <input id="checkbox" class="" type="checkbox">
+                                                <label for="checkbox">
+                                                    Approve Recommended Ideas For Action (IFAs)
+                                                </label>
+                                            </span>
+                                        </span>
+                                        <span class="col-md-6">
+                                            <span class="spacer option checkbox">
+                                                <input id="checkbox" class="" type="checkbox">
+                                                <label for="checkbox">
+                                                    Nominate Key Persons Accountable (KPAs)
+                                                </label>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <h5 class="col-md-12">Permit the Administrator to Share Results & Reposrtsd using
+                                    <img src="../images/placeholder.png" alt="" width="80px;" />
+                                    <i class="fa fa-toggle-on fa-3x"></i>
+                                </h5>
+                                <div class="text-center col-md-12">
+                                    <button type="button" name="button" class="btn btn-sm btn-info marginTop10">Save</button>
+                                </div>
+                            </div>
+                            <div id="assessors" class="tab-pane active col-md-12 container" role="tabpanel">
+                                <h5 class="text-center">Would you like to remain anonymous
+                                    <span class="" id="radio_button_custom">
+                                        <span class="radio_buttons">
+                                            <input type="radio" name="option" id="radio1" checked/>
+                                            <label for="radio1">
+                                                <span class="fa-stack">
+                                                    <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                    <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                </span>
+                                                Yes
+                                            </label>
+                                            <input type="radio" name="option" id="radio2"/>
+                                            <label for="radio2">
+                                                <span class="fa-stack">
+                                                    <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                    <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                </span>
+                                                No
+                                            </label>
+                                        </span>
+                                    </span>
+                                </h5>
+                                <div class="text-center col-md-12">
+                                    <button type="button" name="button" class="btn btn-sm btn-info marginTop10">Save</button>
+                                </div>
+                            </div>
+
                             <div id="on_work" class="tab-pane" role="tabpanel">
                                 On Work
                             </div>
