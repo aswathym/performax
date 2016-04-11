@@ -1545,9 +1545,10 @@ input.promocode::-webkit-input-placeholder {
 }
 .pending_task_heading>.col-md-2>a>span {
     font-size: 18px;
-color: #2787AF;
-
+    color: #2787AF;
+}
 /*exSpon_DetailsPage_Configurator_Branding*/
+
 #branding h5 {
     margin: 15px 0px;
 }
@@ -1564,7 +1565,7 @@ color: #2787AF;
     border: 2px solid #ddd;
 }
 #add_ons .add-ons-point-calc span {
-    /*line-height: 2.0;*/
+    line-height: 2.0;
 }
 #add_ons input[type="text"] {
     background: white;
