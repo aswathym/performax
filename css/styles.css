@@ -1518,3 +1518,7 @@ input.promocode::-webkit-input-placeholder {
 #assessors label {
     margin-left: 30px;
 }
+/*exSpon_DetailsPage_Configurator_Branding*/
+#branding h5 {
+    margin: 15px 0px;
+}
