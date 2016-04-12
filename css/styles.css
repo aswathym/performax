@@ -1498,6 +1498,29 @@ input.promocode::-webkit-input-placeholder {
 #timeline .radio_buttons label {
     margin-left: 20px;
 }
+#timeline .timeframe {
+    text-align: center;
+}
+#timeline .timeframe .description {
+    position: absolute;
+    bottom: -50px;
+    width: 100px;
+    margin-left: -50px;
+    text-align: center;
+}
+#timeline .timeframe .description span {
+    display: block;
+}
+#timeline .timeframe .description .ongoing{
+    color: #42C054;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    background-color: #ADADAD;
+    display: inline-block;
+    height: 250px;
+    margin-right: 70px;
+    margin-bottom: 50px;
+}
 
 #permissions .radio_button_custom .fa-circle-thin {
     color: rgba(128, 128, 128, 0.8);

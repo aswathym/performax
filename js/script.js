@@ -177,7 +177,81 @@ $(document).ready(function() {
         $(this).siblings().removeClass('another_active');
         $(this).prevAll('li').addClass('another_active');
         $(this).addClass('active')
-    })
+    });
+
+
+    $("#v-slider").slider({
+        orientation: "vertical",
+        animate: 'fast',
+        min: 0,
+        max: 100,
+        value: 0,
+        step: 10,
+        slide: function (event, ui) {
+            $("#amount").val(ui.value);
+        }
+    });
+    $("#amount").val($("#v-slider").slider("value"));
+    $("#v-slider2").slider({
+        orientation: "vertical",
+        animate: 'fast',
+        min: 0,
+        max: 100,
+        value: 10,
+        step: 10,
+        slide: function (event, ui) {
+            $("#amount").val(ui.value);
+        }
+    });
+    $("#amount").val($("#v-slider").slider("value"));
+    $("#v-slider3").slider({
+        orientation: "vertical",
+        animate: 'fast',
+        min: 0,
+        max: 100,
+        value: 20,
+        step: 10,
+        slide: function (event, ui) {
+            $("#amount").val(ui.value);
+        }
+    });
+    $("#amount").val($("#v-slider").slider("value"));
+    $("#v-slider4").slider({
+        orientation: "vertical",
+        animate: 'fast',
+        min: 0,
+        max: 100,
+        value: 10,
+        step: 10,
+        slide: function (event, ui) {
+            $("#amount").val(ui.value);
+        }
+    });
+    $("#amount").val($("#v-slider").slider("value"));
+    $("#v-slider5").slider({
+        orientation: "vertical",
+        animate: 'fast',
+        min: 0,
+        max: 100,
+        value: 10,
+        step: 10,
+        slide: function (event, ui) {
+            $("#amount").val(ui.value);
+        }
+    });
+    $("#amount").val($("#v-slider").slider("value"));
+    $("#v-slider6").slider({
+        orientation: "vertical",
+        animate: 'fast',
+        min: 0,
+        max: 100,
+        value: 100,
+        step: 10,
+        slide: function (event, ui) {
+            $("#amount").val(ui.value);
+        }
+    });
+    $("#amount").val($("#v-slider").slider("value"));
     $('.list-group-item').click(function() {
         $('.list-group-item').removeClass('actives');
         $(this).parents('.list-group-item').addClass('actives');
