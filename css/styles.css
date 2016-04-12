@@ -672,6 +672,7 @@ a>i {
     margin-right: 10px;
 }
 div#sideMenu .list-group-item:not(.collapsed) img {
+    transition: all 0.2s linear;
     transform: rotate(180deg);
 }
 footer {
