@@ -58,10 +58,6 @@ $(document).ready(function() {
         $('.number_field').focus();
     });
 
-    $(".trigger").click(function() {
-        $(".menu").toggleClass("active");
-    });
-
     $("#edit_icon").click(function() {
         $("#update_finance").prop('disabled', false);
         $("#update_finance").css('height', '150px');
@@ -188,8 +184,7 @@ $(document).ready(function() {
     $('.list-group-item').click(function() {
         $('.list-group-item').removeClass('actives');
         $(this).parents('.list-group-item').addClass('actives');
-        
-        $('.list-group-item').removeClass('actives'); 
- });
- });
 
+        $('.list-group-item').removeClass('actives');
+ });
+ });
