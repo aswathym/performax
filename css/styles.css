@@ -1503,6 +1503,10 @@ input.promocode::-webkit-input-placeholder {
     color: rgba(128, 128, 128, 0.8);
 }
 
+#permissions .fa-toggle-on, #permissions .fa-toggle-off {
+    cursor: pointer;
+}
+
 #exSpon_DetailsPage_Configurator_Timeline .controllers label {
     width: 30%;
     text-align: right;

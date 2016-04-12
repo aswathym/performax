@@ -171,6 +171,7 @@ $(document).ready(function() {
         var ret = (email == 'admin@qburst.com') && (pass == 'admin') ? true : false;
         return ret;
     }
+
     $('.flow_nav li').click(function(eve) {
         $(this).siblings().removeClass('active');
         $(this).siblings().removeClass('another_active');
@@ -196,3 +197,15 @@ $(document).ready(function() {
        e.preventDefault(); $(this).parent('div').remove();challenge_no--
    })
 });
+
+function toggleMode(ev) {
+    var el = ev.target;
+    if($(el).hasClass('fa-toggle-on')) {
+        $(el).removeClass('fa-toggle-on');
+        $(el).addClass('fa-toggle-off');
+    }
+    else {
+        $(el).addClass('fa-toggle-on');
+        $(el).removeClass('fa-toggle-off');
+    }
+}
