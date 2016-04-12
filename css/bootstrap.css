@@ -5281,6 +5281,9 @@ button.list-group-item:focus {
   text-decoration: none;
   background-color: #f5f5f5;
 }
+a.list-group-item:focus{
+  background-color: #ccc;
+}
 button.list-group-item {
   width: 100%;
   text-align: left;

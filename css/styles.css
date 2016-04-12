@@ -1651,3 +1651,6 @@ input.promocode::-webkit-input-placeholder {
 }
 #add_ons .radio_buttons label {
 }
+#sideMenu>.list-group>div>a.actives{
+    background-color: #ccc;
+}

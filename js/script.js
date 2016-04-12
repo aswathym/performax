@@ -191,7 +191,7 @@ $(document).ready(function() {
         if(x < max_fields){ //max input box allowed
             x++; //text box increment
             challenge_no++;
-            $(wrapper).append('<div class="challenge"><label>Challenge '+challenge_no+' :</label><input type="text"><a href="#" class="remove_field">Remove</a></div>'); //add input box
+            $(wrapper).append('<div class="challenge"><label>Challenge '+challenge_no+' :</label><input type="text"><a href="#" class="remove_field">Remove </a></div>'); //add input box
 
         }
     });
