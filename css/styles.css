@@ -1639,7 +1639,6 @@ input.promocode::-webkit-input-placeholder {
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 50%;
   background: rgba(255, 015, 255, 0.15);
   opacity: 0;
   z-index: -10;
@@ -1649,6 +1648,12 @@ input.promocode::-webkit-input-placeholder {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
+}
+.menu .rotater .btn {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    width: 150px;
+    height: 50px;
 }
 
 .menu .btn .fa {
@@ -1754,75 +1759,75 @@ input.promocode::-webkit-input-placeholder {
 for some reason nth-child(1) is always busy and elements starting from 2 */
 
 .rotater:nth-child(1) {
-  -webkit-transform: rotate(120deg);
-  -ms-transform: rotate(120deg);
-  transform: rotate(120deg);
+  -webkit-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg);
 }
 
 .menu.active .rotater:nth-child(1) .btn-icon {
-  -webkit-transform: translateX(-10em) rotate(240deg);
-  -ms-transform: translateX(-10em) rotate(240deg);
-  transform: translateX(-10em) rotate(240deg);
+  -webkit-transform: translateX(-10em) rotate(280deg);
+  -ms-transform: translateX(-10em) rotate(280deg);
+  transform: translateX(-10em) rotate(280deg);
 }
 
 .rotater:nth-child(2) {
-  -webkit-transform: rotate(60deg);
-  -ms-transform: rotate(60deg);
-  transform: rotate(60deg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .menu.active .rotater:nth-child(2) .btn-icon {
-  -webkit-transform: translateX(-10em) rotate(-60deg);
-  -ms-transform: translateX(-10em) rotate(-60deg);
-  transform: translateX(-10em) rotate(-60deg);
+  -webkit-transform: translateX(-10em) rotate(270deg);
+  -ms-transform: translateX(-10em) rotate(270deg);
+  transform: translateX(-10em) rotate(270deg);
 }
 
 .rotater:nth-child(3) {
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
+  -webkit-transform: rotate(150deg);
+  -ms-transform: rotate(150deg);
+  transform: rotate(150deg);
 }
 
 .menu.active .rotater:nth-child(3) .btn-icon {
-  -webkit-transform: translateX(-10em) rotate(0deg);
-  -ms-transform: translateX(-10em) rotate(0deg);
-  transform: translateX(-10em) rotate(0deg);
+  -webkit-transform: translateX(-10em) rotate(280deg);
+  -ms-transform: translateX(-10em) rotate(280deg);
+  transform: translateX(-10em) rotate(280deg);
 }
 
 .rotater:nth-child(4) {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+  -webkit-transform: rotate(210deg);
+  -ms-transform: rotate(210deg);
+  transform: rotate(210deg);
 }
 
 .menu.active .rotater:nth-child(4) .btn-icon {
-  -webkit-transform: translateX(-10em) rotate(180deg);
-  -ms-transform: translateX(-10em) rotate(180deg);
-  transform: translateX(-10em) rotate(180deg);
+  -webkit-transform: translateX(-10em) rotate(270deg);
+  -ms-transform: translateX(-10em) rotate(270deg);
+  transform: translateX(-10em) rotate(270deg);
 }
 
 .rotater:nth-child(5) {
-  -webkit-transform: rotate(240deg);
-  -ms-transform: rotate(240deg);
-  transform: rotate(240deg);
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
 }
 
 .menu.active .rotater:nth-child(5) .btn-icon {
-  -webkit-transform: translateX(-10em) rotate(120deg);
-  -ms-transform: translateX(-10em) rotate(120deg);
-  transform: translateX(-10em) rotate(120deg);
+  -webkit-transform: translateX(-10em) rotate(280deg);
+  -ms-transform: translateX(-10em) rotate(280deg);
+  transform: translateX(-10em) rotate(280deg);
 }
 
 .rotater:nth-child(6) {
-  -webkit-transform: rotate(300deg);
-  -ms-transform: rotate(300deg);
-  transform: rotate(300deg);
+  -webkit-transform: rotate(330deg);
+  -ms-transform: rotate(330deg);
+  transform: rotate(330deg);
 }
 
 .menu.active .rotater:nth-child(6) .btn-icon {
-  -webkit-transform: translateX(-10em) rotate(60deg);
-  -ms-transform: translateX(-10em) rotate(60deg);
-  transform: translateX(-10em) rotate(60deg);
+  -webkit-transform: translateX(-10em) rotate(270deg);
+  -ms-transform: translateX(-10em) rotate(270deg);
+  transform: translateX(-10em) rotate(270deg);
 }
 
 .rotater:nth-child(7) {
@@ -1832,7 +1837,7 @@ for some reason nth-child(1) is always busy and elements starting from 2 */
 }
 
 .menu.active .rotater:nth-child(7) .btn-icon {
-  -webkit-transform: translateX(-10em) rotate(360deg);
-  -ms-transform: translateX(-10em) rotate(360deg);
-  transform: translateX(-10em) rotate(360deg);
+  -webkit-transform: translateX(-10em) rotate(280deg);
+  -ms-transform: translateX(-10em) rotate(280deg);
+  transform: translateX(-10em) rotate(280deg);
 }
