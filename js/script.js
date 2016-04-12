@@ -42,6 +42,7 @@ $(document).ready(function() {
         'togglescreen': false
     });
 
+
     $(".dropdown-menu").on('click', 'li a', function() {
         $(".dd_btn").text($(this).text());
         // $(".btn:first-child").val($(this).text());
@@ -55,7 +56,11 @@ $(document).ready(function() {
     }
     $('#create_promo_code_form #radio2').click(function() {
         $('.number_field').focus();
-    })
+    });
+
+    $(".trigger").click(function() {
+        $(".menu").toggleClass("active");
+    });
 
     $("#edit_icon").click(function() {
         $("#update_finance").prop('disabled', false);
