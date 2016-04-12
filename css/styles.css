@@ -193,6 +193,42 @@ header {
     bottom: 0px;
 }
 
+.core_functions_wrapper li {
+    margin: 30px 38px 20px 10px;
+    width: 230px;
+    text-align: center;
+    overflow: hidden;
+    padding: 0px;
+    height: 230px;
+    background: -webkit-linear-gradient(top, rgb(255, 255, 255) 30%, rgb(215, 215, 215) 60%, rgb(116, 116, 116) 80%, rgb(35, 35, 35) 100%);
+    background: -o-linear-gradient(top, rgb(255, 255, 255) 30%, rgb(215, 215, 215) 60%, rgb(116, 116, 116) 80%, rgb(35, 35, 35) 100%);
+    background: -ms-linear-gradient(top, rgb(255, 255, 255) 30%, rgb(215, 215, 215) 60%, rgb(116, 116, 116) 80%, rgb(35, 35, 35) 100%);
+    background: -moz-linear-gradient(top, rgb(255, 255, 255) 30%, rgb(215, 215, 215) 60%, rgb(116, 116, 116) 80%, rgb(35, 35, 35) 100%);
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 30%, rgb(215, 215, 215) 60%, rgb(116, 116, 116) 80%, rgb(35, 35, 35) 100%);
+}
+.core_functions_wrapper li a {
+    padding: 60px 171px 155px 171px;
+}
+.core_functions_wrapper li .caption {
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    height: 190px;
+    bottom: -190px;
+    transition: all 0.3s linear;
+    background-color: rgba(0, 0, 0, 0.8);
+    font: 13px 'Roboto-Regular';
+    text-align: center;
+    padding-top: 20px;
+}
+.core_functions_wrapper li .caption button {
+    margin-top: 20px;
+}
+.core_functions_wrapper li:hover .caption {
+    /*height: 200px;*/
+    bottom: 0px;
+}
+
 /*Bootstrap Overriding*/
 
 .container {
@@ -984,11 +1020,11 @@ footer.footer {
     box-shadow: 0 0 6px #ccc;
     margin: 20px 10px 20px 0;
 }
-.challenge_second_rightbox>.challenge1 label, .challenge_second_rightbox>.challenge2 label {
+.challenge_second_rightbox>.challenge_wrapper .challenge label {
     color: #4F4C4D;
     font-size: 15px;
 }
-.challenge_second_rightbox>.challenge1 input, .challenge_second_rightbox>.challenge2 input {
+.challenge_second_rightbox>.challenge_wrapper .challenge input {
     width: 80%;
     height: 70px;
     margin-left: 10px;
@@ -1362,7 +1398,7 @@ input.promocode::-webkit-input-placeholder {
     position: absolute;
     margin-top: 46px;
     margin-left: -64px;
-    width: 100px;
+    width: 95px;
     text-align: center;
 }
 .horiz_seperator {
