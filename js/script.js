@@ -196,7 +196,7 @@ $(document).ready(function() {
     });
 
    $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
-       e.preventDefault(); $(this).parent('div').remove();
+       e.preventDefault(); $(this).parent('div').remove();challenge_no--
    })
 
 
