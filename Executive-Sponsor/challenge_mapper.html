@@ -134,21 +134,24 @@
                         </div>
                         <div class="col-md-6 challenge_second_right">
                             <div class="challenge_second_rightbox bg-white">
+
                                 <div class="challenge_second_rightheading">
                                     Describe your organizational challenges
                                 </div>
-                                <div class="challenge1">
-                                    <label>Challenge 1 :</label>
-                                    <input type="text">
-                                </div>
-                                <div class="challenge2">
-                                    <label>Challenge 2 :</label>
-                                    <input type="text">
-                                </div>
-                                <div class="add_more_challenges">
-                                    <a href="#">+<u>Add More Challenges</u></a>
+                                <div class="challenge_wrapper">
+                                    <div class="challenge">
+                                        <label>Challenge 1 :</label>
+                                        <input type="text">
+                                    </div>
+                                    <div class="challenge">
+                                        <label>Challenge 2 :</label>
+                                        <input type="text">
+                                    </div>
                                 </div>
 
+                                <div class="add_more_challenges">
+                                    <a href="javascript:void(0);" class="add_field_button">+<u>Add More Challenges</u></a>
+                                </div>
                                 <button type="button" class="btn btn-info">Submit</button>
                             </div>
                         </div>
@@ -163,16 +166,23 @@
                     </div>
                     <nav class="navbar col-md-12 padding0">
                         <ul class="nav nav-tabs" id="tab_header">
-                            <li class="active"><a href="#analysis" aria-controls="analysis" role="tab" data-toggle="tab">Assessments for Internal Functions</a></li>
-                            <li><a href="#no_display" aria-controls="no_display" role="tab" data-toggle="tab">Assessments for internal processes</a></li>
-                            <li><a href="#no_display" aria-controls="no_display" role="tab" data-toggle="tab">Assessments for Stakeholder Groups</a></li>
-                            <li><a href="#no_display" aria-controls="no_display" role="tab" data-toggle="tab">Assessments for Individual Employees</a></li>
+                            <li class="active"><a href="#internal_functions" aria-controls="analysis" role="tab" data-toggle="tab">Assessments for Internal Functions</a></li>
+                            <li><a href="#internal_processes" aria-controls="no_display" role="tab" data-toggle="tab">Assessments for internal processes</a></li>
+                            <li><a href="#stakeholder_groups" aria-controls="no_display" role="tab" data-toggle="tab">Assessments for Stakeholder Groups</a></li>
+                            <li><a href="#individual_employees" aria-controls="no_display" role="tab" data-toggle="tab">Assessments for Individual Employees</a></li>
                         </ul>
                     </nav>
                     <div class="container tab-content">
-                        <div id="no_display" class="container-fluid tab-pane" role="tabpanel"></div>
-                        <div id="analysis" class="container col-md-12 tab-pane active padding0" role="tabpanel">
-                            <ul id="core_functions_wrapper" class="container-fluid padding0">
+                        <div id="internal_functions" class="container col-md-12 tab-pane active padding0" role="tabpanel">
+                            <ul class="container-fluid padding0 core_functions_wrapper">
+                                <li class="thumbnail col-md-2">
+                                    <h4>Customer Service</h4>
+                                    <img src="../images/finance&accounting.png">
+                                    <div class="caption col-md-12">
+                                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+                                        <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                    </div>
+                                </li>
                                 <li class="thumbnail col-md-2">
                                     <h4>Finance & Accounting</h4>
                                     <img src="../images/finance&accounting.png">
@@ -197,6 +207,19 @@
                                         <button type="button" class="btn btn-danger" name="button">Delete</button>
                                     </div>
                                 </li>
+                            </ul>
+
+                        </div>
+                        <div id="internal_processes" class="container col-md-12 tab-pane padding0" role="tabpanel">
+                            <ul class="container-fluid padding0 core_functions_wrapper">
+                                <li class="thumbnail col-md-2">
+                                    <h4>Customer Service</h4>
+                                    <img src="../images/finance&accounting.png">
+                                    <div class="caption col-md-12">
+                                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+                                        <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                    </div>
+                                </li>
                                 <li class="thumbnail col-md-2">
                                     <h4>Finance & Accounting</h4>
                                     <img src="../images/finance&accounting.png">
@@ -205,8 +228,95 @@
                                         <button type="button" class="btn btn-danger" name="button">Delete</button>
                                     </div>
                                 </li>
+                                <li class="thumbnail col-md-2">
+                                    <h4>Sales & Marketing</h4>
+                                    <img src="../images/sales&marketing.png">
+                                    <div class="caption col-md-12">
+                                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+                                        <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                    </div>
+                                </li>
+                                <li class="thumbnail col-md-2">
+                                    <h4>Strategy & Planning</h4>
+                                    <img src="../images/strategy&planning.png">
+                                    <div class="caption col-md-12">
+                                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+                                        <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                    </div>
+                                </li>
                             </ul>
-
+                        </div>
+                        <div id="stakeholder_groups" class="container col-md-12 tab-pane padding0" role="tabpanel">
+                            <ul class="container-fluid padding0 core_functions_wrapper">
+                                <li class="thumbnail col-md-2">
+                                    <h4>Customer Service</h4>
+                                    <img src="../images/finance&accounting.png">
+                                    <div class="caption col-md-12">
+                                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+                                        <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                    </div>
+                                </li>
+                                <li class="thumbnail col-md-2">
+                                    <h4>Finance & Accounting</h4>
+                                    <img src="../images/finance&accounting.png">
+                                    <div class="caption col-md-12">
+                                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+                                        <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                    </div>
+                                </li>
+                                <li class="thumbnail col-md-2">
+                                    <h4>Sales & Marketing</h4>
+                                    <img src="../images/sales&marketing.png">
+                                    <div class="caption col-md-12">
+                                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+                                        <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                    </div>
+                                </li>
+                                <li class="thumbnail col-md-2">
+                                    <h4>Strategy & Planning</h4>
+                                    <img src="../images/strategy&planning.png">
+                                    <div class="caption col-md-12">
+                                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+                                        <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="individual_employees" class="container col-md-12 tab-pane padding0" role="tabpanel">
+                            <ul class="container-fluid padding0 core_functions_wrapper">
+                                <li class="thumbnail col-md-2">
+                                    <h4>Customer Service</h4>
+                                    <img src="../images/finance&accounting.png">
+                                    <div class="caption col-md-12">
+                                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+                                        <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                    </div>
+                                </li>
+                                <li class="thumbnail col-md-2">
+                                    <h4>Finance & Accounting</h4>
+                                    <img src="../images/finance&accounting.png">
+                                    <div class="caption col-md-12">
+                                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+                                        <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                    </div>
+                                </li>
+                                <li class="thumbnail col-md-2">
+                                    <h4>Sales & Marketing</h4>
+                                    <img src="../images/sales&marketing.png">
+                                    <div class="caption col-md-12">
+                                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+                                        <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                    </div>
+                                </li>
+                                <li class="thumbnail col-md-2">
+                                    <h4>Strategy & Planning</h4>
+                                    <img src="../images/strategy&planning.png">
+                                    <div class="caption col-md-12">
+                                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+                                        <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>

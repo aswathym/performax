@@ -141,36 +141,32 @@ $(document).ready(function() {
             phone = $('#profile .form-content input[name=phone]').val(),
             zip_code = $('#profile .form-content input[name=zip_code]').val(),
             job_title = $('#profile .form-content input[name=job_title]').val();
-        if(first_name == '') {
+        if (first_name == '') {
             $('#profile .form-content input[name=first_name]').css('border-color', 'rgba(156, 3, 3, 0.4)');
         }
-        if(last_name == '') {
+        if (last_name == '') {
             $('#profile .form-content input[name=last_name]').css('border-color', 'rgba(156, 3, 3, 0.4)');
         }
-        if(company == '') {
+        if (company == '') {
             $('#profile .form-content input[name=company]').css('border-color', 'rgba(156, 3, 3, 0.4)');
         }
-        if(job_title == '') {
+        if (job_title == '') {
             $('#profile .form-content input[name=job_title]').css('border-color', 'rgba(156, 3, 3, 0.4)');
         }
-        if(phone == '') {
+        if (phone == '') {
             $('#profile .form-content input[name=phone]').css('border-color', 'rgba(156, 3, 3, 0.4)');
         }
-        if(zip_code == '') {
+        if (zip_code == '') {
             $('#profile .form-content input[name=zip_code]').css('border-color', 'rgba(156, 3, 3, 0.4)');
         }
     })
-
     function checkEmpty(item) {
         return item === '' ? true : false;
     }
-
     function validateEmail(email) {
         var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
         return emailReg.test(email);
-
     }
-
     function validatePassword(email, pass) {
         var ret = (email == 'admin@qburst.com') && (pass == 'admin') ? true : false;
         return ret;
@@ -186,5 +182,18 @@ $(document).ready(function() {
         $(this).parents('.list-group-item').addClass('actives');
 
         $('.list-group-item').removeClass('actives');
- });
- });
+    });
+    var wrapper = $(".challenge_wrapper");
+    var add_button = $(".add_field_button");
+    var challenge_no = 2;
+    $(add_button).click(function(e) {
+        e.preventDefault();
+        challenge_no++;
+        $(wrapper).append('<div class="challenge"><label>Challenge ' + challenge_no + ' :</label><input type="text"><a href="#" class="remove_field">Remove </a></div>');
+    });
+
+    $(wrapper).on("click", ".remove_field", function(e) { //user click on remove text
+        e.preventDefault();
+        $(this).parent('div').remove();
+    });
+});
