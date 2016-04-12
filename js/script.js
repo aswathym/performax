@@ -192,8 +192,7 @@ $(document).ready(function() {
         $(wrapper).append('<div class="challenge"><label>Challenge ' + challenge_no + ' :</label><input type="text"><a href="#" class="remove_field">Remove </a></div>');
     });
 
-    $(wrapper).on("click", ".remove_field", function(e) { //user click on remove text
-        e.preventDefault();
-        $(this).parent('div').remove();
-    });
+   $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+       e.preventDefault(); $(this).parent('div').remove();challenge_no--
+   })
 });
