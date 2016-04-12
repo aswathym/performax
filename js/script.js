@@ -185,4 +185,11 @@ $(document).ready(function() {
         $(this).prevAll('li').addClass('another_active');
         $(this).addClass('active')
     })
-});
+    $('.list-group-item').click(function() {
+        $('.list-group-item').removeClass('actives');
+        $(this).parents('.list-group-item').addClass('actives');
+        
+        $('.list-group-item').removeClass('actives'); 
+ });
+ });
+
