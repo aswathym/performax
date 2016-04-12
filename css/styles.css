@@ -983,7 +983,13 @@ footer.footer {
 }
 
 /* ES - challenge mapper */
-
+.remove_field {
+    padding-left: 10px;
+}
+.challenge_wrapper {
+    height: 200px;
+    overflow-y: auto;
+}
 .challenge_box, .cart_box {
     background-color: #FAFAFA;
     border: 1px #e4e4e4 solid;
@@ -1025,7 +1031,7 @@ footer.footer {
     font-size: 15px;
 }
 .challenge_second_rightbox>.challenge_wrapper .challenge input {
-    width: 70%;
+    width: 68%;
     height: 70px;
     margin-left: 10px;
 }
