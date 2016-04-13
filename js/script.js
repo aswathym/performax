@@ -258,17 +258,25 @@ $(document).ready(function() {
 
         $('.list-group-item').removeClass('actives');
     });
-    var wrapper = $(".challenge_wrapper");
-    var add_button = $(".add_field_button");
-    var challenge_no = 2;
+    var add_button = $(".add_field_button"),
+        remove_button = $('.remove_field_button'),
+        challenge_no = 2;
+
     $(add_button).click(function(e) {
         e.preventDefault();
         challenge_no++;
-        $(wrapper).append('<div class="challenge"><label>Challenge ' + challenge_no + ' :</label><input type="text"><a href="#" class="remove_field">Remove </a></div>');
+        $(".challenge_wrapper").append('<li class="challenge"><label>Challenge ' + challenge_no + ' :</label><input type="text"></li>');
     });
 
-   $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
-       e.preventDefault(); $(this).parent('div').remove();challenge_no--
+   $(remove_button).click(function(e){ //user click on remove text
+       e.preventDefault();
+       if ($(".challenge_wrapper li").length > 2) {
+           $(".challenge_wrapper li:last").remove()
+           challenge_no--;
+       }
+       else {
+           alert('Remove not possible');
+       }
    })
 });
 

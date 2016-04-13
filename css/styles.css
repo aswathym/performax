@@ -1026,6 +1026,9 @@ footer.footer {
     box-shadow: 0 0 6px #ccc;
     margin: 20px 10px 20px 0;
 }
+.challenge_second_rightbox>.challenge_wrapper .challenge{
+    list-style-type: none;
+}
 .challenge_second_rightbox>.challenge_wrapper .challenge label {
     color: #4F4C4D;
     font-size: 15px;
@@ -1035,9 +1038,11 @@ footer.footer {
     height: 70px;
     margin-left: 10px;
 }
-.challenge_second_rightbox>.add_more_challenges>a {
-    padding-top: 20px;
+.challenge_second_rightbox>.add_more_challenges>span>.add_field_button {
     color: #FF5420;
+}
+.challenge_second_rightbox>.add_more_challenges>span>a {
+    padding-top: 10px;
     font-size: 14px;
     padding-bottom: 20px;
 }
