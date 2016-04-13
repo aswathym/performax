@@ -241,6 +241,9 @@ header {
 .padding0 {
     padding: 0;
 }
+.paddingRight0 {
+    padding-right: 0;
+}
 .padding10 {
     padding: 10px;
 }
@@ -1366,6 +1369,10 @@ input.promocode::-webkit-input-placeholder {
     transform: scale(1.5, 1.5);
     box-shadow: 0px 0px 7px 0px #72F568;
 }
+.flow_nav .active + span{
+    font-weight: bold;
+    font-size: 13px;
+}
 .flow_nav .another_active {
     background-image: url('../images/icon_sprite.png');
     background-size: 440px 170px;
@@ -1455,7 +1462,6 @@ input.promocode::-webkit-input-placeholder {
 }
 
 /*ExSpon Details Page*/
-
 #exspon_details_page .navbar {
     padding: 0;
 }
@@ -2011,6 +2017,74 @@ for some reason nth-child(1) is always busy and elements starting from 2 */
     padding: 25px 0;
     width: 50%;
 }
+
+/*ExSpon My Assessment Page*/
+#exspon_myAssessment .graph_detail .total h4, #exspon_myAssessment .graph_detail .total h3 {
+    text-transform: uppercase;
+}
+#exspon_myAssessment .graph_detail .total h4, #exspon_myAssessment .graph_detail .total h3 {
+    color: #484747;
+}
+#exspon_myAssessment .graph_detail .new h4, #exspon_myAssessment .graph_detail .new h3 {
+    color: #F5BD37;
+}
+#exspon_myAssessment .graph_detail .active h4, #exspon_myAssessment .graph_detail .active h3 {
+    color: #165884;
+}
+#exspon_myAssessment .graph_detail .ongoing h4, #exspon_myAssessment .graph_detail .ongoing h3 {
+    color: #43A543;
+}
+#exspon_myAssessment .graph_detail .functional h4, #exspon_myAssessment .graph_detail .functional h3 {
+    color: #F18282;
+}
+#exspon_myAssessment .marginTop20 {
+    margin-top: 25px;
+}
+#exspon_myAssessment .items button {
+    margin-top: 25%;
+}
+#exspon_myAssessment .tag-top::before {
+    width: 110px;
+    display: inline-block;
+    color: white;
+    padding: 6px 12px;
+    text-align: center;
+    transform: rotate(320deg);
+    position: absolute;
+    left: -37px;
+    top: 0px;
+}
+#exspon_myAssessment .new .tag-top::before {
+    content: 'NEW';
+    background-color: #F5BD37;
+}
+#exspon_myAssessment .active .tag-top::before {
+    content: 'ACTIVE';
+    background-color: #165884;
+}
+#exspon_myAssessment .ongoing .tag-top::before {
+    content: 'ONGOING';
+    background-color: #43A543;
+}
+#exspon_myAssessment .overflowHidden {
+    overflow: hidden;
+}
+#exspon_myAssessment .ongoing button, #exspon_myAssessment .active button {
+    white-space: normal;
+    width: 78px;
+    line-height: 1.1;
+    padding: 5px;
+}
+#exspon_myAssessment .notification h5 {
+    margin: 20px 10px;
+}
+#exspon_myAssessment .details {
+    margin: 5px 0px;
+}
+#exspon_myAssessment .notification .col-md-12 {
+    height: 290px;
+}
+
 /* exSpon_DetailsPage_Questionnaire */
 .Questionnaire_box {
     margin-left: 15px;
