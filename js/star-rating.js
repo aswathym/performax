@@ -553,7 +553,7 @@
             5: '5'
         },
         clearButtonTitle: 'Clear',
-        clearCaption: 'Not Rated'
+        clearCaption: '0'
     };
 
     $.fn.rating.Constructor = Rating;
