@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/editor.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="../css/bootstrap-datepicker3.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
@@ -284,9 +285,46 @@
                             </div>
                             <div class="marginTop10">
                                 <h5 class="text-center marginTop10">
-                                            Set your own timeframe (Weeks)
-                                        </h5>
-                                <img src="../images/placeholder.png" alt="" width="100%;" />
+                                    Set your own timeframe (Weeks)
+                                </h5>
+                                <div class="timeframe">
+                                    <div class="" id="v-slider">
+                                        <div class="description">
+                                            <span>FOCUS</span>
+                                            <span>1 Week</span>
+                                        </div>
+                                    </div>
+                                    <div class="" id="v-slider2">
+                                        <div class="description">
+                                            <span>CUSTOMIZE</span>
+                                            <span>2 Weeks</span>
+                                        </div>
+                                    </div>
+                                    <div class="" id="v-slider3">
+                                        <div class="description">
+                                            <span>ENGAGE</span>
+                                            <span>3 Weeks</span>
+                                        </div>
+                                    </div>
+                                    <div class="" id="v-slider4">
+                                        <div class="description">
+                                            <span>EVALUATE</span>
+                                            <span>2 Weeks</span>
+                                        </div>
+                                    </div>
+                                    <div class="" id="v-slider5">
+                                        <div class="description">
+                                            <span>ACT</span>
+                                            <span>2 Weeks</span>
+                                        </div>
+                                    </div>
+                                    <div class="" id="v-slider6">
+                                        <div class="description">
+                                            <span>TRACK</span>
+                                            <span class="ongoing">Ongoing</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="text-center">
                                 <button type="button" name="button" class="btn btn-sm btn-info marginTop10">Save</button>
@@ -420,10 +458,10 @@
                                     </span>
                                 </div>
                             </div>
-                            <h5 class="col-md-12">Permit the Administrator to Share Results & Reposrtsd using
-                                        <img src="../images/share.png" alt="" width="80px;" />
-                                        <i class="fa fa-toggle-on fa-3x"></i>
-                                    </h5>
+                            <h5 class="col-md-12">Permit the Administrator to Share Results & Reports using
+                                    <img src="../images/share.png" alt="" width="80px;" />
+                                    <i class="fa fa-toggle-on fa-3x" onclick="toggleMode(event)"></i>
+                                </h5>
                             <div class="text-center col-md-12">
                                 <button type="button" name="button" class="btn btn-sm btn-info marginTop10">Save</button>
                             </div>
@@ -661,167 +699,178 @@
                 </div>
             </div>
             <div id="exSpon_DetailsPage_ExpertPanelMembers" class="tab-pane col-md-12 padding10" role="tabpanel">
-                <div class="">
-                    <span>Expert Pannel Members for Assessment Design</span>
-                    <div class="row exSpon_Details_ExpertPanel challenge_box bg-white">
-                        <div class="col-md-4">
-                            <a href="#"><h4>Finance & Accounting</h4></a>
-                            <span>Lorem ipsum dolor sit amet</span>
+                <div class="container-fluid">
+                    <div class="container-fluid">
+                        <div class="row" style="background-color:#F7F7F7">
+                            <span>Expert Pannel Members for Assessment Design</span>
+                            <img src="../" alt="" />
                         </div>
-                        <div class="col-md-3">
-                            <h4>Nulla Vestibulum eros </h4>
-                            <span>Pending Task</span>
+                        <div class="row exSpon_Details_ExpertPanel challenge_box bg-white">
+                            <div class="col-md-4">
+                                <a href="#"><h4>Finance & Accounting</h4></a>
+                                <span>Lorem ipsum dolor sit amet</span>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>Nulla Vestibulum eros </h4>
+                                <span>Pending Task</span>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>02.03.2014</h4>
+                                <span>Due date</span>
+                            </div>
+                            <div class="col-md-2">
+                                <a href="#"><span>Go to page</span></a>
+                            </div>
                         </div>
-                        <div class="col-md-3">
-                            <h4>02.03.2014</h4>
-                            <span>Due date</span>
+                        <div class="row exSpon_Details_ExpertPanel challenge_box bg-white">
+                            <div class="col-md-4">
+                                <a href="#"><h4>Finance & Accounting</h4></a>
+                                <span>Lorem ipsum dolor sit amet</span>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>Nulla Vestibulum eros </h4>
+                                <span>Pending Task</span>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>02.03.2014</h4>
+                                <span>Due date</span>
+                            </div>
+                            <div class="col-md-2">
+                                <a href="#"><span>Go to page</span></a>
+                            </div>
                         </div>
-                        <div class="col-md-2">
-                            <a href="#"><span>Go to page</span></a>
-                        </div>
-                    </div>
-                    <div class="row exSpon_Details_ExpertPanel challenge_box bg-white">
-                        <div class="col-md-4">
-                            <a href="#"><h4>Finance & Accounting</h4></a>
-                            <span>Lorem ipsum dolor sit amet</span>
-                        </div>
-                        <div class="col-md-3">
-                            <h4>Nulla Vestibulum eros </h4>
-                            <span>Pending Task</span>
-                        </div>
-                        <div class="col-md-3">
-                            <h4>02.03.2014</h4>
-                            <span>Due date</span>
-                        </div>
-                        <div class="col-md-2">
-                            <a href="#"><span>Go to page</span></a>
-                        </div>
-                    </div>
-                    <div class="row exSpon_Details_ExpertPanel challenge_box bg-white">
-                        <div class="col-md-4">
-                            <a href="#"><h4>Finance & Accounting</h4></a>
-                            <span>Lorem ipsum dolor sit amet</span>
-                        </div>
-                        <div class="col-md-3">
-                            <h4>Nulla Vestibulum eros </h4>
-                            <span>Pending Task</span>
-                        </div>
-                        <div class="col-md-3">
-                            <h4>02.03.2014</h4>
-                            <span>Due date</span>
-                        </div>
-                        <div class="col-md-2">
-                            <a href="#"><span>Go to page</span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="">
-                    <span>Expert Pannel Members for Assessment Design</span>
-                    <div class="row exSpon_Details_ExpertPanel challenge_box bg-white">
-                        <div class="col-md-4">
-                            <h4>Finance & Accounting</h4>
-                            <span>Lorem ipsum dolor sit amet</span>
-                        </div>
-                        <div class="col-md-3">
-                            <h4>Nulla Vestibulum eros </h4>
-                            <span>Pending Task</span>
-                        </div>
-                        <div class="col-md-3">
-                            <h4>02.03.2014</h4>
-                            <span>Due date</span>
-                        </div>
-                        <div class="col-md-2">
-                            <a href="#"><span>Go to page</span></a>
+                        <div class="row exSpon_Details_ExpertPanel challenge_box bg-white">
+                            <div class="col-md-4">
+                                <a href="#"><h4>Finance & Accounting</h4></a>
+                                <span>Lorem ipsum dolor sit amet</span>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>Nulla Vestibulum eros </h4>
+                                <span>Pending Task</span>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>02.03.2014</h4>
+                                <span>Due date</span>
+                            </div>
+                            <div class="col-md-2">
+                                <a href="#"><span>Go to page</span></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="row exSpon_Details_ExpertPanel challenge_box bg-white">
-                        <div class="col-md-4">
-                            <h4>Finance & Accounting</h4>
-                            <span>Lorem ipsum dolor sit amet</span>
+                    <div class="container-fluid">
+                        <div class="row" style="background-color:#F7F7F7">
+                            <span>Expert Pannel Members for Assessment Design</span>
                         </div>
-                        <div class="col-md-3">
-                            <h4>Nulla Vestibulum eros </h4>
-                            <span>Pending Task</span>
+                        <div class="row exSpon_Details_ExpertPanel challenge_box bg-white">
+                            <div class="col-md-4">
+                                <h4>Finance & Accounting</h4>
+                                <span>Lorem ipsum dolor sit amet</span>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>Nulla Vestibulum eros </h4>
+                                <span>Pending Task</span>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>02.03.2014</h4>
+                                <span>Due date</span>
+                            </div>
+                            <div class="col-md-2">
+                                <a href="#"><span>Go to page</span></a>
+                            </div>
                         </div>
-                        <div class="col-md-3">
-                            <h4>02.03.2014</h4>
-                            <span>Due date</span>
+                        <div class="row exSpon_Details_ExpertPanel challenge_box bg-white">
+                            <div class="col-md-4">
+                                <h4>Finance & Accounting</h4>
+                                <span>Lorem ipsum dolor sit amet</span>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>Nulla Vestibulum eros </h4>
+                                <span>Pending Task</span>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>02.03.2014</h4>
+                                <span>Due date</span>
+                            </div>
+                            <div class="col-md-2">
+                                <a href="#"><span>Go to page</span></a>
+                            </div>
                         </div>
-                        <div class="col-md-2">
-                            <a href="#"><span>Go to page</span></a>
-                        </div>
-                    </div>
-                    <div class="row exSpon_Details_ExpertPanel challenge_box bg-white">
-                        <div class="col-md-4">
-                            <h4>Finance & Accounting</h4>
-                            <span>Lorem ipsum dolor sit amet</span>
-                        </div>
-                        <div class="col-md-3">
-                            <h4>Nulla Vestibulum eros </h4>
-                            <span>Pending Task</span>
-                        </div>
-                        <div class="col-md-3">
-                            <h4>02.03.2014</h4>
-                            <span>Due date</span>
-                        </div>
-                        <div class="col-md-2">
-                            <a href="#"><span>Go to page</span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="">
-                    <span>Expert Pannel Members for Assessment Design</span>
-                    <div class="row exSpon_Details_ExpertPanel challenge_box bg-white">
-                        <div class="col-md-4">
-                            <h4>Finance & Accounting</h4>
-                            <span>Lorem ipsum dolor sit amet</span>
-                        </div>
-                        <div class="col-md-3">
-                            <h4>Nulla Vestibulum eros </h4>
-                            <span>Pending Task</span>
-                        </div>
-                        <div class="col-md-3">
-                            <h4>02.03.2014</h4>
-                            <span>Due date</span>
-                        </div>
-                        <div class="col-md-2">
-                            <a href="#"><span>Go to page</span></a>
-                        </div>
-                    </div>
-                    <div class="row exSpon_Details_ExpertPanel challenge_box bg-white">
-                        <div class="col-md-4">
-                            <a href="#"><h4>Finance & Accounting</h4></a>
-                            <span>Lorem ipsum dolor sit amet</span>
-                        </div>
-                        <div class="col-md-3">
-                            <h4>Nulla Vestibulum eros </h4>
-                            <span>Pending Task</span>
-                        </div>
-                        <div class="col-md-3">
-                            <h4>02.03.2014</h4>
-                            <span>Due date</span>
-                        </div>
-                        <div class="col-md-2">
-                            <a href="#"><span>Go to page</span></a>
+                        <div class="row exSpon_Details_ExpertPanel challenge_box bg-white">
+                            <div class="col-md-4">
+                                <h4>Finance & Accounting</h4>
+                                <span>Lorem ipsum dolor sit amet</span>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>Nulla Vestibulum eros </h4>
+                                <span>Pending Task</span>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>02.03.2014</h4>
+                                <span>Due date</span>
+                            </div>
+                            <div class="col-md-2">
+                                <a href="#"><span>Go to page</span></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="row exSpon_Details_ExpertPanel challenge_box bg-white">
-                        <div class="col-md-4">
-                            <h4>Finance & Accounting</h4>
-                            <span>Lorem ipsum dolor sit amet</span>
+                    <div class="container-fluid">
+                        <div class="row" style="background-color:#F7F7F7">
+                            <span>Expert Pannel Members for Assessment Design</span>
                         </div>
-                        <div class="col-md-3">
-                            <h4>Nulla Vestibulum eros </h4>
-                            <span>Pending Task</span>
+
+                        <div class="row exSpon_Details_ExpertPanel challenge_box bg-white">
+                            <div class="col-md-4">
+                                <h4>Finance & Accounting</h4>
+                                <span>Lorem ipsum dolor sit amet</span>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>Nulla Vestibulum eros </h4>
+                                <span>Pending Task</span>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>02.03.2014</h4>
+                                <span>Due date</span>
+                            </div>
+                            <div class="col-md-2">
+                                <a href="#"><span>Go to page</span></a>
+                            </div>
                         </div>
-                        <div class="col-md-3">
-                            <h4>02.03.2014</h4>
-                            <span>Due date</span>
+                        <div class="row exSpon_Details_ExpertPanel challenge_box bg-white">
+                            <div class="col-md-4">
+                                <a href="#"><h4>Finance & Accounting</h4></a>
+                                <span>Lorem ipsum dolor sit amet</span>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>Nulla Vestibulum eros </h4>
+                                <span>Pending Task</span>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>02.03.2014</h4>
+                                <span>Due date</span>
+                            </div>
+                            <div class="col-md-2">
+                                <a href="#"><span>Go to page</span></a>
+                            </div>
                         </div>
-                        <div class="col-md-2">
-                            <a href="#"><span>Go to page</span></a>
+                        <div class="row exSpon_Details_ExpertPanel challenge_box bg-white">
+                            <div class="col-md-4">
+                                <h4>Finance & Accounting</h4>
+                                <span>Lorem ipsum dolor sit amet</span>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>Nulla Vestibulum eros </h4>
+                                <span>Pending Task</span>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>02.03.2014</h4>
+                                <span>Due date</span>
+                            </div>
+                            <div class="col-md-2">
+                                <a href="#"><span>Go to page</span></a>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
             <div id="under_work" class="tab-pane col-md-12 padding10" role="tabpanel">
@@ -841,6 +890,7 @@
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/editor.js" charset="utf-8"></script>
     <script src="../js/bootstrap-datepicker.min.js" charset="utf-8"></script>
+    <script src="../js/jquery-ui.min.js" charset="utf-8"></script>
     <script src="../js/script.js"></script>
 </body>
 
