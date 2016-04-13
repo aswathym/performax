@@ -1886,3 +1886,9 @@ for some reason nth-child(1) is always busy and elements starting from 2 */
 #sideMenu>.list-group>div>a.actives{
     background-color: #ccc;
 }
+/* exSpon_Details_ExpertPanelMembers*/
+.exSpon_Details_ExpertPanel.challenge_box>.col-md-4, .exSpon_Details_ExpertPanel.challenge_box>.col-md-3, .exSpon_Details_ExpertPanel.challenge_box>.col-md-2 {
+     padding-left: 35px;
+     padding-top: 8px;
+     margin-bottom: 8px;
+}
