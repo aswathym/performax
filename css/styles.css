@@ -527,11 +527,10 @@ input[type="checkbox"] {
 .form-element select option:first-child {
     color: #888;
 }
-.form-element .star_rating_div {
+.rating {
     width: 110px;
     background-color: #EAEAEA;
     border-radius: 17px;
-    padding-top: 4px;
     padding-left: 1px;
 }
 .form-element>.btn-group>button {
@@ -2019,7 +2018,81 @@ for some reason nth-child(1) is always busy and elements starting from 2 */
 }
 .Questionnaire_box .rating-container .caption {
     display: inline-block;
+    padding-top: 9px;
 }
 .Questionnaire_box .rating-container .caption span {
     background-color: #fff;
+    color: #FFB600;
+    font-size: 15px;
+}
+.customized_assessment .col-md-6 span {
+    font-size: 16px;
+    position: absolute;
+    margin-top: 12px;
+}
+.customized_assessment .col-md-6 p, .customized_assessment .col-md-2 p {
+    margin: 35px 0px 0px 0px;
+    font-size: 14px;
+    color: #787878;
+}
+.customized_assessment {
+    margin-bottom: 85px;
+}
+.customized_assessment .col-md-2 div {
+    font-size: 23px;
+    float: right;
+    margin-right: 15px;
+    margin-top: 8px;
+}
+.customized_assessment .col-md-2 p {
+    float: right;
+    margin-right: -26px;
+}
+.customized_headings h4 {
+    display: inline-block;
+}
+.customized_headings h4::after {
+    content: ' (';
+}
+.customized_headings span {
+    font-size: 16px;
+    font-weight: normal;
+}
+.customized_headings span::after {
+    content: ')';
+}
+.customized_assessment_section .container-fluid.challenge_box {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+.customized_assessment_section .container-fluid.challenge_box .col-md-3 {
+    padding: 0;
+}
+.customized_assessment_section .container-fluid.challenge_box .col-md-3>div {
+    float: right;
+    padding-right: 25px;
+}
+.customized_assessment_section .container-fluid.challenge_box .col-md-3>span, .customized_assessment_section .container-fluid.challenge_box .col-md-7>div>.customized_sub_heading_content{
+    font-size: 15px;
+    color: #787878;
+    padding-top: 13px;
+}
+.customized_sub_headings {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.customized_assessment_section .container-fluid.challenge_box .col-md-7 .customized_sub_heading_content{
+    padding-left: 28px;
+}
+.customized_assessment_downarrow {
+    background-image: url('../images/arrow_down.png');
+    width: 20px;
+    height: 20px;
+    float: right;
+    background-size: 100%;
+    position: absolute;
+    margin-left: 75%;
+    margin-top: -3%;
 }
