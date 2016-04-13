@@ -1514,12 +1514,16 @@ input.promocode::-webkit-input-placeholder {
 #timeline .timeframe .description .ongoing{
     color: #42C054;
 }
-.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
-    background-color: #ADADAD;
+#timeline .timeframe_content {
     display: inline-block;
     height: 250px;
-    margin-right: 70px;
+    width: 75px;
+    text-align: center;
     margin-bottom: 50px;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    background-color: #ADADAD;
+    height: 250px;
 }
 
 #permissions .radio_button_custom .fa-circle-thin {
