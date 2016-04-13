@@ -9,6 +9,7 @@
     <link href="../css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/editor.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="../css/star-rating.css" charset="utf-8">
     <link rel="stylesheet" href="../css/bootstrap-datepicker3.min.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="../css/jquery-ui.min.css">
     <link rel="stylesheet" href="../css/styles.css">
@@ -131,7 +132,7 @@
                         <li class="active"><a href="#exSpon_Details" aria-controls="login-cnt" role="tab" data-toggle="tab">Details</a></li>
                         <li><a href="#exSpon_DetailsPage_Configurator_Timeline" aria-controls="exSpon_Configurator" role="tab" data-toggle="tab">Configurator</a></li>
                         <li><a href="#exSpon_DetailsPage_ExpertPanelMembers" aria-controls="exSpon_ExportPanelMembers" role="tab" data-toggle="tab">Expert Panel Members</a></li>
-                        <li><a href="#under_work" aria-controls="under_work" role="tab" data-toggle="tab">Quistionnaire</a></li>
+                        <li><a href="#exSpon_DetailsPage_Questionnaire" aria-controls="exSpon_Questionnaire" role="tab" data-toggle="tab">Questionnaire</a></li>
                         <li><a href="#under_work" aria-controls="under_work" role="tab" data-toggle="tab">Assessors</a></li>
                         <li><a href="#under_work" aria-controls="under_work" role="tab" data-toggle="tab">Ideas For Action</a></li>
                         <li><a href="#under_work" aria-controls="under_work" role="tab" data-toggle="tab">Key Person Accountable</a></li>
@@ -895,6 +896,14 @@
                         </div>
                     </div>
                 </div>
+                <div id="exSpon_DetailsPage_Questionnaire" class="tab-pane col-md-12 padding10" role="tabpanel">
+                    <div class="container-fluid challenge_box Questionnaire_box">
+
+                        <div class="star_rating_div">
+                            <input id="input-2" class="rating rating-loading" data-min="0" data-max="5" data-step="0.1" data-size="xs">
+                        </div>
+                    </div>
+                </div>
                 <div id="under_work" class="tab-pane col-md-12 padding10" role="tabpanel">
                     Under Construction
                 </div>
@@ -914,6 +923,7 @@
     <script src="../js/bootstrap-datepicker.min.js" charset="utf-8"></script>
     <script src="../js/jquery-ui.min.js" charset="utf-8"></script>
     <script src="../js/script.js"></script>
+    <script src="../js/star-rating.js"></script>
 </body>
 
 </html>

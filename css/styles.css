@@ -2012,3 +2012,14 @@ for some reason nth-child(1) is always busy and elements starting from 2 */
     padding: 25px 0;
     width: 50%;
 }
+/* exSpon_DetailsPage_Questionnaire */
+.Questionnaire_box {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.Questionnaire_box .rating-container .caption {
+    display: inline-block;
+}
+.Questionnaire_box .rating-container .caption span {
+    background-color: #fff;
+}
