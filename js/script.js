@@ -62,26 +62,32 @@ $(document).ready(function() {
         if (e.target.alt === 'act') {
             $('.img-center-div').find('.number').css('color', '#2FB2E3');
             $('.img-center-div').find('.number h3').html('5');
+            $('.wheel-details').css('border-color', '#2FB2E3');
         }
         else if (e.target.alt === 'track') {
             $('.img-center-div').find('.number').css('color', '#6BCBD5');
             $('.img-center-div').find('.number h3').html('6');
+            $('.wheel-details').css('border-color', '#6BCBD5');
         }
         else if (e.target.alt === 'focus') {
             $('.img-center-div').find('.number').css('color', '#FECA5A');
             $('.img-center-div').find('.number h3').html('1');
+            $('.wheel-details').css('border-color', '#FECA5A');
         }
         else if (e.target.alt === 'customize') {
             $('.img-center-div').find('.number').css('color', '#F79032');
             $('.img-center-div').find('.number h3').html('2');
+            $('.wheel-details').css('border-color', '#F79032');
         }
         else if (e.target.alt === 'engage') {
             $('.img-center-div').find('.number').css('color', '#E34A57');
             $('.img-center-div').find('.number h3').html('3');
+            $('.wheel-details').css('border-color', '#E34A57');
         }
         else if (e.target.alt === 'evaluate') {
             $('.img-center-div').find('.number').css('color', '#0C4B75');
             $('.img-center-div').find('.number h3').html('4');
+            $('.wheel-details').css('border-color', '#0C4B75');
         }
         $('.wheel_container').find('.wheel-details').css('display', 'inline-block');
         $('.wheel_container').find('.arrow-right').css('display', 'inline-block');

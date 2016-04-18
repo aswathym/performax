@@ -159,8 +159,7 @@ header {
     border-top: 1px solid rgba(125, 125, 125, 0.5);
     padding-top: 10px;
 }
-#core_functions_wrapper>li {
-    margin: 30px 38px 20px 10px;
+#core_functions_wrapper li {
     text-align: center;
     overflow: hidden;
     padding: 0px;
@@ -263,6 +262,9 @@ header {
 }
 .margin10 {
     margin: 10px;
+}
+.marginBottom0 {
+    margin-bottom: 5px;
 }
 .marginTop10 {
     margin-top: 10px;
@@ -832,7 +834,7 @@ h1 {
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
-#manage_history_list b, #timeline .timeframe .description span {
+#manage_history_list b {
     display: block;
 }
 #manage_history_list .header {
@@ -993,7 +995,6 @@ footer.footer {
 .challenge_wrapper {
     height: 200px;
     overflow-y: auto;
-    margin-bottom: 0px;
 }
 .challenge_box, .cart_box {
     background-color: #FAFAFA;
@@ -1031,14 +1032,6 @@ footer.footer {
     box-shadow: 0 0 6px #ccc;
     margin: 20px 10px 20px 0;
 }
-.challenge_validation{
-    color:red;
-    position: absolute;
-}
-.challenge_second_rightbox>.challenge_wrapper {
-    position: relative;
-    margin-top: 21px;
-}
 .challenge_second_rightbox>.challenge_wrapper .challenge{
     list-style-type: none;
 }
@@ -1053,9 +1046,6 @@ footer.footer {
 }
 .challenge_second_rightbox>.add_more_challenges>span>.add_field_button {
     color: #FF5420;
-}
-.challenge_second_rightbox>.add_more_challenges>span>.remove_field_button {
-    display: none;
 }
 .challenge_second_rightbox>.add_more_challenges>span>a {
     padding-top: 10px;
@@ -1369,7 +1359,7 @@ input.promocode::-webkit-input-placeholder {
     display: inline-block;
     width: 35px;
     height: 35px;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     -moz-border-radius: 30px;
     -webkit-border-radius: 30px;
     border-radius: 30px;
@@ -1390,13 +1380,13 @@ input.promocode::-webkit-input-placeholder {
 }
 .flow_nav .another_active {
     background-image: url('../images/icon_sprite.png');
-    background-size: 479px 170px;
-    background-position: -1px -59px;
+    background-size: 440px 170px;
+    background-position: 0px -60px;
 }
 .focus_flow {
     background-image: url('../images/icon_sprite.png');
     background-size: 318px 107px;
-    background-position: -1px -72px;
+    background-position: -2px -72px;
 }
 .customize_flow {
     background-image: url('../images/icon_sprite.png');
@@ -1405,23 +1395,23 @@ input.promocode::-webkit-input-placeholder {
 }
 .engage_flow {
     background-image: url('../images/icon_sprite.png');
-    background-size: 550px 164px;
-    background-position: -63px -6px;
+    background-size: 464px 164px;
+    background-position: -51px -5px;
 }
 .evaluate_flow {
     background-image: url('../images/icon_sprite.png');
-    background-size: 503px 164px;
-    background-position: -109px -6px;
+    background-size: 464px 164px;
+    background-position: -101px -6px;
 }
 .act_flow {
     background-image: url('../images/icon_sprite.png');
-    background-size: 490px 161px;
-    background-position: -160px -5px;
+    background-size: 459px 161px;
+    background-position: -149px -5px;
 }
 .track_flow {
     background-image: url('../images/icon_sprite.png');
-    background-size: 500px 164px;
-    background-position: -2px -6px;
+    background-size: 464px 164px;
+    background-position: -2px -7px;
 }
 .customize_flow.active {
     background-image: url('../images/icon_sprite.png');
@@ -1446,7 +1436,7 @@ input.promocode::-webkit-input-placeholder {
 .track_flow.active {
     background-image: url('../images/icon_sprite.png');
     background-size: 350px 109px;
-    background-position: -252px -74px;
+    background-position: -253px -74px;
 }
 .flow_nav .active + span {
     font-weight: bold;
@@ -1560,9 +1550,9 @@ input.promocode::-webkit-input-placeholder {
     margin-left: -50px;
     text-align: center;
 }
-/*#timeline .timeframe .description span {
+#timeline .timeframe .description span {
     display: block;
-}*/
+}
 #timeline .timeframe .description .ongoing{
     color: #42C054;
 }
@@ -1784,7 +1774,6 @@ input.promocode::-webkit-input-placeholder {
     position: absolute;
     right: 25px;
     top: 30px;
-    z-index: 10;
 }
 .content-title{
     padding: 25px 0;
@@ -1954,6 +1943,7 @@ input.promocode::-webkit-input-placeholder {
 }
 #exspon_home_page .wheel_container img {
     position: absolute;
+
 }
 #exspon_home_page .wheel_container .wheel-details {
     position: absolute;
@@ -1981,6 +1971,11 @@ input.promocode::-webkit-input-placeholder {
 #exspon_home_page .wheel-details div {
     padding: 2px 10px;
 }
+#exspon_home_page .wheel-details ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    line-height: 1.5
+}
 #exspon_home_page .wheel_container .img-center-div {
     display: inline-block;
     width: 26%;
@@ -2003,6 +1998,7 @@ input.promocode::-webkit-input-placeholder {
     border-bottom: 200px solid transparent;
     border-left: 70px solid #EAEAEB;
 }
+
 /* exSpon - Result and Reports*/
 .challenge_box>.result_and_report.challenge_box {
     margin: 10px 20px;
@@ -2018,4 +2014,45 @@ input.promocode::-webkit-input-placeholder {
     margin-top: -7px;
     font-size: 13px;
     color: #B7B7B7;
+}
+#exspon_home_page .tiles h4 {
+    padding: 10px 15px;
+    border: 1px solid rgba(100, 100, 100, 0.3);
+}
+#exspon_home_page .customer_says i {
+    line-height: 10;
+    color: #918F8F;
+}
+#exspon_home_page .or-div {
+    width: 50px;
+    margin-top: 15px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid #929090;
+    font-weight: bold;
+    color: #929090;
+    padding-top: 14px;
+}
+#exspon_home_page .btn_container_div img{
+    margin-top: -30px;
+}
+#exspon_home_page .btn_container_div {
+    padding-left: 100px;
+}
+#exspon_home_page .updates {
+    line-height: 1.6;
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+#exspon_home_page .updates img {
+    width: 60px;
+    border-radius: 10px;
+    height: 60px;
+}
+#exspon_home_page .customer_says .details {
+    margin-bottom: 9px;
+}
+#exspon_home_page .customer_says .slider {
+    margin-top: 20px;
 }
