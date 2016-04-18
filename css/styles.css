@@ -1066,10 +1066,11 @@ footer.footer {
 }
 .challenge_box>.navbar>ul li {
     font-size: 16px;
-    width: 280px;
+    width: 225px;
 }
 .challenge_box>.navbar>ul li a {
-    padding: 3px 60px 0px 58px;
+    padding: 3px 32px 0px;
+    text-align: center;
 }
 #analysis>#core_functions_wrapper li {
     margin: 30px 38px 20px 10px;
