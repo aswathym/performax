@@ -1966,6 +1966,11 @@ input.promocode::-webkit-input-placeholder {
 #exspon_home_page .wheel-details div {
     padding: 2px 10px;
 }
+#exspon_home_page .wheel-details ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    line-height: 1.5
+}
 #exspon_home_page .wheel_container .img-center-div {
     display: inline-block;
     width: 26%;
