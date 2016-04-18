@@ -1740,249 +1740,6 @@ input.promocode::-webkit-input-placeholder {
 #add_ons .radio_buttons label {
 }
 
-.absolute-center,
-.menu,
-.menu .btn .fa,
-.menu .btn.trigger .line {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
-
-.menu {
-  width: 5em;
-  margin-top: 200px;
-  height: 5em;
-}
-
-.menu .btn {
-  opacity: 0;
-  z-index: -10;
-  cursor: pointer;
-  -webkit-transition: opacity 1s, z-index 0.3s, -webkit-transform 1s;
-  transition: opacity 1s, z-index 0.3s, transform 1s;
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
-  transform: translateX(0);
-}
-.menu .focus .btn {
-    background-color: #FECA5A;
-}
-.menu .evaluate .btn {
-    background-color: #0D5381;
-}
-.menu .track .btn {
-    background-color: #6BCBD5;
-}
-.menu .act .btn {
-    background-color: #2FB2E3;
-}
-.menu .engage .btn {
-    background-color: #E34A57;
-}
-.menu .customize .btn {
-    background-color: #F79032;
-}
-.menu .rotater .btn {
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    width: 150px;
-    height: 80px;
-    color: white;
-    box-shadow: -6px 3px 10px 2px rgba(0, 0, 0, 0.7)
-}
-
-.menu .btn .fa {
-  font-size: 3em;
-  -webkit-transition: color 0.3s;
-  transition: color 0.3s;
-}
-
-.menu .btn:hover {
-    transition: all 20s ease;
-    transform: rotate(1000deg);
-}
-.menu .btn:hover .fa { color: rgba(255, 255, 255, 0.7); }
-
-.menu .btn.trigger {
-  opacity: 1;
-  z-index: 100;
-  cursor: pointer;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: transform 0.3s;
-}
-
-.menu .btn.trigger:hover {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-.menu .btn.trigger:hover .line { background-color: rgba(255, 255, 255, 0.7); }
-
-.menu .btn.trigger:hover .line:before,
-.menu .btn.trigger:hover .line:after { background-color: rgba(255, f15, 255, 0.7); }
-
-.menu .btn.trigger .line {
-  width: 60%;
-  height: 6px;
-  background: #000;
-  border-radius: 6px;
-  -webkit-transition: background-color 0.3s, height 0.3s, top 0.3s;
-  transition: background-color 0.3s, height 0.3s, top 0.3s;
-}
-
-.menu .btn.trigger .line:before,
-.menu .btn.trigger .line:after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 6px;
-  background: #000;
-  border-radius: 6px;
-  -webkit-transition: background-color 0.3s, -webkit-transform 0.3s;
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-.menu .btn.trigger .line:before {
-  top: -12px;
-  -webkit-transform-origin: 15% 100%;
-  -ms-transform-origin: 15% 100%;
-  transform-origin: 15% 100%;
-}
-
-.menu .btn.trigger .line:after {
-  top: 12px;
-  -webkit-transform-origin: 25% 30%;
-  -ms-transform-origin: 25% 30%;
-  transform-origin: 25% 30%;
-}
-
-.menu .rotater {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-transform-origin: 50% 50%;
-  -ms-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-}
-
-.menu.active .btn-icon {
-  opacity: 1;
-  z-index: 50;
-}
-
-.menu.active .trigger .line {
-  height: 0px;
-  top: 45%;
-}
-
-.menu.active .trigger .line:before {
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  width: 110%;
-}
-
-.menu.active .trigger .line:after {
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  width: 110%;
-}
-
-/* horrible things are happening here
-for some reason nth-child(1) is always busy and elements starting from 2 */
-
-.rotater:nth-child(1) {
-  -webkit-transform: rotate(30deg);
-  -ms-transform: rotate(30deg);
-  transform: rotate(30deg);
-}
-
-.menu.active .rotater:nth-child(1) .btn-icon {
-  -webkit-transform: translateX(-10em) rotate(270deg);
-  -ms-transform: translateX(-10em) rotate(270deg);
-  transform: translateX(-10em) rotate(270deg);
-}
-
-.rotater:nth-child(2) {
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-.menu.active .rotater:nth-child(2) .btn-icon {
-  -webkit-transform: translateX(-10em) rotate(270deg);
-  -ms-transform: translateX(-10em) rotate(270deg);
-  transform: translateX(-10em) rotate(270deg);
-}
-
-.rotater:nth-child(3) {
-  -webkit-transform: rotate(150deg);
-  -ms-transform: rotate(150deg);
-  transform: rotate(150deg);
-}
-
-.menu.active .rotater:nth-child(3) .btn-icon {
-  -webkit-transform: translateX(-10em) rotate(270deg);
-  -ms-transform: translateX(-10em) rotate(270deg);
-  transform: translateX(-10em) rotate(270deg);
-}
-
-.rotater:nth-child(4) {
-  -webkit-transform: rotate(200deg);
-  -ms-transform: rotate(200deg);
-  transform: rotate(200deg);
-}
-
-.menu.active .rotater:nth-child(4) .btn-icon {
-  -webkit-transform: translateX(-10em) rotate(270deg);
-  -ms-transform: translateX(-10em) rotate(270deg);
-  transform: translateX(-10em) rotate(270deg);
-}
-
-.rotater:nth-child(5) {
-  -webkit-transform: rotate(260deg);
-  -ms-transform: rotate(260deg);
-  transform: rotate(260deg);
-}
-
-.menu.active .rotater:nth-child(5) .btn-icon {
-  -webkit-transform: translateX(-10em) rotate(270deg);
-  -ms-transform: translateX(-10em) rotate(270deg);
-  transform: translateX(-10em) rotate(270deg);
-}
-
-.rotater:nth-child(6) {
-  -webkit-transform: rotate(330deg);
-  -ms-transform: rotate(330deg);
-  transform: rotate(330deg);
-}
-
-.menu.active .rotater:nth-child(6) .btn-icon {
-  -webkit-transform: translateX(-10em) rotate(260deg);
-  -ms-transform: translateX(-10em) rotate(260deg);
-  transform: translateX(-10em) rotate(260deg);
-}
-
-.rotater:nth-child(7) {
-  -webkit-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
-  transform: rotate(360deg);
-}
-
-.menu.active .rotater:nth-child(7) .btn-icon {
-  -webkit-transform: translateX(-10em) rotate(280deg);
-  -ms-transform: translateX(-10em) rotate(280deg);
-  transform: translateX(-10em) rotate(280deg);
-}
 #sideMenu>.list-group>div>a.actives{
     background-color: #ccc;
 }
@@ -2184,4 +1941,64 @@ for some reason nth-child(1) is always busy and elements starting from 2 */
     position: absolute;
     margin-left: 75%;
     margin-top: -3%;
+}
+
+/*Home page*/
+#exspon_home_page .wheel_wrapper {
+    /*background-color: red;*/
+}
+#exspon_home_page .wheel_container {
+    padding-top: 25px;
+    padding-left: 50px;
+}
+#exspon_home_page .wheel_container img {
+    position: absolute;
+}
+#exspon_home_page .wheel_container .wheel-details {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: #EAEAEB;
+    left: -420px;
+    padding: 20px 15px;
+    display: none;
+    box-shadow: 0px 0px 6px 0px rgba(125, 125, 125, 1);
+    border-left: 5px solid #FECA5A;
+}
+#exspon_home_page .wheel_container .wheel-details:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    right: -70px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 200px solid transparent;
+	border-bottom: 200px solid transparent;
+	border-left: 70px solid #EAEAEB;
+}
+#exspon_home_page .wheel-details div {
+    padding: 2px 10px;
+}
+#exspon_home_page .wheel_container .img-center-div {
+    display: inline-block;
+    width: 26%;
+    height: 25%;
+    position: absolute;
+    left: 32%;
+    top: 40%;
+    text-align: center;
+}
+#exspon_home_page .img-center-div .number {
+    color: #FECA5A;
+}
+#exspon_home_page .wheel_container .arrow-right {
+    display: none;
+    position: absolute;
+    left: -20px;
+    width: 0;
+    height: 0;
+    border-top: 200px solid transparent;
+    border-bottom: 200px solid transparent;
+    border-left: 70px solid #EAEAEB;
 }
