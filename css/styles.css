@@ -262,6 +262,9 @@ header {
 .margin10 {
     margin: 10px;
 }
+.marginBottom0 {
+    margin-bottom: 5px;
+}
 .marginTop10 {
     margin-top: 10px;
 }
@@ -1992,4 +1995,39 @@ input.promocode::-webkit-input-placeholder {
     border-top: 200px solid transparent;
     border-bottom: 200px solid transparent;
     border-left: 70px solid #EAEAEB;
+}
+#exspon_home_page .tiles h4 {
+    padding: 10px 15px;
+    border: 1px solid rgba(100, 100, 100, 0.3);
+}
+#exspon_home_page .customer_says i {
+    line-height: 10;
+    color: #918F8F;
+}
+#exspon_home_page .or-div {
+    width: 50px;
+    margin-top: 15px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid #929090;
+    font-weight: bold;
+    color: #929090;
+    padding-top: 14px;
+}
+#exspon_home_page .btn_container_div img{
+    margin-top: -30px;
+}
+#exspon_home_page .btn_container_div {
+    padding-left: 100px;
+}
+#exspon_home_page .updates {
+    line-height: 1.6;
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+#exspon_home_page .updates img {
+    width: 60px;
+    border-radius: 10px;
+    height: 60px;
 }
