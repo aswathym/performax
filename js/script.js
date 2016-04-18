@@ -47,7 +47,45 @@ $(document).ready(function() {
         $(".dd_btn").text($(this).text());
         // $(".btn:first-child").val($(this).text());
     });
-
+    $('#home_wheel').mapster({
+        fillColor: '000000',
+        fillOpacity: 0.4,
+        fade: true,
+        staticState: false
+    });
+    $(".area_wheel").on("click", function(e){
+        e.preventDefault();
+        console.log(e.target.alt);
+        var name = e.target.alt;
+        $('.mapster_el').attr('src','../images/'+name+'.png');
+        $('#home_wheel').attr('src','../images/'+name+'.png');
+        if (e.target.alt === 'act') {
+            $('.img-center-div').find('.number').css('color', '#2FB2E3');
+            $('.img-center-div').find('.number h3').html('5');
+        }
+        else if (e.target.alt === 'track') {
+            $('.img-center-div').find('.number').css('color', '#6BCBD5');
+            $('.img-center-div').find('.number h3').html('6');
+        }
+        else if (e.target.alt === 'focus') {
+            $('.img-center-div').find('.number').css('color', '#FECA5A');
+            $('.img-center-div').find('.number h3').html('1');
+        }
+        else if (e.target.alt === 'customize') {
+            $('.img-center-div').find('.number').css('color', '#F79032');
+            $('.img-center-div').find('.number h3').html('2');
+        }
+        else if (e.target.alt === 'engage') {
+            $('.img-center-div').find('.number').css('color', '#E34A57');
+            $('.img-center-div').find('.number h3').html('3');
+        }
+        else if (e.target.alt === 'evaluate') {
+            $('.img-center-div').find('.number').css('color', '#0C4B75');
+            $('.img-center-div').find('.number h3').html('4');
+        }
+        $('.wheel_container').find('.wheel-details').css('display', 'inline-block');
+        $('.wheel_container').find('.arrow-right').css('display', 'inline-block');
+    });
     if ($('#create_promo_code_form')) {
         $('.calender').datepicker({
             format: "dd/mm/yyyy",
