@@ -103,7 +103,7 @@ $(document).ready(function() {
         var element = $(this).parent().siblings('ul').find('.active');
         element.removeClass('active');
         if (element.prev().length == 0) {
-            element.siblings('li').first().addClass('active');
+            element.siblings('li').last().addClass('active');
         }
         else {
             element.prev().addClass('active');
@@ -113,7 +113,7 @@ $(document).ready(function() {
         var element = $(this).parent().siblings('ul').find('.active');
         element.removeClass('active');
         if (element.next().length == 0) {
-            element.siblings('li').last().addClass('active');
+            element.siblings('li').first().addClass('active');
         }
         else {
             element.next().addClass('active');

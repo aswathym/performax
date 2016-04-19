@@ -59,6 +59,9 @@ header {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 10px;
 }
+.maroon_color {
+    color: #6B2B2C;
+}
 .grey_color {
     color: rgba(80, 89, 80, 0.8);
 }
@@ -622,6 +625,57 @@ footer p {
 }
 footer a {
     color: #e8e9ec;
+}
+#home_footer_container {
+    margin-top: 10px;
+    margin-bottom: -10px;
+    color: #fff;
+    background-color: #1D2122;
+    padding-top: 10px;
+}
+#home_footer_container .icon_container {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 20px;
+    background-color: #3A4447;
+    margin-right: 10px;
+}
+#home_footer_container .subcribe {
+    mar
+}
+#home_footer_container h5 {
+    font-weight: bold;
+}
+#home_footer_container ul li {
+    list-style-type: none;
+    line-height: 1.5;
+}
+#home_footer_container .details h5 {
+    color: #69CFDA;
+}
+#home_footer_container .contact_us h5 {
+    color: #FF7979;
+}
+#home_footer_container .help h5 {
+    color: #DEBC69;
+}
+#home_footer_container .follow_us, #home_footer_container .input-group {
+    padding: 15px 0px;
+}
+#home_footer_container .follow_us span {
+    margin-right: 10px;
+}
+#home_footer_container .follow_us .facebook {
+    color: #395797;
+}
+#home_footer_container .follow_us .twitter {
+    color: #6ACFF4;
+}
+#home_footer_container .follow_us .google-plus {
+    color: #D13F2D;
 }
 .thumbnail {
     border-radius: 2px;
@@ -2041,6 +2095,9 @@ input.promocode::-webkit-input-placeholder {
     border-radius: 7px;
     margin-bottom: 8px;
     margin-top: 7px;
+}
+#exspon_home_page .tiles {
+    padding-bottom: 15px;
 }
 #exspon_home_page .tiles h4 {
     padding: 10px 15px;
