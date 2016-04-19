@@ -2052,9 +2052,33 @@ input.promocode::-webkit-input-placeholder {
     border-radius: 10px;
     height: 60px;
 }
+#exspon_home_page .customer_says {
+    overflow: hidden;
+}
 #exspon_home_page .customer_says .details {
     margin-bottom: 9px;
 }
 #exspon_home_page .customer_says .slider {
-    margin-top: 20px;
+    margin-top: 10px;
+    transition: all 1s ease-in;
+    background-color: #fff;
+    left: -100%;
+    list-style-type: none;
+    position: absolute;
+}
+#exspon_home_page .slider_wrapper {
+    height: 253px;
+    padding: 0;
+    overflow: hidden;
+}
+#exspon_home_page .slider_wrapper .active {
+    left: 0;
+    z-index: 10;
+}
+#exspon_home_page .customer_says i {
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+#exspon_home_page .customer_says i:hover {
+    color: red;
 }

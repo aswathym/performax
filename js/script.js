@@ -99,6 +99,27 @@ $(document).ready(function() {
         });
     }
 
+    $('#exspon_home_page .customer_says').find('.fa-chevron-left').click(function() {
+        var element = $(this).parent().siblings('ul').find('.active');
+        element.removeClass('active');
+        if (element.prev().length == 0) {
+            element.siblings('li').first().addClass('active');
+        }
+        else {
+            element.prev().addClass('active');
+        }
+    });
+    $('#exspon_home_page .customer_says').find('.fa-chevron-right').click(function() {
+        var element = $(this).parent().siblings('ul').find('.active');
+        element.removeClass('active');
+        if (element.next().length == 0) {
+            element.siblings('li').last().addClass('active');
+        }
+        else {
+            element.next().addClass('active');
+        }
+    });
+
     $('#sideMenu a').on('click', function(){
          var count = $(this).next('.collapse').find('a').length;
          if(count > 1) {
