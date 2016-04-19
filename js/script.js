@@ -55,9 +55,11 @@ $(document).ready(function() {
 
     // To hide the Wheel Details Container on clicking outside of the contaier
     $(document).mouseup(function (e) {
-        var container = $('.wheel-details');
-        if (!container.is(e.target) && container.has(e.target).length === 0) {
-            container.hide();
+        if ($('.wheel-details')) {
+            var container = $('.wheel-details');
+            if (!container.is(e.target) && container.has(e.target).length === 0) {
+                container.hide();
+            }
         }
     });
     $('.area_wheel').on('click', function () {
