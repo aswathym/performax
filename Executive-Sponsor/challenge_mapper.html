@@ -133,29 +133,31 @@
                             </div>
                         </div>
                         <div class="col-md-6 challenge_second_right">
-                            <div class="challenge_second_rightbox bg-white">
+                            <form id="challengeMapper">
+                                <div class="challenge_second_rightbox bg-white">
 
-                                <div class="challenge_second_rightheading">
-                                    Describe your organizational challenges
-                                </div>
-                                <span id="challenge_valMessage" class="challenge_validation displayNone">You have to enter at least one organizational challenge</span>
-                                <div class="challenge_wrapper">
-                                    <div class="challenge">
-                                        <label>Challenge 1 :</label>
-                                        <input type="text" name="challenge" autocomplete="off">
+                                    <div class="challenge_second_rightheading">
+                                        Describe your organizational challenges
                                     </div>
-                                    <div class="challenge">
-                                        <label>Challenge 2 :</label>
-                                        <input type="text" name="challenge" autocomplete="off">
+                                    <span id="challenge_valMessage" class="challenge_validation displayNone">You have to enter at least one organizational challenge</span>
+                                    <div class="challenge_wrapper">
+                                        <div class="challenge">
+                                            <label>Challenge 1 :</label>
+                                            <input type="text" name="challenge" autocomplete="off">
+                                        </div>
+                                        <div class="challenge">
+                                            <label>Challenge 2 :</label>
+                                            <input type="text" name="challenge" autocomplete="off">
+                                        </div>
                                     </div>
-                                </div>
 
-                                <div class="add_more_challenges col-md-12">
-                                    <span class="col-md-6 text-left"><a href="javascript:void(0);" class="add_field_button">+<u>Add More Challenges</u></a></span>
-                                    <span class="col-md-6 text-right"><a href="javascript:void(0);" class="remove_field_button">-<u>Remove Challenge</u></a></span>
+                                    <div class="add_more_challenges col-md-12">
+                                        <span class="col-md-6 text-left"><a href="javascript:void(0);" class="add_field_button">+<u>Add More Challenges</u></a></span>
+                                        <span class="col-md-6 text-right"><a href="javascript:void(0);" class="remove_field_button">-<u>Remove Challenge</u></a></span>
+                                    </div>
+                                    <button type="submit" class="btn btn-info">Submit</button>
                                 </div>
-                                <button type="submit" class="btn btn-info">Submit</button>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>

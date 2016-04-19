@@ -993,7 +993,7 @@ footer.footer {
     padding-left: 10px;
 }
 .challenge_wrapper {
-    height: 200px;
+    height: 180px;
     overflow-y: auto;
 }
 .challenge_box, .cart_box {
@@ -1027,10 +1027,10 @@ footer.footer {
 .challenge_second_rightbox {
     background-color: #FAFAFA;
     border: 1px #e4e4e4 solid;
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
     border-radius: 1px;
     box-shadow: 0 0 6px #ccc;
-    margin: 20px 10px 20px 0;
+    margin: 14px 10px 12px 0;
 }
 .challenge_second_rightbox>.challenge_wrapper .challenge{
     list-style-type: none;
@@ -1051,6 +1051,14 @@ footer.footer {
     padding-top: 10px;
     font-size: 14px;
     padding-bottom: 20px;
+}
+.challenge_validation{
+    color:red;
+    position: absolute;
+}
+.challenge_second_rightbox>.challenge_wrapper{
+    position: relative;
+    margin-top: 21px;
 }
 .challenge_second_rightbox button {
     padding: 5px 20px;
