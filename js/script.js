@@ -52,6 +52,12 @@ $(document).ready(function() {
         fade: true,
         staticState: false
     });
+    $('#learning_wheel').mapster({
+        fillColor: '000000',
+        fillOpacity: 0.4,
+        fade: true,
+        staticState: false
+    });
 
     // To hide the Wheel Details Container on clicking outside of the contaier
     $(document).mouseup(function (e) {
@@ -62,6 +68,28 @@ $(document).ready(function() {
             }
         }
     });
+    $(".learning_section").on("mouseover", function(e){
+        e.preventDefault();
+        var name = e.target.alt;
+        if (name === 'video' ) {
+            $('.learning_center .video-tutorial').addClass('transformImage');
+        }
+        else if (name === 'brochures' ) {
+            $('.learning_center .brochures').addClass('transformImage');
+        }
+        else if (name === 'live' ) {
+            $('.learning_center .live-demo').addClass('transformImage');
+        }
+        else if (name === 'webinars' ) {
+            $('.learning_center .webinars').addClass('transformImage');
+        }
+        else if (name === 'papers' ) {
+            $('.learning_center .white-papers').addClass('transformImage');
+        }
+    });
+    $(".learning_section").on("mouseout", function(e){
+        $('.learning_center .each_tiles').removeClass('transformImage');
+    })
     $('.area_wheel').on('click', function () {
         $('.wheel_container').find('.wheel-details').css('display', 'inline-block');
         $('.wheel_container').find('.arrow-right').css('display', 'inline-block');
@@ -69,7 +97,7 @@ $(document).ready(function() {
     $(".area_wheel").on("mouseover", function(e){
         e.preventDefault();
         var name = e.target.alt;
-        $('.mapster_el').attr('src','../images/'+name+'.png');
+        $('.wheel_container .mapster_el').attr('src','../images/'+name+'.png');
         $('#home_wheel').attr('src','../images/'+name+'.png');
         if (e.target.alt === 'act') {
             $('.img-center-div').find('.number').css('color', '#2FB2E3');
