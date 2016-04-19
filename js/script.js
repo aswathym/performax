@@ -395,24 +395,18 @@ $(document).ready(function() {
     })
 
     $("#challengeMapper").submit(function(e) {
-        debugger;
         var values = 0;
-
         $('input[name="challenge"]').each(function() {
             if ($(this).val() != '') {
                 values++;
             }
-
         });
-
         if (values == 0) {
             $("#challenge_valMessage").removeClass("displayNone");
             e.preventDefault();
-
         } else {
             $("#challenge_valMessage").addClass("displayNone");
         }
-
     });
 
     $('input[name="challenge"]').change(function() {
