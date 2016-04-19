@@ -2011,6 +2011,14 @@ input.promocode::-webkit-input-placeholder {
     padding-top: 25px;
     padding-left: 100px;
 }
+#home_wheel_container .wheel_wrapper .over_text {
+    position: absolute;
+    bottom: -9px;
+    background-color: rgba(0, 0, 0, 0.8);;
+    color: #fff;
+    padding: 15px 40px;
+    width: 104%;
+}
 #home_wheel_container .wheel_container img {
     position: absolute;
 }
