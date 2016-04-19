@@ -2010,10 +2010,32 @@ input.promocode::-webkit-input-placeholder {
     padding-left: 10px;
     padding-top: 13px;
 }
-.result_and_report>.col-md-5>.col-md-9>.customized_sub_heading_content, .result_and_report>.col-md-4>.col-md-4>.customized_sub_heading_content, .result_and_report>.col-md-3>.col-md-3>.customized_sub_heading_content{
+.result_and_report>.col-md-5>.col-md-9>.customized_sub_heading_content, .result_and_report>.col-md-4>.col-md-4>.customized_sub_heading_content{
     margin-top: -7px;
-    font-size: 13px;
+    font-size: 13.5px;
     color: #B7B7B7;
+}
+.share_report>.col-md-3 {
+    text-align:center;
+}
+.share_report>.col-md-3 span>a {
+    color: #413E3F;
+}
+.backgroundRed {
+    background-color: red;
+}
+.backgroundGreen {
+    background-color: green;
+}
+.backgroundYellow {
+    background-color: yellow;
+}
+.overall_effectiveness {
+    width: 13px;
+    height: 13px;
+    border-radius: 7px;
+    margin-bottom: 8px;
+    margin-top: 7px;
 }
 #exspon_home_page .tiles h4 {
     padding: 10px 15px;
