@@ -365,10 +365,10 @@ $(document).ready(function() {
         remove_button = $('.remove_field_button'),
         challenge_no = 2;
 
-  $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
-       e.preventDefault(); $(this).parent('div').remove();
-       // challenge_no--
-   })
+  // $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+  //      e.preventDefault(); $(this).parent('div').remove();
+  //      // challenge_no--
+  //  })
     $(add_button).click(function(e) {
         challenge1 = $('.challenge1').val();
         challenge2 = $('.challenge2').val();
@@ -380,7 +380,6 @@ $(document).ready(function() {
         } else {
             alert('fill existing fields');
         }
-
     });
 
     $(remove_button).click(function(e) { //user click on remove text
