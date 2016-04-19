@@ -2124,6 +2124,20 @@ input.promocode::-webkit-input-placeholder {
 #exspon_home_page .btn_container_div {
     padding-left: 100px;
 }
+#exspon_home_page .updates_wrapper {
+    height: 232px;
+    overflow-y: hidden;
+    transition: all 0.3s ease;
+}
+#exspon_home_page .live_updates .view_more {
+    color: #569AD5;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+#exspon_home_page .live_updates .view_more:hover {
+    color: #0e76d0;
+    text-decoration: underline;
+}
 #exspon_home_page .updates {
     line-height: 1.6;
     list-style-type: none;

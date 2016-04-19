@@ -109,6 +109,11 @@ $(document).ready(function() {
             element.prev().addClass('active');
         }
     });
+    $('#exspon_home_page .live_updates .view_more').click(function (event) {
+        event.preventDefault();
+        $('#exspon_home_page .live_updates .updates_wrapper').css('height', 'auto');
+        $('#exspon_home_page .live_updates .view_more').css('display', 'none');
+    })
     $('#exspon_home_page .customer_says').find('.fa-chevron-right').click(function() {
         var element = $(this).parent().siblings('ul').find('.active');
         element.removeClass('active');
