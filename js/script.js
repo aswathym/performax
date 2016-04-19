@@ -365,8 +365,9 @@ $(document).ready(function() {
         remove_button = $('.remove_field_button'),
         challenge_no = 2;
 
-  $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
-       e.preventDefault(); $(this).parent('div').remove();
+  $(remove_button).on("click", function(e){ //user click on remove text
+       e.preventDefault();
+       $(this).parent('div').remove();
        // challenge_no--
    })
     $(add_button).click(function(e) {
