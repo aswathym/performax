@@ -365,8 +365,9 @@ $(document).ready(function() {
         remove_button = $('.remove_field_button'),
         challenge_no = 2;
 
-  $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
-       e.preventDefault(); $(this).parent('div').remove();
+  $(remove_button).on("click", function(e){ //user click on remove text
+       e.preventDefault();
+       $(this).parent('div').remove();
        // challenge_no--
    })
     $(add_button).click(function(e) {
@@ -395,24 +396,18 @@ $(document).ready(function() {
     })
 
     $("#challengeMapper").submit(function(e) {
-        debugger;
         var values = 0;
-
         $('input[name="challenge"]').each(function() {
             if ($(this).val() != '') {
                 values++;
             }
-
         });
-
         if (values == 0) {
             $("#challenge_valMessage").removeClass("displayNone");
             e.preventDefault();
-
         } else {
             $("#challenge_valMessage").addClass("displayNone");
         }
-
     });
 
     $('input[name="challenge"]').change(function() {
