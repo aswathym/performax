@@ -138,21 +138,23 @@
                                 <div class="challenge_second_rightheading">
                                     Describe your organizational challenges
                                 </div>
+                                <span id="challenge_valMessage" class="challenge_validation displayNone">You have to enter at least one organizational challenge</span>
                                 <div class="challenge_wrapper">
                                     <div class="challenge">
                                         <label>Challenge 1 :</label>
-                                        <input type="text">
+                                        <input type="text" name="challenge" autocomplete="off">
                                     </div>
                                     <div class="challenge">
                                         <label>Challenge 2 :</label>
-                                        <input type="text">
+                                        <input type="text" name="challenge" autocomplete="off">
                                     </div>
                                 </div>
 
-                                <div class="add_more_challenges">
-                                    <a href="javascript:void(0);" class="add_field_button">+<u>Add More Challenges</u></a>
+                                <div class="add_more_challenges col-md-12">
+                                    <span class="col-md-6 text-left"><a href="javascript:void(0);" class="add_field_button">+<u>Add More Challenges</u></a></span>
+                                    <span class="col-md-6 text-right"><a href="javascript:void(0);" class="remove_field_button">-<u>Remove Challenge</u></a></span>
                                 </div>
-                                <button type="button" class="btn btn-info">Submit</button>
+                                <button type="submit" class="btn btn-info">Submit</button>
                             </div>
                         </div>
                     </div>
@@ -170,6 +172,7 @@
                             <li><a href="#internal_processes" aria-controls="no_display" role="tab" data-toggle="tab">Assessments for internal processes</a></li>
                             <li><a href="#stakeholder_groups" aria-controls="no_display" role="tab" data-toggle="tab">Assessments for Stakeholder Groups</a></li>
                             <li><a href="#individual_employees" aria-controls="no_display" role="tab" data-toggle="tab">Assessments for Individual Employees</a></li>
+                            <li><a href="#custom_assessments" aria-controls="no_display" role="tab" data-toggle="tab">Custom Assessments</a></li>
                         </ul>
                     </nav>
                     <div class="container tab-content">
@@ -180,7 +183,7 @@
                                     <img src="../images/finance&accounting.png">
                                     <div class="caption col-md-12">
                                         <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                                        <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                        <button type="button" class="btn btn-primary" name="button">View Details</button>
                                     </div>
                                 </li>
                                 <li class="thumbnail col-md-2">
@@ -188,7 +191,7 @@
                                     <img src="../images/finance&accounting.png">
                                     <div class="caption col-md-12">
                                         <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                                        <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                        <button type="button" class="btn btn-primary" name="button">View Details</button>
                                     </div>
                                 </li>
                                 <li class="thumbnail col-md-2">
@@ -196,7 +199,7 @@
                                     <img src="../images/sales&marketing.png">
                                     <div class="caption col-md-12">
                                         <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                                        <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                        <button type="button" class="btn btn-primary" name="button">View Details</button>
                                     </div>
                                 </li>
                                 <li class="thumbnail col-md-2">
@@ -204,7 +207,7 @@
                                     <img src="../images/strategy&planning.png">
                                     <div class="caption col-md-12">
                                         <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                                        <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                        <button type="button" class="btn btn-primary" name="button">View Details</button>
                                     </div>
                                 </li>
                             </ul>
@@ -217,7 +220,7 @@
                                     <img src="../images/finance&accounting.png">
                                     <div class="caption col-md-12">
                                         <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                                        <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                        <button type="button" class="btn btn-primary" name="button">View Details</button>
                                     </div>
                                 </li>
                                 <li class="thumbnail col-md-2">
@@ -225,7 +228,7 @@
                                     <img src="../images/finance&accounting.png">
                                     <div class="caption col-md-12">
                                         <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                                        <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                        <button type="button" class="btn btn-primary" name="button">View Details</button>
                                     </div>
                                 </li>
                                 <li class="thumbnail col-md-2">
@@ -233,7 +236,7 @@
                                     <img src="../images/sales&marketing.png">
                                     <div class="caption col-md-12">
                                         <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                                        <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                        <button type="button" class="btn btn-primary" name="button">View Details</button>
                                     </div>
                                 </li>
                                 <li class="thumbnail col-md-2">
@@ -241,7 +244,7 @@
                                     <img src="../images/strategy&planning.png">
                                     <div class="caption col-md-12">
                                         <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                                        <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                        <button type="button" class="btn btn-primary" name="button">View Details</button>
                                     </div>
                                 </li>
                             </ul>
@@ -253,7 +256,7 @@
                                     <img src="../images/finance&accounting.png">
                                     <div class="caption col-md-12">
                                         <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                                        <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                        <button type="button" class="btn btn-primary" name="button">View Details</button>
                                     </div>
                                 </li>
                                 <li class="thumbnail col-md-2">
@@ -261,7 +264,7 @@
                                     <img src="../images/finance&accounting.png">
                                     <div class="caption col-md-12">
                                         <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                                        <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                        <button type="button" class="btn btn-primary" name="button">View Details</button>
                                     </div>
                                 </li>
                                 <li class="thumbnail col-md-2">
@@ -269,7 +272,7 @@
                                     <img src="../images/sales&marketing.png">
                                     <div class="caption col-md-12">
                                         <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                                        <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                        <button type="button" class="btn btn-primary" name="button">View Details</button>
                                     </div>
                                 </li>
                                 <li class="thumbnail col-md-2">
@@ -277,7 +280,7 @@
                                     <img src="../images/strategy&planning.png">
                                     <div class="caption col-md-12">
                                         <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                                        <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                        <button type="button" class="btn btn-primary" name="button">View Details</button>
                                     </div>
                                 </li>
                             </ul>
@@ -289,7 +292,7 @@
                                     <img src="../images/finance&accounting.png">
                                     <div class="caption col-md-12">
                                         <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                                        <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                        <button type="button" class="btn btn-primary" name="button">View Details</button>
                                     </div>
                                 </li>
                                 <li class="thumbnail col-md-2">
@@ -297,7 +300,7 @@
                                     <img src="../images/finance&accounting.png">
                                     <div class="caption col-md-12">
                                         <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                                        <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                        <button type="button" class="btn btn-primary" name="button">View Details</button>
                                     </div>
                                 </li>
                                 <li class="thumbnail col-md-2">
@@ -305,7 +308,7 @@
                                     <img src="../images/sales&marketing.png">
                                     <div class="caption col-md-12">
                                         <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                                        <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                        <button type="button" class="btn btn-primary" name="button">View Details</button>
                                     </div>
                                 </li>
                                 <li class="thumbnail col-md-2">
@@ -313,11 +316,48 @@
                                     <img src="../images/strategy&planning.png">
                                     <div class="caption col-md-12">
                                         <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                                        <button type="button" class="btn btn-danger" name="button">Delete</button>
+                                        <button type="button" class="btn btn-primary" name="button">View Details</button>
                                     </div>
                                 </li>
                             </ul>
                         </div>
+                        <div id="custom_assessments" class="container col-md-12 tab-pane padding0" role="tabpanel">
+                            <ul class="container-fluid padding0 core_functions_wrapper">
+                                <li class="thumbnail col-md-2">
+                                    <h4>Customer Service</h4>
+                                    <img src="../images/finance&accounting.png">
+                                    <div class="caption col-md-12">
+                                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+                                        <button type="button" class="btn btn-primary" name="button">View Details</button>
+                                    </div>
+                                </li>
+                                <li class="thumbnail col-md-2">
+                                    <h4>Finance & Accounting</h4>
+                                    <img src="../images/finance&accounting.png">
+                                    <div class="caption col-md-12">
+                                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+                                        <button type="button" class="btn btn-primary" name="button">View Details</button>
+                                    </div>
+                                </li>
+                                <li class="thumbnail col-md-2">
+                                    <h4>Sales & Marketing</h4>
+                                    <img src="../images/sales&marketing.png">
+                                    <div class="caption col-md-12">
+                                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+                                        <button type="button" class="btn btn-primary" name="button">View Details</button>
+                                    </div>
+                                </li>
+                                <li class="thumbnail col-md-2">
+                                    <h4>Strategy & Planning</h4>
+                                    <img src="../images/strategy&planning.png">
+                                    <div class="caption col-md-12">
+                                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
+                                        <button type="button" class="btn btn-primary" name="button">View Details</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -333,6 +373,8 @@
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/editor.js" charset="utf-8"></script>
     <script src="../js/bootstrap-datepicker.min.js" charset="utf-8"></script>
+    <script src="../js/jquery.imagemap.min.js" charset="utf-8"></script>
+    <script src="../js/jquery-ui.min.js" charset="utf-8"></script>
     <script src="../js/script.js"></script>
 
 </body>

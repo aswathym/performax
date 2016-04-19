@@ -42,24 +42,117 @@ $(document).ready(function() {
         'togglescreen': false
     });
 
-
     $(".dropdown-menu").on('click', 'li a', function() {
         $(".dd_btn").text($(this).text());
         // $(".btn:first-child").val($(this).text());
     });
+    $('#home_wheel').mapster({
+        fillColor: '000000',
+        fillOpacity: 0.4,
+        fade: true,
+        staticState: false
+    });
 
+    // To hide the Wheel Details Container on clicking outside of the contaier
+    $(document).mouseup(function (e) {
+        if ($('.wheel-details')) {
+            var container = $('.wheel-details');
+            if (!container.is(e.target) && container.has(e.target).length === 0) {
+                container.hide();
+            }
+        }
+    });
+    $('.area_wheel').on('click', function () {
+        $('.wheel_container').find('.wheel-details').css('display', 'inline-block');
+        $('.wheel_container').find('.arrow-right').css('display', 'inline-block');
+    })
+    $(".area_wheel").on("mouseover", function(e){
+        e.preventDefault();
+        var name = e.target.alt;
+        $('.mapster_el').attr('src','../images/'+name+'.png');
+        $('#home_wheel').attr('src','../images/'+name+'.png');
+        if (e.target.alt === 'act') {
+            $('.img-center-div').find('.number').css('color', '#2FB2E3');
+            $('.img-center-div').find('.number h3').html('5');
+            $('.img-center-div').find('.details').html('Act so Fast');
+            $('.wheel-details').css('border-color', '#2FB2E3');
+        }
+        else if (e.target.alt === 'track') {
+            $('.img-center-div').find('.number').css('color', '#6BCBD5');
+            $('.img-center-div').find('.details').html('Track If You Can');
+            $('.img-center-div').find('.number h3').html('6');
+            $('.wheel-details').css('border-color', '#6BCBD5');
+        }
+        else if (e.target.alt === 'focus') {
+            $('.img-center-div').find('.number').css('color', '#FECA5A');
+            $('.img-center-div').find('.number h3').html('1');
+            $('.img-center-div').find('.details').html('Select the Right Organizational Assessment');
+            $('.wheel-details').css('border-color', '#FECA5A');
+        }
+        else if (e.target.alt === 'customize') {
+            $('.img-center-div').find('.number').css('color', '#F79032');
+            $('.img-center-div').find('.number h3').html('2');
+            $('.img-center-div').find('.details').html('Customize the Beauty of Life');
+            $('.wheel-details').css('border-color', '#F79032');
+        }
+        else if (e.target.alt === 'engage') {
+            $('.img-center-div').find('.number').css('color', '#E34A57');
+            $('.img-center-div').find('.number h3').html('3');
+            $('.img-center-div').find('.details').html('Engage With Those Who Wants You');
+            $('.wheel-details').css('border-color', '#E34A57');
+        }
+        else if (e.target.alt === 'evaluate') {
+            $('.img-center-div').find('.number').css('color', '#0C4B75');
+            $('.img-center-div').find('.number h3').html('4');
+            $('.img-center-div').find('.details').html('Evaluate Yourself');
+            $('.wheel-details').css('border-color', '#0C4B75');
+        }
+    });
     if ($('#create_promo_code_form')) {
         $('.calender').datepicker({
             format: "dd/mm/yyyy",
             autoclose: true
         });
     }
-    $('#create_promo_code_form #radio2').click(function() {
-        $('.number_field').focus();
+
+    $('#exspon_home_page .customer_says').find('.fa-chevron-left').click(function() {
+        var element = $(this).parent().siblings('ul').find('.active');
+        element.removeClass('active');
+        if (element.prev().length == 0) {
+            element.siblings('li').last().addClass('active');
+        }
+        else {
+            element.prev().addClass('active');
+        }
     });
 
-    $(".trigger").click(function() {
-        $(".menu").toggleClass("active");
+
+    $('#exspon_home_page .live_updates .view_more').click(function (event) {
+        event.preventDefault();
+        $('#exspon_home_page .live_updates .updates_wrapper').css('height', 'auto');
+        $('#exspon_home_page .live_updates .view_more').css('display', 'none');
+    })
+    $('#exspon_home_page .customer_says').find('.fa-chevron-right').click(function() {
+        var element = $(this).parent().siblings('ul').find('.active');
+        element.removeClass('active');
+        if (element.next().length == 0) {
+            element.siblings('li').first().addClass('active');
+        }
+        else {
+            element.next().addClass('active');
+        }
+    });
+
+    $('#sideMenu a').on('click', function(){
+         var count = $(this).next('.collapse').find('a').length;
+         if(count > 1) {
+            //  $(this).next('.collapse').addClass('in');
+            $(this).next('.collapse').find('a').first().addClass('actives');
+         }
+    })
+
+    $('#create_promo_code_form #radio2').click(function() {
+        $('.number_field').focus();
     });
 
     $("#edit_icon").click(function() {
@@ -145,22 +238,22 @@ $(document).ready(function() {
             phone = $('#profile .form-content input[name=phone]').val(),
             zip_code = $('#profile .form-content input[name=zip_code]').val(),
             job_title = $('#profile .form-content input[name=job_title]').val();
-        if(first_name == '') {
+        if (first_name == '') {
             $('#profile .form-content input[name=first_name]').css('border-color', 'rgba(156, 3, 3, 0.4)');
         }
-        if(last_name == '') {
+        if (last_name == '') {
             $('#profile .form-content input[name=last_name]').css('border-color', 'rgba(156, 3, 3, 0.4)');
         }
-        if(company == '') {
+        if (company == '') {
             $('#profile .form-content input[name=company]').css('border-color', 'rgba(156, 3, 3, 0.4)');
         }
-        if(job_title == '') {
+        if (job_title == '') {
             $('#profile .form-content input[name=job_title]').css('border-color', 'rgba(156, 3, 3, 0.4)');
         }
-        if(phone == '') {
+        if (phone == '') {
             $('#profile .form-content input[name=phone]').css('border-color', 'rgba(156, 3, 3, 0.4)');
         }
-        if(zip_code == '') {
+        if (zip_code == '') {
             $('#profile .form-content input[name=zip_code]').css('border-color', 'rgba(156, 3, 3, 0.4)');
         }
     })
@@ -172,33 +265,169 @@ $(document).ready(function() {
     function validateEmail(email) {
         var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
         return emailReg.test(email);
-
     }
 
     function validatePassword(email, pass) {
         var ret = (email == 'admin@qburst.com') && (pass == 'admin') ? true : false;
         return ret;
     }
+
     $('.flow_nav li').click(function(eve) {
         $(this).siblings().removeClass('active');
         $(this).siblings().removeClass('another_active');
         $(this).prevAll('li').addClass('another_active');
         $(this).addClass('active')
-    })
-
-    var wrapper         = $(".challenge_wrapper");
-    var add_button      = $(".add_field_button");
-    var challenge_no    = 2;
-    $(add_button).click(function(e){
-        e.preventDefault();
-        challenge_no++;
-        $(wrapper).append('<div class="challenge"><label>Challenge '+challenge_no+' :</label><input type="text"><a href="#" class="remove_field">Remove </a></div>');
     });
 
-   $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+
+    $("#v-slider").slider({
+        orientation: "vertical",
+        animate: 'fast',
+        min: 0,
+        max: 100,
+        value: 0,
+        step: 10,
+        slide: function(event, ui) {
+            $("#amount").val(ui.value);
+        }
+    });
+    $("#amount").val($("#v-slider").slider("value"));
+    $("#v-slider2").slider({
+        orientation: "vertical",
+        animate: 'fast',
+        min: 0,
+        max: 100,
+        value: 10,
+        step: 10,
+        slide: function(event, ui) {
+            $("#amount").val(ui.value);
+        }
+    });
+    $("#amount").val($("#v-slider").slider("value"));
+    $("#v-slider3").slider({
+        orientation: "vertical",
+        animate: 'fast',
+        min: 0,
+        max: 100,
+        value: 20,
+        step: 10,
+        slide: function(event, ui) {
+            $("#amount").val(ui.value);
+        }
+    });
+    $("#amount").val($("#v-slider").slider("value"));
+    $("#v-slider4").slider({
+        orientation: "vertical",
+        animate: 'fast',
+        min: 0,
+        max: 100,
+        value: 10,
+        step: 10,
+        slide: function(event, ui) {
+            $("#amount").val(ui.value);
+        }
+    });
+    $("#amount").val($("#v-slider").slider("value"));
+    $("#v-slider5").slider({
+        orientation: "vertical",
+        animate: 'fast',
+        min: 0,
+        max: 100,
+        value: 10,
+        step: 10,
+        slide: function(event, ui) {
+            $("#amount").val(ui.value);
+        }
+    });
+    $("#amount").val($("#v-slider").slider("value"));
+    $("#v-slider6").slider({
+        orientation: "vertical",
+        animate: 'fast',
+        min: 0,
+        max: 100,
+        value: 100,
+        step: 10,
+        slide: function(event, ui) {
+            $("#amount").val(ui.value);
+        }
+    });
+    $("#amount").val($("#v-slider").slider("value"));
+    $('.list-group-item').click(function(e) {
+        e.preventDefault();
+        $('.list-group-item').removeClass('actives');
+        // $(this).('actives');
+        $('.list-group-item').removeClass('actives');
+        $(this).next().find('a').first().trigger('click');
+        $(this).next().find('a').first().addClass('actives');
+
+    });
+    var add_button = $(".add_field_button"),
+        remove_button = $('.remove_field_button'),
+        challenge_no = 2;
+
+  $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
        e.preventDefault(); $(this).parent('div').remove();
        // challenge_no--
    })
+    $(add_button).click(function(e) {
+        challenge1 = $('.challenge1').val();
+        challenge2 = $('.challenge2').val();
+        if (challenge1 != "" && challenge2 != "") {
+            e.preventDefault();
+            challenge_no++;
+            $(".challenge_wrapper").append('<div class="challenge"><label>Challenge ' + challenge_no + ' :</label><input type="text" name="challenge" autocomplete="off"></div>');
+            $('.remove_field_button').css('display', 'inline-block');
+        } else {
+            alert('fill existing fields');
+        }
 
+    });
+
+    $(remove_button).click(function(e) { //user click on remove text
+        e.preventDefault();
+        if ($(".challenge_wrapper div").length > 2) {
+            $(".challenge_wrapper div:last").remove()
+            challenge_no--;
+        } else {
+            alert('Remove not possible');
+            $('.remove_field_button').css('display', 'none');
+        }
+    })
+
+    $("#challengeMapper").submit(function(e) {
+        debugger;
+        var values = 0;
+
+        $('input[name="challenge"]').each(function() {
+            if ($(this).val() != '') {
+                values++;
+            }
+
+        });
+
+        if (values == 0) {
+            $("#challenge_valMessage").removeClass("displayNone");
+            e.preventDefault();
+
+        } else {
+            $("#challenge_valMessage").addClass("displayNone");
+        }
+
+    });
+
+    $('input[name="challenge"]').change(function() {
+        $("#challenge_valMessage").addClass("displayNone");
+    });
 
 });
+
+function toggleMode(ev) {
+    var el = ev.target;
+    if ($(el).hasClass('fa-toggle-on')) {
+        $(el).removeClass('fa-toggle-on');
+        $(el).addClass('fa-toggle-off');
+    } else {
+        $(el).addClass('fa-toggle-on');
+        $(el).removeClass('fa-toggle-off');
+    }
+}
