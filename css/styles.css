@@ -189,8 +189,9 @@ header {
     margin-top: 20px;
 }
 #core_functions_wrapper li:hover .caption {
-    /*height: 200px;*/
     bottom: 0px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .core_functions_wrapper li {
@@ -1666,14 +1667,14 @@ input.promocode::-webkit-input-placeholder {
     margin-right: -50px;
 }
 /* Pending tasks */
-.challenge_box>.pending_task_heading {
+.challenge_box>.pending_task_heading, .challenge_box>.result_and_report {
     margin: 10px 55px;
 }
-.challenge_box>.pending_task_heading>.col-md-2>h5 {
+.challenge_box>.pending_task_heading>.col-md-2>h5, .challenge_box>.result_and_report>.col-md-3>h5 {
     margin-top: 30px;
     color: #231F20;
 }
-.pending_task_heading>.col-md-4>.dropdown_select {
+.pending_task_heading>.col-md-4>.dropdown_select, .result_and_report>.col-md-4>.dropdown_select {
     width: 240px;
     margin-top: 22px;
     margin-left: 80px;
@@ -1998,6 +1999,23 @@ input.promocode::-webkit-input-placeholder {
     border-top: 200px solid transparent;
     border-bottom: 200px solid transparent;
     border-left: 70px solid #EAEAEB;
+}
+
+/* exSpon - Result and Reports*/
+.challenge_box>.result_and_report.challenge_box {
+    margin: 10px 20px;
+}
+.result_and_report>.col-md-5>.col-md-3>img {
+    width: 100%;
+}
+.result_and_report>.col-md-5>.col-md-9, .result_and_report>.col-md-4, .result_and_report>.col-md-3 {
+    padding-left: 10px;
+    padding-top: 13px;
+}
+.result_and_report>.col-md-5>.col-md-9>.customized_sub_heading_content, .result_and_report>.col-md-4>.col-md-4>.customized_sub_heading_content, .result_and_report>.col-md-3>.col-md-3>.customized_sub_heading_content{
+    margin-top: -7px;
+    font-size: 13px;
+    color: #B7B7B7;
 }
 #exspon_home_page .tiles h4 {
     padding: 10px 15px;
