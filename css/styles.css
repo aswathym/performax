@@ -2187,3 +2187,55 @@ input.promocode::-webkit-input-placeholder {
 #exspon_home_page .customer_says i:hover {
     color: red;
 }
+.learning_center .each_tiles {
+    position: absolute;
+    transition: all 0.3s ease;
+}
+.learning_center .video-tutorial {
+    left: 230px;
+}
+.learning_center .video-tutorial .scale-img {
+    background-position: 125px 0px;
+}
+.learning_center .brochures {
+    left: 270px;
+    top: 100px;
+}
+.learning_center .brochures .scale-img {
+    background-position: 330px 0px;
+}
+.learning_center .live-demo {
+    left: 290px;
+    top: 180px;
+}
+.learning_center .live-demo .scale-img {
+    background-position: 60px 0px;
+}
+.learning_center .webinars {
+    left: 270px;
+    top: 260px;
+}
+.learning_center .webinars .scale-img {
+    background-position: 195px 0px;
+}
+.learning_center .white-papers {
+    left: 230px;
+    top: 320px;
+}
+.learning_center .white-papers .scale-img {
+    background-position: 260px 0px;
+}
+.learning_center .each_tiles h5{
+    display: inline-block;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 60px;
+    text-align: center;
+}
+.learning_center .each_tiles .scale-img {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    transition: all 0.5s ease;
+    background-image: url('../images/icon_sprite.png');
+}
