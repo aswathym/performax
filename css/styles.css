@@ -654,6 +654,13 @@ footer a {
     list-style-type: none;
     line-height: 1.5;
 }
+#home_footer_container ul li a {
+    color: #fff;
+}
+#home_footer_container ul li a:hover {
+    text-decoration: none;
+    color: #aaa;
+}
 #home_footer_container .details h5 {
     color: #69CFDA;
 }
@@ -666,16 +673,13 @@ footer a {
 #home_footer_container .follow_us, #home_footer_container .input-group {
     padding: 15px 0px;
 }
-#home_footer_container .follow_us span {
-    margin-right: 10px;
-}
-#home_footer_container .follow_us .facebook {
+#home_footer_container .follow_us .facebook a {
     color: #395797;
 }
-#home_footer_container .follow_us .twitter {
+#home_footer_container .follow_us .twitter a {
     color: #6ACFF4;
 }
-#home_footer_container .follow_us .google-plus {
+#home_footer_container .follow_us .google-plus a {
     color: #D13F2D;
 }
 .thumbnail {
@@ -2197,34 +2201,35 @@ input.promocode::-webkit-input-placeholder {
 }
 .learning_center .video-tutorial {
     left: 230px;
+    top: 60px;
 }
 .learning_center .video-tutorial .scale-img {
     background-position: 125px 0px;
 }
 .learning_center .brochures {
     left: 270px;
-    top: 100px;
+    top: 120px;
 }
 .learning_center .brochures .scale-img {
     background-position: 330px 0px;
 }
 .learning_center .live-demo {
     left: 290px;
-    top: 180px;
+    top: 200px;
 }
 .learning_center .live-demo .scale-img {
     background-position: 60px 0px;
 }
 .learning_center .webinars {
     left: 270px;
-    top: 260px;
+    top: 280px;
 }
 .learning_center .webinars .scale-img {
     background-position: 195px 0px;
 }
 .learning_center .white-papers {
     left: 230px;
-    top: 320px;
+    top: 340px;
 }
 .learning_center .white-papers .scale-img {
     background-position: 260px 0px;
