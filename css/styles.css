@@ -1475,7 +1475,7 @@ input.promocode::-webkit-input-placeholder {
 }
 #exspon_details_page .nav li a {
     padding: 8px 20px;
-    font-size: 15px;
+    font-size: 17px;
     text-align: center;
 }
 #exSpon_Details .descrption_ul li {
@@ -1493,7 +1493,10 @@ input.promocode::-webkit-input-placeholder {
 .marginLeft60 {
     margin-left: 60px;
 }
-
+.custom_assessments {
+    height: 66px;
+    padding-top: 20px;
+}
 /*exSpon_Details_Configurator_Timeline*/
 #exSpon_Configurator_Switch_Tab .nav {
     border-bottom: transparent;
