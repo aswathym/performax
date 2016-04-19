@@ -47,13 +47,66 @@ $(document).ready(function() {
         $(".dd_btn").text($(this).text());
         // $(".btn:first-child").val($(this).text());
     });
-
+    $('#home_wheel').mapster({
+        fillColor: '000000',
+        fillOpacity: 0.4,
+        fade: true,
+        staticState: false
+    });
+    $(".area_wheel").on("click", function(e){
+        e.preventDefault();
+        console.log(e.target.alt);
+        var name = e.target.alt;
+        $('.mapster_el').attr('src','../images/'+name+'.png');
+        $('#home_wheel').attr('src','../images/'+name+'.png');
+        if (e.target.alt === 'act') {
+            $('.img-center-div').find('.number').css('color', '#2FB2E3');
+            $('.img-center-div').find('.number h3').html('5');
+            $('.wheel-details').css('border-color', '#2FB2E3');
+        }
+        else if (e.target.alt === 'track') {
+            $('.img-center-div').find('.number').css('color', '#6BCBD5');
+            $('.img-center-div').find('.number h3').html('6');
+            $('.wheel-details').css('border-color', '#6BCBD5');
+        }
+        else if (e.target.alt === 'focus') {
+            $('.img-center-div').find('.number').css('color', '#FECA5A');
+            $('.img-center-div').find('.number h3').html('1');
+            $('.wheel-details').css('border-color', '#FECA5A');
+        }
+        else if (e.target.alt === 'customize') {
+            $('.img-center-div').find('.number').css('color', '#F79032');
+            $('.img-center-div').find('.number h3').html('2');
+            $('.wheel-details').css('border-color', '#F79032');
+        }
+        else if (e.target.alt === 'engage') {
+            $('.img-center-div').find('.number').css('color', '#E34A57');
+            $('.img-center-div').find('.number h3').html('3');
+            $('.wheel-details').css('border-color', '#E34A57');
+        }
+        else if (e.target.alt === 'evaluate') {
+            $('.img-center-div').find('.number').css('color', '#0C4B75');
+            $('.img-center-div').find('.number h3').html('4');
+            $('.wheel-details').css('border-color', '#0C4B75');
+        }
+        $('.wheel_container').find('.wheel-details').css('display', 'inline-block');
+        $('.wheel_container').find('.arrow-right').css('display', 'inline-block');
+    });
     if ($('#create_promo_code_form')) {
         $('.calender').datepicker({
             format: "dd/mm/yyyy",
             autoclose: true
         });
     }
+
+    $('#sideMenu a').on('click', function(){
+         var count = $(this).next('.collapse').find('a').length;
+         if(count > 1) {
+            //  $(this).next('.collapse').addClass('in');
+            $(this).next('.collapse').find('a').first().addClass('actives');
+         }
+    })
+
     $('#create_promo_code_form #radio2').click(function() {
         $('.number_field').focus();
     });
@@ -160,13 +213,16 @@ $(document).ready(function() {
             $('#profile .form-content input[name=zip_code]').css('border-color', 'rgba(156, 3, 3, 0.4)');
         }
     })
+
     function checkEmpty(item) {
         return item === '' ? true : false;
     }
+
     function validateEmail(email) {
         var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
         return emailReg.test(email);
     }
+
     function validatePassword(email, pass) {
         var ret = (email == 'admin@qburst.com') && (pass == 'admin') ? true : false;
         return ret;
@@ -187,7 +243,7 @@ $(document).ready(function() {
         max: 100,
         value: 0,
         step: 10,
-        slide: function (event, ui) {
+        slide: function(event, ui) {
             $("#amount").val(ui.value);
         }
     });
@@ -199,7 +255,7 @@ $(document).ready(function() {
         max: 100,
         value: 10,
         step: 10,
-        slide: function (event, ui) {
+        slide: function(event, ui) {
             $("#amount").val(ui.value);
         }
     });
@@ -211,7 +267,7 @@ $(document).ready(function() {
         max: 100,
         value: 20,
         step: 10,
-        slide: function (event, ui) {
+        slide: function(event, ui) {
             $("#amount").val(ui.value);
         }
     });
@@ -223,7 +279,7 @@ $(document).ready(function() {
         max: 100,
         value: 10,
         step: 10,
-        slide: function (event, ui) {
+        slide: function(event, ui) {
             $("#amount").val(ui.value);
         }
     });
@@ -235,7 +291,7 @@ $(document).ready(function() {
         max: 100,
         value: 10,
         step: 10,
-        slide: function (event, ui) {
+        slide: function(event, ui) {
             $("#amount").val(ui.value);
         }
     });
@@ -247,46 +303,82 @@ $(document).ready(function() {
         max: 100,
         value: 100,
         step: 10,
-        slide: function (event, ui) {
+        slide: function(event, ui) {
             $("#amount").val(ui.value);
         }
     });
     $("#amount").val($("#v-slider").slider("value"));
-    $('.list-group-item').click(function() {
+    $('.list-group-item').click(function(e) {
+        e.preventDefault();
         $('.list-group-item').removeClass('actives');
-        $(this).parents('.list-group-item').addClass('actives');
+        // $(this).('actives');
+        $('.list-group-item').removeClass('actives');
+        $(this).next().find('a').first().trigger('click');
+        $(this).next().find('a').first().addClass('actives');
 
-        $('.list-group-item').removeClass('actives');
     });
     var add_button = $(".add_field_button"),
         remove_button = $('.remove_field_button'),
         challenge_no = 2;
 
     $(add_button).click(function(e) {
-        e.preventDefault();
-        challenge_no++;
-        $(".challenge_wrapper").append('<li class="challenge"><label>Challenge ' + challenge_no + ' :</label><input type="text"></li>');
+        challenge1 = $('.challenge1').val();
+        challenge2 = $('.challenge2').val();
+        if (challenge1 != "" && challenge2 != "") {
+            e.preventDefault();
+            challenge_no++;
+            $(".challenge_wrapper").append('<div class="challenge"><label>Challenge ' + challenge_no + ' :</label><input type="text" name="challenge" autocomplete="off"></div>');
+            $('.remove_field_button').css('display', 'inline-block');
+        } else {
+            alert('fill existing fields');
+        }
+
     });
 
-   $(remove_button).click(function(e){ //user click on remove text
-       e.preventDefault();
-       if ($(".challenge_wrapper li").length > 2) {
-           $(".challenge_wrapper li:last").remove()
-           challenge_no--;
-       }
-       else {
-           alert('Remove not possible');
-       }
-   })
+    $(remove_button).click(function(e) { //user click on remove text
+        e.preventDefault();
+        if ($(".challenge_wrapper div").length > 2) {
+            $(".challenge_wrapper div:last").remove()
+            challenge_no--;
+        } else {
+            alert('Remove not possible');
+            $('.remove_field_button').css('display', 'none');
+        }
+    })
+
+    $("#challengeMapper").submit(function(e) {
+        debugger;
+        var values = 0;
+
+        $('input[name="challenge"]').each(function() {
+            if ($(this).val() != '') {
+                values++;
+            }
+
+        });
+
+        if (values == 0) {
+            $("#challenge_valMessage").removeClass("displayNone");
+            e.preventDefault();
+
+        } else {
+            $("#challenge_valMessage").addClass("displayNone");
+        }
+
+    });
+
+    $('input[name="challenge"]').change(function() {
+        $("#challenge_valMessage").addClass("displayNone");
+    });
+
 });
 
 function toggleMode(ev) {
     var el = ev.target;
-    if($(el).hasClass('fa-toggle-on')) {
+    if ($(el).hasClass('fa-toggle-on')) {
         $(el).removeClass('fa-toggle-on');
         $(el).addClass('fa-toggle-off');
-    }
-    else {
+    } else {
         $(el).addClass('fa-toggle-on');
         $(el).removeClass('fa-toggle-off');
     }
