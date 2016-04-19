@@ -72,23 +72,23 @@ $(document).ready(function() {
         e.preventDefault();
         var name = e.target.alt;
         if (name === 'video' ) {
-            $('.learning_center .video-tutorial').css('transform', 'scale(1.3, 1.3)');
+            $('.learning_center .video-tutorial').addClass('transformImage');
         }
         else if (name === 'brochures' ) {
-            $('.learning_center .brochures').css('transform', 'scale(1.3, 1.3)');
+            $('.learning_center .brochures').addClass('transformImage');
         }
         else if (name === 'live' ) {
-            $('.learning_center .live-demo').css('transform', 'scale(1.3, 1.3)');
+            $('.learning_center .live-demo').addClass('transformImage');
         }
         else if (name === 'webinars' ) {
-            $('.learning_center .webinars').css('transform', 'scale(1.3, 1.3)');
+            $('.learning_center .webinars').addClass('transformImage');
         }
         else if (name === 'papers' ) {
-            $('.learning_center .white-papers').css('transform', 'scale(1.3, 1.3)');
+            $('.learning_center .white-papers').addClass('transformImage');
         }
     });
     $(".learning_section").on("mouseout", function(e){
-        $('.learning_center .each_tiles').css('transform', 'scale(1, 1)');
+        $('.learning_center .each_tiles').removeClass('transformImage');
     })
     $('.area_wheel').on('click', function () {
         $('.wheel_container').find('.wheel-details').css('display', 'inline-block');
@@ -393,6 +393,11 @@ $(document).ready(function() {
         remove_button = $('.remove_field_button'),
         challenge_no = 2;
 
+  $(remove_button).on("click", function(e){ //user click on remove text
+       e.preventDefault();
+       $(this).parent('div').remove();
+       // challenge_no--
+   })
     $(add_button).click(function(e) {
         challenge1 = $('.challenge1').val();
         challenge2 = $('.challenge2').val();
@@ -404,6 +409,7 @@ $(document).ready(function() {
         } else {
             alert('fill existing fields');
         }
+
     });
 
     $(remove_button).click(function(e) { //user click on remove text
