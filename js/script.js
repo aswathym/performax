@@ -52,6 +52,12 @@ $(document).ready(function() {
         fade: true,
         staticState: false
     });
+    $('#learning_wheel').mapster({
+        fillColor: '000000',
+        fillOpacity: 0.4,
+        fade: true,
+        staticState: false
+    });
 
     // To hide the Wheel Details Container on clicking outside of the contaier
     $(document).mouseup(function (e) {
@@ -62,6 +68,28 @@ $(document).ready(function() {
             }
         }
     });
+    $(".learning_section").on("mouseover", function(e){
+        e.preventDefault();
+        var name = e.target.alt;
+        if (name === 'video' ) {
+            $('.learning_center .video-tutorial').css('transform', 'scale(1.3, 1.3)');
+        }
+        else if (name === 'brochures' ) {
+            $('.learning_center .brochures').css('transform', 'scale(1.3, 1.3)');
+        }
+        else if (name === 'live' ) {
+            $('.learning_center .live-demo').css('transform', 'scale(1.3, 1.3)');
+        }
+        else if (name === 'webinars' ) {
+            $('.learning_center .webinars').css('transform', 'scale(1.3, 1.3)');
+        }
+        else if (name === 'papers' ) {
+            $('.learning_center .white-papers').css('transform', 'scale(1.3, 1.3)');
+        }
+    });
+    $(".learning_section").on("mouseout", function(e){
+        $('.learning_center .each_tiles').css('transform', 'scale(1, 1)');
+    })
     $('.area_wheel').on('click', function () {
         $('.wheel_container').find('.wheel-details').css('display', 'inline-block');
         $('.wheel_container').find('.arrow-right').css('display', 'inline-block');
