@@ -2189,7 +2189,11 @@ input.promocode::-webkit-input-placeholder {
 }
 .learning_center .each_tiles {
     position: absolute;
+    cursor: pointer;
     transition: all 0.3s ease;
+}
+.learning_center .each_tiles:hover {
+    transform: scale(1.3, 1.3);
 }
 .learning_center .video-tutorial {
     left: 230px;
@@ -2238,4 +2242,7 @@ input.promocode::-webkit-input-placeholder {
     display: inline-block;
     transition: all 0.5s ease;
     background-image: url('../images/icon_sprite.png');
+}
+.learning_center .transformImage {
+    transform: scale(1.3, 1.3);
 }
