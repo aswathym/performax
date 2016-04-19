@@ -1937,13 +1937,15 @@ input.promocode::-webkit-input-placeholder {
 #exspon_home_page .wheel_wrapper {
     /*background-color: red;*/
 }
+#exspon_home_page .wheel_wrapper .video_img {
+    background-color: rgba(255, 0, 0, 0.3);
+}
 #exspon_home_page .wheel_container {
     padding-top: 25px;
     padding-left: 50px;
 }
 #exspon_home_page .wheel_container img {
     position: absolute;
-
 }
 #exspon_home_page .wheel_container .wheel-details {
     position: absolute;
