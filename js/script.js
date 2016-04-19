@@ -42,7 +42,6 @@ $(document).ready(function() {
         'togglescreen': false
     });
 
-
     $(".dropdown-menu").on('click', 'li a', function() {
         $(".dd_btn").text($(this).text());
         // $(".btn:first-child").val($(this).text());
@@ -53,44 +52,61 @@ $(document).ready(function() {
         fade: true,
         staticState: false
     });
-    $(".area_wheel").on("click", function(e){
+
+    // To hide the Wheel Details Container on clicking outside of the contaier
+    $(document).mouseup(function (e) {
+        if ($('.wheel-details')) {
+            var container = $('.wheel-details');
+            if (!container.is(e.target) && container.has(e.target).length === 0) {
+                container.hide();
+            }
+        }
+    });
+    $('.area_wheel').on('click', function () {
+        $('.wheel_container').find('.wheel-details').css('display', 'inline-block');
+        $('.wheel_container').find('.arrow-right').css('display', 'inline-block');
+    })
+    $(".area_wheel").on("mouseover", function(e){
         e.preventDefault();
-        console.log(e.target.alt);
         var name = e.target.alt;
         $('.mapster_el').attr('src','../images/'+name+'.png');
         $('#home_wheel').attr('src','../images/'+name+'.png');
         if (e.target.alt === 'act') {
             $('.img-center-div').find('.number').css('color', '#2FB2E3');
             $('.img-center-div').find('.number h3').html('5');
+            $('.img-center-div').find('.details').html('Act so Fast');
             $('.wheel-details').css('border-color', '#2FB2E3');
         }
         else if (e.target.alt === 'track') {
             $('.img-center-div').find('.number').css('color', '#6BCBD5');
+            $('.img-center-div').find('.details').html('Track If You Can');
             $('.img-center-div').find('.number h3').html('6');
             $('.wheel-details').css('border-color', '#6BCBD5');
         }
         else if (e.target.alt === 'focus') {
             $('.img-center-div').find('.number').css('color', '#FECA5A');
             $('.img-center-div').find('.number h3').html('1');
+            $('.img-center-div').find('.details').html('Select the Right Organizational Assessment');
             $('.wheel-details').css('border-color', '#FECA5A');
         }
         else if (e.target.alt === 'customize') {
             $('.img-center-div').find('.number').css('color', '#F79032');
             $('.img-center-div').find('.number h3').html('2');
+            $('.img-center-div').find('.details').html('Customize the Beauty of Life');
             $('.wheel-details').css('border-color', '#F79032');
         }
         else if (e.target.alt === 'engage') {
             $('.img-center-div').find('.number').css('color', '#E34A57');
             $('.img-center-div').find('.number h3').html('3');
+            $('.img-center-div').find('.details').html('Engage With Those Who Wants You');
             $('.wheel-details').css('border-color', '#E34A57');
         }
         else if (e.target.alt === 'evaluate') {
             $('.img-center-div').find('.number').css('color', '#0C4B75');
             $('.img-center-div').find('.number h3').html('4');
+            $('.img-center-div').find('.details').html('Evaluate Yourself');
             $('.wheel-details').css('border-color', '#0C4B75');
         }
-        $('.wheel_container').find('.wheel-details').css('display', 'inline-block');
-        $('.wheel_container').find('.arrow-right').css('display', 'inline-block');
     });
     if ($('#create_promo_code_form')) {
         $('.calender').datepicker({
@@ -98,6 +114,34 @@ $(document).ready(function() {
             autoclose: true
         });
     }
+
+    $('#exspon_home_page .customer_says').find('.fa-chevron-left').click(function() {
+        var element = $(this).parent().siblings('ul').find('.active');
+        element.removeClass('active');
+        if (element.prev().length == 0) {
+            element.siblings('li').last().addClass('active');
+        }
+        else {
+            element.prev().addClass('active');
+        }
+    });
+
+
+    $('#exspon_home_page .live_updates .view_more').click(function (event) {
+        event.preventDefault();
+        $('#exspon_home_page .live_updates .updates_wrapper').css('height', 'auto');
+        $('#exspon_home_page .live_updates .view_more').css('display', 'none');
+    })
+    $('#exspon_home_page .customer_says').find('.fa-chevron-right').click(function() {
+        var element = $(this).parent().siblings('ul').find('.active');
+        element.removeClass('active');
+        if (element.next().length == 0) {
+            element.siblings('li').first().addClass('active');
+        }
+        else {
+            element.next().addClass('active');
+        }
+    });
 
     $('#sideMenu a').on('click', function(){
          var count = $(this).next('.collapse').find('a').length;
