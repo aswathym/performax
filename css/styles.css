@@ -310,7 +310,7 @@ header {
     height: 20px;
     width: 20px;
     margin-left: -10px;
-    padding: 3px 5px;
+    padding: 4px 3px;
 }
 .navbar {
     margin-bottom: 0;
@@ -2004,31 +2004,28 @@ input.promocode::-webkit-input-placeholder {
 }
 
 /*Home page*/
-#exspon_home_page .wheel_wrapper {
-    /*background-color: red;*/
+.home_wheel_bg {
+    background-color: #B1B7BE;
 }
-#exspon_home_page .wheel_wrapper .video_img {
-    background-color: rgba(255, 0, 0, 0.3);
-}
-#exspon_home_page .wheel_container {
+#home_wheel_container .wheel_container {
     padding-top: 25px;
-    padding-left: 50px;
+    padding-left: 100px;
 }
-#exspon_home_page .wheel_container img {
+#home_wheel_container .wheel_container img {
     position: absolute;
 }
-#exspon_home_page .wheel_container .wheel-details {
+#home_wheel_container .wheel_container .wheel-details {
     position: absolute;
     width: 400px;
     height: 400px;
     background-color: #EAEAEB;
-    left: -420px;
+    left: -370px;
     padding: 20px 15px;
     display: none;
     box-shadow: 0px 0px 6px 0px rgba(125, 125, 125, 1);
     border-left: 5px solid #FECA5A;
 }
-#exspon_home_page .wheel_container .wheel-details:after {
+#home_wheel_container .wheel_container .wheel-details:after {
     content: '';
     display: inline-block;
     position: absolute;
@@ -2040,27 +2037,27 @@ input.promocode::-webkit-input-placeholder {
 	border-bottom: 200px solid transparent;
 	border-left: 70px solid #EAEAEB;
 }
-#exspon_home_page .wheel-details div {
+#home_wheel_container .wheel-details div {
     padding: 2px 10px;
 }
-#exspon_home_page .wheel-details ul li {
+#home_wheel_container .wheel-details ul li {
     list-style-type: none;
     margin-bottom: 10px;
     line-height: 1.5
 }
-#exspon_home_page .wheel_container .img-center-div {
+#home_wheel_container .wheel_container .img-center-div {
     display: inline-block;
     width: 26%;
     height: 25%;
     position: absolute;
-    left: 32%;
+    left: 41%;
     top: 40%;
     text-align: center;
 }
-#exspon_home_page .img-center-div .number {
+#home_wheel_container .img-center-div .number {
     color: #FECA5A;
 }
-#exspon_home_page .wheel_container .arrow-right {
+#home_wheel_container .wheel_container .arrow-right {
     display: none;
     position: absolute;
     left: -20px;
@@ -2138,7 +2135,7 @@ input.promocode::-webkit-input-placeholder {
     padding-left: 100px;
 }
 #exspon_home_page .updates_wrapper {
-    height: 232px;
+    height: 305px;
     overflow-y: hidden;
     transition: all 0.3s ease;
 }
@@ -2152,9 +2149,9 @@ input.promocode::-webkit-input-placeholder {
     text-decoration: underline;
 }
 #exspon_home_page .updates {
-    line-height: 1.6;
+    line-height: 1.7;
     list-style-type: none;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 #exspon_home_page .updates img {
     width: 60px;
