@@ -2173,6 +2173,9 @@ input.promocode::-webkit-input-placeholder {
 #exspon_home_page .customer_says .details {
     margin-bottom: 9px;
 }
+#exspon_home_page .customer_says .slider img {
+    width: 120px;
+}
 #exspon_home_page .customer_says .slider {
     margin-top: 10px;
     transition: all 1s ease-in;
