@@ -2272,3 +2272,16 @@ input.promocode::-webkit-input-placeholder {
 #AA_details_page .bg-white {
     box-shadow: 0px 0px 1px 0px rgba(125, 125, 125, 0.7);
 }
+#AA_details_page .blue_border_button {
+    color: #2C88CE;
+    background-color: #fff;
+    border-style: none;
+    border: 1px solid #92CEEE;
+    border-radius: 6px;
+    font-size: 14px;
+    position: relative;
+}
+#AA_details_page .edit_button {
+    margin-right: 30px;
+    padding: 6px 25px;
+}

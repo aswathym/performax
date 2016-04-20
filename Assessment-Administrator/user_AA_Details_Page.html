@@ -128,16 +128,48 @@
                 <div class="bg-white">
                     <nav class="navbar">
                         <ul class="nav nav-tabs bg-white" id="tab_header">
-                            <li class="active"><a href="#" aria-controls="login-cnt" role="tab" data-toggle="tab">Nominate Expert Panels</a></li>
-                            <li><a href="#" aria-controls="exSpon_Questionnaire" role="tab" data-toggle="tab">Approve Questionnaire</a></li>
-                            <li><a href="#" aria-controls="under_work" role="tab" data-toggle="tab">Approve Assessors</a></li>
-                            <li><a href="#" aria-controls="exSpon_Configurator" role="tab" data-toggle="tab">Select Ideas for Action</a></li>
-                            <li><a href="#" aria-controls="exSpon_ExportPanelMembers" role="tab" data-toggle="tab">Access Key Persons Accountable</a></li>
-                            <li><a href="#" aria-controls="under_work" role="tab" data-toggle="tab">Track Ideas For Action</a></li>
+                            <li class="active"><a href="#nominateExpertPanels" aria-controls="nominateExpertPanels" role="tab" data-toggle="tab">Nominate Expert Panels</a></li>
+                            <li><a href="#under_work" aria-controls="under_work" role="tab" data-toggle="tab">Approve Questionnaire</a></li>
+                            <li><a href="#under_work" aria-controls="under_work" role="tab" data-toggle="tab">Approve Assessors</a></li>
+                            <li><a href="#under_work" aria-controls="under_work" role="tab" data-toggle="tab">Select Ideas for Action</a></li>
+                            <li><a href="#under_work" aria-controls="under_work" role="tab" data-toggle="tab">Access Key Persons Accountable</a></li>
+                            <li><a href="#under_work" aria-controls="under_work" role="tab" data-toggle="tab">Track Ideas For Action</a></li>
                         </ul>
                     </nav>
                     <div class="tab-content container">
-                        Hai
+                        <div id="nominateExpertPanels" class=" tab-pane active" role="tabpanel">
+                            <div class="heading">
+                                <h4 class="col-md-6">Nominate Expert Panel Members</h4>
+                                <span class="col-md-6 text-right"><button type="button" name="button" class="btn btn-sm blue_border_button edit_button">Edit</button></span>
+                            </div>
+                            <div class="col-md-12 margin0">
+                                <div class="" id="exSpon_Configurator_Switch_Tab">
+                                    <nav class="navbar">
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a href="#assessment_design" aria-controls="assessment_design" role="tab" data-toggle="tab">Assessmet Design</a></li>
+                                            <li><a href="#under_construction" aria-controls="" role="tab" data-toggle="tab">Assessor Selection</a></li>
+                                            <li><a href="#under_construction" aria-controls="" role="tab" data-toggle="tab">Action Planning</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="tab-content container">
+                                    <div id="assessment_design" class="tab-pane active col-md-12" role="tabpanel">
+                                        <div class="col-md-4">
+                                            <h5>Expert Panel Member</h5>
+                                        </div>
+                                        <div class="col-md-8">
+                                            Something Else
+                                        </div>
+                                    </div>
+                                    <div id="under_construction" class="tab-pane" role="tabpanel">
+                                        Under Work going on
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="under_work" class="tab-pane" role="tabpanel">
+                            Under Construction
+                        </div>
                     </div>
                 </div>
             </div>
