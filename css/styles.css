@@ -1391,6 +1391,11 @@ input.promocode::-webkit-input-placeholder {
 .subscription_status .details {
     line-height: 1.5;
     margin-top: 10px;
+    font-size: 14px;
+}
+.subscription_status .status_and_price h3 span {
+    color: #2C88CE;
+    font-weight: bold;
 }
 .subscription_status .status_and_price h5 span {
     font-size: 15px;
