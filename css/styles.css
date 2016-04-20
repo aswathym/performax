@@ -1046,6 +1046,9 @@ footer.footer {
 #es_finance_accounting .add_user input {
     width: 60%;
 }
+#es_finance_accounting .purchase_assessment .checkbox label:after {
+    padding-top: 3px;
+}
 
 /* ES - challenge mapper */
 .remove_field {
