@@ -59,6 +59,9 @@ header {
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 10px;
 }
+.error {
+    color: #D13F2D;
+}
 .maroon_color {
     color: #6B2B2C;
 }

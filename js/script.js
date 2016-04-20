@@ -153,8 +153,6 @@ $(document).ready(function() {
             element.prev().addClass('active');
         }
     });
-
-
     $('#exspon_home_page .live_updates .view_more').click(function (event) {
         event.preventDefault();
         $('#exspon_home_page .live_updates .updates_wrapper').css('height', 'auto');
@@ -170,7 +168,6 @@ $(document).ready(function() {
             element.next().addClass('active');
         }
     });
-
     $('#sideMenu a').on('click', function(){
          var count = $(this).next('.collapse').find('a').length;
          if(count > 1) {
@@ -286,8 +283,21 @@ $(document).ready(function() {
         }
     })
 
+    $('.btn-newsletter').click(function() {
+        var email = $('.newsletter-text').val();
+        if(checkEmpty(email) == true) {
+            $('.error-newsletter').html('Email field should not be Empty');
+        }
+        else if (validateEmail(email) == false) {
+            $('.error-newsletter').html('The Email address is not valid.');
+        }
+        else {
+            alert('Email successfully registered');
+        }
+    })
+
     function checkEmpty(item) {
-        return item === '' ? true : false;
+        return item === '' || item === undefined ? true : false;
     }
 
     function validateEmail(email) {
