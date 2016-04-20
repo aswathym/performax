@@ -1319,6 +1319,7 @@ input.promocode::-webkit-input-placeholder {
 }
 .create-profile .form-content input[type="text"], .create-profile .form-content input[type="password"], .create-profile select, .create-profile input[type='tel'] {
     width: 50%;
+    height: 30px;
     float: none;
     margin-bottom: 15px;
 }
@@ -1392,6 +1393,12 @@ input.promocode::-webkit-input-placeholder {
     line-height: 1.5;
     margin-top: 10px;
     font-size: 14px;
+}
+.subscription_status .details .checkbox label:after{
+    padding-top: 0px;
+    padding-right: 2px;
+    padding-left: 2px;
+    font-size: 12px;
 }
 .subscription_status .status_and_price h3 span {
     color: #2C88CE;
@@ -1756,6 +1763,9 @@ input.promocode::-webkit-input-placeholder {
     color: #A7A1A1;
     font-size: 15px;
 }
+.pending_task_heading.challenge_box>.col-md-4>div, .pending_task_heading>.col-md-3>div{
+    font-size: 16px;
+}
 .pending_task_heading.challenge_box>.col-md-4>span, .pending_task_heading>.col-md-3>span{
     font-size: 14px !important;
     color: #999999;
@@ -1769,8 +1779,11 @@ input.promocode::-webkit-input-placeholder {
      margin-top: 20px;
  }
 .pending_task_heading.challenge_box>.col-md-2>a>span {
-    font-size: 18px;
+    font-size: 16px;
     color: #2787AF;
+}
+.pending_task_heading.challenge_box>.col-md-4 {
+    color: #09A6D0;
 }
 /*exSpon_DetailsPage_Configurator_Branding*/
 
