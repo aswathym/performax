@@ -1397,7 +1397,6 @@ input.promocode::-webkit-input-placeholder {
 }
 .bg-white .cart_box {
     background-color: transparent;
-    /*box-shadow: none;*/
 }
 .cart_heading span:before {
     content: '(';
