@@ -63,7 +63,7 @@
                         </h1>
                     <nav class="navbar pull-right" id="header_nav_tabs">
                         <ul class="nav nav-tabs">
-                            <li role="presentation"  class="active"><a href="user_ExSpon_ProductListing.html">Home</a></li>
+                            <li role="presentation" class="active"><a href="user_ExSpon_ProductListing.html">Home</a></li>
                             <li role="presentation"><a href="exSpon_MyAssessment.html">My Assessments</a></li>
                             <li role="presentation"><a href="user_ExSpon_PendingTask.html">Pending Tasks</a></li>
                             <li role="presentation"><a href="#">Results & Reports</a></li>
@@ -75,11 +75,14 @@
             </div>
     </div>
     </header>
-    <section class="container padding0" id="exspon_home_page">
+    <div class="home_wheel_bg" id="home_wheel_container">
         <div class="container">
             <div class="col-md-12 wheel_wrapper">
                 <div class="col-md-6">
                     <img src="../images/ES_img1.png" alt="" class="video_img" />
+                    <h5 class="text-center over_text">
+                        Watch a Short (2:00 minute) Video on how to conduct a 360 assessment with Performax360.
+                    </h5>
                 </div>
                 <div class="col-md-6 wheel_container">
                     <div class="wheel-details">
@@ -96,7 +99,7 @@
                             </ul>
                         </div>
                     </div>
-                    <img src="../images/focus.png" alt="" width="400px" usemap="#wheelmap" id="home_wheel"/>
+                    <img src="../images/focus.png" alt="" width="400px" usemap="#wheelmap" id="home_wheel" />
                     <div class="img-center-div">
                         <div class="number">
                             <h3>1</h3>
@@ -106,15 +109,19 @@
                         </div>
                     </div>
                     <map name="wheelmap" id="wheelmap">
-                        <area alt="focus" title="" href="#" shape="poly" coords="100,27,111,20,121,15,138,10,156,5,172,2,191,0,203,0,216,0,229,2,246,6,259,8,275,15,290,22,300,26,248,115,152,115" class="area_wheel"/>
-                        <area alt="customize" title="" href="#" shape="poly" coords="247,116,300,27,312,34,323,42,335,52,346,63,358,76,367,90,376,105,383,120,387,131,392,142,395,156,397,168,399,179,399,199,296,200"  class="area_wheel"/>
-                        <area alt="engage" title="" href="#" shape="poly" coords="298,201,249,284,300,372,323,360,346,339,368,311,385,278,396,247,400,202" class="area_wheel"/>
-                        <area alt="evaluate" title="" href="#" shape="poly" coords="152,284,248,284,300,372,286,381,258,390,233,397,219,398,179,398,151,394,129,388,119,382,108,377,101,374" class="area_wheel"/>
-                        <area alt="act" title="" href="#" shape="poly" coords="0,201,0,218,1,230,6,251,12,269,19,287,30,307,42,324,54,338,66,349,76,359,85,365,99,373,151,285,103,201" class="area_wheel"/>
-                        <area alt="track" title="" href="#" shape="poly" coords="99,27,153,116,104,200,1,200,1,179,5,160,11,135,25,104,44,75,65,53"  class="area_wheel"/>
+                        <area alt="focus" title="" href="#" shape="poly" coords="100,27,111,20,121,15,138,10,156,5,172,2,191,0,203,0,216,0,229,2,246,6,259,8,275,15,290,22,300,26,248,115,152,115" class="area_wheel" />
+                        <area alt="customize" title="" href="#" shape="poly" coords="247,116,300,27,312,34,323,42,335,52,346,63,358,76,367,90,376,105,383,120,387,131,392,142,395,156,397,168,399,179,399,199,296,200" class="area_wheel" />
+                        <area alt="engage" title="" href="#" shape="poly" coords="298,201,249,284,300,372,323,360,346,339,368,311,385,278,396,247,400,202" class="area_wheel" />
+                        <area alt="evaluate" title="" href="#" shape="poly" coords="152,284,248,284,300,372,286,381,258,390,233,397,219,398,179,398,151,394,129,388,119,382,108,377,101,374" class="area_wheel" />
+                        <area alt="act" title="" href="#" shape="poly" coords="0,201,0,218,1,230,6,251,12,269,19,287,30,307,42,324,54,338,66,349,76,359,85,365,99,373,151,285,103,201" class="area_wheel" />
+                        <area alt="track" title="" href="#" shape="poly" coords="99,27,153,116,104,200,1,200,1,179,5,160,11,135,25,104,44,75,65,53" class="area_wheel" />
                     </map>
                 </div>
             </div>
+        </div>
+    </div>
+    <section class="container padding0" id="exspon_home_page">
+        <div class="container">
             <div class="col-md-12 marginTop20">
                 <div class="col-md-6 box-shadow-styling-light span6 span3 tiles customer_says">
                     <h4 class="margin0">What our Customers have to Say</h4>
@@ -126,7 +133,7 @@
                                 <h6><b>CEO, ABC Global</b></h6>
                             </span>
                             <div class="text-center grey_color col-md-12 padding10 details">
-                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
+                                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore."
                             </div>
                         </li>
                         <li class="text-center slider">
@@ -231,14 +238,14 @@
                 </div>
                 <div class="col-md-6 box-shadow-styling-light span6 span3 tiles learning_center">
                     <h4 class="margin0">Learning Center</h4>
-                    <div class="col-md-12 text-left padding10">
-                        <img src="../images/learning center1.png" alt="" usemap="#learningmap" id="learning_wheel"/>
+                    <div class="col-md-12 padding10 marginTop20">
+                        <img src="../images/learning center1.png" alt="" usemap="#learningmap" id="learning_wheel" />
                         <map name="learningmap" id="learningmap">
-                            <area alt="video" shape="circle" coords="123,27,12" href="#" class="learning_section"/>
-                            <area alt="brochures" shape="circle" coords="177,84,12" href="#"  class="learning_section"/>
-                            <area alt="live" shape="circle" coords="194,160,12" href="#"  class="learning_section"/>
-                            <area alt="webinars" shape="circle" coords="170,233,12" href="#"  class="learning_section"/>
-                            <area alt="papers" shape="circle" coords="117,286,12" href="#"  class="learning_section"/>
+                            <area alt="video" shape="circle" coords="123,27,12" href="#" class="learning_section" />
+                            <area alt="brochures" shape="circle" coords="177,84,12" href="#" class="learning_section" />
+                            <area alt="live" shape="circle" coords="194,160,12" href="#" class="learning_section" />
+                            <area alt="webinars" shape="circle" coords="170,233,12" href="#" class="learning_section" />
+                            <area alt="papers" shape="circle" coords="117,286,12" href="#" class="learning_section" />
                         </map>
                     </div>
                     <div class="img-container">
@@ -273,10 +280,10 @@
                         CONTACT DETAILS
                     </h5>
                     <ul>
-                        <li>Performax Inc</li>
-                        <li>3790 El Camino Real</li>
-                        <li>Palo Alto, CA 94306</li>
-                        <li>USA</li>
+                        <li><a href="#">Performax Inc</a></li>
+                        <li><a href="#">3790 El Camino Real</a></li>
+                        <li><a href="#">Palo Alto, CA 94306</a></li>
+                        <li><a href="#">USA</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 contact_us">
@@ -285,10 +292,10 @@
                         CONTACT US
                     </h5>
                     <ul>
-                        <li>Live Chat</li>
-                        <li>Technical Support</li>
-                        <li>Free Consultation</li>
-                        <li>Email Us</li>
+                        <li><a href="#">Live Chat</a></li>
+                        <li><a href="#">Technical Support</a></li>
+                        <li><a href="#">Free Consultation</a></li>
+                        <li><a href="#">Email Us</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 help">
@@ -297,10 +304,10 @@
                         HELP
                     </h5>
                     <ul>
-                        <li>FAQ</li>
-                        <li>Learning Center</li>
-                        <li>Customer Support</li>
-                        <li>Contact Us</li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Learning Center</a></li>
+                        <li><a href="#">Customer Support</a></li>
+                        <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -313,11 +320,11 @@
                         <button class="btn btn-info" type="button">SUBMIT</button>
                     </span>
                 </div>
-                <div class="follow_us">
+                <div class="follow_us col-md-12">
                     <h6><b>Follow us</b></h6>
-                    <span class="facebook"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></span>
-                    <span class="twitter"><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></span>
-                    <span class="google-plus"><i class="fa fa-google-plus-square fa-4x" aria-hidden="true"></i></span>
+                    <span class="facebook col-md-2"><a href="#"><i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i></a></span>
+                    <span class="twitter col-md-2"><a href="#"><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></a></span>
+                    <span class="google-plus col-md-2"><a href="#"><i class="fa fa-google-plus-square fa-4x" aria-hidden="true"></i></a></span>
                 </div>
             </div>
         </div>

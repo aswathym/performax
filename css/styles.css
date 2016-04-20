@@ -310,7 +310,7 @@ header {
     height: 20px;
     width: 20px;
     margin-left: -10px;
-    padding: 3px 5px;
+    padding: 4px 3px;
 }
 .navbar {
     margin-bottom: 0;
@@ -654,6 +654,13 @@ footer a {
     list-style-type: none;
     line-height: 1.5;
 }
+#home_footer_container ul li a {
+    color: #fff;
+}
+#home_footer_container ul li a:hover {
+    text-decoration: none;
+    color: #aaa;
+}
 #home_footer_container .details h5 {
     color: #69CFDA;
 }
@@ -666,16 +673,13 @@ footer a {
 #home_footer_container .follow_us, #home_footer_container .input-group {
     padding: 15px 0px;
 }
-#home_footer_container .follow_us span {
-    margin-right: 10px;
-}
-#home_footer_container .follow_us .facebook {
+#home_footer_container .follow_us .facebook a {
     color: #395797;
 }
-#home_footer_container .follow_us .twitter {
+#home_footer_container .follow_us .twitter a {
     color: #6ACFF4;
 }
-#home_footer_container .follow_us .google-plus {
+#home_footer_container .follow_us .google-plus a {
     color: #D13F2D;
 }
 .thumbnail {
@@ -1999,31 +2003,36 @@ input.promocode::-webkit-input-placeholder {
 }
 
 /*Home page*/
-#exspon_home_page .wheel_wrapper {
-    /*background-color: red;*/
+.home_wheel_bg {
+    background-color: #B1B7BE;
 }
-#exspon_home_page .wheel_wrapper .video_img {
-    background-color: rgba(255, 0, 0, 0.3);
-}
-#exspon_home_page .wheel_container {
+#home_wheel_container .wheel_container {
     padding-top: 25px;
-    padding-left: 50px;
+    padding-left: 100px;
 }
-#exspon_home_page .wheel_container img {
+#home_wheel_container .wheel_wrapper .over_text {
+    position: absolute;
+    bottom: -9px;
+    background-color: rgba(0, 0, 0, 0.8);;
+    color: #fff;
+    padding: 15px 40px;
+    width: 104%;
+}
+#home_wheel_container .wheel_container img {
     position: absolute;
 }
-#exspon_home_page .wheel_container .wheel-details {
+#home_wheel_container .wheel_container .wheel-details {
     position: absolute;
     width: 400px;
     height: 400px;
     background-color: #EAEAEB;
-    left: -420px;
+    left: -370px;
     padding: 20px 15px;
     display: none;
     box-shadow: 0px 0px 6px 0px rgba(125, 125, 125, 1);
     border-left: 5px solid #FECA5A;
 }
-#exspon_home_page .wheel_container .wheel-details:after {
+#home_wheel_container .wheel_container .wheel-details:after {
     content: '';
     display: inline-block;
     position: absolute;
@@ -2035,27 +2044,27 @@ input.promocode::-webkit-input-placeholder {
 	border-bottom: 200px solid transparent;
 	border-left: 70px solid #EAEAEB;
 }
-#exspon_home_page .wheel-details div {
+#home_wheel_container .wheel-details div {
     padding: 2px 10px;
 }
-#exspon_home_page .wheel-details ul li {
+#home_wheel_container .wheel-details ul li {
     list-style-type: none;
     margin-bottom: 10px;
     line-height: 1.5
 }
-#exspon_home_page .wheel_container .img-center-div {
+#home_wheel_container .wheel_container .img-center-div {
     display: inline-block;
     width: 26%;
     height: 25%;
     position: absolute;
-    left: 32%;
+    left: 41%;
     top: 40%;
     text-align: center;
 }
-#exspon_home_page .img-center-div .number {
+#home_wheel_container .img-center-div .number {
     color: #FECA5A;
 }
-#exspon_home_page .wheel_container .arrow-right {
+#home_wheel_container .wheel_container .arrow-right {
     display: none;
     position: absolute;
     left: -20px;
@@ -2133,7 +2142,7 @@ input.promocode::-webkit-input-placeholder {
     padding-left: 100px;
 }
 #exspon_home_page .updates_wrapper {
-    height: 232px;
+    height: 305px;
     overflow-y: hidden;
     transition: all 0.3s ease;
 }
@@ -2147,9 +2156,9 @@ input.promocode::-webkit-input-placeholder {
     text-decoration: underline;
 }
 #exspon_home_page .updates {
-    line-height: 1.6;
+    line-height: 1.7;
     list-style-type: none;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 #exspon_home_page .updates img {
     width: 60px;
@@ -2196,34 +2205,35 @@ input.promocode::-webkit-input-placeholder {
 }
 .learning_center .video-tutorial {
     left: 230px;
+    top: 60px;
 }
 .learning_center .video-tutorial .scale-img {
     background-position: 125px 0px;
 }
 .learning_center .brochures {
     left: 270px;
-    top: 100px;
+    top: 120px;
 }
 .learning_center .brochures .scale-img {
     background-position: 330px 0px;
 }
 .learning_center .live-demo {
     left: 290px;
-    top: 180px;
+    top: 200px;
 }
 .learning_center .live-demo .scale-img {
     background-position: 60px 0px;
 }
 .learning_center .webinars {
     left: 270px;
-    top: 260px;
+    top: 280px;
 }
 .learning_center .webinars .scale-img {
     background-position: 195px 0px;
 }
 .learning_center .white-papers {
     left: 230px;
-    top: 320px;
+    top: 340px;
 }
 .learning_center .white-papers .scale-img {
     background-position: 260px 0px;

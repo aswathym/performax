@@ -97,7 +97,7 @@ $(document).ready(function() {
     $(".area_wheel").on("mouseover", function(e){
         e.preventDefault();
         var name = e.target.alt;
-        $('.mapster_el').attr('src','../images/'+name+'.png');
+        $('.wheel_container .mapster_el').attr('src','../images/'+name+'.png');
         $('#home_wheel').attr('src','../images/'+name+'.png');
         if (e.target.alt === 'act') {
             $('.img-center-div').find('.number').css('color', '#2FB2E3');
