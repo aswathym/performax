@@ -128,7 +128,7 @@
                     <nav class="navbar details_page_nav">
                         <ul class="nav nav-tabs bg-white" id="tab_header">
                             <li class="active"><a href="#nominateExpertPanels" aria-controls="nominateExpertPanels" role="tab" data-toggle="tab">Nominate Expert Panels</a></li>
-                            <li><a href="#under_work" aria-controls="under_work" role="tab" data-toggle="tab">Approve Questionnaire</a></li>
+                            <li><a href="#approve_Questionnaire" aria-controls="approve_Questionnaire" role="tab" data-toggle="tab">Approve Questionnaire</a></li>
                             <li><a href="#under_work" aria-controls="under_work" role="tab" data-toggle="tab">Approve Assessors</a></li>
                             <li><a href="#under_work" aria-controls="under_work" role="tab" data-toggle="tab">Select Ideas for Action</a></li>
                             <li><a href="#access_key_persons_accountable" aria-controls="under_work" role="tab" data-toggle="tab">Access Key Persons Accountable</a></li>
@@ -136,10 +136,11 @@
                         </ul>
                     </nav>
                     <div class="tab-content">
+                        <!-- Nominate Expert Panels Tab -->
                         <div id="nominateExpertPanels" class=" tab-pane active container" role="tabpanel">
                             <div class="heading">
                                 <h4 class="col-md-6">Nominate Expert Panel Members</h4>
-                                <span class="col-md-6 text-right"><button type="button" name="button" class="btn btn-sm blue_border_button edit_button">Edit</button></span>
+                                <span class="col-md-6 text-right"><button type="button" name="button" class="btn btn-sm blue_border_button edit_button marginTop10">Edit</button></span>
                             </div>
                             <div class="col-md-12 margin0">
                                 <div class="" id="exSpon_Configurator_Switch_Tab">
@@ -148,12 +149,13 @@
                                             <li class="active"><a href="#assessment_design" aria-controls="assessment_design" role="tab" data-toggle="tab">Assessmet Design</a></li>
                                             <li><a href="#under_construction" aria-controls="" role="tab" data-toggle="tab">Assessor Selection</a></li>
                                             <li><a href="#under_construction" aria-controls="" role="tab" data-toggle="tab">Action Planning</a></li>
+                                            <span class="pull-right"><img src="../images/assessment_configurator.png" alt="" width="75px;" /></span>
                                         </ul>
                                     </nav>
                                 </div>
                                 <div class="tab-content">
                                     <div id="assessment_design" class="tab-pane active col-md-12 padding0" role="tabpanel">
-                                        <div class="col-md-4 padding10 marginTop20 box-shadow-styling-light">
+                                        <div class="col-md-4 padding10 box-shadow-styling-light">
                                             <h4>Expert Panel Member</h4>
                                             <form class="">
                                                 <span class="form-content">
@@ -178,7 +180,8 @@
                                             </form>
                                         </div>
                                         <div class="col-md-8 marginTop10">
-                                            <h4>Expert Panel Member List - Assessment Design</h4>
+                                            <h4>Expert Panel Member List - Assessment Design
+                                            </h4>
                                             <div class="box-shadow-styling-light col-md-12 padding20">
                                                 <span class="col-md-4">
                                                     <h4><a href="#" class="light_blue_color">Adam Pine</a></h4>
@@ -198,12 +201,31 @@
                                             </div>
                                         </div>
                                     </div>
+
                                     <div id="under_construction" class="tab-pane" role="tabpanel">
                                         Under Work going on
                                     </div>
                                 </div>
                             </div>
                         </div>
+                         <!-- Approve Questionnaire Tab -->
+                         <div id="approve_Questionnaire" class="tab-pane" role="tabpanel">
+                             <div class="container">
+                                 <div class="col-md-12">
+                                     <span class="col-md-2 padding0 text-center">
+                                         <h3>16</h3>
+                                         Recommended CSF's
+                                     </span>
+                                     <span class="col-md-5 col-md-offset-2 text-center">
+                                         <h5>The following list of CSF's are included in the assessment questionnaire as of 03.28.2016</h5>
+                                     </span>
+                                     <span class="col-md-3">
+                                         <button type="button" name="button" class="btn btn-info">Approve</button>
+                                         <button type="button" name="button" class="btn btn-info">Reject</button>
+                                     </span>
+                                 </div>
+                             </div>
+                         </div>
                          <!-- Access key persons accountable tab -->
                         <div id="access_key_persons_accountable" class=" tab-pane " role="tabpanel">
                             <div class="bg-white box-shadow-styling margin0">
