@@ -241,7 +241,7 @@ header {
 
 .container {
     font-family: 'Roboto-Regular';
-    font-size: 13px;
+    font-size: 14px;
 }
 .nav-tabs {
     border: 0;
@@ -1567,7 +1567,7 @@ input.promocode::-webkit-input-placeholder {
     text-align: center;
 }
 #exSpon_Details .descrption_ul li {
-    line-height: 3;
+    line-height: 1.5;
 }
 #exSpon_Details .configure_assessment {
     margin-top: 30px;
@@ -1595,7 +1595,7 @@ input.promocode::-webkit-input-placeholder {
 }
 #exSpon_Configurator_Switch_Tab .nav-tabs li a {
     color: #AAA9A9;
-    font-size: 13px;
+    font-size: 14px;
 }
 #exSpon_Configurator_Switch_Tab .nav-tabs .active a {
     color: black;
@@ -2364,6 +2364,7 @@ input.promocode::-webkit-input-placeholder {
 .rating_CSF {
     padding-top: 0 !important;
 }
+
 .table_content_KPA>h4 {
     margin-left: 15px;
     margin-top: 0;
@@ -2416,4 +2417,9 @@ input.promocode::-webkit-input-placeholder {
 }
 .questionnaire_accordion .customized_sub_headings>a {
     text-decoration: none;
+}
+#core_functions_wrapper li .caption *{
+    text-align: center;
+    padding: 2px 12px;
+    list-style-type: none;
 }
