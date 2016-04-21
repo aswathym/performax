@@ -305,12 +305,15 @@ $(document).ready(function() {
     $('.btn-newsletter').click(function() {
         var email = $('.newsletter-text').val();
         if(checkEmpty(email) == true) {
+            $('.error-newsletter').removeClass('displayNone');
             $('.error-newsletter').html('Email field should not be Empty');
         }
         else if (validateEmail(email) == false) {
+            $('.error-newsletter').removeClass('displayNone');
             $('.error-newsletter').html('The Email address is not valid.');
         }
         else {
+            $('.error-newsletter').addClass('displayNone');
             alert('Email successfully registered');
         }
     })
