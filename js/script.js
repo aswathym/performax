@@ -302,20 +302,6 @@ $(document).ready(function() {
         }
     })
 
-    $('.btn-newsletter').click(function() {
-        var email = $('.newsletter-text').val();
-        if(checkEmpty(email) == true) {
-            $('.error-newsletter').html('Email field should not be Empty');
-        }
-        else if (validateEmail(email) == false) {
-            $('.error-newsletter').html('The Email address is not valid.');
-        }
-        else {
-            $('.error-newsletter').html('');
-            alert('Email successfully registered');
-        }
-    })
-
     function checkEmpty(item) {
         return item === '' || item === undefined ? true : false;
     }
