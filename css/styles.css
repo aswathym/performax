@@ -60,6 +60,7 @@ header {
     padding: 10px;
 }
 .error {
+    height: 20px;
     color: #D13F2D;
 }
 .maroon_color {
