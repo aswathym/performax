@@ -1151,6 +1151,7 @@ footer.footer {
 .challenge_box>.navbar>ul li a {
     padding: 3px 32px 0px;
     text-align: center;
+    height: 50px;
 }
 #analysis>#core_functions_wrapper li {
     margin: 30px 38px 20px 10px;
@@ -2349,15 +2350,22 @@ input.promocode::-webkit-input-placeholder {
     margin-top: 2px;
     text-align: center;
     color: #6F6F6F;
-    font-size: 15px;
+    font-size: 14px;
 }
-.table_head_KPA div {
+.table_head_KPA>table {
+    margin-bottom: 0;
+}
+.table_head_KPA table>thead>tr>th {
+    padding-top: 0 !important;
+    text-align: center;
+}
+/*.table_head_KPA div {
     border-right: 1px solid #D9D9D9;
 }
 .table_head_KPA>.col-md-3 {
     padding-top: 10px;
     height: 41px;
-}
+}*/
 .table_content_KPA {
     background-color: #FBFBFB;
 }
@@ -2371,7 +2379,6 @@ input.promocode::-webkit-input-placeholder {
     padding-top: 15px;
 }
 .table_row_KPA {
-    padding: 5px;
     background-color: #FDFDFD;
     margin-left: 15px;
     margin-right: 15px;
@@ -2422,4 +2429,10 @@ input.promocode::-webkit-input-placeholder {
     text-align: center;
     padding: 2px 12px;
     list-style-type: none;
+}
+
+/* EPM Assessments*/
+.your_selection {
+    padding: 20px;
+    font-size: 16px;
 }
