@@ -241,7 +241,7 @@ header {
 
 .container {
     font-family: 'Roboto-Regular';
-    font-size: 13px;
+    font-size: 14px;
 }
 .nav-tabs {
     border: 0;
@@ -293,6 +293,9 @@ header {
 }
 .bg_transparent {
     background-color: transparent;
+}
+.borderRight {
+    border-right: 1px solid #EAEAEA;
 }
 #header_nav_tabs {
     font-size: 13px;
@@ -1564,7 +1567,7 @@ input.promocode::-webkit-input-placeholder {
     text-align: center;
 }
 #exSpon_Details .descrption_ul li {
-    line-height: 3;
+    line-height: 1.5;
 }
 #exSpon_Details .configure_assessment {
     margin-top: 30px;
@@ -1592,7 +1595,7 @@ input.promocode::-webkit-input-placeholder {
 }
 #exSpon_Configurator_Switch_Tab .nav-tabs li a {
     color: #AAA9A9;
-    font-size: 13px;
+    font-size: 14px;
 }
 #exSpon_Configurator_Switch_Tab .nav-tabs .active a {
     color: black;
@@ -2058,6 +2061,9 @@ input.promocode::-webkit-input-placeholder {
     box-shadow: 0px 0px 6px 0px rgba(125, 125, 125, 1);
     border-left: 5px solid #FECA5A;
 }
+#home_wheel_container .wheel_container .wheel-details li {
+    list-style-type: none;
+}
 #home_wheel_container .wheel_container .wheel-details:after {
     content: '';
     display: inline-block;
@@ -2088,7 +2094,28 @@ input.promocode::-webkit-input-placeholder {
     text-align: center;
 }
 #home_wheel_container .img-center-div .number {
+    padding: 0;
+}
+#home_wheel_container .img-center-div .number li:nth-child(1) h3 {
     color: #FECA5A;
+}
+#home_wheel_container .img-center-div .number li:nth-child(2) h3 {
+    color: #F79032;
+}
+#home_wheel_container .img-center-div .number li:nth-child(3) h3 {
+    color: #E34A57;
+}
+#home_wheel_container .img-center-div .number li:nth-child(4) h3 {
+    color: #0C4B75;
+}
+#home_wheel_container .img-center-div .number li:nth-child(5) h3 {
+    color: #2FB2E3;
+}
+#home_wheel_container .img-center-div .number li:nth-child(6) h3 {
+    color: #6BCBD5;
+}
+#home_wheel_container .img-center-div .number li {
+    list-style-type: none;
 }
 #home_wheel_container .wheel_container .arrow-right {
     display: none;
@@ -2312,4 +2339,29 @@ input.promocode::-webkit-input-placeholder {
 #AA_details_page .edit_button {
     margin-right: 30px;
     padding: 6px 25px;
+}
+.KPA_assigned {
+    font-size: 15px;
+    color: #484747;
+}
+.table_head_KPA {
+    background-color: #E6E6E6;
+    margin-top: 2px;
+    text-align: center;
+    color: #6F6F6F;
+    font-size: 15px;
+}
+.table_head_KPA div {
+    border-right: 1px solid #D9D9D9;
+}
+.table_head_KPA>.col-md-3 {
+    padding-top: 10px;
+    height: 41px;
+}
+.table_content_KPA {
+    padding-left: 15px;
+    background-color: #FBFBFB;
+}
+.rating_CSF {
+    padding-top: 0 !important;
 }
