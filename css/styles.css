@@ -325,9 +325,10 @@ header {
     margin-bottom: 0;
     padding-top: 20px;
 }
-.nav>li>a {
+.navbar .nav>li>a {
     padding: 17px 9px 15px;
     font-family: 'Roboto-Regular';
+    font-size: 14px;
 }
 .nav>li {
     border-bottom: 3px solid transparent;
@@ -342,7 +343,7 @@ header {
 }
 .nav-tabs>li.active>a {
     color: #E53333;
-    border: 1px solid transparent;
+    border: 1px solid transparent !important;
     background-color: white;
     font-weight: bold;
     cursor: pointer;
@@ -548,10 +549,10 @@ input[type="checkbox"] {
     color: #888;
 }
 .rating {
-    width: 110px;
+    width:auto;
     background-color: #EAEAEA;
     border-radius: 17px;
-    padding-left: 1px;
+    padding: 0px;
 }
 .form-element>.btn-group>button {
     width: 100%;
@@ -812,7 +813,7 @@ span.price:before {
     content: ':';
 }
 h1 {
-    font-size: 0;
+    font-size: 0 !important;
     margin: 10px 0 0;
 }
 .scrollable {
@@ -1018,10 +1019,18 @@ h1 {
 #login .form-content label, .form-content label {
     width: 30%;
 }
-.form-content input[type="text"], .form-content input[type="password"], .form-content input[type="tel"] {
+.form-content input{
     width: 60%;
     border: 2px solid #dedede;
     padding: 2px;
+}
+.form-content .row{
+    padding:5px 0;
+    position:relative;
+}
+.k-widget.k-tooltip-validation{
+    position:absolute;
+    min-width:200px;
 }
 .remember-txt {
     padding: 10px 49px 0 57px;
