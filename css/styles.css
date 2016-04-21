@@ -1878,10 +1878,12 @@ input.promocode::-webkit-input-placeholder {
 }
 #core_functions_wrapper li .cart_box {
     margin: 0;
+    background-color: white;
 }
 #core_functions_wrapper .cart_item {
     width: auto;
     height: auto;
+    box-shadow: 0px 0px 5px 0px #787878;
 }
 .search-sect{
     position: absolute;
