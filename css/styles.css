@@ -2365,3 +2365,8 @@ input.promocode::-webkit-input-placeholder {
 .rating_CSF {
     padding-top: 0 !important;
 }
+#core_functions_wrapper li .caption *{
+    text-align: center;
+    padding: 2px 12px;
+    list-style-type: none;
+}
