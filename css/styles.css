@@ -68,6 +68,9 @@ header {
 .grey_color {
     color: rgba(80, 89, 80, 0.8);
 }
+.light_blue_color {
+    color: #55BADA;
+}
 .dropdown_select {
     background: white;
     padding: 5px 25px 5px 5px;
@@ -255,6 +258,9 @@ header {
 .padding10 {
     padding: 10px;
 }
+.padding20 {
+    padding: 20px;
+}
 .padding30 {
     padding: 30px;
 }
@@ -293,9 +299,6 @@ header {
 }
 .bg_transparent {
     background-color: transparent;
-}
-.borderRight {
-    border-right: 1px solid #EAEAEA;
 }
 #header_nav_tabs {
     font-size: 13px;
@@ -2340,28 +2343,9 @@ input.promocode::-webkit-input-placeholder {
     margin-right: 30px;
     padding: 6px 25px;
 }
-.KPA_assigned {
-    font-size: 15px;
-    color: #484747;
+#assessment_design .form-content {
+    padding: 3px 0px;
 }
-.table_head_KPA {
-    background-color: #E6E6E6;
-    margin-top: 2px;
-    text-align: center;
-    color: #6F6F6F;
-    font-size: 15px;
-}
-.table_head_KPA div {
-    border-right: 1px solid #D9D9D9;
-}
-.table_head_KPA>.col-md-3 {
-    padding-top: 10px;
-    height: 41px;
-}
-.table_content_KPA {
-    padding-left: 15px;
-    background-color: #FBFBFB;
-}
-.rating_CSF {
-    padding-top: 0 !important;
+#assessment_design .form-content label {
+    padding-right: 0;
 }
