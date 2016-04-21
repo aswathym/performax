@@ -1873,6 +1873,16 @@ input.promocode::-webkit-input-placeholder {
     width: 100%;
     clear: both;
 }
+#core_functions_wrapper li .cart_box img {
+    width: 100%;
+}
+#core_functions_wrapper li .cart_box {
+    margin: 0;
+}
+#core_functions_wrapper .cart_item {
+    width: auto;
+    height: auto;
+}
 .search-sect{
     position: absolute;
     right: 25px;
