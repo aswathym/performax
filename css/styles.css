@@ -2567,3 +2567,6 @@ input.promocode::-webkit-input-placeholder {
 .select_assessment_questions .row h4 {
     margin-bottom: 0;
 }
+#core_functions_wrapper li ul li{
+    width: 100%;
+}
