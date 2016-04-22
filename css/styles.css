@@ -480,6 +480,7 @@ header {
     float: right;
     margin-bottom: 30px;
     margin-top: 15px;
+    display: inline-block;
 }
 .button_CSF button {
     padding: 4px 20px;
@@ -781,14 +782,13 @@ a>i {
     float: right;
     margin-top: -5px;
 }
-#sideMenu>div>a>img, #arrow_down_fuctional, #arrow_down_corefunction {
+#sideMenu>div>a>img, #arrow_down_fuctional, #arrow_down_corefunction, .panel_content_CSF .col-md-1>img{
     width: 18px;
     position: absolute;
     right: 0;
     margin-right: 10px;
 }
-div#sideMenu .list-group-item:not(.collapsed) img {
-    transition: all 0.2s linear;
+.panel_content_CSF .analytics_checkbox a:not(.collapsed) .down_arrow_CSF img{
     transform: rotate(180deg);
 }
 footer {
@@ -1697,7 +1697,7 @@ input.promocode::-webkit-input-placeholder {
 }
 .exSpon_details_heading {
     padding-left: 0;
-    margin-left: -30px;
+    margin-left: -20px;
     padding-top: 14px;
 }
 .details_sub_heading {
@@ -2440,13 +2440,13 @@ input.promocode::-webkit-input-placeholder {
 .KPA_assigned_column {
     width: 26%;
 }
-.panel-heading a:after {
+.questionnaire_accordion .panel-heading a:after {
     font-family:'Glyphicons Halflings';
     content:"\e260";
     float: right;
     color: grey;
 }
-.panel-heading a.collapsed:after {
+.questionnaire_accordion .panel-heading a.collapsed:after {
     content:"\e259";
 }
 .questionnaire_accordion {
@@ -2533,6 +2533,7 @@ input.promocode::-webkit-input-placeholder {
 .your_selection {
     padding: 20px;
     font-size: 16px;
+    margin-bottom: 0;
 }
 .epm_assessment_nav>nav {
     padding-left: 0;
@@ -2566,4 +2567,58 @@ input.promocode::-webkit-input-placeholder {
 }
 .select_assessment_questions .row h4 {
     margin-bottom: 0;
+}
+.your_selection>span {
+    display: inline-block;
+    margin: 0;
+    border-bottom: 0px;
+    padding-left: 15px;
+}
+.your_selection>.button_CSF {
+    margin-top: 0px;
+}
+.your_selection>.button_CSF button {
+    padding: 8px 15px;
+}
+.analytics_checkbox>label>a {
+    color: #337ab7;
+}
+.select_assessment_questions .panel-group .panel + .panel {
+    margin-top: 0px;
+}
+.select_assessment_questions .panel-default > .panel-heading {
+    background-color: #fff;
+}
+.panel_content_CSF .col-md-3 button{
+    border: none;
+    border-radius: 5px;
+    background-color: #FFDF7F;
+    color: #A47B00;
+    padding: 6px 8px;
+    font-size: 12px
+}
+.analytics_checkbox> label {
+    display: block;
+}
+.analytics_checkbox> label>a>.col-md-3 {
+    padding: 0;
+}
+.custom_CSF_accordion_content a {
+    color: #838383 !important;
+}
+.add_selected_CSFs {
+    margin: 30px auto;
+}
+.add_selected_CSFs button {
+    padding: 10px;
+}
+.combined_CSF_heading {
+    font-size: 13.8px;
+    padding: 11px 0;
+}
+.custom_CSF_accordion {
+    margin-bottom: 10px !important;
+}
+.edit_delete_CSF img {
+    position: relative !important;
 }
