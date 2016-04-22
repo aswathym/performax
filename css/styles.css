@@ -66,6 +66,9 @@ header {
 .maroon_color {
     color: #6B2B2C;
 }
+.orange_color {
+    color: #F5872D;
+}
 .grey_color {
     color: rgba(80, 89, 80, 0.8);
 }
@@ -91,6 +94,7 @@ header {
 .btn-info {
     background-color: #2C88CE;
     border-color: #1072bd;
+    padding: 5px 25px;
 }
 #view_report input {
     margin-right: 5px;
@@ -1690,17 +1694,16 @@ input.promocode::-webkit-input-placeholder {
 #exSpon_DetailsPage_Configurator_Timeline .duration input {
     width: 20%;
 }
-.details_sub_heading {
-    font-size: 15px;
-    color: #6F6F6F;
-    position: absolute;
-    left: 0;
-    margin-top: 30px;
-}
 .exSpon_details_heading {
     padding-left: 0;
     margin-left: -30px;
     padding-top: 14px;
+}
+.details_sub_heading {
+    padding-top: 0px;
+}
+.details_sub_heading h4{
+    font-size: 19px;
 }
 .view_progress_button {
     float: right;
@@ -2470,5 +2473,47 @@ input.promocode::-webkit-input-placeholder {
 #core_functions_wrapper li .caption *{
     text-align: center;
     padding: 2px 12px;
+    list-style-type: none;
+}
+/*EPMAD_ASSESSOR_SELECTOR*/
+#assessor-selector .select-assessor-group-form .form-content {
+    padding: 0;
+    margin-bottom: 10px;
+}
+#assessor-selector .select-assessor-group-form .form-content label {
+    width: 100%;
+    color: rgba(80, 89, 80, 0.8);
+    text-align: left;
+    margin-bottom: 5px;
+}
+#assessor-selector .select-assessor-group-form .form-content select {
+    width: 80%;
+    font-size: 13px;
+    font-weight: bold;
+}
+#assessor-selector .select-assessor-group-form .form-content input {
+    width: 90%;
+}
+#assessor-selector .select-assessor-group-form .star_rating_div {
+    display: inline-block;
+    width: 40%;
+    margin-left: 20px;
+}
+#assessor-selector .assessor_selection ul {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 37px;
+}
+#assessor-selector .assessor_selection ul li .fa {
+    margin-right: 10px;
+    font-size: 16px;
+}
+#assessor-selector .assessor_selection ul li {
+    list-style-type: none;
+}
+#assessor-selector .assessor_selection ul li .star_rating_div {
+    margin-top: 20px;
+}
+#assessor-selector .combined_epm_selection ul li {
     list-style-type: none;
 }
