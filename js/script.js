@@ -323,7 +323,6 @@ $(document).ready(function() {
         $(this).addClass('active')
     });
 
-
     $("#v-slider").slider({
         orientation: "vertical",
         animate: 'fast',
