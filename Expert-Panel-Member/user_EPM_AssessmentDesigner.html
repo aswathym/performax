@@ -112,105 +112,133 @@
                         </nav>
                         <div class="container tab-content">
                             <div id="analysis_and_insights" class="container-fluid tab-pane active" role="tabpanel">
-                                <div class="button_CSF">
-                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Add new CSF</button>
-                                    <button type="button" name="button" class="btn btn-danger btn-sm">Delete</button>
-                                </div>
-                                <div class="modal fade" id="myModal" role="dialog">
-                                    <div class="modal-dialog">
-                                        <!-- Modal content-->
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h4 class="modal-title">Add new Critical Success Factor</h4>
+                                <div class="select_assessment_questions">
+                                    <div class="row">
+                                        <div class="col-md-7">
+                                            <span><h4>Select Assessment Questions (CSFs)</h4></span>
+                                        </div>
+                                        <div class="col-md-2 text-center">
+                                            <div class="">
+                                                <h4>3</h4>
                                             </div>
-                                            <div class="modal-body">
-                                                <form>
-                                                    <div class="row">
-                                                        <div class="col-md-12">
-                                                            <div class="form-element">
-                                                                <label>CSF Title</label>
-                                                                <input type="text">
+                                            <div class="">
+                                                EP-AD Members
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 text-center">
+                                            <div class="">
+                                                <h4>25</h4>
+                                            </div>
+                                            <div class="">
+                                                Total No of CSFs Selected
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="button_CSF">
+                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Add new CSF</button>
+                                        <button type="button" name="button" class="btn btn-danger btn-sm">Delete</button>
+                                    </div>
+                                    <div class="modal fade add_custom_CSF" id="myModal" role="dialog">
+                                        <div class="modal-dialog">
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">Custom CSF</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="row customCSF_title_desc">
+                                                            <div class="col-md-12">
+                                                                <div class="form-element">
+
+                                                                    <label>CSF Title</label>
+
+                                                                    <input type="text">
+                                                                </div>
+                                                                <div class="form-element">
+                                                                    <label for="">CSF Description</label>
+                                                                    <input type="text" id="CSF_Description">
+                                                                </div>
                                                             </div>
-                                                            <div class="form-element col-md-6">
-                                                                <label for="">CSF Description</label>
-                                                                <input type="text" id="CSF_Description">
-                                                            </div>
-
                                                         </div>
-
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-md-12">
-
-                                                        </div>
-
-                                                        <div class="col-md-6">
-                                                            <div class="form-element">
-                                                                <label for="">CSF rating</label>
-                                                                <div>
-                                                                    <div class="star_rating_div">
-                                                                        <input value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                                        <div class="row">
+                                                            <div class="col-md-7">
+                                                                <div class="form-element">
+                                                                    <label for="">CSF rating</label>
+                                                                    <div>
+                                                                        <div class="star_rating_div">
+                                                                            <input value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                                                        </div>
                                                                     </div>
+
+                                                                </div>
+                                                                <div class="form-element">
+                                                                    <label>CSF Category</label>
+                                                                    <select class="dropdown_select">
+                                                                        <option selected="true" disabled>0</option>
+                                                                        <option>1</option>
+                                                                        <option>2</option>
+                                                                        <option>3</option>
+                                                                        <option>4</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-element">
+                                                                    <label>CSF context</label>
+                                                                    <select class="dropdown_select">
+                                                                        <option selected="true" disabled>0</option>
+                                                                        <option>1</option>
+                                                                        <option>2</option>
+                                                                        <option>3</option>
+                                                                        <option>4</option>
+                                                                    </select>
                                                                 </div>
 
                                                             </div>
-                                                            <div class="form-element">
-                                                                <label>Applicable CSF Context</label>
-                                                                <select class="dropdown_select">
-                                                                    <option selected="true" disabled>0</option>
-                                                                    <option>1</option>
-                                                                    <option>2</option>
-                                                                    <option>3</option>
-                                                                    <option>4</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="form-element">
-                                                                <label>Applicable CSF Category</label>
-                                                                <select class="dropdown_select">
-                                                                    <option selected="true" disabled>0</option>
-                                                                    <option>1</option>
-                                                                    <option>2</option>
-                                                                    <option>3</option>
-                                                                    <option>4</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="form-element">
-                                                                <label for="">Key Performance Indicators 1</label>
-                                                                <input type="text" name="name" value="">
-                                                            </div>
-                                                            <div class="form-element">
-                                                                <label for="">Key Performance Indicators 2</label>
-                                                                <input type="text" name="name" value="">
-                                                            </div>
-                                                            <div class="form-element">
-                                                                <label for="">Ideas for Action 1</label>
-                                                                <input type="text" name="name" value="">
 
+                                                        </div>
+                                                        <div class="row">
+
+                                                            <div class="col-md-7">
+                                                                <div class="form-element">
+                                                                    <label for="">Key Performance Indicators 1</label>
+                                                                    <input type="text" name="name" value="">
+                                                                </div>
+                                                                <div class="form-element">
+                                                                    <label for="">Key Performance Indicators 2</label>
+                                                                    <input type="text" name="name" value="">
+                                                                </div>
+                                                                <div class="form-element">
+                                                                    <label for="">Ideas for Action 1</label>
+                                                                    <input type="text" name="name" value="">
+
+                                                                </div>
+                                                                <div class="form-element">
+                                                                    <label for="">Ideas for Action 1</label>
+                                                                    <input type="text" name="name" value="">
+
+                                                                </div>
                                                             </div>
-                                                            <div class="form-element">
-                                                                <label for="">Ideas for Action 1</label>
-                                                                <input type="text" name="name" value="">
+                                                            <div class="col-md-5">
+                                                                <a>Add from Performax360 Database <span><i class="fa fa-angle-down"></i></span></a>
+                                                                <a>Add from Performax360 Database <span><i class="fa fa-angle-down"></i></span></a>
+                                                                <a>Add from Performax360 Database <span><i class="fa fa-angle-down"></i></span></a>
+                                                                <a>Add from Performax360 Database <span><i class="fa fa-angle-down"></i></span></a>
 
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-6">
-                                                            <a>Add from Performax360 Database <span><i class="fa fa-angle-down"></i></span></a>
-                                                            <a>Add from Performax360 Database <span><i class="fa fa-angle-down"></i></span></a>
-                                                            <a>Add from Performax360 Database <span><i class="fa fa-angle-down"></i></span></a>
-                                                            <a>Add from Performax360 Database <span><i class="fa fa-angle-down"></i></span></a>
+                                                    </form>
+                                                </div>
+                                                <div class="add_CSF_button">
+                                                    <button type="button" class="btn btn-info" data-dismiss="modal">Add to Selected CSFs </button>
+                                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                                                </div>
+                                            </div>
 
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                            <div class="add_CSF_button">
-                                                <button type="button" class="btn btn-info" data-dismiss="modal">Add to Selected CSFs</button>
-                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-                                            </div>
                                         </div>
-
                                     </div>
                                 </div>
+
+
                             </div>
                             <div id="no_display" class="container-fluid tab-pane" role="tabpanel">dsfdsf</div>
                         </div>

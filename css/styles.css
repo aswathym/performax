@@ -582,7 +582,7 @@ input[type="checkbox"] {
     text-align: center;
 }
 .add_CSF_button button {
-    width: 110px;
+    width: 20%;
     margin-right: 20px;
     margin-bottom: 15px;
 }
@@ -2494,4 +2494,27 @@ input.promocode::-webkit-input-placeholder {
 .epm_assessment_nav>nav>ul>li {
     width: 20%;
     text-align: center;
+}
+.add_custom_CSF .modal-dialog {
+    width: 65%;
+}
+.add_custom_CSF_modal .form-element label {
+    text-align: center;
+    float: left;
+}
+ .modal-body .row>.col-md-5> a {
+     display: block;
+     margin-bottom: 27px;
+ }
+.customCSF_title_desc .form-element label {
+    width: 28%;
+}
+.customCSF_title_desc .form-element input {
+    width: 71.5%;
+}
+.select_assessment_questions {
+    margin: auto 40px;
+}
+.select_assessment_questions .row h4 {
+    margin-bottom: 0;
 }
