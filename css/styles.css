@@ -2568,6 +2568,7 @@ input.promocode::-webkit-input-placeholder {
 .select_assessment_questions .row h4 {
     margin-bottom: 0;
 }
+
 .your_selection>span {
     display: inline-block;
     margin: 0;
@@ -2621,4 +2622,10 @@ input.promocode::-webkit-input-placeholder {
 }
 .edit_delete_CSF img {
     position: relative !important;
+}
+#core_functions_wrapper li ul li{
+    width: 100%;
+}
+#liveShortlist .modal-header h4 {
+    font-size: 18px;
 }
