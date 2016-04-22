@@ -71,7 +71,55 @@
                                 <div class="">Total</div>
                             </span>
                             <span class="col-md-1 text-center icon">
-                                <i class="fa fa-pencil fa-2x"></i>
+                                <i class="fa fa-pencil fa-2x"  data-toggle="modal" data-target="#addAssessmentPopup"></i>
+                            </span>
+                            <span class="col-md-1 text-center icon">
+                                <i class="fa fa-shopping-basket fa-2x"></i>
+                            </span>
+                        </li>
+                        <li class="container-fluid list-group-item">
+                            <span class="col-md-3">
+                                <div class=""><b>User Plan 2</b></div>
+                                <div class="">Plan Name</div>
+                            </span>
+                            <span class="col-md-3">
+                                <div class=""><b>50</b></div>
+                                <div class="">No of Users</div>
+                            </span>
+                            <span class="col-md-2">
+                                <div class=""><b>$9.95</b></div>
+                                <div class="">Price / User / Month</div>
+                            </span>
+                            <span class="col-md-2">
+                                <div class=""><b>$5970</b></div>
+                                <div class="">Total</div>
+                            </span>
+                            <span class="col-md-1 text-center icon">
+                                <i class="fa fa-pencil fa-2x"  data-toggle="modal" data-target="#addAssessmentPopup"></i>
+                            </span>
+                            <span class="col-md-1 text-center icon">
+                                <i class="fa fa-shopping-basket fa-2x"></i>
+                            </span>
+                        </li>
+                        <li class="container-fluid list-group-item">
+                            <span class="col-md-3">
+                                <div class=""><b>User Plan 3</b></div>
+                                <div class="">Plan Name</div>
+                            </span>
+                            <span class="col-md-3">
+                                <div class=""><b>50</b></div>
+                                <div class="">No of Users</div>
+                            </span>
+                            <span class="col-md-2">
+                                <div class=""><b>$9.95</b></div>
+                                <div class="">Price / User / Month</div>
+                            </span>
+                            <span class="col-md-2">
+                                <div class=""><b>$5970</b></div>
+                                <div class="">Total</div>
+                            </span>
+                            <span class="col-md-1 text-center icon">
+                                <i class="fa fa-pencil fa-2x"  data-toggle="modal" data-target="#addAssessmentPopup"></i>
                             </span>
                             <span class="col-md-1 text-center icon">
                                 <i class="fa fa-shopping-basket fa-2x"></i>
@@ -95,13 +143,60 @@
                                 <div class="">Total</div>
                             </span>
                             <span class="col-md-1 text-center icon">
-                                <i class="fa fa-pencil fa-2x"></i>
+                                <i class="fa fa-pencil fa-2x"  data-toggle="modal" data-target="#addAssessmentPopup"></i>
                             </span>
                             <span class="col-md-1 text-center icon">
                                 <i class="fa fa-shopping-basket fa-2x"></i>
                             </span>
                         </li>
                     </ul>
+                    <div>
+                        <div class="modal fade" id="addAssessmentPopup" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel"><b>Add Assessment</b></h4>
+                                    </div>
+                                    <div class="modal-body container-fluid">
+                                        <form class="" action="" method="post">
+                                            <div class="col-md-9">
+                                                <div class="model_line">
+                                                    <label for="" class="col-md-5">Assessment Name</label>
+                                                    <input class="" type="text" name="name" value="">
+                                                </div>
+                                                <div class="model_line">
+                                                    <label for="" class="col-md-5">Assessment Type</label>
+                                                    <select class="dropdown_select" name="">
+                                                        <option value="functional">Functional</option>
+                                                        <option value="functional">Action</option>
+                                                        <option value="functional">Another Action</option>
+                                                        <option value="functional">Something</option>
+                                                        <option value="functional">Something Else</option>
+                                                    </select>
+
+                                                </div>
+                                                <div class="model_line container">
+                                                    <label for="" class="">Description</label>
+                                                    <div class="" id="textAreaPopup"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 thumbnail">
+                                                <img src="../images/core_fnc_bg.jpg" alt="" />
+                                            </div>
+                                            <div class="" style="text-align: center">
+                                                <a href="#">Add Picture</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Save changes</button>
+                                        <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
