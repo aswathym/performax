@@ -2517,3 +2517,10 @@ input.promocode::-webkit-input-placeholder {
 #assessor-selector .combined_epm_selection ul li {
     list-style-type: none;
 }
+#asssessment_pricing_list i {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+#asssessment_pricing_list i:hover {
+    color: #09A6D0;
+}
