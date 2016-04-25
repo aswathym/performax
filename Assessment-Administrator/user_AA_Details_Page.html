@@ -220,8 +220,30 @@
                                      </span>
                                      <span class="col-md-3 padding20">
                                          <button type="button" name="button" class="btn btn-info">Approve</button>
-                                         <button type="button" name="button" class="btn btn-info">Reject</button>
+                                         <button type="button" name="button" class="btn btn-disabled marginLeft20px" data-toggle="modal" data-target="#rejectAssessorModel">Reject</button>
                                      </span>
+                                 </div>
+                                 <div class="modal fade add_custom_CSF" id="rejectAssessorModel" role="dialog">
+                                     <div class="modal-dialog">
+                                         <!-- Modal content-->
+                                         <div class="modal-content">
+                                             <div class="modal-header">
+                                                 <h4 class="modal-title">Add comment for rejecting assessors</h4>
+                                             </div>
+                                             <div class="modal-body">
+                                                 <textarea name="" rows="4" placeholder="Enter Comment"></textarea>
+                                                 <ul>
+                                                     <li>Your comments will be sent to Expert Panel Members for Assessor Selection.</li>
+                                                     <li>A revised selection of Assessors will be resubmitted to you for your approval.</li>
+                                                 </ul>
+                                             </div>
+                                             <div class="add_CSF_button">
+                                                 <button type="button" class="btn btn-info" data-dismiss="modal">Submit </button>
+                                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                                             </div>
+                                         </div>
+
+                                     </div>
                                  </div>
                                  <ul class="container col-md-10 col-md-offset-1 approve_questionnaire">
                                      <li class="box-shadow-styling-light">
