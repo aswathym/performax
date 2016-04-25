@@ -2629,3 +2629,18 @@ input.promocode::-webkit-input-placeholder {
 #liveShortlist .modal-header h4 {
     font-size: 18px;
 }
+
+/* AA Details page-Access Key Persons Accountable*/
+.AA_questionnaire_table th {
+    vertical-align: middle !important;
+    text-align: center;
+}
+.AA_questionnaire_table th:nth-child(1), .AA_questionnaire_table th:nth-child(4), .AA_questionnaire_table th:nth-child(5) {
+    width: 25%;
+}
+.AA_questionnaire_table th:nth-child(2) {
+    width: 10%;
+}
+.AA_questionnaire_table th:nth-child(3) {
+    width: 15%;
+}
