@@ -31,7 +31,7 @@ body {
 
 header {
     background-color: white;
-    box-shadow: 0px 2px 10px 1px rgba(125, 125, 125, 0.5);
+    box-shadow: 0 2px 10px 1px rgba(125, 125, 125, 0.5);
 }
 .navbar {
     padding-right: 0;
@@ -45,13 +45,13 @@ header {
     background-color: white;
     margin-top: 20px;
     margin-bottom: 20px;
-    box-shadow: 0px 2px 10px 1px rgba(125, 125, 125, 0.5);
+    box-shadow: 0 2px 10px 1px rgba(125, 125, 125, 0.5);
     padding-top: 10px;
     padding-bottom: 10px;
 }
 .box-shadow-styling-light {
-    box-shadow: 0px 1px 4px 0px rgba(125, 125, 125, 0.5);
-    margin: 5px 0px;
+    box-shadow: 0 1px 4px 0px rgba(125, 125, 125, 0.5);
+    margin: 5px 0;
     padding: 0;
     background-color: #fff;
 }
