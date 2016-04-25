@@ -2732,11 +2732,29 @@ input.promocode::-webkit-input-placeholder {
 .approve_questionnaire .questionnaire_accordion .questionnaire_count::after {
     content: ')';
 }
+.approve_questionnaire .questionnaire_table_accordion.panel-group {
+    margin: 0;
+}
+.approve_questionnaire .questionnaire_table_accordion.panel-group .panel-heading a {
+    color: black;
+}
+.approve_questionnaire .questionnaire_table_accordion.panel-group .panel-heading a::after {
+    margin-top: -30px;
+}
+.approve_questionnaire .questionnaire_table_accordion .panel-heading {
+    padding: 0;
+}
 .approve_questionnaire .panel-heading {
     padding: 10px 20px;
 }
+.approve_questionnaire .approve_questionnaire_table tr td:nth-child(1) {
+    width: 31%;
+}
 .approve_questionnaire .approve_questionnaire_table tr td:nth-child(2), .approve_questionnaire .approve_questionnaire_table tr td:nth-child(3) {
     text-align: center;
+}
+.approve_questionnaire .approve_questionnaire_table tr td .star_rating_div {
+    display: inline-block;
 }
 .rate_title{
     padding-bottom: 5px;
