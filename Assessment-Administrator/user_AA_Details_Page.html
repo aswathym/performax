@@ -220,16 +220,38 @@
                                      </span>
                                      <span class="col-md-3 padding20">
                                          <button type="button" name="button" class="btn btn-info">Approve</button>
-                                         <button type="button" name="button" class="btn btn-info">Reject</button>
+                                         <button type="button" name="button" class="btn btn-disabled marginLeft20px" data-toggle="modal" data-target="#rejectAssessorModel">Reject</button>
                                      </span>
                                  </div>
+                                 <div class="modal fade add_custom_CSF" id="rejectAssessorModel" role="dialog">
+                                     <div class="modal-dialog">
+                                         <!-- Modal content-->
+                                         <div class="modal-content">
+                                             <div class="modal-header">
+                                                 <h4 class="modal-title">Add comment for rejecting assessors</h4>
+                                             </div>
+                                             <div class="modal-body">
+                                                 <textarea name="" rows="4" placeholder="Enter Comment"></textarea>
+                                                 <ul>
+                                                     <li>Your comments will be sent to Expert Panel Members for Assessor Selection.</li>
+                                                     <li>A revised selection of Assessors will be resubmitted to you for your approval.</li>
+                                                 </ul>
+                                             </div>
+                                             <div class="add_CSF_button">
+                                                 <button type="button" class="btn btn-info" data-dismiss="modal">Submit </button>
+                                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                                             </div>
+                                         </div>
+
+                                     </div>
+                                 </div>
                                  <ul class="container col-md-10 col-md-offset-1 approve_questionnaire">
-                                     <li class="box-shadow-styling-light padding10">
+                                     <li class="box-shadow-styling-light">
                                          <div class="panel-group questionnaire_accordion" id="accordion">
                                              <div class="panel panel-default" id="panel1">
                                                  <div class="panel-heading">
                                                      <div class="">
-                                                         <a data-toggle="collapse" data-target="" href="#collapse11">
+                                                         <a data-toggle="collapse" data-target="" href="#collapse11" class="collapsed">
                                                              <h5><b>
                                                                  <span>1. </span>
                                                                  People and Leadership
@@ -244,14 +266,14 @@
                                              </div>
                                          </div>
                                      </li>
-                                     <li class="box-shadow-styling-light padding10">
+                                     <li class="box-shadow-styling-light">
                                          <div class="panel-group questionnaire_accordion" id="accordion">
                                              <div class="panel panel-default" id="panel2">
                                                  <div class="panel-heading">
                                                      <div class="">
-                                                         <a data-toggle="collapse" data-target="" href="#collapse12">
+                                                         <a data-toggle="collapse" data-target="" href="#collapse12" class="collapsed">
                                                              <h5><b>
-                                                                 <span>1. </span>
+                                                                 <span>2. </span>
                                                                  Analytics and Insights
                                                                  <span class="questionnaire_count">3</span>
                                                              </b></h5>
@@ -264,50 +286,102 @@
                                              </div>
                                          </div>
                                      </li>
-                                     <li class="box-shadow-styling-light padding10">
+                                     <li class="box-shadow-styling-light">
                                          <div class="panel-group questionnaire_accordion" id="accordion">
                                              <div class="panel panel-default" id="panel3">
                                                  <div class="panel-heading">
                                                      <div class="">
                                                          <a data-toggle="collapse" data-target="" href="#collapse13">
                                                              <h5><b>
-                                                                 <span>1. </span>
+                                                                 <span>3. </span>
                                                                  Strategy and Planning
                                                                  <span class="questionnaire_count">2</span>
                                                              </b></h5>
                                                          </a>
                                                      </div>
                                                  </div>
-                                                 <div id="collapse13" class="panel-collapse collapse">
+                                                 <div id="collapse13" class="panel-collapse collapse in">
                                                      <table  class="table table-bordered approve_questionnaire_table">
                                                          <thead>
-                                                             <tr>
-                                                                 <th class="text-left">
-                                                                     CSF
-                                                                 </th>
-                                                                 <th class="text-center">
-                                                                     CSF Approval Percentage
-                                                                 </th>
-                                                                 <th class="text-center">
-                                                                     Average CSF Approval Percentage
-                                                                 </th>
-                                                             </tr>
+                                                             <th class="text-left">
+                                                                 CSF
+                                                             </th>
+                                                             <th class="text-center">
+                                                                 CSF Approval Percentage
+                                                             </th>
+                                                             <th class="text-center">
+                                                                 Average CSF Approval Percentage
+                                                             </th>
                                                          </thead>
+                                                         <tr>
+                                                             <td>
+                                                                 <div class="panel-group questionnaire_table_accordion" id="accordion">
+                                                                     <div class="panel" id="panel111">
+                                                                         <div class="panel-heading">
+                                                                             <div class="">
+                                                                                 <a data-toggle="collapse" data-target="" href="#collapse111" class="collapsed">
+                                                                                     <h5>
+                                                                                         <span>3.1 </span>
+                                                                                         Transparency in Financial Reporting
+                                                                                     </h5>
+                                                                                 </a>
+                                                                             </div>
+                                                                         </div>
+                                                                         <div id="collapse111" class="panel-collapse collapse">
+                                                                             <div class="panel-body customized_sub_heading_content">Something important</div>
+                                                                         </div>
+                                                                     </div>
+                                                                 </div>
+                                                             </td>
+                                                             <td>100%</td>
+                                                             <td>
+                                                                 <div class="star_rating_div">
+                                                                     <input value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                                                 </div>
+                                                             </td>
+                                                         </tr>
+                                                         <tr>
+                                                             <td>
+                                                                 <div class="panel-group questionnaire_table_accordion" id="accordion">
+                                                                     <div class="panel" id="panel112">
+                                                                         <div class="panel-heading">
+                                                                             <div class="">
+                                                                                 <a data-toggle="collapse" data-target="" href="#collapse112" class="collapsed">
+                                                                                     <h5>
+                                                                                         <span>3.2 </span>
+                                                                                         Financial Policy
+                                                                                     </h5>
+                                                                                 </a>
+                                                                             </div>
+                                                                         </div>
+                                                                         <div id="collapse112" class="panel-collapse collapse">
+                                                                             <div class="panel-body customized_sub_heading_content">Something important</div>
+                                                                         </div>
+                                                                     </div>
+                                                                 </div>
+                                                             </td>
+                                                             <td>50%</td>
+                                                             <td>
+                                                                 <div class="star_rating_div">
+                                                                     <input value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                                                 </div>
+                                                             </td>
+                                                         </tr>
                                                      </table>
                                                  </div>
                                              </div>
                                          </div>
                                      </li>
-                                     <li class="box-shadow-styling-light padding10">
+                                     <li class="box-shadow-styling-light ">
                                          <div class="panel-group questionnaire_accordion" id="accordion">
                                              <div class="panel panel-default" id="panel4">
                                                  <div class="panel-heading">
                                                      <div class="">
-                                                         <a data-toggle="collapse" data-target="" href="#collapse14">
+                                                         <a data-toggle="collapse" data-target="" href="#collapse14" class="collapsed">
                                                              <h5><b>
-                                                                 <span>1. </span>
+                                                                 <span>4. </span>
                                                                  Execution and Process
-                                                                 <span class="questionnaire_count">5</span>
+                                                                 <span class="questionnaire_count">3</span>
                                                              </b></h5>
                                                          </a>
                                                      </div>
@@ -318,16 +392,16 @@
                                              </div>
                                          </div>
                                      </li>
-                                     <li class="box-shadow-styling-light padding10">
+                                     <li class="box-shadow-styling-light ">
                                          <div class="panel-group questionnaire_accordion" id="accordion">
                                              <div class="panel panel-default" id="panel5">
                                                  <div class="panel-heading">
                                                      <div class="">
-                                                         <a data-toggle="collapse" data-target="" href="#collapse15">
+                                                         <a data-toggle="collapse" data-target="" href="#collapse15" class="collapsed">
                                                              <h5><b>
-                                                                 <span>1. </span>
+                                                                 <span>5. </span>
                                                                  Performance and Results
-                                                                 <span class="questionnaire_count">5</span>
+                                                                 <span class="questionnaire_count">4</span>
                                                              </b></h5>
                                                          </a>
                                                      </div>
