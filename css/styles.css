@@ -261,6 +261,12 @@ header {
 .paddingRight0 {
     padding-right: 0;
 }
+.paddingLeft0 {
+    padding-left: 0;
+}
+.padding5 {
+    padding: 5px;
+}
 .padding10 {
     padding: 10px;
 }
@@ -269,6 +275,9 @@ header {
 }
 .padding30 {
     padding: 30px;
+}
+.paddingTop5 {
+    padding-top: 10px;
 }
 .margin0 {
     margin: 0;
@@ -288,14 +297,20 @@ header {
 .marginTop20 {
     margin-top: 20px;
 }
+.marginBottom20 {
+    margin-bottom: 20px;
+}
+.marginTop-10 {
+    margin-top: -10px;
+}
+.margin-top-25 {
+    margin-top: -25px;
+}
 .marginTop-27 {
     margin-top: -27px;
 }
 .marginBottom0 {
     margin-bottom: 5px;
-}
-.margin-top-25 {
-    margin-top: -25px;
 }
 .displayInline {
     display: inline-block;
@@ -1028,7 +1043,7 @@ h1 {
 .form-content input{
     width: 60%;
     border: 2px solid #dedede;
-    padding: 2px;
+    padding: 3px 7px;
 }
 .form-content .row{
     padding:5px 0;
@@ -2497,7 +2512,7 @@ input.promocode::-webkit-input-placeholder {
     font-weight: bold;
 }
 #assessor-selector .select-assessor-group-form .form-content input {
-    width: 90%;
+    width: 95%;
 }
 #assessor-selector .select-assessor-group-form .star_rating_div {
     display: inline-block;
@@ -2521,6 +2536,9 @@ input.promocode::-webkit-input-placeholder {
 }
 #assessor-selector .combined_epm_selection ul li {
     list-style-type: none;
+}
+#assessor-selector .combined_epm_selection ul li .star_rating_div {
+    margin-top: 12%;
 }
 #asssessment_pricing_list i {
     cursor: pointer;
@@ -2633,6 +2651,14 @@ input.promocode::-webkit-input-placeholder {
 #liveShortlist .modal-header h4 {
     font-size: 18px;
 }
+#liveShortlist .summery_heading {
+    padding: 10px 40px;
+    margin: 5px -30px;
+    background-color: #F7F7F7;
+}
+#liveShortlist .sections {
+    padding: 10px 20px 20px 0px;
+}
 
 /* AA Details page-Access Key Persons Accountable*/
 .AA_questionnaire_table th {
@@ -2673,6 +2699,9 @@ input.promocode::-webkit-input-placeholder {
 }
 .approve_questionnaire .questionnaire_accordion .questionnaire_count::after {
     content: ')';
+}
+.approve_questionnaire_table th {
+    width: auto;
 }
 /* Style fixes */
 #pricingForm span{
