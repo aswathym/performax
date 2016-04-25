@@ -1665,6 +1665,9 @@ input.promocode::-webkit-input-placeholder {
 #timeline .timeframe .description span {
     display: block;
 }
+#timeline .timeframe .description #timeline1, #timeline .timeframe .description #timeline2, #timeline .timeframe .description #timeline3, #timeline .timeframe .description #timeline4, #timeline .timeframe .description #timeline5, #timeline .timeframe .description #timeline6 {
+    display: inline;
+}
 #timeline .timeframe .description .ongoing{
     color: #42C054;
 }
@@ -2643,4 +2646,30 @@ input.promocode::-webkit-input-placeholder {
 }
 .AA_questionnaire_table th:nth-child(3) {
     width: 15%;
+}
+.approve_questionnaire {
+    padding: 0;
+}
+.approve_questionnaire li {
+    list-style-type: none;
+}
+.approve_questionnaire .questionnaire_accordion a {
+    color: #09A6D0;
+}
+.approve_questionnaire .questionnaire_accordion a::after {
+    margin-top: -20px;
+    text-decoration: none;
+}
+.approve_questionnaire .questionnaire_accordion a::after:hover {
+    text-decoration: none;
+}
+.approve_questionnaire .questionnaire_accordion a:hover {
+    color: #09A6D0;
+    text-decoration: none;
+}
+.approve_questionnaire .questionnaire_accordion .questionnaire_count::before {
+    content: '(';
+}
+.approve_questionnaire .questionnaire_accordion .questionnaire_count::after {
+    content: ')';
 }
