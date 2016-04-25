@@ -199,6 +199,7 @@ header {
     font: 13px 'Roboto-Regular';
     text-align: center;
     padding-top: 20px;
+    width: 100%;
 }
 #core_functions_wrapper li .caption button {
     margin-top: 20px;
