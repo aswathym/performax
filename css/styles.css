@@ -2700,6 +2700,9 @@ input.promocode::-webkit-input-placeholder {
 .approve_questionnaire .questionnaire_accordion .questionnaire_count::after {
     content: ')';
 }
-.approve_questionnaire_table th {
-    width: auto;
+.approve_questionnaire .panel-heading {
+    padding: 10px 20px;
+}
+.approve_questionnaire .approve_questionnaire_table tr td:nth-child(2), .approve_questionnaire .approve_questionnaire_table tr td:nth-child(3) {
+    text-align: center;
 }
