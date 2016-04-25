@@ -201,9 +201,6 @@ header {
     padding-top: 20px;
     width: 100%;
 }
-#core_functions_wrapper li .caption button {
-    margin-top: 10px;
-}
 #core_functions_wrapper li:hover .caption {
     bottom: 0px;
     padding-left: 0;
@@ -2723,4 +2720,12 @@ input.promocode::-webkit-input-placeholder {
 }
 #analysis_insights .add_CSF_button button{
     width: auto;
+}
+.caption-content{
+    max-height: 130px;
+    min-height: 130px;
+    overflow:hidden;
+}
+#core_functions_wrapper li .caption button {
+    margin-top: 7px;
 }
