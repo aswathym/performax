@@ -2571,6 +2571,8 @@ input.promocode::-webkit-input-placeholder {
     padding: 20px;
     font-size: 16px;
     margin-bottom: 0;
+    margin-left: 1px;
+    margin-right: 1px;
 }
 .epm_assessment_nav>nav {
     padding-left: 0;
