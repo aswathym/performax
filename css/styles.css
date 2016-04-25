@@ -2673,3 +2673,6 @@ input.promocode::-webkit-input-placeholder {
 .approve_questionnaire .questionnaire_accordion .questionnaire_count::after {
     content: ')';
 }
+.approve_questionnaire_table th {
+    width: auto;
+}
