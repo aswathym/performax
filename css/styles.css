@@ -202,7 +202,7 @@ header {
     width: 100%;
 }
 #core_functions_wrapper li .caption button {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 #core_functions_wrapper li:hover .caption {
     bottom: 0px;
@@ -2673,4 +2673,18 @@ input.promocode::-webkit-input-placeholder {
 }
 .approve_questionnaire .questionnaire_accordion .questionnaire_count::after {
     content: ')';
+}
+/* Style fixes */
+#pricingForm span{
+    padding-top: 10px;
+}
+#pricingForm a{
+    display: inline-block;
+    margin: 8px 25px 0;
+}
+.modal-body .model_line label {
+    padding-top: 6px;
+}
+.modal-content table.k-editor{
+    width: 55%;
 }
