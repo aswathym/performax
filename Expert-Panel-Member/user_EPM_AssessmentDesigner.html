@@ -81,11 +81,11 @@
                         <div class="col-md-2">
                             <img src="../images/sales&marketing.png" width="80%" height="20%" />
                         </div>
-                        <div class="col-md-5 exSpon_details_heading details_sub_heading">
+                        <div class="col-md-4 exSpon_details_heading details_sub_heading">
                             <h4>Finance & Accounting</h4>
                             <h5 class="grey_color">Internal Function</h5>
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-md-4">
                             <button type="button" class="view_progress_button"> Selected CSFs</button>
                         </div>
                         <div class="col-md-2" style="float:right">
@@ -109,107 +109,635 @@
                         </nav>
                         <div class="container tab-content">
                             <div id="analysis_and_insights" class="container-fluid tab-pane active" role="tabpanel">
-                                <div class="button_CSF">
-                                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Add new CSF</button>
-                                    <button type="button" name="button" class="btn btn-danger btn-sm">Delete</button>
-                                </div>
-                                <div class="modal fade" id="myModal" role="dialog">
-                                    <div class="modal-dialog">
-                                        <!-- Modal content-->
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h4 class="modal-title">Add new Critical Success Factor</h4>
+                                <div class="select_assessment_questions">
+                                    <div class="row">
+                                        <div class="col-md-7">
+                                            <span><h4>Select Assessment Questions (CSFs)</h4></span>
+                                        </div>
+                                        <div class="col-md-2 text-center">
+                                            <div class="">
+                                                <h4>3</h4>
                                             </div>
-                                            <div class="modal-body">
-                                                <form>
-                                                    <div class="row">
-                                                        <div class="col-md-12">
-                                                            <div class="form-element">
-                                                                <label>CSF Title</label>
-                                                                <input type="text">
-                                                            </div>
-                                                            <div class="form-element col-md-6">
-                                                                <label for="">CSF Description</label>
-                                                                <input type="text" id="CSF_Description">
-                                                            </div>
-
+                                            <div class="">
+                                                EP-AD Members
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 text-center">
+                                            <div class="">
+                                                <h4>25</h4>
+                                            </div>
+                                            <div class="">
+                                                Total No of CSFs Selected
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-shadow-styling-light your_selection">
+                                        <span class="text-center spacer option checkbox remember-txt analytics_checkbox">
+                                            <input id="checkbox1" class="" type="checkbox">
+                                            <label for="checkbox1"><a href="#"><span>2.</span> Analytics and Insights CSFs</a></label>
+                                        </span>
+                                        <div class="button_CSF">
+                                            <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Add Custom CSFs</button>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="panel-group" id="accordion">
+                                            <div class="panel panel-default" id="panel1">
+                                                <div class="panel-heading">
+                                                    <div class="row panel_content_CSF">
+                                                        <div class=" col-md-12">
+                                                            <span class="option checkbox analytics_checkbox">
+                                                                <input id="checkbox2" class="" type="checkbox">
+                                                                <label for="checkbox2 col-md-12" class="custom_CSF_accordion_content">
+                                                                    <a data-toggle="collapse" data-target="" href="#collapseOne">
+                                                                        <div class="col-md-6">
+                                                                            <span>2.1</span> Collapsible Group Item #1
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <span>Source: </span><button type="button" name="button">Performax Knowledgebase </button>
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <div>
+                                                                                <div class="star_rating_div">
+                                                                                    <input value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-1 down_arrow_CSF">
+                                                                            <img src="../images/arrow_down.png" id="arrow_down">
+                                                                        </div>
+                                                                    </a>
+                                                                </label>
+                                                            </span>
                                                         </div>
 
                                                     </div>
-                                                    <div class="row">
-                                                        <div class="col-md-12">
 
+                                                </div>
+                                                <div id="collapseOne" class="panel-collapse collapse">
+                                                    <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default" id="panel2">
+                                                <div class="panel-heading">
+                                                    <div class="row panel_content_CSF">
+                                                        <div class=" col-md-12">
+                                                            <span class="option checkbox analytics_checkbox">
+                                                                <input id="checkbox3" class="" type="checkbox">
+                                                                <label for="checkbox3 col-md-12" class="custom_CSF_accordion_content">
+                                                                    <a data-toggle="collapse" data-target="" href="#collapseTwo">
+                                                                        <div class="col-md-6">
+                                                                            <span>2.1</span> Collapsible Group Item #1
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <span>Source: </span><button type="button" name="button">Performax Knowledgebase </button>
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <div>
+                                                                                <div class="star_rating_div">
+                                                                                    <input value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-1 down_arrow_CSF">
+                                                                            <img src="../images/arrow_down.png" id="arrow_down">
+                                                                        </div>
+                                                                    </a>
+                                                                </label>
+                                                            </span>
                                                         </div>
 
-                                                        <div class="col-md-6">
-                                                            <div class="form-element">
-                                                                <label for="">CSF rating</label>
-                                                                <div>
-                                                                    <div class="star_rating_div">
-                                                                        <input value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                                    </div>
+
+                                                </div>
+                                                <div id="collapseTwo" class="panel-collapse collapse">
+                                                    <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default" id="panel3">
+                                                <div class="panel-heading">
+                                                    <div class="row panel_content_CSF">
+                                                        <div class=" col-md-12">
+                                                            <span class="option checkbox analytics_checkbox">
+                                                                <input id="checkbox4" class="" type="checkbox">
+                                                                <label for="checkbox4 col-md-12" class="custom_CSF_accordion_content">
+                                                                    <a data-toggle="collapse" data-target="" href="#collapseThree">
+                                                                        <div class="col-md-6">
+                                                                            <span>2.1</span> Collapsible Group Item #1
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <span>Source: </span><button type="button" name="button">Performax Knowledgebase </button>
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <div>
+                                                                                <div class="star_rating_div">
+                                                                                    <input value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-1 down_arrow_CSF">
+                                                                            <img src="../images/arrow_down.png" id="arrow_down">
+                                                                        </div>
+                                                                    </a>
+                                                                </label>
+                                                            </span>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div id="collapseThree" class="panel-collapse collapse">
+                                                    <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal fade add_custom_CSF" id="myModal" role="dialog">
+                                        <div class="modal-dialog">
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">Custom CSF</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="row customCSF_title_desc">
+                                                            <div class="col-md-12">
+                                                                <div class="form-element">
+
+                                                                    <label>CSF Title</label>
+
+                                                                    <input type="text">
+                                                                </div>
+                                                                <div class="form-element">
+                                                                    <label for="">CSF Description</label>
+                                                                    <input type="text" id="CSF_Description">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-7">
+                                                                <div class="form-element">
+                                                                    <label for="">CSF rating</label>
+                                                                    <div>
+                                                                        <div class="star_rating_div">
+                                                                            <input value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                                                        </div>
                                                                     </div>
+
+                                                                </div>
+                                                                <div class="form-element">
+                                                                    <label>CSF Category</label>
+                                                                    <select class="dropdown_select">
+                                                                        <option selected="true" disabled>0</option>
+                                                                        <option>1</option>
+                                                                        <option>2</option>
+                                                                        <option>3</option>
+                                                                        <option>4</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="form-element">
+                                                                    <label>CSF context</label>
+                                                                    <select class="dropdown_select">
+                                                                        <option selected="true" disabled>0</option>
+                                                                        <option>1</option>
+                                                                        <option>2</option>
+                                                                        <option>3</option>
+                                                                        <option>4</option>
+                                                                    </select>
                                                                 </div>
 
                                                             </div>
-                                                            <div class="form-element">
-                                                                <label>Applicable CSF Context</label>
-                                                                <select class="dropdown_select">
-                                                                    <option selected="true" disabled>0</option>
-                                                                    <option>1</option>
-                                                                    <option>2</option>
-                                                                    <option>3</option>
-                                                                    <option>4</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="form-element">
-                                                                <label>Applicable CSF Category</label>
-                                                                <select class="dropdown_select">
-                                                                    <option selected="true" disabled>0</option>
-                                                                    <option>1</option>
-                                                                    <option>2</option>
-                                                                    <option>3</option>
-                                                                    <option>4</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="form-element">
-                                                                <label for="">Key Performance Indicators 1</label>
-                                                                <input type="text" name="name" value="">
-                                                            </div>
-                                                            <div class="form-element">
-                                                                <label for="">Key Performance Indicators 2</label>
-                                                                <input type="text" name="name" value="">
-                                                            </div>
-                                                            <div class="form-element">
-                                                                <label for="">Ideas for Action 1</label>
-                                                                <input type="text" name="name" value="">
 
+                                                        </div>
+                                                        <div class="row">
+
+                                                            <div class="col-md-7">
+                                                                <div class="form-element">
+                                                                    <label for="">Key Performance Indicators 1</label>
+                                                                    <input type="text" name="name" value="">
+                                                                </div>
+                                                                <div class="form-element">
+                                                                    <label for="">Key Performance Indicators 2</label>
+                                                                    <input type="text" name="name" value="">
+                                                                </div>
+                                                                <div class="form-element">
+                                                                    <label for="">Ideas for Action 1</label>
+                                                                    <input type="text" name="name" value="">
+
+                                                                </div>
+                                                                <div class="form-element">
+                                                                    <label for="">Ideas for Action 1</label>
+                                                                    <input type="text" name="name" value="">
+
+                                                                </div>
                                                             </div>
-                                                            <div class="form-element">
-                                                                <label for="">Ideas for Action 1</label>
-                                                                <input type="text" name="name" value="">
+                                                            <div class="col-md-5">
+                                                                <a>Add from Performax360 Database <span><i class="fa fa-angle-down"></i></span></a>
+                                                                <a>Add from Performax360 Database <span><i class="fa fa-angle-down"></i></span></a>
+                                                                <a>Add from Performax360 Database <span><i class="fa fa-angle-down"></i></span></a>
+                                                                <a>Add from Performax360 Database <span><i class="fa fa-angle-down"></i></span></a>
 
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-6">
-                                                            <a>Add from Performax360 Database <span><i class="fa fa-angle-down"></i></span></a>
-                                                            <a>Add from Performax360 Database <span><i class="fa fa-angle-down"></i></span></a>
-                                                            <a>Add from Performax360 Database <span><i class="fa fa-angle-down"></i></span></a>
-                                                            <a>Add from Performax360 Database <span><i class="fa fa-angle-down"></i></span></a>
+                                                    </form>
+                                                </div>
+                                                <div class="add_CSF_button">
+                                                    <button type="button" class="btn btn-info" data-dismiss="modal">Add to Selected CSFs </button>
+                                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                                                </div>
+                                            </div>
 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center add_selected_CSFs">
+                                    <button type="button" class="btn btn-info btn-sm">Add to Selected CSFs</button>
+                                </div>
+
+                            </div>
+                            <div id="no_display" class="container-fluid tab-pane" role="tabpanel">dsfdsf</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-shadow-styling bg-white padding0">
+                    <div class="box-shadow-styling-light your_selection">
+                        Combined CSF Selections by Expert Panel Members
+                    </div>
+                    <div class="" style="padding:20px">
+                        <h5>Selected CSFs</h5>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="">
+                            <h4 class="questionnaire_accordion">3</h4>
+                        </div>
+                        <div class="">
+                            EP-AD Members
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="">
+                            <h4 class="questionnaire_accordion">3</h4>
+                        </div>
+                        <div class="">
+                            EP-AD Members
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="">
+                            <h4 class="questionnaire_accordion">3</h4>
+                        </div>
+                        <div class="">
+                            EP-AD Members
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="">
+                            <h4 class="questionnaire_accordion">3</h4>
+                        </div>
+                        <div class="">
+                            EP-AD Members
+                        </div>
+                    </div>
+                    <div class="container-fluid padding0 epm_assessment_nav">
+                        <nav class="navbar col-md-12">
+                            <ul class="nav nav-tabs" id="tab_header">
+                                <li><a href="#none" aria-controls="none" role="tab" data-toggle="tab">People and Leadership</a></li>
+                                <li class="active"><a href="#analysis_insights" aria-controls="analysis&insights" role="tab" data-toggle="tab">Analysis and Insights</a></li>
+                                <li><a href="#none" aria-controls="none" role="tab" data-toggle="tab">Strategy and Planning</a></li>
+                                <li><a href="#none" aria-controls="none" role="tab" data-toggle="tab">Execution and Process</a></li>
+                                <li><a href="#none" aria-controls="none" role="tab" data-toggle="tab">Performance and Results</a></li>
+                            </ul>
+                        </nav>
+                        <div class="container tab-content">
+                            <div id="analysis_insights" class="container-fluid tab-pane active" role="tabpanel">
+                                <div class="select_assessment_questions">
+                                    <div class="row">
+                                        <div class="col-md-7">
+                                            <span><h4>Analytics and Insights CSFs</h4></span>
+                                        </div>
+                                    </div>
+                                    <div class="combined_CSF_heading">
+                                        Performax360 Database CSF
+                                    </div>
+                                    <div class="">
+                                        <div class="panel-group" id="accordion">
+                                            <div class="panel panel-default custom_CSF_accordion" id="panel1">
+                                                <div class="panel-heading">
+                                                    <div class="row panel_content_CSF">
+                                                        <div class=" col-md-12">
+                                                            <span class="option checkbox analytics_checkbox">
+                                                                <input id="checkbox2" class="" type="checkbox">
+                                                                <label for="checkbox2 col-md-12" class="custom_CSF_accordion_content">
+                                                                    <a data-toggle="collapse" data-target="" href="#collapseFour">
+                                                                        <div class="col-md-5">
+                                                                             Collapsible Group Item #1
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <div>50% </div>
+                                                                            <div>
+                                                                                CSF Aprroval Percentage
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <div>
+                                                                                <div class="star_rating_div">
+                                                                                    <input value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-1">
+                                                                            <img src="../images/delete.png" alt="" />
+                                                                        </div>
+                                                                        <div class="col-md-1 down_arrow_CSF">
+                                                                            <img src="../images/arrow_down.png" id="arrow_down">
+                                                                        </div>
+                                                                    </a>
+                                                                </label>
+                                                            </span>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div id="collapseFour" class="panel-collapse collapse">
+                                                    <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default custom_CSF_accordion" id="panel2">
+                                                <div class="panel-heading">
+                                                    <div class="row panel_content_CSF">
+                                                        <div class=" col-md-12">
+                                                            <span class="option checkbox analytics_checkbox">
+                                                                <input id="checkbox3" class="" type="checkbox">
+                                                                <label for="checkbox3 col-md-12" class="custom_CSF_accordion_content">
+                                                                    <a data-toggle="collapse" data-target="" href="#collapseFive">
+                                                                        <div class="col-md-5">
+                                                                            Collapsible Group Item #1
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <div>50% </div>
+                                                                            <div>
+                                                                                CSF Aprroval Percentage
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <div>
+                                                                                <div class="star_rating_div">
+                                                                                    <input value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-1">
+                                                                            <img src="../images/delete.png" alt="" />
+                                                                        </div>
+                                                                        <div class="col-md-1 down_arrow_CSF">
+                                                                            <img src="../images/arrow_down.png" id="arrow_down">
+                                                                        </div>
+                                                                    </a>
+                                                                </label>
+                                                            </span>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div id="collapseFive" class="panel-collapse collapse">
+                                                    <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="combined_CSF_heading">
+                                        Custom CSF
+                                    </div>
+                                    <div class="">
+                                        <div class="panel-group" id="accordion">
+
+                                            <div class="panel panel-default custom_CSF_accordion" id="panel3">
+                                                <div class="panel-heading">
+                                                    <div class="row panel_content_CSF">
+                                                        <div class=" col-md-12">
+                                                            <span class="option checkbox analytics_checkbox">
+                                                                <input id="checkbox4" class="" type="checkbox">
+                                                                <label for="checkbox4 col-md-12" class="custom_CSF_accordion_content">
+                                                                    <a data-toggle="collapse" data-target="" href="#collapseSix">
+                                                                        <div class="col-md-5">
+                                                                            Collapsible Group Item #1
+                                                                        </div>
+                                                                        <div class="col-md-3">
+                                                                            <div>50% </div>
+                                                                            <div>
+                                                                                CSF Aprroval Percentage
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-2">
+                                                                            <div>
+                                                                                <div class="star_rating_div">
+                                                                                    <input value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-1 padding0 edit_delete_CSF" >
+                                                                            <img src="../images/edit.png" alt="" />
+                                                                            <img src="../images/delete.png" alt="" />
+                                                                        </div>
+                                                                        <div class="col-md-1 down_arrow_CSF">
+                                                                            <img src="../images/arrow_down.png" id="arrow_down">
+                                                                        </div>
+                                                                    </a>
+                                                                </label>
+                                                            </span>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                                <div id="collapseSix" class="panel-collapse collapse">
+                                                    <div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button type="button" name="button" class="btn btn-info" data-toggle="modal" data-target="#liveShortlist">Create Preview & Submit</button>
+                                </div>
+                                <div class="modal fade add_custom_CSF" id="liveShortlist" role="dialog">
+                                    <div class="modal-dialog">
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                            <div class="modal-header col-md-12">
+                                                <span class="col-md-2">
+                                                        <img src="../images/sales&marketing.png" width="80%" height="20%" />
+                                                    </span>
+                                                <span class="col-md-7 text-left">
+                                                        <h4>Finance & Accounting</h4>
+                                                        <h5 class="grey_color">Internal Function</h5>
+                                                    </span>
+                                                <span class="col-md-3 text-center">
+                                                        <h4>5</h4>
+                                                        <h5 class="grey_color">CSF's Selected</h5>
+                                                    </span>
+                                            </div>
+                                            <div class="modal-body col-md-12">
+                                                <h4>Summery of your CSF Selection</h4>
+                                                <form>
+                                                    <div class="col-md-12 marginTop10">
+                                                        <h5><b>1. People & Leadership</b></h5>
+                                                        <div class="box-shadow-styling-light col-md-12 padding20">
+                                                            <span class="col-md-12 text-right grey_color"> Avg CSF Important Rating</span>
+                                                            <div class="col-md-9">
+                                                                <div class="panel-group questionnaire_accordion" id="accordion">
+                                                                    <div class="panel panel-default" id="panel1">
+                                                                        <div class="panel-heading">
+                                                                            <div class="">
+                                                                                <a data-toggle="collapse" data-target="" href="#collapse11">
+                                                                                   <span>1.1</span>
+                                                                                   <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div id="collapse11" class="panel-collapse collapse">
+                                                                            <div class="panel-body customized_sub_heading_content">CSF</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="text-center">
+                                                                    <input id="input-1" class="rating rating-loading" data-min="0" data-max="5" data-step="0.1" data-size="xs">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 marginTop10">
+                                                        <h5><b>2. Analytic & Insights</b></h5>
+                                                        <div class="box-shadow-styling-light col-md-12 padding20">
+                                                            <span class="col-md-12 text-right grey_color"> Avg CSF Important Rating</span>
+                                                            <div class="col-md-9">
+                                                                <div class="panel-group questionnaire_accordion" id="accordion">
+                                                                    <div class="panel panel-default" id="panel2">
+                                                                        <div class="panel-heading">
+                                                                            <div class="">
+                                                                                <a data-toggle="collapse" data-target="" href="#collapse12">
+                                                                                   <span>2.1</span>
+                                                                                   <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div id="collapse12" class="panel-collapse collapse">
+                                                                            <div class="panel-body customized_sub_heading_content">CSF</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="text-center">
+                                                                    <input id="input-2" class="rating rating-loading" data-min="0" data-max="5" data-step="0.1" data-size="xs">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 marginTop10">
+                                                        <h5><b>3. Strategy & Planning</b></h5>
+                                                        <div class="box-shadow-styling-light col-md-12 padding20">
+                                                            <span class="col-md-12 text-right grey_color"> Avg CSF Important Rating</span>
+                                                            <div class="col-md-9">
+                                                                <div class="panel-group questionnaire_accordion" id="accordion">
+                                                                    <div class="panel panel-default" id="panel3">
+                                                                        <div class="panel-heading">
+                                                                            <div class="">
+                                                                                <a data-toggle="collapse" data-target="" href="#collapse13">
+                                                                                   <span>3.1</span>
+                                                                                   <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div id="collapse13" class="panel-collapse collapse">
+                                                                            <div class="panel-body customized_sub_heading_content">CSF</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="text-center">
+                                                                    <input id="input3" class="rating rating-loading" data-min="0" data-max="5" data-step="0.1" data-size="xs">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 marginTop10">
+                                                        <h5><b>4. Expecution & Process</b></h5>
+                                                        <div class="box-shadow-styling-light col-md-12 padding20">
+                                                            <span class="col-md-12 text-right grey_color"> Avg CSF Important Rating</span>
+                                                            <div class="col-md-9">
+                                                                <div class="panel-group questionnaire_accordion" id="accordion">
+                                                                    <div class="panel panel-default" id="panel4">
+                                                                        <div class="panel-heading">
+                                                                            <div class="">
+                                                                                <a data-toggle="collapse" data-target="" href="#collapse14">
+                                                                                   <span>4.1</span>
+                                                                                   <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div id="collapse14" class="panel-collapse collapse">
+                                                                            <div class="panel-body customized_sub_heading_content">CSF</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="text-center">
+                                                                    <input id="input-4" class="rating rating-loading" data-min="0" data-max="5" data-step="0.1" data-size="xs">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 marginTop10">
+                                                        <h5><b>5. Performance & Results</b></h5>
+                                                        <div class="box-shadow-styling-light col-md-12 padding20">
+                                                            <span class="col-md-12 text-right grey_color"> Avg CSF Important Rating</span>
+                                                            <div class="col-md-9">
+                                                                <div class="panel-group questionnaire_accordion" id="accordion">
+                                                                    <div class="panel panel-default" id="panel5">
+                                                                        <div class="panel-heading">
+                                                                            <div class="">
+                                                                                <a data-toggle="collapse" data-target="" href="#collapse15">
+                                                                                   <span>5.1</span>
+                                                                                   <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div id="collapse15" class="panel-collapse collapse">
+                                                                            <div class="panel-body customized_sub_heading_content">CSF</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="text-center">
+                                                                    <input id="input-5" class="rating rating-loading" data-min="0" data-max="5" data-step="0.1" data-size="xs">
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </form>
                                             </div>
                                             <div class="add_CSF_button">
-                                                <button type="button" class="btn btn-info" data-dismiss="modal">Add to Selected CSFs</button>
+                                                <button type="button" class="btn btn-info" data-dismiss="modal">Submit </button>
                                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
+
                             </div>
-                            <div id="no_display" class="container-fluid tab-pane" role="tabpanel">dsfdsf</div>
+                            <div id="none" class="container-fluid tab-pane" role="tabpanel">dsfdsf</div>
                         </div>
                     </div>
                 </div>
