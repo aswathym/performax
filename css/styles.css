@@ -275,6 +275,9 @@ header {
 .margin10 {
     margin: 10px;
 }
+.margin20 {
+    margin: 20px;
+}
 .marginTop0 {
     margin-top: 0;
 }
@@ -301,6 +304,9 @@ header {
 }
 .opacity_light {
     opacity: 0.6;
+}
+.floatLeft {
+    float: left;
 }
 .bg_transparent {
     background-color: transparent;
@@ -555,10 +561,7 @@ input[type="checkbox"] {
     color: #888;
 }
 .rating {
-    width:auto;
-    background-color: #EAEAEA;
-    border-radius: 17px;
-    padding: 0px;
+    margin-left: 13px;
 }
 .form-element>.btn-group>button {
     width: 100%;
@@ -587,9 +590,9 @@ input[type="checkbox"] {
     text-align: center;
 }
 .add_CSF_button button {
-    width: 20%;
     margin-right: 20px;
     margin-bottom: 15px;
+    padding: 5px 20px;
 }
 .clear-rating.clear-rating-active, .rating-container .caption {
     display: none;
@@ -599,6 +602,12 @@ input[type="checkbox"] {
 }
 #CSF_Description {
     height: 80px;
+}
+.CSF_Description {
+    margin-bottom: 0;
+}
+.CSF_Description textarea {
+    margin-left: 4px;
 }
 .tab_box>nav>ul>li {
     width: 220px;
@@ -2421,7 +2430,7 @@ input.promocode::-webkit-input-placeholder {
 .table_content_KPA>h4 {
     margin-left: 15px;
     margin-top: 0;
-    padding-top: 15px;
+    padding-top: 5px;
 }
 .table_row_KPA {
     padding: 5px;
@@ -2525,7 +2534,13 @@ input.promocode::-webkit-input-placeholder {
 #asssessment_pricing_list i:hover {
     color: #09A6D0;
 }
-
+.star_rating_div {
+    width: 140px;
+    background-color: #F1F1F1;
+    border-radius: 17px;
+    padding: 0px;
+    border: 1px solid #D2D2D2;
+}
 
 
 
@@ -2559,16 +2574,18 @@ input.promocode::-webkit-input-placeholder {
 .customCSF_title_desc .form-element label {
     width: 28%;
 }
-.customCSF_title_desc .form-element input {
+.customCSF_title_desc .form-element input, .customCSF_title_desc .form-element textarea {
     width: 71.5%;
 }
 .select_assessment_questions {
     margin: auto 68px auto 40px;
 }
-.select_assessment_questions .row h4 {
+.select_assessment_questions .row h3 {
     margin-bottom: 0;
 }
-
+.select_assessment_questions>.row>.col-md-7 {
+    margin-top: 25px;
+}
 .your_selection>span {
     display: inline-block;
     margin: 0;
@@ -2585,7 +2602,8 @@ input.promocode::-webkit-input-placeholder {
     color: #337ab7;
 }
 .select_assessment_questions .panel-group .panel + .panel {
-    margin-top: 0px;
+    margin-top: -1px;
+    border-radius: 0px;
 }
 .select_assessment_questions .panel-default > .panel-heading {
     background-color: #fff;
@@ -2596,7 +2614,8 @@ input.promocode::-webkit-input-placeholder {
     background-color: #FFDF7F;
     color: #A47B00;
     padding: 6px 8px;
-    font-size: 12px
+    font-size: 12px;
+    margin-left: 8px;
 }
 .analytics_checkbox> label {
     display: block;
@@ -2622,6 +2641,8 @@ input.promocode::-webkit-input-placeholder {
 }
 .edit_delete_CSF img {
     position: relative !important;
+    margin-left: 15px;
+    margin-right: 0 !important;
 }
 #core_functions_wrapper li ul li{
     width: 100%;
@@ -2631,16 +2652,26 @@ input.promocode::-webkit-input-placeholder {
 }
 
 /* AA Details page-Access Key Persons Accountable*/
-.AA_questionnaire_table th {
+.AA_AKPA_table {
+    margin-bottom: 0;
+}
+.AA_AKPA_table th, .AA_AKPA_table td {
     vertical-align: middle !important;
     text-align: center;
+    padding: 5px !important;
 }
-.AA_questionnaire_table th:nth-child(1), .AA_questionnaire_table th:nth-child(4), .AA_questionnaire_table th:nth-child(5) {
+.AA_AKPA_table th:nth-child(1), .AA_AKPA_table th:nth-child(4), .AA_AKPA_table th:nth-child(5) {
     width: 25%;
 }
-.AA_questionnaire_table th:nth-child(2) {
+.AA_AKPA_table th:nth-child(2), .AA_AKPA_table td:nth-child(3) {
     width: 10%;
 }
-.AA_questionnaire_table th:nth-child(3) {
+.AA_AKPA_table th:nth-child(3), .AA_AKPA_table td:nth-child(3) {
     width: 15%;
+}
+.AA_AKPA_table td:nth-child(1), .AA_AKPA_table td:nth-child(5) {
+    width: 24%;
+}
+.AA_AKPA_table td:nth-child(4) {
+    width: 26%;
 }

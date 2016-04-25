@@ -116,7 +116,7 @@
                                         </div>
                                         <div class="col-md-2 text-center">
                                             <div class="">
-                                                <h4>3</h4>
+                                                <h3>3</h3>
                                             </div>
                                             <div class="">
                                                 EP-AD Members
@@ -124,7 +124,7 @@
                                         </div>
                                         <div class="col-md-3 text-center">
                                             <div class="">
-                                                <h4>25</h4>
+                                                <h3>25</h3>
                                             </div>
                                             <div class="">
                                                 Total No of CSFs Selected
@@ -149,7 +149,7 @@
                                                             <span class="option checkbox analytics_checkbox">
                                                                 <input id="checkbox2" class="" type="checkbox">
                                                                 <label for="checkbox2 col-md-12" class="custom_CSF_accordion_content">
-                                                                    <a data-toggle="collapse" data-target="" href="#collapseOne">
+                                                                    <a data-toggle="collapse" data-target="" href="#collapseOne" class="collapsed">
                                                                         <div class="col-md-6">
                                                                             <span>2.1</span> Collapsible Group Item #1
                                                                         </div>
@@ -185,7 +185,7 @@
                                                             <span class="option checkbox analytics_checkbox">
                                                                 <input id="checkbox3" class="" type="checkbox">
                                                                 <label for="checkbox3 col-md-12" class="custom_CSF_accordion_content">
-                                                                    <a data-toggle="collapse" data-target="" href="#collapseTwo">
+                                                                    <a data-toggle="collapse" data-target="" href="#collapseTwo" class="collapsed">
                                                                         <div class="col-md-6">
                                                                             <span>2.1</span> Collapsible Group Item #1
                                                                         </div>
@@ -221,7 +221,7 @@
                                                             <span class="option checkbox analytics_checkbox">
                                                                 <input id="checkbox4" class="" type="checkbox">
                                                                 <label for="checkbox4 col-md-12" class="custom_CSF_accordion_content">
-                                                                    <a data-toggle="collapse" data-target="" href="#collapseThree">
+                                                                    <a data-toggle="collapse" data-target="" href="#collapseThree" class="collapsed">
                                                                         <div class="col-md-6">
                                                                             <span>2.1</span> Collapsible Group Item #1
                                                                         </div>
@@ -268,11 +268,12 @@
 
                                                                     <label>CSF Title</label>
 
-                                                                    <input type="text">
+                                                                    <input type="text" placeholder="Maximum 4 words">
                                                                 </div>
-                                                                <div class="form-element">
-                                                                    <label for="">CSF Description</label>
-                                                                    <input type="text" id="CSF_Description">
+                                                                <div class="form-element CSF_Description">
+                                                                    <label for="" class="floatLeft">CSF Description</label>
+                                                                    <textarea name="name" rows="4" cols="30" placeholder="Maximum 20 words"></textarea>
+                                                                    <!-- <input type="text" id="CSF_Description" placeholder="Maximum 20 words"> -->
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -366,11 +367,11 @@
                         Combined CSF Selections by Expert Panel Members
                     </div>
                     <div class="" style="padding:20px">
-                        <h5>Selected CSFs</h5>
+                        <h4>Selected CSFs</h4>
                     </div>
                     <div class="col-md-3 text-center">
                         <div class="">
-                            <h4 class="questionnaire_accordion">3</h4>
+                            <h3 class="questionnaire_accordion marginTop0">3</h3>
                         </div>
                         <div class="">
                             EP-AD Members
@@ -378,7 +379,7 @@
                     </div>
                     <div class="col-md-3 text-center">
                         <div class="">
-                            <h4 class="questionnaire_accordion">3</h4>
+                            <h3 class="questionnaire_accordion marginTop0">3</h3>
                         </div>
                         <div class="">
                             EP-AD Members
@@ -386,7 +387,7 @@
                     </div>
                     <div class="col-md-3 text-center">
                         <div class="">
-                            <h4 class="questionnaire_accordion">3</h4>
+                            <h3 class="questionnaire_accordion marginTop0">3</h3>
                         </div>
                         <div class="">
                             EP-AD Members
@@ -394,7 +395,7 @@
                     </div>
                     <div class="col-md-3 text-center">
                         <div class="">
-                            <h4 class="questionnaire_accordion">3</h4>
+                            <h3 class="questionnaire_accordion marginTop0">3</h3>
                         </div>
                         <div class="">
                             EP-AD Members
@@ -563,7 +564,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="text-center">
+                                <div class="text-center margin20">
                                     <button type="button" name="button" class="btn btn-info" data-toggle="modal" data-target="#liveShortlist">Create Preview & Submit</button>
                                 </div>
                                 <div class="modal fade add_custom_CSF" id="liveShortlist" role="dialog">
