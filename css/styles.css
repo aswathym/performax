@@ -1244,8 +1244,11 @@ footer.footer {
     margin: 0;
     padding-right: 0;
 }
-.remove_from_cart {
+.remove_from_cart  {
     margin-top: 40px;
+
+}
+.remove_from_cart a {
     font-size: 14px;
     color: #E35757;
 }
@@ -2872,3 +2875,5 @@ input.promocode::-webkit-input-placeholder {
     top: 0.9em;
     position: relative;
 }
+
+/* AA Details page - Track Ideas for Action*/
