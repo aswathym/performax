@@ -46,7 +46,7 @@
                             <button type="button" class="btn btn-primary btn-sm" data-target="" id="login_button">LOGIN</button>
                         </div>
                         <div class="text-center spacer">
-                            Don't have an account? <a href="#">REGISTER NOW </a>
+                            Don't have an account? <a href="#reg-cnt" aria-controls="reg-cnt" role="tab" data-toggle="tab" id="register">REGISTER NOW </a>
                         </div>
                     </form>
                 </div>
@@ -56,19 +56,19 @@
                               <span class="">Do you have a Performax Company ID?
                               </span>
                               <span class="radio">
-                                <input type="radio" name="radio1" id="radio1" value="option1" checked>
+                                <input type="radio" name="radio1" id="company_id_yes" value="option1" checked>
                                 <label for="radio1">
                                     Yes
                                 </label>
                             </span>
                             <span class="radio">
-                                <input type="radio" name="radio1" id="radio2" value="option2" checked>
+                                <input type="radio" name="radio1" id="company_id_no" value="option2">
                                 <label for="radio2">
                                     No
                                 </label>
                             </span>
                         </div>
-                        <div class="row">
+                        <div class="row" id="company-id-box">
                             <label class="">Company ID</label>
                             <input type="text" class="" id="company_id">
                             <span class="error_span_cmp_id"></span>
