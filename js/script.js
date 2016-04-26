@@ -478,3 +478,6 @@ $('#company_id_no').click(function() {
 $('#company_id_yes').click(function() {
     $('#company-id-box').removeClass('displayNone');
 });
+$('#register').click(function() {
+    $('nav ul li').toggleClass('active');
+});
