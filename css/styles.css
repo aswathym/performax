@@ -151,6 +151,9 @@ header {
 .displayNone {
     display: none;
 }
+.displayInline {
+    display: inline-block;
+}
 #addAssessmentPopup .Editor-container {
     margin-left: 24%;
     width: 30%;
@@ -313,9 +316,6 @@ header {
 }
 .marginBottom0 {
     margin-bottom: 5px;
-}
-.displayInline {
-    display: inline-block;
 }
 .opacity_light {
     opacity: 0.6;
@@ -1011,6 +1011,7 @@ h1 {
 #login {
     position: absolute;
     top: 50%;
+    height: 415px;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 620px;
@@ -1019,6 +1020,9 @@ h1 {
     border: 0;
     box-shadow: none;
     padding: 0;
+}
+#login-cnt form {
+    padding: 6% 0;
 }
 #login #tab_header .active a {
     background-color: #2c88ce;
