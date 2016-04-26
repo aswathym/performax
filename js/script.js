@@ -87,6 +87,7 @@ $(document).ready(function() {
             $('.learning_center .white-papers').addClass('transformImage');
         }
     });
+
     $(".learning_section").on("mouseout", function(e){
         $('.learning_center .each_tiles').removeClass('transformImage');
     })
@@ -471,3 +472,9 @@ function toggleMode(ev) {
         $(el).removeClass('fa-toggle-off');
     }
 }
+$('#company_id_no').click(function() {
+    $('#company-id-box').addClass('displayNone');
+});
+$('#company_id_yes').click(function() {
+    $('#company-id-box').removeClass('displayNone');
+});
