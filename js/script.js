@@ -411,11 +411,6 @@ $(document).ready(function() {
         remove_button = $('.remove_field_button'),
         challenge_no = 2;
 
-  $(remove_button).on("click", function(e){ //user click on remove text
-       e.preventDefault();
-       $(this).parent('div').remove();
-       // challenge_no--
-   })
    $(add_button).click(function(e) {
        challenge1 = $('.challenge1').val();
        challenge2 = $('.challenge2').val();
@@ -427,22 +422,27 @@ $(document).ready(function() {
        } else {
            alert('fill existing fields');
        }
-
    });
 
-   $(remove_button).click(function(e) { //user click on remove text
-       e.preventDefault();
-       if ($(".challenge_wrapper div").length > 2) {
-           $(".challenge_wrapper div:last").remove()
-           challenge_no--;
-           if (challenge_no == 2) {
-               $('.remove_field_button').parent().addClass('displayNone');
-           }
-       } else {
-           $('.remove_field_button').parent().addClass('displayNone');
-       }
-   })
-
+    $(remove_button).click(function(e) { //user click on remove text
+        e.preventDefault();
+        if ($(".challenge_wrapper div").length > 2) {
+            $(".challenge_wrapper div:last").remove()
+            challenge_no--;
+            if (challenge_no == 2) {
+                $('.remove_field_button').parent().addClass('displayNone');    
+            }
+        } else {
+            $('.remove_field_button').parent().addClass('displayNone');
+        }
+    });
+    
+    $('#company_id_no').click(function() {
+        $('#company-id-box').addClass('displayNone');
+    });
+    $('#company_id_yes').click(function() {
+        $('#company-id-box').removeClass('displayNone');
+    });
 
     $("#challengeMapper").submit(function(e) {
         var values = 0;
@@ -475,9 +475,3 @@ function toggleMode(ev) {
         $(el).removeClass('fa-toggle-off');
     }
 }
-$('#company_id_no').click(function() {
-    $('#company-id-box').addClass('displayNone');
-});
-$('#company_id_yes').click(function() {
-    $('#company-id-box').removeClass('displayNone');
-});
