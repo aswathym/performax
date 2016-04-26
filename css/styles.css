@@ -151,6 +151,9 @@ header {
 .displayNone {
     display: none;
 }
+.displayInline {
+    display: inline-block;
+}
 #addAssessmentPopup .Editor-container {
     margin-left: 24%;
     width: 30%;
@@ -313,9 +316,6 @@ header {
 }
 .marginBottom0 {
     margin-bottom: 5px;
-}
-.displayInline {
-    display: inline-block;
 }
 .opacity_light {
     opacity: 0.6;
