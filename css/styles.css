@@ -1101,7 +1101,7 @@ footer.footer {
 .challenge_box, .cart_box {
     background-color: #FAFAFA;
     border: 1px #e4e4e4 solid;
-    padding: 5px;
+    padding: 0px 10px;
     border-radius: 1px;
     box-shadow: 0 0 6px #ccc;
     margin: 20px 0;
@@ -1240,9 +1240,8 @@ footer.footer {
     margin: 0;
     padding-right: 0;
 }
-.remove_from_cart  {
+.remove_from_cart {
     margin-top: 40px;
-
 }
 .remove_from_cart a {
     font-size: 14px;
@@ -1623,6 +1622,9 @@ input.promocode::-webkit-input-placeholder {
 .custom_assessments {
     height: 66px;
     padding-top: 20px;
+}
+.challenge_box>.row>.col-md-2 img {
+    height: 88px;
 }
 
 /*exSpon_Details_Configurator_Timeline*/

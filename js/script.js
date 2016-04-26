@@ -316,12 +316,12 @@ $(document).ready(function() {
         return ret;
     }
 
-    $('.flow_nav li').click(function(eve) {
-        $(this).siblings().removeClass('active');
-        $(this).siblings().removeClass('another_active');
-        $(this).prevAll('li').addClass('another_active');
-        $(this).addClass('active')
-    });
+    // $('.flow_nav li').click(function(eve) {
+    //     $(this).siblings().removeClass('active');
+    //     $(this).siblings().removeClass('another_active');
+    //     $(this).prevAll('li').addClass('another_active');
+    //     $(this).addClass('active')
+    // });
 
     $("#v-slider").slider({
         orientation: "vertical",
