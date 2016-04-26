@@ -87,6 +87,7 @@ $(document).ready(function() {
             $('.learning_center .white-papers').addClass('transformImage');
         }
     });
+
     $(".learning_section").on("mouseout", function(e){
         $('.learning_center .each_tiles').removeClass('transformImage');
     })
@@ -316,12 +317,12 @@ $(document).ready(function() {
         return ret;
     }
 
-    $('.flow_nav li').click(function(eve) {
-        $(this).siblings().removeClass('active');
-        $(this).siblings().removeClass('another_active');
-        $(this).prevAll('li').addClass('another_active');
-        $(this).addClass('active')
-    });
+    // $('.flow_nav li').click(function(eve) {
+    //     $(this).siblings().removeClass('active');
+    //     $(this).siblings().removeClass('another_active');
+    //     $(this).prevAll('li').addClass('another_active');
+    //     $(this).addClass('active')
+    // });
 
     $("#v-slider").slider({
         orientation: "vertical",
@@ -410,35 +411,38 @@ $(document).ready(function() {
         remove_button = $('.remove_field_button'),
         challenge_no = 2;
 
-  $(remove_button).on("click", function(e){ //user click on remove text
-       e.preventDefault();
-       $(this).parent('div').remove();
-       // challenge_no--
-   })
-    $(add_button).click(function(e) {
-        challenge1 = $('.challenge1').val();
-        challenge2 = $('.challenge2').val();
-        if (challenge1 != "" && challenge2 != "") {
-            e.preventDefault();
-            challenge_no++;
-            $(".challenge_wrapper").append('<div class="challenge"><label>Challenge ' + challenge_no + ' :</label><input type="text" name="challenge" autocomplete="off"></div>');
-            $('.remove_field_button').css('display', 'inline-block');
-        } else {
-            alert('fill existing fields');
-        }
-
-    });
+   $(add_button).click(function(e) {
+       challenge1 = $('.challenge1').val();
+       challenge2 = $('.challenge2').val();
+       if (challenge1 != "" && challenge2 != "") {
+           e.preventDefault();
+           challenge_no++;
+           $(".challenge_wrapper").append('<div class="challenge"><label>Challenge ' + challenge_no + ' :</label><input type="text" name="challenge" autocomplete="off"></div>');
+       $('.remove_field_button').parent().removeClass('displayNone');
+       } else {
+           alert('fill existing fields');
+       }
+   });
 
     $(remove_button).click(function(e) { //user click on remove text
         e.preventDefault();
         if ($(".challenge_wrapper div").length > 2) {
             $(".challenge_wrapper div:last").remove()
             challenge_no--;
+            if (challenge_no == 2) {
+                $('.remove_field_button').parent().addClass('displayNone');    
+            }
         } else {
-            alert('Remove not possible');
-            $('.remove_field_button').css('display', 'none');
+            $('.remove_field_button').parent().addClass('displayNone');
         }
-    })
+    });
+    
+    $('#company_id_no').click(function() {
+        $('#company-id-box').addClass('displayNone');
+    });
+    $('#company_id_yes').click(function() {
+        $('#company-id-box').removeClass('displayNone');
+    });
 
     $("#challengeMapper").submit(function(e) {
         var values = 0;
