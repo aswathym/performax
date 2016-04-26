@@ -1117,7 +1117,7 @@ footer.footer {
 .challenge_box, .cart_box {
     background-color: #FAFAFA;
     border: 1px #e4e4e4 solid;
-    padding: 5px;
+    padding: 0px 10px;
     border-radius: 1px;
     box-shadow: 0 0 6px #ccc;
     margin: 20px 0;
@@ -1215,6 +1215,7 @@ footer.footer {
 }
 .cart_container>.col-md-7 {
     width: 70%;
+    padding-left: 0;
 }
 .cart_container>.col-md-3 {
     width: 30%;
@@ -1256,9 +1257,8 @@ footer.footer {
     margin: 0;
     padding-right: 0;
 }
-.remove_from_cart  {
+.remove_from_cart {
     margin-top: 40px;
-
 }
 .remove_from_cart a {
     font-size: 14px;
@@ -1639,6 +1639,9 @@ input.promocode::-webkit-input-placeholder {
 .custom_assessments {
     height: 66px;
     padding-top: 20px;
+}
+.challenge_box>.row>.col-md-2 img {
+    height: 88px;
 }
 
 /*exSpon_Details_Configurator_Timeline*/
@@ -2482,7 +2485,7 @@ input.promocode::-webkit-input-placeholder {
 .table_content_KPA>h4 {
     margin-left: 15px;
     margin-top: 0;
-    padding-top: 5px;
+    padding-top: 7px;
 }
 .table_row_KPA {
     padding: 5px;
@@ -2815,6 +2818,7 @@ input.promocode::-webkit-input-placeholder {
 }
 .KPA_assigned_details input{
     margin-left: 6px;
+    border: 1px solid #ddd;
 }
 .CSF_effectiveness_rating .rating-container .caption {
     display: none;
