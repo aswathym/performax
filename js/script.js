@@ -423,7 +423,7 @@ $(document).ready(function() {
             e.preventDefault();
             challenge_no++;
             $(".challenge_wrapper").append('<div class="challenge"><label>Challenge ' + challenge_no + ' :</label><input type="text" name="challenge" autocomplete="off"></div>');
-            $('.remove_field_button').css('display', 'inline-block');
+        $('.remove_field_button').parent().removeClass('displayNone');
         } else {
             alert('fill existing fields');
         }
@@ -435,11 +435,20 @@ $(document).ready(function() {
         if ($(".challenge_wrapper div").length > 2) {
             $(".challenge_wrapper div:last").remove()
             challenge_no--;
+            if (challenge_no == 2) {
+                $('.remove_field_button').parent().addClass('displayNone');    
+            }
         } else {
-            alert('Remove not possible');
-            $('.remove_field_button').css('display', 'none');
+            $('.remove_field_button').parent().addClass('displayNone');
         }
-    })
+    });
+    
+    $('#company_id_no').click(function() {
+        $('#company-id-box').addClass('displayNone');
+    });
+    $('#company_id_yes').click(function() {
+        $('#company-id-box').removeClass('displayNone');
+    });
 
     $("#challengeMapper").submit(function(e) {
         var values = 0;
@@ -472,9 +481,3 @@ function toggleMode(ev) {
         $(el).removeClass('fa-toggle-off');
     }
 }
-$('#company_id_no').click(function() {
-    $('#company-id-box').addClass('displayNone');
-});
-$('#company_id_yes').click(function() {
-    $('#company-id-box').removeClass('displayNone');
-});

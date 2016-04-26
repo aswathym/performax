@@ -257,6 +257,9 @@ header {
 .padding0 {
     padding: 0;
 }
+.padddingTop0 {
+    padding-top: 0;
+}
 .paddingRight0 {
     padding-right: 0;
 }
@@ -278,8 +281,14 @@ header {
 .paddingTop5 {
     padding-top: 10px;
 }
+.paddingColumnBox {
+    padding: 0px 20px 0 40px;
+}
 .margin0 {
     margin: 0;
+}
+.margin5 {
+    margin: 5px;
 }
 .margin10 {
     margin: 10px;
@@ -322,6 +331,9 @@ header {
 }
 .floatLeft {
     float: left;
+}
+.floatRight {
+    float: right;
 }
 .bg_transparent {
     background-color: transparent;
@@ -2411,6 +2423,13 @@ input.promocode::-webkit-input-placeholder {
     text-align: center;
     height: 49px;
 }
+#AA_details_page #exSpon_Configurator_Switch_Tab .nav li {
+    margin-right: 1%;
+}
+#AA_details_page #exSpon_Configurator_Switch_Tab .nav li a {
+    height: auto;
+    padding: 8px 10px 3px 10px;
+}
 #AA_details_page .navbar {
     padding-top: 0;
 }
@@ -2745,7 +2764,7 @@ input.promocode::-webkit-input-placeholder {
     color: #09A6D0;
 }
 .approve_questionnaire .questionnaire_accordion a::after {
-    margin-top: -20px;
+    margin-top: -28px;
     text-decoration: none;
 }
 .approve_questionnaire .questionnaire_accordion a::after:hover {
@@ -2851,14 +2870,26 @@ input.promocode::-webkit-input-placeholder {
 #approve_Questionnaire .btn-disabled:hover {
     background-color: #737373;
 }
+#rejectAssessorModel .modal-header {
+    padding: 25px 20px;
+}
+#rejectAssessorModel .modal-body, #rejectAssessorModel .modal-footer {
+    padding: 0px 20px;
+}
 #rejectAssessorModel .modal-body textarea {
     width: 100%;
     border: 2px solid #dedede;
-    border-radius: 5px;
+    padding: 8px 10px;
 }
 #rejectAssessorModel .modal-dialog {
-    width: 50%;
+    width: 42%;
     margin: 13% auto;
+}
+#rejectAssessorModel .modal-dialog .modal-content {
+    border-radius: 0;
+}
+#rejectAssessorModel .modal-body ul {
+    padding: 0 15px;
 }
 #rejectAssessorModel .modal-body ul li {
     list-style-type: none;
@@ -2875,5 +2906,7 @@ input.promocode::-webkit-input-placeholder {
     top: 0.9em;
     position: relative;
 }
-
+.bottom_spacing_div {
+    height: 100px;
+}
 /* AA Details page - Track Ideas for Action*/
