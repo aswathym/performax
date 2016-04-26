@@ -2451,6 +2451,7 @@ input.promocode::-webkit-input-placeholder {
 }
 .table_content_KPA {
     background-color: #FBFBFB;
+    padding-bottom: 30px;
 }
 .table_content_KPA>h4 {
     margin-left: 15px;
@@ -2563,13 +2564,7 @@ input.promocode::-webkit-input-placeholder {
 #asssessment_pricing_list i:hover {
     color: #09A6D0;
 }
-/*.star_rating_div {
-    width: 140px;
-    background-color: #F1F1F1;
-    border-radius: 17px;
-    padding: 0px;
-    border: 1px solid #D2D2D2;
-}*/
+
 
 /* EPM Assessments*/
 .your_selection {
@@ -2691,6 +2686,7 @@ input.promocode::-webkit-input-placeholder {
 /* AA Details page-Access Key Persons Accountable*/
 .AA_AKPA_table {
     margin-bottom: 0;
+    margin-top: 0;
 }
 .AA_AKPA_table th, .AA_AKPA_table td {
     vertical-align: middle !important;
@@ -2793,6 +2789,14 @@ input.promocode::-webkit-input-placeholder {
 }
 .KPA_assigned_details input{
     margin-left: 6px;
+}
+.CSF_effectiveness_rating .rating-container .caption {
+    display: none;
+}
+.CSF_effectiveness {
+    color: #FF5420;
+    font-size: 13px;
+    margin: 10px auto;
 }
 /* Style fixes */
 #pricingForm span {
