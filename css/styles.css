@@ -2866,9 +2866,9 @@ input.promocode::-webkit-input-placeholder {
 #approve_Questionnaire .btn-info {
     font-weight: bold;
 }
-#approve_Questionnaire .btn-disabled {
+.btn-disabled {
     background-color: #9B9B9B;
-    font-weight: bold;
+    font-weight: 500;
     color: #fff;
 }
 #approve_Questionnaire .btn-disabled:hover {
@@ -2914,3 +2914,18 @@ input.promocode::-webkit-input-placeholder {
     height: 100px;
 }
 /* AA Details page - Track Ideas for Action*/
+.approve_questionnaire .approve_assessor_table tr td {
+    padding: 12px 8px;
+}
+.approve_questionnaire .approve_assessor_table tr td, .approve_questionnaire .approve_assessor_table thead th {
+    text-align: center;
+}
+.approve_questionnaire .approve_assessor_table tr td .sub_number, .approve_questionnaire .approve_assessor_table tr td .name{
+    display: inline-block;
+}
+.approve_questionnaire .approve_assessor_table tr td .sub_number {
+    width: 10%
+}
+.approve_questionnaire .approve_assessor_table tr td .name {
+    width: 85%;
+}
