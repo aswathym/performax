@@ -415,30 +415,33 @@ $(document).ready(function() {
        $(this).parent('div').remove();
        // challenge_no--
    })
-    $(add_button).click(function(e) {
-        challenge1 = $('.challenge1').val();
-        challenge2 = $('.challenge2').val();
-        if (challenge1 != "" && challenge2 != "") {
-            e.preventDefault();
-            challenge_no++;
-            $(".challenge_wrapper").append('<div class="challenge"><label>Challenge ' + challenge_no + ' :</label><input type="text" name="challenge" autocomplete="off"></div>');
-            $('.remove_field_button').css('display', 'inline-block');
-        } else {
-            alert('fill existing fields');
-        }
+   $(add_button).click(function(e) {
+       challenge1 = $('.challenge1').val();
+       challenge2 = $('.challenge2').val();
+       if (challenge1 != "" && challenge2 != "") {
+           e.preventDefault();
+           challenge_no++;
+           $(".challenge_wrapper").append('<div class="challenge"><label>Challenge ' + challenge_no + ' :</label><input type="text" name="challenge" autocomplete="off"></div>');
+       $('.remove_field_button').parent().removeClass('displayNone');
+       } else {
+           alert('fill existing fields');
+       }
 
-    });
+   });
 
-    $(remove_button).click(function(e) { //user click on remove text
-        e.preventDefault();
-        if ($(".challenge_wrapper div").length > 2) {
-            $(".challenge_wrapper div:last").remove()
-            challenge_no--;
-        } else {
-            alert('Remove not possible');
-            $('.remove_field_button').css('display', 'none');
-        }
-    })
+   $(remove_button).click(function(e) { //user click on remove text
+       e.preventDefault();
+       if ($(".challenge_wrapper div").length > 2) {
+           $(".challenge_wrapper div:last").remove()
+           challenge_no--;
+           if (challenge_no == 2) {
+               $('.remove_field_button').parent().addClass('displayNone');
+           }
+       } else {
+           $('.remove_field_button').parent().addClass('displayNone');
+       }
+   })
+
 
     $("#challengeMapper").submit(function(e) {
         var values = 0;
