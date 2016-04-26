@@ -430,7 +430,44 @@
                                         </div>
                                     </div>
                                     <div class="col-md-6 text-right">
-                                        <button type="button" name="button" class="btn btn-sm blue_border_button edit_button">Assign KPA</button>
+                                        <button type="button" name="button" class="btn btn-sm blue_border_button edit_button" data-toggle="modal" data-target="#assignKPA">Assign KPA</button>
+                                    </div>
+                                    <div class="modal fade" id="assignKPA" role="dialog">
+                                        <div class="modal-dialog">
+                                            <!-- Modal content-->
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">To</h4>
+                                                    <div class="">
+                                                        <span>John Goldsmith</span>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="row customCSF_title_desc">
+                                                            <div class="col-md-12 assignKPA_label">
+                                                                <div class="form-element">
+                                                                    <label>Subject</label>
+                                                                    <input type="text">
+                                                                </div>
+                                                                <div class="form-element CSF_Description">
+                                                                    <label for="" class="floatLeft">Message</label>
+                                                                    <textarea name="name" rows="10" cols="30" ></textarea>
+                                                                    <!-- <input type="text" id="CSF_Description" placeholder="Maximum 20 words"> -->
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                    </form>
+                                                </div>
+                                                <div class="add_CSF_button">
+                                                    <button type="button" class="btn btn-info" data-dismiss="modal">Submit </button>
+                                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -540,7 +577,6 @@
                                             </tbody>
                                         </table>
                                     </div>
-                            
                                     <h4>People and Leadership</h4>
                                     <div class="Questionnaire_box">
                                         <table  class="table table-bordered AA_AKPA_table box-shadow-styling ">

@@ -2798,6 +2798,16 @@ input.promocode::-webkit-input-placeholder {
     font-size: 13px;
     margin: 10px auto;
 }
+#assignKPA>.modal-dialog {
+    width: 50%;
+}
+.assignKPA_label>.form-element label {
+    width: 15%;
+}
+.assignKPA_label>.form-element input {
+    float: none;
+}
+
 /* Style fixes */
 #pricingForm span {
     padding-top: 10px;
