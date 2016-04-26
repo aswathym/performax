@@ -1088,6 +1088,9 @@ h1 {
     margin-left: 10px;
     line-height: 16px;
 }
+#login-cnt form p{
+    font-size: 13px;
+}
 footer.footer {
     border-top: 0;
 }
@@ -1377,6 +1380,13 @@ input.promocode::-webkit-input-placeholder {
     padding: 20px 2%;
     margin: 30px 0;
 }
+.create-profile h4{
+    margin-top:0;
+    margin-bottom: 15px;
+}
+.create-profile img{
+    margin-bottom: 5px;
+}
 .create-profile .form-content label {
     width: 35%;
 }
@@ -1384,7 +1394,7 @@ input.promocode::-webkit-input-placeholder {
     width: 50%;
     height: 30px;
     float: none;
-    margin-bottom: 15px;
+    margin-bottom: 9px;
 }
 .create-profile .btn-group button {
     width: 100%;
@@ -1398,7 +1408,9 @@ input.promocode::-webkit-input-placeholder {
 #profile .form-element input, #profile .form-element>div {
     float: none;
 }
-
+.create-profile .form-element{
+    margin-bottom: 0;
+}
 /*User ExSpon Product Listing*/
 
 #product_listing .header_img {
@@ -2914,3 +2926,4 @@ input.promocode::-webkit-input-placeholder {
     height: 100px;
 }
 /* AA Details page - Track Ideas for Action*/
+
