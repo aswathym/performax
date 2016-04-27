@@ -364,11 +364,13 @@ header {
 .navbar {
     margin-bottom: 0;
     padding-top: 20px;
+    border:0;
 }
 .navbar .nav>li>a {
     padding: 17px 9px 15px;
     font-family: 'Roboto-Regular';
     font-size: 14px;
+    margin: 0;
 }
 .nav>li {
     border-bottom: 3px solid transparent;
@@ -506,6 +508,9 @@ header {
 }
 #tab_header .active {
     border-bottom: 1px solid transparent;
+}
+#tab_header li:last-child{
+    float: right;
 }
 #tab_header .active a {
     background-color: #09A6D0;
@@ -2423,7 +2428,7 @@ input.promocode::-webkit-input-placeholder {
     border-bottom: 2px solid #09A6D0;
 }
 #AA_details_page .nav li a {
-    padding: 13px 11px 0px 12px;
+    padding: 13px 13px 0px 13px;
     font-size: 15px;
     text-align: center;
     height: 49px;
