@@ -2908,6 +2908,15 @@ input.promocode::-webkit-input-placeholder {
 #approve_Questionnaire .btn-disabled:hover {
     background-color: #737373;
 }
+#rejectAssessorModel .modal-body textarea {
+    width: 100%;
+    border: 2px solid #dedede;
+    border-radius: 5px;
+}
+#rejectAssessorModel .modal-dialog {
+    width: 50%;
+    margin: 13% auto;
+}
 #rejectAssessorModel .modal-header {
     padding: 25px 20px;
 }
