@@ -94,6 +94,8 @@ header {
 .btn-info {
     background-color: #2C88CE;
     border-color: #1072bd;
+}
+.btn-info, .btn-disabled {
     padding: 5px 25px;
 }
 #view_report input {
