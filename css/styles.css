@@ -94,6 +94,8 @@ header {
 .btn-info {
     background-color: #2C88CE;
     border-color: #1072bd;
+}
+.btn-info, .btn-disabled {
     padding: 5px 25px;
 }
 #view_report input {
@@ -2878,9 +2880,9 @@ input.promocode::-webkit-input-placeholder {
 #approve_Questionnaire .btn-info {
     font-weight: bold;
 }
-#approve_Questionnaire .btn-disabled {
+.btn-disabled {
     background-color: #9B9B9B;
-    font-weight: bold;
+    font-weight: 500;
     color: #fff;
 }
 #approve_Questionnaire .btn-disabled:hover {
@@ -2926,4 +2928,60 @@ input.promocode::-webkit-input-placeholder {
     height: 100px;
 }
 /* AA Details page - Track Ideas for Action*/
+#track_ideas_for_action>.container-fluid {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#track_ideas_for_action>.container-fluid>.row .col-md-10 {
+    margin-top: 55px;
+}
+.medium_button {
+    background-color: #FFA619;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 12px;
+    border: 0px;
+    padding: 2px 5px;
+}
+.high_button {
+    background-color: #FF4817;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 12px;
+    border: 0px;
+    padding: 2px 15px;
+}
+.selectedIFA_table th:nth-child(3), .selectedIFA_table th:nth-child(4), .selectedIFA_table th:nth-child(5){
+    width: 14%;
+}
+.selectedIFA_table th:nth-child(1){
+    width: 1%;
+}
+.selectedIFA_table th:nth-child(2){
+    width: 25%;
+}
+.selectedIFA_table th:nth-child(6){
+    width: 17%;
+}
+.selectedIFA_table th:nth-child(7){
+    width: 15%;
+}
+.selectedIFA_table td:not(:nth-child(1)){
+    vertical-align: middle;
+}
+.approve_questionnaire .approve_assessor_table tr td {
+    padding: 12px 8px;
+}
+.approve_questionnaire .approve_assessor_table tr td, .approve_questionnaire .approve_assessor_table thead th {
+    text-align: center;
+}
+.approve_questionnaire .approve_assessor_table tr td .sub_number, .approve_questionnaire .approve_assessor_table tr td .name{
+    display: inline-block;
+}
+.approve_questionnaire .approve_assessor_table tr td .sub_number {
+    width: 10%
+}
+.approve_questionnaire .approve_assessor_table tr td .name {
+    width: 85%;
+}
 
