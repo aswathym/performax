@@ -2939,6 +2939,7 @@ input.promocode::-webkit-input-placeholder {
     border-radius: 15px;
     font-size: 12px;
     border: 0px;
+    padding: 2px 5px;
 }
 .high_button {
     background-color: #FF4817;
@@ -2946,8 +2947,26 @@ input.promocode::-webkit-input-placeholder {
     border-radius: 15px;
     font-size: 12px;
     border: 0px;
+    padding: 2px 15px;
 }
-
+.selectedIFA_table th:nth-child(3), .selectedIFA_table th:nth-child(4), .selectedIFA_table th:nth-child(5){
+    width: 14%;
+}
+.selectedIFA_table th:nth-child(1){
+    width: 1%;
+}
+.selectedIFA_table th:nth-child(2){
+    width: 25%;
+}
+.selectedIFA_table th:nth-child(6){
+    width: 17%;
+}
+.selectedIFA_table th:nth-child(7){
+    width: 15%;
+}
+.selectedIFA_table td:not(:nth-child(1)){
+    vertical-align: middle;
+}
 .approve_questionnaire .approve_assessor_table tr td {
     padding: 12px 8px;
 }
