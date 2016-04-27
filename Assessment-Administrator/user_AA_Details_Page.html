@@ -126,8 +126,8 @@
                             <li class="active"><a href="#nominateExpertPanels" aria-controls="nominateExpertPanels" role="tab" data-toggle="tab">Nominate Expert Panels</a></li>
                             <li><a href="#approve_Questionnaire" aria-controls="approve_Questionnaire" role="tab" data-toggle="tab">Approve Questionnaire</a></li>
                             <li><a href="#approve_assessors" aria-controls="approve_assessors" role="tab" data-toggle="tab">Approve Assessors</a></li>
-                            <li><a href="#under_work" aria-controls="under_work" role="tab" data-toggle="tab">Select Ideas for Action</a></li>
-                            <li><a href="#access_key_persons_accountable" aria-controls="under_work" role="tab" data-toggle="tab">Access Key Persons Accountable</a></li>
+                            <li><a href="#select_ideas_for_action" aria-controls="select_ideas_for_action" role="tab" data-toggle="tab">Select Ideas for Action</a></li>
+                            <li><a href="#access_key_persons_accountable" aria-controls="access_key_persons_accountable" role="tab" data-toggle="tab">Access Key Persons Accountable</a></li>
                             <li><a href="#track_ideas_for_action" aria-controls="track_ideas_for_action" role="tab" data-toggle="tab">Track Ideas For Action</a></li>
                         </ul>
                     </nav>
@@ -136,7 +136,7 @@
                         <div id="nominateExpertPanels" class=" tab-pane active container padding10" role="tabpanel">
                             <div class="heading">
                                 <h4 class="col-md-6 padding10">Nominate Expert Panel Members</h4>
-                                <span class="col-md-6 text-right"><button type="button" name="button" class="btn btn-sm blue_border_button edit_button marginTop10">Edit</button></span>
+                                <span class="col-md-6 text-right"><button type="button" name="button" class="btn btn-sm blue_border_button edit_button marginTop20">Edit</button></span>
                             </div>
                             <div class="col-md-12 margin0">
                                 <div class="" id="exSpon_Configurator_Switch_Tab">
@@ -145,12 +145,12 @@
                                             <li class="active"><a href="#assessment_design" aria-controls="assessment_design" role="tab" data-toggle="tab">Assessmet Design</a></li>
                                             <li><a href="#under_construction" aria-controls="" role="tab" data-toggle="tab">Assessor Selection</a></li>
                                             <li><a href="#under_construction" aria-controls="" role="tab" data-toggle="tab">Action Planning</a></li>
-                                            <span class="pull-right"><img src="../images/assessment_configurator.png" alt="" width="75px;" /></span>
+                                            <span class="assment_dsgner_img"><img src="../images/assessment_configurator.png" /></span>
                                         </ul>
                                     </nav>
                                 </div>
                                 <div class="tab-content">
-                                    <div id="assessment_design" class="tab-pane active col-md-12 padding0" role="tabpanel">
+                                    <div id="assessment_design" class="tab-pane active col-md-12 padding0 marginTop10" role="tabpanel">
                                         <div class="col-md-4 padding10 box-shadow-styling-light">
                                             <h4>Expert Panel Member</h4>
                                             <form class="">
@@ -171,7 +171,7 @@
                                                     <input type="text" name="name" value="">
                                                 </span>
                                                 <div class="text-center">
-                                                    <button type="button" name="button" class="btn btn-info">Add</button>
+                                                    <button type="button" name="button" class="btn btn-info margin20">Add</button>
                                                 </div>
                                             </form>
                                         </div>
@@ -193,7 +193,7 @@
                                                 </span>
                                             </div>
                                             <div class="text-center">
-                                                <button type="button" name="button" class="btn btn-info marginTop20">Save</button>
+                                                <button type="button" name="button" class="btn btn-info save_button">Save</button>
                                             </div>
                                         </div>
                                     </div>
@@ -220,7 +220,7 @@
                                          <button type="button" name="button" class="btn btn-disabled marginLeft20px" data-toggle="modal" data-target="#rejectAssessorModel">Reject</button>
                                      </span>
                                  </div>
-                                
+
                                 <ul class="container col-md-10 col-md-offset-1 approve_questionnaire">
                                      <li class="box-shadow-styling-light">
                                          <div class="panel-group questionnaire_accordion" id="accordion">
@@ -426,14 +426,14 @@
                                     <span class="col-md-8 marginTop20 text-right">
                                         <button type="button" name="button" class="btn btn-info margin5">Approve</button>
                                         <button type="button" name="button" class="btn btn-info margin5">Start Assessment</button>
-                                        <button type="button" name="button" class="btn btn-disabled marginLeft20px" data-toggle="modal" data-target="#rejectAssessorModel">Reject</button>
+                                        <button type="button" name="button" class="btn btn-disabled margin5" data-toggle="modal" data-target="#rejectAssessorModel">Reject</button>
                                     </span>
                                 </div>
                             </div>
                             <div class="col-md-12 box-shadow-styling padding20">
-                                <h4>Selected Assessor Groups & Assessors</h4>
-                                <div>The following Assessor Groups & Assessors have been recommended by the <b>Expert Panel Members</b>.</div>
-                                <div class="marginTop10">
+                                <h4 class="marginTop0">Selected Assessor Groups & Assessors</h4>
+                                <h5>The following Assessor Groups & Assessors have been recommended by the <b>Expert Panel Members</b>.</h5>
+                                <div class="marginTop20">
                                     <ul class="container col-md-12 approve_questionnaire margin0">
                                         <li class="box-shadow-styling-light">
                                              <div class="panel-group questionnaire_accordion" id="accordion">
@@ -914,16 +914,16 @@
                                                                 <th class="text-center">
                                                                     IFA Impact
                                                                 </th>
-                                                                <th>
+                                                                <th class="text-center">
                                                                     Effectiveness Gap
                                                                 </th>
-                                                                <th>
-                                                                    CSF_Description
+                                                                <th class="text-center">
+                                                                    CSF
                                                                 </th>
                                                                 <th class="text-center">
                                                                     CSF Importance Ranking
                                                                 </th>
-                                                                <th>
+                                                                <th class="text-center">
                                                                     Gantt Chart
                                                                 </th>
                                                             </tr>
@@ -952,16 +952,23 @@
                                                                 </td>
                                                                 <td class="text-center"><button type="button" name="button" class="medium_button">Medium</button></td>
                                                                 <td>
-
+                                                                    <img src="../images/share.png" alt="" width="80%"/>
+                                                                    <div class="">
+                                                                        <a href="#">View Gantt Chart</a>
+                                                                    </div>
                                                                 </td>
 
                                                             </tr>
                                                             <tr>
                                                                 <td>
-
+                                                                    <span class="text-center option checkbox">
+                                                                        <input id="checkbox1" class="" type="checkbox">
+                                                                        <label for="checkbox1"></label>
+                                                                    </span>
                                                                 </td>
                                                                 <td>
-                                                                    sdsd
+                                                                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                                                                    <div class="source_knowledgebase">Source: <button type="button" name="button">Performax Knowledgebase </button></div>
                                                                 </td>
                                                                 <td>
                                                                     <div class="star_rating_div">
@@ -974,7 +981,10 @@
                                                                 </td>
                                                                 <td class="text-center"><button type="button" name="button" class="high_button">High</button></td>
                                                                 <td>
-
+                                                                    <img src="../images/share.png" alt="" width="80%"/>
+                                                                    <div class="">
+                                                                        <a href="#">View Gantt Chart</a>
+                                                                    </div>
                                                                 </td>
 
                                                             </tr>
@@ -988,8 +998,181 @@
                                 </ul>
                             </div>
                         </div>
-                        <div id="under_work" class="tab-pane" role="tabpanel">
-                            Under Construction
+
+                        <!-- Select Ideas for Action Tab -->
+                        <div id="select_ideas_for_action" class="tab-pane" role="tabpanel">
+                            <div class="container-fluid">
+                                <div class="row ">
+                                    <div class="col-md-3 ideas_for_action">
+                                        <b>09</b>
+                                        <img src="../images/assessment_configurator.png" alt="" width="55%" />
+                                    </div>
+                                    <div class="col-md-7 text-center paddingTop5">
+                                        <span>The following IFAs have been recommended by the <b>Expert Panel Members</b> for Action Planning and is supported by the Performax ANFIS</span>
+                                    </div>
+                                    <div class="col-md-2 floatRight">
+                                        <img src="../images/assessment_configurator.png" alt="" width="80%" />
+                                    </div>
+                                </div>
+
+                                <ul class="col-md-12 approve_questionnaire">
+                                    <li class="box-shadow-styling-light">
+                                        <div class="panel-group questionnaire_accordion" id="accordion">
+                                            <div class="panel panel-default" id="panel1">
+                                                <div class="panel-heading">
+                                                    <div class="select_ideas_ranking">
+                                                        <span class=" option checkbox ">
+                                                            <input id="checkbox2" class="" type="checkbox">
+                                                            <label for="checkbox2"></label>
+                                                        </span>
+                                                        <a data-toggle="collapse" data-target="" href="#collapse19" class="collapsed">
+                                                            <h5>
+                                                                <b>
+                                                                High Ranked
+                                                                <span class="questionnaire_count">3</span>
+                                                            </b></h5>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div id="collapse19" class="panel-collapse collapse">
+                                                    <div class="panel-body customized_sub_heading_content">Something important</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="box-shadow-styling-light">
+                                        <div class="panel-group questionnaire_accordion" id="accordion">
+                                            <div class="panel panel-default" id="panel2">
+                                                <div class="panel-heading">
+                                                    <div class="select_ideas_ranking">
+                                                        <span class="option checkbox">
+                                                            <input id="checkbox3" class="" type="checkbox">
+                                                            <label for="checkbox3"></label>
+                                                        </span>
+                                                        <a data-toggle="collapse" data-target="" href="#collapse20" class="collapsed">
+                                                            <h5>
+                                                                <b>
+                                                                Medium Ranked
+                                                                <span class="questionnaire_count">3</span>
+                                                            </b></h5>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div id="collapse20" class="panel-collapse collapse">
+                                                    <div class="panel-body customized_sub_heading_content">Something important</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="box-shadow-styling-light">
+                                        <div class="panel-group questionnaire_accordion" id="accordion">
+                                            <div class="panel panel-default" id="panel3">
+                                                <div class="panel-heading">
+                                                    <div class="select_ideas_ranking">
+                                                        <span class="option checkbox ">
+                                                            <input id="checkbox1" class="" type="checkbox">
+                                                            <label for="checkbox1"></label>
+                                                        </span>
+                                                        <a data-toggle="collapse" data-target="" href="#collapse30">
+                                                            <h5>
+                                                                <b>
+                                                                Low Ranked
+                                                                <span class="questionnaire_count">2</span>
+                                                            </b></h5>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div id="collapse30" class="panel-collapse collapse in">
+                                                    <table  class="table table-bordered select_idea_IFA_table">
+                                                        <thead>
+                                                            <tr style="width:100%;">
+                                                                <th>
+
+                                                                </th>
+                                                                <th>
+                                                                    IFA
+                                                                </th>
+                                                                <th class="text-center">
+                                                                    IFA Impact Rating
+                                                                </th>
+                                                                <th class="text-center">
+                                                                    IFA Source
+                                                                </th>
+                                                                <th class="text-center">
+                                                                    Related CSF
+                                                                </th>
+                                                                <th class="text-center">
+                                                                    <div class="">
+                                                                        CSF
+                                                                    </div> Effectiveness Gap
+                                                                </th>
+                                                                <th class="text-center">
+                                                                    <div class="">
+                                                                        CSF
+                                                                    </div> Importance Ranking
+                                                                </th>
+                                                            </tr>
+
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <span class="text-center option checkbox">
+                                                                        <input id="checkbox1" class="" type="checkbox">
+                                                                        <label for="checkbox1"></label>
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                                                                    <div class="source_knowledgebase">Source: <button type="button" name="button">Performax Knowledgebase </button></div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="star_rating_div selected_IFA_rating">
+                                                                        <input value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <img src="../images/share.png" alt="" width="80%"/>
+                                                                </td>
+                                                                <td>
+                                                                    Financial Policy <a href="">more</a>
+                                                                </td>
+                                                                <td class="text-center"><button type="button" name="button" class="medium_button">Medium</button></td>
+                                                                <td class="text-center"><button type="button" name="button" class="medium_button">Medium</button></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <span class="text-center option checkbox">
+                                                                        <input id="checkbox1" class="" type="checkbox">
+                                                                        <label for="checkbox1"></label>
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                                                                    <div class="source_knowledgebase">Source: <button type="button" name="button">Performax Knowledgebase </button></div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="star_rating_div selected_IFA_rating">
+                                                                        <input value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <img src="../images/share.png" alt="" width="80%"/>
+                                                                </td>
+                                                                <td>
+                                                                    Financial Policy <a href="">more</a>
+                                                                </td>
+                                                                <td class="text-center"><button type="button" name="button" class="high_button">High</button></td>
+                                                                <td class="text-center"><button type="button" name="button" class="high_button">High</button></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
