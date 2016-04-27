@@ -1651,6 +1651,10 @@ input.promocode::-webkit-input-placeholder {
 #exSpon_Configurator_Switch_Tab .nav {
     border-bottom: transparent;
 }
+#exSpon_Configurator_Switch_Tab .assment_dsgner_img img {
+    position: absolute;
+    right: 0;
+}
 #exSpon_Configurator_Switch_Tab .nav li {
     border-bottom: 2px solid #AAA9A9;
     margin-right: 2%;
@@ -2459,9 +2463,11 @@ input.promocode::-webkit-input-placeholder {
     padding: 3px 0px;
 }
 
-}
 #assessment_design .form-content label {
-    padding-right: 0;
+    padding-right: 10px;
+}
+#assessment_design .save_button {
+    margin: 40px 20px 20px;
 }
 .KPA_assigned {
     font-size: 15px;
@@ -2885,6 +2891,9 @@ input.promocode::-webkit-input-placeholder {
 }
 #rejectAssessorModel .modal-body, #rejectAssessorModel .modal-footer {
     padding: 0px 20px;
+}
+#rejectAssessorModel .add_CSF_button {
+    margin-top: 30px;
 }
 #rejectAssessorModel .modal-body textarea {
     width: 100%;
