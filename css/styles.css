@@ -2650,6 +2650,10 @@ input.promocode::-webkit-input-placeholder {
 .select_assessment_questions .row h3 {
     margin-bottom: 0;
 }
+.not-active {
+    pointer-events: none;
+    cursor: default;
+}
 .select_assessment_questions>.row>.col-md-7 {
     margin-top: 25px;
 }
