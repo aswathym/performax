@@ -1045,6 +1045,7 @@ h1 {
     border: 0;
     box-shadow: none;
     padding: 0;
+    margin-top: 80px;
 }
 #login-cnt form {
     padding: 6% 0;
@@ -2967,9 +2968,8 @@ input.promocode::-webkit-input-placeholder {
     height: 100px;
 }
 /* AA Details page - Track Ideas for Action*/
-
 #track_ideas_for_action>.container-fluid, #select_ideas_for_action>.container-fluid {
-    margin-left: 30px;
+   margin-left: 30px;
     margin-right: 30px;
 }
 #track_ideas_for_action>.container-fluid>.row .col-md-10 {
@@ -3023,6 +3023,7 @@ input.promocode::-webkit-input-placeholder {
 }
 .approve_questionnaire .approve_assessor_table tr td .name {
     width: 85%;
+<<<<<<< HEAD
 }
 .assessors_header_tab li a::after {
     padding: 5px 3px;
@@ -3123,6 +3124,8 @@ input.promocode::-webkit-input-placeholder {
 }
 #h-slider1 {
     margin: 10px 0;
+=======
+>>>>>>> 4d5573d1339d03ac00c46e38f84f97e2b553ae14
 }
 
 /* AA Details page - Select Ideas for Action*/
