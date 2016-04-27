@@ -220,28 +220,8 @@
                                          <button type="button" name="button" class="btn btn-disabled marginLeft20px" data-toggle="modal" data-target="#rejectAssessorModel">Reject</button>
                                      </span>
                                  </div>
-                                 <div class="modal fade add_custom_CSF" id="rejectAssessorModel" role="dialog">
-                                     <div class="modal-dialog">
-                                         <!-- Modal content-->
-                                         <div class="modal-content">
-                                             <div class="modal-header">
-                                                 <h4 class="modal-title">Add comment for rejecting assessors</h4>
-                                             </div>
-                                             <div class="modal-body">
-                                                 <textarea name="" rows="4" placeholder="Enter Comment"></textarea>
-                                                 <ul>
-                                                     <li>Your comments will be sent to Expert Panel Members for Assessor Selection.</li>
-                                                     <li>A revised selection of Assessors will be resubmitted to you for your approval.</li>
-                                                 </ul>
-                                             </div>
-                                             <div class="add_CSF_button">
-                                                 <button type="button" class="btn btn-info" data-dismiss="modal">Submit </button>
-                                                 <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
-                                             </div>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <ul class="container col-md-10 col-md-offset-1 approve_questionnaire">
+                                
+                                <ul class="container col-md-10 col-md-offset-1 approve_questionnaire">
                                      <li class="box-shadow-styling-light">
                                          <div class="panel-group questionnaire_accordion" id="accordion">
                                              <div class="panel panel-default" id="panel1">
@@ -411,6 +391,27 @@
                                  </ul>
                              </div>
                          </div>
+                         <div class="modal fade add_custom_CSF" id="rejectAssessorModel" role="dialog">
+                             <div class="modal-dialog">
+                                 <!-- Modal content-->
+                                 <div class="modal-content">
+                                     <div class="modal-header">
+                                         <h4 class="modal-title">Add comment for rejecting assessors</h4>
+                                     </div>
+                                     <div class="modal-body">
+                                         <textarea name="" rows="4" placeholder="Enter Comment"></textarea>
+                                         <ul>
+                                             <li>Your comments will be sent to Expert Panel Members for Assessor Selection.</li>
+                                             <li>A revised selection of Assessors will be resubmitted to you for your approval.</li>
+                                         </ul>
+                                     </div>
+                                     <div class="add_CSF_button">
+                                         <button type="button" class="btn btn-info" data-dismiss="modal">Submit </button>
+                                         <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                                     </div>
+                                 </div>
+                             </div>
+                        </div>
                          <!-- Approve Assessors Tab contents -->
                          <div id="approve_assessors" class="tab-pane" role="tabpanel">
                             <div class="container padding10">
@@ -419,21 +420,172 @@
                                         <img src="../images/assessment_configurator.png">
                                     </span>
                                     <span class="col-md-2 padding0 text-center">
-                                        <h3>26</h3>
+                                        <h3><b>26</b></h3>
                                         Nominated Assessors
                                     </span>
                                     <span class="col-md-8 marginTop20 text-right">
                                         <button type="button" name="button" class="btn btn-info margin5">Approve</button>
                                         <button type="button" name="button" class="btn btn-info margin5">Start Assessment</button>
-                                        <button type="button" name="button" class="btn btn-disabled margin5">Reject</button>
+                                        <button type="button" name="button" class="btn btn-disabled marginLeft20px" data-toggle="modal" data-target="#rejectAssessorModel">Reject</button>
                                     </span>
                                 </div>
                             </div>
-                            <div class="col-md-12 box-shadow-styling">
+                            <div class="col-md-12 box-shadow-styling padding20">
                                 <h4>Selected Assessor Groups & Assessors</h4>
                                 <div>The following Assessor Groups & Assessors have been recommended by the <b>Expert Panel Members</b>.</div>
-                                <div class="">
-                                    
+                                <div class="marginTop10">
+                                    <ul class="container col-md-12 approve_questionnaire margin0">
+                                        <li class="box-shadow-styling-light">
+                                             <div class="panel-group questionnaire_accordion" id="accordion">
+                                                 <div class="panel panel-default" id="pane21">
+                                                     <div class="panel-heading">
+                                                         <div class="">
+                                                             <a data-toggle="collapse" data-target="" href="#collapse21">
+                                                                 <h5><b>
+                                                                     <span>1. </span>
+                                                                     CXO
+                                                                     <span class="questionnaire_count">6</span>
+                                                                 </b></h5>
+                                                             </a>
+                                                         </div>
+                                                     </div>
+                                                     <div id="collapse21" class="panel-collapse collapse in">
+                                                         <table  class="table table-bordered approve_assessor_table">
+                                                             <thead class="text-center">
+                                                                 <th>Name</th>
+                                                                 <th>Designation</th>
+                                                                 <th>Assessor Email Address</th>
+                                                                 <th>Assessor Approval Rating</th>
+                                                                 <th>Assessor Important Rating</th>
+                                                             </thead>
+                                                             <tr>
+                                                                <td>
+                                                                   <span class="sub_number">1.1 </span>
+                                                                   <span class="name">Andrew Palmer Gartner</span>
+                                                                </td>
+                                                                 <td>CEO</td>
+                                                                 <td>andrewpalmer@abcd.com</td>
+                                                                 <td>100%</td>
+                                                                 <td>
+                                                                     <div class="star_rating_div">
+                                                                         <input value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                                                     </div>
+                                                                 </td>
+                                                             </tr>
+                                                             <tr>
+                                                                <td>
+                                                                    <span class="sub_number">1.2 </span>
+                                                                    <span class="name">Jerry Fernando</span>
+                                                                 </td>
+                                                                 <td>CTO</td>
+                                                                 <td>jerryfernando@abcd.com</td>
+                                                                 <td>50%</td>
+                                                                 <td>
+                                                                     <div class="star_rating_div">
+                                                                         <input value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                                                     </div>
+                                                                 </td>
+                                                             </tr>
+                                                             <tr>
+                                                                 <td>
+                                                                    <span class="sub_number">1.3 </span>
+                                                                    <span class="name">Alexander jane Burrows</span>
+                                                                 </td>
+                                                                 <td>CFO</td>
+                                                                 <td>janealexander@abcd.com</td>
+                                                                 <td>25%</td>
+                                                                 <td>
+                                                                     <div class="star_rating_div">
+                                                                         <input value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                                                     </div>
+                                                                 </td>
+                                                             </tr>
+                                                         </table>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                         </li>
+                                         <li class="box-shadow-styling-light">
+                                             <div class="panel-group questionnaire_accordion" id="accordion">
+                                                 <div class="panel panel-default" id="panel22">
+                                                     <div class="panel-heading">
+                                                         <div class="">
+                                                             <a data-toggle="collapse" data-target="" href="#collapse22" class="collapsed">
+                                                                 <h5><b>
+                                                                     <span>2. </span>
+                                                                     Senior Executives
+                                                                     <span class="questionnaire_count">5</span>
+                                                                 </b></h5>
+                                                             </a>
+                                                         </div>
+                                                     </div>
+                                                     <div id="collapse22" class="panel-collapse collapse">
+                                                         <div class="panel-body customized_sub_heading_content">Something important</div>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                         </li>
+                                         <li class="box-shadow-styling-light">
+                                             <div class="panel-group questionnaire_accordion" id="accordion">
+                                                 <div class="panel panel-default" id="panel23">
+                                                     <div class="panel-heading">
+                                                         <div class="">
+                                                             <a data-toggle="collapse" data-target="" href="#collapse23" class="collapsed">
+                                                                 <h5><b>
+                                                                     <span>3. </span>
+                                                                     Mid-level Managers
+                                                                     <span class="questionnaire_count">3</span>
+                                                                 </b></h5>
+                                                             </a>
+                                                         </div>
+                                                     </div>
+                                                     <div id="collapse23" class="panel-collapse collapse">
+                                                         <div class="panel-body customized_sub_heading_content">Something important</div>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                         </li>
+                                         <li class="box-shadow-styling-light ">
+                                             <div class="panel-group questionnaire_accordion" id="accordion">
+                                                 <div class="panel panel-default" id="panel24">
+                                                     <div class="panel-heading">
+                                                         <div class="">
+                                                             <a data-toggle="collapse" data-target="" href="#collapse24" class="collapsed">
+                                                                 <h5><b>
+                                                                     <span>4. </span>
+                                                                     Junior Employees
+                                                                     <span class="questionnaire_count">3</span>
+                                                                 </b></h5>
+                                                             </a>
+                                                         </div>
+                                                     </div>
+                                                     <div id="collapse24" class="panel-collapse collapse">
+                                                         <div class="panel-body customized_sub_heading_content">Something important</div>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                         </li>
+                                         <li class="box-shadow-styling-light ">
+                                             <div class="panel-group questionnaire_accordion" id="accordion">
+                                                 <div class="panel panel-default" id="panel25">
+                                                     <div class="panel-heading">
+                                                         <div class="">
+                                                             <a data-toggle="collapse" data-target="" href="#collapse25" class="collapsed">
+                                                                 <h5><b>
+                                                                     <span>5. </span>
+                                                                     Board Members
+                                                                     <span class="questionnaire_count">4</span>
+                                                                 </b></h5>
+                                                             </a>
+                                                         </div>
+                                                     </div>
+                                                     <div id="collapse25" class="panel-collapse collapse">
+                                                         <div class="panel-body customized_sub_heading_content">Something important</div>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                         </li>
+                                    </ul>
                                 </div>
                             </div>
                          </div>
@@ -684,8 +836,157 @@
                                 </div>
                             </section>
                         </div>
+
+                        <!-- Track Ideas for Action -->
                         <div  id="track_ideas_for_action" class="tab-pane" role="tabpanel">
-                            ghjgh
+                            <div class="container-fluid">
+                                <div class="row ">
+                                    <div class="col-md-10">
+                                        <h4>List of Selected IFAs</h4>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <img src="../images/assessment_configurator.png" alt="" width="100%" />
+                                    </div>
+                                </div>
+
+                                <ul class="col-md-12 approve_questionnaire">
+                                    <li class="box-shadow-styling-light">
+                                        <div class="panel-group questionnaire_accordion" id="accordion">
+                                            <div class="panel panel-default" id="panel1">
+                                                <div class="panel-heading">
+                                                    <div class="">
+                                                        <a data-toggle="collapse" data-target="" href="#collapse16" class="collapsed">
+                                                            <h5><b>
+                                                                High Ranked
+                                                                <span class="questionnaire_count">3</span>
+                                                            </b></h5>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div id="collapse16" class="panel-collapse collapse">
+                                                    <div class="panel-body customized_sub_heading_content">Something important</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="box-shadow-styling-light">
+                                        <div class="panel-group questionnaire_accordion" id="accordion">
+                                            <div class="panel panel-default" id="panel2">
+                                                <div class="panel-heading">
+                                                    <div class="">
+                                                        <a data-toggle="collapse" data-target="" href="#collapse17" class="collapsed">
+                                                            <h5><b>
+                                                                Medium Ranked
+                                                                <span class="questionnaire_count">3</span>
+                                                            </b></h5>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div id="collapse17" class="panel-collapse collapse">
+                                                    <div class="panel-body customized_sub_heading_content">Something important</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="box-shadow-styling-light">
+                                        <div class="panel-group questionnaire_accordion" id="accordion">
+                                            <div class="panel panel-default" id="panel3">
+                                                <div class="panel-heading">
+                                                    <div class="">
+                                                        <a data-toggle="collapse" data-target="" href="#collapse18">
+                                                            <h5><b>
+                                                                Low Ranked
+                                                                <span class="questionnaire_count">2</span>
+                                                            </b></h5>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div id="collapse18" class="panel-collapse collapse in">
+                                                    <table  class="table table-bordered selectedIFA_table">
+                                                        <thead>
+                                                            <tr style="width:100%;">
+                                                                <th>
+
+                                                                </th>
+                                                                <th>
+                                                                    IFA
+                                                                </th>
+                                                                <th class="text-center">
+                                                                    IFA Impact
+                                                                </th>
+                                                                <th>
+                                                                    Effectiveness Gap
+                                                                </th>
+                                                                <th>
+                                                                    CSF_Description
+                                                                </th>
+                                                                <th class="text-center">
+                                                                    CSF Importance Ranking
+                                                                </th>
+                                                                <th>
+                                                                    Gantt Chart
+                                                                </th>
+                                                            </tr>
+
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <span class="text-center option checkbox">
+                                                                        <input id="checkbox1" class="" type="checkbox">
+                                                                        <label for="checkbox1"></label>
+                                                                    </span>
+                                                                </td>
+                                                                <td>
+                                                                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                                                                    <div class="source_knowledgebase">Source: <button type="button" name="button">Performax Knowledgebase </button></div>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="star_rating_div">
+                                                                        <input value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-center"><button type="button" name="button" class="medium_button">Medium</button></td>
+                                                                <td>
+                                                                    Financial Policy <a href="">more</a>
+                                                                </td>
+                                                                <td class="text-center"><button type="button" name="button" class="medium_button">Medium</button></td>
+                                                                <td>
+
+                                                                </td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+
+                                                                </td>
+                                                                <td>
+                                                                    sdsd
+                                                                </td>
+                                                                <td>
+                                                                    <div class="star_rating_div">
+                                                                        <input value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-center"><button type="button" name="button" class="high_button">High</button></td>
+                                                                <td>
+                                                                    Financial Policy <a href="">more</a>
+                                                                </td>
+                                                                <td class="text-center"><button type="button" name="button" class="high_button">High</button></td>
+                                                                <td>
+
+                                                                </td>
+
+                                                            </tr>
+                                                        </tbody>
+
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div id="under_work" class="tab-pane" role="tabpanel">
                             Under Construction
@@ -695,7 +996,7 @@
             </div>
         </section>
         <div class="bottom_spacing_div">
-            
+
         </div>
     </div>
 
