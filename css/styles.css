@@ -1034,6 +1034,7 @@ h1 {
     border: 0;
     box-shadow: none;
     padding: 0;
+    margin-top: 80px;
 }
 #login-cnt form {
     padding: 6% 0;
