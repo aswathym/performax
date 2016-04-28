@@ -1285,8 +1285,13 @@ footer.footer {
     margin: 0;
     padding-right: 0;
 }
+.cart_list .row {
+   position: relative;
+}   
 .remove_from_cart {
-    margin-top: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 .remove_from_cart a {
     font-size: 14px;
