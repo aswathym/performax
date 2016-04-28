@@ -2409,26 +2409,37 @@ input.promocode::-webkit-input-placeholder {
 #exspon_home_page .customer_says .slider img {
     width: 120px;
 }
-#exspon_home_page .customer_says .slider {
+#exspon_home_page .slider_wrapper li {
     margin-top: 10px;
     transition: all 1s ease-in;
     background-color: #fff;
-    left: -100%;
     list-style-type: none;
     position: absolute;
+}
+#exspon_home_page .slider_wrapper li.left {
+    left: -100%;
+    z-index: 1;
+}
+#exspon_home_page .slider_wrapper li.right {
+    left: 100%;
+    z-index: 1;
+}
+#exspon_home_page .slider_wrapper li.active {
+    left: 0;
+    z-index: 10;
 }
 #exspon_home_page .slider_wrapper {
     height: 253px;
     padding: 0;
     overflow: hidden;
 }
-#exspon_home_page .slider_wrapper .active {
-    left: 0;
-    z-index: 10;
-}
 #exspon_home_page .customer_says i {
     transition: all 0.3s linear;
     cursor: pointer;
+}
+#exspon_home_page .customer_says .disable_icon {
+    pointer-events: none;
+    color: rgb(218, 218, 218);
 }
 #exspon_home_page .customer_says i:hover {
     color: red;
