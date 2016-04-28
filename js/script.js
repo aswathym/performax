@@ -58,7 +58,9 @@ $(document).ready(function() {
         fade: true,
         staticState: false
     });
-
+    $('#register').click(function() {
+    $('nav ul li').toggleClass('active');
+    });
     // To hide the Wheel Details Container on clicking outside of the contaier
     $(document).mouseup(function (e) {
         if ($('.wheel-details')) {
