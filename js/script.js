@@ -397,6 +397,7 @@ $(document).ready(function() {
             $("#timeline6").html(ui.value);
         }
     });
+
     $("#amount").val($("#v-slider").slider("value"));
     $('.list-group-item').click(function(e) {
         e.preventDefault();
