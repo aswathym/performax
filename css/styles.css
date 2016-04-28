@@ -1796,7 +1796,7 @@ input.promocode::-webkit-input-placeholder {
     text-align: center;
     margin-bottom: 50px;
 }
-#timeline .ui-corner-all, #timeline .ui-corner-bottom, #timeline .ui-corner-right, #timeline .ui-corner-br {
+#timeline .ui-widget {
     background-color: #ADADAD;
     height: 250px;
 }
@@ -3201,4 +3201,10 @@ input.promocode::-webkit-input-placeholder {
 }
 .selected_IFA_rating .rating-container .caption{
     margin-left: 45px;
+}
+
+/* KPA - My Assessments tab */
+.KPA_myAssessments {
+    margin: 30px auto;
+    padding: 10px 25px 15px 25px;
 }
