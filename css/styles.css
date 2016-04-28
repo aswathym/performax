@@ -180,6 +180,7 @@ header {
 #header_menu_bar {
     border-top: 1px solid rgba(125, 125, 125, 0.5);
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 #core_functions_wrapper>li {
     margin: 30px 38px 20px 10px;
@@ -366,8 +367,9 @@ header {
 }
 .navbar {
     margin-bottom: 0;
-    padding-top: 20px;
+    padding-top: 10px;
     border:0;
+    top:10px;
 }
 .navbar .nav>li>a {
     padding: 17px 9px 15px;
@@ -376,26 +378,25 @@ header {
     margin: 0;
 }
 .nav>li {
-    border-bottom: 3px solid transparent;
-    margin-bottom: -3px;
+    margin-bottom: 0px;
+}
+.nav>li:last-child{
+    margin-left: 5px;
 }
 .nav-tabs>li>a {
     color: #565354;
-    border: 1px solid transparent;
 }
-.nav-tabs .active {
-    border-bottom: 3px solid #E53333;
+.nav-tabs .active a,.nav-tabs > li.active > a:hover{
+    border-bottom: 5px solid #E53333;
 }
 .nav-tabs>li.active>a {
     color: #E53333;
-    border: 1px solid transparent !important;
     background-color: white;
     font-weight: bold;
     cursor: pointer;
     border-radius: 0px;
 }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
-    border: 1px solid transparent;
     color: #E53333;
 }
 .nav-tabs>li.active>a:hover {
