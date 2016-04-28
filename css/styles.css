@@ -3152,3 +3152,9 @@ input.promocode::-webkit-input-placeholder {
 .selected_IFA_rating .rating-container .caption{
     margin-left: 45px;
 }
+
+/* KPA - My Assessments tab */
+.KPA_myAssessments {
+    margin: 30px auto;
+    padding: 10px 25px 15px 25px;
+}
