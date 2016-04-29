@@ -3212,3 +3212,7 @@ input.promocode::-webkit-input-placeholder {
 .my_assessment_designatn span:after {
     content: ')'
 }
+/* KPA - IFA List */
+.IFA_assigned {
+    padding: 10px 20px;
+}
