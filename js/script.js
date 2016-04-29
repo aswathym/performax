@@ -229,28 +229,30 @@ $(document).ready(function() {
         $(this).parent().parent().find('textarea').focus();
     });
     $('#register_button').click(function() {
-        var email = $('#email_reg').val();
-        var company_id = $('#company_id').val();
-        $('.error_span_email_reg').text('');
-        $('.error_span_cmp_id').text('');
-        if ((email === "") && (company_id === "")) {
-            $('.error_span_email_reg').text('Email should not be Empty');
-            $('.error_span_cmp_id').text('Company ID should not be Empty');
-        } else if (email === "") {
-            $('.error_span_email_reg').text('Email should not be Empty');
-        } else if (company_id === "") {
-            $('.error_span_cmp_id').text('Company ID should not be Empty');
-        } else if (validateEmail(email)) {
-            debugger;
-            if ($('.agree_conditons').prop('checked')) {
-                alert('Registration successfully completed');
-            } else {
-                $('.error_span_email_reg').text('Agree the Terms and Conditions');
-            }
-        } else {
-            $('.error_span_email_reg').text('The Email is not Valid');
+        var intputElements = document.getElementsByTagName("INPUT");
+        for (var i = 0; i < intputElements.length; i++) {
+            intputElements[i].oninvalid = function (e) {
+                e.target.setCustomValidity("");
+                if (!e.target.validity.valid) {
+                    if (e.target.name == "company_id") {
+                        e.target.setCustomValidity("Company ID should not be empty");
+                    }
+                    else if (e.target.name == "email_reg"){
+                        if(e.target.value == ""){
+                            e.target.setCustomValidity("Email should not be empty");
+                        }
+                        else{
+                            e.target.setCustomValidity("Enter a valid email address");
+                        }
+                    }
+                }
+
+            };
         }
     });
+
+
+
     $('#login_button').click(function() {
         var email = $('#email').val();
         var password = $('#password').val();
@@ -453,15 +455,16 @@ $(document).ready(function() {
             $(".challenge_wrapper div:last").remove()
             challenge_no--;
             if (challenge_no == 2) {
-                $('.remove_field_button').parent().addClass('displayNone');    
+                $('.remove_field_button').parent().addClass('displayNone');
             }
         } else {
             $('.remove_field_button').parent().addClass('displayNone');
         }
     });
-    
+
     $('#company_id_no').click(function() {
         $('#company-id-box').addClass('displayNone');
+        $('#error_span_email_reg').addClass('displayNone');
     });
     $('#company_id_yes').click(function() {
         $('#company-id-box').removeClass('displayNone');
@@ -485,6 +488,8 @@ $(document).ready(function() {
     $('input[name="challenge"]').change(function() {
         $("#challenge_valMessage").addClass("displayNone");
     });
+
+
 
 });
 
