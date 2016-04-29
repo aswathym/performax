@@ -164,6 +164,7 @@ $(document).ready(function() {
             autoclose: true
         });
     }
+
     $('#exspon_home_page .customer_says .slider_wrapper').ready(function() {
         var ul = $('#exspon_home_page .customer_says .slider_wrapper');
         if(ul.find('li').length == 0) {
