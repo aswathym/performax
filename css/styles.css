@@ -873,12 +873,13 @@ h1 {
 }
 .scrollable {
     overflow-y: scroll;
-    height: 300px;
+    height: 430px;
     margin: 0;
     padding: 0;
 }
 .scrollable li {
     float: left;
+    border: 1px solid #e6e6e6;
 }
 
 /*Promo codes page*/
@@ -948,6 +949,9 @@ h1 {
     padding: 10px 20px;
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.1);
+}
+#manage_history_list {
+    height: 528px;
 }
 #manage_history_list b {
     display: block;
@@ -1077,9 +1081,27 @@ h1 {
 }
 .form-content input {
     width: 60%;
-    border: 2px solid #dedede;
+    border: 1px solid rgba(222, 222, 222, 0.56);
     padding: 3px 7px;
+    font-size: 14px;
 }
+.form-content .k-dropdow, .form-content .k-widget, .form-content .k-header {
+    width: 60% !important;
+    font-size: 14px !important;
+    border: 1px solid rgba(222, 222, 222, 0.56);
+    display: inline-block;
+}
+.k-button {
+    font-size: 13px;
+}
+.k-widget.k-tooltip-validation {
+    position: absolute;
+    min-width: 200px;
+    opacity: 1;
+    width: 250px !important;
+    box-shadow: -2px 2px 10px 1px rgba(127, 127, 127, 0.7);
+}
+
 .form-content .row {
     padding: 5px 0;
     position: relative;
@@ -2591,7 +2613,7 @@ input.promocode::-webkit-input-placeholder {
 }
 #core_functions_wrapper li .caption * {
     text-align: center;
-    padding: 2px 12px;
+    padding: 8px 12px;
     list-style-type: none;
 }
 
@@ -2909,6 +2931,7 @@ input.promocode::-webkit-input-placeholder {
 }
 .modal-body .model_line label {
     padding-top: 6px;
+    font-weight: bold;
 }
 .modal-content table.k-editor {
     width: 55%;
