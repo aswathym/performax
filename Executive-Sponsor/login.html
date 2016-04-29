@@ -52,6 +52,7 @@
                 </div>
                 <div id="reg-cnt" class="container-fluid tab-pane" role="tabpanel">
                     <form class="container-fluid form-content">
+                        <span class="error_span_cmp_id">Company ID is invalid !!</span>
                         <div class="text-center spacer option">
                               <span class="">Do you have a Performax Company ID?
                               </span>
@@ -70,16 +71,15 @@
                         </div>
                         <div class="row" id="company-id-box">
                             <label class="">Company ID</label>
-                            <input type="text" class="" id="company_id">
-                            <span class="error_span_cmp_id"></span>
+                            <input type="text" class="" id="company_id" required="true" name="company_id">
                         </div>
                         <div class="row">
                             <label class="">Email ID</label>
-                            <input type="text" class="" id="email_reg">
-                            <span class="error_span_email_reg"></span>
+                            <input type="email" class="" id="email_reg" required="true" name="email_reg">
+
                         </div>
                         <span class="text-center spacer option checkbox">
-                             <input id="checkbox1" class="" type="checkbox">
+                             <input id="checkbox1" class="" type="checkbox" required>
                                 <label for="checkbox1">
                                    I agree to Performax Inc's <a href="#" >Terms of Use</a>
                               and <a href="#" >Privacy Policy</a>
@@ -89,7 +89,7 @@
 
                         <span class="error_span_conditions_agree"></span>
                         <div class="text-center spacer">
-                            <button type="button" class="btn btn-primary btn-sm" data-target="" id="register_button">REGISTER NOW</button>
+                            <button type="submit" class="btn btn-primary btn-sm" data-target="" id="register_button">REGISTER NOW</button>
                         </div>
                     </form>
                 </div>
@@ -112,4 +112,3 @@
 </body>
 
 </html>
-1
