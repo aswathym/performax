@@ -1031,7 +1031,12 @@ h1 {
     background: url('../images/login_bg.png') no-repeat 100% 100%;
     background-size: 100% 100%;
 }
-.error_span_email, .error_span_pass, .error_span_cmp_id, .error_span_email_reg, .error_span_conditions_agree {
+.error_span_cmp_id{
+    position: absolute;
+    color: rgb(200, 35, 35);
+    padding: 0 35%;
+}
+.error_span_email, .error_span_pass {
     color: rgb(200, 35, 35);
     display: block;
     padding-left: 31%;
@@ -1309,7 +1314,7 @@ footer.footer {
 }
 .cart_list .row {
    position: relative;
-}   
+}
 .remove_from_cart {
     position: absolute;
     right: 0;
@@ -3217,4 +3222,16 @@ input.promocode::-webkit-input-placeholder {
 .KPA_myAssessments {
     margin: 30px auto;
     padding: 10px 25px 15px 25px;
+}
+.KPA_content_heading {
+    font-size: 16px;
+}
+.KPA_assessment_box>span {
+    color: #787878;
+}
+.my_assessment_designatn span:before {
+    content: '('
+}
+.my_assessment_designatn span:after {
+    content: ')'
 }
