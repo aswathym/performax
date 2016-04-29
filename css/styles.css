@@ -353,10 +353,11 @@ a,input{
 }
 #header_user_bar .profile_pic_hover li {
     background: #FFF;
+    padding: 0 10px;
     transition: all 0.2s linear;
 }
 #header_user_bar .profile_pic_hover li:hover {
-    background-color: #DDD;
+    background-color: #EBEBEB;
 }
 #header_nav_tabs .badge, #header_user_bar .badge {
     margin-top: -45px;
@@ -385,7 +386,8 @@ a,input{
     border-bottom: 5px solid #eee;
 }
 .nav>li {
-    margin-bottom: -1px;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -3px;
 }
 .nav-tabs>li>a {
     color: #565354;
@@ -1047,6 +1049,13 @@ h1 {
 #viewCSF .modal-footer {
     border-top: 0;
 }
+#createPromoCodePopup .modal-content {
+    width: 70%;
+    left: 15%;
+}
+#createPromoCodePopup .modal-content .no_of_times {
+    border: 1px solid rgba(222, 222, 222, 0.56);
+}
 #viewCSF .modal-content {
     border-radius: 0;
 }
@@ -1066,7 +1075,7 @@ h1 {
     background: url('../images/login_bg.png') no-repeat 100% 100%;
     background-size: 100% 100%;
 }
-.error_span_cmp_id{
+.error_span_email, .error_span_pass, .error_span_cmp_id, .error_span_email_reg, .error_span_conditions_agree {
     position: absolute;
     color: rgb(200, 35, 35);
     padding: 0 35%;
@@ -1106,6 +1115,9 @@ h1 {
 #login .navbar, #login .spacer {
     border: 0;
 }
+#login .form-content .checkbox-label, .form-content .checkbox-label {
+    width: 100%;
+}
 .form-content {
     float: left;
     width: 100%;
@@ -1120,11 +1132,14 @@ h1 {
     padding: 3px 7px;
     font-size: 14px;
 }
-.form-content .k-dropdow, .form-content .k-widget, .form-content .k-header {
+.form-content .k-dropdown, .form-content .k-widget, .form-content .k-header {
     width: 60% !important;
     font-size: 14px !important;
     border: 1px solid rgba(222, 222, 222, 0.56);
     display: inline-block;
+}
+.container .k-header {
+    border: 1px solid rgba(222, 222, 222, 0.56);
 }
 .k-button {
     font-size: 13px;
@@ -1136,7 +1151,10 @@ h1 {
     width: 250px !important;
     box-shadow: -2px 2px 10px 1px rgba(127, 127, 127, 0.7);
 }
-
+.k-textbox input {
+    font-size: 14px;
+    border: 1px solid rgba(222, 222, 222, 0.56);
+}
 .form-content .row {
     padding: 5px 0;
     position: relative;
@@ -1351,9 +1369,7 @@ footer.footer {
    position: relative;
 }
 .remove_from_cart {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    margin-top: 40px;
 }
 .remove_from_cart a {
     font-size: 14px;
