@@ -3200,3 +3200,15 @@ input.promocode::-webkit-input-placeholder {
     margin: 30px auto;
     padding: 10px 25px 15px 25px;
 }
+.KPA_content_heading {
+    font-size: 16px;
+}
+.KPA_assessment_box>span {
+    color: #787878;
+}
+.my_assessment_designatn span:before {
+    content: '('
+}
+.my_assessment_designatn span:after {
+    content: ')'
+}
