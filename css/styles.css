@@ -1364,7 +1364,7 @@ footer.footer {
     padding-bottom: 10px;
     padding-left: 24px;
 }
-.cart_box>h4>img {
+.cart_box>h4 img {
     float: right;
     padding-right: 15px;
     cursor: pointer;
@@ -3238,4 +3238,11 @@ input.promocode::-webkit-input-placeholder {
 /* KPA - IFA List */
 .IFA_assigned {
     padding: 10px 20px;
+}
+#loading {
+   position: fixed;
+   margin-top: 17%;
+   margin-left: 45%;
+   z-index: 199;
+   display: none;
 }
