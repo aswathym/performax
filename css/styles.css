@@ -2509,10 +2509,11 @@ padding: 10px 5px;
 }
 #exspon_home_page .slider_wrapper li {
     margin-top: 10px;
-    transition: all 1s ease-in;
+    transition: all 1.5s ease;
     background-color: #fff;
     list-style-type: none;
     position: absolute;
+    height: 100%;
 }
 #exspon_home_page .slider_wrapper li.left {
     left: -100%;
