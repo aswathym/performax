@@ -1118,7 +1118,7 @@ h1 {
 #login-cnt form p {
     font-size: 13px;
 }
-#login-cnt form .forget_details {
+.forget_details {
     padding: 10px 100px;
 }
 footer.footer {
