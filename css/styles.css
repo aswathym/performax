@@ -2140,7 +2140,13 @@ input.promocode::-webkit-input-placeholder {
 }
 
 /*ExSpon My Assessment Page*/
-
+#exspon_myAssessment .graph_detail {
+   display: flex;
+   flex-direction: row;
+}
+#exspon_myAssessment .graph_detail .items {
+   padding: 10px 15px;
+}
 #exspon_myAssessment .graph_detail .total h4, #exspon_myAssessment .graph_detail .total h3 {
     text-transform: uppercase;
 }
@@ -2155,6 +2161,9 @@ input.promocode::-webkit-input-placeholder {
 }
 #exspon_myAssessment .graph_detail .ongoing h4, #exspon_myAssessment .graph_detail .ongoing h3 {
     color: #43A543;
+}
+#exspon_myAssessment .graph_detail .custom h4, #exspon_myAssessment .graph_detail .custom h3 {
+    color: #0671BC;
 }
 #exspon_myAssessment .graph_detail .functional h4, #exspon_myAssessment .graph_detail .functional h3 {
     color: #F18282;
