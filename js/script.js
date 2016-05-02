@@ -159,16 +159,6 @@ $(document).ready(function() {
         }
     });
 
-    // Live updates 'View more' button behavoiur
-    $('.live_updates').ready(function () {
-        console.log($('.live_updates').find('.updates_wrapper li').length);
-        if($('.live_updates').find('.updates_wrapper li').length == 0) {
-            $('.live_updates').find('.view_more').hide()    
-        }
-        
-    })
-
-
     if ($('#create_promo_code_form')) {
         $('.calender').datepicker({
             format: "dd/mm/yyyy",
@@ -220,7 +210,17 @@ $(document).ready(function() {
         event.preventDefault();
         $('#exspon_home_page .live_updates .updates_wrapper').css('height', 'auto');
         $('#exspon_home_page .live_updates .view_more').hide();
+    });
+
+    // Live updates 'View more' button behavoiur
+    $('.live_updates').ready(function () {
+        var sum = 20;
+        $('.live_updates').find('.updates_wrapper li:lt(4)').each(function() {
+           sum += $(this).height();
+        });
+        $('#exspon_home_page .live_updates .updates_wrapper').css('height', sum+'px');
     })
+
     $('#sideMenu a').on('click', function(){
          var count = $(this).next('.collapse').find('a').length;
          if(count > 1) {
