@@ -2447,7 +2447,6 @@ padding: 10px 5px;
 }
 #exspon_home_page .or-div {
     width: 50px;
-    margin-top: 15px;
     height: 50px;
     display: inline-block;
     border-radius: 50%;
@@ -2456,11 +2455,8 @@ padding: 10px 5px;
     color: #929090;
     padding-top: 14px;
 }
-#exspon_home_page .btn_container_div img {
-    margin-top: -30px;
-}
-#exspon_home_page .btn_container_div {
-    padding-left: 100px;
+#exspon_home_page .btn_container_div button {
+    text-transform: uppercase;
 }
 #exspon_home_page .updates_wrapper {
     height: 305px;

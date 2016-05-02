@@ -158,6 +158,17 @@ $(document).ready(function() {
             $('.img-center-div').find('.number li:nth-child(4)').removeClass('displayNone');
         }
     });
+
+    // Live updates 'View more' button behavoiur
+    $('.live_updates').ready(function () {
+        console.log($('.live_updates').find('.updates_wrapper li').length);
+        if($('.live_updates').find('.updates_wrapper li').length == 0) {
+            $('.live_updates').find('.view_more').hide()    
+        }
+        
+    })
+
+
     if ($('#create_promo_code_form')) {
         $('.calender').datepicker({
             format: "dd/mm/yyyy",
@@ -208,7 +219,7 @@ $(document).ready(function() {
     $('#exspon_home_page .live_updates .view_more').click(function (event) {
         event.preventDefault();
         $('#exspon_home_page .live_updates .updates_wrapper').css('height', 'auto');
-        $('#exspon_home_page .live_updates .view_more').css('display', 'none');
+        $('#exspon_home_page .live_updates .view_more').hide();
     })
     $('#sideMenu a').on('click', function(){
          var count = $(this).next('.collapse').find('a').length;
