@@ -3246,3 +3246,13 @@ input.promocode::-webkit-input-placeholder {
    z-index: 199;
    display: none;
 }
+.assigned_idea_list .col-md-4 {
+    text-align: left;
+    text-indent: -15px;
+    padding-left: 23px !important;
+    padding-top: 10px !important;
+}
+.assigned_idea_list .source_knowledgebase {
+    padding-top: 10px;
+    padding-left: 15px;
+}
