@@ -294,6 +294,9 @@ a,input{
 .padding30 {
     padding: 30px;
 }
+.paddingTop4{
+    padding-top: 4px;
+}
 .paddingTop5 {
     padding-top: 10px;
 }
@@ -1900,6 +1903,7 @@ input.promocode::-webkit-input-placeholder {
 }
 .details_sub_heading h4 {
     font-size: 19px;
+    padding-top: 10px;
 }
 .view_progress_button {
     float: right;
