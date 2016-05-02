@@ -1100,6 +1100,19 @@ h1 {
     padding: 0;
     margin-top: 80px;
 }
+#forget_password {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 620px;
+    background-color: #fff;
+    border-radius: 0;
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+    margin-top: 80px;
+}
 #login-cnt form {
     padding: 6% 0;
 }
@@ -1182,8 +1195,11 @@ h1 {
     margin-left: 10px;
     line-height: 16px;
 }
-#login-cnt form p{
+#login-cnt form p {
     font-size: 13px;
+}
+.forget_details {
+    padding: 10px 100px;
 }
 footer.footer {
     border-top: 0;
