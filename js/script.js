@@ -58,7 +58,9 @@ $(document).ready(function() {
         fade: true,
         staticState: false
     });
-
+    $('#register').click(function() {
+    $('nav ul li').toggleClass('active');
+    });
     // To hide the Wheel Details Container on clicking outside of the contaier
     $(document).mouseup(function (e) {
         if ($('.wheel-details')) {
@@ -163,31 +165,51 @@ $(document).ready(function() {
         });
     }
 
+    $('#exspon_home_page .customer_says .slider_wrapper').ready(function() {
+        var ul = $('#exspon_home_page .customer_says .slider_wrapper');
+        if(ul.find('li').length == 0) {
+            $('#exspon_home_page .customer_says').find('.fa').addClass('disable_icon');
+        }
+    });
     $('#exspon_home_page .customer_says').find('.fa-chevron-left').click(function() {
         var element = $(this).parent().siblings('ul').find('.active');
         element.removeClass('active');
-        if (element.prev().length == 0) {
-            element.siblings('li').last().addClass('active');
+        $('#exspon_home_page .customer_says').find('.fa').removeClass('disable_icon');
+        var nextElement;
+        if (element.prevAll().length == 1) {
+            $(this).addClass('disable_icon');
+            nextElement = element.prev();
+        }
+        else {        
+            nextElement = element.prev();
+        }
+        nextElement.removeClass('left right');
+        nextElement.addClass('active');
+        nextElement.prevAll().addClass('left');
+        nextElement.nextAll().addClass('right');
+    });
+    $('#exspon_home_page .customer_says').find('.fa-chevron-right').click(function() {
+        var element = $(this).parent().siblings('ul').find('.active');
+        element.removeClass('active');
+        $('#exspon_home_page .customer_says').find('.fa').removeClass('disable_icon');
+        var nextElement;
+        if (element.nextAll().length == 1) {
+            $(this).addClass('disable_icon');
+            nextElement = element.next();
         }
         else {
-            element.prev().addClass('active');
+            nextElement = element.next();
         }
-    });
+        nextElement.removeClass('left right');
+        nextElement.addClass('active');
+        nextElement.prevAll().addClass('left');
+        nextElement.nextAll().addClass('right');
+    });    
     $('#exspon_home_page .live_updates .view_more').click(function (event) {
         event.preventDefault();
         $('#exspon_home_page .live_updates .updates_wrapper').css('height', 'auto');
         $('#exspon_home_page .live_updates .view_more').css('display', 'none');
     })
-    $('#exspon_home_page .customer_says').find('.fa-chevron-right').click(function() {
-        var element = $(this).parent().siblings('ul').find('.active');
-        element.removeClass('active');
-        if (element.next().length == 0) {
-            element.siblings('li').first().addClass('active');
-        }
-        else {
-            element.next().addClass('active');
-        }
-    });
     $('#sideMenu a').on('click', function(){
          var count = $(this).next('.collapse').find('a').length;
          if(count > 1) {
