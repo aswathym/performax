@@ -297,6 +297,9 @@ a,input{
 .paddingTop4{
     padding-top: 4px;
 }
+.paddingTop15{
+    padding-top: 15px;
+}
 .paddingTop5 {
     padding-top: 10px;
 }
@@ -1915,7 +1918,7 @@ input.promocode::-webkit-input-placeholder {
     height: 30px;
     font-size: 14px;
     position: relative;
-    margin: 25px -50px 0px 0px
+    margin: 30px -50px 0px 0px
 }
 
 /*exSpon_DetailsPage_Configurator_Permissions*/
