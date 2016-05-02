@@ -2184,11 +2184,11 @@ input.promocode::-webkit-input-placeholder {
 #exspon_myAssessment .overflowHidden {
     overflow: hidden;
 }
-#exspon_myAssessment .ongoing button, #exspon_myAssessment .active button {
-    white-space: normal;
-    width: 78px;
-    line-height: 1.1;
-    padding: 5px;
+#exspon_myAssessment .details button {
+white-space: normal;
+width: 78px;
+line-height: 1.1;
+padding: 10px 5px;
 }
 #exspon_myAssessment .notification h5 {
     margin: 20px 10px;
