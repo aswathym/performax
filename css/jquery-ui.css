@@ -85,6 +85,11 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
+	opacity:1;
+    -webkit-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+    background-color: rgba(0, 0, 0, 0.5);;
 }
 .ui-draggable-handle {
 	-ms-touch-action: none;
@@ -483,7 +488,7 @@ button.ui-button::-moz-focus-inner {
 	outline: 0;
 }
 .ui-dialog .ui-dialog-titlebar {
-	padding: .4em 1em;
+	padding: .4em 1em 1.2em;
 	position: relative;
 }
 .ui-dialog .ui-dialog-title {
@@ -511,15 +516,15 @@ button.ui-button::-moz-focus-inner {
 	overflow: auto;
 }
 .ui-dialog .ui-dialog-buttonpane {
-	text-align: left;
+	text-align: center;
 	border-width: 1px 0 0 0;
 	background-image: none;
 	margin-top: .5em;
 	padding: .3em 1em .5em .4em;
 }
-.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+/*.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
 	float: right;
-}
+}*/
 .ui-dialog .ui-dialog-buttonpane button {
 	margin: .5em .4em .5em 0;
 	cursor: pointer;
@@ -852,10 +857,10 @@ body .ui-tooltip {
 	color: #333333;
 }
 .ui-widget-header {
-	border: 1px solid #dddddd;
+	/*border: 1px solid #dddddd;
 	background: #e9e9e9;
 	color: #333333;
-	font-weight: bold;
+	font-weight: bold;*/
 }
 .ui-widget-header a {
 	color: #333333;
@@ -866,12 +871,11 @@ body .ui-tooltip {
 .ui-state-default,
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
-	border: 1px solid #c5c5c5;
-	background: #f6f6f6;
-	font-weight: normal;
-	color: #454545;
+	color: #fff;
+    background-color: #337ab7;
+    border: none;
 }
-.ui-state-default a,
+/*.ui-state-default a,
 .ui-state-default a:link,
 .ui-state-default a:visited {
 	color: #454545;
@@ -887,8 +891,8 @@ body .ui-tooltip {
 	background: #ededed;
 	font-weight: normal;
 	color: #2b2b2b;
-}
-.ui-state-hover a,
+}*/
+/*.ui-state-hover a,
 .ui-state-hover a:hover,
 .ui-state-hover a:link,
 .ui-state-hover a:visited,
@@ -912,7 +916,7 @@ body .ui-tooltip {
 .ui-state-active a:visited {
 	color: #ffffff;
 	text-decoration: none;
-}
+}*/
 
 /* Interaction Cues
 ----------------------------------*/
@@ -986,6 +990,7 @@ body .ui-tooltip {
 .ui-state-default .ui-icon {
 	background-image: url("images/ui-icons_777777_256x240.png");
 }
+
 .ui-state-hover .ui-icon,
 .ui-state-focus .ui-icon {
 	background-image: url("images/ui-icons_555555_256x240.png");
@@ -1000,7 +1005,19 @@ body .ui-tooltip {
 .ui-state-error-text .ui-icon {
 	background-image: url("images/ui-icons_cc0000_256x240.png");
 }
-
+.ui-dialog .ui-dialog-titlebar-close{
+	background-image: url("../images/close_btn.png");
+	width: 11px;
+    height: 11px;
+    background-position: -26px -5px;
+    border:none;
+    background-color: none;
+    outline: 0;
+    margin-top: 0;
+}
+.ui-dialog .ui-dialog-titlebar-close:hover{
+	 background-position: -5px -5px;
+}
 /* positioning */
 .ui-icon-blank { background-position: 16px 16px; }
 .ui-icon-carat-1-n { background-position: 0 0; }
@@ -1210,11 +1227,11 @@ body .ui-tooltip {
 }
 
 /* Overlays */
-.ui-widget-overlay {
+/*.ui-widget-overlay {
 	background: #aaaaaa;
 	opacity: .3;
-	filter: Alpha(Opacity=30); /* support: IE8 */
-}
+	filter: Alpha(Opacity=30); 
+}*/
 .ui-widget-shadow {
 	margin: 0px 0 0 0px;
 	padding: 5px;
