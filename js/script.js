@@ -181,7 +181,7 @@ $(document).ready(function() {
             $(this).addClass('disable_icon');
             nextElement = element.prev();
         }
-        else {        
+        else {
             nextElement = element.prev();
         }
         nextElement.removeClass('left right');
@@ -205,7 +205,7 @@ $(document).ready(function() {
         nextElement.addClass('active');
         nextElement.prevAll().addClass('left');
         nextElement.nextAll().addClass('right');
-    });    
+    });
     $('#exspon_home_page .live_updates .view_more').click(function (event) {
         event.preventDefault();
         $('#exspon_home_page .live_updates .updates_wrapper').css('height', 'auto');
