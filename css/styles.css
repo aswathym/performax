@@ -170,6 +170,9 @@ a,input{
 .displayInline {
     display: inline-block;
 }
+.displayBlock {
+    display: block;
+}
 #addAssessmentPopup .Editor-container {
     margin-left: 24%;
     width: 30%;
@@ -354,14 +357,19 @@ a,input{
 .marginBottom0 {
     margin-bottom: 5px;
 }
+.marginRight30 {
+    margin-right: 30px;
+}
 .opacity_light {
     opacity: 0.6;
 }
 .floatLeft {
     float: left;
+    clear: both;
 }
 .floatRight {
     float: right;
+    clear: both;
 }
 .bg_transparent {
     background-color: transparent;
@@ -3431,7 +3439,7 @@ padding: 10px 5px;
 .status_update_IFA input, .status_update_IFA select {
     margin-left: 5px;
     border: 2px solid #dedede;
-    height: 30px;
+    height: 35px;
     width: 58%;
 }
 .status_update_IFA label {
@@ -3444,17 +3452,49 @@ padding: 10px 5px;
 }
 .link_task_IFA select {
     margin-left: 5px;
-    height: 30px;
+    height: 35px;
     width: 30%;
 }
 .link_task_IFA textarea {
     margin-left: 5px;
-    border: 2px solid #dedede;  
+    border: 2px solid #dedede;
 }
 .link_task_IFA label {
     color: #666464;
     width: 25%;
     text-align: right;
+}
+.ideas_for_action_status select {
+    color: #A7A1A1;
+    font-size: 15px;
+}
+.progress_bar_KPA .progress {
+    height: 10px;
+    border-radius: 0px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #E5E5E5;
+}
+.progress_bar_KPA .progress-bar{
+    background-color: #6BDD7B;
+}
+.progress_bar_status {
+    display: block;
+    width: 63%;
+    float: right;
+}
+.progress_bar_completed span:after {
+    content: '% ';
+}
+.view_comments_IFA a:after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e260";
+}
+.view_comments_IFA a.collapsed:after {
+    content: "\e259";
+}
+#commentView .col-md-11 {
+    background-color: #F7F7F7;
 }
 
 /*KPA_IFA_Details*/
