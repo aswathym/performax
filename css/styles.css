@@ -3208,6 +3208,16 @@ padding: 10px 5px;
     background-color: #09A6D0;
     color: #fff;
 }
+#analytics_and_insights .progress {
+    height: 15px;
+    margin-bottom: 10px;
+    border-radius: 1px;
+    margin-top: 20px;
+    background-color: #E5E5E5;
+}
+#analytics_and_insights .progress .progress-bar {
+    width: 44%;
+}
 #analytics_and_insights .pagination li a {
     padding: 3px 10px;
     color: #09A6D0;
