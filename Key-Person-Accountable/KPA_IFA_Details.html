@@ -82,15 +82,15 @@
                             <h4>Finance & Accounting</h4>
                             <h5 class="grey_color">Internal Function</h5>
                         </div>
-                        <div class="col-md-4">
-                            <button type="button" class="view_progress_button">View Assessment Results</button>
+                        <div class="col-md-4 text-right">
+                            <button type="button" class="btn blue_border_button view_assmnt_button">View Assessment Results</button>
                         </div>
-                        <div class="col-md-2 floatRight">
-                            <a href="#"><img src="../images/context_aware_recom_system.png" width="80%" height="80%" class="floatRight"/></a>
+                        <div class="col-md-2 text-right">
+                            <a href="#"><img src="../images/context_aware_recom_system.png" width="80%" height="80%" class=""/></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 box-shadow-styling padding20 margin0">
+                <div class="col-md-12 box-shadow-styling padding20 margin0 paddingBottom0">
                     <div class="col-md-8 progress_status_div">
                         <div class="row">
                             <h5>Assigned Ideas for Action</h5>
@@ -125,10 +125,177 @@
                         </div>                        
                     </div>
                 </div>
+                <div class="col-md-12 padding0 kpa_details_nav box-shadow-styling">
+                    <nav class="navbar col-md-12 padding0">
+                        <ul class="nav nav-tabs" id="tab_header">
+                            <li class="active"><a href="#team_members" aria-controls="team_members" role="tab" data-toggle="tab">Team Members</a></li>
+                            <li><a href="#create_task" aria-controls="create_task" role="tab" data-toggle="tab">Create Task</a></li>
+                            <li><a href="#task_list" aria-controls="task_list" role="tab" data-toggle="tab">Task List</a></li>
+                            <li><a href="#no_display" aria-controls="no_display" role="tab" data-toggle="tab">Key Performance Indicator</a></li>
+                            <li><a href="#no_display" aria-controls="no_display" role="tab" data-toggle="tab">Schedule Team Meeting</a></li>
+                            <li><a href="#no_display" aria-controls="no_display" role="tab" data-toggle="tab">Calendar</a></li>
+                            <li><a href="#no_display" aria-controls="no_display" role="tab" data-toggle="tab">Gantt Chart</a></li>
+                        </ul>
+                    </nav>
+                    <div class="tab-content">
+                        <div id="team_members" class="container-fluid tab-pane padding0 active" role="tabpanel">
+                            <h4 class="col-md-12 paddingTop5">Invite Team Members
+                                <span class="pull-right">
+                                    <button class="btn blue_border_button">Edit</button>
+                                    <button class="btn blue_border_button">Delete</button>
+                                </span>
+                            </h4>
+                            <div class="col-md-12">
+                                <div class="col-md-4 box-shadow-styling-light">
+                                    <form class="form-content">
+                                        <span>
+                                            <label>First Name : </label>
+                                            <input type="text"></input>
+                                        </span>
+                                        <span>
+                                            <label>Last Name : </label>
+                                            <input type="text"></input>
+                                        </span>
+                                        <span>
+                                            <label>Email : </label>
+                                            <input type="text"></input>
+                                        </span>
+                                        <span>
+                                            <label>Designation : </label>
+                                            <input type="text"></input>
+                                        </span>
+                                        <span>
+                                            <label>Select Role : </label>
+                                            <select class="dropdown_select">
+                                                <option selected="true" disabled></option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </span>
+                                        <span class="text-center col-md-12 marginTop20">
+                                            <button class="btn btn-info">Invite</button>
+                                        </span>
+                                    </form>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="details box-shadow-styling-light col-md-12 padding0">
+                                        <span class="col-md-1 marginTop20"><input type="checkbox"></input></span>
+                                        <span class="col-md-3">
+                                            <h4><a href="#" class="light_blue_color">Adam Pine</a></h4>
+                                            <span class="sub">adampine@abcd.com</span>
+                                        </span>
+                                        <span class="col-md-3">
+                                            <h4>Senior Developer</h4>
+                                            <span class="sub">Job Title</span>
+                                        </span>
+                                        <span class="col-md-5">
+                                            <h4>Key Person Responsible(KPR)</h4>
+                                            <span class="sub">Role</span>
+                                        </span>
+                                    </div>
+                                    <div class="text-center">
+                                        <button class="btn btn-info marginTop20">Finalize</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="create_task" class="container-fluid tab-pane padding0" role="tabpanel">
+                            <h4 class="col-md-12 paddingTop5">Create Task</h4>
+                            <div class="col-md-6">
+                                Create task and assign KPR for the Ideas For Actions to be implemented
+
+                            </div>
+                            <span class="col-md-6 text-center">
+                                <b class="col-md-6  text-right">
+                                    Task Importance Rating :
+                                </b> 
+                                <div class="star_rating_div col-md-6 text-left">
+                                    <input value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                </div>
+                            </span>
+                            <div class="col-md-12">
+                                <form class="form-content">
+                                    <div class="col-md-12 padding0">
+                                        <span class="col-md-6">
+                                            <label>First Name : </label>
+                                            <input type="text"></input>
+                                        </span>
+                                        <span class="col-md-6 padding0">
+                                            <span class="grey_bold">Task Duration : </span>
+                                            <input type="text" placeholder="Start Date" class="calender"></input> 
+                                            <span> to </span>
+                                            <input type="text" placeholder="End Date" class="calender"></input> 
+                                        </span>
+                                    </div>
+                                    <div class="col-md-12 padding0">
+                                        <span class="col-md-6">
+                                            <label class="floatLeft">Task Description : </label>
+                                            <textarea></textarea>
+                                        </span>
+                                    </div>
+                                    <div class="col-md-12 padding0">
+                                        <span class="col-md-6">
+                                            <label class="">Key Person Responsible : </label>
+                                            <select class="dropdown_select">
+                                                <option selected="true" disabled>Select</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </span>
+                                    </div>
+                                    <div class="col-md-12 padding0">
+                                        <span class="col-md-6">
+                                            <label class="">Key Person Informed : </label>
+                                            <select class="dropdown_select">
+                                                <option selected="true" disabled>Select</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </span>
+                                        <span class="col-md-6 padding0">
+                                            <input type="text"></input>
+                                        </span>
+                                    </div>
+                                    <div class="col-md-12 padding0">
+                                        <span class="col-md-6">
+                                            <label class="">Key Person Consulted : </label>
+                                            <select class="dropdown_select">
+                                                <option selected="true" disabled>Select</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </span>
+                                        <span class="col-md-6 padding0">
+                                            <input type="text"></input>
+                                        </span>
+                                    </div>
+                                    <span class="text-center col-md-12 button_container">
+                                        <button class="btn btn-info">Create Task</button>
+                                        <button class="btn btn-danger">Cancel</button>
+                                    </span>
+                                </form>
+                            </div>
+                        </div>
+                        <div id="task_list" class="container-fluid tab-pane padding0" role="tabpanel">
+                            Task List
+                        </div>
+                        <div id="no_display" class="container-fluid tab-pane" role="tabpanel">
+                            Under Construction
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
+        <div class="bottom_spacing_div"></div>
         <footer class="footer">
             <div class="container">
                 <p class="pull-left">&copy; 2016 Performax Inc. All Rights Reserved</p>
