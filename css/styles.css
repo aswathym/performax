@@ -3583,6 +3583,16 @@ padding: 10px 5px;
 #kpa_ifa_details .form-content textarea {
     height: 100px;
 }
+#create_task .grey_bold {
+    font-weight: bold;
+    color: #666464;
+}
+#create_task .form-content select {
+    color: grey;
+}
+#create_task .button_container {
+    margin: 20px 0;
+}
 #create_task .button_container button {
     min-width: 100px;
     margin: 0 10px;
