@@ -3548,15 +3548,20 @@ padding: 10px 5px;
     width: 90px;
     margin-right: 20px;
 }
-#team_members .form-content label {
+#kpa_ifa_details .form-content label {
     padding-right: 10px;
     width: 40%;
     font-weight: bold;
 }
-#team_members .form-content input[type="text"], #team_members .form-content select {
+#kpa_ifa_details .form-content input[type="text"], #kpa_ifa_details .form-content select, #kpa_ifa_details .form-content textarea {
     width: 55%;
     margin-bottom: 15px;
     border: 2px solid #ddd;
+    padding: 3px 7px;
+}
+#kpa_ifa_details .form-content input[type="text"].calender {
+    width: 25%;
+    margin: 0 2%;
 }
 #team_members .details {
     margin-left: 20px;
@@ -3567,4 +3572,18 @@ padding: 10px 5px;
 }
 #team_members .details .sub {
     color: rgba(80, 89, 80, 0.8);
+}
+#create_task .form-content .calender {
+    width: 100%;
+    background-size: 20px 20px;
+    background-position: right top;
+    background-image: url('../images/calender_icon.png');
+    background-repeat: no-repeat;
+}
+#kpa_ifa_details .form-content textarea {
+    height: 100px;
+}
+#create_task .button_container button {
+    min-width: 100px;
+    margin: 0 10px;
 }
