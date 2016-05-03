@@ -282,6 +282,12 @@ a,input{
 .paddingLeft0 {
     padding-left: 0;
 }
+.paddingLeft20 {
+    padding-left: 20px;
+}
+.paddingLeft30 {
+    padding-left: 30px;
+}
 .padding5 {
     padding: 5px;
 }
@@ -3354,4 +3360,50 @@ padding: 10px 5px;
 }
 .completed_status {
     color: #43A543;
+}
+
+/* KPA IFA Status Upadate page */
+.IFA_Desc .col-md-6 span {
+    color: #959494;
+}
+.IFA_Desc .col-md-6 h4 {
+    float: right;
+    padding-right: 5px;
+}
+.IFA_Desc {
+    margin-bottom: 45px;
+}
+ .IFA_assigned_date .calender {
+     background-size: 20px 20px;
+     background-position: right top;
+     background-image: url('../images/calender_icon.png');
+     background-repeat: no-repeat;
+ }
+.status_update_IFA input, .status_update_IFA select {
+    margin-left: 5px;
+    border: 2px solid #dedede;
+    height: 30px;
+    width: 58%;
+}
+.status_update_IFA label {
+    color: #666464;
+    width: 30%;
+    text-align: right;
+}
+.status_update_IFA .row, .link_task_IFA .row {
+    margin-bottom: 10px;
+}
+.link_task_IFA select {
+    margin-left: 5px;
+    height: 30px;
+    width: 30%;
+}
+.link_task_IFA textarea {
+    margin-left: 5px;
+    border: 2px solid #dedede;  
+}
+.link_task_IFA label {
+    color: #666464;
+    width: 25%;
+    text-align: right;
 }
