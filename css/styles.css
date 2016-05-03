@@ -3228,10 +3228,10 @@ padding: 10px 5px;
 #analytics_and_insights .pagination li:nth-child(3) a {
     color: #ED6666;
 }
-#analytics_and_insights .progress_div {
+.progress_div {
     font-weight: bold;
 }
-#analytics_and_insights .progress_div::after {
+.progress_div::after {
     content: '%';
 }
 #analytics_and_insights .internal-analytics {
@@ -3462,5 +3462,17 @@ padding: 10px 5px;
     color: rgba(80, 89, 80, 0.8);
     display: inline-block;
     font-size: 13px;
-    width: 66%;
+    width: 60%;
+}
+#kpa_ifa_details .section {
+    width: 60%;
+}
+#kpa_ifa_details .progress {
+    height: 13px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    background-color: #E5E5E5;
+}
+#kpa_ifa_details .progress .progress-bar {
+    width: 44%;
 }
