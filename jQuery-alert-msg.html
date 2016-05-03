@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<!-- script type="text/javascript" src="js/jquery-ui.js"></script>
+ --><link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="css/jquery-ui.css" />
+<title>Performax 360</title>
+<script type="text/javascript">
+$(document).ready(function() {
+  // Handler for .ready() called.
+window.old_alert = window.alert;
+window.alert = function(message,title,fallback){
+    if(fallback)
+    {
+        old_alert(message);
+        return;
+    }
+    $(document.createElement('div'))
+        .attr({title: title, 'class': 'alert'})
+        .html(message)
+        .dialog({
+            buttons: {OK: function(){$(this).dialog('close');}},
+            close: function(){$(this).remove();},
+            draggable: true,
+            modal: true,
+            resizable: false,
+            width: 'auto'
+        });
+};
+alert("Are you sure you want to remove this from registry?","")
+});
+</script>
+</head>
+<body>
+</body>
+</html>

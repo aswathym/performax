@@ -3597,3 +3597,6 @@ padding: 10px 5px;
     min-width: 100px;
     margin: 0 10px;
 }
+.ui-dialog,.ui-widget{
+    font-family: 'Roboto-Regular' !important;
+}
