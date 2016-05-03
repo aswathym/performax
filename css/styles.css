@@ -2146,7 +2146,13 @@ input.promocode::-webkit-input-placeholder {
 }
 
 /*ExSpon My Assessment Page*/
-
+#exspon_myAssessment .graph_detail {
+   display: flex;
+   flex-direction: row;
+}
+#exspon_myAssessment .graph_detail .items {
+   padding: 10px 15px;
+}
 #exspon_myAssessment .graph_detail .total h4, #exspon_myAssessment .graph_detail .total h3 {
     text-transform: uppercase;
 }
@@ -2161,6 +2167,9 @@ input.promocode::-webkit-input-placeholder {
 }
 #exspon_myAssessment .graph_detail .ongoing h4, #exspon_myAssessment .graph_detail .ongoing h3 {
     color: #43A543;
+}
+#exspon_myAssessment .graph_detail .custom h4, #exspon_myAssessment .graph_detail .custom h3 {
+    color: #0671BC;
 }
 #exspon_myAssessment .graph_detail .functional h4, #exspon_myAssessment .graph_detail .functional h3 {
     color: #F18282;
@@ -2460,7 +2469,6 @@ padding: 10px 5px;
 }
 #exspon_home_page .or-div {
     width: 50px;
-    margin-top: 15px;
     height: 50px;
     display: inline-block;
     border-radius: 50%;
@@ -2469,11 +2477,8 @@ padding: 10px 5px;
     color: #929090;
     padding-top: 14px;
 }
-#exspon_home_page .btn_container_div img {
-    margin-top: -30px;
-}
-#exspon_home_page .btn_container_div {
-    padding-left: 100px;
+#exspon_home_page .btn_container_div button {
+    text-transform: uppercase;
 }
 #exspon_home_page .updates_wrapper {
     height: 305px;
@@ -2510,10 +2515,11 @@ padding: 10px 5px;
 }
 #exspon_home_page .slider_wrapper li {
     margin-top: 10px;
-    transition: all 1s ease-in;
+    transition: all 1.5s ease;
     background-color: #fff;
     list-style-type: none;
     position: absolute;
+    height: 100%;
 }
 #exspon_home_page .slider_wrapper li.left {
     left: -100%;
@@ -3234,43 +3240,61 @@ padding: 10px 5px;
 #analytics_and_insights .internal-analytics-rating .rating-ul .rating-items {
     padding: 5px 20px ;
 }
+#analytics_and_insights .internal-analytics-rating .rating-ul .rating-items textarea {
+    height: 100px;
+    width: 80%;
+    border: 2px solid #ddd;
+}
 #analytics_and_insights .ui-widget {
     background: linear-gradient(to right, #cb3131 0%,#cb3131 20%,#e2663e 21%,#e2663e 41%,#e2663e 41%,#f59248 42%,#f59248 61%,#f5c74d 62%,#f5c74d 82%,#51d65a 83%,#51d65a 100%)
 }
-#rate1 {
+#analytics_and_insights .ui-slider-horizontal .ui-slider-handle {
+    top: -.7em;
+    margin-left: -.6em;
+    border-radius: 50%;
+    height: 30px;
+    cursor: pointer;
+    width: 30px;
+}
+#analytics_and_insights .ui-slider-horizontal .ui-slider-handle:active, #analytics_and_insights .ui-slider-horizontal .ui-slider-handle:focus {
+    outline: none;
+}
+#rate1, #rate2, #rate3 {
     list-style: none;
-    margin: 0;
     padding: 0;
     width: 120%;
-    margin: 0 -10%;
+    margin: 5px -10%;
 }
-#rate1 li {
+#rate1 li, #rate2 li, #rate3 li {
     display: inline-block;
     padding: 0px 7px;
     font-weight: bold;
 }
-#rate1 li:nth-child(1) {
+#rate1 li:nth-child(1), #rate2 li:nth-child(1), #rate3 li:nth-child(1) {
     color: #CB3131;
 }
-#rate1 li:nth-child(2) {
+#rate1 li:nth-child(2), #rate2 li:nth-child(2), #rate3 li:nth-child(2) {
     color: #E2663E;
 }
-#rate1 li:nth-child(3) {
+#rate1 li:nth-child(3), #rate2 li:nth-child(3), #rate3 li:nth-child(3) {
     color: #E2663E;
 }
-#rate1 li:nth-child(4) {
+#rate1 li:nth-child(4), #rate2 li:nth-child(4), #rate3 li:nth-child(4) {
     color: #F59248;
 }
-#rate1 li:nth-child(5) {
+#rate1 li:nth-child(5), #rate2 li:nth-child(5), #rate3 li:nth-child(5) {
     color: #F5C74D;
 }
-#rate1 li:nth-child(6) {
+#rate1 li:nth-child(6), #rate2 li:nth-child(6), #rate3 li:nth-child(6) {
     color: #51D65A;
 }
-#h-slider1 {
-    margin: 10px 0;
+#h-slider1, #h-slider2  , #h-slider3 {
+    margin: 15px 0;
 }
-
+#analytics_and_insights .radio_buttons label {
+    margin: 10px 25px;
+    cursor: pointer;
+}
 /* AA Details page - Select Ideas for Action*/
 .select_ideas_ranking h5{
     position: absolute;
