@@ -276,21 +276,6 @@ a,input{
 .padding0 {
     padding: 0;
 }
-.padddingTop0 {
-    padding-top: 0;
-}
-.paddingRight0 {
-    padding-right: 0;
-}
-.paddingLeft0 {
-    padding-left: 0;
-}
-.paddingLeft20 {
-    padding-left: 20px;
-}
-.paddingLeft30 {
-    padding-left: 30px;
-}
 .padding5 {
     padding: 5px;
 }
@@ -302,6 +287,24 @@ a,input{
 }
 .padding30 {
     padding: 30px;
+}
+.padddingTop0 {
+    padding-top: 0;
+}
+.paddingRight0 {
+    padding-right: 0;
+}
+.paddingLeft0 {
+    padding-left: 0;
+}
+.paddingBottom0 {
+    padding-bottom: 0;
+}
+.paddingLeft20 {
+    padding-left: 20px;
+}
+.paddingLeft30 {
+    padding-left: 30px;
 }
 .paddingTop4{
     padding-top: 4px;
@@ -1933,7 +1936,6 @@ input.promocode::-webkit-input-placeholder {
     padding-top: 10px;
 }
 .view_progress_button {
-    float: right;
     color: #2C88CE;
     background-color: #fff;
     border-style: none;
@@ -1943,6 +1945,9 @@ input.promocode::-webkit-input-placeholder {
     font-size: 14px;
     position: relative;
     margin: 30px -50px 0px 0px
+}
+.view_assmnt_button {
+    margin-top: 30px;
 }
 
 /*exSpon_DetailsPage_Configurator_Permissions*/
@@ -2657,6 +2662,13 @@ padding: 10px 5px;
     border-radius: 6px;
     font-size: 14px;
     position: relative;
+}
+.blue_border_button:hover {
+    color: #0969B3;
+}
+.blue_border_button:active, .blue_border_button:focus {
+    outline: none;
+    color: #0969B3;
 }
 #AA_details_page .edit_button {
     margin-right: 30px;
@@ -3546,7 +3558,7 @@ padding: 10px 5px;
 
 #team_members .blue_border_button {
     width: 90px;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 #kpa_ifa_details .form-content label {
     padding-right: 10px;
@@ -3563,9 +3575,12 @@ padding: 10px 5px;
     width: 25%;
     margin: 0 2%;
 }
+#team_members {
+    padding-bottom: 80px;
+}
 #team_members .details {
     margin-left: 20px;
-    padding: 10px 0;
+    padding: 20px 5px;
 }
 #team_members .details h4 {
     font-size: 15px;
@@ -3582,6 +3597,7 @@ padding: 10px 5px;
 }
 #kpa_ifa_details .form-content textarea {
     height: 100px;
+    margin-left: 3px;
 }
 #create_task .grey_bold {
     font-weight: bold;
