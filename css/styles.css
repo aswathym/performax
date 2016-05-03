@@ -3395,7 +3395,12 @@ padding: 10px 5px;
 .completed_status {
     color: #43A543;
 }
-
+.popup-sm .modal-dialog{
+    max-width: 500px;
+}
+.popup-sm .modal-dialog .modal-body{
+    padding-top: 0;
+}
 /* KPA IFA Status Upadate page */
 .IFA_Desc .col-md-6 span {
     color: #959494;
