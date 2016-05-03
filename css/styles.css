@@ -2154,7 +2154,7 @@ input.promocode::-webkit-input-placeholder {
 }
 
 /*ExSpon My Assessment Page*/
-#exspon_myAssessment .graph_detail {
+#exspon_myAssessment .flex_graph_details {
    display: flex;
    flex-direction: row;
 }
@@ -3216,6 +3216,16 @@ padding: 10px 5px;
     background-color: #09A6D0;
     color: #fff;
 }
+#analytics_and_insights .progress {
+    height: 15px;
+    margin-bottom: 10px;
+    border-radius: 1px;
+    margin-top: 20px;
+    background-color: #E5E5E5;
+}
+#analytics_and_insights .progress .progress-bar {
+    width: 44%;
+}
 #analytics_and_insights .pagination li a {
     padding: 3px 10px;
     color: #09A6D0;
@@ -3226,10 +3236,10 @@ padding: 10px 5px;
 #analytics_and_insights .pagination li:nth-child(3) a {
     color: #ED6666;
 }
-#analytics_and_insights .progress_div {
+.progress_div {
     font-weight: bold;
 }
-#analytics_and_insights .progress_div::after {
+.progress_div::after {
     content: '%';
 }
 #analytics_and_insights .internal-analytics {
@@ -3393,7 +3403,12 @@ padding: 10px 5px;
 .completed_status {
     color: #43A543;
 }
-
+.popup-sm .modal-dialog{
+    max-width: 500px;
+}
+.popup-sm .modal-dialog .modal-body{
+    padding-top: 0;
+}
 /* KPA IFA Status Upadate page */
 .IFA_Desc .col-md-6 span {
     color: #959494;
@@ -3470,4 +3485,39 @@ padding: 10px 5px;
 }
 #commentView .col-md-11 {
     background-color: #F7F7F7;
+}
+
+/*KPA_IFA_Details*/
+#kpa_ifa_details .progress_status_div .row {
+    margin: 0px;
+    height: 40px;
+}
+#kpa_ifa_details .progress_status_div h5 {
+    font-weight: bold;
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+    float: left;
+    margin: 0 10px 0 0;
+}
+#kpa_ifa_details .progress_status_div h5:after {
+    content: ' : '
+}
+#kpa_ifa_details .progress_status_div .details {
+    color: rgba(80, 89, 80, 0.8);
+    display: inline-block;
+    font-size: 13px;
+    width: 60%;
+}
+#kpa_ifa_details .section {
+    width: 60%;
+}
+#kpa_ifa_details .progress {
+    height: 13px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    background-color: #E5E5E5;
+}
+#kpa_ifa_details .progress .progress-bar {
+    width: 44%;
 }
