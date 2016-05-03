@@ -3436,3 +3436,6 @@ padding: 10px 5px;
     width: 25%;
     text-align: right;
 }
+.ui-dialog,.ui-widget{
+    font-family: 'Roboto-Regular' !important;
+}
