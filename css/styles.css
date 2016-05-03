@@ -2146,7 +2146,7 @@ input.promocode::-webkit-input-placeholder {
 }
 
 /*ExSpon My Assessment Page*/
-#exspon_myAssessment .graph_detail {
+#exspon_myAssessment .flex_graph_details {
    display: flex;
    flex-direction: row;
 }
@@ -3440,4 +3440,27 @@ padding: 10px 5px;
     color: #666464;
     width: 25%;
     text-align: right;
+}
+
+/*KPA_IFA_Details*/
+#kpa_ifa_details .progress_status_div .row {
+    margin: 0px;
+    height: 40px;
+}
+#kpa_ifa_details .progress_status_div h5 {
+    font-weight: bold;
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+    float: left;
+    margin: 0 10px 0 0;
+}
+#kpa_ifa_details .progress_status_div h5:after {
+    content: ' : '
+}
+#kpa_ifa_details .progress_status_div .details {
+    color: rgba(80, 89, 80, 0.8);
+    display: inline-block;
+    font-size: 13px;
+    width: 66%;
 }
