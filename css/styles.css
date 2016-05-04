@@ -39,6 +39,12 @@ header {
 a,input{
     outline: none;
 }
+a{
+    cursor: pointer;
+}
+a:focus{
+    text-decoration: none;
+}
 /*.nav{
     float: right;
 }*/
@@ -2258,8 +2264,7 @@ padding: 10px 5px;
 /* exSpon_DetailsPage_Questionnaire */
 
 .Questionnaire_box {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 0 15px 5px;
 }
 .Questionnaire_box .rating-container .caption , .selected_IFA_rating .rating-container .caption{
     display: inline-block;
@@ -3454,7 +3459,7 @@ padding: 10px 5px;
 }
  .IFA_assigned_date .calender {
      background-size: 20px 20px;
-     background-position: right top;
+     background-position: 99% 35%;
      background-image: url('../images/calender_icon.png');
      background-repeat: no-repeat;
  }
@@ -3463,6 +3468,7 @@ padding: 10px 5px;
     border: 2px solid #dedede;
     height: 35px;
     width: 58%;
+    padding-left: 5px;
 }
 .status_update_IFA label {
     color: #666464;
@@ -3488,6 +3494,7 @@ padding: 10px 5px;
 }
 .task_status_update select {
      width: 45%;
+     margin-left: 2px;
  }
 .ideas_for_action_status select {
     color: #A7A1A1;

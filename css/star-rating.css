@@ -35,14 +35,17 @@
 
 .rating-container .star {
     display: inline-block;
-    margin: 1px 3px;
+    margin:1px 5px 0 0;
     text-align: center;
 }
 
 .rating-container .empty-stars {
     color: #aaa;
 }
-
+.glyphicon{
+    top: 2px;
+    left: 5px;
+}
 .rating-container .filled-stars {
     position: absolute;
     left: 0;
