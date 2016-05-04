@@ -3705,3 +3705,32 @@ padding: 10px 5px;
 #updateKPIModel .sub_headings {
     margin: 0;
 }
+.remove-btn, .btn-wrap{
+   margin-top: 10px;
+}
+
+.purchase-plan{
+   width:46%;
+   float: left;
+   margin-right:15px;
+   font-size:12px;
+   min-height: 83px;
+}
+#productdetails .k-numerictextbox{
+   width:34%;
+}
+#productdetails #calculatedPrice{
+   font-family: 'Roboto-Bold';
+   color: #2C88CE;
+   font-weight: bold;
+}
+.marginLeft10{
+   margin-left:10px;
+}
+.k-radio:checked+.k-radio-label:after{
+   width: 6px;
+   height: 6px;
+}
+.error-msg{
+color:#D13F2D;
+}
