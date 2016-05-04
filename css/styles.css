@@ -300,6 +300,9 @@ a,input{
 .paddingBottom0 {
     padding-bottom: 0;
 }
+.paddingBottom20 {
+    padding-bottom: 20px;
+}
 .paddingLeft20 {
     padding-left: 20px;
 }
@@ -369,6 +372,10 @@ a,input{
 .paddingLeftRight25 {
     padding-left: 25px;
     padding-right: 25px;
+}
+.paddingTopBottom15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 .opacity_light {
     opacity: 0.6;
@@ -674,7 +681,7 @@ input[type="checkbox"] {
     color: #888;
 }
 .rating {
-    width: 113px;
+    width: 120px;
     background-color: #F1F1F1;
     border-radius: 17px;
     padding: 0px;
