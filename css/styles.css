@@ -39,6 +39,12 @@ header {
 a,input{
     outline: none;
 }
+a{
+    cursor: pointer;
+}
+a:focus{
+    text-decoration: none;
+}
 /*.nav{
     float: right;
 }*/
@@ -671,6 +677,9 @@ input[type="checkbox"] {
     margin-bottom: 10px;
     font-weight: normal;
     font-size: 14px;
+}
+.form-content label.text-left {
+    text-align: left;
 }
 .form-element input, .form-element>div, .form-element select {
     width: 50%;
@@ -2262,8 +2271,7 @@ padding: 10px 5px;
 /* exSpon_DetailsPage_Questionnaire */
 
 .Questionnaire_box {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 0 15px 5px;
 }
 .Questionnaire_box .rating-container .caption , .selected_IFA_rating .rating-container .caption{
     display: inline-block;
@@ -3458,7 +3466,7 @@ padding: 10px 5px;
 }
  .IFA_assigned_date .calender {
      background-size: 20px 20px;
-     background-position: right top;
+     background-position: 99% 35%;
      background-image: url('../images/calender_icon.png');
      background-repeat: no-repeat;
  }
@@ -3467,6 +3475,7 @@ padding: 10px 5px;
     border: 2px solid #dedede;
     height: 35px;
     width: 58%;
+    padding-left: 5px;
 }
 .status_update_IFA label {
     color: #666464;
@@ -3492,6 +3501,7 @@ padding: 10px 5px;
 }
 .task_status_update select {
      width: 45%;
+     margin-left: 2px;
  }
 .ideas_for_action_status select {
     color: #A7A1A1;
@@ -3609,16 +3619,19 @@ padding: 10px 5px;
 #team_members .details .sub {
     color: rgba(80, 89, 80, 0.8);
 }
-#create_task .form-content .calender {
+#create_task .form-content .calender, #addKPIModel .form-content .calender, #updateKPIModel .form-content .calender {
     width: 100%;
     background-size: 20px 20px;
-    background-position: right top;
+    background-position: right;
     background-image: url('../images/calender_icon.png');
     background-repeat: no-repeat;
 }
 #kpa_ifa_details .form-content textarea {
     height: 100px;
     margin-left: 3px;
+}
+#kpa_ifa_details .modal-footer {
+    padding: 35px;
 }
 #create_task .grey_bold {
     font-weight: bold;
@@ -3636,4 +3649,102 @@ padding: 10px 5px;
 }
 .ui-dialog,.ui-widget{
     font-family: 'Roboto-Regular' !important;
+}
+#key_performance_iondicator .details .sub {
+    color: rgba(80, 89, 80, 0.8);
+}
+#key_performance_iondicator .details .fa {
+    font-size: 19px;
+    margin-left: 5px;
+}
+#key_performance_iondicator .details .fa-arrow-up {
+    color: #51D65A;
+}
+#key_performance_iondicator .icon_group {
+    margin-top: 20px;
+}
+#key_performance_iondicator .icon_group a {
+    padding: 0 10px;
+}
+#key_performance_iondicator .btn-container button {
+    margin: 30px 0;
+}
+#key_performance_iondicator .btn-container {
+    margin-bottom: 100px;
+}
+#key_performance_iondicator .modal-dialog {
+    width: 60%;
+}
+#key_performance_iondicator .modal-content {
+    border-radius: 0;
+}
+#addKPIModel .modal-content .modal-header b {
+    padding-left: 10px;
+}
+#addKPIModel .form-content {
+    padding: 0;
+}
+#addKPIModel .form-content input[type="text"].full-width-input {
+    width: 65%;
+}
+#addKPIModel .form-content label {
+    width: 30%;
+}
+#addKPIModel .form-content select {
+    width: 31%;
+    margin: 0 20px 0 0;
+}
+#addKPIModel .modal-footer.button-container button {
+    min-width: 80px;
+}
+#key_performance_iondicator .form-content.sub_content input[type="text"].calender {
+    width: 71%;
+}
+#key_performance_iondicator .sub_headings {
+    margin: 30px 0;
+}
+#key_performance_iondicator .sub_content label {
+    width: 15%;
+}
+#key_performance_iondicator .form-content.sub_content input[type="text"], #key_performance_iondicator .form-content.sub_content select {
+    width: 77%;
+}
+#updateKPIModel .modal-header h5 {
+    margin: 5px;
+}
+#updateKPIModel .modal-header h3 {
+    font-weight: bold;
+    color: #4198E9;
+}
+#updateKPIModel .sub_headings {
+    margin: 0;
+}
+.remove-btn, .btn-wrap{
+   margin-top: 10px;
+}
+
+.purchase-plan{
+   width:46%;
+   float: left;
+   margin-right:15px;
+   font-size:12px;
+   min-height: 83px;
+}
+#productdetails .k-numerictextbox{
+   width:34%;
+}
+#productdetails #calculatedPrice{
+   font-family: 'Roboto-Bold';
+   color: #2C88CE;
+   font-weight: bold;
+}
+.marginLeft10{
+   margin-left:10px;
+}
+.k-radio:checked+.k-radio-label:after{
+   width: 6px;
+   height: 6px;
+}
+.error-msg{
+color:#D13F2D;
 }
