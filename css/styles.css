@@ -3447,6 +3447,9 @@ padding: 10px 5px;
 .completed_status {
     color: #43A543;
 }
+.delayed_status {
+    color: #E53333;
+}
 .popup-sm .modal-dialog{
     max-width: 500px;
 }
