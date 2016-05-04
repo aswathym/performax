@@ -802,44 +802,6 @@ footer a {
     background-color: #3A4447;
     margin-right: 10px;
 }
-#home_footer_container .subcribe {
-    mar
-}
-#home_footer_container h5 {
-    font-weight: bold;
-}
-#home_footer_container ul li {
-    list-style-type: none;
-    line-height: 1.5;
-}
-#home_footer_container ul li a {
-    color: #fff;
-}
-#home_footer_container ul li a:hover {
-    text-decoration: none;
-    color: #aaa;
-}
-#home_footer_container .details h5 {
-    color: #69CFDA;
-}
-#home_footer_container .contact_us h5 {
-    color: #FF7979;
-}
-#home_footer_container .help h5 {
-    color: #DEBC69;
-}
-#home_footer_container .follow_us, #home_footer_container .input-group {
-    padding: 15px 0px;
-}
-#home_footer_container .follow_us .facebook a {
-    color: #395797;
-}
-#home_footer_container .follow_us .twitter a {
-    color: #6ACFF4;
-}
-#home_footer_container .follow_us .google-plus a {
-    color: #D13F2D;
-}
 .thumbnail {
     border-radius: 2px;
 }
