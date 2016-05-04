@@ -366,6 +366,10 @@ a,input{
 .marginRight30 {
     margin-right: 30px;
 }
+.paddingLeftRight25 {
+    padding-left: 25px;
+    padding-right: 25px;
+}
 .opacity_light {
     opacity: 0.6;
 }
