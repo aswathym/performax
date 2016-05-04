@@ -3618,6 +3618,7 @@ padding: 10px 5px;
 }
 #kpa_ifa_details .modal-footer {
     padding: 35px;
+    border: none;
 }
 #create_task .grey_bold {
     font-weight: bold;
@@ -3636,35 +3637,35 @@ padding: 10px 5px;
 .ui-dialog,.ui-widget{
     font-family: 'Roboto-Regular' !important;
 }
-#key_performance_iondicator .details .sub {
+#key_performance_indicator .details .sub {
     color: rgba(80, 89, 80, 0.8);
 }
-#key_performance_iondicator .details .fa {
+#key_performance_indicator .details .fa {
     font-size: 19px;
     margin-left: 5px;
 }
-#key_performance_iondicator .details .fa-arrow-up {
+#key_performance_indicator .details .fa-arrow-up {
     color: #51D65A;
 }
-#key_performance_iondicator .icon_group {
+#key_performance_indicator .icon_group {
     margin-top: 20px;
 }
-#key_performance_iondicator .icon_group a {
+#key_performance_indicator .icon_group a {
     padding: 0 10px;
 }
-#key_performance_iondicator .btn-container button {
+#key_performance_indicator .btn-container button {
     margin: 30px 0;
 }
-#key_performance_iondicator .btn-container {
+#key_performance_indicator .btn-container {
     margin-bottom: 100px;
 }
-#key_performance_iondicator .modal-dialog {
+#key_performance_indicator .modal-dialog {
     width: 60%;
 }
-#key_performance_iondicator .modal-content {
+#key_performance_indicator .modal-content {
     border-radius: 0;
 }
-#addKPIModel .modal-content .modal-header b {
+#addKPIModel .modal-content.modal-header b {
     padding-left: 10px;
 }
 #addKPIModel .form-content {
@@ -3683,17 +3684,29 @@ padding: 10px 5px;
 #addKPIModel .modal-footer.button-container button {
     min-width: 80px;
 }
-#key_performance_iondicator .form-content.sub_content input[type="text"].calender {
+#key_performance_indicator .form-content .bg_change {
+    background-color: #F7F7F7;
+    padding-top: 10px;
+    margin: 0 -14px 0 -14px;
+    width: 103%;
+}
+#key_performance_indicator .form-content .sub_content input[type="text"].calender {
     width: 71%;
 }
-#key_performance_iondicator .sub_headings {
+#key_performance_indicator .sub_headings {
     margin: 30px 0;
 }
-#key_performance_iondicator .sub_content label {
+#key_performance_indicator .sub_content label {
     width: 15%;
 }
-#key_performance_iondicator .form-content.sub_content input[type="text"], #key_performance_iondicator .form-content.sub_content select {
+#key_performance_indicator .form-content .sub_content input[type="text"], #key_performance_indicator .form-content .sub_content select {
     width: 77%;
+}
+#key_performance_indicator .another_sub label {
+    width: 17%;
+}
+#key_performance_indicator .sub_content.another_sub select {
+    width: 78%;
 }
 #updateKPIModel .modal-header h5 {
     margin: 5px;
@@ -3701,7 +3714,4 @@ padding: 10px 5px;
 #updateKPIModel .modal-header h3 {
     font-weight: bold;
     color: #4198E9;
-}
-#updateKPIModel .sub_headings {
-    margin: 0;
 }
