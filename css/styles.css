@@ -357,11 +357,18 @@ a,input{
 .marginTop-27 {
     margin-top: -27px;
 }
+.marginBottom-0 {
+    margin-bottom: 0px;
+}
 .marginBottom0 {
     margin-bottom: 5px;
 }
 .marginRight30 {
     margin-right: 30px;
+}
+.paddingLeftRight25 {
+    padding-left: 25px;
+    padding-right: 25px;
 }
 .opacity_light {
     opacity: 0.6;
@@ -3451,7 +3458,7 @@ padding: 10px 5px;
      background-image: url('../images/calender_icon.png');
      background-repeat: no-repeat;
  }
-.status_update_IFA input, .status_update_IFA select {
+.status_update_IFA input, .status_update_IFA select,\ {
     margin-left: 5px;
     border: 2px solid #dedede;
     height: 35px;
@@ -3470,15 +3477,18 @@ padding: 10px 5px;
     height: 35px;
     width: 30%;
 }
-.link_task_IFA textarea {
+.link_task_IFA textarea,.task_status_update textarea {
     margin-left: 5px;
     border: 2px solid #dedede;
 }
-.link_task_IFA label {
+.link_task_IFA label, .task_status_update label {
     color: #666464;
     width: 25%;
     text-align: right;
 }
+.task_status_update select {
+     width: 45%;
+ }
 .ideas_for_action_status select {
     color: #A7A1A1;
     font-size: 15px;
@@ -3511,7 +3521,11 @@ padding: 10px 5px;
 #commentView .col-md-11 {
     background-color: #F7F7F7;
 }
-
+#task_id_font {
+    font-size: 25px;
+    color: #4198E9;
+    font-weight: bolder;
+}
 /*KPA_IFA_Details*/
 #kpa_ifa_details .progress_status_div .row {
     margin: 0px;
