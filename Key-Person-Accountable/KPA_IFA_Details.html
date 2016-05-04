@@ -131,7 +131,7 @@
                             <li class="active"><a href="#team_members" aria-controls="team_members" role="tab" data-toggle="tab">Team Members</a></li>
                             <li><a href="#create_task" aria-controls="create_task" role="tab" data-toggle="tab">Create Task</a></li>
                             <li><a href="#task_list" aria-controls="task_list" role="tab" data-toggle="tab">Task List</a></li>
-                            <li><a href="#no_display" aria-controls="no_display" role="tab" data-toggle="tab">Key Performance Indicator</a></li>
+                            <li><a href="#key_performance_iondicator" aria-controls="key_performance_iondicator" role="tab" data-toggle="tab">Key Performance Indicator</a></li>
                             <li><a href="#no_display" aria-controls="no_display" role="tab" data-toggle="tab">Schedule Team Meeting</a></li>
                             <li><a href="#no_display" aria-controls="no_display" role="tab" data-toggle="tab">Calendar</a></li>
                             <li><a href="#no_display" aria-controls="no_display" role="tab" data-toggle="tab">Gantt Chart</a></li>
@@ -286,6 +286,181 @@
                         </div>
                         <div id="task_list" class="container-fluid tab-pane padding0" role="tabpanel">
                             Task List
+                        </div>
+                        <div id="key_performance_iondicator" class="container-fluid tab-pane padding0" role="tabpanel">
+                            <div class="col-md-12 padding10">
+                                <h4 class="margin0">
+                                    <img src="../images/kpilogo.png">
+                                    Update Key Performance Indicator (KPI) Values
+                                </h4>
+                                <div class="box-shadow-styling-light padding10 col-md-12 details">
+                                    <span class="col-md-2">
+                                        <h4><a href="#" class="light_blue_color">Adam Pine</a></h4>
+                                        <span class="sub">KPI</span>
+                                    </span>
+                                    <span class="col-md-2">
+                                        <h4>4.5</h4>
+                                        <span class="sub">KPI Target Value</span>
+                                    </span>
+                                    <span class="col-md-2">
+                                        <h4>06.19.2016</h4>
+                                        <span class="sub">KPI Target Date</span>
+                                    </span>
+                                    <span class="col-md-2">
+                                        <h4>3.8
+                                            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                                        </h4>
+                                        <span class="sub">KPI Actual Value</span>
+                                    </span>
+                                    <span class="col-md-2">
+                                        <h4>03.01.2016</h4>
+                                        <span class="sub">KPI Actual Date</span>
+                                    </span>
+                                    <span class="col-md-2 icon_group">
+                                        <a href="#"><img src="../images/eye.png" alt="Eye" data-toggle="modal" data-target="#updateKPIModel"></a>
+                                        <a href="#"><img src="../images/edit.png" alt="Edit"></a>
+                                        <a href="#"><img src="../images/delete.png" alt="Delete"></a>
+                                    </span>
+                                </div>
+                                <div class="col-md-12 text-center btn-container">
+                                    <button class="btn btn-info" data-toggle="modal" data-target="#addKPIModel">Add KPI</button>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="updateKPIModel" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header col-md-12">
+                                            <span class="col-md-8">
+                                                <h4 class="modal-title" id="myModalLabel">
+                                                    <img src="../images/kpilogo.png">
+                                                    <b>Update KPI Value</b>
+                                                </h4>    
+                                            </span>
+                                            <span class="col-md-4 text-right padding0">
+                                                <h3 class="margin0">T1071</h3>
+                                                <h5 class="grey_color">Task ID</h5>
+                                            </span>
+                                        </div>
+                                        <div class="modal-body container-fluid">
+                                            <form class="" action="" method="post">
+                                                <h5 class="col-md-12 marginBottom20"><b>Key Performance Indicator : </b><span class="grey_color"> Percent (%) Financial Leverage Ratio</span></h5>
+                                                <h4 class="sub_headings col-md-12">KPI Target Value</h4>
+                                                <span class="form-content col-md-12 sub_content">
+                                                    <span class="col-md-8">
+                                                        <label>Set Value</label>
+                                                        <input type="text"></input>
+                                                    </span>
+                                                    <span class="col-md-4">
+                                                        <label>Date</label>
+                                                        <input type="text" class="calender" placeholder="Start Date"></input>
+                                                    </span>
+                                                </span>
+                                                <h4 class="col-md-12 sub_headings">KPI Actual Value</h4>
+                                                <span class="form-content col-md-12 sub_content">
+                                                    <span class="col-md-8">
+                                                        <label>Set Value</label>
+                                                        <input type="text"></input>
+                                                    </span>
+                                                    <span class="col-md-4">
+                                                        <label>Date</label>
+                                                        <input type="text" class="calender" placeholder="Start Date"></input>
+                                                    </span>
+                                                </span>
+                                                <span class="form-content sub_content col-md-12 padding0">
+                                                    <span class="col-md-6">
+                                                        <label class="text-left">CSF</label>
+                                                        <select class="dropdown_select">
+                                                            <option selected="true" disabled></option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                        </select>
+                                                    </span>
+                                                    <span class="col-md-6">
+                                                        <label>IFA</label>
+                                                        <select class="dropdown_select">
+                                                            <option selected="true" disabled></option>
+                                                            <option>1</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                        </select>
+                                                    </span>
+                                                </span>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer button-container">
+                                            <button type="button" class="btn btn-primary" data-dismiss="modal">Update</button>
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="addKPIModel" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">
+                                                <img src="../images/kpilogo.png">
+                                                <b>Add New Key Performance Indicator (KPI)</b>
+                                            </h4>
+                                        </div>
+                                        <div class="modal-body container-fluid">
+                                            <form class="" action="" method="post">
+                                                <span class="form-content">
+                                                    <label>Key Performance Indicator</label>
+                                                    <input type="text" class="full-width-input"></input>
+                                                </span>
+                                                <span class="form-content">
+                                                    <label>Select</label>
+                                                    <select class="dropdown_select">
+                                                        <option selected="true" disabled>Select Unit</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                    </select>
+                                                    <select class="dropdown_select">
+                                                        <option selected="true" disabled>Select Period</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                    </select>
+                                                </span>
+                                                <h4 class="sub_headings col-md-12">KPI Target Value</h4>
+                                                <span class="form-content col-md-12 sub_content">
+                                                    <span class="col-md-8">
+                                                        <label>Set Value</label>
+                                                        <input type="text"></input>
+                                                    </span>
+                                                    <span class="col-md-4">
+                                                        <label>Date</label>
+                                                        <input type="text" class="calender" placeholder="Start Date"></input>
+                                                    </span>
+                                                </span>
+                                                <h4 class="col-md-12 sub_headings">KPI Actual Value</h4>
+                                                <span class="form-content col-md-12 sub_content">
+                                                    <span class="col-md-8">
+                                                        <label>Set Value</label>
+                                                        <input type="text"></input>
+                                                    </span>
+                                                    <span class="col-md-4">
+                                                        <label>Date</label>
+                                                        <input type="text" class="calender" placeholder="Start Date"></input>
+                                                    </span>
+                                                </span>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer button-container">
+                                            <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div id="no_display" class="container-fluid tab-pane" role="tabpanel">
                             Under Construction
