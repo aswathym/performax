@@ -3787,8 +3787,14 @@ color:#D13F2D;
 }
 /*Reports */
 #reports_assessment_overview .kpa_details_nav .nav-tabs li a {
-    padding: 17px 10px 15px;
+    padding: 13px 10px 13px 11px;
 }
 #reports_assessment_overview .navbar {
     padding-top: 0;
+}
+#reports_assessment_overview .challenge_box {
+    margin-bottom: 0;
+}
+#reports_assessment_overview  #tab_header li:last-child {
+    float: left;
 }
