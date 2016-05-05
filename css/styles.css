@@ -151,11 +151,11 @@ a:focus{
     border-radius: 50%;
 }
 #header_user_bar .profile_pic_hover {
-    position: absolute;
-    width: 200px;
-    top: 60px;
-    z-index: 1;
-    right: 100px;
+   position: absolute;
+   width: 250px;
+   top: 46px;
+   z-index: 1;
+   right: 69px;
 }
 #header_user_bar .profile_pic_hover li:hover {
     cursor: pointer;
@@ -892,8 +892,10 @@ a>i {
     right: 0;
     margin-right: 10px;
 }
-.panel_content_CSF .analytics_checkbox a:not(.collapsed) .down_arrow_CSF img {
+div#sideMenu .list-group-item:not(.collapsed) img,.panel_content_CSF .analytics_checkbox a:not(.collapsed) .down_arrow_CSF img {
     transform: rotate(180deg);
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
 }
 footer {
     padding: 20px 0 15px;
@@ -1164,7 +1166,7 @@ h1 {
 }
 .form-content input {
     width: 60%;
-    border: 1px solid rgba(222, 222, 222, 0.56);
+    border: 1px solid rgba(222, 222, 222, 1);
     padding: 3px 7px;
     font-size: 14px;
 }
@@ -2659,7 +2661,7 @@ padding: 10px 5px;
     padding: 6px 15px;
     margin-top: 20px;
 }
-#assessment_design .form-content {
+#assessment_design .form-content,#addExpertPanelMemberSection .form-content{
     padding: 3px 0px;
 }
 
@@ -3725,4 +3727,7 @@ padding: 10px 5px;
 }
 .error-msg{
 color:#D13F2D;
+}
+.login-sect {
+   position: relative;
 }
