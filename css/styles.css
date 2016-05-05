@@ -3587,7 +3587,7 @@ padding: 10px 5px;
 #create_task .form-content .calender, #addKPIModel .form-content .calender, #updateKPIModel .form-content .calender {
     width: 100%;
     background-size: 20px 20px;
-    background-position: right;
+    background-position: 99%;
     background-image: url('../images/calender_icon.png');
     background-repeat: no-repeat;
 }
@@ -3725,4 +3725,12 @@ padding: 10px 5px;
 }
 .error-msg{
 color:#D13F2D;
+}
+
+/*Reports */
+#reports_assessment_overview .kpa_details_nav .nav-tabs li a {
+    padding: 17px 10px 15px;
+}
+#reports_assessment_overview .navbar {
+    padding-top: 0;
 }
