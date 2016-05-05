@@ -354,6 +354,9 @@ a:focus{
 .marginTop20 {
     margin-top: 20px;
 }
+.marginTop30 {
+    margin-top: 30px;
+}
 .marginBottom20 {
     margin-bottom: 20px;
 }
@@ -3795,6 +3798,20 @@ color:#D13F2D;
 #reports_assessment_overview .challenge_box {
     margin-bottom: 0;
 }
-#reports_assessment_overview  #tab_header li:last-child {
+#reports_assessment_overview #tab_header li:last-child {
     float: left;
+}
+#reports_assessment_overview .results_reporter .main {
+    font-weight: bold;
+    display: inline-block;
+    text-align: right;
+    width: 50%;
+}
+#reports_assessment_overview .results_reporter .main:after {
+    content: ' : ';
+}
+#reports_assessment_overview .results_reporter .sub {
+    color: rgba(80, 89, 80, 0.8);
+    display: inline-block;
+    width: 45%;
 }
