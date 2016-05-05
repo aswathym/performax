@@ -151,11 +151,11 @@ a:focus{
     border-radius: 50%;
 }
 #header_user_bar .profile_pic_hover {
-    position: absolute;
-    width: 200px;
-    top: 60px;
-    z-index: 1;
-    right: 100px;
+   position: absolute;
+   width: 250px;
+   top: 46px;
+   z-index: 1;
+   right: 69px;
 }
 #header_user_bar .profile_pic_hover li:hover {
     cursor: pointer;
@@ -815,44 +815,6 @@ footer a {
     background-color: #3A4447;
     margin-right: 10px;
 }
-#home_footer_container .subcribe {
-    mar
-}
-#home_footer_container h5 {
-    font-weight: bold;
-}
-#home_footer_container ul li {
-    list-style-type: none;
-    line-height: 1.5;
-}
-#home_footer_container ul li a {
-    color: #fff;
-}
-#home_footer_container ul li a:hover {
-    text-decoration: none;
-    color: #aaa;
-}
-#home_footer_container .details h5 {
-    color: #69CFDA;
-}
-#home_footer_container .contact_us h5 {
-    color: #FF7979;
-}
-#home_footer_container .help h5 {
-    color: #DEBC69;
-}
-#home_footer_container .follow_us, #home_footer_container .input-group {
-    padding: 15px 0px;
-}
-#home_footer_container .follow_us .facebook a {
-    color: #395797;
-}
-#home_footer_container .follow_us .twitter a {
-    color: #6ACFF4;
-}
-#home_footer_container .follow_us .google-plus a {
-    color: #D13F2D;
-}
 .thumbnail {
     border-radius: 2px;
 }
@@ -943,8 +905,10 @@ a>i {
     right: 0;
     margin-right: 10px;
 }
-.panel_content_CSF .analytics_checkbox a:not(.collapsed) .down_arrow_CSF img {
+div#sideMenu .list-group-item:not(.collapsed) img,.panel_content_CSF .analytics_checkbox a:not(.collapsed) .down_arrow_CSF img {
     transform: rotate(180deg);
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
 }
 footer {
     padding: 20px 0 15px;
@@ -1215,7 +1179,7 @@ h1 {
 }
 .form-content input {
     width: 60%;
-    border: 1px solid rgba(222, 222, 222, 0.56);
+    border: 1px solid rgba(222, 222, 222, 1);
     padding: 3px 7px;
     font-size: 14px;
 }
@@ -2710,7 +2674,7 @@ padding: 10px 5px;
     padding: 6px 15px;
     margin-top: 20px;
 }
-#assessment_design .form-content {
+#assessment_design .form-content,#addExpertPanelMemberSection .form-content{
     padding: 3px 0px;
 }
 
@@ -3638,7 +3602,7 @@ padding: 10px 5px;
 #create_task .form-content .calender, #addKPIModel .form-content .calender, #updateKPIModel .form-content .calender {
     width: 100%;
     background-size: 20px 20px;
-    background-position: right;
+    background-position: 99%;
     background-image: url('../images/calender_icon.png');
     background-repeat: no-repeat;
 }
@@ -3648,6 +3612,7 @@ padding: 10px 5px;
 }
 #kpa_ifa_details .modal-footer {
     padding: 35px;
+    border: none;
 }
 #create_task .grey_bold {
     font-weight: bold;
@@ -3666,35 +3631,35 @@ padding: 10px 5px;
 .ui-dialog,.ui-widget{
     font-family: 'Roboto-Regular' !important;
 }
-#key_performance_iondicator .details .sub {
+#key_performance_indicator .details .sub {
     color: rgba(80, 89, 80, 0.8);
 }
-#key_performance_iondicator .details .fa {
+#key_performance_indicator .details .fa {
     font-size: 19px;
     margin-left: 5px;
 }
-#key_performance_iondicator .details .fa-arrow-up {
+#key_performance_indicator .details .fa-arrow-up {
     color: #51D65A;
 }
-#key_performance_iondicator .icon_group {
+#key_performance_indicator .icon_group {
     margin-top: 20px;
 }
-#key_performance_iondicator .icon_group a {
+#key_performance_indicator .icon_group a {
     padding: 0 10px;
 }
-#key_performance_iondicator .btn-container button {
+#key_performance_indicator .btn-container button {
     margin: 30px 0;
 }
-#key_performance_iondicator .btn-container {
+#key_performance_indicator .btn-container {
     margin-bottom: 100px;
 }
-#key_performance_iondicator .modal-dialog {
+#key_performance_indicator .modal-dialog {
     width: 60%;
 }
-#key_performance_iondicator .modal-content {
+#key_performance_indicator .modal-content {
     border-radius: 0;
 }
-#addKPIModel .modal-content .modal-header b {
+#addKPIModel .modal-content.modal-header b {
     padding-left: 10px;
 }
 #addKPIModel .form-content {
@@ -3713,17 +3678,29 @@ padding: 10px 5px;
 #addKPIModel .modal-footer.button-container button {
     min-width: 80px;
 }
-#key_performance_iondicator .form-content.sub_content input[type="text"].calender {
+#key_performance_indicator .form-content .bg_change {
+    background-color: #F7F7F7;
+    padding-top: 10px;
+    margin: 0 -14px 0 -14px;
+    width: 103%;
+}
+#key_performance_indicator .form-content .sub_content input[type="text"].calender {
     width: 71%;
 }
-#key_performance_iondicator .sub_headings {
+#key_performance_indicator .sub_headings {
     margin: 30px 0;
 }
-#key_performance_iondicator .sub_content label {
+#key_performance_indicator .sub_content label {
     width: 15%;
 }
-#key_performance_iondicator .form-content.sub_content input[type="text"], #key_performance_iondicator .form-content.sub_content select {
+#key_performance_indicator .form-content .sub_content input[type="text"], #key_performance_indicator .form-content .sub_content select {
     width: 77%;
+}
+#key_performance_indicator .another_sub label {
+    width: 17%;
+}
+#key_performance_indicator .sub_content.another_sub select {
+    width: 78%;
 }
 #updateKPIModel .modal-header h5 {
     margin: 5px;
@@ -3804,4 +3781,7 @@ color:#D13F2D;
     width: 68.7%;
     margin: 20px 135px;
     padding: 20px;
+}
+.login-sect {
+   position: relative;
 }
