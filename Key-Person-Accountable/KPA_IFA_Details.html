@@ -132,7 +132,7 @@
                             <li><a href="#create_task" aria-controls="create_task" role="tab" data-toggle="tab">Create Task</a></li>
                             <li><a href="#task_list" aria-controls="task_list" role="tab" data-toggle="tab">Task List</a></li>
                             <li><a href="#key_performance_iondicator" aria-controls="key_performance_iondicator" role="tab" data-toggle="tab">Key Performance Indicator</a></li>
-                            <li><a href="#no_display" aria-controls="no_display" role="tab" data-toggle="tab">Schedule Team Meeting</a></li>
+                            <li><a href="#schedule_team_meeting" aria-controls="schedule_team_meeting" role="tab" data-toggle="tab">Schedule Team Meeting</a></li>
                             <li><a href="#no_display" aria-controls="no_display" role="tab" data-toggle="tab">Calendar</a></li>
                             <li><a href="#no_display" aria-controls="no_display" role="tab" data-toggle="tab">Gantt Chart</a></li>
                         </ul>
@@ -632,6 +632,68 @@
                                 </div>
                             </div>
                         </div>
+                        <div id="schedule_team_meeting" class="container-fluid tab-pane" role="tabpanel">
+                            <div class="container-fluid ">
+                                <div class="row marginTop20 marginBottom10 meeting_title">
+                                    <div class="col-md-6">
+                                        <label for="" class="team_meeting_label">Meeting Title : </label>
+                                        <input type="text" name="name" value="" class="team_meeting_input">
+                                    </div>
+                                    <div class="col-md-6 paddingLeft30">
+                                        <label for="">Meeting Importance Rating :</label>
+                                        <div class="star_rating_div displayInline">
+                                            <input value="0" type="number" class="rating" min=0 max=5 step=0.5 data-size="xs">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row marginLeft40px marginBottom10">
+                                    <div class="displayInline meeting_date">
+                                        <label for="">Meeting Date :</label>
+                                        <input type="text" class="calender hasDatepicker" name="name" placeholder="Start Date" id="dp1462367830930">
+                                    </div>
+                                    <div class="displayInline meeting_time">
+                                        <label for="">Time :</label>
+                                        <input type="text" name="name" value="" placeholder="hh / mm / ss">
+                                        <span class="paddingLeftRight15">to</span>
+                                        <input type="text" name="name" value="" placeholder="hh / mm / ss">
+                                    </div>
+                                    <div class="displayInline meeting_date">
+                                        <label for="">Repeat :</label>
+                                        <select class="dropdown_select">
+                                            <option>Never</option>
+                                            <option></option>
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row marginBottom10">
+                                    <div class="col-md-6">
+                                        <label for="" class="team_meeting_label">Meeting Location:</label>
+                                        <input type="text" name="name" value="" class="team_meeting_input">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="" class="team_meeting_label">Add Guest :</label>
+                                        <input type="text" name="name" value="" class="team_meeting_input">
+                                    </div>
+                                    <div class="col-md-6 add_guest">
+                                        <button type="button" name="button" class="btn btn-primary"> Add</button>
+                                    </div>
+                                </div>
+                                <div class="row add_guest_name">
+                                    <span>Jason Moman</span>
+                                </div>
+                                <div class="row marginLeft40px">
+                                    <label for="" class="floatLeft" style="margin-left: 12px;">Description :</label>
+                                    <textarea name="name" rows="4" cols="90" style="margin-left: 5px"></textarea>
+                                </div>
+                                <div class="row text-center marginBottom20 paddingTop70">
+                                    <button type="button" name="button" class="btn btn-info">Schedule meeting</button>
+                                    <button type="button" name="button" class="btn btn-danger cancel_meeting">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
                         <div id="no_display" class="container-fluid tab-pane" role="tabpanel">
                             Under Construction
                         </div>
@@ -654,6 +716,7 @@
         <script src="../js/jquery.imagemap.min.js" charset="utf-8"></script>
         <script src="../js/jquery-ui.min.js" charset="utf-8"></script>
         <script src="../js/script.js"></script>
+        <script src="../js/kpa.js"></script>
         <script src="../js/star-rating.js"></script>
     </body>
 

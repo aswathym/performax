@@ -324,6 +324,9 @@ a:focus{
 .paddingTop5 {
     padding-top: 10px;
 }
+.paddingTop70 {
+    padding-top: 70px;
+}
 .paddingColumnBox {
     padding: 0px 20px 0 40px;
 }
@@ -354,8 +357,14 @@ a:focus{
 .marginBottom20 {
     margin-bottom: 20px;
 }
+.marginBottom10 {
+    margin-bottom: 10px;
+}
 .marginLeft20px {
     margin-left: 20px;
+}
+.marginLeft40px {
+    margin-left: 40px;
 }
 .marginTop-10 {
     margin-top: -10px;
@@ -378,6 +387,10 @@ a:focus{
 .paddingLeftRight25 {
     padding-left: 25px;
     padding-right: 25px;
+}
+.paddingLeftRight15 {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .paddingTopBottom15 {
     padding-top: 15px;
@@ -3750,4 +3763,45 @@ padding: 10px 5px;
 }
 .error-msg{
 color:#D13F2D;
+}
+
+/* Schedule Team Meeting tab - KPA Details page */
+.team_meeting_label {
+    width: 25%;
+    text-align: right;
+}
+.team_meeting_input {
+    width: 73%;
+}
+.meeting_date {
+    width: 25%;
+}
+.meeting_date input{
+    width: 50%;
+}
+.meeting_date select {
+    width: 48%;
+}
+.meeting_time {
+    width: 36.5%;
+}
+.meeting_time input {
+    width: 35%;
+    padding-left: 20px;
+}
+.meeting_title {
+    margin-top: 90px;
+}
+.add_guest button {
+    padding: 5px 30px;
+}
+.cancel_meeting {
+    padding: 5px 20px;
+    margin-left: 20px;
+}
+.add_guest_name{
+    background-color: #F7F7F7;
+    width: 68.7%;
+    margin: 20px 135px;
+    padding: 20px;
 }
