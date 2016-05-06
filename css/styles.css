@@ -1127,6 +1127,9 @@ h1 {
     height: 415px;
     left: 50%;
     transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%); /* IE 9 */
+    -webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
+    transform: translate(-50%, -50%);
     max-width: 620px;
     background-color: #fff;
     border-radius: 0;
@@ -1182,15 +1185,18 @@ h1 {
 }
 .form-content input {
     width: 60%;
-    border: 1px solid rgba(222, 222, 222, 1);
+    border: 2px solid rgba(222, 222, 222, 1);
     padding: 3px 7px;
     font-size: 14px;
 }
 .form-content .k-dropdown, .form-content .k-widget, .form-content .k-header {
     width: 60% !important;
     font-size: 14px !important;
-    border: 1px solid rgba(222, 222, 222, 0.56);
+    border: 2px solid rgba(222, 222, 222, 0.56);
     display: inline-block;
+}
+.form-content .k-dropdown-wrap{
+    border-width: 0;
 }
 .container .k-header {
     border: 1px solid rgba(222, 222, 222, 0.56);
