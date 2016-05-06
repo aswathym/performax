@@ -3790,7 +3790,7 @@ color:#D13F2D;
 }
 /*Reports */
 #reports_assessment_overview .kpa_details_nav .nav-tabs li a {
-    padding: 13px 10px 13px 11px;
+    padding: 13px 10% 13px 6%;
 }
 #reports_assessment_overview .navbar {
     padding-top: 0;
@@ -3814,4 +3814,19 @@ color:#D13F2D;
     color: rgba(80, 89, 80, 0.8);
     display: inline-block;
     width: 45%;
+}
+
+
+
+/* Reports - Team Members tab*/
+.user_details_content {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.user_details_content label {
+    width: 50%;
+    text-align: right;
+}
+.team_members_epm_headings {
+    padding-left: 22px;
 }
