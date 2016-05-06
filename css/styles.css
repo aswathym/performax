@@ -1691,7 +1691,6 @@ input.promocode::-webkit-input-placeholder {
     -webkit-border-radius: 30px;
     border-radius: 30px;
     -moz-box-shadow: 1px 1px 3px #555;
-    cursor: pointer;
     overflow: hidden;
     background-size: 40px 40px;
     background-repeat: no-repeat;
