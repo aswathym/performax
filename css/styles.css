@@ -3830,3 +3830,12 @@ color:#D13F2D;
 .team_members_epm_headings {
     padding-left: 22px;
 }
+.powered_by_team img {
+    border: 1px solid #C8CBCE;
+    border-bottom: 3px solid #C8CBCE;
+    border-top: 3px solid #C8CBCE;
+}
+.powered_and_share_team {
+    padding-top: 6px;
+    margin-bottom: 30px;
+}
