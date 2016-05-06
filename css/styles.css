@@ -1691,7 +1691,6 @@ input.promocode::-webkit-input-placeholder {
     -webkit-border-radius: 30px;
     border-radius: 30px;
     -moz-box-shadow: 1px 1px 3px #555;
-    cursor: pointer;
     overflow: hidden;
     background-size: 40px 40px;
     background-repeat: no-repeat;
@@ -3793,7 +3792,7 @@ color:#D13F2D;
     padding: 0px 30px 20px;
 }
 #reports_assessment_overview .kpa_details_nav .nav-tabs li a {
-    padding: 13px 10px 13px 11px;
+    padding: 13px 10% 13px 6%;
 }
 #reports_assessment_overview .navbar {
     padding-top: 0;
@@ -3850,4 +3849,26 @@ color:#D13F2D;
 }
 #reports_assessment_overview .vid_container img {
     width: 100%;
+}
+
+/* Reports - Team Members tab*/
+.user_details_content {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.user_details_content label {
+    width: 50%;
+    text-align: right;
+}
+.team_members_epm_headings {
+    padding-left: 22px;
+}
+.powered_by_team img {
+    border: 1px solid #C8CBCE;
+    border-bottom: 3px solid #C8CBCE;
+    border-top: 3px solid #C8CBCE;
+}
+.powered_and_share_team {
+    padding-top: 6px;
+    margin-bottom: 30px;
 }
