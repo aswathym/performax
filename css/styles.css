@@ -1121,35 +1121,23 @@ h1 {
     padding-left: 31%;
     margin: -10px 0 10px;
 }
-#login {
-    position: absolute;
-    top: 50%;
-    height: 415px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-     -ms-transform: translate(-50%, -50%); /* IE 9 */
-    -webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
-    transform: translate(-50%, -50%);
-    max-width: 620px;
-    background-color: #fff;
-    border-radius: 0;
-    border: 0;
-    box-shadow: none;
-    padding: 0;
-    margin-top: 50px;
+#login,#forget_password {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+    -ms-transform: translate(-50%, -50%); /* IE 9 */
+  -webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
+  transform: translate(-50%, -50%);
+   max-width: 620px;
+   background-color: #fff;
+   border-radius: 0;
+   border: 0;
+   box-shadow: none;
+   padding: 0;
+   margin-top: 50px;
 }
-#forget_password {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 620px;
-    background-color: #fff;
-    border-radius: 0;
-    border: 0;
-    box-shadow: none;
-    padding: 0;
-    margin-top: 80px;
+#login {
+   height: 415px;
 }
 #login-cnt form {
     padding: 6% 0;
@@ -1679,7 +1667,7 @@ input.promocode::-webkit-input-placeholder {
 /* top flow */
 
 .flow_nav {
-    width: 410px;
+    width: 390px;
     height: 52px;
     font-size: 16px;
     display: inline-block;
@@ -1708,6 +1696,8 @@ input.promocode::-webkit-input-placeholder {
 }
 .flow_nav .active .status_icon{
     transform: scale(1.5, 1.5);
+     -ms-transform: scale(1.5, 1.5); 
+    -webkit-transform: scale(1.5, 1.5); 
     box-shadow: 0px 0px 7px 0px #72F568;
 }
 .flow_nav .active  p {
@@ -1784,7 +1774,7 @@ input.promocode::-webkit-input-placeholder {
     margin-top: 5px;
 }
 .horiz_seperator {
-    width: 11%;
+    width: 9%;
     height: 2px;
     display: inline-block;
     background-color: #B5B5B5;
@@ -2226,6 +2216,8 @@ input.promocode::-webkit-input-placeholder {
     padding: 6px 12px;
     text-align: center;
     transform: rotate(320deg);
+     -ms-transform: rotate(320deg); 
+    -webkit-transform:rotate(320deg); 
     position: absolute;
     left: -37px;
     top: 0px;
@@ -2594,6 +2586,8 @@ padding: 10px 5px;
 }
 .learning_center .each_tiles:hover {
     transform: scale(1.3, 1.3);
+    -ms-transform: scale(1.3, 1.3); 
+    -webkit-transform:scale(1.3, 1.3); 
 }
 .learning_center .video-tutorial {
     left: 230px;
@@ -2646,6 +2640,8 @@ padding: 10px 5px;
 }
 .learning_center .transformImage {
     transform: scale(1.3, 1.3);
+    -ms-transform: scale(1.3, 1.3); 
+    -webkit-transform:scale(1.3, 1.3); 
 }
 .details_page_nav .nav {
     border-bottom: 2px solid #09A6D0;
