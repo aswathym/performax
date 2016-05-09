@@ -3966,3 +3966,27 @@ color:#D13F2D;
 .cols li{
     padding-bottom: 5px;
 }
+
+/* validation message position fixes */
+.k-widget.k-tooltip-validation{
+    left: 92%;
+    top:0;
+}
+.k-widget.k-tooltip-validation:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 14px solid #fdefba;
+    position: absolute;
+    top: 7px;
+    left: -8px;
+}
+.form-element,.model_line{
+    position: relative;
+}
+.form-element .k-widget.k-tooltip-validation{
+    left: 100%;
+}
