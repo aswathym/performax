@@ -303,6 +303,9 @@ a:focus{
 .paddingLeft0 {
     padding-left: 0;
 }
+.paddingRight5 {
+    padding-right: 5px;
+}
 .paddingBottom0 {
     padding-bottom: 0;
 }
@@ -318,11 +321,14 @@ a:focus{
 .paddingTop4{
     padding-top: 4px;
 }
+.paddingTop5 {
+    padding-top: 5px;
+}
+.paddingTop10 {
+    padding-top: 10px;
+}
 .paddingTop15{
     padding-top: 15px;
-}
-.paddingTop5 {
-    padding-top: 10px;
 }
 .paddingTop70 {
     padding-top: 70px;

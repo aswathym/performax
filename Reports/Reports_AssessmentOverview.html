@@ -96,7 +96,7 @@
                         <li><a href="#no_display" aria-controls="no_display" role="tab" data-toggle="tab">Prioritized Action Plan</a></li>
                         <li><a href="#no_display" aria-controls="no_display" role="tab" data-toggle="tab">Key Performance Indicator</a></li>
                     </ul>
-                    <div class="padding20">
+                    <div class="col-md-12 padding20">
                         <div class="box-shadow-styling-light col-md-12 padding0 results_reporter">
                             <div class="col-md-1 padding0">
                                 <img src="../images/resultsreporter.png">
@@ -413,80 +413,88 @@
                         </div>
                     </div>
                     <div id="effectiveness" class="container-fluid tab-pane" role="tabpanel">
-                        <div class="col-md-12">
-                            <div class="col-md-3 box-shadow-styling-light padding10">
-                                <h4>Assessment Context</h4>
-                                <div id="sideMenu">
-                                    <div class="list-group panel">
-                                        <a href="#functional" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#sideMenu" id="functional_assessment" aria-expanded="true">Overall
-                                            <img src="../images/arrow_down.png" id="arrow_down">
-                                        </a>
-                                        <div class="collapse in" id="functional" aria-expanded="true">
-                                            <a class="list-group-item actives" aria-controls="fnc_assmnt_cf" role="tab" data-toggle="tab">People & Leadership</a>
-                                            <a aria-controls="fnc_assmnt_sf" role="tab" data-toggle="tab" class="list-group-item">Analytics & Insights</a>
-                                            <a aria-controls="fnc_assmnt_sf" role="tab" data-toggle="tab" class="list-group-item">Strategy & Planning</a>
-                                            <a aria-controls="fnc_assmnt_sf" role="tab" data-toggle="tab" class="list-group-item">Execution & Process</a>
-                                            <a aria-controls="fnc_assmnt_sf" role="tab" data-toggle="tab" class="list-group-item">Performance & Results</a>
+                        <div class="col-md-12 padding0">
+                            <div class="col-md-3 paddingLeft0">
+                                <div class="box-shadow-styling-light padding10">
+                                    <h4>Assessment Context</h4>
+                                    <div id="sideMenu">
+                                        <div class="list-group panel">
+                                            <a href="#functional" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#sideMenu" id="functional_assessment" aria-expanded="true">Overall
+                                                <img src="../images/arrow_down.png" id="arrow_down">
+                                            </a>
+                                            <div class="collapse in" id="functional" aria-expanded="true">
+                                                <a class="list-group-item actives" aria-controls="fnc_assmnt_cf" role="tab" data-toggle="tab">People & Leadership</a>
+                                                <a aria-controls="fnc_assmnt_sf" role="tab" data-toggle="tab" class="list-group-item">Analytics & Insights</a>
+                                                <a aria-controls="fnc_assmnt_sf" role="tab" data-toggle="tab" class="list-group-item">Strategy & Planning</a>
+                                                <a aria-controls="fnc_assmnt_sf" role="tab" data-toggle="tab" class="list-group-item">Execution & Process</a>
+                                                <a aria-controls="fnc_assmnt_sf" role="tab" data-toggle="tab" class="list-group-item">Performance & Results</a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <h4>Assessor Groups</h4>
-                                <div id="sideMenu">
-                                    <div class="list-group panel">
-                                        <span class="radio_button_custom">
-                                            <span class="radio_buttons">
-                                                <a class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#sideMenu" aria-expanded="true">
-                                                    <input type="radio" name="option" id="radio1" checked/>
-                                                    <label for="radio1">
-                                                        <span class="fa-stack">
-                                                            <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
-                                                            <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
-                                                        </span> All
-                                                    </label>
-                                                </a>
-                                                <a href="#overall" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#sideMenu" id="functional_assessment" aria-expanded="true">
-                                                    <input type="radio" name="option" id="radio2" />
-                                                    <label for="radio2">
-                                                        <span class="fa-stack">
-                                                            <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
-                                                            <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
-                                                        </span> By Group
-                                                    </label>
-                                                    <img src="../images/arrow_down.png" id="arrow_down" width="18px" class="down_arrow">
-                                                </a> 
+                                    <h4>Assessor Groups</h4>
+                                    <div id="sideMenu">
+                                        <div class="list-group panel">
+                                            <span class="radio_button_custom">
+                                                <span class="radio_buttons">
+                                                    <a class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#sideMenu" aria-expanded="true">
+                                                        <input type="radio" name="option" id="radio1" checked/>
+                                                        <label for="radio1">
+                                                            <span class="fa-stack">
+                                                                <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                                <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                            </span> All
+                                                        </label>
+                                                    </a>
+                                                    <a href="#overall" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#sideMenu" id="functional_assessment" aria-expanded="true">
+                                                        <input type="radio" name="option" id="radio2" />
+                                                        <label for="radio2">
+                                                            <span class="fa-stack">
+                                                                <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                                <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                            </span> By Group
+                                                        </label>
+                                                        <img src="../images/arrow_down.png" id="arrow_down" width="18px" class="down_arrow">
+                                                    </a> 
+                                                </span>
                                             </span>
-                                        </span>
-                                        <div class="collapse in" id="overall" aria-expanded="true">
-                                            <a href="#internal" class="list-group-item actives" data-toggle="collapse" data-parent="#sub_sidebar_assessment" aria-expanded="true">
-                                                <input type="checkbox">Internal
-                                                <img src="../images/arrow_down.png" id="arrow_down_fuctional">
-                                            </a>
-                                            <div class="collapse in " id="internal" aria-expanded="true">
-                                                <a class="list-group-item actives" aria-controls="fnc_assmnt_cf" role="tab" data-toggle="tab">
-                                                    <input type="checkbox">CXO
+                                            <div class="collapse in" id="overall" aria-expanded="true">
+                                                <a href="#internal" class="list-group-item actives" data-toggle="collapse" data-parent="#sub_sidebar_assessment" aria-expanded="true">
+                                                    <input type="checkbox">Internal
+                                                    <img src="../images/arrow_down.png" id="arrow_down_fuctional">
                                                 </a>
-                                                <a aria-controls="fnc_assmnt_sf" role="tab" data-toggle="tab" class="list-group-item">
-                                                    <input type="checkbox">Senior Executive
+                                                <div class="collapse in " id="internal" aria-expanded="true">
+                                                    <a class="list-group-item actives" aria-controls="fnc_assmnt_cf" role="tab" data-toggle="tab">
+                                                        <input type="checkbox">CXO
+                                                    </a>
+                                                    <a aria-controls="fnc_assmnt_sf" role="tab" data-toggle="tab" class="list-group-item">
+                                                        <input type="checkbox">Senior Executive
+                                                    </a>
+                                                </div>
+                                                <a href="#external" class="list-group-item " data-toggle="collapse" data-parent="#sub_sidebar_assessment" aria-expanded="true">
+                                                    <input type="checkbox">External
                                                 </a>
                                             </div>
-                                            <a href="#external" class="list-group-item " data-toggle="collapse" data-parent="#sub_sidebar_assessment" aria-expanded="true">
-                                                <input type="checkbox">External
-                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-9">
-                                <div class="col-md-6 text-right effect_div">
-                                    <span class="effect_val">High</span>
-                                    <span class="effect_perc">69</span>
-                                    <span class="effect_dir"><i class="fa fa-arrow-down" aria-hidden="true"></i></span>
-                                    <div class="grey_color padding5">Overall Effectiveness Rating</div>
+                            <div class="col-md-9 padding0 paddingRight5">
+                                <div class="box-shadow-styling-light col-md-12 padding0">
+                                    <div class="col-md-5 text-right effect_div">
+                                        <span class="effect_val">High</span>
+                                        <span class="effect_perc">69</span>
+                                        <span class="effect_dir"><i class="fa fa-arrow-down" aria-hidden="true"></i></span>
+                                        <div class="grey_color padding5">Overall Effectiveness Rating</div>
+                                    </div>
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-5 sentiment_div">
+                                        <span class="sentiment_dir">Positive</span>
+                                        <span class="sentiment_val">0.68</span>
+                                        <div class="grey_color padding5 paddingLeft20">Assessor Sentiment</div>
+                                    </div>
                                 </div>
-                                <div class="col-md-6 sentiment_div">
-                                    <span class="sentiment_dir">Positive</span>
-                                    <span class="sentiment_val">0.68</span>
-                                    <div class="padding5 grey_color">Assessor Sentiment</div>
+                                <div class="col-md-12 padding20 paddingTop5">
+                                    <h4>Overall Effectiveness Rating</h4>
                                 </div>
                             </div>
                         </div>
