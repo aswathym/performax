@@ -3872,3 +3872,62 @@ color:#D13F2D;
     padding-top: 6px;
     margin-bottom: 30px;
 }
+
+/*Reports - Effectiveness Tab */
+#effectiveness #sideMenu {
+    margin: 0;
+}
+#effectiveness .list-group > div > a, #effectiveness  #sideMenu>.list-group>div>a.actives {
+    background-color: #fff;
+}
+#effectiveness #sideMenu > .list-group > a {
+    font-weight: bold;
+    background-color: #eee;
+}
+#effectiveness #sideMenu a.list-group-item:focus {
+    background-color: #eee;   
+}
+#effectiveness .down_arrow {
+    float: right;
+    margin-top: 5px;
+}
+#effectiveness #sideMenu #overall .list-group-item {
+    padding-left: 30px;
+} 
+#effectiveness #sideMenu #internal .list-group-item {
+    padding-left: 50px;
+}
+#effectiveness .effect_div, #effectiveness .sentiment_div {
+    padding: 10px;
+}
+#effectiveness .sentiment_div {
+    padding: 17px 10px; 
+}
+#effectiveness .effect_div span, #effectiveness .sentiment_div span {
+    padding: 5px 8px;
+    margin: 0 10px;
+}
+#effectiveness .effect_div .effect_val, #effectiveness .sentiment_div .sentiment_dir {
+    border-radius: 40%;
+    color: #fff;
+    padding: 5px 18px;
+}
+#effectiveness .effect_div .effect_val {
+    background-color: #F96969;
+}
+#effectiveness .sentiment_div .sentiment_dir {
+    background-color: #74DD85;
+}
+#effectiveness .effect_div .effect_perc, #effectiveness .sentiment_div .sentiment_val {
+    font-weight: bold;
+}
+#effectiveness .sentiment_div .sentiment_val:before {
+    content: '+ '
+}
+#effectiveness .effect_div .effect_perc:after {
+    content: '%';
+}
+#effectiveness .effect_div .effect_dir {
+    color: #f96969;
+    font-size: 19px;
+}
