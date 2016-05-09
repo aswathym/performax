@@ -3828,6 +3828,9 @@ color:#D13F2D;
 #reports_assessment_overview .reports_table thead th, #reports_assessment_overview .reports_table tfoot td, #reports_assessment_overview .reports_table tr td {
     border-right: 1px solid rgba(200, 200, 200, 0.4);
 }
+#reports_assessment_overview .reports_table tr:nth-child(even) {
+    background-color: #F7F7F7;
+}
 #reports_assessment_overview .reports_table tr .knwledgebase_number {
     width: 120px;
 } 
@@ -3845,7 +3848,7 @@ color:#D13F2D;
     border: 1px solid rgba(200, 200, 200, 0.6);
 }
 #reports_assessment_overview .vid_container {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 #reports_assessment_overview .vid_container img {
     width: 100%;
