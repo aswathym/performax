@@ -3747,6 +3747,9 @@ padding: 10px 5px;
    color: #2C88CE;
    font-weight: bold;
 }
+.marginLeft5 {
+    margin-left: 5px;
+}
 .marginLeft10{
    margin-left:10px;
 }
@@ -3844,7 +3847,7 @@ color:#D13F2D;
 }
 #reports_assessment_overview .reports_table tr .knwledgebase_number {
     width: 120px;
-} 
+}
 #reports_assessment_overview .reports_table tr td {
     padding: 8px 15px;
 }
@@ -3885,4 +3888,10 @@ color:#D13F2D;
 .powered_and_share_team {
     padding-top: 6px;
     margin-bottom: 30px;
+}
+.assessors_heading span:before {
+    content: '('
+}
+.assessors_heading span:after {
+    content: ')'
 }
