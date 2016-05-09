@@ -3990,3 +3990,8 @@ color:#D13F2D;
 .form-element .k-widget.k-tooltip-validation{
     left: 100%;
 }
+
+.form-content .row .k-widget.k-tooltip-validation {
+    left: 97%;
+    top: 5px;
+}
