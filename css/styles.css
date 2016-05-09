@@ -3953,3 +3953,10 @@ color:#D13F2D;
     color: #f96969;
     font-size: 19px;
 }
+.cols{
+    margin: 25px 0 25px 0px;
+    width: 100%;
+}
+.cols li{
+    padding-bottom: 5px;
+}
