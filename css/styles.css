@@ -303,6 +303,9 @@ a:focus{
 .paddingLeft0 {
     padding-left: 0;
 }
+.paddingRight5 {
+    padding-right: 5px;
+}
 .paddingBottom0 {
     padding-bottom: 0;
 }
@@ -318,11 +321,14 @@ a:focus{
 .paddingTop4{
     padding-top: 4px;
 }
+.paddingTop5 {
+    padding-top: 5px;
+}
+.paddingTop10 {
+    padding-top: 10px;
+}
 .paddingTop15{
     padding-top: 15px;
-}
-.paddingTop5 {
-    padding-top: 10px;
 }
 .paddingTop70 {
     padding-top: 70px;
@@ -394,6 +400,10 @@ a:focus{
 .paddingLeftRight15 {
     padding-left: 15px;
     padding-right: 15px;
+}
+.marginLeftRight20 {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .paddingTopBottom15 {
     padding-top: 15px;
@@ -3743,6 +3753,9 @@ padding: 10px 5px;
    color: #2C88CE;
    font-weight: bold;
 }
+.marginLeft0 {
+    margin-left: 0px;
+}
 .marginLeft5 {
     margin-left: 5px;
 }
@@ -3919,37 +3932,37 @@ color:#D13F2D;
 #effectiveness #sideMenu #internal .list-group-item {
     padding-left: 50px;
 }
-#effectiveness .effect_div, #effectiveness .sentiment_div {
+ .effect_div, .sentiment_div {
     padding: 10px;
 }
-#effectiveness .sentiment_div {
+.sentiment_div {
     padding: 17px 10px;
 }
-#effectiveness .effect_div span, #effectiveness .sentiment_div span {
+.effect_div span, #effectiveness .sentiment_div span {
     padding: 5px 8px;
     margin: 0 10px;
 }
-#effectiveness .effect_div .effect_val, #effectiveness .sentiment_div .sentiment_dir {
+.effect_div .effect_val, .sentiment_div .sentiment_dir {
     border-radius: 40%;
     color: #fff;
-    padding: 5px 18px;
+    padding: 3px 10px;
 }
-#effectiveness .effect_div .effect_val {
+.effect_div .effect_val {
     background-color: #F96969;
 }
-#effectiveness .sentiment_div .sentiment_dir {
+.sentiment_div .sentiment_dir {
     background-color: #74DD85;
 }
-#effectiveness .effect_div .effect_perc, #effectiveness .sentiment_div .sentiment_val {
+#effectiveness .effect_div .effect_perc, .sentiment_div .sentiment_val {
     font-weight: bold;
 }
-#effectiveness .sentiment_div .sentiment_val:before {
+.sentiment_div .sentiment_val:before {
     content: '+ '
 }
 #effectiveness .effect_div .effect_perc:after {
     content: '%';
 }
-#effectiveness .effect_div .effect_dir {
+.effect_div .effect_dir {
     color: #f96969;
     font-size: 19px;
 }
@@ -3961,10 +3974,41 @@ color:#D13F2D;
     padding-bottom: 5px;
 }
 
+
 /* Reports - Strengths tab*/
 .internal_skills {
     font-size: 15px;
 }
 .csf_current_effectiveness {
     font-size: 13px;
+}
+.col-md-4>.rating_trend {
+    padding-bottom: 7px;
+    padding-top: 5px;
+}
+.effect_div .arrow_up {
+    color: #74DD85;
+}
+/* validation message position fixes */
+.k-widget.k-tooltip-validation{
+    left: 92%;
+    top:0;
+}
+.k-widget.k-tooltip-validation:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 14px solid #fdefba;
+    position: absolute;
+    top: 7px;
+    left: -8px;
+}
+.form-element,.model_line{
+    position: relative;
+}
+.form-element .k-widget.k-tooltip-validation{
+    left: 100%;
 }
