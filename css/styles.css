@@ -306,6 +306,9 @@ a:focus{
 .paddingRight5 {
     padding-right: 5px;
 }
+.paddingRight40 {
+    padding-right: 40px;
+}
 .paddingBottom0 {
     padding-bottom: 0;
 }
@@ -3988,6 +3991,12 @@ color:#D13F2D;
 }
 .effect_div .arrow_up {
     color: #74DD85;
+}
+.effect_div .arrow_right {
+    color: #FFE324;
+}
+.neagative_sentiment {
+    background-color: #EF5050 !important;
 }
 /* validation message position fixes */
 .k-widget.k-tooltip-validation{
