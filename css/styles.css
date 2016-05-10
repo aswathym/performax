@@ -303,6 +303,9 @@ a:focus{
 .paddingLeft0 {
     padding-left: 0;
 }
+.paddingLeft5 {
+    padding-left: 5px;
+}
 .paddingRight5 {
     padding-right: 5px;
 }
@@ -3761,6 +3764,9 @@ padding: 10px 5px;
 }
 .marginLeft5 {
     margin-left: 5px;
+}
+.marginRight10 {
+    margin-right: 10px;
 }
 .marginLeft10{
    margin-left:10px;
