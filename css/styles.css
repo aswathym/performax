@@ -3829,14 +3829,15 @@ color:#D13F2D;
 #reports_assessment_overview .kpa_details_nav .nav-tabs li a {
     padding: 13px 11px 13px 10px;
 }
+#reports_assessment_overview .kpa_details_nav .nav-tabs li:last-child a {
+    padding-right: 10px;
+}
+
 #reports_assessment_overview .navbar {
     padding-top: 0;
 }
 #reports_assessment_overview .challenge_box {
     margin-bottom: 0;
-}
-#reports_assessment_overview #tab_header li:last-child {
-    float: left;
 }
 #reports_assessment_overview .results_reporter .main, #reports_assessment_overview .subsc_period .main {
     font-weight: bold;
@@ -4031,4 +4032,7 @@ color:#D13F2D;
 .form-content .row .k-widget.k-tooltip-validation {
     left: 97%;
     top: 5px;
+}
+.nav > li > a:hover, .nav > li > a:focus{
+    border-radius: 0;
 }
