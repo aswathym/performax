@@ -121,16 +121,16 @@
                         <div id="analytics_and_insights" class=" tab-pane active" role="tabpanel">
                             <div class="box-shadow-styling-light margin0 padding10 col-md-12">
                                 <nav class="col-md-6">
-                                    <ul class="pagination">
+                                    <ul class="pagination nav nav-tabs">
                                         <li><a href="#" aria-label="Previous">Prev</a></li>
-                                        <li><a href="#">1</a></li>
-                                        <li><a href="#">2</a></li>
-                                        <li><a href="#">3</a></li>
-                                        <li class="active"><a href="#">4</a></li>
-                                        <li><a href="#">5</a></li>
-                                        <li><a href="#">6</a></li>
-                                        <li><a href="#">7</a></li>
-                                        <li><a href="#">8</a></li>
+                                        <li class="active"><a href="#test1" aria-controls="test1" role="tab" data-toggle="tab">1</a></li>
+                                        <li><a href="#test2" aria-controls="test2" role="tab" data-toggle="tab">2</a></li>
+                                        <li><a href="#test3" aria-controls="test3" role="tab" data-toggle="tab">3</a></li>
+                                        <li><a href="#test4" aria-controls="test4" role="tab" data-toggle="tab">4</a></li>
+                                        <li><a href="#test4" aria-controls="test4" role="tab" data-toggle="tab">5</a></li>
+                                        <li><a href="#test4" aria-controls="test4" role="tab" data-toggle="tab">6</a></li>
+                                        <li><a href="#test4" aria-controls="test4" role="tab" data-toggle="tab">7</a></li>
+                                        <li><a href="#test4" aria-controls="test4" role="tab" data-toggle="tab">8</a></li>
                                         <li><a href="#" aria-label="Next">Next</a></li>
                                     </ul>
                                 </nav>
@@ -144,261 +144,782 @@
                                     </span>
                                 </span>
                             </div>
-                            <div class="col-md-12 box-shadow-styling-light internal-analytics padding20">
-                                <div class="col-md-6 padding0">
-                                    <h4 class="marginTop0">2.4 Internal Analytical Skills & Capabilities</h4>
-                                    <div class="grey_color desc">
-                                        The Finance Team demonstrates a high degree of expertise and skills in conducting analysis and related work.
+                            <div class="tab-content">
+                                <div id="test1" class=" tab-pane active" role="tabpanel">
+                                    <div class="col-md-12 box-shadow-styling-light internal-analytics padding20">
+                                        <div class="col-md-6 padding0">
+                                            <h4 class="marginTop0">2.1 Internal Analytical Skills & Capabilities</h4>
+                                            <div class="grey_color desc">
+                                                The Finance Team demonstrates a high degree of expertise and skills in conducting analysis and related work.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-2 text-center">
+                                            <h4>2/5</h4>
+                                            <div class="grey_color">Completed</div>
+                                        </div>
+                                        <div class="col-md-2 padding0 text-center">
+                                            <h4 class="marginTop0">3.4</h4>
+                                            <div class="">CSF Current Effectiveness</div>
+                                            <div class="grey_color">Live Average Rating</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 box-shadow-styling-light internal-analytics-rating padding20">
+                                        <ul class="col-md-10 col-md-offset-1 rating-ul">
+                                            <li class="box-shadow-styling-light col-md-12 rating-items">
+                                                <div class="col-md-9">
+                                                    <h5>1. Rate Current Effectiveness</h5>
+                                                    <span class="col-md-7">
+                                                        <div  class="h-slider">
+                                                        </div>
+                                                        <ul class="text-center rate">
+                                                            <li class="">No Value</li>
+                                                            <li class="visibilityHidden">Very Low</li>
+                                                            <li class="visibilityHidden">Low</li>
+                                                            <li class="visibilityHidden">Medium</li>
+                                                            <li class="visibilityHidden">High</li>
+                                                            <li class="visibilityHidden">Very High</li>
+                                                        </ul>
+                                                    </span>
+                                                    <span class="col-md-5 text-center">
+                                                        <span class="radio_buttons">
+                                                            <input type="radio" name="option" id="radio1"/>
+                                                            <label for="radio1">
+                                                                <span class="fa-stack">
+                                                                    <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                                    <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                                </span> Cannot Rate Now
+                                                            </label>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <img src="../images/context_aware_recom_system.png" class="pull-right">
+                                                </div>
+                                            </li>
+                                            <li class="box-shadow-styling-light col-md-12 rating-items">
+                                                <div class="col-md-9">
+                                                    <h5>2. Enter text input on the underlying reasoning (cause) supporting your 'current effectiveness' rating:</h5>
+                                                    <textarea name="name"></textarea>
+                                                </div>
+                                            </li>
+                                            <li class="box-shadow-styling-light col-md-12 rating-items">
+                                                <div class="col-md-9">
+                                                    <h5>3. Desired Effectiveness in the next 12 months</h5>
+                                                    <span class="col-md-7">
+                                                        <div  class="h-slider">
+                                                        </div>
+                                                        <ul class="text-center rate">
+                                                            <li class="">No Value</li>
+                                                            <li class="visibilityHidden">Very Low</li>
+                                                            <li class="visibilityHidden">Low</li>
+                                                            <li class="visibilityHidden">Medium</li>
+                                                            <li class="visibilityHidden">High</li>
+                                                            <li class="visibilityHidden">Very High</li>
+                                                        </ul>
+                                                    </span>
+                                                    <span class="col-md-5 text-center">
+                                                        <span class="radio_buttons">
+                                                            <input type="radio" name="option" id="radio2"/>
+                                                            <label for="radio2">
+                                                                <span class="fa-stack">
+                                                                    <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                                    <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                                </span> Cannot Rate Now
+                                                            </label>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="box-shadow-styling-light col-md-12 rating-items">
+                                                <div class="col-md-9">
+                                                    <h5>4. Rate Importance of this CSF to the organization</h5>
+                                                    <span class="col-md-7">
+                                                        <div  class="h-slider">
+                                                        </div>
+                                                        <ul class="text-center rate">
+                                                            <li class="">No Value</li>
+                                                            <li class="visibilityHidden">Very Low</li>
+                                                            <li class="visibilityHidden">Low</li>
+                                                            <li class="visibilityHidden">Medium</li>
+                                                            <li class="visibilityHidden">High</li>
+                                                            <li class="visibilityHidden">Very High</li>
+                                                        </ul>
+                                                    </span>
+                                                    <span class="col-md-5 text-center">
+                                                        <span class="radio_buttons">
+                                                            <input type="radio" name="option" id="radio3"/>
+                                                            <label for="radio3">
+                                                                <span class="fa-stack">
+                                                                    <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                                    <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                                </span> Cannot Rate Now
+                                                            </label>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="box-shadow-styling-light col-md-12 rating-items">
+                                                <div class="col-md-12">
+                                                    <h5>5. Categorize your organization in one of the following, with reguards to this question: </h5>
+                                                    <span class="col-md-12">
+                                                        <span class="radio_buttons">
+                                                            <input type="radio" name="option" id="radio4" checked=""/>
+                                                            <label for="radio4">
+                                                                <span class="fa-stack">
+                                                                    <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                                    <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                                </span> Strength
+                                                            </label>
+                                                            <input type="radio" name="option" id="radio5"/>
+                                                            <label for="radio5">
+                                                                <span class="fa-stack">
+                                                                    <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                                    <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                                </span> Weakness
+                                                            </label>
+                                                            <input type="radio" name="option" id="radio6"/>
+                                                            <label for="radio6">
+                                                                <span class="fa-stack">
+                                                                    <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                                    <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                                </span> Opportunity
+                                                            </label>
+                                                            <input type="radio" name="option" id="radio7"/>
+                                                            <label for="radio7">
+                                                                <span class="fa-stack">
+                                                                    <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                                    <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                                </span> Threat
+                                                            </label>
+                                                            <input type="radio" name="option" id="radio8"/>
+                                                            <label for="radio8">
+                                                                <span class="fa-stack">
+                                                                    <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                                    <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                                </span> Cannot Rate Now
+                                                            </label>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="box-shadow-styling-light col-md-12 rating-items">
+                                                <div class="col-md-8">
+                                                    <h5 class="review_ifa">6. Review the IFAs listed below, and select the ones that are you think the organization should adopt, going forward:</h5>
+                                                    <span class="col-md-10">
+                                                        <span class="col-md-4 paddingTop10"><b>Imapct Rating:</b></span>
+                                                        <span class="col-md-7">
+                                                            <div  class="h-slider">
+                                                            </div>
+                                                            <ul class="text-center rate">
+                                                                <li class="">No Value</li>
+                                                                <li class="visibilityHidden">Very Low</li>
+                                                                <li class="visibilityHidden">Low</li>
+                                                                <li class="visibilityHidden">Medium</li>
+                                                                <li class="visibilityHidden">High</li>
+                                                                <li class="visibilityHidden">Very High</li>
+                                                            </ul>
+                                                        </span>
+                                                    </span>
+                                                    <span class="col-md-9">
+                                                        <span class="  option checkbox remember-txt marginBottom20">
+                                                            <input id="checkbox1" class="" type="checkbox">
+                                                            <label for="checkbox1">Initiate a project to analyze and evaluate trends in key financial ratios, benchmarked against the industry and competitors.</label>
+                                                        </span>
+                                                        <span class="  option checkbox remember-txt marginBottom20">
+                                                            <input id="checkbox2" class="" type="checkbox">
+                                                            <label for="checkbox2">Initiate a project to analyze and evaluate trends in key financial ratios, benchmarked against the industry and competitors.</label>
+                                                        </span>
+                                                        <span class="  option checkbox remember-txt marginBottom20">
+                                                            <input id="checkbox3" class="" type="checkbox">
+                                                            <label for="checkbox3">Initiate a project to analyze and evaluate trends in key financial ratios, benchmarked against the industry and competitors.</label>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="box-shadow-styling-light col-md-12 rating-items">
+                                                <div class="col-md-10">
+                                                    <h5>7. Add new Ideas For Actions that you recommend the organization should adopt, going forward:</h5>
+                                                    <div class="marginLeft15">
+                                                        <input type="text" name="name" value="" placeholder="Enter text" style="width: 50%;">
+                                                    </div>
+                                                    <span class="col-md-10">
+                                                        <span class="col-md-3 paddingTop10"><b>Imapct Rating:</b></span>
+                                                        <span class="col-md-9">
+                                                            <div  class="h-slider">
+                                                            </div>
+                                                            <ul class="text-center rate">
+                                                                <li class="">No Value</li>
+                                                                <li class="visibilityHidden">Very Low</li>
+                                                                <li class="visibilityHidden">Low</li>
+                                                                <li class="visibilityHidden">Medium</li>
+                                                                <li class="visibilityHidden">High</li>
+                                                                <li class="visibilityHidden">Very High</li>
+                                                            </ul>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="box-shadow-styling-light col-md-12 rating-items">
+                                                <div class="col-md-9">
+                                                    <h5 class="review_ifa">8. Review the Key Person Informeds listed below, and select the ones that are you think the organization should adopt, going forward: </h5>
+                                                    <span class="col-md-9">
+                                                        <span class="  option checkbox remember-txt marginBottom20">
+                                                            <input id="checkbox4" class="" type="checkbox">
+                                                            <label for="checkbox4">Initiate a project to analyze and evaluate trends in key financial ratios, benchmarked against the industry and competitors.</label>
+                                                        </span>
+                                                        <span class="  option checkbox remember-txt marginBottom20">
+                                                            <input id="checkbox5" class="" type="checkbox">
+                                                            <label for="checkbox5">Initiate a project to analyze and evaluate trends in key financial ratios, benchmarked against the industry and competitors.</label>
+                                                        </span>
+                                                        <span class="  option checkbox remember-txt marginBottom20">
+                                                            <input id="checkbox6" class="" type="checkbox">
+                                                            <label for="checkbox6">Initiate a project to analyze and evaluate trends in key financial ratios, benchmarked against the industry and competitors.</label>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="box-shadow-styling-light col-md-12 rating-items">
+                                                <div class="col-md-8">
+                                                    <h5 class="review_ifa">9.  Add new Key Person Informeds that you recommend the organization should adopt, going forward:</h5>
+                                                    <div class="marginLeft15">
+                                                        <input type="text" name="name" value="" placeholder="Enter text" style="width: 70%;">
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="box-shadow-styling-light col-md-12 rating-items">
+                                                <div class="col-md-10">
+                                                    <h5>10.  Any other comments.</h5>
+                                                    <div class="marginLeft15">
+                                                        <textarea name="name" rows="8" cols="40"></textarea>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-md-12 rating-items text-center">
+                                                <button type="button" name="button" class="btn btn-info marginTop20">Save</button>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <div id="test2" class=" tab-pane " role="tabpanel">
+                                    <div class="col-md-12 box-shadow-styling-light internal-analytics padding20">
+                                        <div class="col-md-6 padding0">
+                                            <h4 class="marginTop0">2.2 Internal Analytical Skills & Capabilities</h4>
+                                            <div class="grey_color desc">
+                                                The Finance Team demonstrates a high degree of expertise and skills in conducting analysis and related work.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-2 text-center">
+                                            <h4>2/5</h4>
+                                            <div class="grey_color">Completed</div>
+                                        </div>
+                                        <div class="col-md-2 padding0 text-center">
+                                            <h4 class="marginTop0">3.4</h4>
+                                            <div class="">CSF Current Effectiveness</div>
+                                            <div class="grey_color">Live Average Rating</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 box-shadow-styling-light internal-analytics-rating padding20">
+                                        <ul class="col-md-10 col-md-offset-1 rating-ul">
+                                            <li class="box-shadow-styling-light col-md-12 rating-items">
+                                                <div class="col-md-9">
+                                                    <h5>1. Rate Current Effectiveness</h5>
+                                                    <span class="col-md-7">
+                                                        <div  class="h-slider">
+                                                        </div>
+                                                        <ul class="text-center rate">
+                                                            <li class="">No Value</li>
+                                                            <li class="visibilityHidden">Very Low</li>
+                                                            <li class="visibilityHidden">Low</li>
+                                                            <li class="visibilityHidden">Medium</li>
+                                                            <li class="visibilityHidden">High</li>
+                                                            <li class="visibilityHidden">Very High</li>
+                                                        </ul>
+                                                    </span>
+                                                    <span class="col-md-5 text-center">
+                                                        <span class="radio_buttons">
+                                                            <input type="radio" name="option" id="radio1"/>
+                                                            <label for="radio1">
+                                                                <span class="fa-stack">
+                                                                    <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                                    <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                                </span> Cannot Rate Now
+                                                            </label>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <img src="../images/context_aware_recom_system.png" class="pull-right">
+                                                </div>
+                                            </li>
+                                            <li class="box-shadow-styling-light col-md-12 rating-items">
+                                                <div class="col-md-9">
+                                                    <h5>2. Enter text input on the underlying reasoning (cause) supporting your 'current effectiveness' rating:</h5>
+                                                    <textarea name="name"></textarea>
+                                                </div>
+                                            </li>
+                                            <li class="box-shadow-styling-light col-md-12 rating-items">
+                                                <div class="col-md-9">
+                                                    <h5>3. Desired Effectiveness in the next 12 months</h5>
+                                                    <span class="col-md-7">
+                                                        <div  class="h-slider">
+                                                        </div>
+                                                        <ul class="text-center rate">
+                                                            <li class="">No Value</li>
+                                                            <li class="visibilityHidden">Very Low</li>
+                                                            <li class="visibilityHidden">Low</li>
+                                                            <li class="visibilityHidden">Medium</li>
+                                                            <li class="visibilityHidden">High</li>
+                                                            <li class="visibilityHidden">Very High</li>
+                                                        </ul>
+                                                    </span>
+                                                    <span class="col-md-5 text-center">
+                                                        <span class="radio_buttons">
+                                                            <input type="radio" name="option" id="radio2"/>
+                                                            <label for="radio2">
+                                                                <span class="fa-stack">
+                                                                    <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                                    <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                                </span> Cannot Rate Now
+                                                            </label>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="box-shadow-styling-light col-md-12 rating-items">
+                                                <div class="col-md-9">
+                                                    <h5>4. Rate Importance of this CSF to the organization</h5>
+                                                    <span class="col-md-7">
+                                                        <div  class="h-slider">
+                                                        </div>
+                                                        <ul class="text-center rate">
+                                                            <li class="">No Value</li>
+                                                            <li class="visibilityHidden">Very Low</li>
+                                                            <li class="visibilityHidden">Low</li>
+                                                            <li class="visibilityHidden">Medium</li>
+                                                            <li class="visibilityHidden">High</li>
+                                                            <li class="visibilityHidden">Very High</li>
+                                                        </ul>
+                                                    </span>
+                                                    <span class="col-md-5 text-center">
+                                                        <span class="radio_buttons">
+                                                            <input type="radio" name="option" id="radio3"/>
+                                                            <label for="radio3">
+                                                                <span class="fa-stack">
+                                                                    <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                                    <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                                </span> Cannot Rate Now
+                                                            </label>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="box-shadow-styling-light col-md-12 rating-items">
+                                                <div class="col-md-12">
+                                                    <h5>5. Categorize your organization in one of the following, with reguards to this question: </h5>
+                                                    <span class="col-md-12">
+                                                        <span class="radio_buttons">
+                                                            <input type="radio" name="option" id="radio4" checked=""/>
+                                                            <label for="radio4">
+                                                                <span class="fa-stack">
+                                                                    <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                                    <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                                </span> Strength
+                                                            </label>
+                                                            <input type="radio" name="option" id="radio5"/>
+                                                            <label for="radio5">
+                                                                <span class="fa-stack">
+                                                                    <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                                    <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                                </span> Weakness
+                                                            </label>
+                                                            <input type="radio" name="option" id="radio6"/>
+                                                            <label for="radio6">
+                                                                <span class="fa-stack">
+                                                                    <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                                    <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                                </span> Opportunity
+                                                            </label>
+                                                            <input type="radio" name="option" id="radio7"/>
+                                                            <label for="radio7">
+                                                                <span class="fa-stack">
+                                                                    <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                                    <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                                </span> Threat
+                                                            </label>
+                                                            <input type="radio" name="option" id="radio8"/>
+                                                            <label for="radio8">
+                                                                <span class="fa-stack">
+                                                                    <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                                    <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                                </span> Cannot Rate Now
+                                                            </label>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="box-shadow-styling-light col-md-12 rating-items">
+                                                <div class="col-md-8">
+                                                    <h5 class="review_ifa">6. Review the IFAs listed below, and select the ones that are you think the organization should adopt, going forward:</h5>
+                                                    <span class="col-md-10">
+                                                        <span class="col-md-4 paddingTop10"><b>Imapct Rating:</b></span>
+                                                        <span class="col-md-7">
+                                                            <div  class="h-slider">
+                                                            </div>
+                                                            <ul class="text-center rate">
+                                                                <li class="">No Value</li>
+                                                                <li class="visibilityHidden">Very Low</li>
+                                                                <li class="visibilityHidden">Low</li>
+                                                                <li class="visibilityHidden">Medium</li>
+                                                                <li class="visibilityHidden">High</li>
+                                                                <li class="visibilityHidden">Very High</li>
+                                                            </ul>
+                                                        </span>
+                                                    </span>
+                                                    <span class="col-md-9">
+                                                        <span class="  option checkbox remember-txt marginBottom20">
+                                                            <input id="checkbox1" class="" type="checkbox">
+                                                            <label for="checkbox1">Initiate a project to analyze and evaluate trends in key financial ratios, benchmarked against the industry and competitors.</label>
+                                                        </span>
+                                                        <span class="  option checkbox remember-txt marginBottom20">
+                                                            <input id="checkbox2" class="" type="checkbox">
+                                                            <label for="checkbox2">Initiate a project to analyze and evaluate trends in key financial ratios, benchmarked against the industry and competitors.</label>
+                                                        </span>
+                                                        <span class="  option checkbox remember-txt marginBottom20">
+                                                            <input id="checkbox3" class="" type="checkbox">
+                                                            <label for="checkbox3">Initiate a project to analyze and evaluate trends in key financial ratios, benchmarked against the industry and competitors.</label>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="box-shadow-styling-light col-md-12 rating-items">
+                                                <div class="col-md-10">
+                                                    <h5>7. Add new Ideas For Actions that you recommend the organization should adopt, going forward:</h5>
+                                                    <div class="marginLeft15">
+                                                        <input type="text" name="name" value="" placeholder="Enter text" style="width: 50%;">
+                                                    </div>
+                                                    <span class="col-md-10">
+                                                        <span class="col-md-3 paddingTop10"><b>Imapct Rating:</b></span>
+                                                        <span class="col-md-9">
+                                                            <div  class="h-slider">
+                                                            </div>
+                                                            <ul class="text-center rate">
+                                                                <li class="">No Value</li>
+                                                                <li class="visibilityHidden">Very Low</li>
+                                                                <li class="visibilityHidden">Low</li>
+                                                                <li class="visibilityHidden">Medium</li>
+                                                                <li class="visibilityHidden">High</li>
+                                                                <li class="visibilityHidden">Very High</li>
+                                                            </ul>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="box-shadow-styling-light col-md-12 rating-items">
+                                                <div class="col-md-9">
+                                                    <h5 class="review_ifa">8. Review the Key Person Informeds listed below, and select the ones that are you think the organization should adopt, going forward: </h5>
+                                                    <span class="col-md-9">
+                                                        <span class="  option checkbox remember-txt marginBottom20">
+                                                            <input id="checkbox4" class="" type="checkbox">
+                                                            <label for="checkbox4">Initiate a project to analyze and evaluate trends in key financial ratios, benchmarked against the industry and competitors.</label>
+                                                        </span>
+                                                        <span class="  option checkbox remember-txt marginBottom20">
+                                                            <input id="checkbox5" class="" type="checkbox">
+                                                            <label for="checkbox5">Initiate a project to analyze and evaluate trends in key financial ratios, benchmarked against the industry and competitors.</label>
+                                                        </span>
+                                                        <span class="  option checkbox remember-txt marginBottom20">
+                                                            <input id="checkbox6" class="" type="checkbox">
+                                                            <label for="checkbox6">Initiate a project to analyze and evaluate trends in key financial ratios, benchmarked against the industry and competitors.</label>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="box-shadow-styling-light col-md-12 rating-items">
+                                                <div class="col-md-8">
+                                                    <h5 class="review_ifa">9.  Add new Key Person Informeds that you recommend the organization should adopt, going forward:</h5>
+                                                    <div class="marginLeft15">
+                                                        <input type="text" name="name" value="" placeholder="Enter text" style="width: 70%;">
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="box-shadow-styling-light col-md-12 rating-items">
+                                                <div class="col-md-10">
+                                                    <h5>10.  Any other comments.</h5>
+                                                    <div class="marginLeft15">
+                                                        <textarea name="name" rows="8" cols="40"></textarea>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-md-12 rating-items text-center">
+                                                <button type="button" name="button" class="btn btn-info marginTop20">Save</button>
+                                            </li>
+
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="col-md-2"></div>
-                                <div class="col-md-2 text-center">
-                                    <h4>2/5</h4>
-                                    <div class="grey_color">Completed</div>
-                                </div>
-                                <div class="col-md-2 padding0 text-center">
-                                    <h4 class="marginTop0">3.4</h4>
-                                    <div class="">CSF Current Effectiveness</div>
-                                    <div class="grey_color">Live Average Rating</div>
-                                </div>
-                            </div>
-                            <div class="col-md-12 box-shadow-styling-light internal-analytics-rating padding20">
-                                <ul class="col-md-10 col-md-offset-1 rating-ul">
-                                    <li class="box-shadow-styling-light col-md-12 rating-items">
-                                        <div class="col-md-9">
-                                            <h5>1. Rate Current Effectiveness</h5>
-                                            <span class="col-md-7">
-                                                <div  class="h-slider">
+                                <div id="test3" class=" tab-pane " role="tabpanel">
+                                    <div class="col-md-12 box-shadow-styling-light internal-analytics padding20">
+                                        <div class="col-md-6 padding0">
+                                            <h4 class="marginTop0">2.3 Internal Analytical Skills & Capabilities</h4>
+                                            <div class="grey_color desc">
+                                                The Finance Team demonstrates a high degree of expertise and skills in conducting analysis and related work.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-2 text-center">
+                                            <h4>2/5</h4>
+                                            <div class="grey_color">Completed</div>
+                                        </div>
+                                        <div class="col-md-2 padding0 text-center">
+                                            <h4 class="marginTop0">3.4</h4>
+                                            <div class="">CSF Current Effectiveness</div>
+                                            <div class="grey_color">Live Average Rating</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 box-shadow-styling-light internal-analytics-rating padding20">
+                                        <ul class="col-md-10 col-md-offset-1 rating-ul">
+                                            <li class="box-shadow-styling-light col-md-12 rating-items">
+                                                <div class="col-md-9">
+                                                    <h5>1. Rate Current Effectiveness</h5>
+                                                    <span class="col-md-7">
+                                                        <div  class="h-slider">
+                                                        </div>
+                                                        <ul class="text-center rate">
+                                                            <li class="">No Value</li>
+                                                            <li class="visibilityHidden">Very Low</li>
+                                                            <li class="visibilityHidden">Low</li>
+                                                            <li class="visibilityHidden">Medium</li>
+                                                            <li class="visibilityHidden">High</li>
+                                                            <li class="visibilityHidden">Very High</li>
+                                                        </ul>
+                                                    </span>
+                                                    <span class="col-md-5 text-center">
+                                                        <span class="radio_buttons">
+                                                            <input type="radio" name="option" id="radio1"/>
+                                                            <label for="radio1">
+                                                                <span class="fa-stack">
+                                                                    <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                                    <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                                </span> Cannot Rate Now
+                                                            </label>
+                                                        </span>
+                                                    </span>
                                                 </div>
-                                                <ul class="text-center rate">
-                                                    <li class="">No Value</li>
-                                                    <li class="visibilityHidden">Very Low</li>
-                                                    <li class="visibilityHidden">Low</li>
-                                                    <li class="visibilityHidden">Medium</li>
-                                                    <li class="visibilityHidden">High</li>
-                                                    <li class="visibilityHidden">Very High</li>
-                                                </ul>
-                                            </span>
-                                            <span class="col-md-5 text-center">
-                                                <span class="radio_buttons">
-                                                    <input type="radio" name="option" id="radio1"/>
-                                                    <label for="radio1">
-                                                        <span class="fa-stack">
-                                                            <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
-                                                            <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
-                                                        </span> Cannot Rate Now
-                                                    </label>
-                                                </span>
-                                            </span>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <img src="../images/context_aware_recom_system.png" class="pull-right">
-                                        </div>
-                                    </li>
-                                    <li class="box-shadow-styling-light col-md-12 rating-items">
-                                        <div class="col-md-9">
-                                            <h5>2. Enter text input on the underlying reasoning (cause) supporting your 'current effectiveness' rating:</h5>
-                                            <textarea name="name"></textarea>
-                                        </div>
-                                    </li>
-                                    <li class="box-shadow-styling-light col-md-12 rating-items">
-                                        <div class="col-md-9">
-                                            <h5>3. Desired Effectiveness in the next 12 months</h5>
-                                            <span class="col-md-7">
-                                                <div  class="h-slider">
+                                                <div class="col-md-3">
+                                                    <img src="../images/context_aware_recom_system.png" class="pull-right">
                                                 </div>
-                                                <ul class="text-center rate">
-                                                    <li class="">No Value</li>
-                                                    <li class="visibilityHidden">Very Low</li>
-                                                    <li class="visibilityHidden">Low</li>
-                                                    <li class="visibilityHidden">Medium</li>
-                                                    <li class="visibilityHidden">High</li>
-                                                    <li class="visibilityHidden">Very High</li>
-                                                </ul>
-                                            </span>
-                                            <span class="col-md-5 text-center">
-                                                <span class="radio_buttons">
-                                                    <input type="radio" name="option" id="radio2"/>
-                                                    <label for="radio2">
-                                                        <span class="fa-stack">
-                                                            <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
-                                                            <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
-                                                        </span> Cannot Rate Now
-                                                    </label>
-                                                </span>
-                                            </span>
-                                        </div>
-                                    </li>
-                                    <li class="box-shadow-styling-light col-md-12 rating-items">
-                                        <div class="col-md-9">
-                                            <h5>4. Rate Importance of this CSF to the organization</h5>
-                                            <span class="col-md-7">
-                                                <div  class="h-slider">
+                                            </li>
+                                            <li class="box-shadow-styling-light col-md-12 rating-items">
+                                                <div class="col-md-9">
+                                                    <h5>2. Enter text input on the underlying reasoning (cause) supporting your 'current effectiveness' rating:</h5>
+                                                    <textarea name="name"></textarea>
                                                 </div>
-                                                <ul class="text-center rate">
-                                                    <li class="">No Value</li>
-                                                    <li class="visibilityHidden">Very Low</li>
-                                                    <li class="visibilityHidden">Low</li>
-                                                    <li class="visibilityHidden">Medium</li>
-                                                    <li class="visibilityHidden">High</li>
-                                                    <li class="visibilityHidden">Very High</li>
-                                                </ul>
-                                            </span>
-                                            <span class="col-md-5 text-center">
-                                                <span class="radio_buttons">
-                                                    <input type="radio" name="option" id="radio3"/>
-                                                    <label for="radio3">
-                                                        <span class="fa-stack">
-                                                            <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
-                                                            <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
-                                                        </span> Cannot Rate Now
-                                                    </label>
-                                                </span>
-                                            </span>
-                                        </div>
-                                    </li>
-                                    <li class="box-shadow-styling-light col-md-12 rating-items">
-                                        <div class="col-md-12">
-                                            <h5>5. Categorize your organization in one of the following, with reguards to this question: </h5>
-                                            <span class="col-md-12">
-                                                <span class="radio_buttons">
-                                                    <input type="radio" name="option" id="radio4" checked=""/>
-                                                    <label for="radio4">
-                                                        <span class="fa-stack">
-                                                            <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
-                                                            <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
-                                                        </span> Strength
-                                                    </label>
-                                                    <input type="radio" name="option" id="radio5"/>
-                                                    <label for="radio5">
-                                                        <span class="fa-stack">
-                                                            <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
-                                                            <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
-                                                        </span> Weakness
-                                                    </label>
-                                                    <input type="radio" name="option" id="radio6"/>
-                                                    <label for="radio6">
-                                                        <span class="fa-stack">
-                                                            <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
-                                                            <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
-                                                        </span> Opportunity
-                                                    </label>
-                                                    <input type="radio" name="option" id="radio7"/>
-                                                    <label for="radio7">
-                                                        <span class="fa-stack">
-                                                            <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
-                                                            <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
-                                                        </span> Threat
-                                                    </label>
-                                                    <input type="radio" name="option" id="radio8"/>
-                                                    <label for="radio8">
-                                                        <span class="fa-stack">
-                                                            <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
-                                                            <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
-                                                        </span> Cannot Rate Now
-                                                    </label>
-                                                </span>
-                                            </span>
-                                        </div>
-                                    </li>
-                                    <li class="box-shadow-styling-light col-md-12 rating-items">
-                                        <div class="col-md-8">
-                                            <h5 class="review_ifa">6. Review the IFAs listed below, and select the ones that are you think the organization should adopt, going forward:</h5>
-                                            <span class="col-md-10">
-                                                <span class="col-md-4 paddingTop10"><b>Imapct Rating:</b></span>
-                                                <span class="col-md-7">
-                                                    <div  class="h-slider">
+                                            </li>
+                                            <li class="box-shadow-styling-light col-md-12 rating-items">
+                                                <div class="col-md-9">
+                                                    <h5>3. Desired Effectiveness in the next 12 months</h5>
+                                                    <span class="col-md-7">
+                                                        <div  class="h-slider">
+                                                        </div>
+                                                        <ul class="text-center rate">
+                                                            <li class="">No Value</li>
+                                                            <li class="visibilityHidden">Very Low</li>
+                                                            <li class="visibilityHidden">Low</li>
+                                                            <li class="visibilityHidden">Medium</li>
+                                                            <li class="visibilityHidden">High</li>
+                                                            <li class="visibilityHidden">Very High</li>
+                                                        </ul>
+                                                    </span>
+                                                    <span class="col-md-5 text-center">
+                                                        <span class="radio_buttons">
+                                                            <input type="radio" name="option" id="radio2"/>
+                                                            <label for="radio2">
+                                                                <span class="fa-stack">
+                                                                    <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                                    <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                                </span> Cannot Rate Now
+                                                            </label>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="box-shadow-styling-light col-md-12 rating-items">
+                                                <div class="col-md-9">
+                                                    <h5>4. Rate Importance of this CSF to the organization</h5>
+                                                    <span class="col-md-7">
+                                                        <div  class="h-slider">
+                                                        </div>
+                                                        <ul class="text-center rate">
+                                                            <li class="">No Value</li>
+                                                            <li class="visibilityHidden">Very Low</li>
+                                                            <li class="visibilityHidden">Low</li>
+                                                            <li class="visibilityHidden">Medium</li>
+                                                            <li class="visibilityHidden">High</li>
+                                                            <li class="visibilityHidden">Very High</li>
+                                                        </ul>
+                                                    </span>
+                                                    <span class="col-md-5 text-center">
+                                                        <span class="radio_buttons">
+                                                            <input type="radio" name="option" id="radio3"/>
+                                                            <label for="radio3">
+                                                                <span class="fa-stack">
+                                                                    <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                                    <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                                </span> Cannot Rate Now
+                                                            </label>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="box-shadow-styling-light col-md-12 rating-items">
+                                                <div class="col-md-12">
+                                                    <h5>5. Categorize your organization in one of the following, with reguards to this question: </h5>
+                                                    <span class="col-md-12">
+                                                        <span class="radio_buttons">
+                                                            <input type="radio" name="option" id="radio4" checked=""/>
+                                                            <label for="radio4">
+                                                                <span class="fa-stack">
+                                                                    <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                                    <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                                </span> Strength
+                                                            </label>
+                                                            <input type="radio" name="option" id="radio5"/>
+                                                            <label for="radio5">
+                                                                <span class="fa-stack">
+                                                                    <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                                    <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                                </span> Weakness
+                                                            </label>
+                                                            <input type="radio" name="option" id="radio6"/>
+                                                            <label for="radio6">
+                                                                <span class="fa-stack">
+                                                                    <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                                    <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                                </span> Opportunity
+                                                            </label>
+                                                            <input type="radio" name="option" id="radio7"/>
+                                                            <label for="radio7">
+                                                                <span class="fa-stack">
+                                                                    <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                                    <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                                </span> Threat
+                                                            </label>
+                                                            <input type="radio" name="option" id="radio8"/>
+                                                            <label for="radio8">
+                                                                <span class="fa-stack">
+                                                                    <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                                    <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                                </span> Cannot Rate Now
+                                                            </label>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="box-shadow-styling-light col-md-12 rating-items">
+                                                <div class="col-md-8">
+                                                    <h5 class="review_ifa">6. Review the IFAs listed below, and select the ones that are you think the organization should adopt, going forward:</h5>
+                                                    <span class="col-md-10">
+                                                        <span class="col-md-4 paddingTop10"><b>Imapct Rating:</b></span>
+                                                        <span class="col-md-7">
+                                                            <div  class="h-slider">
+                                                            </div>
+                                                            <ul class="text-center rate">
+                                                                <li class="">No Value</li>
+                                                                <li class="visibilityHidden">Very Low</li>
+                                                                <li class="visibilityHidden">Low</li>
+                                                                <li class="visibilityHidden">Medium</li>
+                                                                <li class="visibilityHidden">High</li>
+                                                                <li class="visibilityHidden">Very High</li>
+                                                            </ul>
+                                                        </span>
+                                                    </span>
+                                                    <span class="col-md-9">
+                                                        <span class="  option checkbox remember-txt marginBottom20">
+                                                            <input id="checkbox1" class="" type="checkbox">
+                                                            <label for="checkbox1">Initiate a project to analyze and evaluate trends in key financial ratios, benchmarked against the industry and competitors.</label>
+                                                        </span>
+                                                        <span class="  option checkbox remember-txt marginBottom20">
+                                                            <input id="checkbox2" class="" type="checkbox">
+                                                            <label for="checkbox2">Initiate a project to analyze and evaluate trends in key financial ratios, benchmarked against the industry and competitors.</label>
+                                                        </span>
+                                                        <span class="  option checkbox remember-txt marginBottom20">
+                                                            <input id="checkbox3" class="" type="checkbox">
+                                                            <label for="checkbox3">Initiate a project to analyze and evaluate trends in key financial ratios, benchmarked against the industry and competitors.</label>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="box-shadow-styling-light col-md-12 rating-items">
+                                                <div class="col-md-10">
+                                                    <h5>7. Add new Ideas For Actions that you recommend the organization should adopt, going forward:</h5>
+                                                    <div class="marginLeft15">
+                                                        <input type="text" name="name" value="" placeholder="Enter text" style="width: 50%;">
                                                     </div>
-                                                    <ul class="text-center rate">
-                                                        <li class="">No Value</li>
-                                                        <li class="visibilityHidden">Very Low</li>
-                                                        <li class="visibilityHidden">Low</li>
-                                                        <li class="visibilityHidden">Medium</li>
-                                                        <li class="visibilityHidden">High</li>
-                                                        <li class="visibilityHidden">Very High</li>
-                                                    </ul>
-                                                </span>
-                                            </span>
-                                            <span class="col-md-9">
-                                                <span class="  option checkbox remember-txt marginBottom20">
-                                                    <input id="checkbox1" class="" type="checkbox">
-                                                    <label for="checkbox1">Initiate a project to analyze and evaluate trends in key financial ratios, benchmarked against the industry and competitors.</label>
-                                                </span>
-                                                <span class="  option checkbox remember-txt marginBottom20">
-                                                    <input id="checkbox2" class="" type="checkbox">
-                                                    <label for="checkbox2">Initiate a project to analyze and evaluate trends in key financial ratios, benchmarked against the industry and competitors.</label>
-                                                </span>
-                                                <span class="  option checkbox remember-txt marginBottom20">
-                                                    <input id="checkbox3" class="" type="checkbox">
-                                                    <label for="checkbox3">Initiate a project to analyze and evaluate trends in key financial ratios, benchmarked against the industry and competitors.</label>
-                                                </span>
-                                            </span>
-                                        </div>
-                                    </li>
-                                    <li class="box-shadow-styling-light col-md-12 rating-items">
-                                        <div class="col-md-10">
-                                            <h5>7. Add new Ideas For Actions that you recommend the organization should adopt, going forward:</h5>
-                                            <div class="marginLeft15">
-                                                <input type="text" name="name" value="" placeholder="Enter text" style="width: 50%;">
-                                            </div>
-                                            <span class="col-md-10">
-                                                <span class="col-md-3 paddingTop10"><b>Imapct Rating:</b></span>
-                                                <span class="col-md-9">
-                                                    <div  class="h-slider">
+                                                    <span class="col-md-10">
+                                                        <span class="col-md-3 paddingTop10"><b>Imapct Rating:</b></span>
+                                                        <span class="col-md-9">
+                                                            <div  class="h-slider">
+                                                            </div>
+                                                            <ul class="text-center rate">
+                                                                <li class="">No Value</li>
+                                                                <li class="visibilityHidden">Very Low</li>
+                                                                <li class="visibilityHidden">Low</li>
+                                                                <li class="visibilityHidden">Medium</li>
+                                                                <li class="visibilityHidden">High</li>
+                                                                <li class="visibilityHidden">Very High</li>
+                                                            </ul>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="box-shadow-styling-light col-md-12 rating-items">
+                                                <div class="col-md-9">
+                                                    <h5 class="review_ifa">8. Review the Key Person Informeds listed below, and select the ones that are you think the organization should adopt, going forward: </h5>
+                                                    <span class="col-md-9">
+                                                        <span class="  option checkbox remember-txt marginBottom20">
+                                                            <input id="checkbox4" class="" type="checkbox">
+                                                            <label for="checkbox4">Initiate a project to analyze and evaluate trends in key financial ratios, benchmarked against the industry and competitors.</label>
+                                                        </span>
+                                                        <span class="  option checkbox remember-txt marginBottom20">
+                                                            <input id="checkbox5" class="" type="checkbox">
+                                                            <label for="checkbox5">Initiate a project to analyze and evaluate trends in key financial ratios, benchmarked against the industry and competitors.</label>
+                                                        </span>
+                                                        <span class="  option checkbox remember-txt marginBottom20">
+                                                            <input id="checkbox6" class="" type="checkbox">
+                                                            <label for="checkbox6">Initiate a project to analyze and evaluate trends in key financial ratios, benchmarked against the industry and competitors.</label>
+                                                        </span>
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="box-shadow-styling-light col-md-12 rating-items">
+                                                <div class="col-md-8">
+                                                    <h5 class="review_ifa">9.  Add new Key Person Informeds that you recommend the organization should adopt, going forward:</h5>
+                                                    <div class="marginLeft15">
+                                                        <input type="text" name="name" value="" placeholder="Enter text" style="width: 70%;">
                                                     </div>
-                                                    <ul class="text-center rate">
-                                                        <li class="">No Value</li>
-                                                        <li class="visibilityHidden">Very Low</li>
-                                                        <li class="visibilityHidden">Low</li>
-                                                        <li class="visibilityHidden">Medium</li>
-                                                        <li class="visibilityHidden">High</li>
-                                                        <li class="visibilityHidden">Very High</li>
-                                                    </ul>
-                                                </span>
-                                            </span>
-                                        </div>
-                                    </li>
-                                    <li class="box-shadow-styling-light col-md-12 rating-items">
-                                        <div class="col-md-9">
-                                            <h5 class="review_ifa">8. Review the Key Person Informeds listed below, and select the ones that are you think the organization should adopt, going forward: </h5>
-                                            <span class="col-md-9">
-                                                <span class="  option checkbox remember-txt marginBottom20">
-                                                    <input id="checkbox4" class="" type="checkbox">
-                                                    <label for="checkbox4">Initiate a project to analyze and evaluate trends in key financial ratios, benchmarked against the industry and competitors.</label>
-                                                </span>
-                                                <span class="  option checkbox remember-txt marginBottom20">
-                                                    <input id="checkbox5" class="" type="checkbox">
-                                                    <label for="checkbox5">Initiate a project to analyze and evaluate trends in key financial ratios, benchmarked against the industry and competitors.</label>
-                                                </span>
-                                                <span class="  option checkbox remember-txt marginBottom20">
-                                                    <input id="checkbox6" class="" type="checkbox">
-                                                    <label for="checkbox6">Initiate a project to analyze and evaluate trends in key financial ratios, benchmarked against the industry and competitors.</label>
-                                                </span>
-                                            </span>
-                                        </div>
-                                    </li>
-                                    <li class="box-shadow-styling-light col-md-12 rating-items">
-                                        <div class="col-md-8">
-                                            <h5 class="review_ifa">9.  Add new Key Person Informeds that you recommend the organization should adopt, going forward:</h5>
-                                            <div class="marginLeft15">
-                                                <input type="text" name="name" value="" placeholder="Enter text" style="width: 70%;">
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="box-shadow-styling-light col-md-12 rating-items">
-                                        <div class="col-md-10">
-                                            <h5>10.  Any other comments.</h5>
-                                            <div class="marginLeft15">
-                                                <textarea name="name" rows="8" cols="40"></textarea>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="col-md-12 rating-items text-center">
-                                        <button type="button" name="button" class="btn btn-info marginTop20">Save</button>
-                                    </li>
+                                                </div>
+                                            </li>
+                                            <li class="box-shadow-styling-light col-md-12 rating-items">
+                                                <div class="col-md-10">
+                                                    <h5>10.  Any other comments.</h5>
+                                                    <div class="marginLeft15">
+                                                        <textarea name="name" rows="8" cols="40"></textarea>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="col-md-12 rating-items text-center">
+                                                <button type="button" name="button" class="btn btn-info marginTop20">Save</button>
+                                            </li>
 
-                                </ul>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="test4" class=" tab-pane " role="tabpanel">test4</div>
                             </div>
+
                         </div>
                         <div id="under_work" class="tab-pane" role="tabpanel">
                             Under Work
