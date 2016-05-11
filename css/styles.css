@@ -219,10 +219,11 @@ a:focus{
 #core_functions_wrapper li .caption {
     position: absolute;
     color: white;
-    cursor: pointer;
     height: 190px;
     bottom: -190px;
     transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear; /* IE 9 */
+    -webkit-transition: all 0.3s linear; /* Chrome, Safari, Opera */
     background-color: rgba(0, 0, 0, 0.8);
     font: 13px 'Roboto-Regular';
     text-align: center;
@@ -2802,10 +2803,17 @@ padding: 10px 5px;
 }
 #core_functions_wrapper li .caption * {
     text-align: center;
-    padding: 8px 12px;
     list-style-type: none;
 }
-
+#core_functions_wrapper li .caption button{
+    padding: 8px;
+}
+.caption-content{
+    padding: 5px;
+}
+.caption-content span{
+    line-height: 16px;
+}
 /*EPMAD_ASSESSOR_SELECTOR*/
 #assessor-selector .select-assessor-group-form .form-content {
     padding: 0;
@@ -3129,8 +3137,8 @@ padding: 10px 5px;
     width: auto;
 }
 .caption-content {
-    max-height: 130px;
-    min-height: 130px;
+    max-height: 119px;
+    min-height: 119px;
     overflow: hidden;
 }
 #core_functions_wrapper li .caption button {
@@ -3189,6 +3197,7 @@ padding: 10px 5px;
 .bottom_spacing_div {
     height: 100px;
 }
+
 /* AA Details page - Track Ideas for Action*/
 #track_ideas_for_action>.container-fluid, #select_ideas_for_action>.container-fluid {
    margin-left: 30px;
