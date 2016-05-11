@@ -70,6 +70,11 @@ $(document).ready(function() {
             }
         }
     });
+    $(".close_button").click(function () {
+        $(this).parent().slideUp("slow", function () {
+            // Animation complete.
+        });
+    });
     $(".learning_section").on("mouseover", function(e){
         e.preventDefault();
         var name = e.target.alt;
