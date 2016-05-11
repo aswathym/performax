@@ -46,7 +46,9 @@ $('#chat_container').ready(function() {
 		var length = $('#chat_container .chats').length,
 			chat_name = $(this).find('.user_name').html();
 		if(length >= 4) {
-			$('#chat_container .chats:nth-child(1)').remove();
+			var index = $('#chat_container .chats:nth-child(2)').attr('alt');
+			$('#chat_container .chats:nth-child(2)').remove();
+			open_users.splice(open_users.indexOf(index), 1);
 		}
 		var user_id = $(this).attr("alt");
 		if(open_users.indexOf(user_id) == -1) {
@@ -54,25 +56,25 @@ $('#chat_container').ready(function() {
 			$('#chat_container .chats:nth-child(1)').clone().appendTo( "#chat_container");
 			$('#chat_container .chats:last-child()').find('.chat_heading').html(chat_name);			
 			$('#chat_container .chats:last-child()').attr('alt', user_id);
+			var chatRef = new Firebase("https://chats-abin.firebaseio.com/chats");
+			var message_container = $('#chat_container .chats:last-child()').find('.chat_space');
+			chatRef.on("value", function(snapshot) {
+				snapshot.forEach(function(snap) {
+					var messages = snap.val();
+					if(messages.id == user_id) {
+						snap.forEach(function(message){
+							var message = message.val();
+							if(message.from == 'me') {
+								message_container.append("<div><span class='me'><h5><b>You</b></h5>"+message.message+"</span><span class='dot_span'><i class='fa fa-circle' aria-hidden='true'></i></span></div>");
+							}
+							else if(message.from == 'other') {
+								message_container.append("<div><span class='dot_span'><i class='fa fa-circle' aria-hidden='true'></i></span><span class='other'><h5><b>"+chat_name+"</b></h5>"+message.message+"</span></div>");
+							}
+						})
+					}
+				})
+			});
 		}
 		console.log(open_users);
-		var chatRef = new Firebase("https://chats-abin.firebaseio.com/chats");
-		var message_container = $('#chat_container .chats:last-child()').find('.chat_space');
-		chatRef.on("value", function(snapshot) {
-			snapshot.forEach(function(snap) {
-				var messages = snap.val();
-				if(messages.id == user_id) {
-					snap.forEach(function(message){
-						var message = message.val();
-						if(message.from == 'me') {
-							message_container.append("<div><span class='me'><h5><b>You</b></h5>"+message.message+"</span><span class='dot_span'><i class='fa fa-circle' aria-hidden='true'></i></span></div>");
-						}
-						else if(message.from == 'other') {
-							message_container.append("<div><span class='dot_span'><i class='fa fa-circle' aria-hidden='true'></i></span><span class='other'><h5><b>"+chat_name+"</b></h5>"+message.message+"</span></div>");
-						}
-					})
-				}
-			})
-		});
 	});	
 });
