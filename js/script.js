@@ -102,7 +102,7 @@ $(document).ready(function() {
             $('.wheel_wrapper').find('.wheel-details .item').addClass('displayNone');
             $('.wheel_wrapper').find('.wheel-details .item:nth-child(5)').removeClass('displayNone');
         }
-        else if (e.target.alt === 'track') {
+        else if (e.target.alt === 'monitor') {
             $('.wheel-details').css('border-color', '#6BCBD5');
             $('.wheel_wrapper').find('.wheel-details .item').addClass('displayNone');
             $('.wheel_wrapper').find('.wheel-details .item:nth-child(6)').removeClass('displayNone');
@@ -137,7 +137,7 @@ $(document).ready(function() {
             $('.img-center-div').find('.number li').addClass('displayNone');
             $('.img-center-div').find('.number li:nth-child(5)').removeClass('displayNone');
         }
-        else if (e.target.alt === 'track') {
+        else if (e.target.alt === 'monitor') {
             $('.img-center-div').find('.number li').addClass('displayNone');
             $('.img-center-div').find('.number li:nth-child(6)').removeClass('displayNone');
         }
