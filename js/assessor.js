@@ -6,8 +6,8 @@ $(document).ready(function() {
         value: 1,
         step: 1,
         slide: function(event, ui) {
-			var next_ul = $(this).siblings();
-            if (ui.value == 1) {
+        var next_ul = $(this).siblings();
+           if (ui.value == 1) {
             	next_ul.find('li').addClass('visibilityHidden');
                 next_ul.find('li:nth-child(1)').removeClass('visibilityHidden');
             }

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/bootstrap-datepicker3.min.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="../css/jquery-ui.min.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/chat.css">
 </head>
 
 <body>
@@ -64,7 +65,7 @@
                 </div>
             </div>
         </header>
-        <div class="container" id="reports_assessment_overview">
+        <div class="container inner_wrap" id="reports_assessment_overview">
             <div class="challenge_box bg-white">
                 <div class="row">
                     <div class="col-md-2">
@@ -92,7 +93,7 @@
                         <li><a href="#strengths" aria-controls="strengths" role="tab" data-toggle="tab">Strengths</a></li>
                         <li><a href="#weaknessess" aria-controls="weaknessess" role="tab" data-toggle="tab">Weaknessess</a></li>
                         <li><a href="#no_display" aria-controls="no_display" role="tab" data-toggle="tab">SWOT</a></li>
-                        <li><a href="#no_display" aria-controls="no_display" role="tab" data-toggle="tab">Sentiment Analysis</a></li>
+                        <li><a href="#sentiment_analysis" aria-controls="sentiment_analysis" role="tab" data-toggle="tab">Sentiment Analysis</a></li>
                         <li><a href="#no_display" aria-controls="no_display" role="tab" data-toggle="tab">Prioritized Action Plan</a></li>
                         <li><a href="#key_performance" aria-controls="key_performance" role="tab" data-toggle="tab">Key Performance Indicator</a></li>
                     </ul>
@@ -364,7 +365,6 @@
                                     </ol>
                              </div>
                            </div>
-
                     </div>
                     <div id="effectiveness" class="container-fluid tab-pane" role="tabpanel">
                         <div class="col-md-12 padding0">
@@ -1047,6 +1047,9 @@
                             </div>
                         </div>
                     </div>
+                    <div id="sentiment_analysis" class="container-fluid tab-pane" role="tabpanel">
+                        
+                    </div>
                     <div id="key_performance" class="container-fluid tab-pane" role="tabpanel">
                         <div class="col-md-12 padding0">
                             <div class="col-md-3 paddingLeft0">
@@ -1169,9 +1172,43 @@
                     </div>
                 </div>
             </div>
+            <div class="chat_wrapper container">
+            <ul id="chat_container">
+                <li class="chats">
+                    <div class="chat_header">
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        <span class="chat_heading">Collaboration Hub</span>
+                        <span class="pull-right right_icons">
+                            <i class="fa fa-minus" aria-hidden="true"></i>
+                            <!-- <i class="fa fa-expand" aria-hidden="true"></i> -->
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div class="chat_body displayNone">
+                        <div class="chat_sub_header text-right">
+                            <i class="fa fa-user" aria-hidden="true">
+                                <sup class="no_of_users"></sup>
+                            </i>
+                        </div>
+                        <ul id="user_container" class="displayNone">
+                        </ul>
+                        <div class="chat_space">
+                        </div>
+                        <div class="input-group text_space">
+                            <input type="text" class="form-control" placeholder="Send Message">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default send-button" type="button">Send</button>
+                            </span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
         </div>
         <div class="bottom_spacing_div" class=""></div>
+        
     </div>
+        
         <footer class="footer">
             <div class="container">
                 <p class="pull-left">&copy; 2016 Performax Inc. All Rights Reserved</p>
@@ -1185,7 +1222,9 @@
         <script src="../js/jquery.imagemap.min.js" charset="utf-8"></script>
         <script src="../js/jquery-ui.min.js" charset="utf-8"></script>
         <script src="../js/script.js"></script>
+        <script src="../js/chat.js"></script>
         <script src="../js/star-rating.js"></script>
+        <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
     </body>
 
 </html>

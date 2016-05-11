@@ -1828,6 +1828,7 @@ input.promocode::-webkit-input-placeholder {
 
 #exspon_details_page .navbar {
     padding: 0;
+    min-height: auto;
 }
 #exspon_details_page .nav, #reports_assessment_overview .nav {
     border-bottom: 2px solid #09A6D0
@@ -2690,7 +2691,7 @@ padding: 10px 5px;
 #AA_details_page .navbar {
     padding-top: 0;
 }
-#AA_details_page>.container>.bg-white, #Assessors_page>.container>.bg-white {
+#AA_details_page>.container>.bg-white, #Assessors_page>.container>.bg-white, #exspon_details_page>.container>.bg-white {
     box-shadow: 0px 0px 1px 0px rgba(125, 125, 125, 0.7);
 }
 .blue_border_button {
