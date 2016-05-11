@@ -306,6 +306,9 @@ a:focus{
 .paddingLeft5 {
     padding-left: 5px;
 }
+.paddingLeft10 {
+    padding-left: 10px;
+}
 .paddingRight5 {
     padding-right: 5px;
 }
@@ -1827,7 +1830,7 @@ input.promocode::-webkit-input-placeholder {
     padding: 0;
     min-height: auto;
 }
-#exspon_details_page .nav {
+#exspon_details_page .nav, #reports_assessment_overview .nav {
     border-bottom: 2px solid #09A6D0
 }
 #exspon_details_page .nav li a {
@@ -3932,7 +3935,7 @@ color:#D13F2D;
 }
 
 /*Reports - Effectiveness Tab */
-#effectiveness #sideMenu {
+#effectiveness #sideMenu, #weaknessess #sideMenu, #strengths #sideMenu {
     margin: 0;
 }
 #effectiveness .list-group > div > a, #effectiveness  #sideMenu>.list-group>div>a.actives {
@@ -3956,19 +3959,20 @@ color:#D13F2D;
     padding-left: 50px;
 }
  .effect_div, .sentiment_div {
-    padding: 10px;
+    padding: 5px 10px;
 }
 .sentiment_div {
     padding: 17px 10px;
+    margin-bottom: 2px;
 }
 .effect_div span, #effectiveness .sentiment_div span {
-    padding: 5px 8px;
-    margin: 0 10px;
+    padding: 3px 11px;
+    margin: 0 2px 0 16px;
 }
 .effect_div .effect_val, .sentiment_div .sentiment_dir {
-    border-radius: 40%;
+    border-radius: 10px;
     color: #fff;
-    padding: 3px 10px;
+    padding: 2px 10px;
 }
 .effect_div .effect_val {
     background-color: #F96969;
@@ -4006,8 +4010,8 @@ color:#D13F2D;
     font-size: 13px;
 }
 .col-md-4>.rating_trend {
-    padding-bottom: 7px;
-    padding-top: 5px;
+    padding-bottom: 3px;
+    padding-top: 0px;
 }
 .effect_div .arrow_up {
     color: #74DD85;
