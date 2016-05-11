@@ -141,3 +141,6 @@
 	position: absolute;
 	bottom: -100px;
 }
+.input-group input,#chat_container .text_space .send-button{
+	border-radius: 0;
+}
