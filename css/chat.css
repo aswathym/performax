@@ -44,7 +44,9 @@
 	padding: 7px 10px;
 	font-size: 19px;
 	transition: all 0.3s linear;
-	cursor: pointer;
+	 -ms-transition: all 0.3s linear; /* IE 9 */
+    -webkit-transition: all 0.3s linear; /* Chrome, Safari, Opera */
+ 	cursor: pointer;
 }
 #chat_container .chat_header .right_icons .fa {
 	margin-top: -5px;
@@ -52,6 +54,8 @@
 	width: 20px;
     text-align: center;
     transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear; /* IE 9 */
+    -webkit-transition: all 0.3s linear; /* Chrome, Safari, Opera */
 }
 #chat_container .chat_header .right_icons .fa:hover {
 	color: #B12A00;
@@ -73,6 +77,9 @@
     border-color: #1072bd;
     color: #fff;
     transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear; /* IE 9 */
+    -webkit-transition: all 0.3s linear; /* Chrome, Safari, Opera */
+    float: right;
 }
 #chat_container .text_space  .send-button:hover {
 	background-color: #1072bd;
@@ -91,6 +98,8 @@
     display: inline-block;
     padding: 5px 10px;
     transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear; /* IE 9 */
+    -webkit-transition: all 0.3s linear; /* Chrome, Safari, Opera */
     cursor: pointer;
 }
 #user_container .user:hover {

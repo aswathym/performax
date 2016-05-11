@@ -303,8 +303,14 @@ a:focus{
 .paddingLeft0 {
     padding-left: 0;
 }
+.paddingLeft5 {
+    padding-left: 5px;
+}
 .paddingRight5 {
     padding-right: 5px;
+}
+.paddingRight40 {
+    padding-right: 40px;
 }
 .paddingBottom0 {
     padding-bottom: 0;
@@ -400,6 +406,10 @@ a:focus{
 .paddingLeftRight15 {
     padding-left: 15px;
     padding-right: 15px;
+}
+.marginLeftRight20 {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .paddingTopBottom15 {
     padding-top: 15px;
@@ -1439,7 +1449,7 @@ footer.footer {
     border: 1px solid #2C88CE;
     color: #2C88CE;
 }
-#standard_plan, #cart-add-ons {
+#standard_plan {
     font-size: 15px;
     padding-left: 0;
     padding-top: 15px;
@@ -1538,6 +1548,15 @@ input.promocode::-webkit-input-placeholder {
     color: #666464;
     font-size: 15px;
     padding: 10px;
+}
+#cart-add-ons {
+    font-size: 15px;
+    padding-left: 0;
+    padding-top: 0px;
+    text-align: center;
+}
+.add_on_label {
+    font-weight: normal;
 }
 
 /* ES - create profile */
@@ -1702,8 +1721,8 @@ input.promocode::-webkit-input-placeholder {
 }
 .flow_nav .active .status_icon{
     transform: scale(1.5, 1.5);
-     -ms-transform: scale(1.5, 1.5); 
-    -webkit-transform: scale(1.5, 1.5); 
+     -ms-transform: scale(1.5, 1.5);
+    -webkit-transform: scale(1.5, 1.5);
     box-shadow: 0px 0px 7px 0px #72F568;
 }
 .flow_nav .active  p {
@@ -1806,6 +1825,7 @@ input.promocode::-webkit-input-placeholder {
 
 #exspon_details_page .navbar {
     padding: 0;
+    min-height: auto;
 }
 #exspon_details_page .nav {
     border-bottom: 2px solid #09A6D0
@@ -2222,8 +2242,8 @@ input.promocode::-webkit-input-placeholder {
     padding: 6px 12px;
     text-align: center;
     transform: rotate(320deg);
-     -ms-transform: rotate(320deg); 
-    -webkit-transform:rotate(320deg); 
+     -ms-transform: rotate(320deg);
+    -webkit-transform:rotate(320deg);
     position: absolute;
     left: -37px;
     top: 0px;
@@ -2592,8 +2612,8 @@ padding: 10px 5px;
 }
 .learning_center .each_tiles:hover {
     transform: scale(1.3, 1.3);
-    -ms-transform: scale(1.3, 1.3); 
-    -webkit-transform:scale(1.3, 1.3); 
+    -ms-transform: scale(1.3, 1.3);
+    -webkit-transform:scale(1.3, 1.3);
 }
 .learning_center .video-tutorial {
     left: 230px;
@@ -2646,8 +2666,8 @@ padding: 10px 5px;
 }
 .learning_center .transformImage {
     transform: scale(1.3, 1.3);
-    -ms-transform: scale(1.3, 1.3); 
-    -webkit-transform:scale(1.3, 1.3); 
+    -ms-transform: scale(1.3, 1.3);
+    -webkit-transform:scale(1.3, 1.3);
 }
 .details_page_nav .nav {
     border-bottom: 2px solid #09A6D0;
@@ -2668,7 +2688,7 @@ padding: 10px 5px;
 #AA_details_page .navbar {
     padding-top: 0;
 }
-#AA_details_page>.container>.bg-white, #Assessors_page>.container>.bg-white {
+#AA_details_page>.container>.bg-white, #Assessors_page>.container>.bg-white, #exspon_details_page>.container>.bg-white {
     box-shadow: 0px 0px 1px 0px rgba(125, 125, 125, 0.7);
 }
 .blue_border_button {
@@ -3316,36 +3336,36 @@ padding: 10px 5px;
 #analytics_and_insights .ui-slider-horizontal .ui-slider-handle:active, #analytics_and_insights .ui-slider-horizontal .ui-slider-handle:focus {
     outline: none;
 }
-#rate1, #rate2, #rate3 {
+.rating-items .rate {
     list-style: none;
     padding: 0;
     width: 120%;
     margin: 5px -10%;
 }
-#rate1 li, #rate2 li, #rate3 li {
+.rating-items .rate li {
     display: inline-block;
     padding: 0px 7px;
     font-weight: bold;
 }
-#rate1 li:nth-child(1), #rate2 li:nth-child(1), #rate3 li:nth-child(1) {
+.rating-items .rate li:nth-child(1) {
     color: #CB3131;
 }
-#rate1 li:nth-child(2), #rate2 li:nth-child(2), #rate3 li:nth-child(2) {
+.rating-items .rate li:nth-child(2) {
     color: #E2663E;
 }
-#rate1 li:nth-child(3), #rate2 li:nth-child(3), #rate3 li:nth-child(3) {
+.rating-items .rate li:nth-child(3) {
     color: #E2663E;
 }
-#rate1 li:nth-child(4), #rate2 li:nth-child(4), #rate3 li:nth-child(4) {
+.rating-items .rate li:nth-child(4) {
     color: #F59248;
 }
-#rate1 li:nth-child(5), #rate2 li:nth-child(5), #rate3 li:nth-child(5) {
+.rating-items .rate li:nth-child(5) {
     color: #F5C74D;
 }
-#rate1 li:nth-child(6), #rate2 li:nth-child(6), #rate3 li:nth-child(6) {
+.rating-items .rate li:nth-child(6) {
     color: #51D65A;
 }
-#h-slider1, #h-slider2  , #h-slider3 {
+.rating-items .h-slider{
     margin: 15px 0;
 }
 #analytics_and_insights .radio_buttons label {
@@ -3749,8 +3769,17 @@ padding: 10px 5px;
    color: #2C88CE;
    font-weight: bold;
 }
+.marginLeft0 {
+    margin-left: 0px;
+}
+.marginLeft15 {
+    margin-left: 15px;
+}
 .marginLeft5 {
     margin-left: 5px;
+}
+.marginRight10 {
+    margin-right: 10px;
 }
 .marginLeft10{
    margin-left:10px;
@@ -3813,14 +3842,15 @@ color:#D13F2D;
 #reports_assessment_overview .kpa_details_nav .nav-tabs li a {
     padding: 13px 11px 13px 10px;
 }
+#reports_assessment_overview .kpa_details_nav .nav-tabs li:last-child a {
+    padding: 13px 8px 13px 10px;
+}
+
 #reports_assessment_overview .navbar {
     padding-top: 0;
 }
 #reports_assessment_overview .challenge_box {
     margin-bottom: 0;
-}
-#reports_assessment_overview #tab_header li:last-child {
-    float: left;
 }
 #reports_assessment_overview .results_reporter .main, #reports_assessment_overview .subsc_period .main {
     font-weight: bold;
@@ -3913,7 +3943,7 @@ color:#D13F2D;
     background-color: #eee;
 }
 #effectiveness #sideMenu a.list-group-item:focus {
-    background-color: #eee;   
+    background-color: #eee;
 }
 #effectiveness .down_arrow {
     float: right;
@@ -3921,41 +3951,41 @@ color:#D13F2D;
 }
 #effectiveness #sideMenu #overall .list-group-item {
     padding-left: 30px;
-} 
+}
 #effectiveness #sideMenu #internal .list-group-item {
     padding-left: 50px;
 }
-#effectiveness .effect_div, #effectiveness .sentiment_div {
+ .effect_div, .sentiment_div {
     padding: 10px;
 }
-#effectiveness .sentiment_div {
-    padding: 17px 10px; 
+.sentiment_div {
+    padding: 17px 10px;
 }
-#effectiveness .effect_div span, #effectiveness .sentiment_div span {
+.effect_div span, #effectiveness .sentiment_div span {
     padding: 5px 8px;
     margin: 0 10px;
 }
-#effectiveness .effect_div .effect_val, #effectiveness .sentiment_div .sentiment_dir {
+.effect_div .effect_val, .sentiment_div .sentiment_dir {
     border-radius: 40%;
     color: #fff;
-    padding: 5px 18px;
+    padding: 3px 10px;
 }
-#effectiveness .effect_div .effect_val {
+.effect_div .effect_val {
     background-color: #F96969;
 }
-#effectiveness .sentiment_div .sentiment_dir {
+.sentiment_div .sentiment_dir {
     background-color: #74DD85;
 }
-#effectiveness .effect_div .effect_perc, #effectiveness .sentiment_div .sentiment_val {
+#effectiveness .effect_div .effect_perc, .sentiment_div .sentiment_val {
     font-weight: bold;
 }
-#effectiveness .sentiment_div .sentiment_val:before {
+.sentiment_div .sentiment_val:before {
     content: '+ '
 }
 #effectiveness .effect_div .effect_perc:after {
     content: '%';
 }
-#effectiveness .effect_div .effect_dir {
+.effect_div .effect_dir {
     color: #f96969;
     font-size: 19px;
 }
@@ -3965,4 +3995,62 @@ color:#D13F2D;
 }
 .cols li{
     padding-bottom: 5px;
+}
+
+
+/* Reports - Strengths tab*/
+.internal_skills {
+    font-size: 15px;
+}
+.csf_current_effectiveness {
+    font-size: 13px;
+}
+.col-md-4>.rating_trend {
+    padding-bottom: 7px;
+    padding-top: 5px;
+}
+.effect_div .arrow_up {
+    color: #74DD85;
+}
+.effect_div .arrow_right {
+    color: #FFE324;
+}
+.neagative_sentiment {
+    background-color: #EF5050 !important;
+}
+/* validation message position fixes */
+.k-widget.k-tooltip-validation{
+    left: 92%;
+    top:0;
+}
+.k-widget.k-tooltip-validation:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 14px solid #fdefba;
+    position: absolute;
+    top: 7px;
+    left: -8px;
+}
+.form-element,.model_line{
+    position: relative;
+}
+.form-element .k-widget.k-tooltip-validation{
+    left: 100%;
+}
+
+.form-content .row .k-widget.k-tooltip-validation {
+    left: 97%;
+    top: 5px;
+}
+.nav > li > a:hover, .nav > li > a:focus{
+    border-radius: 0;
+}
+/* Assessor styles*/
+.review_ifa {
+    text-indent: -15px;
+    margin-left: 15px;
 }
