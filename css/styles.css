@@ -1449,7 +1449,7 @@ footer.footer {
     border: 1px solid #2C88CE;
     color: #2C88CE;
 }
-#standard_plan, #cart-add-ons {
+#standard_plan {
     font-size: 15px;
     padding-left: 0;
     padding-top: 15px;
@@ -1548,6 +1548,15 @@ input.promocode::-webkit-input-placeholder {
     color: #666464;
     font-size: 15px;
     padding: 10px;
+}
+#cart-add-ons {
+    font-size: 15px;
+    padding-left: 0;
+    padding-top: 0px;
+    text-align: center;
+}
+.add_on_label {
+    font-weight: normal;
 }
 
 /* ES - create profile */
