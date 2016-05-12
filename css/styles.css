@@ -330,6 +330,9 @@ a:focus{
 .paddingBottom20 {
     padding-bottom: 20px;
 }
+.paddingBottom5 {
+    padding-bottom: 5px !important;
+}
 .paddingLeft20 {
     padding-left: 20px;
 }
@@ -3980,10 +3983,10 @@ color:#D13F2D;
     padding-left: 50px;
 }
  .effect_div, .sentiment_div {
-    padding: 5px 10px;
+    padding: 12px 10px;
 }
 .sentiment_div {
-    padding: 17px 10px;
+    padding: 17px 10px 10px;
     margin-bottom: 2px;
 }
 .effect_div span, #effectiveness .sentiment_div span {
@@ -4100,4 +4103,26 @@ color:#D13F2D;
 #positive_sentiment .positive_sentiment_ul li .sentiment_rating {
     color: #51D65A;
     margin-left: 20px;
+}
+#key_performance .effect_dir {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    margin-top: -4px;
+}
+#key_performance .source_knowledgebase {
+    padding-bottom: 0;
+}
+#key_performance .assigned_idea_list .sub_content {
+    margin-top: 0;
+}
+#key_performance .effect_div {
+    padding-bottom: 0;
+    padding-left: 0;
+}
+.red_color {
+    color: #EF5050;
+}
+.green_color {
+    color: #51D65A;
 }
