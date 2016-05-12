@@ -3167,6 +3167,9 @@ padding: 10px 5px;
     font-weight: 500;
     color: #fff;
 }
+.disable_events {
+    pointer-events: none;
+}
 #approve_Questionnaire .btn-disabled:hover {
     background-color: #737373;
 }
