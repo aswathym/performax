@@ -150,6 +150,10 @@ a:focus{
     border: 1px solid transparent;
     border-radius: 50%;
 }
+#header_user_bar .profile_pic_hover .fa {
+    margin-left: 5px;
+    margin-right: 10px;
+}
 #header_user_bar .profile_pic_hover {
    position: absolute;
    width: 250px;
@@ -223,6 +227,8 @@ a:focus{
     height: 190px;
     bottom: -190px;
     transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear; /* IE 9 */
+    -webkit-transition: all 0.3s linear; /* Chrome, Safari, Opera */
     background-color: rgba(0, 0, 0, 0.8);
     font: 13px 'Roboto-Regular';
     text-align: center;
@@ -278,6 +284,9 @@ a:focus{
 }
 .nav-tabs {
     border: 0;
+}
+.word-wrap-break {
+    word-break: break-all;
 }
 .padding0 {
     padding: 0;
@@ -438,7 +447,7 @@ a:focus{
 #header_nav_tabs {
     font-size: 13px;
 }
-#header_user_bar i {
+#header_user_bar .fa-bell-o {
     margin-top: 10px;
 }
 #header_user_bar .profile_pic_hover li {
@@ -728,7 +737,7 @@ input[type="checkbox"] {
     color: #888;
 }
 .rating {
-    width: 120px;
+    width: 113px;
     background-color: #F1F1F1;
     border-radius: 17px;
     padding: 0px;
@@ -998,20 +1007,20 @@ h1 {
     background-image: url('../images/calender_icon.png');
     background-repeat: no-repeat;
 }
-#create_promo_code_form input[type="radio"], #analytics_and_insights input[type="radio"] {
+#create_promo_code_form input[type="radio"], input[type="radio"] {
     display: none;
 }
-#create_promo_code_form input[type="radio"] + label .fa-check-circle, #analytics_and_insights input[type="radio"] + label .fa-check-circle {
+#create_promo_code_form input[type="radio"] + label .fa-check-circle, input[type="radio"] + label .fa-check-circle {
     display: none;
 }
-#create_promo_code_form input[type="radio"]:checked + label .fa-check-circle, #analytics_and_insights input[type="radio"]:checked + label .fa-check-circle{
+#create_promo_code_form input[type="radio"]:checked + label .fa-check-circle, input[type="radio"]:checked + label .fa-check-circle{
     display: block;
     color: #09A6D0;
 }
-#create_promo_code_form input[type="radio"] + label:after, #analytics_and_insights input[type="radio"] + label:after {
+#create_promo_code_form input[type="radio"] + label:after, input[type="radio"] + label:after {
     display: none;
 }
-#create_promo_code_form input[type="radio"]:checked + label .fa-circle-thin, #analytics_and_insights input[type="radio"]:checked + label .fa-circle-thin {
+#create_promo_code_form input[type="radio"]:checked + label .fa-circle-thin, input[type="radio"]:checked + label .fa-circle-thin {
     display: none;
 }
 #analytics_and_insights .fa-circle-thin {
@@ -1195,14 +1204,14 @@ h1 {
 }
 .form-content input {
     width: 60%;
-    border: 2px solid rgba(222, 222, 222, 1);
+    border: 1px solid rgba(222, 222, 222, 1);
     padding: 3px 7px;
     font-size: 14px;
 }
 .form-content .k-dropdown, .form-content .k-widget, .form-content .k-header {
     width: 60% !important;
     font-size: 14px !important;
-    border: 2px solid rgba(222, 222, 222, 0.56);
+    border: 1px solid rgba(222, 222, 222, 0.56);
     display: inline-block;
 }
 .form-content .k-dropdown-wrap{
@@ -1539,7 +1548,7 @@ input.promocode::-webkit-input-placeholder {
 
 .cart_container>.col-md-3>button {
     margin-top: 15px;
-    margin-left: 83px;
+    margin-left: 70px;
 }
 .cart_container>.col-md-3>button {
     margin-top: 15px;
@@ -1954,12 +1963,16 @@ input.promocode::-webkit-input-placeholder {
 #permissions .fa-toggle-on, #permissions .fa-toggle-off {
     cursor: pointer;
 }
+#exSpon_DetailsPage_Configurator_Timeline .controllers {
+    margin: 20px 0;
+}
 #exSpon_DetailsPage_Configurator_Timeline .controllers label {
     width: 30%;
     text-align: right;
+    margin-bottom: 20px;
 }
 #exSpon_DetailsPage_Configurator_Timeline .duration input {
-    width: 20%;
+    width: 28%;
 }
 .exSpon_details_heading {
     padding-left: 0;
@@ -2805,10 +2818,17 @@ padding: 10px 5px;
 }
 #core_functions_wrapper li .caption * {
     text-align: center;
-    padding: 8px 12px;
     list-style-type: none;
 }
-
+#core_functions_wrapper li .caption button{
+    padding: 8px;
+}
+.caption-content{
+    padding: 5px;
+}
+.caption-content span{
+    line-height: 16px;
+}
 /*EPMAD_ASSESSOR_SELECTOR*/
 #assessor-selector .select-assessor-group-form .form-content {
     padding: 0;
@@ -3132,8 +3152,8 @@ padding: 10px 5px;
     width: auto;
 }
 .caption-content {
-    max-height: 130px;
-    min-height: 130px;
+    max-height: 119px;
+    min-height: 119px;
     overflow: hidden;
 }
 #core_functions_wrapper li .caption button {
@@ -3192,6 +3212,7 @@ padding: 10px 5px;
 .bottom_spacing_div {
     height: 100px;
 }
+
 /* AA Details page - Track Ideas for Action*/
 #track_ideas_for_action>.container-fluid, #select_ideas_for_action>.container-fluid {
    margin-left: 30px;
