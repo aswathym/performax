@@ -91,8 +91,8 @@
                         <li><a href="#effectiveness" aria-controls="effectiveness" role="tab" data-toggle="tab">Effectiveness</a></li>
                         <li><a href="#strengths" aria-controls="strengths" role="tab" data-toggle="tab">Strengths</a></li>
                         <li><a href="#weaknessess" aria-controls="weaknessess" role="tab" data-toggle="tab">Weaknessess</a></li>
-                        <li><a href="#no_display" aria-controls="no_display" role="tab" data-toggle="tab">SWOT</a></li>
-                        <li><a href="#no_display" aria-controls="no_display" role="tab" data-toggle="tab">Sentiment Analysis</a></li>
+                        <li><a href="#swot" aria-controls="swot" role="tab" data-toggle="tab">SWOT</a></li>
+                        <li><a href="#sentiment_analysis" aria-controls="sentiment_analysis" role="tab" data-toggle="tab">Sentiment Analysis</a></li>
                         <li><a href="#prioritized_action_plan" aria-controls="prioritized_action_plan" role="tab" data-toggle="tab">Prioritized Action Plan</a></li>
                         <li><a href="#key_performance" aria-controls="key_performance" role="tab" data-toggle="tab">Key Performance Indicator</a></li>
                     </ul>
@@ -364,7 +364,6 @@
                                     </ol>
                              </div>
                            </div>
-
                     </div>
                     <div id="effectiveness" class="container-fluid tab-pane" role="tabpanel">
                         <div class="col-md-12 padding0">
@@ -1047,6 +1046,544 @@
                             </div>
                         </div>
                     </div>
+                    <div id="swot" class="container-fluid tab-pane" role="tabpanel">
+                        <div class="col-md-12 padding0">
+                            <div class="col-md-3 paddingLeft0">
+                                <div class="box-shadow-styling-light padding10">
+                                    <h4>Assessment Context</h4>
+                                    <div id="sideMenu">
+                                        <div class="list-group panel">
+                                            <a href="#weak_functional" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#sideMenu" id="functional_assessment" aria-expanded="true">Overall
+                                                <img src="../images/arrow_down.png" id="arrow_down">
+                                            </a>
+                                            <div class="collapse in" id="weak_functional" aria-expanded="true">
+                                                <a class="list-group-item actives" aria-controls="fnc_assmnt_cf" role="tab" data-toggle="tab" aria-expanded="true">People &amp; Leadership</a>
+                                                <a aria-controls="fnc_assmnt_sf" role="tab" data-toggle="tab" class="list-group-item" aria-expanded="true">Analytics &amp; Insights</a>
+                                                <a aria-controls="fnc_assmnt_sf" role="tab" data-toggle="tab" class="list-group-item" aria-expanded="true">Strategy &amp; Planning</a>
+                                                <a aria-controls="fnc_assmnt_sf" role="tab" data-toggle="tab" class="list-group-item" aria-expanded="true">Execution &amp; Process</a>
+                                                <a aria-controls="fnc_assmnt_sf" role="tab" data-toggle="tab" class="list-group-item" aria-expanded="true">Performance &amp; Results</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h4>Assessor Groups</h4>
+                                    <div id="sideMenu">
+                                        <div class="list-group panel">
+                                            <span class="radio_button_custom">
+                                                <span class="radio_buttons">
+                                                    <a class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#sideMenu" aria-expanded="true">
+                                                        <input type="radio" name="option" id="radio1" checked="">
+                                                        <label for="radio1">
+                                                            <span class="fa-stack">
+                                                                <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                                <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                            </span> All
+                                                        </label>
+                                                    </a>
+                                                    <a href="#overall" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#sideMenu" id="functional_assessment" aria-expanded="true">
+                                                        <input type="radio" name="option" id="radio2">
+                                                        <label for="radio2">
+                                                            <span class="fa-stack">
+                                                                <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                                <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                            </span> By Group
+                                                        </label>
+                                                        <img src="../images/arrow_down.png" id="arrow_down" width="18px" class="down_arrow">
+                                                    </a>
+                                                </span>
+                                            </span>
+                                            <div class="collapse in" id="overall" aria-expanded="true">
+                                                <a href="#internal" class="list-group-item actives" data-toggle="collapse" data-parent="#sub_sidebar_assessment" aria-expanded="true">
+                                                    <input type="checkbox">Internal
+                                                    <img src="../images/arrow_down.png" id="arrow_down_fuctional">
+                                                </a>
+                                                <div class="collapse in " id="internal" aria-expanded="true">
+                                                    <a class="list-group-item actives" aria-controls="fnc_assmnt_cf" role="tab" data-toggle="tab" aria-expanded="true">
+                                                        <input type="checkbox">CXO
+                                                    </a>
+                                                    <a aria-controls="fnc_assmnt_sf" role="tab" data-toggle="tab" class="list-group-item" aria-expanded="true">
+                                                        <input type="checkbox">Senior Executive
+                                                    </a>
+                                                </div>
+                                                <a href="#external" class="list-group-item " data-toggle="collapse" data-parent="#sub_sidebar_assessment" aria-expanded="true">
+                                                    <input type="checkbox">External
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-12 vid_container padding0 marginTop5">
+                                    <img src="../images/ES_img2.png">
+                                    <div class="col-md-12 text-center padding10">
+                                        Watch a quick video on how to use this report
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-9 paddingRight0 box-shadow-styling-light padding20">
+                                <h4 class="margin0">Critical Success Factor SWOT Matrix</h4>
+                                <div class="col-md-12 padding0 marginTop20">
+                                    <span class="swot_decider">Internal</span>
+                                    <div class="col-md-6">
+                                        <div class="box-shadow-styling-light">
+                                            <div class="box-shadow-styling swot_item_heading">
+                                                Strengths <span class="swot_numbers">3</span>
+                                                <span class="pull-right"><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+                                            </div>
+                                            <div class="col-md-12 swot_item_description box-shadow-styling-light">
+                                                <div class="swot_items col-md-6 padding0">
+                                                    <a href="">Internal Analytical Skills & Capabilities</a>
+                                                    <h5 class="grey_color margin0 paddingTop5">CSF</h5>
+                                                </div>
+                                                <div class="swot_items col-md-3 padding0">
+                                                    <div>
+                                                        <span class="swot_perc">69</span>
+                                                        <span class=""><i class="fa fa-arrow-down" aria-hidden="true"></i></span>
+                                                    </div>
+                                                    <h5 class="grey_color margin0">CE Rating</h5>
+                                                    <div class="effect_div">
+                                                        <span class="effect_val effect_high">High</span>
+                                                    </div>
+                                                </div>
+                                                <div class="swot_items col-md-3 padding0">
+                                                    <div>
+                                                        <span class="swot_perc">71</span>
+                                                    </div>
+                                                    <h5 class="grey_color margin0">Selected by % Assessors</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 swot_item_description box-shadow-styling-light">
+                                                <div class="swot_items col-md-6 padding0">
+                                                    <a href="">Internal Analytical Skills & Capabilities</a>
+                                                    <h5 class="grey_color margin0 paddingTop5">CSF</h5>
+                                                </div>
+                                                <div class="swot_items col-md-3 padding0">
+                                                    <div>
+                                                        <span class="swot_perc">69</span>
+                                                        <span class=""><i class="fa fa-arrow-down" aria-hidden="true"></i></span>
+                                                    </div>
+                                                    <h5 class="grey_color margin0">CE Rating</h5>
+                                                    <div class="effect_div">
+                                                        <span class="effect_val effect_high">High</span>
+                                                    </div>
+                                                </div>
+                                                <div class="swot_items col-md-3 padding0">
+                                                    <div>
+                                                        <span class="swot_perc">71</span>
+                                                    </div>
+                                                    <h5 class="grey_color margin0">Selected by % Assessors</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 swot_item_description box-shadow-styling-light">
+                                                <div class="swot_items col-md-6 padding0">
+                                                    <a href="">Internal Analytical Skills & Capabilities</a>
+                                                    <h5 class="grey_color margin0 paddingTop5">CSF</h5>
+                                                </div>
+                                                <div class="swot_items col-md-3 padding0">
+                                                    <div>
+                                                        <span class="swot_perc">69</span>
+                                                        <span class=""><i class="fa fa-arrow-up" aria-hidden="true"></i></span>
+                                                    </div>
+                                                    <h5 class="grey_color margin0">CE Rating</h5>
+                                                    <div class="effect_div">
+                                                        <span class="effect_val effect_low">Low</span>
+                                                    </div>
+                                                </div>
+                                                <div class="swot_items col-md-3 padding0">
+                                                    <div>
+                                                        <span class="swot_perc">71</span>
+                                                    </div>
+                                                    <h5 class="grey_color margin0">Selected by % Assessors</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="box-shadow-styling-light">
+                                            <div class="box-shadow-styling swot_item_heading">
+                                                Weeknesses<span class="swot_numbers">2</span>
+                                                <span class="pull-right"><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+                                            </div>
+                                            <div class="col-md-12 swot_item_description box-shadow-styling-light">
+                                                <div class="swot_items col-md-6 padding0">
+                                                    <a href="">Internal Analytical Skills & Capabilities</a>
+                                                    <h5 class="grey_color margin0 paddingTop5">CSF</h5>
+                                                </div>
+                                                <div class="swot_items col-md-3 padding0">
+                                                    <div>
+                                                        <span class="swot_perc">69</span>
+                                                        <span class=""><i class="fa fa-arrow-down" aria-hidden="true"></i></span>
+                                                    </div>
+                                                    <h5 class="grey_color margin0">CE Rating</h5>
+                                                    <div class="effect_div">
+                                                        <span class="effect_val effect_high">High</span>
+                                                    </div>
+                                                </div>
+                                                <div class="swot_items col-md-3 padding0">
+                                                    <div>
+                                                        <span class="swot_perc">71</span>
+                                                    </div>
+                                                    <h5 class="grey_color margin0">Selected by % Assessors</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 swot_item_description box-shadow-styling-light">
+                                                <div class="swot_items col-md-6 padding0">
+                                                    <a href="">Internal Analytical Skills & Capabilities</a>
+                                                    <h5 class="grey_color margin0 paddingTop5">CSF</h5>
+                                                </div>
+                                                <div class="swot_items col-md-3 padding0">
+                                                    <div>
+                                                        <span class="swot_perc">69</span>
+                                                        <span class=""><i class="fa fa-arrow-down" aria-hidden="true"></i></span>
+                                                    </div>
+                                                    <h5 class="grey_color margin0">CE Rating</h5>
+                                                    <div class="effect_div">
+                                                        <span class="effect_val effect_high">High</span>
+                                                    </div>
+                                                </div>
+                                                <div class="swot_items col-md-3 padding0">
+                                                    <div>
+                                                        <span class="swot_perc">71</span>
+                                                    </div>
+                                                    <h5 class="grey_color margin0">Selected by % Assessors</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 swot_item_description box-shadow-styling-light">
+                                                <div class="swot_items col-md-6 padding0">
+                                                    <a href="">Internal Analytical Skills & Capabilities</a>
+                                                    <h5 class="grey_color margin0 paddingTop5">CSF</h5>
+                                                </div>
+                                                <div class="swot_items col-md-3 padding0">
+                                                    <div>
+                                                        <span class="swot_perc">69</span>
+                                                        <span class=""><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                                    </div>
+                                                    <h5 class="grey_color margin0">CE Rating</h5>
+                                                    <div class="effect_div">
+                                                        <span class="effect_val effect_low">Low</span>
+                                                    </div>
+                                                </div>
+                                                <div class="swot_items col-md-3 padding0">
+                                                    <div>
+                                                        <span class="swot_perc">71</span>
+                                                    </div>
+                                                    <h5 class="grey_color margin0">Selected by % Assessors</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 padding0 marginTop20">
+                                    <span class="swot_decider">External</span>
+                                    <div class="col-md-6">
+                                        <div class="box-shadow-styling-light">
+                                            <div class="box-shadow-styling swot_item_heading">
+                                                Opportunities <span class="swot_numbers">3</span>
+                                                <span class="pull-right"><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+                                            </div>
+                                            <div class="col-md-12 swot_item_description box-shadow-styling-light">
+                                                <div class="swot_items col-md-6 padding0">
+                                                    <a href="">Internal Analytical Skills & Capabilities</a>
+                                                    <h5 class="grey_color margin0 paddingTop5">CSF</h5>
+                                                </div>
+                                                <div class="swot_items col-md-3 padding0">
+                                                    <div>
+                                                        <span class="swot_perc">69</span>
+                                                        <span class=""><i class="fa fa-arrow-down" aria-hidden="true"></i></span>
+                                                    </div>
+                                                    <h5 class="grey_color margin0">CE Rating</h5>
+                                                    <div class="effect_div">
+                                                        <span class="effect_val effect_high">High</span>
+                                                    </div>
+                                                </div>
+                                                <div class="swot_items col-md-3 padding0">
+                                                    <div>
+                                                        <span class="swot_perc">71</span>
+                                                    </div>
+                                                    <h5 class="grey_color margin0">Selected by % Assessors</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 swot_item_description box-shadow-styling-light">
+                                                <div class="swot_items col-md-6 padding0">
+                                                    <a href="">Internal Analytical Skills & Capabilities</a>
+                                                    <h5 class="grey_color margin0 paddingTop5">CSF</h5>
+                                                </div>
+                                                <div class="swot_items col-md-3 padding0">
+                                                    <div>
+                                                        <span class="swot_perc">69</span>
+                                                        <span class=""><i class="fa fa-arrow-down" aria-hidden="true"></i></span>
+                                                    </div>
+                                                    <h5 class="grey_color margin0">CE Rating</h5>
+                                                    <div class="effect_div">
+                                                        <span class="effect_val effect_high">High</span>
+                                                    </div>
+                                                </div>
+                                                <div class="swot_items col-md-3 padding0">
+                                                    <div>
+                                                        <span class="swot_perc">71</span>
+                                                    </div>
+                                                    <h5 class="grey_color margin0">Selected by % Assessors</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 swot_item_description box-shadow-styling-light">
+                                                <div class="swot_items col-md-6 padding0">
+                                                    <a href="">Internal Analytical Skills & Capabilities</a>
+                                                    <h5 class="grey_color margin0 paddingTop5">CSF</h5>
+                                                </div>
+                                                <div class="swot_items col-md-3 padding0">
+                                                    <div>
+                                                        <span class="swot_perc">69</span>
+                                                        <span class=""><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                                    </div>
+                                                    <h5 class="grey_color margin0">CE Rating</h5>
+                                                    <div class="effect_div">
+                                                        <span class="effect_val effect_low">Low</span>
+                                                    </div>
+                                                </div>
+                                                <div class="swot_items col-md-3 padding0">
+                                                    <div>
+                                                        <span class="swot_perc">71</span>
+                                                    </div>
+                                                    <h5 class="grey_color margin0">Selected by % Assessors</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="box-shadow-styling-light">
+                                            <div class="box-shadow-styling swot_item_heading">
+                                                Threats<span class="swot_numbers">2</span>
+                                                <span class="pull-right"><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+                                            </div>
+                                            <div class="col-md-12 swot_item_description box-shadow-styling-light">
+                                                <div class="swot_items col-md-6 padding0">
+                                                    <a href="">Internal Analytical Skills & Capabilities</a>
+                                                    <h5 class="grey_color margin0 paddingTop5">CSF</h5>
+                                                </div>
+                                                <div class="swot_items col-md-3 padding0">
+                                                    <div>
+                                                        <span class="swot_perc">69</span>
+                                                        <span class=""><i class="fa fa-arrow-down" aria-hidden="true"></i></span>
+                                                    </div>
+                                                    <h5 class="grey_color margin0">CE Rating</h5>
+                                                    <div class="effect_div">
+                                                        <span class="effect_val effect_high">High</span>
+                                                    </div>
+                                                </div>
+                                                <div class="swot_items col-md-3 padding0">
+                                                    <div>
+                                                        <span class="swot_perc">71</span>
+                                                    </div>
+                                                    <h5 class="grey_color margin0">Selected by % Assessors</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 swot_item_description box-shadow-styling-light">
+                                                <div class="swot_items col-md-6 padding0">
+                                                    <a href="">Internal Analytical Skills & Capabilities</a>
+                                                    <h5 class="grey_color margin0 paddingTop5">CSF</h5>
+                                                </div>
+                                                <div class="swot_items col-md-3 padding0">
+                                                    <div>
+                                                        <span class="swot_perc">69</span>
+                                                        <span class=""><i class="fa fa-arrow-down" aria-hidden="true"></i></span>
+                                                    </div>
+                                                    <h5 class="grey_color margin0">CE Rating</h5>
+                                                    <div class="effect_div">
+                                                        <span class="effect_val effect_high">High</span>
+                                                    </div>
+                                                </div>
+                                                <div class="swot_items col-md-3 padding0">
+                                                    <div>
+                                                        <span class="swot_perc">71</span>
+                                                    </div>
+                                                    <h5 class="grey_color margin0">Selected by % Assessors</h5>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 swot_item_description box-shadow-styling-light">
+                                                <div class="swot_items col-md-6 padding0">
+                                                    <a href="">Internal Analytical Skills & Capabilities</a>
+                                                    <h5 class="grey_color margin0 paddingTop5">CSF</h5>
+                                                </div>
+                                                <div class="swot_items col-md-3 padding0">
+                                                    <div>
+                                                        <span class="swot_perc">69</span>
+                                                        <span class=""><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                                                    </div>
+                                                    <h5 class="grey_color margin0">CE Rating</h5>
+                                                    <div class="effect_div">
+                                                        <span class="effect_val effect_low">Low</span>
+                                                    </div>
+                                                </div>
+                                                <div class="swot_items col-md-3 padding0">
+                                                    <div>
+                                                        <span class="swot_perc">71</span>
+                                                    </div>
+                                                    <h5 class="grey_color margin0">Selected by % Assessors</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 padding0 marginTop20 text-center">
+                                    <div class="col-md-6 swot_decider_bottom">
+                                        Positive
+                                    </div>
+                                    <div class="col-md-6 swot_decider_bottom">
+                                        Negetive
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sentiment_analysis" class="container-fluid tab-pane" role="tabpanel">
+                        <div class="col-md-12 padding0">
+                            <div class="col-md-3 paddingLeft0">
+                                <div class="box-shadow-styling-light padding10">
+                                    <h4>Assessment Context</h4>
+                                    <div id="sideMenu">
+                                        <div class="list-group panel">
+                                            <a href="#weak_functional" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#sideMenu" id="functional_assessment" aria-expanded="true">Overall
+                                                <img src="../images/arrow_down.png" id="arrow_down">
+                                            </a>
+                                            <div class="collapse in" id="weak_functional" aria-expanded="true">
+                                                <a class="list-group-item actives" aria-controls="fnc_assmnt_cf" role="tab" data-toggle="tab" aria-expanded="true">People &amp; Leadership</a>
+                                                <a aria-controls="fnc_assmnt_sf" role="tab" data-toggle="tab" class="list-group-item" aria-expanded="true">Analytics &amp; Insights</a>
+                                                <a aria-controls="fnc_assmnt_sf" role="tab" data-toggle="tab" class="list-group-item" aria-expanded="true">Strategy &amp; Planning</a>
+                                                <a aria-controls="fnc_assmnt_sf" role="tab" data-toggle="tab" class="list-group-item" aria-expanded="true">Execution &amp; Process</a>
+                                                <a aria-controls="fnc_assmnt_sf" role="tab" data-toggle="tab" class="list-group-item" aria-expanded="true">Performance &amp; Results</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <h4>Assessor Groups</h4>
+                                    <div id="sideMenu">
+                                        <div class="list-group panel">
+                                            <span class="radio_button_custom">
+                                                <span class="radio_buttons">
+                                                    <a class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#sideMenu" aria-expanded="true">
+                                                        <input type="radio" name="option" id="radio1" checked="">
+                                                        <label for="radio1">
+                                                            <span class="fa-stack">
+                                                                <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                                <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                            </span> All
+                                                        </label>
+                                                    </a>
+                                                    <a href="#overall" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#sideMenu" id="functional_assessment" aria-expanded="true">
+                                                        <input type="radio" name="option" id="radio2">
+                                                        <label for="radio2">
+                                                            <span class="fa-stack">
+                                                                <i class="fa fa-circle-thin fa-2x fa-stack-1x"></i>
+                                                                <i class="fa fa-check-circle fa-2x fa-stack-1x"></i>
+                                                            </span> By Group
+                                                        </label>
+                                                        <img src="../images/arrow_down.png" id="arrow_down" width="18px" class="down_arrow">
+                                                    </a>
+                                                </span>
+                                            </span>
+                                            <div class="collapse in" id="overall" aria-expanded="true">
+                                                <a href="#internal" class="list-group-item actives" data-toggle="collapse" data-parent="#sub_sidebar_assessment" aria-expanded="true">
+                                                    <input type="checkbox">Internal
+                                                    <img src="../images/arrow_down.png" id="arrow_down_fuctional">
+                                                </a>
+                                                <div class="collapse in " id="internal" aria-expanded="true">
+                                                    <a class="list-group-item actives" aria-controls="fnc_assmnt_cf" role="tab" data-toggle="tab" aria-expanded="true">
+                                                        <input type="checkbox">CXO
+                                                    </a>
+                                                    <a aria-controls="fnc_assmnt_sf" role="tab" data-toggle="tab" class="list-group-item" aria-expanded="true">
+                                                        <input type="checkbox">Senior Executive
+                                                    </a>
+                                                </div>
+                                                <a href="#external" class="list-group-item " data-toggle="collapse" data-parent="#sub_sidebar_assessment" aria-expanded="true">
+                                                    <input type="checkbox">External
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-12 vid_container padding0 marginTop5">
+                                    <img src="../images/ES_img2.png">
+                                    <div class="col-md-12 text-center padding10">
+                                        Watch a quick video on how to use this report
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-9 paddingRight0 box-shadow-styling-light padding20">
+                                <h4 class="margin0">Assessor Sentiment Rating</h4>
+                                <div class="col-md-12 padding0 marginTop20">
+                                    <div class="col-md-6">
+                                        <div class="box-shadow-styling-light">
+                                            <div class="text-center">
+                                                <img src="../images/placeholder.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="box-shadow-styling-light">
+                                            <div class="box-shadow-styling padding5 paddingLeft10 marginTop0">
+                                                Assessor Sentiment Trends
+                                            </div>
+                                            <div class="text-center">
+                                                <img src="../images/placeholder.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 padding0 marginTop20">
+                                    <div class="col-md-6">
+                                        <div class="box-shadow-styling-light">
+                                            <div class="box-shadow-styling padding5 paddingLeft10 marginTop0">
+                                                Sentiment By Assessor Groups
+                                            </div>
+                                            <div class="text-center">
+                                                <img src="../images/placeholder.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="box-shadow-styling-light">
+                                            <div class="box-shadow-styling padding5 paddingLeft10 marginTop0">
+                                                Sentiment By Assessor Context
+                                            </div>
+                                            <div class="text-center">
+                                                <img src="../images/placeholder.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 padding0 marginTop20">
+                                    <nav class="navbar col-md-12 padding0 sentiment_analysis_tab_view">
+                                        <ul class="nav nav-tabs" id="tab_header">
+                                            <li class="active"><a href="#positive_sentiment" aria-controls="positive_sentiment" role="tab" data-toggle="tab">Positive Sentiment</a></li>
+                                            <li><a href="#negetive_sentiment" aria-controls="negetive_sentiment" role="tab" data-toggle="tab">Negetive Sentiment</a></li>
+                                        </ul>
+                                    </nav>
+                                    <div class="tab-content">
+                                        <div id="positive_sentiment" class="container-fluid tab-pane active" role="tabpanel">
+                                            <ul class="positive_sentiment_ul">
+                                                <li>
+                                                    <span class="desc">The Leadership within the Finance and Accounting function is Excellent.</span>
+                                                    <span class="sentiment_rating">+0.38</span>
+                                                </li>
+                                                <li>
+                                                    <span class="desc">The People are very Friendly.</span>
+                                                    <span class="sentiment_rating">+0.42</span>
+                                                </li>
+                                                <li>
+                                                    <span class="desc">The Training programmes are Very Good.</span>
+                                                    <span class="sentiment_rating">+0.15</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div id="negetive_sentiment" class="container-fluid tab-pane" role="tabpanel">
+                                            Negetive Sentiment
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div id="key_performance" class="container-fluid tab-pane" role="tabpanel">
                         <div class="col-md-12 padding0">
                             <div class="col-md-3 paddingLeft0">
@@ -1544,9 +2081,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="no_display" class="container-fluid tab-pane" role="tabpanel">
-                        Under Construction
-                    </div>
+
                 </div>
                 <div class="col-md-12 powered_and_share_team container-fluid padding0 marginTop30">
                     <div class="col-md-3 powered_by_team">
