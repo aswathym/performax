@@ -4126,3 +4126,59 @@ color:#D13F2D;
 .green_color {
     color: #51D65A;
 }
+#swot .swot_numbers:before {
+    content: ' ('
+}
+#swot .swot_numbers:after {
+    content: ') '
+}
+#swot .swot_item_heading {
+    padding: 5px 5px 5px 10px;
+    margin-top: 0; 
+    margin-bottom: 0;
+    font-weight: bold;
+}
+#swot .swot_item_heading .fa-exclamation-circle {
+    color: #72AFDE;
+}
+#swot .swot_item_description {
+    padding: 5px;
+    margin: 1px 0 0 0;
+}
+#swot .swot_items .swot_perc:after {
+    content: '%';
+}
+#swot .swot_items .fa-arrow-down {
+    color: #F96969;
+}
+#swot .swot_items .fa-arrow-right {
+    color: #FFE324;
+}
+#swot .swot_items .effect_div {
+    padding: 5px 0;
+}
+#swot .swot_items .effect_div .effect_low {
+    background-color: #51D65A;
+}
+#swot .swot_items .effect_div .effect_high {
+    background-color: #F96969;
+}
+#swot .swot_items .effect_div span {
+    margin: 0;
+}
+#swot .swot_items .fa-arrow-up {
+    color: #51D65A;
+}
+#swot .swot_decider {
+    position: absolute;
+    transform: rotate(270deg);
+    top: 140px;
+    left: -30px;
+    color: rgba(80, 89, 80, 0.8);
+    text-transform: uppercase;
+}
+#swot .swot_decider_bottom {
+    padding: 0;
+    color: rgba(80, 89, 80, 0.8);
+    text-transform: uppercase;   
+}
