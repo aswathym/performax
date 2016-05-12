@@ -3959,7 +3959,7 @@ color:#D13F2D;
 }
 
 /*Reports - Effectiveness Tab */
-#effectiveness #sideMenu, #weaknessess #sideMenu, #strengths #sideMenu {
+#effectiveness #sideMenu, #weaknessess #sideMenu, #strengths #sideMenu, #key_performance #sideMenu, #prioritized_action_plan #sideMenu {
     margin: 0;
 }
 #effectiveness .list-group > div > a, #effectiveness  #sideMenu>.list-group>div>a.actives {
@@ -4103,4 +4103,51 @@ color:#D13F2D;
 }
 .green_color {
     color: #51D65A;
+}
+
+/* Prioritized Action Plan */
+.csf_action_plan {
+    margin-left: 5px;
+}
+.csf_action_plan:before {
+    content: '('
+}
+.csf_action_plan:after {
+    content: ')'
+}
+.powered_by_prioritized_action img{
+    border: 1px solid #ddd;
+    width: 54%;
+}
+.cfa_actionplan_table th:nth-child(3) {
+    width: 21%;
+}
+.cfa_actionplan_table th:nth-child(1) {
+    width: 1%;
+}
+.cfa_actionplan_table th:nth-child(2) {
+    width: 34%;
+}
+.cfa_actionplan_table th:nth-child(4) {
+    width: 23%;
+}
+.cfa_actionplan_table th:nth-child(5) {
+    width: 21%;
+}
+.cfa_actionplan_table td:nth-child(1) {
+    vertical-align: middle;
+}
+.cfa_actionplan_table td:nth-child(5) {
+    vertical-align: middle;
+    text-align: center;
+}
+.cfa_actionplan_table td:nth-child(5) button {
+    margin-top: 15px;
+    padding: 3px 8px;
+}
+#prioritized_action_plan .effect_div span {
+    margin: 0;
+}
+.internal_analytical_skills {
+    font-size: 14px;
 }
