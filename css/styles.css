@@ -4079,3 +4079,25 @@ color:#D13F2D;
     text-indent: -15px;
     margin-left: 15px;
 }
+.sentiment_analysis_tab_view .nav-tabs li {
+    width: 50%;
+    text-align: center;
+}
+#positive_sentiment, #negetive_sentiment {
+    height: 250px;
+    font-weight: bold;
+    padding: 10px;
+    overflow: auto;
+}
+#positive_sentiment .positive_sentiment_ul li {
+    padding: 8px 0;
+}
+#positive_sentiment .positive_sentiment_ul li .sentiment_rating:before {
+    content: 'Sentiment Rating : ';
+    color: rgba(80, 89, 80, 0.8);
+    font-weight: normal;
+}
+#positive_sentiment .positive_sentiment_ul li .sentiment_rating {
+    color: #51D65A;
+    margin-left: 20px;
+}
