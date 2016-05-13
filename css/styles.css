@@ -3134,12 +3134,17 @@ padding: 10px 5px;
 }
 
 /* Style fixes */
-#pricingForm span {
-    padding-top: 10px;
+#pricingLabel {
+    padding-top: 13px;
 }
 #pricingForm a {
-    display: inline-block;
-    margin: 8px 25px 0;
+   margin: 10px 25px 0;
+}
+#pricingForm #savePricing{
+    margin-top: 15px;
+}
+#pricingForm a , #pricingForm span.k-numerictextbox{
+    float: left;
 }
 .modal-body .model_line label {
     padding-top: 6px;
@@ -3166,6 +3171,9 @@ padding: 10px 5px;
     background-color: #9B9B9B;
     font-weight: 500;
     color: #fff;
+}
+.disable_events {
+    pointer-events: none;
 }
 #approve_Questionnaire .btn-disabled:hover {
     background-color: #737373;
