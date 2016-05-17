@@ -1148,6 +1148,7 @@ h1 {
     position: absolute;
     color: rgb(200, 35, 35);
     padding: 0 35%;
+    float: left;
 }
 .error_span_email, .error_span_pass {
     color: rgb(200, 35, 35);
