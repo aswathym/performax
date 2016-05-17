@@ -3295,19 +3295,19 @@ padding: 10px 5px;
 .assessors_header_tab li a {
     padding: 10px 11px 0px 12px;
 }
-.assessors_header_tab li:nth-child(1) a::after, .assessors_header_tab li:nth-child(2) a::after {
-    content: '75%';
-    border-color: #6BDD7B;
-}
-.assessors_header_tab li:nth-child(3) a::after, .assessors_header_tab li:nth-child(4) a::after, .assessors_header_tab li:nth-child(5) a::after {
-    content: '';
-    border-color: #E0E0E0;
-}
 #Assessors_page .navbar {
     padding-top: 0;
 }
+#Assessors_page .navbar .nav>li{
+    width: 20%;
+    text-align: center;
+}
 #Assessors_page .navbar .nav>li>a {
-    padding: 7px 16px 3px;
+    padding: 8px 30px 8px 16px;
+    line-height: 30px;
+}
+#Assessors_page .navbar .nav>li:last-child >a{
+    padding-right: 50px;
 }
 #analytics_and_insights .pagination .active a {
     background-color: #09A6D0;
