@@ -288,6 +288,9 @@ a:focus{
 .word-wrap-break {
     word-break: break-all;
 }
+.fontSizeSmaller {
+    font-size: smaller;
+}
 .padding0 {
     padding: 0;
 }
