@@ -578,7 +578,7 @@ a:focus{
     border-radius: 4px;
     margin: 20px 0px;
 }
-.CFS_container {
+.cfs_container {
     background-color: #FFFFFF;
     border: 1px #e4e4e4 solid;
     box-shadow: 0 0 6px #ccc;
@@ -587,17 +587,17 @@ a:focus{
     padding-top: 8px;
     padding-left: 15px;
 }
-.CSF_inner_container {
+.csf_inner_container {
     background-color: #FFFFFF;
     border: 1px #e4e4e4 solid;
     box-shadow: 0 0 1px #fff;
     border-radius: 4px;
     margin: 20px 0px;
 }
-.CSF_inner_container>.row>.col-md-3>.search {
+.csf_inner_container>.row>.col-md-3>.search {
     width: 100%;
 }
-.CSF_inner_container>.row>.col-md-3>#sideMenu {
+.csf_inner_container>.row>.col-md-3>#sideMenu {
     margin: 0 0 0 24px;
     width: 263px;
 }
@@ -790,13 +790,13 @@ input[type="checkbox"] {
 .rating-xs {
     font-size: 1.2em;
 }
-#CSF_Description {
+#csf_Description {
     height: 80px;
 }
-.CSF_Description {
+.csf_Description {
     margin-bottom: 0;
 }
-.CSF_Description textarea {
+.csf_Description textarea {
     margin-left: 4px;
 }
 .tab_box>nav>ul>li {
@@ -2317,14 +2317,14 @@ padding: 10px 5px;
 
 /* exSpon_DetailsPage_Questionnaire */
 
-.Questionnaire_box {
+.questionnaire_box {
     margin: 0 15px 5px;
 }
-.Questionnaire_box .rating-container .caption , .selected_IFA_rating .rating-container .caption{
+.questionnaire_box .rating-container .caption , .selected_IFA_rating .rating-container .caption{
     display: inline-block;
     padding-top: 9px;
 }
-.Questionnaire_box .rating-container .caption span, .selected_IFA_rating .rating-container .caption span {
+.questionnaire_box .rating-container .caption span, .selected_IFA_rating .rating-container .caption span {
     background-color: #fff;
     color: #FFB600;
     font-size: 15px;
@@ -2710,23 +2710,23 @@ padding: 10px 5px;
     padding-top: 5px;
     padding-left: 5px;
 }
-#AA_details_page .nav li a {
+#aa_details_page .nav li a {
     padding: 13px 13px 0px 13px;
     font-size: 15px;
     text-align: center;
     height: 49px;
 }
-#AA_details_page #exSpon_Configurator_Switch_Tab .nav li {
+#aa_details_page #exSpon_Configurator_Switch_Tab .nav li {
     margin-right: 1%;
 }
-#AA_details_page #exSpon_Configurator_Switch_Tab .nav li a {
+#aa_details_page #exSpon_Configurator_Switch_Tab .nav li a {
     height: auto;
     padding: 8px 10px 3px 10px;
 }
-#AA_details_page .navbar {
+#aa_details_page .navbar {
     padding-top: 0;
 }
-#AA_details_page>.container>.bg-white, #Assessors_page>.container>.bg-white, #exspon_details_page>.container>.bg-white {
+#aa_details_page>.container>.bg-white, #assessors_page>.container>.bg-white, #exspon_details_page>.container>.bg-white {
     box-shadow: 0px 0px 1px 0px rgba(125, 125, 125, 0.7);
 }
 .blue_border_button {
@@ -2745,7 +2745,7 @@ padding: 10px 5px;
     outline: none;
     color: #0969B3;
 }
-#AA_details_page .edit_button {
+#aa_details_page .edit_button {
     margin-right: 30px;
     padding: 6px 15px;
     margin-top: 20px;
@@ -2760,7 +2760,7 @@ padding: 10px 5px;
 #assessment_design .save_button {
     margin: 40px 20px 20px;
 }
-.KPA_assigned {
+.kpa_assigned {
     font-size: 15px;
     color: #484747;
 }
@@ -2793,7 +2793,7 @@ padding: 10px 5px;
     margin-left: 15px;
     margin-right: 15px;
 }
-.IFA_column, .KPA_email_column {
+/*.ifa_column, .kpa_email_column {
     width: 24%;
 }
 .IFA_CSF_column {
@@ -2801,9 +2801,9 @@ padding: 10px 5px;
     padding-left: 0;
     width: 25.5%;
 }
-.KPA_assigned_column {
+.kpa_assigned_column {
     width: 26%;
-}
+}*/
 .questionnaire_accordion .panel-heading a:after {
     font-family: 'Glyphicons Halflings';
     content: "\e260";
@@ -3021,31 +3021,31 @@ padding: 10px 5px;
 }
 
 /* AA Details page-Access Key Persons Accountable*/
-.AA_AKPA_table {
+.aa_AKPA_table {
     margin-bottom: 0;
     margin-top: 0;
 }
-.AA_AKPA_table th, .AA_AKPA_table td {
+.aa_AKPA_table th, .aa_AKPA_table td {
     vertical-align: middle !important;
     text-align: center;
     padding: 5px !important;
 }
-.AA_AKPA_table th:nth-child(1), .AA_AKPA_table th:nth-child(4), .AA_AKPA_table th:nth-child(5) {
+.aa_AKPA_table th:nth-child(1), .aa_AKPA_table th:nth-child(4), .aa_AKPA_table th:nth-child(5) {
     width: 25%;
 }
-.AA_AKPA_table th:nth-child(2), .AA_AKPA_table td:nth-child(3) {
+.aa_AKPA_table th:nth-child(2), .aa_AKPA_table td:nth-child(3) {
     width: 10%;
 }
-.AA_AKPA_table th:nth-child(3), .AA_AKPA_table td:nth-child(3) {
+.aa_AKPA_table th:nth-child(3), .aa_AKPA_table td:nth-child(3) {
     width: 15%;
 }
-.AA_AKPA_table td:nth-child(1), .AA_AKPA_table td:nth-child(5) {
+.aa_AKPA_table td:nth-child(1), .aa_AKPA_table td:nth-child(5) {
     width: 24%;
 }
-.AA_AKPA_table td:nth-child(4) {
+.aa_AKPA_table td:nth-child(4) {
     width: 26%;
 }
-.AA_AKPA_table td:nth-child(1) {
+.aa_AKPA_table td:nth-child(1) {
     text-align: left;
     text-indent: -15px;
     padding-left: 23px !important;
@@ -3122,19 +3122,19 @@ padding: 10px 5px;
     padding-bottom: 5px;
     display: inline-block;
 }
-.KPA_assigned_details span {
+.kpa_assigned_details span {
     width: 30%;
     display: inline-block;
     text-align: right;
 }
-.KPA_assigned_details input{
+.kpa_assigned_details input{
     margin-left: 6px;
     border: 1px solid #ddd;
 }
-.CSF_effectiveness_rating .rating-container .caption {
+.csf_effectiveness_rating .rating-container .caption {
     display: none;
 }
-.CSF_effectiveness {
+.csf_effectiveness {
     color: #FF5420;
     font-size: 13px;
     margin: 10px auto;
@@ -3308,19 +3308,19 @@ padding: 10px 5px;
 .assessors_header_tab li a {
     padding: 10px 11px 0px 12px;
 }
-#Assessors_page .navbar {
+#assessors_page .navbar {
     padding-top: 0;
 }
-#Assessors_page .navbar .nav>li{
+#assessors_page .navbar .nav>li{
     width: 20%;
     text-align: center;
 }
-#Assessors_page .navbar .nav>li>a {
+#assessors_page .navbar .nav>li>a {
     padding: 8px 30px 8px 16px;
     line-height: 30px;
     font-size: 13px;
 }
-#Assessors_page .navbar .nav>li:last-child >a{
+#assessors_page .navbar .nav>li:last-child >a{
     padding-right: 50px;
 }
 #analytics_and_insights .pagination .active a {
@@ -3465,14 +3465,14 @@ padding: 10px 5px;
 }
 
 /* KPA - My Assessments tab */
-.KPA_myAssessments {
+.kpa_myAssessments {
     margin: 30px auto;
     padding: 10px 25px 15px 25px;
 }
-.KPA_content_heading {
+.kpa_content_heading {
     font-size: 16px;
 }
-.KPA_assessment_box>span {
+.kpa_assessment_box>span {
     color: #787878;
 }
 .my_assessment_designatn span:before {
@@ -3482,7 +3482,7 @@ padding: 10px 5px;
     content: ')'
 }
 /* KPA - IFA List */
-.IFA_assigned {
+.ifa_assigned {
     padding: 10px 20px;
 }
 #loading {
@@ -3524,17 +3524,17 @@ padding: 10px 5px;
     padding-top: 0;
 }
 /* KPA IFA Status Upadate page */
-.IFA_Desc .col-md-6 span {
+.ifa_Desc .col-md-6 span {
     color: #959494;
 }
-.IFA_Desc .col-md-6 h4 {
+.ifa_Desc .col-md-6 h4 {
     float: right;
     padding-right: 5px;
 }
-.IFA_Desc {
+.ifa_Desc {
     margin-bottom: 45px;
 }
- .IFA_assigned_date .calender {
+ .ifa_assigned_date .calender {
      background-size: 20px 20px;
      background-position: 99% 35%;
      background-image: url('../images/calender_icon.png');
@@ -3800,7 +3800,6 @@ padding: 10px 5px;
 .remove-btn, .btn-wrap{
    margin-top: 10px;
 }
-
 .purchase-plan{
    width:46%;
    float: left;
