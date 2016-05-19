@@ -33,4 +33,31 @@ $(document).ready(function() {
             }
         }
     });
+    $('.pagination').on('click', 'li', function() {
+        $('.pagination li').removeClass('disabledLi');
+        $('.pagination li a').removeClass('disabledLi');
+        var current = $(this).parent().find('.active');
+        var content = $('.paginate-content .tab-pane.active');
+        if ($(this).hasClass('next')) {
+            var nextPage = current.next();
+            var nextView = content.next();
+        }
+        else if ($(this).hasClass('prev')) {
+            var nextPage = current.prev();
+            var nextView = content.prev();
+        }
+        current.removeClass('active');
+        nextPage.addClass('active');
+        content.removeClass('active');
+        nextView.addClass('active');
+        var index = $(this).parent().find('li.active').index();
+        if (index == 1) {
+            $('.pagination li:first-child').addClass('disabledLi');
+            $('.pagination li:first-child a').addClass('disabledLi');
+        }
+        else if (index == $('.pagination li').length - 2) {
+            $('.pagination li:last-child').addClass('disabledLi');
+            $('.pagination li:last-child a').addClass('disabledLi');
+        }
+    });
 });

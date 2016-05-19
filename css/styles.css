@@ -291,6 +291,10 @@ a:focus{
 .fontSizeSmaller {
     font-size: smaller;
 }
+#analytics_and_insights .pagination .disabledLi {
+    pointer-events: none;
+    color: grey;
+}
 .padding0 {
     padding: 0;
 }
