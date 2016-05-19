@@ -4454,3 +4454,6 @@ padding: 10px 5px;
     color: rgba(80, 89, 80, 0.8);
     text-transform: uppercase;
 }
+#header_user_bar .fa-skype{
+   cursor: default;
+}
