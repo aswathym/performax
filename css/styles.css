@@ -451,6 +451,9 @@ a:focus{
 .bg_transparent {
     background-color: transparent;
 }
+.challenge_box.paddingBottom10 {
+    padding-bottom: 10px !important;
+}
 #header_nav_tabs {
     font-size: 13px;
 }
@@ -1653,9 +1656,15 @@ footer.footer {
     border-bottom: 1px solid #D3D2D2;
     padding-bottom: 20px;
 }
+
+#cartDetails .cart_box {
+    padding: 5px 0px;
+}
+
 .cart_box>.cart_total {
     padding: 10px 25px;
     font-size: 20px;
+    border-top: 1px solid #D3D2D2;
 }
 .cart_box>.cart_total span {
     float: right;
@@ -2695,6 +2704,9 @@ padding: 10px 5px;
     border-radius: 7px;
     margin-bottom: 8px;
     margin-top: 7px;
+}
+#exspon_home_page .tiles.paddingBottom0 {
+    padding-bottom: 0px !important;
 }
 #exspon_home_page .tiles {
     padding-bottom: 15px;
