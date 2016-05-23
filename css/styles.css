@@ -4466,3 +4466,11 @@ padding: 10px 5px;
     color: rgba(80, 89, 80, 0.8);
     text-transform: uppercase;
 }
+
+/*Media Queries*/
+@media screen and (max-height: 580px) {
+    .login {
+        background-size: 100% 105%;
+        background-position: 0px -30px;
+    }
+}
