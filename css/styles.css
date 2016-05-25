@@ -210,6 +210,7 @@ a:focus{
     text-align: center;
     overflow: hidden;
     padding: 0px;
+    border-radius: 6px;
     height: 230px;
     background: -webkit-linear-gradient(top, rgb(255, 255, 255) 30%, rgb(215, 215, 215) 60%, rgb(116, 116, 116) 80%, rgb(35, 35, 35) 100%);
     background: -o-linear-gradient(top, rgb(255, 255, 255) 30%, rgb(215, 215, 215) 60%, rgb(116, 116, 116) 80%, rgb(35, 35, 35) 100%);
@@ -312,6 +313,9 @@ a:focus{
 }
 .padddingTop0 {
     padding-top: 0;
+}
+.paddingTop3{
+    padding-top: 3px;
 }
 .paddingRight0 {
     padding-right: 0;
@@ -1142,6 +1146,13 @@ h1 {
 #createPromoCodePopup .modal-content .no_of_times {
     border: 1px solid rgba(222, 222, 222, 0.56);
 }
+#editAddressPopup .modal-dialog {
+    width: 55%;
+}
+#editAddressPopup .modal-body .model_line {
+    margin: 0;
+    padding: 10px 0;
+}
 #viewCSF .modal-content {
     border-radius: 0;
 }
@@ -1188,7 +1199,11 @@ h1 {
    margin-top: 50px;
 }
 #login {
-   height: 415px;
+    height: 415px;
+    border-radius: 10px;
+}
+#login #tab_header li:first-child a {
+    border-top-left-radius: 10px;
 }
 #login-cnt form {
     padding: 6% 0;
@@ -1441,9 +1456,9 @@ footer.footer {
     color: #965414;
 }
 .ajax_pop_error {
-    background-color: #FFAFB3;
-    border-color: #DC002F;
-    color: #DC002F;
+    background-color: #FFCBCE;
+    border-color: rgba(210, 159, 169, 0.6);
+    color: #A00022;
 }
 .ajax_pop_info {
     background-color: #B6E3F6;
@@ -1475,6 +1490,9 @@ footer.footer {
 }
 .individual_assessor> input {
     margin-bottom: 10px;
+}
+.individual_assessor .model_line {
+     margin-bottom: 10px;
 }
 #rejectQuestionnaireModel .modal-header {
     padding: 25px 20px;
@@ -1763,7 +1781,7 @@ input.promocode::-webkit-input-placeholder {
 /*User ExSpon Product Listing*/
 
 #product_listing .header_img {
-    height: 30px;
+    /*height: 30px;*/
 }
 #product_listing .header_img img {
     position: absolute;
@@ -2343,6 +2361,16 @@ input.promocode::-webkit-input-placeholder {
     font-size: 15px;
     color: #787878;
 }
+.purchase-plan-label {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.cart_box>.cart_promocode .promoCodeInfo {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+}
 #core_functions_wrapper {
     width: 100%;
     clear: both;
@@ -2359,7 +2387,7 @@ input.promocode::-webkit-input-placeholder {
 #core_functions_wrapper .cart_item {
     width: auto;
     height: auto;
-    box-shadow: 1px 0px 6px 0px #787878;
+    box-shadow: 1px 1px 1px 0px rgba(200, 200, 200, .8);
     border: 0;
 }
 #core_functions_wrapper li .cart_box .checkbox label {
@@ -2710,10 +2738,13 @@ padding: 10px 5px;
 }
 #exspon_home_page .tiles {
     padding-bottom: 15px;
+    border-radius: 5px;
 }
 #exspon_home_page .tiles h4 {
     padding: 10px 15px;
     border: 1px solid rgba(100, 100, 100, 0.3);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 #exspon_home_page .customer_says i {
     line-height: 10;
@@ -3919,8 +3950,16 @@ padding: 10px 5px;
 #msgPromoCode b{
     font-family: 'Roboto-Bold';
 }
-#promoCodeMessageContainer,#msgPromoCode {
+#msgPromoCode {
+    font-size: 13px;
+    text-align: center;
+    font-weight : bold;
+}
+#promoCodeMessageContainer {
     padding-top:5px;
+}
+#txtPromoCode {
+    margin-top: 10px;
 }
 #msgSelectAddon {
     color: #66d480;
