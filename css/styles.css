@@ -4538,3 +4538,8 @@ padding: 10px 5px;
         background-position: 0px -30px;
     }
 }
+.rating-items .disabled-slider {
+    background: #CCC;
+    pointer-events: none;
+    cursor: default;
+}
