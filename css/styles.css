@@ -28,7 +28,6 @@ body {
 }
 
 /*Header Section*/
-
 header {
     background-color: white;
     box-shadow: 0 2px 10px 1px rgba(125, 125, 125, 0.5);
@@ -1257,6 +1256,17 @@ h1 {
 }
 .k-button {
     font-size: 13px;
+}
+.k-widget.k-tooltip {
+    border-color: #0342A2;
+    background-color: #397FE9;
+    color: #fff;
+    font-size: 13px;
+    padding: 8px 10px;
+    border-radius: 3px;
+}
+.k-widget.k-tooltip .k-callout-s {
+    border-top-color: #397FE9;
 }
 .k-widget.k-tooltip-validation {
     position: absolute;
@@ -4508,6 +4518,21 @@ padding: 10px 5px;
 #header_user_bar .fa-skype{
    cursor: default;
 }
+.status_update_IFA .form-content label, .ifa_Desc.form-content .rel_ifa {
+    width: 50%;
+}
+.status_update_IFA .form-content .k-dropdown, .status_update_IFA .form-content .k-widget, .status_update_IFA .form-content .k-header {
+    width: 40% !important;
+}
+
+.ideas_for_action_status .k-combobox {
+    float: right;
+    right: 30px;
+}
+.view_more_IFA a {
+    cursor: pointer;
+}
+
 
 /*Media Queries*/
 @media screen and (max-height: 580px) {
