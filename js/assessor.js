@@ -60,4 +60,16 @@ $(document).ready(function() {
             $('.pagination li:last-child a').addClass('disabledLi');
         }
     });
+
+    $('.assment_checkbox').on('change', function() {
+        if($(this).is(':checked')) {
+            $(this).parent().parent().parent().find('.h-slider').addClass('not-active');
+            $(this).parent().parent().parent().find('.h-slider .ui-slider-handle').css('left', 0+'%');
+            $(this).parent().parent().parent().find('.rate li').addClass('visibilityHidden');
+            $(this).parent().parent().parent().find('.rate li:first-child').removeClass('visibilityHidden');
+        }
+        else {
+            $(this).parent().parent().parent().find('.h-slider').removeClass('not-active');
+        }
+    });
 });
