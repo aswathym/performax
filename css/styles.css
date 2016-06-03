@@ -3591,7 +3591,7 @@ padding: 10px 5px;
     display:none;
 }
 .rating-items .ui-widget {
-    background: linear-gradient(to right, #cb3131 0%,#cb3131 20%,#e2663e 21%,#e2663e 41%,#e2663e 41%,#f59248 42%,#f59248 61%,#f5c74d 62%,#f5c74d 82%,#51d65a 83%,#51d65a 100%)
+    background: linear-gradient(to right, rgba(226,103,62,1) 0%, rgba(226,103,62,1) 25%, rgba(245,147,72,1) 25%, rgba(245,147,72,1) 50%, rgba(245,200,77,1) 50%, rgba(245,200,77,1) 75%, rgba(81,214,90,1) 75%, rgba(81,214,90,1) 100%);
 }
 .ui-slider-horizontal .ui-slider-handle {
     top: -.7em;
