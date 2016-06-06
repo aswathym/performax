@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/editor.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="../css/star-rating.css" charset="utf-8">
+    <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="../css/bootstrap-datepicker3.min.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="../css/jquery-ui.min.css">
     <link rel="stylesheet" href="../css/styles.css">
@@ -116,7 +117,7 @@
                         </div>
                         <button type="button" class="view_progress_button"> View Progress</button>
                     </div>
-                    <div class="col-md-2" style="float:right">
+                    <div class="col-md-2 floatRight">
                         <a href="#"><img src="../images/context_aware_recom_system.png" width="80%" height="80%" style="float:right" /></a>
                     </div>
                 </div>
@@ -124,7 +125,7 @@
         </div>
         <div class="container">
             <div class="bg-white">
-                <nav class="navbar">
+                <nav class="navbar" id="assessment_internal_tabs">
                     <ul class="nav nav-tabs bg-white" id="tab_header">
                         <li class="active"><a href="#exSpon_Details" aria-controls="login-cnt" role="tab" data-toggle="tab">Details</a></li>
                         <li><a href="#exSpon_DetailsPage_Configurator_Timeline" aria-controls="exSpon_Configurator" role="tab" data-toggle="tab">Configurator</a></li>
@@ -133,6 +134,14 @@
                         <li><a href="#under_work" aria-controls="under_work" role="tab" data-toggle="tab">Assessors</a></li>
                         <li><a href="#under_work" aria-controls="under_work" role="tab" data-toggle="tab">Ideas For Action</a></li>
                         <li><a href="#under_work" aria-controls="under_work" role="tab" data-toggle="tab">Key Person Accountable</a></li>
+                        <li class=""><a href="#exSpon_Details" aria-controls="login-cnt" role="tab" data-toggle="tab">Details</a></li>
+                        <li><a href="#exSpon_DetailsPage_Configurator_Timeline" aria-controls="exSpon_Configurator" role="tab" data-toggle="tab">Configurator</a></li>
+                        <li><a href="#exSpon_DetailsPage_ExpertPanelMembers" aria-controls="exSpon_ExportPanelMembers" role="tab" data-toggle="tab">Expert Panel Members</a></li>
+                        <li><a href="#exSpon_DetailsPage_Questionnaire" aria-controls="exSpon_Questionnaire" role="tab" data-toggle="tab">Questionnaire</a></li>
+                        <li><a href="#under_work" aria-controls="under_work" role="tab" data-toggle="tab">Assessors</a></li>
+                        <li><a href="#under_work" aria-controls="under_work" role="tab" data-toggle="tab">Ideas For Action</a></li>
+                        <li><a href="#under_work" aria-controls="under_work" role="tab" data-toggle="tab">Key Person Accountable</a></li>
+
                     </ul>
                 </nav>
                 <div class="tab-content">
@@ -232,7 +241,7 @@
                                 </p>
                             </div>
                             <nav class="navbar col-md-12 padding0">
-                                <ul class="nav nav-tabs" id="tab_header">
+                                <ul class="nav nav-tabs" id="tab_header" >
                                     <li class="active"><a href="#internal_functions" aria-controls="analysis" role="tab" data-toggle="tab">Assessments for Internal Functions</a></li>
                                     <li><a href="#internal_processes" aria-controls="no_display" role="tab" data-toggle="tab">Assessments for internal processes</a></li>
                                     <li><a href="#stakeholder_groups" aria-controls="no_display" role="tab" data-toggle="tab">Assessments for Stakeholder Groups</a></li>
@@ -1496,6 +1505,7 @@
     <script src="../js/bootstrap-datepicker.min.js" charset="utf-8"></script>
     <script src="../js/jquery.imagemap.min.js" charset="utf-8"></script>
     <script src="../js/jquery-ui.min.js" charset="utf-8"></script>
+    <script src="../js/jquery.mCustomScrollbar.concat.min.js" charset="utf-8"></script>
     <script src="../js/script.js"></script>
     <script src="../js/star-rating.js"></script>
 </body>

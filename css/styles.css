@@ -661,6 +661,9 @@ a:focus{
 .tab_box>.navbar>.nav-tabs {
     border-bottom: 2px solid #09A6D0;
 }
+#tab_header li {
+    display: inline-block;
+}
 #tab_header li a{
     border:1px solid rgba(222, 222, 222, 1);
     margin-right: 5px;  
@@ -2009,8 +2012,12 @@ input.promocode::-webkit-input-placeholder {
 /*ExSpon Details Page*/
 
 #exspon_details_page .navbar {
+    width: 100%;
     padding: 0;
     min-height: auto;
+}
+.mCSB_horizontal.mCSB_inside>.mCSB_container {
+    margin-bottom: 15px;
 }
 #exspon_details_page .nav {
     border-bottom: 2px solid #00b0ff;

@@ -41,6 +41,17 @@ $(document).ready(function() {
         'select_all': false,
         'togglescreen': false
     });
+    var tab_array = $('#assessment_internal_tabs ul li')
+    var width = 200;
+    tab_array.each(function(item) {
+        width += $(this).width();
+    });
+
+    $('#assessment_internal_tabs ul').css('width', width+'px');
+    $('#assessment_internal_tabs').mCustomScrollbar({
+        axis:"x",
+        theme:"dark"
+    });
 
     $(".dropdown-menu").on('click', 'li a', function() {
         $(".dd_btn").text($(this).text());
