@@ -9,15 +9,14 @@ $(document).ready(function() {
         if ($(this).hasClass('next')) {
             var nextPage = current.next();
             var nextView = content.next();
-        }
-        else if ($(this).hasClass('prev')) {
+        } else if ($(this).hasClass('prev')) {
             var nextPage = current.prev();
             var nextView = content.prev();
         }
         current.removeClass('active');
         nextPage.addClass('active');
         content.removeClass('active');
-        nextView.addClass('active');
+        nextView.addClass('active in');
         var index = $(this).parent().find('li.active').index();
         if (index == 1) {
             $('.pagination li:first-child').addClass('disabledLi');
