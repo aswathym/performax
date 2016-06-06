@@ -59,3 +59,6 @@
 .front_img_container img {
 	width: 100%;
 }
+#table_of_contents .contents, #table_of_contents .contents ol {
+	list-style: none;
+}
