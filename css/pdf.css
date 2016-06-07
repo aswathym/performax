@@ -85,3 +85,54 @@ html, body {
     border-top: 1px solid #000;
     width: 95%;
 }
+#module1 p {
+	font-style: italic;
+}
+#module1 ol {
+    margin-bottom: 400px;
+	list-style: none;
+	padding: 10px 0px;
+}
+#module1 ol li {
+	font-weight: bold;
+}
+#module1 .assessment_table {
+	width: 100%;
+}
+#module1 .assessment_table thead td {
+	text-decoration: underline;
+}
+#module1 .assessment_table td:nth-child(even) {
+	text-align: center;
+}
+#module1 .assessment_questions {
+	list-style: none;
+}
+#module1 .assessment_questions li:first-child {
+	text-decoration: underline;
+}
+#module1 .assessment_overview {
+	display: flex;
+}
+#module1 .assessment_overview_heading {
+	font-weight: bold;
+	color: #711f44;
+    margin: 35px 0;
+}
+#module1 .assessment_overview .overview_parts {
+	width: 50%;
+}
+#module1 .assessment_customization {
+	margin-bottom: 70px;
+}
+#module1 .assessment_customization h4 {
+    text-decoration: underline;
+    margin-top: 25px;
+}
+#module1 .assessment_customization h5 {
+	font-weight: bold;
+	margin-top: 15px;
+}
+#module1 .assessment_customization ul {
+	padding-left: 20px;
+}
