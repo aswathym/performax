@@ -2123,10 +2123,13 @@ input.promocode::-webkit-input-placeholder {
 }
 #timeline .timeframe .description {
     position: absolute;
-    bottom: -50px;
+    top: 107%;
     width: 100px;
     margin-left: -50px;
     text-align: center;
+}
+#timeline .timeline_save_button {
+    margin-top: 80px;
 }
 #timeline .timeframe .description span {
     display: block;
@@ -2146,7 +2149,7 @@ input.promocode::-webkit-input-placeholder {
 }
 #timeline .ui-widget {
     background-color: #ADADAD;
-    height: 250px;
+    height: 280px;
 }
 #permissions .radio_button_custom .fa-circle-thin {
     color: rgba(128, 128, 128, 0.8);
@@ -4536,8 +4539,17 @@ padding: 10px 5px;
 .view_more_IFA a {
     cursor: pointer;
 }
-
-
+.slider_number {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.slider_number li::before {
+    content: '-';
+}
 /*Media Queries*/
 @media screen and (max-height: 580px) {
     .login {

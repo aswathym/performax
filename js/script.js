@@ -41,6 +41,11 @@ $(document).ready(function() {
         'select_all': false,
         'togglescreen': false
     });
+
+    for (var i = 0; i < 14; i++) {
+        $('.slider_number').append('<li>'+(i)+'</li>')        
+    }
+
     var tab_array = $('#assessment_internal_tabs ul li')
     var width = 200;
     tab_array.each(function(item) {
@@ -374,82 +379,19 @@ $(document).ready(function() {
     //     $(this).prevAll('li').addClass('another_active');
     //     $(this).addClass('active')
     // });
+    $(".v-slider").slider({
+        orientation: "vertical",
+        animate: 'fast',
+        min: 0,
+        max: 13,
+        value: 0,
+        step: 1,
+        slide: function(event, ui) {
+            $(this).find('.timeline').html(ui.value)
+        }
+    });
+    $("#amount").val($(".v-slider").slider("value"));
 
-    $("#v-slider").slider({
-        orientation: "vertical",
-        animate: 'fast',
-        min: 1,
-        max: 10,
-        value: 1,
-        step: 1,
-        slide: function(event, ui) {
-            $("#timeline1").html(ui.value);
-        }
-    });
-    $("#amount").val($("#v-slider").slider("value"));
-    $("#v-slider2").slider({
-        orientation: "vertical",
-        animate: 'fast',
-        min: 1,
-        max: 10,
-        value: 2,
-        step: 1,
-        slide: function(event, ui) {
-            $("#timeline2").html(ui.value);
-        }
-    });
-    $("#amount").val($("#v-slider").slider("value"));
-    $("#v-slider3").slider({
-        orientation: "vertical",
-        animate: 'fast',
-        min: 1,
-        max: 10,
-        value: 3,
-        step: 1,
-        slide: function(event, ui) {
-            $("#timeline3").html(ui.value);
-        }
-    });
-    $("#amount").val($("#v-slider").slider("value"));
-    $("#v-slider4").slider({
-        orientation: "vertical",
-        animate: 'fast',
-        min: 1,
-        max: 10,
-        value: 2,
-        step: 1,
-        slide: function(event, ui) {
-            $("#timeline4").html(ui.value);
-        }
-    });
-    $("#amount").val($("#v-slider").slider("value"));
-    $("#v-slider5").slider({
-        orientation: "vertical",
-        animate: 'fast',
-        min: 1,
-        max: 10,
-        value: 2,
-        step: 1,
-        slide: function(event, ui) {
-            $("#timeline5").html(ui.value);
-        }
-    });
-    $("#amount").val($("#v-slider").slider("value"));
-    $("#v-slider6").slider({
-        orientation: "vertical",
-        animate: 'fast',
-        min: 1,
-        max: 10,
-        value: 10,
-        step: 1,
-        slide: function(event, ui) {
-            $("#timeline6").parent().css('display', 'block');
-            $(".ongoing").css('display', 'none');
-            $("#timeline6").html(ui.value);
-        }
-    });
-
-    $("#amount").val($("#v-slider").slider("value"));
     $('.list-group-item').click(function(e) {
         e.preventDefault();
         $('.list-group-item').removeClass('actives');
