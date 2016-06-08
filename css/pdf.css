@@ -136,3 +136,18 @@ html, body {
 #module1 .assessment_customization ul {
 	padding-left: 20px;
 }
+#module1_2 .rating_table thead td {
+	text-decoration: underline;
+}
+#module1_2 .rating_table thead td:nth-child(1), #module1_2 .rating_table tr td:nth-child(1) {
+	width: 40%;
+}
+#module1_2 .effectiveness_score_table tr td:nth-child(2) {
+	text-align: center;
+}
+.key_priorities ul li:first-child {
+	list-style-type: none;
+}
+#module1_2 .key_weekness table, #module1_2 .key_strengths table {
+	margin-top: -25px;
+}
