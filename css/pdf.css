@@ -85,15 +85,20 @@ html, body {
     border-top: 1px solid #000;
     width: 95%;
 }
-#module1 p {
+.module p {
 	font-style: italic;
 }
-#module1 ol {
-    margin-bottom: 400px;
+#module1 .wrapper {
+	margin-bottom: 390px;
+}
+#module2 .wrapper {
+	margin-bottom: 300px;
+}
+.module ol {
 	list-style: none;
 	padding: 10px 0px;
 }
-#module1 ol li {
+.module ol li {
 	font-weight: bold;
 }
 #module1 .assessment_table {
