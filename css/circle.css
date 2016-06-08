@@ -105,8 +105,8 @@
 .c100.p100 .fill {
   position: absolute;
   border: 0.08em solid #307bbb;
-  width: 40px;
-  height: 40px;
+  width: 0.84em;
+  height: 0.84em;
   clip: rect(0em, 0.5em, 1em, 0em);
   border-radius: 50%;
   -webkit-transform: rotate(0deg);
@@ -223,15 +223,14 @@
   transform: rotate(180deg);
 }
 .c100 {
-      position: absolute;
-    font-size: 53px;
-    width: 20px;
-    height: 100%;
-    border-radius: 50%;
-    margin: 0 25px 0 0;
-    top: 4px;
-    right: 0;
-}
+  position: relative;
+  font-size: 120px;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  float: left;
+  margin: 0 0.1em 0.1em 0;
+  background-color: #cccccc;
 }
 .c100 *,
 .c100 *:before,
@@ -244,16 +243,22 @@
   float: none;
   margin: 0 auto;
 }
+.c100.big {
+  font-size: 240px;
+}
+.c100.small {
+  font-size: 80px;
+}
 .c100 > span {
   position: absolute;
   width: 100%;
   z-index: 1;
-  left: 6px;
+  left: 0;
   top: 0;
-  width: 3em;
-  line-height: 39px;
+  width: 5em;
+  line-height: 5em;
   font-size: 0.2em;
-  color: #565354;
+  color: #cccccc;
   display: block;
   text-align: center;
   white-space: nowrap;
@@ -277,6 +282,7 @@
   display: block;
   content: " ";
   border-radius: 50%;
+  background-color: #f5f5f5;
   width: 0.84em;
   height: 0.84em;
   -webkit-transition-property: all;
@@ -292,14 +298,12 @@
   -o-transition-timing-function: ease-in;
   transition-timing-function: ease-in;
 }
-
 .c100 .slice {
   position: absolute;
   width: 1em;
   height: 1em;
   clip: rect(0em, 1em, 1em, 0.5em);
 }
-
 .c100.p1 .bar {
   -webkit-transform: rotate(3.6deg);
   -moz-transform: rotate(3.6deg);
@@ -1000,14 +1004,14 @@
   -o-transform: rotate(360deg);
   transform: rotate(360deg);
 }
-.c100:hover > span {
-    width: 25px;
-    line-height: 40px;
-    font-size: 14px;
-   color: #307bbb;
+.c100:hover {
+  cursor: default;
 }
-.active .c100 > span, .active .c100:hover > span {
-  color: #fff;
+.c100:hover > span {
+  width: 3.33em;
+  line-height: 3.33em;
+  font-size: 0.3em;
+  color: #307bbb;
 }
 .c100:hover:after {
   top: 0.04em;
@@ -1015,15 +1019,28 @@
   width: 0.92em;
   height: 0.92em;
 }
+.c100.dark {
+  background-color: #777777;
+}
+.c100.dark .bar,
+.c100.dark .fill {
+  border-color: #c6ff00 !important;
+}
+.c100.dark > span {
+  color: #777777;
+}
+.c100.dark:after {
+  background-color: #666666;
+}
+.c100.dark:hover > span {
+  color: #c6ff00;
+}
 .c100.green .bar,
 .c100.green .fill {
-  border-color: #51d65a !important;
+  border-color: #4db53c !important;
 }
 .c100.green:hover > span {
-  color: #51d65a;
-}
-.active .c100.green:hover > span{
-  color: #fff;
+  color: #4db53c;
 }
 .c100.green.dark .bar,
 .c100.green.dark .fill {
@@ -1032,16 +1049,17 @@
 .c100.green.dark:hover > span {
   color: #5fd400;
 }
-.p0:after{
-  border:4px solid #E0E0E0;
-  top: 0;
-  width: 40px;
-  height: 39px;
- 
+.c100.orange .bar,
+.c100.orange .fill {
+  border-color: #dd9d22 !important;
 }
-.p0:hover:after{
-    top: 0;
-    width: 40px;
-    height: 39px;
-    left: 0.08em;
+.c100.orange:hover > span {
+  color: #dd9d22;
+}
+.c100.orange.dark .bar,
+.c100.orange.dark .fill {
+  border-color: #e08833 !important;
+}
+.c100.orange.dark:hover > span {
+  color: #e08833;
 }

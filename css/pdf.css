@@ -148,6 +148,35 @@ html, body {
 .key_priorities ul li:first-child {
 	list-style-type: none;
 }
-#module1_2 .key_weekness table, #module1_2 .key_strengths table {
+#module1_2 .key_weekness table, #module1_2 .key_strengths	 table {
 	margin-top: -25px;
+}
+#module1_3 .progress_container {
+	height: 290px;
+}
+#module1_3 .progress_container .c100 .desc {
+	font-size: 18px;
+	font-weight: bold;
+	position: absolute;
+    bottom: -60px;
+    text-align: center;
+}
+#module1_3 .progress_container h3 {
+	text-align: center;
+	margin-bottom: 20px;
+	color: #711f44;
+	font-weight: bold;
+}
+#module1_3 .effectiveness_area_map h3 {
+	text-align: center;
+	font-weight: bold;
+	border-bottom: 1px solid rgba(125, 125, 125, 0.3);;
+	padding: 20px 10px;
+	margin: 0;
+}
+#module1_3 .effectiveness_area_map .map_container {
+	height: 260px;
+}
+.border-light {
+	border: 1px solid rgba(125, 125, 125, 0.3);
 }
