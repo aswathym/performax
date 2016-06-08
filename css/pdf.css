@@ -151,6 +151,9 @@ html, body {
 #module1_2 .key_weekness table, #module1_2 .key_strengths	 table {
 	margin-top: -25px;
 }
+#module1_3 .heading {
+	font-weight: bold;
+}
 #module1_3 .progress_container {
 	height: 290px;
 }
@@ -167,16 +170,19 @@ html, body {
 	color: #711f44;
 	font-weight: bold;
 }
-#module1_3 .effectiveness_area_map h3 {
+#module1_3 .effectiveness_area_map h3, #module1_3 .effectiveness_spider_chart h3  {
 	text-align: center;
 	font-weight: bold;
 	border-bottom: 1px solid rgba(125, 125, 125, 0.3);;
 	padding: 20px 10px;
 	margin: 0;
 }
-#module1_3 .effectiveness_area_map .map_container {
+#module1_3 .effectiveness_area_map .map_container{
 	height: 260px;
 }
+ #module1_3 .effectiveness_spider_chart .map_container {
+ 	height: 230px;
+ }
 .border-light {
 	border: 1px solid rgba(125, 125, 125, 0.3);
 }
