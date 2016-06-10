@@ -97,6 +97,9 @@ html, body {
 #module2_1 .wrapper {
 	margin-bottom: 50px;
 }
+#module3 .wrapper {
+	margin-bottom: 100px;
+}
 .module ol {
 	list-style: none;
 	padding: 10px 0px;
@@ -197,96 +200,111 @@ html, body {
 .border-light {
 	border: 1px solid rgba(125, 125, 125, 0.3);
 }
-#module2_1 .side_menu {
+.table_rep .side_menu {
     display: inline-block;
     width: 40%;
     float: left;
     margin-right: 20px;
 }
-#module2_1 .side_menu ul {
+.table_rep .side_menu ul {
 	list-style: none;
     padding: 0;
     border: 1px solid #b5b5b5;
 }
-#module2_1 .side_menu ul li {
+.table_rep .side_menu ul li {
 	border-radius: 5px;
 }
-#module2_1 .side_menu ul li .text {
+.table_rep .side_menu ul li .text {
 	display: inline-block;
 	padding: 10px 15px;
 	width: 68%;
 }
-#module2_1 .side_menu ul li .icon {
+.table_rep .side_menu ul li .icon {
 	display: inline-block;
 	padding: 10px 15px;
 	width: 4%;
 }
-#module2_1 .side_menu ul li .arrow_wrapper {
+.table_rep .side_menu ul li .arrow_wrapper {
 	display: inline-block;
 	padding: 10px 15px;
 	width: 5%;
 }
-#module2_1 .side_menu ul .active .arrow_wrapper {
+.table_rep .side_menu ul .active .arrow_wrapper {
     border-left: 1px solid #b5b5b5;
 }
-#module2_1 .side_menu ul .active {
+.table_rep .side_menu ul .active {
 	background-color: #fbe8b1;
 }
-#module2_1 .side_menu ul .heading {
+.table_rep .side_menu ul .heading {
 	background-color: #3e5886;
     color: white;
     border-radius: 0;
     margin-bottom: 10px;
 }
-#module2_1 .side_value {
+.table_rep .side_value {
 	display: inline-block;
 	width: 55%;
 	border: 1px solid #b1aeae;
 }
-#module2_1 .side_value .strength {
+.table_rep .side_value .strength {
 	color: #236328;
 }
-#module2_1 .side_value .weakness {
+.table_rep .side_value .weakness {
 	color: #b10f0f;
 }
-#module2_1 .side_value .header {
+.table_rep .side_value .header {
 	background-color: #b3b3b3;
 }
-#module2_1 .side_value .header h3 {
+.table_rep .side_value .header h3 {
 	float: left;
 	margin-top: -30px;
 }
-#module2_1 .content_wrapper {
+.table_rep .content_wrapper {
 	list-style: none;
 	padding: 0;	
 }
-#module2_1 .content_wrapper li {
+.table_rep .content_wrapper li {
 	margin: 5px 0;
 	padding: 5px 10px;
 	background: #dedede;
     border: 1px solid #b1aeae;
     border-radius: 4px;
 }
-#module2_1 .content_wrapper li .arrow_wrapper {
+.table_rep .content_wrapper li .arrow_wrapper {
 	margin-right: 10px;
 }
-#module2_1  .content_wrapper li .text {
+.table_rep .content_wrapper li .text {
 	display: inline-block;
 	width: 80%;
 }
-#module2_1  .content_wrapper li .score {
+.table_rep .content_wrapper li .score {
 	display: inline-block;
 	width: 20px;
 	height: 20px;
 	color: #fff;
 	text-align: center;
 }
-#module2_1  .content_wrapper li .score.blue {
+.table_rep .content_wrapper li .score.blue {
 	background-color: #227fa2;
 }
-#module2_1  .content_wrapper li .score.yellow {
+.table_rep .content_wrapper li .score.yellow {
 	background-color: #b19715;
 }
-#module2_1  .content_wrapper li .score.red {
+.table_rep .content_wrapper li .score.red {
 	background-color: #b10f0f;
+}
+#module3 .ssa_ul {
+    padding: 0 15px;
+}
+#module3 .ssa_ul li span {
+	font-weight: bold;
+}
+#module3 .ssa_ul .positive {
+	color: green;
+}
+#module3 .ssa_ul .neutral {
+	color: black;
+}
+#module3 .ssa_ul .negative {
+	color: red;
 }
