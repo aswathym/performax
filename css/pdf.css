@@ -323,3 +323,31 @@ html, body {
     height: 460px;
 	padding-left: 15px;
 }
+#module3_2 .afr_heading {
+	text-decoration: underline;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+#module3_2 .wrapper {
+	margin-bottom: 200px;
+}
+.sentiment_ul li:first-child {
+	font-weight: bold;
+	list-style-type: none;
+	margin-left: -15px;
+}
+.sentiment_ul {
+	padding-left: 15px;
+}
+.sentiment_ul li:first-child .head {
+	color: #713838;
+}
+.sentiment_ul li:first-child .positive {
+	color: green;
+}
+.sentiment_ul li:first-child .neutral {
+	color: black;
+}
+.sentiment_ul li:first-child .negative {
+	color: red;
+}
