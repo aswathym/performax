@@ -308,3 +308,18 @@ html, body {
 #module3 .ssa_ul .negative {
 	color: red;
 }
+#module3 .overall_sentiment {
+	margin: 20px 0;
+}
+#module3 .overall_sentiment .positive {
+	color: green;
+	font-weight: bold;
+}
+#module3 .afr_heading {
+	text-decoration: underline;
+	margin-bottom: 10px;
+}
+.assessor_feedback_remarks {
+    height: 460px;
+	padding-left: 15px;
+}
