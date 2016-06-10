@@ -429,3 +429,6 @@ html, body {
 .swot_table .last_row td.negative {
 	color: #a50909
 }
+#module5 .wrapper {
+	margin-bottom: 440px;
+}
