@@ -241,6 +241,13 @@ html, body {
 #module2_1 .side_value {
 	display: inline-block;
 	width: 55%;
+	border: 1px solid #b1aeae;
+}
+#module2_1 .side_value .strength {
+	color: #236328;
+}
+#module2_1 .side_value .weakness {
+	color: #b10f0f;
 }
 #module2_1 .side_value .header {
 	background-color: #b3b3b3;
