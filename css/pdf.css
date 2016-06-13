@@ -402,7 +402,7 @@ html, body {
     font-weight: bold;
     color: black;
 }
-.swot_table td .score {
+.score {
 	display: inline-block;
     width: 40px;
     height: 20px;
@@ -410,13 +410,16 @@ html, body {
 	text-align: center;
 	border: 1px solid #fff;
 }
-.swot_table td .score.blue {
+.score.blue {
 	background-color: #0f80a2;
 }
-.swot_table td .score.yellow {
+.score.green {
+	background-color: green;
+}
+.score.yellow {
 	background-color: #928003;
 }
-.swot_table td .score.red {
+.score.red {
 	background-color: #790c0c;
 }
 .swot_table .last_row td {
@@ -436,6 +439,7 @@ html, body {
 	list-style: none;
 	width: 100%;
 	padding: 0;
+	margin: 0;
 	border-radius: 5px;
 }
 .module5 .tab_ul li {
@@ -454,5 +458,66 @@ html, body {
 	padding-top: 20px;
 }
 .module5 .tab_ul li h4 {
-	font-size: 20px;
+	font-size: 18px;
+}
+#module5_all .details .main_head, #module5_all .details .sub_head {
+	display: inline-block;
+	width: 49%;
+}
+#module5_all .details {
+	border: 2px solid #d9dcde;
+}
+#module5_all article .header h4 {
+	display: inline-block;
+	width: 60%;
+	margin-left: 2%;
+}
+#module5_all article {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+#module5_all article .header {
+    background-color: #ddd;
+    margin-top: -20px;
+    border: 2px solid #ccc;	
+}
+#module5_all article .header .id_area {
+	display: inline-block;
+	width: 150px;
+	background-color: #fff;
+	border: 1px solid #000;
+}
+#module5_all article .content {
+	padding: 5px 50px 0;
+}
+#module5_all article .content .head h4 {
+	font-weight: bold;
+	font-size: 14px;
+	margin-top: 0;
+}
+#module5_all article .content .head h4 .main {
+	color: #268473;
+}
+#module5_all article .content .head h4 i {
+	margin: 0 10px;
+}
+#module5_all article .content .head h4 .sub {
+	color: #2c88ce;
+}
+#module5_all article .content ul {
+	padding: 0;
+	margin: 0;
+}
+#module5_all article .content ul li {
+	background-color: #bbb;
+	padding: 1px 20px;
+	border: 1px solid #000;
+	margin: 2px 0;
+	list-style-type: none;
+	color: #fff;
+}
+#module5_all article .content ul li i {
+	color: #000;
+	margin: 0 10px;
 }
