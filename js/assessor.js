@@ -27,7 +27,12 @@ $(document).ready(function() {
             $('.pagination li:last-child a').addClass('disabledLi');
         }
     });
-
+    $('.pagination').ready(function() {
+        if($('.pagination li').length == 3) {
+            $('.pagination li.next').addClass('disabledLi');
+            $('.pagination li.next a').addClass('disabledLi');
+        }
+    });
     $('.assment_checkbox').on('change', function() {
         if($(this).is(':checked')) {
             $(this).parent().parent().parent().find('.h-slider').addClass('disabled-slider');
