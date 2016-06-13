@@ -432,3 +432,27 @@ html, body {
 #module5 .wrapper {
 	margin-bottom: 440px;
 }
+.module5 .tab_ul {
+	list-style: none;
+	width: 100%;
+	padding: 0;
+	border-radius: 5px;
+}
+.module5 .tab_ul li {
+    display: inline-block;
+    width: 49%;
+    height: 90px;
+    border-radius: 5px;
+    padding: 10px 10px 10px 25px;
+    background-color: #d9dcde;
+    color: #155798;
+    float: left;
+}
+.module5 .tab_ul li.active {
+	background-color: #155798;
+	color: #fff;
+	padding-top: 20px;
+}
+.module5 .tab_ul li h4 {
+	font-size: 20px;
+}
