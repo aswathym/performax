@@ -188,9 +188,6 @@ html, body {
 	padding: 20px 10px;
 	margin: 0;
 }
-#module1_3 .effectiveness_area_map .map_container{
-	height: 260px;
-}
 #module1_3 .effectiveness_spider_chart .map_container {
  	height: 230px;
 }
@@ -523,4 +520,97 @@ html, body {
 }
 #appendix {
 	margin-bottom: 480px;
+}
+
+/*Bar */
+.bar-container {
+	width: 100%;
+	height: 40px;
+	margin: 5px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.bar-container .text-area {
+	display: inline-block;
+	width: 30%;
+}
+.bar-container.all-csf {
+	height: 70px;
+	font-size: 25px;
+}
+.bar-container .bar-full {
+	display: inline-block;
+    width: 30%;
+    background: linear-gradient(to bottom, rgb(144, 34, 34) 0%, rgba(10,4,4,1) 100%);
+    height: 100%;
+    color: #fff;
+    position: relative;
+    line-height: 2;
+    vertical-align: middle;
+}
+.bar-container.all-csf .bar-full {
+    line-height: 2.5;
+}
+.bar-container .bar-full .current {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(42,178,199,1) 0%, rgba(36,93,102,1) 100%);
+	border-right: 1px solid #fff;
+    padding-left: 20px;
+}
+.bar-container .bar-full .gap {
+	position: absolute;
+	right: 20px;
+}
+.info-of-graph {
+	display: inline-block;
+	margin: 20px 20px 20px 30%;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #fff;
+	width: 60%;
+	position: relative;
+}
+.info-of-graph .current, .info-of-graph .gap, .info-of-graph .desired {
+    padding: 10px 5px;
+    width: 30%;
+    text-align: center;
+    height: 70px;
+    display: inline-block;
+    float: left;
+    border-right: 1px solid #fff;
+}
+.info-of-graph .current::after, .info-of-graph .gap::after, .info-of-graph .desired::after {
+    content: '';
+    width: 0;
+    position: absolute;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    top: 100%;
+}
+.info-of-graph .current::after {
+	border-top: 20px solid #2a89c1;
+    left: 21%;
+}
+.info-of-graph .gap::after {
+	border-top: 20px solid #ad2222;
+	left: 42%;
+}
+.info-of-graph .desired::after {
+	border-top: 20px solid #000000;
+	left: 65%;
+}
+.info-of-graph .current {
+	background-color: #2a89c1;
+}
+.info-of-graph .gap {
+	background-color: #ad2222;
+    padding-top: 25px;
+}
+.info-of-graph .desired {
+	background-color: #000000;
 }
