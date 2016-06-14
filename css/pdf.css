@@ -521,6 +521,18 @@ html, body {
 #appendix {
 	margin-bottom: 480px;
 }
+#a1 {
+	margin-bottom: 400px;
+}
+#a2 {
+	margin-bottom: 150px;	
+}
+#a3 {
+	margin-bottom: 400px;		
+}
+#a4 .figure {
+	height: 700px;
+}
 
 /*Bar */
 .bar-container {
@@ -613,4 +625,18 @@ html, body {
 }
 .info-of-graph .desired {
 	background-color: #000000;
+}
+#a5 .cairs_table, #a5 .cairs_table td {
+	border: 1px solid #000;
+}
+#a5 .cairs_table {
+	border-collapse: collapse;
+	margin-bottom: 80px;
+}
+#a5 .cairs_table thead td {
+	font-weight: bold;
+}
+#a5 .cairs_table td {
+	padding: 15px;
+	text-align: center;
 }
