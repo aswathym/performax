@@ -640,3 +640,28 @@ html, body {
 	padding: 15px;
 	text-align: center;
 }
+#a6 .figure, #a7 .figure {
+	height: 500px;
+}
+#a8 .wrapper {
+	margin-bottom: 400px;
+}
+#a8 .wrapper p {
+	font-style: normal;
+}
+#a8 .wrapper p .title {
+	font-weight: bold;
+}
+#a8 .wrapper p .title::after {
+	content: ' : ';
+}
+#a9 .wrapper, #a10 .wrapper {
+	margin-bottom: 500px;
+}
+#a9 .title {
+	font-weight: bold;
+	margin-top: 20px;
+}
+#a10 .title b {
+	font-size: 16px;
+}
