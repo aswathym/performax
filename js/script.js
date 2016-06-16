@@ -57,6 +57,10 @@ $(document).ready(function() {
         axis:"x",
         theme:"dark"
     });
+    $('.wheel-details .item').mCustomScrollbar({
+        axis:"y",
+        theme:"dark"
+    });
 
     $(".dropdown-menu").on('click', 'li a', function() {
         $(".dd_btn").text($(this).text());
