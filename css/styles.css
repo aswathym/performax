@@ -4562,3 +4562,6 @@ padding: 10px 5px;
     pointer-events: none;
     cursor: default;
 }
+.rating-items .disabled-slider+.rate li {
+    color: grey;
+}

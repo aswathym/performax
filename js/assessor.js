@@ -44,40 +44,35 @@ $(document).ready(function() {
             $(this).parent().parent().parent().find('.h-slider').removeClass('disabled-slider');
         }
     });
-
-    $('#analytics_and_insights .add_and_remove_button').on('click', 'button', function() {
-        if ($(this).parent().parent().find('.extra_rating').hasClass('displayNone')) {
-            $(this).parent().parent().find('.extra_rating').removeClass('displayNone');
-            $(this).removeClass('btn-primary');
-            $(this).addClass('btn-danger');
-            $(this).html("Remove");      
+    $('.impact-rating-text').on('input', function() {
+        var val = $(this).val();
+        var actualText = val.replace(/ /g,'');
+        var sideDiv = $(this).parent().siblings('.extra_rating');
+        if(actualText.length > 0) {
+            sideDiv.find('.extra-note-space').prop("disabled", false);
+            sideDiv.find('.h-slider-extra').removeClass('disabled-slider');
         }
         else {
-            $(this).parent().parent().find('.extra_rating').addClass('displayNone');
-            $(this).addClass('btn-primary');
-            $(this).removeClass('btn-danger');
-            $(this).html("Add More");
-            $(this).parent().parent().find('.extra_rating .rate li').addClass('visibilityHidden');
-            $(this).parent().parent().find('.extra_rating .rate li:first-child').removeClass('visibilityHidden');
-            setSlider($(this).parent().parent().find('.h-slider-extra'));
-            $('.extra-note-space').val("");
+            sideDiv.find('.extra-note-space').val('');
+            sideDiv.find('.extra-note-space').attr('disabled', 'disabled');
+            sideDiv.find('.h-slider-extra').addClass('disabled-slider');
+            sideDiv.find('.h-slider-extra .ui-slider-handle').css('left', 0+'%');
+            sideDiv.find('.extra_rating').find('.rate li').addClass('visibilityHidden');
+            sideDiv.find('.extra_rating').find('.rate li:first-child').removeClass('visibilityHidden');
         }
     });
-    $('#analytics_and_insights').on('click', '.add_more_text', function() {
-        if ($(this).parent().parent().find('.extra-text-space').hasClass('displayNone')) {
-            $(this).parent().parent().find('.extra-text-space').removeClass('displayNone')
-            $(this).removeClass('btn-primary');
-            $(this).addClass('btn-danger');
-            $(this).html("Remove");  
+    $('.text-space').on('input', function() {
+        var val = $(this).find('input').val();
+        var actualText = val.replace(/ /g,'');
+        var sideDiv = $(this).parent().find('.extra-text-space input');
+        if(actualText.length > 0) {
+            sideDiv.prop("disabled", false);
         }
         else {
-            $(this).parent().parent().find('.extra-text-space').addClass('displayNone')
-            $(this).addClass('btn-primary');
-            $(this).removeClass('btn-danger');
-            $(this).html("Add More");
-             $('.extra-text-space').val("");
+            sideDiv.val('');
+            sideDiv.attr('disabled', 'disabled');
         }
-    });
+    })
 });
  
 var setSlider = function(hslider) {
