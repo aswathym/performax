@@ -1495,7 +1495,7 @@ footer.footer {
     background-image: url('../images/tick_green.png')
 }
 .ajax_pop_warning .img_icon, .ajax_pop_error .img_icon {
-    background-image: url('../images/Error-128.png')
+    background-image: url('../images/Error-128.png');
     font-size: 19px;        
 }
 .assessor_group_type >.k-dropdown {

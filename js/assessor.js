@@ -4,7 +4,7 @@ $(document).ready(function() {
     $('.pagination').on('click', 'li', function() {
         $('.pagination li').removeClass('disabledLi');
         $('.pagination li a').removeClass('disabledLi');
-        var current = $(this).parent().find('.active');
+        var current = $(this).siblings('.active');
         var content = $('.paginate-content .tab-pane.active');
         if ($(this).hasClass('next')) {
             var nextPage = current.next();
@@ -15,8 +15,10 @@ $(document).ready(function() {
         }
         current.removeClass('active');
         nextPage.addClass('active');
-        content.removeClass('active');
-        nextView.addClass('active in');
+        
+        content.removeClass('active').delay(100).queue(function() {
+            nextView.addClass('active');
+        });        
         var index = $(this).parent().find('li.active').index();
         if (index == 1) {
             $('.pagination li:first-child').addClass('disabledLi');
