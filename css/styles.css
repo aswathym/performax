@@ -35,10 +35,10 @@ header {
 .navbar {
     padding-right: 0;
 }
-a,input{
+a, input {
     outline: none;
 }
-a{
+a {
     cursor: pointer;
 }
 a:focus{
@@ -834,12 +834,11 @@ html, body {
 /* Wrapper for page content to push down footer */
 
 #wrap {
-    min-height: 100%;
-    height: auto;
+    height: 100%;
     /* Negative indent footer by its height */
-    margin: 0 auto -51px;
+    /*margin: 0 auto -51px;*/
     /* Pad bottom by footer height */
-    padding: 0 0 51px;
+    /*padding: 0 0 51px;*/
 }
 
 /* Set the fixed height of the footer here */
@@ -1185,20 +1184,41 @@ h1 {
     padding-left: 31%;
     margin: -10px 0 10px;
 }
-#login,#forget_password {
+#login, #forget_password {
+    display: inline-block;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 25%;
+    left: 25%;
+    margin: -10% 0;
+   /* transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%); /* IE 9 */
-   -webkit-transform: translate(-50%, -50%); /* Chrome, Safari, Opera */
-   max-width: 620px;
-   background-color: #fff;
-   border-radius: 0;
-   border: 0;
-   box-shadow: none;
-   padding: 0;
-   margin-top: 50px;
+    /*-webkit-transform: translate(-50%, -50%);*/ /* Chrome, Safari, Opera */
+    max-width: 620px;
+    background-color: #fff;
+    border-radius: 0;
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+}
+.login {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.login .wrapper {
+    position: absolute;
+    top: 20%;
+    top: calc(50% - 215px);
+    left: 30%;
+    left: calc(50% - 310px);
+}
+.login + footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0 !important;
 }
 #login {
     height: 415px;
